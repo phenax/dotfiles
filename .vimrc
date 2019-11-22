@@ -37,7 +37,6 @@ Plug 'tpope/vim-eunuch'
 Plug 'wesQ3/vim-windowswap'
 Plug 'SirVer/ultisnips'
 Plug 'junegunn/fzf.vim'
-Plug 'junegunn/fzf'
 Plug 'godlygeek/tabular'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'benmills/vimux'
@@ -81,6 +80,8 @@ call plug#end()
 " Lintery config
 let b:ale_fixers = ['eslint']
 let b:ale_fix_on_save = 1
+
+set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf
 
 " Show linenumbers
 set number
