@@ -24,7 +24,15 @@ Plug 'maksimr/vim-jsbeautify'
 Plug 'vim-syntastic/syntastic'
 Plug 'neomake/neomake'
 Plug 'w0rp/ale'
+
+" Typescript
 Plug 'heavenshell/vim-tslint'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'kristijanhusak/vim-js-file-import', {'do': 'npm install'}
+" Plug 'Quramy/tsuquyomi'
+" Plug 'leafgarland/typescript-vim'
+" Plug 'Quramy/vim-js-pretty-template'
+
 
 
 " Utility
@@ -33,7 +41,6 @@ Plug 'majutsushi/tagbar'
 Plug 'ervandew/supertab'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-eunuch'
-" Plug 'BufOnly.vim'
 Plug 'wesQ3/vim-windowswap'
 Plug 'SirVer/ultisnips'
 Plug 'junegunn/fzf.vim'
@@ -46,40 +53,40 @@ Plug 'Shougo/neocomplete.vim'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-surround'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'thaerkh/vim-workspace'
+" Plug 'xolox/vim-session'
+" Plug 'xolox/vim-misc'
 
 " Elm Support
 Plug 'lambdatoast/elm.vim'
 
 " Theme / Interface
-" Plug 'AnsiEsc.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'sjl/badwolf'
-Plug 'tomasr/molokai'
 Plug 'morhetz/gruvbox'
-Plug 'zenorocha/dracula-theme', {'rtp': 'vim/'}
 Plug 'junegunn/limelight.vim'
 Plug 'mkarmona/colorsbox'
 Plug 'romainl/Apprentice'
 Plug 'Lokaltog/vim-distinguished'
 Plug 'chriskempson/base16-vim'
 Plug 'w0ng/vim-hybrid'
-Plug 'AlessandroYorba/Sierra'
 Plug 'daylerees/colour-schemes'
-Plug 'effkay/argonaut.vim'
-Plug 'ajh17/Spacegray.vim'
 Plug 'atelierbram/Base2Tone-vim'
-Plug 'colepeters/spacemacs-theme.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'mhartington/oceanic-next'
+Plug 'drewtempelmeyer/palenight.vim'
 
 
 call plug#end()
 
-" Lintery config
+set encoding=UTF-8
+
+" Linter config
 let b:ale_fixers = ['eslint']
 let b:ale_fix_on_save = 1
+let g:syntastic_enable_racket_racket_checker = 1
 
 set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf
 
@@ -107,15 +114,31 @@ if (has("termguicolors"))
 endif
 
 let base16colorspace=256  " Access colors present in 256 colorspace
-colorscheme OceanicNext
 
+" let g:airline_theme='luna'
+let g:airline_theme = "palenight"
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#show_splits = 1
+let g:airline#extensions#tabline#show_buffers = 1
+let g:airline#extensions#tabline#tab_nr_type = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline#extensions#tabline#switch_buffers_and_tabs = 1
+let g:airline_powerline_fonts = 1
 
-" System stuff
-" autocmd vimenter * NERDTree
+" set guifont=Fira\ Code\ 12
+colorscheme palenight
 
 " Open NERDTree in new tabs and windows if no command line args set
 autocmd VimEnter * NERDTree 
 autocmd BufEnter * NERDTreeMirror
 
 " let NERDTreeMapOpenInTab='<ENTER>'
+
+" Sessions
+" au VimLeave * if this_session != "" | exe "mksession! ".this_session
+let g:workspace_autosave_always = 1
+let g:workspace_session_directory = $HOME . '/.vim/sessions/'
+
+set hidden
+
 
