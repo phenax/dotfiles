@@ -3,7 +3,7 @@
 ZSH_THEME="agnoster"
 
 prompt_context() {
-  prompt_segment black default  "🌈 "
+  prompt_segment black default  "🌈"
 }
 
 prompt_dir() {

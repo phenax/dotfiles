@@ -33,10 +33,9 @@ Plug 'kristijanhusak/vim-js-file-import', {'do': 'npm install'}
 " Plug 'leafgarland/typescript-vim'
 " Plug 'Quramy/vim-js-pretty-template'
 
-
-
 " Utility
 Plug 'scrooloose/nerdtree'
+Plug 'qpkorr/vim-bufkill'
 Plug 'majutsushi/tagbar'
 Plug 'ervandew/supertab'
 Plug 'terryma/vim-multiple-cursors'
@@ -77,9 +76,10 @@ Plug 'atelierbram/Base2Tone-vim'
 Plug 'joshdick/onedark.vim'
 Plug 'mhartington/oceanic-next'
 Plug 'drewtempelmeyer/palenight.vim'
-
+" Plug 'jordwalke/vim-taste'
 
 call plug#end()
+
 
 set encoding=UTF-8
 
@@ -117,6 +117,7 @@ let base16colorspace=256  " Access colors present in 256 colorspace
 
 " let g:airline_theme='luna'
 let g:airline_theme = "palenight"
+" let g:airline_theme = "taste"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_splits = 1
 let g:airline#extensions#tabline#show_buffers = 1
@@ -127,9 +128,10 @@ let g:airline_powerline_fonts = 1
 
 " set guifont=Fira\ Code\ 12
 colorscheme palenight
+" colorscheme taste
 
 " Open NERDTree in new tabs and windows if no command line args set
-autocmd VimEnter * NERDTree 
+autocmd VimEnter * NERDTree
 autocmd BufEnter * NERDTreeMirror
 
 " let NERDTreeMapOpenInTab='<ENTER>'
@@ -141,4 +143,11 @@ let g:workspace_session_directory = $HOME . '/.vim/sessions/'
 
 set hidden
 
+let g:gutentags_enabled = 1
+
+" nmap <C-u> <Plug>(PromptJsFileImport)
+nmap <C-u> <Plug>(JsFileImport)
+nmap <C-i> <Plug>(JsGotoDefinition)
+
+nmap ,n :NERDTreeFind<CR>
 

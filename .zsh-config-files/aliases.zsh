@@ -27,4 +27,9 @@ alias l='ls -CF'
 alias gunstage="git reset HEAD --"
 alias gaa="git add ."
 
+update-dotfiles() {
+  yadm add ~/{.zshrc,.bashrc,.vimrc,.vim-config-files,.zsh-config-files};
+  yadm commit -m "Updates dotfiles";
+  yadm push -u origin master;
+}
 
