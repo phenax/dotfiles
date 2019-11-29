@@ -4,6 +4,8 @@ alias show-mobile-screen="adb shell screenrecord --output-format=h264 - | ffplay
 
 alias on-complete="notify-send 'Command executed successfully' --urgency normal";
 
+alias clock="tty-clock -t"
+
 set-php-version() {
 	sudo update-alternatives --set php "/usr/bin/php$1";
 }
