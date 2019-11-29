@@ -2,6 +2,8 @@
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="agnoster"
 
+source $ZSH/oh-my-zsh.sh
+
 prompt_context() {
   prompt_segment black default  "🌈"
 }

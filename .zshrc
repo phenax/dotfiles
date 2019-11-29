@@ -2,15 +2,15 @@ plugins=(
   git
 )
 
+
+export ZSH=/home/akshayn/.oh-my-zsh
 ZSH_CUSTOM_CONF_FILES="$HOME/.zsh-config-files"
 
 source $ZSH_CUSTOM_CONF_FILES/paths.zsh
 source $ZSH_CUSTOM_CONF_FILES/aliases.zsh
-
-source $ZSH/oh-my-zsh.sh
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-
 source $ZSH_CUSTOM_CONF_FILES/theme.zsh
+
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 export EDITOR='vim'
 
