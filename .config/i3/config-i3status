@@ -193,7 +193,7 @@ bindsym $mod+r mode "resize"
 # font pango:Inconsolata 15
 # font pango:monospace 12
 # font pango:SourceCodePro-SemiBold 11
-# font pango:Source Code Pro for Powerline, FontAwesome Regular, Icons 9
+font pango:Source Code Pro for Powerline, FontAwesome Regular, Icons 9
 # font pango:Terminus 14px
 # font pango:UbuntuMono-regular 12
 # from ttf-chromeos-fonts
@@ -202,7 +202,7 @@ bindsym $mod+r mode "resize"
 # font pango:Sans 13 
 # font pango:Noto Mono Regular 13
 # font pango:DroidSansMono 13
-font pango:Noto Mono Regular 13
+# font pango:Noto Mono Regular 13
 
 
 ################### TERMINAL ######################
@@ -223,7 +223,7 @@ bindsym $mod+Return exec terminator;focus
 
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -fn 'NotoMonoRegular:bold:pixelsize=18' 
+bindsym $mod+d exec dmenu_run -fn 'NotoMonoRegular:bold:pixelsize=16' 
 
 # start alternative menu j4-dmenu based on desktop files in /usr/share/applications
 bindsym $mod+shift+d exec j4-dmenu-desktop --dmenu="dmenu -fn 'DroidSansMono:bold:pixelsize=12' -nb '#fdf6e3' -nf '#586c75' -sf '#fdf6e3' -sb '#FFAF00'"
@@ -253,41 +253,42 @@ set $secondMonitor DVI-I-2
 #set $firstMonitor DVI-0
 #set $secondMonitor DVI-1
 
-workspace 1 output $firstMonitor
-workspace 2 output $firstMonitor
-workspace 3 output $firstMonitor
-workspace 4 output $firstMonitor
-workspace 5 output $firstMonitor
-workspace 6 output $secondMonitor
-workspace 7 output $secondMonitor
-workspace 8 output $secondMonitor
-workspace 9 output $secondMonitor
-workspace 10 output $secondMonitor
+
+#workspace 1 output $firstMonitor
+#workspace 2 output $firstMonitor
+#workspace 3 output $firstMonitor
+#workspace 4 output $firstMonitor
+#workspace 5 output $firstMonitor
+#workspace 6 output $secondMonitor
+#workspace 7 output $secondMonitor
+#workspace 8 output $secondMonitor
+#workspace 9 output $secondMonitor
+#workspace 10 output $secondMonitor
 
 # switch to workspace
-bindsym $mod+ampersand workspace 1
-bindsym $mod+eacute workspace 2
-bindsym $mod+quotedbl workspace 3
-bindsym $mod+apostrophe workspace 4
-bindsym $mod+parenleft workspace 5
-bindsym $mod+section workspace 6
-bindsym $mod+egrave workspace 7
-bindsym $mod+exclam workspace 8
-bindsym $mod+ccedilla workspace 9
-bindsym $mod+agrave workspace 10
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+
 
 # move focused container to workspace
-bindsym $mod+Shift+ampersand move container to workspace 1
-bindsym $mod+Shift+eacute move container to workspace 2
-bindsym $mod+Shift+quotedbl move container to workspace 3
-bindsym $mod+Shift+apostrophe move container to workspace 4
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
 bindsym $mod+Shift+5 move container to workspace 5
-bindsym $mod+Shift+section move container to workspace 6
-bindsym $mod+Shift+egrave move container to workspace 7
-bindsym $mod+Shift+exclam move container to workspace 8
-bindsym $mod+Shift+ccedilla move container to workspace 9
-bindsym $mod+Shift+agrave move container to workspace 10
-
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
 
 ################### MOUSE ######################
 
@@ -554,7 +555,7 @@ bar {
 	# status_command ~/.config/i3/start-conky-i3statusbar.sh
 
 	
-	height 25
+	  height 25
     workspace_buttons yes
     
     colors {
