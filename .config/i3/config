@@ -466,7 +466,7 @@ bindsym mod1+f exec variety -f
 ################### MODE_SYSTEM ######################
 
 
-bindsym $mod+Pause mode "$mode_system"
+bindsym $mod+Delete mode "$mode_system"
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
