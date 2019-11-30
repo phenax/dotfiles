@@ -2,6 +2,7 @@
   enabled_plugins = TerminatorThemes, TerminalShot, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
   inactive_color_offset = 0.802469135802
   suppress_multiple_term_dialog = True
+  title_hide_sizetext = True
   title_transmit_bg_color = "#204a87"
 [keybindings]
 [layouts]
@@ -54,7 +55,6 @@
       parent = child3
       profile = default
       type = Terminal
-      command = clock; exec zsh
       uuid = 2f6f3edf-349e-476e-97d9-b96f379d07a7
 [plugins]
 [profiles]
@@ -67,3 +67,4 @@
     palette = "#282828:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#a89984:#928374:#fb4934:#b8bb26:#fabd2f:#83a598:#d3869b:#8ec07c:#ebdbb2"
     scrollback_lines = 1000
     use_system_font = False
+    visible_bell = True
