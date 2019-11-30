@@ -4,7 +4,7 @@ alias show-mobile-screen="adb shell screenrecord --output-format=h264 - | ffplay
 
 alias on-complete="notify-send 'Command executed successfully' --urgency normal";
 
-alias clock="tty-clock -t"
+alias clock="tty-clock -t -b -c"
 
 set-php-version() {
 	sudo update-alternatives --set php "/usr/bin/php$1";
@@ -33,5 +33,19 @@ update-dotfiles() {
   yadm add ~/{.zshrc,.bashrc,.vimrc,.vim-config-files,.zsh-config-files};
   yadm commit -m "Updates dotfiles";
   yadm push -u origin master;
+}
+
+reset-origin() {
+  if [[ -z $(git status -s) ]];
+    then
+      currentBranch="$(git rev-parse --abbrev-ref HEAD)"
+      branch="$1";
+      git checkout $branch;
+      git reset --hard origin/production;
+      git push -u origin $branch -f;
+      git checkout $currentBranch;
+    else
+      echo "Your branch is dirty. Stash or commit changed before proceeding";
+  fi
 }
 
