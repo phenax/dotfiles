@@ -30,7 +30,8 @@ alias gunstage="git reset HEAD --"
 alias gaa="git add ."
 
 update-dotfiles() {
-  yadm add ~/{.zshrc,.bashrc,.vimrc,.vim-config-files,.zsh-config-files,.config/terminator,.config/i3,.config/gtk-3.0,.config/fontconfig};
+  yadm status;
+  yadm add ~/.zshrc ~/.bashrc ~/.vimrc ~/.vim-config-files ~/.zsh-config-files ~/.config/{terminator,i3,gtk-3.0,fontconfig};
   yadm commit -m "Updates dotfiles";
   yadm push -u origin master;
 }

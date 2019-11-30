@@ -337,8 +337,9 @@ for_window [class="Spotify"] move to workspace 10
 exec_always --no-startup-id numlockx on
 exec --no-startup-id nm-applet
 #exec dropbox start
-exec variety
-exec mintupdate-launcher
+#exec variety
+exec --no-startup-id nitrogen --restore
+# exec mintupdate-launcher
 #exec volti
 exec pasystray
 exec blueberry-tray
