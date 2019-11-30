@@ -1,3 +1,5 @@
+set nocompatible
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'sheerun/vim-polyglot'
@@ -38,49 +40,50 @@ Plug 'scrooloose/nerdtree'
 Plug 'qpkorr/vim-bufkill'
 Plug 'majutsushi/tagbar'
 Plug 'ervandew/supertab'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'tpope/vim-eunuch'
+" Plug 'terryma/vim-multiple-cursors'
+" Plug 'tpope/vim-eunuch'
 Plug 'wesQ3/vim-windowswap'
 Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 Plug 'junegunn/fzf.vim'
 Plug 'godlygeek/tabular'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'benmills/vimux'
+" Plug 'benmills/vimux'
 Plug 'jeetsukumaran/vim-buffergator'
 Plug 'gilsondev/searchtasks.vim'
 Plug 'Shougo/neocomplete.vim'
-Plug 'tpope/vim-dispatch'
+" Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-surround'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'thaerkh/vim-workspace'
+" Plug 'thaerkh/vim-workspace'
 " Plug 'xolox/vim-session'
 " Plug 'xolox/vim-misc'
 
 " Elm Support
-Plug 'lambdatoast/elm.vim'
+" Plug 'lambdatoast/elm.vim'
 
 " Theme / Interface
 Plug 'ryanoasis/vim-devicons'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'sjl/badwolf'
-Plug 'morhetz/gruvbox'
-Plug 'junegunn/limelight.vim'
+" Plug 'sjl/badwolf'
+" Plug 'morhetz/gruvbox'
+" Plug 'junegunn/limelight.vim'
 Plug 'mkarmona/colorsbox'
-Plug 'romainl/Apprentice'
-Plug 'Lokaltog/vim-distinguished'
-Plug 'chriskempson/base16-vim'
-Plug 'w0ng/vim-hybrid'
-Plug 'daylerees/colour-schemes'
-Plug 'atelierbram/Base2Tone-vim'
-Plug 'joshdick/onedark.vim'
-Plug 'mhartington/oceanic-next'
+" Plug 'romainl/Apprentice'
+" Plug 'Lokaltog/vim-distinguished'
+" Plug 'chriskempson/base16-vim'
+" Plug 'w0ng/vim-hybrid'
+" Plug 'daylerees/colour-schemes'
+" Plug 'atelierbram/Base2Tone-vim'
+" Plug 'joshdick/onedark.vim'
+" Plug 'mhartington/oceanic-next'
 Plug 'drewtempelmeyer/palenight.vim'
 " Plug 'jordwalke/vim-taste'
 
 call plug#end()
 
-
+set hidden
 set encoding=UTF-8
 
 " Linter config
@@ -89,6 +92,24 @@ let b:ale_fix_on_save = 1
 let g:syntastic_enable_racket_racket_checker = 1
 
 set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf
+
+set autoindent
+set copyindent
+set showmatch
+set ignorecase
+set smartcase
+set smarttab
+set hlsearch
+set incsearch
+
+set history=800
+set undolevels=1000
+set title
+set visualbell
+set noerrorbells
+
+set nobackup
+set noswapfile
 
 " Show linenumbers
 set number
@@ -138,16 +159,14 @@ autocmd BufEnter * NERDTreeMirror
 
 " Sessions
 " au VimLeave * if this_session != "" | exe "mksession! ".this_session
-let g:workspace_autosave_always = 1
-let g:workspace_session_directory = $HOME . '/.vim/sessions/'
-
-set hidden
+" let g:workspace_autosave_always = 1
+" let g:workspace_session_directory = $HOME . '/.vim/sessions/'
 
 let g:gutentags_enabled = 1
 
 " nmap <C-u> <Plug>(PromptJsFileImport)
-nmap <C-u> <Plug>(JsFileImport)
-nmap <C-i> <Plug>(JsGotoDefinition)
+" nmap <C-u> <Plug>(JsFileImport)
+" nmap <C-i> <Plug>(JsGotoDefinition)
 
 nmap ,n :NERDTreeFind<CR>
 
