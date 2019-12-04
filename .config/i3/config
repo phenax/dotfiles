@@ -224,10 +224,11 @@ bindsym $mod+Return exec terminator;focus
 
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -fn 'NotoMonoRegular:bold:pixelsize=18' 
+# bindsym $mod+d exec dmenu_run -fn 'NotoMonoRegular:bold:pixelsize=18' 
+bindsym $mod+d exec rofi -modi drun#window#run -show drun -sidebar-mode -theme "~/.config/rofi-themes/User Themes/onedark"
 
 # start alternative menu j4-dmenu based on desktop files in /usr/share/applications
-bindsym $mod+shift+d exec j4-dmenu-desktop --dmenu="dmenu -fn 'DroidSansMono:bold:pixelsize=16' -nb '#fdf6e3' -nf '#586c75' -sf '#fdf6e3' -sb '#FFAF00'"
+# bindsym $mod+shift+d exec j4-dmenu-desktop --dmenu="dmenu -fn 'DroidSansMono:bold:pixelsize=16' -nb '#fdf6e3' -nf '#586c75' -sf '#fdf6e3' -sb '#FFAF00'"
 
 # start up i3-dmenu-desktop
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
@@ -242,8 +243,8 @@ bindsym $mod+shift+d exec j4-dmenu-desktop --dmenu="dmenu -fn 'DroidSansMono:bol
 # xrandr --output DVI-I-2 --right-of DVI-I-1 --auto
 
 # my current setup
-set $firstMonitor DVI-I-1
-set $secondMonitor DVI-I-2
+set $firstMonitor eDP-1 
+set $secondMonitor HDMI-1
 
 #set $firstMonitor DVI-I-2
 #set $secondMonitor VGA-0
@@ -254,16 +255,16 @@ set $secondMonitor DVI-I-2
 #set $firstMonitor DVI-0
 #set $secondMonitor DVI-1
 
-#workspace 1 output $firstMonitor
-#workspace 2 output $firstMonitor
-#workspace 3 output $firstMonitor
-#workspace 4 output $firstMonitor
-#workspace 5 output $firstMonitor
-#workspace 6 output $secondMonitor
-#workspace 7 output $secondMonitor
-#workspace 8 output $secondMonitor
-#workspace 9 output $secondMonitor
-#workspace 10 output $secondMonitor
+workspace 1 output $firstMonitor
+workspace 2 output $firstMonitor
+workspace 3 output $firstMonitor
+workspace 4 output $firstMonitor
+workspace 5 output $firstMonitor
+workspace 6 output $secondMonitor
+workspace 7 output $secondMonitor
+workspace 8 output $secondMonitor
+workspace 9 output $secondMonitor
+workspace 10 output $secondMonitor
 
 # switch to workspace
 bindsym $mod+1 workspace 1
@@ -343,6 +344,7 @@ exec --no-startup-id nitrogen --restore
 #exec volti
 exec pasystray
 exec blueberry-tray
+# exec clipit
 
 
 # USER APPLICATIONS
