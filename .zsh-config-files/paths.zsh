@@ -1,6 +1,6 @@
 
 export GOROOT=/usr/lib/go-1.10
-export GOPATH=/mnt/go
+export GOPATH=$HOME/dev/go
 export DENO_INSTALL="/home/akshayn/.deno"
 
 export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.cargo/bin:$HOME/.cabal/bin:/home/linuxbrew/.linuxbrew/bin:$PATH

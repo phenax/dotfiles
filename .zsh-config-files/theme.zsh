@@ -12,4 +12,5 @@ prompt_dir() {
   prompt_segment blue black '%c'
 }
 
+# PROMPT=$(prompt_segment black default ' 🌈   ')
 

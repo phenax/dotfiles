@@ -50,3 +50,9 @@ reset-origin() {
   fi
 }
 
+
+
+# Node aliases
+alias nr="npm run"
+
+
