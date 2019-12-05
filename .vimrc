@@ -1,5 +1,8 @@
 set nocompatible
 
+let mapleader = "\\"
+let maplocalleader = ","
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'sheerun/vim-polyglot'
@@ -30,7 +33,7 @@ Plug 'w0rp/ale'
 " Typescript
 Plug 'heavenshell/vim-tslint'
 Plug 'ludovicchabant/vim-gutentags'
-Plug 'kristijanhusak/vim-js-file-import', {'do': 'npm install'}
+" Plug 'kristijanhusak/vim-js-file-import', {'do': 'npm install'}
 " Plug 'Quramy/tsuquyomi'
 " Plug 'leafgarland/typescript-vim'
 " Plug 'Quramy/vim-js-pretty-template'
@@ -54,10 +57,15 @@ Plug 'gilsondev/searchtasks.vim'
 Plug 'Shougo/neocomplete.vim'
 " Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-surround'
-Plug 'editorconfig/editorconfig-vim'
+" Plug 'editorconfig/editorconfig-vim'
 " Plug 'thaerkh/vim-workspace'
 " Plug 'xolox/vim-session'
 " Plug 'xolox/vim-misc'
+
+" Org mode
+Plug 'jceb/vim-orgmode'
+Plug 'mattn/calendar-vim'
+
 
 " Elm Support
 " Plug 'lambdatoast/elm.vim'
@@ -151,12 +159,6 @@ let g:airline_powerline_fonts = 1
 colorscheme palenight
 " colorscheme taste
 
-" Open NERDTree in new tabs and windows if no command line args set
-autocmd VimEnter * NERDTree
-autocmd BufEnter * NERDTreeMirror
-
-" let NERDTreeMapOpenInTab='<ENTER>'
-
 " Sessions
 " au VimLeave * if this_session != "" | exe "mksession! ".this_session
 " let g:workspace_autosave_always = 1
@@ -165,8 +167,29 @@ autocmd BufEnter * NERDTreeMirror
 let g:gutentags_enabled = 1
 
 " nmap <C-u> <Plug>(PromptJsFileImport)
-" nmap <C-u> <Plug>(JsFileImport)
-" nmap <C-i> <Plug>(JsGotoDefinition)
+nmap <C-u> <Plug>(JsFileImport)
+nmap <C-i> <Plug>(JsGotoDefinition)
 
+" Open NERDTree in new tabs and windows if no command line args set
+" autocmd VimEnter * NERDTree
+" let NERDTreeMapOpenInTab='<ENTER>'
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * NERDTree
+autocmd BufEnter * NERDTreeMirror
 nmap ,n :NERDTreeFind<CR>
+
+" NERDTress File highlighting
+" function! NERDTreeHighlightFile(extension, fg, bg, guifg)
+"  exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg . ' guifg='. a:guifg
+"  exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
+" endfunction
+
+" call NERDTreeHighlightFile('json', 'yellow', 'none', '#ffeaa7')
+" call NERDTreeHighlightFile('html', 'yellow', 'none', 'yellow')
+" call NERDTreeHighlightFile('css', 'cyan', 'none', '#fd79a8')
+" call NERDTreeHighlightFile('scss', 'cyan', 'none', '#fd79a8')
+" call NERDTreeHighlightFile('js', 'blue', 'none', '#00cec9')
+" call NERDTreeHighlightFile('ts', 'blue', 'none', '#0984e3')
+" call NERDTreeHighlightFile('tsx', 'blue', 'none', '#0984e3')
+" call NERDTreeHighlightFile('jsx', 'blue', 'none', '#0984e3')
 

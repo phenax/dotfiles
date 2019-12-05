@@ -339,7 +339,7 @@ exec_always --no-startup-id numlockx on
 exec --no-startup-id nm-applet
 #exec dropbox start
 #exec variety
-exec --no-startup-id nitrogen --restore
+# exec --no-startup-id nitrogen --restore
 # exec mintupdate-launcher
 #exec volti
 exec pasystray
@@ -358,8 +358,8 @@ for_window [class="Project"] focus
 # exec spotify
 # for_window [class="Spotify"] focus
 
-exec ~/.config/i3/start-conkys.sh
-#exec dunst -config ~/.config/i3/dunstrc
+# exec ~/.config/i3/start-conkys.sh
+# exec dunst -config ~/.config/i3/dunstrc
 
 
 ################### SHORTCUTS APPLICATIONS ######################
@@ -564,10 +564,10 @@ bar {
 	# status_command ~/.config/i3/start-conky-i3statusbar.sh
 
 	
-    height 25
+    height 23
     workspace_buttons yes
     separator_symbol " :: "
-    
+ 
     colors {
             background #2F2F2F
             statusline #d6d6d6
