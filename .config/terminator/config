@@ -55,6 +55,7 @@
       parent = child3
       profile = default
       type = Terminal
+      command = tty-clock -t -b -c
       uuid = 2f6f3edf-349e-476e-97d9-b96f379d07a7
 [plugins]
 [profiles]
