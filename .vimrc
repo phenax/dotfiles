@@ -29,6 +29,8 @@ Plug 'maksimr/vim-jsbeautify'
 Plug 'vim-syntastic/syntastic'
 Plug 'neomake/neomake'
 Plug 'w0rp/ale'
+" Plug 'josudoey/vim-eslint-fix'
+
 
 " Typescript
 Plug 'heavenshell/vim-tslint'
@@ -94,11 +96,20 @@ call plug#end()
 set hidden
 set encoding=UTF-8
 
-" Linter config
-let b:ale_fixers = ['eslint']
-let b:ale_fix_on_save = 1
-let g:syntastic_enable_racket_racket_checker = 1
 
+
+" Linter config
+" let b:ale_fixers = ['eslint']
+let g:ale_enabled = 1
+let b:ale_linters = {'javascript': ['eslint', 'prettier'], 'typescript': ['tslint', 'prettier']}
+let g:ale_fixers = {'javascript': ['prettier', 'remove_trailing_lines', 'trim_whitespace'], 'typescript': ['remove_trailing_lines', 'trim_whitespace']}
+let g:ale_completion_tsserver_autoimport = 1
+" let b:ale_fix_on_save = 1
+let g:ale_lint_on_insert_leave = 1
+let g:syntastic_enable_racket_racket_checker = 1
+set omnifunc=ale#completion#OmniFunc
+
+" FZF (Fuzzy search)
 set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf
 
 set autoindent
