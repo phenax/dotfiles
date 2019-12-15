@@ -125,7 +125,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+# bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 
 ################### RESIZE ##############################
@@ -225,7 +225,10 @@ bindsym $mod+Return exec terminator;focus
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec dmenu_run -fn 'NotoMonoRegular:bold:pixelsize=18' 
-bindsym $mod+d exec rofi -modi drun#window#run -show drun -sidebar-mode -theme "~/.config/rofi-themes/User Themes/onedark"
+bindsym $mod+d exec rofi -modi drun#window#run#emoji -show drun -sidebar-mode -theme "~/.config/rofi-themes/User Themes/onedark"
+# Emoji
+bindsym $mod+Shift+e exec rofi -modi emoji -show emoji -sidebar-mode -theme "~/.config/rofi-themes/User Themes/onedark"
+
 
 # start alternative menu j4-dmenu based on desktop files in /usr/share/applications
 # bindsym $mod+shift+d exec j4-dmenu-desktop --dmenu="dmenu -fn 'DroidSansMono:bold:pixelsize=16' -nb '#fdf6e3' -nf '#586c75' -sf '#fdf6e3' -sb '#FFAF00'"
@@ -325,8 +328,8 @@ assign [class="Nemo"]             → 8
 assign [class="Geary"]            → 9
 assign [class="Evolution"]        → 9
 assign [class="Spotify"]          → 10
-#fix for spotify not moving to workspace 10
-for_window [class="Spotify"] move to workspace 10
+# fix for spotify not moving to workspace 10
+# for_window [class="Spotify"] move to workspace 10
 
 
 ################### EXECUTE ######################
@@ -334,17 +337,14 @@ for_window [class="Spotify"] move to workspace 10
 
 # TRAY APPLICATIONS
 
-# num lock activated
 exec_always --no-startup-id numlockx on
 exec --no-startup-id nm-applet
-#exec dropbox start
 #exec variety
-# exec --no-startup-id nitrogen --restore
-# exec mintupdate-launcher
+#exec --no-startup-id nitrogen --restore
 #exec volti
 exec pasystray
 exec blueberry-tray
-# exec clipit
+#exec clipit
 
 
 # USER APPLICATIONS
@@ -353,37 +353,22 @@ exec google-chrome
 for_window [class="Chrome"] focus
 
 exec terminator -l Project
-for_window [class="Project"] focus
 
 # exec spotify
 # for_window [class="Spotify"] focus
 
-# exec ~/.config/i3/start-conkys.sh
-# exec dunst -config ~/.config/i3/dunstrc
+#exec ~/.config/i3/start-conkys.sh
+
+
+exec --no-startup-id dunst -config ~/.config/i3/dunstrc
 
 
 ################### SHORTCUTS APPLICATIONS ######################
 #mod1 = ALT
 
 bindsym $mod+Shift+Return exec nemo --no-desktop; workspace 8;focus
-bindsym control+mod1+f exec firefox;workspace 1; focus
-bindsym $mod+F1 exec firefox;workspace 1;focus
-bindsym control+mod1+w exec subl;workspace 2;focus
-bindsym $mod+F2 exec subl;workspace 2;focus
-bindsym control+mod1+i exec inkscape;workspace 3;focus
-bindsym $mod+F3 exec inkscape;workspace 3;focus
-bindsym control+mod1+g exec gimp;workspace 4;focus
-bindsym $mod+F4 exec gimp;workspace 4;focus
-bindsym control+mod1+b exec nemo --no-desktop;workspace 8;focus
-bindsym $mod+F8 exec nemo --no-desktop;workspace 8;focus
-bindsym control+mod1+e exec evolution;workspace 9;focus
-bindsym $mod+F9 exec evolution;workspace 9;focus
-bindsym control+mod1+s exec spotify;workspace 10;focus
-bindsym $mod+F10 exec spotify;workspace 10;focus
-#bindsym control+mod1+t exec terminator; focus
-bindsym control+mod1+t exec terminator; focus
-bindsym control+mod1+n exec cinnamon-settings
-
+bindsym control+mod1+f exec google-chrome-stable;workspace 1; focus
+bindsym control+mod1+w exec terminator -l Project;workspace 1;focus
 
 ################### SHORTCUTS WORKSPACES ######################
 
@@ -417,11 +402,7 @@ bindsym Control+Print exec gnome-screenshot -i
 for_window [class="Gnome-disks"] floating enable
 for_window [class="^Skype$"] floating enable
 for_window [class="^Gnome-font-viewer$"] floating enable
-#for_window [class="^Thunar$"] floating enable
 for_window [class="^Gpick$"] floating enable
-#for_window [class="^Vlc$"] floating enable
-#for_window [class="^Spotify$"] floating enable workspace 10
-#for_window [instance="gimp"] floating enable
 for_window [window_role="^gimp-toolbox-color-dialog$"] floating enable
 for_window [instance="variety"] floating enable
 for_window [class="Gnome-system-monitor"] floating enable
@@ -444,7 +425,6 @@ for_window [class="Unetbootin.elf"] floating enable
 for_window [class="Galculator"] floating enable
 for_window [class="Usb-creator-gtk"] floating enable
 for_window [class="MintUpdate.py"] floating enable
-#for_window [class="Bleachbit"] floating enable
 for_window [class="Hexchat"] floating disable
 
 #Popups during fullscreen mode
@@ -456,13 +436,13 @@ popup_during_fullscreen smart
 
 #Variety keybindings
 # trash wallpaper
-bindsym mod1+t exec variety -t
+#bindsym mod1+t exec variety -t
 # next wallpaper
-bindsym mod1+n exec variety -n
+#bindsym mod1+n exec variety -n
 # previous wallpaper
-bindsym mod1+p exec variety -p
+#bindsym mod1+p exec variety -p
 # favorite wallpaper
-bindsym mod1+f exec variety -f
+#bindsym mod1+f exec variety -f
 
 
 ################### MODE_SYSTEM ######################
@@ -484,7 +464,7 @@ mode "$mode_system" {
     bindsym Escape mode "default"
 }
 
-bindsym Ctrl+Shift+l exec betterlockscreen -l dim -t "Stay the fuck away" # i3lock # -fancy
+bindsym Ctrl+Shift+l exec ~/.config/i3/lockscreen.sh
 
 ################### AUDIO ######################
 
@@ -492,10 +472,10 @@ bindsym Ctrl+Shift+l exec betterlockscreen -l dim -t "Stay the fuck away" # i3lo
 bindsym XF86AudioRaiseVolume exec "amixer -D pulse sset Master '5%+'"
 bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master '5%-'"
 bindsym XF86AudioMute exec "amixer -D pulse set Master toggle"
-bindsym XF86AudioPlay exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause" 
-bindsym XF86AudioNext exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next" 
-bindsym XF86AudioPrev exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
-bindsym XF86AudioStop exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Stop"
+#bindsym XF86AudioPlay exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause" 
+#bindsym XF86AudioNext exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next" 
+#bindsym XF86AudioPrev exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
+#bindsym XF86AudioStop exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Stop"
 
 
 ################### BAR ######################
@@ -520,14 +500,6 @@ bindsym $mod+u border none
 
 #new_window 1pixel
 #new_float 1pixel
-
-
-###################       KEYBOARD      ##############################
-
-
-# AZERTY KEYBOARD
-# Change this if you use qwerty
-# exec setxkbmap be
 
 
 ###################       UNCLUTTER      ##############################
@@ -573,9 +545,9 @@ bar {
             statusline #d6d6d6
             separator #666666
             #                     border  backgr. text
-            focused_workspace     #a9a9a9 #222222 #a9a9a9
-            active_workspace      #a9a9a9 #222222 #a9a9a9
-            inactive_workspace    #a9a9a9 #5f676a #a9a9a9
+            focused_workspace     #a9a9a9 #5f676a #a9a9a9
+            active_workspace      #a9a9a9 #5f676a #a9a9a9
+            inactive_workspace    #a9a9a9 #222222 #a9a9a9
             urgent_workspace      #4A4A4A #4A4A4A #a9a9a9
             }
     }

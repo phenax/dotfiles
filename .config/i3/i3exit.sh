@@ -1,7 +1,8 @@
 #!/bin/sh
 lock() {
-    #i3lock -c 222222
-    i3lock -i ~/.config/i3/lockscreen.png -t
+  ./lockscreen.sh
+    # betterlockscreen -l dim -t "Stay the fuck away" 
+    # i3lock -i ~/.config/i3/lockscreen.png -t
 }
 
 case "$1" in

@@ -73,6 +73,7 @@ Plug 'mattn/calendar-vim'
 " Plug 'lambdatoast/elm.vim'
 
 " Theme / Interface
+Plug 'scrooloose/nerdcommenter'
 Plug 'ryanoasis/vim-devicons'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
