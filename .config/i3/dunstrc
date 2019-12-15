@@ -1,5 +1,5 @@
 [global]
-    font = Noto Mono Regular 13
+    font = Source Code Pro for Powerline, FontAwesome Regular, Icons 10
     
     # Allow a small subset of html markup:
     #   <b>bold</b>
@@ -11,7 +11,7 @@
     # <http://developer.gnome.org/pango/stable/PangoMarkupFormat.html>.
     # If markup is not allowed, those tags will be stripped out of the
     # message.
-    allow_markup = yes
+    markup = yes
     
     # The format of the message.  Possible variables are:
     #   %a  appname
@@ -21,8 +21,8 @@
     #   %I  iconname (without its path)
     #   %p  progress value if set ([  0%] to [100%]) or nothing
     # Markup is allowed
-    format = "<b>%s</b>\n%b"
-    
+    format = "<b>%a: </b>\n<i>%s</i>\n%b"
+ 
     # Sort messages by urgency.
     sort = yes
     
@@ -136,20 +136,20 @@
     startup_notification = false
     
     # dmenu path.
-    dmenu = /usr/bin/dmenu -p dunst:
+    dmenu = /usr/bin/rofi -dmenu -sidebar-mode -theme "~/.config/rofi-themes/User Themes/onedark" -p dunst:
     
     # Browser for opening urls in context menu.
-    browser = /usr/bin/firefox -new-tab
+    browser = xdg-open
 
     # Align icons left/right/off
     icon_position = off
 
     # Paths to default icons.
-    icon_folders = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
+    icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
 
-[frame]
-    width = 2
-    color = "#a9a9a9"
+    # Frame config
+    frame_width = 1
+    frame_color = "#a9a9a9"
 
 [shortcuts]
 
@@ -167,7 +167,7 @@
     # Redisplay last message(s).
     # On the US keyboard layout "grave" is normally above TAB and left
     # of "1".
-    #history = ctrl+grave
+    history = ctrl+grave
     
     # Context menu.
     context = ctrl+shift+period
@@ -175,18 +175,18 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#2F2F2F"
-    foreground = "#a9a9a9"
+    background = "#2d3436"
+    foreground = "#ffffff"
     timeout = 3
 
 [urgency_normal]
-    background = "#2F2F2F"
-    foreground = "#a9a9a9"
+    background = "#2d3436"
+    foreground = "#ffffff"
     timeout = 3
 
 [urgency_critical]
-    background = "#900000"
-    foreground = "#a9a9a9"
+    background = "#d63031"
+    foreground = "#ffffff"
     timeout = 10
 
 

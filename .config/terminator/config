@@ -30,13 +30,13 @@
       order = 0
       parent = child0
       position = 1488
-      ratio = 0.777023498695
+      ratio = 0.507023498695
       type = HPaned
     [[[child3]]]
       order = 1
       parent = child1
       position = 781
-      ratio = 0.764936336925
+      ratio = 0.564936336925
       type = VPaned
     [[[terminal2]]]
       order = 0

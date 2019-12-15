@@ -13,6 +13,9 @@ export CALIBRE_API_TOKEN=77297a8ca603e9560f05489ba019579e956db3dd587ebf4a03d8e7e
 export SHAADI=$HOME/dev/shaadi-react;
 export REG_SHAADI=$HOME/dev/shaadi-profile-creation;
 
+export rofi_LIBS=/usr
+export PKG_CONFIG_PATH=/usr/lib/pkgconfig
+
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
