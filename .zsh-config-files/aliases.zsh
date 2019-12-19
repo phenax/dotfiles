@@ -28,10 +28,11 @@ alias l='ls -CF'
 # Git aliases
 alias gunstage="git reset HEAD --"
 alias gaa="git add ."
+alias gamend="git commit --amend"
 
 update-dotfiles() {
   yadm status;
-  yadm add ~/.zshrc ~/.bashrc ~/.vimrc ~/.vim-config-files ~/.zsh-config-files ~/.config/{terminator,i3,gtk-3.0,fontconfig};
+  yadm add ~/.zshrc ~/.bashrc ~/.vimrc ~/.vim-config-files ~/.zsh-config-files ~/.config/{terminator,i3,gtk-3.0,fontconfig,lf} ~/scripts;
   yadm commit -m "Updates dotfiles";
   yadm push -u origin master;
 }
@@ -50,9 +51,17 @@ reset-origin() {
   fi
 }
 
-
+lc () {
+    tmp="$(mktemp)"
+    lf -last-dir-path="$tmp" "$@"
+    if [ -f "$tmp" ]; then
+        dir="$(cat "$tmp")"
+        rm -f "$tmp"
+        [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
+    fi
+}
 
 # Node aliases
 alias nr="npm run"
-
+alias ns="npm start"
 

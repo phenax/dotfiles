@@ -1,3 +1,5 @@
+autoload -U colors && colors
+
 plugins=(
   git
 )
@@ -5,14 +7,14 @@ plugins=(
 export ZSH=/home/akshayn/.oh-my-zsh
 ZSH_CUSTOM_CONF_FILES="$HOME/.zsh-config-files"
 
+# . $ZSH_CUSTOM_CONF_FILES/vi.zsh
 . $ZSH_CUSTOM_CONF_FILES/paths.zsh
 . $ZSH_CUSTOM_CONF_FILES/aliases.zsh
 . $ZSH_CUSTOM_CONF_FILES/theme.zsh
+. $ZSH_CUSTOM_CONF_FILES/config.zsh
 
 . ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-export EDITOR='vim'
-export VISUAL='vim'
+# . /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 
 if [ -f `which powerline-daemon` ]; then
     powerline-daemon -q

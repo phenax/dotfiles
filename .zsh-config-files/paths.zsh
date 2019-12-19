@@ -4,10 +4,8 @@ export GOPATH=$HOME/dev/go
 export DENO_INSTALL="/home/akshayn/.deno"
 
 export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.cargo/bin:$HOME/.cabal/bin:/home/linuxbrew/.linuxbrew/bin:$PATH
-export PATH=$HOME/bash-alias/bin:$PATH;
+export PATH=$HOME/.config/bash-aliases/bin:$PATH;
 export PATH="$DENO_INSTALL/bin:$PATH"
-
-export CALIBRE_API_TOKEN=77297a8ca603e9560f05489ba019579e956db3dd587ebf4a03d8e7e501c1355a
 
 # Development dir variables
 export SHAADI=$HOME/dev/shaadi-react;

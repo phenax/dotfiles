@@ -1,0 +1,59 @@
+set hidden true
+set color256 true
+set drawbox true
+set icons true
+set ignorecase true
+
+map h :set hidden!
+
+map st :{{
+    set sortby time
+    set info time
+}}
+
+cmd open ${{
+    case $(file --mime-type "$f" -bL) in
+        text/*|application/json) $EDITOR "$fx";;
+        video/*|application/pdf) xdg-open "$f" & disown;;
+        *) for f in "$fx"; do xdg-open "$f"> /dev/null 2> /dev/null & done;;
+    esac
+}}
+
+cmd mkdir ${{
+    printf "Directory Name: "
+    read ans
+    mkdir $ans
+}}
+
+cmd rename %[ -e $1 ] && printf "file exists" || mv $f $1
+
+cmd mkfile ${{
+    printf "File Name: "
+    read ans
+    $EDITOR $ans
+}}
+
+cmd openterm ${{
+    $TERMINAL &
+}}
+
+map m
+map n
+map "'"
+map '"'
+map d
+map c
+map e
+
+map dd delete
+map p paste
+map x cut
+map y copy
+map <enter> open
+map mf mkfile
+map md mkdir
+map r rename
+
+
+
+
