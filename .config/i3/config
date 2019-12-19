@@ -239,31 +239,15 @@ bindsym $mod+Shift+e exec rofi -modi emoji -show emoji -sidebar-mode -theme "~/.
 
 ################### DUAL SCREEN ######################
 
-
-# setting variables for later use
-# use xrandr to know the names of your monitors
-# use this line to tell which monitor is on the right
-# xrandr --output DVI-I-2 --right-of DVI-I-1 --auto
-
-# my current setup
 set $firstMonitor eDP-1 
 set $secondMonitor HDMI-1
 
-#set $firstMonitor DVI-I-2
-#set $secondMonitor VGA-0
-
-#set $firstMonitor DVI-I-2
-#set $secondMonitor DVI-I-3
-
-#set $firstMonitor DVI-0
-#set $secondMonitor DVI-1
-
-set $ws1 "1: Reg"
-set $ws2 "2: Shaadi"
-set $ws3 "3: Term"
+set $ws1 1
+set $ws2 2
+set $ws3 3
 set $ws4 4
 set $ws5 5
-set $ws6 "6: Chrome"
+set $ws6 6
 set $ws7 7
 set $ws8 8
 set $ws9 9
