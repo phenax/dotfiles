@@ -11,6 +11,9 @@ Plug 'sheerun/vim-polyglot'
 Plug 'kablamo/vim-git-log'
 Plug 'gregsexton/gitv'
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+let g:gitgutter_max_signs = 500
+nmap ghp <Plug>(GitGutterPreviewHunk)
 
 " Markdown / Writting
 Plug 'reedes/vim-pencil'
@@ -109,9 +112,24 @@ let g:ale_completion_tsserver_autoimport = 1
 let g:ale_lint_on_insert_leave = 1
 let g:syntastic_enable_racket_racket_checker = 1
 set omnifunc=ale#completion#OmniFunc
+let g:ale_sign_error = '✖'
+let g:ale_sign_warning = '⚠'
+
 
 " FZF (Fuzzy search)
 set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf
+let g:fzf_layout = { 'down': '~25%' }
+if isdirectory(".git")
+  " if in a git project, use :GFiles
+  nmap <silent> <leader>f :GFiles --cached --others --exclude-standard<cr>
+  " nmap <c-p> :GFiles --cached --others --exclude-standard<cr>
+else
+  " otherwise, use :FZF
+  nmap <silent> <leader>f :FZF<cr>
+  " nmap <c-p> :FZF<cr>
+endif
+nmap <c-f> :Ag<cr>
+
 
 set autoindent
 set copyindent
@@ -189,6 +207,8 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * NERDTree
 autocmd BufEnter * NERDTreeMirror
 nmap ,n :NERDTreeFind<CR>
+
+"autocmd InsertLeave * write
 
 " NERDTress File highlighting
 " function! NERDTreeHighlightFile(extension, fg, bg, guifg)
