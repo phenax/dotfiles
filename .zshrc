@@ -5,16 +5,12 @@ plugins=(
 )
 
 export ZSH=/home/akshayn/.oh-my-zsh
-ZSH_CUSTOM_CONF_FILES="$HOME/.zsh-config-files"
+ZSH_CUSTOM_CONF_FILES="$HOME/.config/zshconf"
 
-# . $ZSH_CUSTOM_CONF_FILES/vi.zsh
-. $ZSH_CUSTOM_CONF_FILES/paths.zsh
-. $ZSH_CUSTOM_CONF_FILES/aliases.zsh
-. $ZSH_CUSTOM_CONF_FILES/theme.zsh
-. $ZSH_CUSTOM_CONF_FILES/config.zsh
+for f in $ZSH_CUSTOM_CONF_FILES/*; do source $f; done
 
 . ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-# . ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+. ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 if [ -f `which powerline-daemon` ]; then
     powerline-daemon -q
