@@ -32,7 +32,8 @@ alias gamend="git commit --amend"
 
 update-dotfiles() {
   yadm status;
-  yadm add ~/.zshrc ~/.bashrc ~/.vimrc ~/.vim-config-files ~/.zsh-config-files ~/.config/{terminator,i3,gtk-3.0,fontconfig,lf} ~/scripts;
+  yadm add ~/.config/{terminator,i3,gtk-3.0,fontconfig,lf,clipit,rofi-themes,mimeapps.list};
+  yadm add ~/.zshrc ~/.bashrc ~/.vimrc ~/.vim-config-files ~/.zsh-config-files ~/scripts;
   yadm commit -m "Updates dotfiles";
   yadm push -u origin master;
 }
