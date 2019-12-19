@@ -14,7 +14,7 @@ ZSH_CUSTOM_CONF_FILES="$HOME/.zsh-config-files"
 . $ZSH_CUSTOM_CONF_FILES/config.zsh
 
 . ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-# . /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+# . ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 if [ -f `which powerline-daemon` ]; then
     powerline-daemon -q
