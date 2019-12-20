@@ -27,5 +27,11 @@ sudo apt install \
   ack \
   inxi \
   zsh \
+  pass \
+  calcurse \
   zsh-syntax-highlighting;
+
+brew tap nickolasburr/pfa && brew install sc-im;
+
+ln -s ~/.config/calcurse ~/.calcurse;
 

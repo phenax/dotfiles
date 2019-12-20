@@ -51,12 +51,57 @@
       type = Terminal
       uuid = e8cb6d97-7669-4965-b586-a891729d45de
     [[[terminal5]]]
+      command = tty-clock -t -b -c
+      order = 1
+      parent = child3
+      profile = default
+      type = Terminal
+      uuid = 2f6f3edf-349e-476e-97d9-b96f379d07a7
+  [[System]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = e0885993-c86c-4416-b685-59edf2fcc77a
+      last_active_window = True
+      maximised = False
+      order = 0
+      parent = ""
+      position = 1920:0
+      size = 1920, 1057
+      title = tty-clock -t -b -c
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 968
+      ratio = 0.505483028721
+      type = HPaned
+    [[[child3]]]
+      order = 1
+      parent = child1
+      position = 688
+      ratio = 0.653992395437
+      type = VPaned
+    [[[terminal2]]]
+      order = 0
+      parent = child1
+      profile = default
+      type = Terminal
+      command = htop
+      uuid = 3b6c59ec-1df7-4875-9024-bda9ceadc553
+    [[[terminal4]]]
+      order = 0
+      parent = child3
+      profile = default
+      type = Terminal
+      command = calcurse
+      uuid = e0885993-c86c-4416-b685-59edf2fcc77a
+    [[[terminal5]]]
       order = 1
       parent = child3
       profile = default
       type = Terminal
       command = tty-clock -t -b -c
-      uuid = 2f6f3edf-349e-476e-97d9-b96f379d07a7
+      uuid = 084bd6a1-22e5-4805-829b-394f1d4e4742
 [plugins]
 [profiles]
   [[default]]
