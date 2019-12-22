@@ -1,0 +1,6 @@
+set xlsx_readformulas
+set autocalc
+set overlap
+set newline_action=j
+set ignorecase
+

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# https://github.com/Corwind/termite-install
+
 sudo apt install \
   yadm \
   vim \
