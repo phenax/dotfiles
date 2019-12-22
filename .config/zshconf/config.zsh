@@ -1,6 +1,6 @@
 export VISUAL='vim'
 export EDITOR="vim"
-export TERMINAL="terminator"
+export TERMINAL="kitty"
 export BROWSER="google-chrome-stable"
 export READER="zathura"
 export FILE="lf"

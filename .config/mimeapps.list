@@ -93,7 +93,7 @@ image/x-portable-bitmap=sxiv.desktop
 image/x-portable-graymap=sxiv.desktop
 image/x-tga=sxiv.desktop
 image/x-xpixmap=sxiv.desktop
-inode/directory=ranger.desktop
+inode/directory=nemo.desktop
 
 [Added Associations]
 text/plain=vim.desktop;vlc.desktop;
@@ -184,4 +184,4 @@ image/x-portable-bitmap=sxiv.desktop;
 image/x-portable-graymap=sxiv.desktop;
 image/x-tga=sxiv.desktop;
 image/x-xpixmap=sxiv.desktop;
-inode/directory=ranger.desktop;
+inode/directory=ranger.desktop;nemo.desktop;

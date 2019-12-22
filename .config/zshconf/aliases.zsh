@@ -66,4 +66,5 @@ alias nr="npm run"
 alias ns="npm start"
 
 alias ezsh="cd ~/.config/zshconf && vim ~/.zshrc"
+alias edot="vim ~/scripts/dotfiles.sh";
 

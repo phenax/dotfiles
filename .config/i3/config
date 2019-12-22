@@ -213,11 +213,12 @@ font pango:Source Code Pro for Powerline, FontAwesome Regular, Icons 10
 # to figure out settins install dconf-editor
 # gsettings set org.cinnamon.desktop.default-applications.terminal exec /usr/bin/terminator
 
-
 # personal preference for tuning the look
-#bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec terminator;focus
+bindsym $mod+Return exec i3-sensible-terminal; focus
+#bindsym $mod+Return exec $TERMINAL;focus
 # bindsym $mod+Return exec gnome-terminal;focus
+
+bindsym $mod+c exec google-chrome-browser
 
 
 ################### MENU ######################
@@ -334,28 +335,16 @@ assign [class="Spotify"]          → 10
 
 exec_always --no-startup-id numlockx on
 exec --no-startup-id nm-applet
-#exec variety
-#exec --no-startup-id nitrogen --restore
-#exec volti
 exec pasystray
 exec blueberry-tray
 #exec clipit
+exec --no-startup-id dunst -config ~/.config/i3/dunstrc
 
 
 # USER APPLICATIONS
-
 exec google-chrome
-for_window [class="Chrome"] focus
+# for_window [class="Chrome"] focus
 
-exec terminator -l Project
-
-# exec spotify
-# for_window [class="Spotify"] focus
-
-#exec ~/.config/i3/start-conkys.sh
-
-
-exec --no-startup-id dunst -config ~/.config/i3/dunstrc
 
 
 ################### SHORTCUTS APPLICATIONS ######################
