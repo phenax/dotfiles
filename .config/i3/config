@@ -90,6 +90,8 @@ bindsym $mod+Shift+Right move right
 # orientation for new workspaces 
 default_orientation horizontal
 
+workspace_layout tabbed
+
 # split in horizontal orientation
 bindsym $mod+h split h
 

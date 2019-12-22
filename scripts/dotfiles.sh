@@ -1,11 +1,12 @@
 #!/bin/bash
 
 add_dotfiles() {
-  yadm add ~/.vimrc ~/scripts ~/.scimrc ~/.Xresources;
-  yadm add ~/.config/{i3,gtk-3.0,fontconfig,mimeapps.list,rofi-themes};
+  yadm add ~/.vimrc ~/scripts ~/.scimrc;
+  yadm add ~/.Xresources ~/.config/{gtk-3.0,fontconfig,mimeapps.list};
+  yadm add ~/.config/{i3,rofi-themes};
   yadm add ~/.config/{terminator,kitty};
   yadm add ~/.bashrc ~/.zshrc ~/.config/zshconf;
-  yadm add ~/.config/{lf,clipit};
+  yadm add ~/.config/{lf,calcurse,clipit,org,pet};
 }
 
 add_dotfiles;

@@ -1,0 +1,13 @@
+*** TODO Profile creation new flow
+    - [ ] Fix waiting for api response (cypress)
+    - [ ] Finish draft submission api
+    - [ ] Try server side rendering
+    - [ ] Complete page 2 integration
+    - [ ] Add toggle component
+    - [ ] Add tooltip component
+    - [ ] Complete page 3 integration
+    - [ ] Create submission api and final submit action
+    - [ ] Add NRI fields
+    - [ ] Handle isVisible
+    - [ ] Handle field reset logic for isVisible false
+
