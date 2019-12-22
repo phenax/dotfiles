@@ -1,0 +1,4 @@
+[[snippets]]
+  description = "Update shaadi webpush endpoint in indexeddb"
+  command = "db = indexedDB.open('shaadi-sw', 1);\ndb.onsuccess = () => {\n        const tx = db.result.transaction(['config'], 'readwrite');\n        const store = tx.objectStore('config');\n        store.put('https://example.com', 'wp-endpoint');\n};"
+  output = ""
