@@ -1,0 +1,18 @@
+layout tall
+cd $REG_SHAADI
+
+# Editor
+title "VIM"
+
+launch vim
+launch zsh
+launch clock
+
+# Terminal
+# new_window
+
+# Clock
+# new_window
+# launch clock
+# title "Clock"
+
