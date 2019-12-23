@@ -11,6 +11,7 @@ for f in $ZSH_CUSTOM_CONF_FILES/*; do source $f; done
 
 . ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # . ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#kitty + complete setup zsh | source /dev/stdin
 
 if [ -f `which powerline-daemon` ]; then
     powerline-daemon -q

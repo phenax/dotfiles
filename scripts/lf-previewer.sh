@@ -9,7 +9,9 @@ case "$1" in
     *.rar) unrar l "$1";;
     *.7z) 7z l "$1";;
     *.pdf) pdftotext "$1" -;;
+    *.webp) $icat "$1";;
     *.jpg) $icat "$1";;
+    *.jpeg) $icat "$1";;
     *.png) $icat "$1";;
     *.gif) $icat "$1";;
     *) highlight -O ansi "$1" || cat "$1";;
