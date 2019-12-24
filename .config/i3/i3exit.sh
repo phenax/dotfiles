@@ -1,6 +1,6 @@
 #!/bin/sh
 lock() {
-  ./lockscreen.sh
+  ~/scripts/lockscreen.sh
     # betterlockscreen -l dim -t "Stay the fuck away" 
     # i3lock -i ~/.config/i3/lockscreen.png -t
 }

@@ -450,7 +450,7 @@ mode "$mode_system" {
     bindsym Escape mode "default"
 }
 
-bindsym Ctrl+Shift+l exec ~/.config/i3/lockscreen.sh
+bindsym Ctrl+Shift+l exec ~/scripts/lockscreen.sh
 
 ################### AUDIO ######################
 
