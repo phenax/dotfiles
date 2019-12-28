@@ -6,13 +6,8 @@ alias on-complete="notify-send 'Command executed successfully' --urgency normal"
 
 alias clock="tty-clock -t -b -c"
 
-set-php-version() {
-	sudo update-alternatives --set php "/usr/bin/php$1";
-}
-
-set-reminder() {
-	echo "notify-send 'Reminder:: $1'" | at $2
-}
+# Send notification at a particular time
+set-reminder() { echo "notify-send 'Reminder:: $1'" | at $2; }
 
 # Monitor aliases
 alias monitor-off="xrandr --output HDMI-1 --off";
@@ -26,10 +21,10 @@ alias l='ls -CF'
 
 
 # Git aliases
-alias gunstage="git reset HEAD --"
 alias gaa="git add ."
-alias gamend="git commit --amend"
 
+
+# Sync dotfiles to github (uses yadm)
 update-dotfiles() {
   yadm status;
   ~/scripts/dotfiles.sh;
@@ -37,20 +32,24 @@ update-dotfiles() {
   yadm push -u origin master;
 }
 
+
+# reset-origin a2_develop
 reset-origin() {
   if [[ -z $(git status -s) ]];
     then
       currentBranch="$(git rev-parse --abbrev-ref HEAD)"
       branch="$1";
-      git checkout $branch;
-      git reset --hard origin/production;
-      git push -u origin $branch -f;
+      git checkout $branch &&
+      git pull &&
+      git reset --hard origin/production &&
+      git push -u origin $branch -f &&
       git checkout $currentBranch;
     else
       echo "Your branch is dirty. Stash or commit changed before proceeding";
   fi
 }
 
+# lf with cd to navigated directory on quit
 lc () {
     tmp="$(mktemp)"
     lf -last-dir-path="$tmp" "$@"
@@ -61,10 +60,13 @@ lc () {
     fi
 }
 
+
 # Node aliases
 alias nr="npm run"
 alias ns="npm start"
 
+# Config editors
 alias ezsh="cd ~/.config/zshconf && vim ~/.zshrc"
 alias edot="vim ~/scripts/dotfiles.sh";
+alias eorg="vim ~/.config/org";
 
