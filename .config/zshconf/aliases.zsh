@@ -1,18 +1,18 @@
 
+
+# Utility stuff
 alias open="xdg-open";
-alias show-mobile-screen="adb shell screenrecord --output-format=h264 - | ffplay -";
-
-alias on-complete="notify-send 'Command executed successfully' --urgency normal";
-
 alias clock="tty-clock -t -b -c"
-
-# Send notification at a particular time
 set-reminder() { echo "notify-send 'Reminder:: $1'" | at $2; }
+alias on-complete="notify-send 'Command executed successfully' --urgency normal";
+alias show-mobile-screen="adb shell screenrecord --output-format=h264 - | ffplay -";
 
 # Monitor aliases
 alias monitor-off="xrandr --output HDMI-1 --off";
 monitor-on() { xrandr --output HDMI-1 --auto --${1:-"right-of"} eDP-1; };
 
+# Fuck
+eval $(thefuck --alias);
 
 # LS aliases 
 alias ll='ls -alF'
@@ -22,7 +22,6 @@ alias l='ls -CF'
 
 # Git aliases
 alias gaa="git add ."
-
 
 # Sync dotfiles to github (uses yadm)
 update-dotfiles() {
