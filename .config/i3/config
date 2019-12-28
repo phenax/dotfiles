@@ -315,19 +315,20 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 ################### ASSIGN ######################
 
 
-assign [class="Terminal"]         → 1
+assign [class="Project"]         → 1
 assign [class="Project"]          → 2
 assign [class="Project"]          → 3
 assign [class="Project"]          → 4
-assign [class="Chrome"]           → 5
-assign [class="Gimp"]             → 6
-assign [class="Vlc"]              → 7
+assign [class="Project"]           → 5
+assign [class="Chrome"]             → 6
+assign [class="Calendar"]              → 7
 assign [class="Nemo"]             → 8
 assign [class="Geary"]            → 9
 assign [class="Evolution"]        → 9
-assign [class="Spotify"]          → 10
+assign [class="Youtube Music"]          → 10
 # fix for spotify not moving to workspace 10
-# for_window [class="Spotify"] move to workspace 10
+
+for_window [class="YouTube Music"] move to workspace 10
 
 
 ################### EXECUTE ######################
