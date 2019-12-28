@@ -1,5 +1,8 @@
 
-image-preview() { ~/scripts/image-preview.sh "$@"; }
+_create_runner() { alias $1="~/scripts/${2:-"$1.sh"}"; }
 
-brightness() { ~/scripts/brightness.sh "$@"; }
+_create_runner "image-preview";
+_create_runner "brightness";
+_create_runner "lockscreen";
+_create_runner "xres-template" "xconfig.js";
 
