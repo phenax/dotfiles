@@ -62,11 +62,18 @@ lc () {
 
 
 # Node aliases
-alias nr="npm run"
-alias ns="npm start"
+alias nr="npm run";
+alias ns="npm start";
+alias nt="npm test";
 
 # Config editors
-alias ezsh="cd ~/.config/zshconf && vim ~/.zshrc"
+alias ezsh="cd ~/.config/zshconf && vim ~/.zshrc";
 alias edot="vim ~/scripts/dotfiles.sh";
 alias eorg="vim ~/.config/org";
+
+# Application shortcuts
+alias chrome="google-chrome";
+alias chromei="google-chrome --incognito";
+alias qute="qutebrowser";
+alias qutei="qutebrowser --temp-basedir -s content.private_browsing true";
 

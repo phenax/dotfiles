@@ -183,44 +183,20 @@ bindsym $mod+r mode "resize"
 
 ################### FONTS ######################
 
-# Font for window titles. Will also be used by the bar unless a different font
-# is used in the bar {} block below.
 # choose your font
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # font -misc-fixed-bold-r-normal-*-15-140-75-75-c-90-iso10646-1
-# font pango:DejaVu Sans Mono 12
-# font pango:DejaVu Sans Mono, Terminus Bold Semi-Condensed 11
-# font pango:Droid Sans Mono Dotted 12
-# font pango:hermit 12
-# font pango:Inconsolata 15
-# font pango:monospace 12
-# font pango:SourceCodePro-SemiBold 11
 font pango:Source Code Pro for Powerline, FontAwesome Regular, Icons 10
-# font pango:Terminus 14px
-# font pango:UbuntuMono-regular 12
-# from ttf-chromeos-fonts
-# font pango:Cousine 13
-# font pango:Arimo 11
-# font pango:Sans 13 
-# font pango:Noto Mono Regular 13
-# font pango:DroidSansMono 13
-# font pango:Noto Mono Regular 13
 
 
-################### TERMINAL ######################
+################### SHORTCUT Applications ######################
 
-# went from thunar from xfce4 to nemo of Linux mint for svg design reasons
-# open terminal and icon in panel point to terminator rather than gnome-terminal
-# copy/paste one time in terminal
-# to figure out settins install dconf-editor
-# gsettings set org.cinnamon.desktop.default-applications.terminal exec /usr/bin/terminator
-
-# personal preference for tuning the look
 bindsym $mod+Return exec i3-sensible-terminal; focus
-#bindsym $mod+Return exec $TERMINAL;focus
-# bindsym $mod+Return exec gnome-terminal;focus
 
-bindsym $mod+c exec google-chrome-browser
+bindsym $mod+o exec qutebrowser; focus
+bindsym $mod+p exec qutebrowser --temp-basedir -s content.private_browsing true; focus
+
+bindsym $mod+c exec google-chrome; focus
 
 
 ################### MENU ######################
@@ -228,17 +204,10 @@ bindsym $mod+c exec google-chrome-browser
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec dmenu_run -fn 'NotoMonoRegular:bold:pixelsize=18' 
-bindsym $mod+d exec rofi -modi drun#window#run#emoji -show drun -sidebar-mode -theme "~/.config/rofi-themes/User Themes/onedark"
-# Emoji
-bindsym $mod+Shift+e exec rofi -modi emoji -show emoji -sidebar-mode -theme "~/.config/rofi-themes/User Themes/onedark"
-
-
-# start alternative menu j4-dmenu based on desktop files in /usr/share/applications
-# bindsym $mod+shift+d exec j4-dmenu-desktop --dmenu="dmenu -fn 'DroidSansMono:bold:pixelsize=16' -nb '#fdf6e3' -nf '#586c75' -sf '#fdf6e3' -sb '#FFAF00'"
-
-# start up i3-dmenu-desktop
-#bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-
+bindsym $mod+d exec rofi -modi drun#window#run -show drun
+bindsym $mod+Shift+semicolon exec rofi -modi calc -show calc
+bindsym $mod+Shift+e exec rofi -modi emoji -show emoji
+bindsym $mod+Shift+p exec rofi-pass
 
 ################### DUAL SCREEN ######################
 
