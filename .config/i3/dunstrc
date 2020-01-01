@@ -136,7 +136,7 @@
     startup_notification = false
     
     # dmenu path.
-    dmenu = /usr/bin/rofi -dmenu -sidebar-mode -theme "~/.config/rofi-themes/User Themes/onedark" -p dunst:
+    dmenu = /usr/bin/rofi -dmenu -p dunst:
     
     # Browser for opening urls in context menu.
     browser = xdg-open
