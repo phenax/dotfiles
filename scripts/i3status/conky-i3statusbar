@@ -1,0 +1,77 @@
+
+conky.config = {
+  out_to_x = false,
+  own_window = false,
+  out_to_console = true,
+  background = false,
+  max_text_width = 0,
+  update_interval = 1,
+  total_run_times = 0,
+  short_units = true,
+  if_up_strictness = "address",
+  use_spacer = "left",
+  override_utf8_locale = false,
+  cpu_avg_samples = 2
+}
+
+conky.text = [[
+[
+  {
+    "full_text": "",
+    "color": "\#2aa198",
+    "background": "\#2F2F2F",
+    "separator": true,
+    "separator_block_width": 0
+  },
+  {
+    "full_text": "       ${exec ~/scripts/menuitems.sh volume}  ",
+    "color": "\#fdf6e3",
+    "background": "\#2aa198",
+    "separator": true,
+    "separator_block_width": 0
+  },
+  {
+    "full_text": "",
+    "color": "\#859900",
+    "background": "\#2aa198",
+    "separator": true,
+    "separator_block_width": 0
+  },
+  {
+    "full_text": "   ☀  ${exec ~/scripts/menuitems.sh brightness}  ",
+    "color": "\#fdf6e3",
+    "background": "\#859900",
+    "separator": true,
+    "separator_block_width": 0
+  },
+  {
+    "full_text": "",
+    "color": "\#dc322f",
+    "background": "\#859900",
+    "separator": true,
+    "separator_block_width": 0
+  },
+  {
+    "full_text": "      ${time %a, %d/%m/%y} ${time %l:%M %p}  ",
+    "color": "\#fdf6e3",
+    "background": "\#dc322f",
+    "separator": true,
+    "separator_block_width": 0
+  },
+  {
+    "full_text": "",
+    "color": "\#6c71c4",
+    "background": "\#dc322f",
+    "separator": true,
+    "separator_block_width": 0
+  },
+  {
+    "full_text": "   ${exec ~/scripts/menuitems.sh battery}  ",
+    "color": "\#fdf6e3",
+    "background": "\#6c71c4",
+    "separator": true,
+    "separator_block_width": 0
+  }
+],
+]]
+
