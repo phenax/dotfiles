@@ -53,16 +53,10 @@ menu() {
   fi
 
   case "$action" in
-    copy)
-      echo "$bookmark_url" | copy;
-      move_bookmark_up "$selected_title";
-    ;;
-    open)
-      xdg-open "$bookmark_url";
-      move_bookmark_up "$selected_title";
-    ;;
+    copy) echo "$bookmark_url" | copy && move_bookmark_up "$selected_title" ;;
+    open) xdg-open "$bookmark_url" && move_bookmark_up "$selected_title" ;;
     delete) delete_bookmark $(find_by_title "$selected_title") ;;
-    type) echo "$bookmark_url" ;; # TODO: Type the item out
+    type) xdotool type --delay 30 "$bookmark_url" ;;
     add)
       url=$(rofi -dmenu -p "URL for $selected_title");
       [[ -z "$url" ]] && exit 0;
