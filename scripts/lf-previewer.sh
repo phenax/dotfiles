@@ -1,7 +1,21 @@
 #!/bin/sh
 
-kitty +kitten icat --clear  --transfer-mode file --silent
-icat="kitty +kitten icat --place 30x30@40x0 --transfer-mode file --silent"
+img() { ~/scripts/image-preview.sh "$@"; }
+
+get_lf_dimens() {
+  width="$(echo "$(img get_width) / 2 - 3" | bc)";
+  height="$(img get_height)";
+  left="$(echo "$width + 5" | bc)";
+  top="5";
+  echo "${width}x${height}@${left}x${top}";
+}
+
+show_image() {
+  dimens="$(get_lf_dimens)";
+  img preview "$1" "$dimens";
+}
+
+img clear;
 
 case "$1" in
     *.tar*) tar tf "$1";;
@@ -9,11 +23,13 @@ case "$1" in
     *.rar) unrar l "$1";;
     *.7z) 7z l "$1";;
     *.pdf) pdftotext "$1" -;;
-    *.webp) $icat "$1";;
-    *.jpg) $icat "$1";;
-    *.jpeg) $icat "$1";;
-    *.png) $icat "$1";;
-    *.gif) $icat "$1";;
+    *.webp) show_image "$1";;
+    *.jpg) show_image "$1";;
+    *.jpeg) show_image "$1";;
+    *.png) show_image "$1";;
+    *.gif) show_image "$1";;
     *) highlight -O ansi "$1" || cat "$1";;
 esac
+
+# Use pygmentize for syntax highlighting
 

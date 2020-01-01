@@ -7,6 +7,8 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'sheerun/vim-polyglot'
 
+Plug 'lilydjwg/colorizer'
+
 " Git Support
 Plug 'kablamo/vim-git-log'
 Plug 'gregsexton/gitv'
@@ -32,11 +34,11 @@ Plug 'maksimr/vim-jsbeautify'
 Plug 'vim-syntastic/syntastic'
 Plug 'neomake/neomake'
 Plug 'w0rp/ale'
-" Plug 'josudoey/vim-eslint-fix'
 
 
 " Typescript
 Plug 'heavenshell/vim-tslint'
+Plug 'leafgarland/typescript-vim'
 Plug 'ludovicchabant/vim-gutentags'
 " Plug 'kristijanhusak/vim-js-file-import', {'do': 'npm install'}
 " Plug 'Quramy/tsuquyomi'
@@ -48,6 +50,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'qpkorr/vim-bufkill'
 Plug 'majutsushi/tagbar'
 Plug 'ervandew/supertab'
+Plug 'djoshea/vim-autoread'
 " Plug 'terryma/vim-multiple-cursors'
 " Plug 'tpope/vim-eunuch'
 Plug 'wesQ3/vim-windowswap'
@@ -99,15 +102,15 @@ call plug#end()
 
 set hidden
 set encoding=UTF-8
-
-
+set autoread
+set mouse=a
 
 " Linter config
 let g:ale_enabled = 1
 let b:ale_linters = {'javascript': ['eslint'], 'typescript': ['eslint']}
 let g:ale_fixers = {'javascript': ['eslint'], 'typescript': ['eslint']}
 let g:ale_completion_tsserver_autoimport = 1
-" let b:ale_fix_on_save = 1
+let b:ale_fix_on_save = 1
 let g:ale_lint_on_insert_leave = 1
 let g:syntastic_enable_racket_racket_checker = 1
 "set omnifunc=ale#completion#OmniFunc
@@ -144,7 +147,7 @@ set undolevels=1000
 set title
 set visualbell
 set noerrorbells
-
+set backspace=indent,eol,start
 set nobackup
 set noswapfile
 
@@ -162,6 +165,13 @@ set expandtab
 set laststatus=2
 
 set cursorline
+
+" generally use marker folds
+set foldmethod=marker
+set foldcolumn=2
+" open folds when jumping to marks
+set foldopen+=mark
+
 
 " Theme and Styling
 set t_Co=256
@@ -184,14 +194,9 @@ let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline#extensions#tabline#switch_buffers_and_tabs = 1
 let g:airline_powerline_fonts = 1
 
-" set guifont=Fira\ Code\ 12
+set guifont=Source\ Code\ Pro\ for\ Powerline\ 10
 colorscheme palenight
 " colorscheme taste
-
-" Sessions
-" au VimLeave * if this_session != "" | exe "mksession! ".this_session
-" let g:workspace_autosave_always = 1
-" let g:workspace_session_directory = $HOME . '/.vim/sessions/'
 
 let g:gutentags_enabled = 1
 
@@ -199,28 +204,55 @@ let g:gutentags_enabled = 1
 nmap <C-u> <Plug>(JsFileImport)
 nmap <C-i> <Plug>(JsGotoDefinition)
 
+let g:NERDSpaceDelims = 1
+let NERDTreeShowHidden = 1
+let g:WebDevIconsNerdTreeAfterGlyphPadding = '  '
+let g:WebDevIconsUnicodeGlyphDoubleWidth = 0
+let g:WebDevIconsNerdTreeGitPluginForceVAlign = 1
+
 " Open NERDTree in new tabs and windows if no command line args set
 " autocmd VimEnter * NERDTree
-" let NERDTreeMapOpenInTab='<ENTER>'
 autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * NERDTree
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 autocmd BufEnter * NERDTreeMirror
-nmap ,n :NERDTreeFind<CR>
 
-"autocmd InsertLeave * write
+autocmd FileType nerdtree setlocal nolist
+
+nmap ,n :NERDTreeFind<CR>
+nmap <C-PageUp> :bp<CR>
+nmap <C-PageDown> :bn<CR>
+nmap <C-k> :BD<CR>
+
+" Write automatically
+" autocmd InsertLeave * write
 
 " NERDTress File highlighting
-" function! NERDTreeHighlightFile(extension, fg, bg, guifg)
-"  exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg . ' guifg='. a:guifg
-"  exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
-" endfunction
+function! NERDTreeHighlightFile(extension, fg, bg, guifg)
+ exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg . ' guifg='. a:guifg
+ exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
+endfunction
 
-" call NERDTreeHighlightFile('json', 'yellow', 'none', '#ffeaa7')
-" call NERDTreeHighlightFile('html', 'yellow', 'none', 'yellow')
-" call NERDTreeHighlightFile('css', 'cyan', 'none', '#fd79a8')
-" call NERDTreeHighlightFile('scss', 'cyan', 'none', '#fd79a8')
-" call NERDTreeHighlightFile('js', 'blue', 'none', '#00cec9')
-" call NERDTreeHighlightFile('ts', 'blue', 'none', '#0984e3')
-" call NERDTreeHighlightFile('tsx', 'blue', 'none', '#0984e3')
-" call NERDTreeHighlightFile('jsx', 'blue', 'none', '#0984e3')
+call NERDTreeHighlightFile('html', 'yellow', 'none', 'yellow')
+call NERDTreeHighlightFile('css', 'cyan', 'none', '#fd79a8')
+call NERDTreeHighlightFile('scss', 'cyan', 'none', '#fd79a8')
+call NERDTreeHighlightFile('ts', 'blue', 'none', '#29a4ff')
+call NERDTreeHighlightFile('tsx', 'blue', 'none', '#29a4ff')
+call NERDTreeHighlightFile('js', 'blue', 'none', '#29a4ff')
+call NERDTreeHighlightFile('jsx', 'blue', 'none', '#29a4ff')
+call NERDTreeHighlightFile('json', 'yellow', 'none', '#ffeaa7')
+call NERDTreeHighlightFile('sh', 'green', 'none', '#55efc4')
+call NERDTreeHighlightFile('zsh', 'green', 'none', '#55efc4')
+" call NERDTreeHighlightFile('json', 'blue', 'none', '#81ecec')
+
+
+" Kitty terminal color leak fix
+if $TERM == "xterm-kitty"
+  let &t_ut=''
+  set termguicolors
+            let &t_8f = "\e[38;2;%lu;%lu;%lum"
+            let &t_8b = "\e[48;2;%lu;%lu;%lum"
+    hi Normal guifg=NONE guibg=NONE ctermfg=NONE ctermbg=NONE
+    let &t_ti = &t_ti . "\033]10;#f6f3e8\007\033]11;#242424\007"
+    let &t_te = &t_te . "\033]110\007\033]111\007"
+endif
 

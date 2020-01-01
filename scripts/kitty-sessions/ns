@@ -1,18 +1,13 @@
-layout tall
-cd $REG_SHAADI
-
 # Editor
-title "VIM"
+title Editor
+launch vim .
 
-launch vim
 launch zsh
-launch clock
+launch zsh
 
-# Terminal
-# new_window
+# Background stuff
+new_tab Background
 
-# Clock
-# new_window
-# launch clock
-# title "Clock"
+launch npm start
+launch zsh
 
