@@ -61,7 +61,7 @@ menu() {
       xdg-open "$bookmark_url";
       move_bookmark_up "$selected_title";
     ;;
-    delete) echo "$bookmark_url" ;; # TODO: Delete item from bookmarks
+    delete) delete_bookmark $(find_by_title "$selected_title") ;;
     type) echo "$bookmark_url" ;; # TODO: Type the item out
     add)
       url=$(rofi -dmenu -p "URL for $selected_title");
