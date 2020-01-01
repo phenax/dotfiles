@@ -68,9 +68,10 @@ alias nt="npm test";
 # Config editors
 alias ezsh="cd ~/.config/zshconf && vim ~/.zshrc";
 alias edot="vim ~/scripts/dotfiles.sh";
-alias eorg="vim ~/.config/org";
+alias eorg="cd ~/.config/org && vim .";
 
 # Application shortcuts
+alias v="vim";
 alias chrome="google-chrome";
 alias chromei="google-chrome --incognito";
 alias qute="qutebrowser";

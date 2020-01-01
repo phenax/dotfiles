@@ -198,6 +198,7 @@ bindsym $mod+p exec qutebrowser --temp-basedir -s content.private_browsing true;
 
 bindsym $mod+c exec google-chrome; focus
 
+bindsym Ctrl+Alt+d exec kitty -e htop; focus
 
 ################### MENU ######################
 
@@ -443,7 +444,7 @@ bar {
 	# type status_command i3status without the config file and 
     # you will get the standard i3status bar
     # this is the standard statusbar with my personal settings
-	 status_command i3status -c ~/.config/i3/i3status.conf
+	 # status_command ~/scripts/i3status/start.sh
 
     # https://github.com/vivien/i3blocks
     # another way to provide text in the statusbar
@@ -458,7 +459,7 @@ bar {
     # start-conky-i3statusbar.sh is started and conky will follow
     # documentation : https://i3wm.org/docs/user-contributed/conky-i3bar.html
     # conky configuration is in conky-i3statusbar
-	# status_command ~/.config/i3/start-conky-i3statusbar.sh
+    status_command ~/scripts/i3status/start.sh
 
 	
     height 23
