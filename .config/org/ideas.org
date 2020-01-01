@@ -1,0 +1,22 @@
+*** i3 config
+    - [ ] Find a faster way to fetch current brightness level in xrandr 
+    - [ ] Add scripts for ffmpeg recording screencasts
+
+*** Project ideas
+    - [ ] Vim plugin, maybe? 
+
+*** Blog post ideas
+    - [ ] 
+
+*** Learn
+    - [ ] Networking + linux
+    - [ ] Streams in linux
+
+*** Menu ideas
+    - [X] Password
+    - [X] Open project menu
+    - [ ] Power menu
+    - [ ] Bookmarked links
+    - [ ] Xrandr monitor menu script
+    - [ ] Simple file manager
+
