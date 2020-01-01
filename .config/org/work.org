@@ -1,0 +1,12 @@
+
+** TODO Daily tasks
+   - [X] Add crons
+   - [ ] Configure email
+   - [ ] New status bar maybe?
+   - [ ] Torrent config
+   - [ ] Custom menu - Bookmarks
+   - [X] Learn some network stuff
+   - [ ] Fix font issue in nerd tree
+   - [ ] Error handling / Auth redirection on api responses
+   - [ ] Clean up vim config
+   - [ ] Clean up i3 config folder
