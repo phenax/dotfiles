@@ -16,7 +16,7 @@
     - [X] Password
     - [X] Open project menu
     - [ ] Power menu
-    - [ ] Bookmarked links
+    - [X] Bookmarked links
     - [ ] Xrandr monitor menu script
     - [ ] Simple file manager
 
