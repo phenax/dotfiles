@@ -63,10 +63,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+m move right
+# bindsym $mod+Shift+j move left
+# bindsym $mod+Shift+k move down
+# bindsym $mod+Shift+l move up
+# bindsym $mod+Shift+m move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -193,10 +193,12 @@ font pango:Source Code Pro for Powerline, FontAwesome Regular, Icons 10
 
 bindsym $mod+Return exec i3-sensible-terminal; focus
 
-bindsym $mod+o exec qutebrowser; focus
-bindsym $mod+p exec qutebrowser --temp-basedir -s content.private_browsing true; focus
+# bindsym $mod+o exec qutebrowser; focus
+# bindsym $mod+p exec qutebrowser --temp-basedir -s content.private_browsing true; focus
 
-bindsym $mod+c exec google-chrome; focus
+# bindsym $mod+c exec google-chrome; focus
+
+bindsym $mod+Shift+m exec surf https://github.com/peopleGroup/shaadi-react-reg/projects/1; focus
 
 bindsym Ctrl+Alt+d exec kitty -e htop; focus
 
@@ -209,6 +211,7 @@ bindsym $mod+Shift+semicolon exec rofi -modi calc -show calc
 bindsym $mod+Shift+e exec rofi -modi emoji -show emoji
 bindsym $mod+Shift+p exec rofi-pass
 bindsym $mod+Shift+o exec zsh -c "source ~/.zshrc && ~/scripts/open-project.sh"
+bindsym $mod+Shift+h exec zsh -c "source ~/.zshrc && ~/scripts/bookmarks-menu/bookmarker.sh menu"
 
 
 ################### DUAL SCREEN ######################
@@ -293,6 +296,7 @@ exec --no-startup-id nm-applet
 exec pasystray
 exec blueberry-tray
 #exec clipit
+exec --no-startup-id ~/.fehbg
 exec --no-startup-id dunst -config ~/.config/i3/dunstrc
 
 
@@ -435,34 +439,14 @@ bindsym $mod+u border none
 exec unclutter 
 
 
-
 ################### BAR APPEARANCE ######################
 
 
 bar {
-
-	# type status_command i3status without the config file and 
-    # you will get the standard i3status bar
-    # this is the standard statusbar with my personal settings
-	 # status_command ~/scripts/i3status/start.sh
-
-    # https://github.com/vivien/i3blocks
-    # another way to provide text in the statusbar
-    # step 10 of https://github.com/erikdubois/i3-on-Linux-Mint-18-Cinnamon/tree/master/installation
-    # put hastag in front if not installed
-    # status_command i3blocks -c ~/.config/i3/i3blocks.conf
-
-    # You can also replace the istatus bar with a conky
-    # be sure to install conky
-    # step 10 folder conky
-    # font awesome should be installed script + font
-    # start-conky-i3statusbar.sh is started and conky will follow
-    # documentation : https://i3wm.org/docs/user-contributed/conky-i3bar.html
-    # conky configuration is in conky-i3statusbar
     status_command ~/scripts/i3status/start.sh
 
 	
-    height 23
+    height 22
     workspace_buttons yes
     separator_symbol " :: "
  
@@ -471,9 +455,9 @@ bar {
             statusline #d6d6d6
             separator #666666
             #                     border  backgr. text
-            focused_workspace     #a9a9a9 #5f676a #a9a9a9
-            active_workspace      #a9a9a9 #5f676a #a9a9a9
-            inactive_workspace    #a9a9a9 #222222 #a9a9a9
+            focused_workspace     #505050 #505050 #a9a9a9
+            active_workspace      #505050 #505050 #a9a9a9
+            inactive_workspace    #222222 #222222 #a9a9a9
             urgent_workspace      #4A4A4A #4A4A4A #a9a9a9
             }
     }
@@ -493,56 +477,11 @@ client.urgent           #4A4A4A #4A4A4A #f7f7f7 #4A4A4A
 ###################  I 3  G A P S  N E X T   ##############################
 ###########################################################################
 
-for_window [class="^.*"] border pixel 5
+for_window [class="^.*"] border pixel 3
 gaps inner 0
 gaps outer 0
 #smart_gaps on
 #smart_borders on
-
-
-###########################################################################
-###################       I3 GAPS CHANGE     ##############################
-###########################################################################
-
-
-set $mode_gaps Gaps: (o) outer, (i) inner
-set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
-set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
-bindsym $mod+Shift+g mode "$mode_gaps"
-
-mode "$mode_gaps" {
-        bindsym o      mode "$mode_gaps_outer"
-        bindsym i      mode "$mode_gaps_inner"
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-}
-
-mode "$mode_gaps_inner" {
-        bindsym plus  gaps inner current plus 5
-        bindsym minus gaps inner current minus 5
-        bindsym 0     gaps inner current set 0
-
-        bindsym Shift+plus  gaps inner all plus 5
-        bindsym Shift+minus gaps inner all minus 5
-        bindsym Shift+0     gaps inner all set 0
-
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-}
-mode "$mode_gaps_outer" {
-        bindsym plus  gaps outer current plus 5
-        bindsym minus gaps outer current minus 5
-        bindsym 0     gaps outer current set 0
-
-        bindsym Shift+plus  gaps outer all plus 5
-        bindsym Shift+minus gaps outer all minus 5
-        bindsym Shift+0     gaps outer all set 0
-
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-}
-
-
 
 ###########################################################################
 ###################       C O M P T O N      ##############################

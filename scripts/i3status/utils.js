@@ -20,12 +20,14 @@ const createItem = ({ label, icon, backgroundColor, textColor = colors.white, pr
 ];
 
 const colors = {
-  white: "\\#fdf6e3",
+  white: "\\#ffffff",
   red: "\\#dc322f",
   yellow: "\\#e69722",
   teal: "\\#2aa198",
   green: "\\#859900",
   purple: "\\#6c71c4",
+  dark: '\\#505050',
+  darker: '\\#2f2f2f',
   default: "\\#2F2F2F",
 };
 
