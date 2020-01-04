@@ -177,6 +177,10 @@ set foldopen+=mark
 set t_Co=256
 set background=dark
 
+" Accidental key bindings
+map q: <Nop>
+nnoremap Q <nop>
+
 if (has("termguicolors"))
   set termguicolors
 endif
