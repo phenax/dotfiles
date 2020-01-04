@@ -1,9 +1,11 @@
 #!/bin/bash
 
+# TODO: Convert bookmarks to json array and use jq
+
+source ~/scripts/modules/utils.sh;
+
 BOOKMARKER_FILE="$HOME/scripts/bookmarks-menu/bookmarks";
 
-trim() { sed '/^$/ d'; }
-copy() { xclip -i -selection clipboard; }
 get_column() { awk "BEGIN {FS=\"|\"}; $1"; }
 
 options=$(echo "

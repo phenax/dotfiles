@@ -18,57 +18,57 @@ conky.text = [[
 [
   {
     "full_text": "",
-    "color": "\#2aa198",
+    "color": "\#505050",
     "background": "\#2F2F2F",
     "separator": true,
     "separator_block_width": 0
   },
   {
-    "full_text": "       ${exec ~/scripts/menuitems.sh volume}  ",
-    "color": "\#fdf6e3",
-    "background": "\#2aa198",
+    "full_text": "  🔉 ${exec ~/scripts/menuitems.sh volume}  ",
+    "color": "\#ffffff",
+    "background": "\#505050",
     "separator": true,
     "separator_block_width": 0
   },
   {
     "full_text": "",
-    "color": "\#859900",
-    "background": "\#2aa198",
+    "color": "\#2f2f2f",
+    "background": "\#505050",
     "separator": true,
     "separator_block_width": 0
   },
   {
     "full_text": "   ☀  ${exec ~/scripts/menuitems.sh brightness}  ",
-    "color": "\#fdf6e3",
-    "background": "\#859900",
+    "color": "\#ffffff",
+    "background": "\#2f2f2f",
     "separator": true,
     "separator_block_width": 0
   },
   {
     "full_text": "",
-    "color": "\#dc322f",
-    "background": "\#859900",
+    "color": "\#505050",
+    "background": "\#2f2f2f",
     "separator": true,
     "separator_block_width": 0
   },
   {
-    "full_text": "      ${time %a, %d/%m/%y} ${time %l:%M %p}  ",
-    "color": "\#fdf6e3",
-    "background": "\#dc322f",
+    "full_text": "  🕗 ${time %A, %d %b}  |  ${time %l:%M %p}  ",
+    "color": "\#ffffff",
+    "background": "\#505050",
     "separator": true,
     "separator_block_width": 0
   },
   {
     "full_text": "",
-    "color": "\#6c71c4",
-    "background": "\#dc322f",
+    "color": "\#2f2f2f",
+    "background": "\#505050",
     "separator": true,
     "separator_block_width": 0
   },
   {
     "full_text": "   ${exec ~/scripts/menuitems.sh battery}  ",
-    "color": "\#fdf6e3",
-    "background": "\#6c71c4",
+    "color": "\#ffffff",
+    "background": "\#2f2f2f",
     "separator": true,
     "separator_block_width": 0
   }
