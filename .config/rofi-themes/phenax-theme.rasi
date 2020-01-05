@@ -1,0 +1,108 @@
+* {
+  black:      #000000;
+  red:        #eb6e67;
+  green:      #95ee8f;
+  yellow:     #f8c456;
+  blue:       #6eaafb;
+  mangenta:   #d886f3;
+  cyan:       #6cdcf7;
+  emphasis:   #2c3e50;
+
+  text:       #dfdfdf;
+  text-alt:   #a2a2a2;
+
+  fg:         #abb2bf;
+  bg:         #1d1f31;
+  bg-light:   #2d2f41;
+
+  prompt-bg: #1d1f31;
+  prompt-accent: #34495e;
+
+
+  window-bg: #1a1a25aa;
+
+  spacing: 0;
+  background-color: transparent;
+
+  font: "Source Code Pro for Powerline 11";
+  text-color: @text;
+
+  prompt-padding: 10px 10px;
+}
+
+window {
+  transparency: "real";
+  fullscreen: true;
+  background-color: @window-bg;
+}
+
+mainbox {
+  margin: 20% 20%;
+  background-color: @bg;
+}
+
+inputbar {
+  margin: 0px 0px 20px 0px;
+  background-color: @prompt-bg;
+  children: [prompt, textbox-prompt-colon, entry, case-indicator];
+}
+
+prompt {
+  text-color: @text;
+  background-color: @prompt-accent;
+  padding: @prompt-padding;
+}
+
+textbox-prompt-colon {
+  expand: false;
+  str: " :: ";
+  text-color: @text;
+  padding: @prompt-padding;
+  background-color: @prompt-accent;
+}
+
+entry {
+  margin: 0px 10px;
+  padding: @prompt-padding;
+}
+
+listview {
+  spacing: 5px;
+  padding: 0 20px;
+  dynamic: true;
+  scrollbar: false;
+}
+
+element {
+  padding: 10px;
+  text-color: @text-alt;
+  highlight: bold #95ee8f; /* green */
+  /* border-radius: 3px; */
+}
+
+element selected {
+  background-color: @emphasis;
+  text-color: @text;
+}
+
+element urgent, element selected urgent {
+  text-color: @red;
+}
+
+element active, element selected active {
+  text-color: @purple;
+}
+
+message {
+  padding: 5px;
+  border-radius: 3px;
+  background-color: @emphasis;
+  /* border: 1px; */
+  border-color: @cyan;
+}
+
+button selected {
+  padding: 5px;
+  /* border-radius: 3px; */
+  background-color: @emphasis;
+}
