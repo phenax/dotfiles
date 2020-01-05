@@ -1,10 +1,8 @@
 
-
 # Utility stuff
 alias open="xdg-open";
-alias clock="tty-clock -t -b -c"
-set-reminder() { echo "notify-send 'Reminder:: $1'" | at $2; }
-alias on-complete="notify-send 'Command executed successfully' --urgency normal";
+alias clock="tty-clock -t -b -c";
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"';
 alias show-mobile-screen="adb shell screenrecord --output-format=h264 - | ffplay -";
 
 # Monitor aliases
@@ -14,20 +12,11 @@ monitor-on() { xrandr --output HDMI-1 --auto --${1:-"right-of"} eDP-1; };
 # Fuck
 eval $(thefuck --alias);
 
-# LS aliases 
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-
-
-# Git aliases
-alias gaa="git add ."
-
 # Sync dotfiles to github (uses yadm)
 update-dotfiles() {
   yadm status;
   ~/scripts/dotfiles.sh;
-  yadm commit -m "Updates dotfiles";
+  yadm commit -m "Updates dotfiles" && \
   yadm push -u origin master;
 }
 
@@ -48,8 +37,12 @@ reset-origin() {
   fi
 }
 
-# lf with cd to navigated directory on quit
-lc () {
+
+# LS aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+lc () { # lf with cd to navigated directory on quit
     tmp="$(mktemp)"
     lf -last-dir-path="$tmp" "$@"
     if [ -f "$tmp" ]; then
@@ -59,6 +52,8 @@ lc () {
     fi
 }
 
+# Git aliases
+alias gaa="git add ."
 
 # Node aliases
 alias nr="npm run";
