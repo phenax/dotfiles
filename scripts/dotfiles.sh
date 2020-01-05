@@ -14,6 +14,6 @@ add ~/.config/{terminator,kitty};
 add ~/.vimrc ~/scripts ~/.scimrc ~/.xinitrc ~/.tmux.conf ~/.gitconfig ~/.yarnrc ~/.npmrc;
 
 # Applications
-add ~/.config/{lf,calcurse,org,pet,qutebrowser};
+add ~/.config/{lf,calcurse,org,pet,qutebrowser,suckless};
 add ~/.fehbg;
 
