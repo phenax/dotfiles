@@ -2,19 +2,26 @@
 
 add() { yadm add "$@" || true; }
 
-# X
-add ~/.config/{i3,rofi,rofi-pass,rofi-themes};
-add ~/.Xresources ~/.config/{gtk-3.0,fontconfig,mimeapps.list};
+# X and DM
+add ~/.config/i3 ~/.Xresources ~/.xinitrc;
+add ~/.config/{rofi,rofi-pass,rofi-themes};
 
-# Terminal
-add ~/.bashrc ~/.zshrc ~/.config/zshconf ~/.profile;
-add ~/.config/{terminator,kitty};
+# Other config
+add ~/.config/{gtk-3.0,fontconfig,mimeapps.list};
+
+# Terminal and shell
+add ~/.bashrc ~/.profile;
+add ~/.zshrc ~/.config/zshconf;
+add ~/.config/kitty ~/.tmux.conf;
 
 # Dev
-add ~/.vimrc ~/scripts ~/.scimrc ~/.xinitrc ~/.tmux.conf ~/.gitconfig ~/.yarnrc ~/.npmrc;
+add ~/.vimrc ~/scripts;
+add ~/.yarnrc ~/.npmrc ~/.gitconfig;
 
 # Applications
-add ~/.config/{lf,calcurse,org,pet,qutebrowser,suckless};
+add ~/.scimrc;
+add ~/.config/suckless;
+add ~/.config/{lf,calcurse,org,pet,qutebrowser};
 
 # Wallpapers
 add ~/.fehbg;
