@@ -15,5 +15,8 @@ add ~/.vimrc ~/scripts ~/.scimrc ~/.xinitrc ~/.tmux.conf ~/.gitconfig ~/.yarnrc 
 
 # Applications
 add ~/.config/{lf,calcurse,org,pet,qutebrowser,suckless};
+
+# Wallpapers
 add ~/.fehbg;
+add ~/wallpapers
 
