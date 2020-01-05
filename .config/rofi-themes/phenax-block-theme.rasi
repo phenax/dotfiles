@@ -1,0 +1,73 @@
+@theme "phenax-theme.rasi"
+
+* {
+  text: #ffffff;
+  text-fade: #aaaaaa;
+  text-alt: #999999;
+  bg-light:   #1d1f31;
+
+  elem-width: 12%;
+  block-font: "Source Code Pro for Powerline 20";
+  prompt-font: "Source Code Pro for Powerline 16";
+
+  prompt-padding: 10px 20px;
+
+  block-border-size: 0;
+}
+
+mainbox {
+  margin: 38% 20%;
+}
+
+inputbar {
+  padding: 5px 10px;
+  background-color: @blue;
+  margin: 0 0 5px;
+  children: [prompt];
+}
+
+prompt {
+  background-color: transparent;
+  font: @prompt-font;
+  text-color: @bg;
+  width: 100%;
+  margin: 0;
+  text-style: bold;
+}
+
+listview {
+  padding: 0;
+  spacing: 0;
+  dynamic: true;
+  layout: horizontal;
+  lines: 10;
+  cycle: false;
+  position: center;
+  fixed-columns: false;
+  fixed-height: false;
+}
+
+element {
+  font: @block-font;
+  padding: 80px 10px;
+  margin: 0;
+  width: @elem-width;
+
+  horizontal-align: 0.5;
+  veritcal-align: 0.5;
+
+  text-color: @text-alt;
+  border: @block-border-size;
+  border-color: @fg;
+  background-color: @bg-light;
+}
+
+element selected {
+  background-color: @emphasis;
+  text-color: @text;
+  border-color: @emphasis;
+}
+
+message { enabled: false; }
+button { enabled: false; }
+
