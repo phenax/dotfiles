@@ -3,7 +3,7 @@
 add() { yadm add "$@" || true; }
 
 # X
-add ~/.config/{i3,rofi-themes};
+add ~/.config/{i3,rofi,rofi-pass,rofi-themes};
 add ~/.Xresources ~/.config/{gtk-3.0,fontconfig,mimeapps.list};
 
 # Terminal
