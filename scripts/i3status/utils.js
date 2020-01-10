@@ -29,6 +29,7 @@ const colors = {
   dark: '\\#505050',
   darker: '\\#2f2f2f',
   default: "\\#2F2F2F",
+  highlight: '\\#ffffff',
 };
 
 const toStatusItems = list => list.map((x, i, arr) => {

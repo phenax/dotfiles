@@ -198,7 +198,7 @@ bindsym $mod+Return exec i3-sensible-terminal; focus
 
 # bindsym $mod+c exec google-chrome; focus
 
-bindsym $mod+Shift+m exec surf https://github.com/peopleGroup/shaadi-react-reg/projects/1; focus
+bindsym $mod+Shift+m exec surf https://github.com/peopleGroup/shaadi-react-reg/projects/1?fullscreen=true; focus
 
 bindsym Ctrl+Alt+d exec kitty -e htop; focus
 

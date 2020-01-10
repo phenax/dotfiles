@@ -73,7 +73,7 @@
     # The transparency of the window.  Range: [0; 100].
     # This option will only work if a compositing windowmanager is
     # present (e.g. xcompmgr, compiz, etc.).
-    transparency = 5
+    transparency = 0
     
     # Don't remove messages, if the user is idle (no mouse or keyboard input)
     # for longer than idle_threshold seconds.
@@ -148,7 +148,7 @@
     icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
 
     # Frame config
-    frame_width = 2
+    frame_width = 1
     frame_color = "#8499ae"
 
 [shortcuts]
@@ -175,12 +175,12 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#2d2f41"
+    background = "#34495e"
     foreground = "#ffffff"
     timeout = 3
 
 [urgency_normal]
-    background = "#2d3436"
+    background = "#34495e"
     foreground = "#ffffff"
     timeout = 3
 

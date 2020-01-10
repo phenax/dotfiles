@@ -37,6 +37,8 @@ reset-origin() {
   fi
 }
 
+# Trash
+alias trash="ls \$TRASH_TMP_DIR";
 
 # LS aliases
 alias ll='ls -alF'
@@ -61,9 +63,11 @@ alias ns="npm start";
 alias nt="npm test";
 
 # Config editors
-alias ezsh="cd ~/.config/zshconf && vim ~/.zshrc";
+alias ezsh="cd ~/.config/zshconf && vim .";
 alias edot="vim ~/scripts/dotfiles.sh";
 alias eorg="cd ~/.config/org && vim .";
+alias ehosts="sudo vim /etc/hosts";
+alias update-sandbox="sudo ~/scripts/host-file-elb-update.sh";
 
 # Application shortcuts
 alias v="vim";
@@ -71,4 +75,5 @@ alias chrome="google-chrome";
 alias chromei="google-chrome --incognito";
 alias qute="qutebrowser";
 alias qutei="qutebrowser --temp-basedir -s content.private_browsing true";
+
 
