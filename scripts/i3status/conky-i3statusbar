@@ -52,7 +52,7 @@ conky.text = [[
     "separator_block_width": 0
   },
   {
-    "full_text": "  🕗 ${time %A, %d %b}  |  ${time %l:%M %p}  ",
+    "full_text": "  🕗 ${time %A, %d %b}  | ${time %l:%M %p}  ",
     "color": "\#ffffff",
     "background": "\#505050",
     "separator": true,

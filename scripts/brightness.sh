@@ -1,11 +1,11 @@
 #!/bin/bash
 
 read_brightness() {
-  echo $(xrandr --verbose | awk '/Brightness:/ {print $2; exit}');
+  echo "2";
 }
 
 get_brightness() {
-  echo "2";
+  echo $(xrandr --verbose | awk '/Brightness:/ {print $2; exit}');
 }
 
 set_brightness() {
@@ -26,7 +26,7 @@ decrement() {
 }
 
 case $1 in
-  get) echo $(get_brightness) ;;
+  get) echo $(read_brightness) ;;
   set) set_brightness "$2" "$3" ;;
   inc) increment ;;
   dec) decrement ;;

@@ -58,9 +58,9 @@ const statusItems = toStatusItems([
   }),
   ...createItem({
     icon: "🕗",
-    label: "${time %A, %d %b}  |  ${time %l:%M %p}",
+    label: "${time %A, %d %b}  | ${time %l:%M %p}",
     backgroundColor: colors.dark,
-    textColor: colors.white,
+    textColor: colors.highlight,
   }),
   ...createItem({
     icon: "",
