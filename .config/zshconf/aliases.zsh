@@ -9,9 +9,6 @@ alias show-mobile-screen="adb shell screenrecord --output-format=h264 - | ffplay
 alias monitor-off="xrandr --output HDMI-1 --off";
 monitor-on() { xrandr --output HDMI-1 --auto --${1:-"right-of"} eDP-1; };
 
-# Fuck
-eval $(thefuck --alias);
-
 # Sync dotfiles to github (uses yadm)
 update-dotfiles() {
   yadm status;
@@ -63,14 +60,16 @@ alias ns="npm start";
 alias nt="npm test";
 
 # Config editors
-alias ezsh="cd ~/.config/zshconf && vim .";
-alias edot="vim ~/scripts/dotfiles.sh";
-alias eorg="cd ~/.config/org && vim .";
-alias ehosts="sudo vim /etc/hosts";
+alias ezsh="cd ~/.config/zshconf && i3-sensible-editor .";
+alias edot="i3-sensible-editor ~/scripts/dotfiles.sh";
+alias eorg="cd ~/.config/org && i3-sensible-editor .";
+alias evim="cd ~/.config/nvim && i3-sensible-editor .";
+alias ehosts="sudo i3-sensible-editor /etc/hosts";
+
 alias update-sandbox="sudo ~/scripts/host-file-elb-update.sh";
 
 # Application shortcuts
-alias v="vim";
+alias v="nvim";
 alias chrome="google-chrome";
 alias chromei="google-chrome --incognito";
 alias qute="qutebrowser";

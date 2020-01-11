@@ -15,7 +15,7 @@ add ~/.zshrc ~/.config/zshconf;
 add ~/.config/kitty ~/.tmux.conf;
 
 # Dev
-add ~/.vimrc ~/scripts;
+add ~/.vimrc ~/.config/nvim ~/scripts;
 add ~/.yarnrc ~/.npmrc ~/.gitconfig;
 
 # Applications
