@@ -1,6 +1,6 @@
 # Editor
 title Editor
-launch vim .
+launch nvim .
 
 launch zsh
 launch zsh
