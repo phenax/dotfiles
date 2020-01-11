@@ -1,6 +1,6 @@
 [General]
   snippetfile = "/home/akshayn/.config/pet/snippet.toml"
-  editor = "vim"
+  editor = "nvim"
   column = 40
   selectcmd = "fzf"
 

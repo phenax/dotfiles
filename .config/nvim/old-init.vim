@@ -96,7 +96,7 @@ Plug 'mkarmona/colorsbox'
 " Plug 'joshdick/onedark.vim'
 " Plug 'mhartington/oceanic-next'
 Plug 'drewtempelmeyer/palenight.vim'
-" Plug 'jordwalke/vim-taste'
+Plug 'jordwalke/vim-taste'
 
 call plug#end()
 
@@ -189,8 +189,8 @@ endif
 let base16colorspace=256  " Access colors present in 256 colorspace
 
 " let g:airline_theme='luna'
-let g:airline_theme = "palenight"
-" let g:airline_theme = "taste"
+" let g:airline_theme = "palenight"
+let g:airline_theme = "taste"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_splits = 1
 let g:airline#extensions#tabline#show_buffers = 1
@@ -200,8 +200,8 @@ let g:airline#extensions#tabline#switch_buffers_and_tabs = 1
 let g:airline_powerline_fonts = 1
 
 set guifont=Source\ Code\ Pro\ for\ Powerline\ 10
-colorscheme palenight
-" colorscheme taste
+" colorscheme palenight
+colorscheme taste
 
 let g:gutentags_enabled = 1
 
