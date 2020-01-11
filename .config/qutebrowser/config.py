@@ -107,7 +107,7 @@ if os.path.isfile(colorsfile):
     config.source(colorsfile)
 
 # ** Editor
-c.editor.command = ['kitty', '-e', 'vim', '{}']
+c.editor.command = ['kitty', '-e', 'nvim', '{}']
 
 # ** Hints
 # don't require enter after hint keys
