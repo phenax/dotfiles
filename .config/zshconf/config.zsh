@@ -1,5 +1,5 @@
-export VISUAL='vim'
-export EDITOR="vim"
+export VISUAL='nvim'
+export EDITOR="nvim"
 export TERMINAL="kitty"
 export BROWSER="google-chrome-stable"
 export READER="zathura"

@@ -27,8 +27,8 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 export TERMINAL="kitty"
-export EDITOR="vim"
+export EDITOR="nvim"
+export VISUAL="nvim"
 
 with_zsh() { zsh -c "source ~/.zshrc && $@"; }
-
 

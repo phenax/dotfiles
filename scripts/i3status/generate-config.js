@@ -18,31 +18,6 @@ const config = {
   cpu_avg_samples: 2,
 };
 
-// Item config
-// const statusItems = toStatusItems([
-  // ...createItem({
-    // icon: "🔉",
-    // label: "${exec ~/scripts/menuitems.sh volume}",
-    // backgroundColor: colors.teal,
-  // }),
-  // ...createItem({
-    // icon: " ☀ ",
-    // label: "${exec ~/scripts/menuitems.sh brightness}",
-    // backgroundColor: colors.green,
-  // }),
-  // ...createItem({
-    // icon: "🕗",
-    // label: "${time %a, %d/%m/%y} ${time %l:%M %p}",
-    // backgroundColor: colors.red,
-  // }),
-  // ...createItem({
-    // icon: "",
-    // label: "${exec ~/scripts/menuitems.sh battery}",
-    // backgroundColor: colors.purple,
-  // }),
-// ]);
-
-
 const statusItems = toStatusItems([
   ...createItem({
     icon: "🔉",
