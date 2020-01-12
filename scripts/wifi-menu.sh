@@ -42,17 +42,24 @@ get_wifi_networks() {
 
 # :: string -> string
 get_ssid() { awk '{ print $2 }'; }
+get_security_type() { awk '{ print $6 }'; }
 
 
 show_wifi_networks_menu() {
-  local wifi_ssid=$(get_wifi_networks | open-menu -p "Wifi Networks" | get_ssid);
+  local wifi_config=$(get_wifi_networks | open-menu -p "Wifi Networks");
+  local wifi_ssid=$(echo "$wifi_config" | get_ssid);
   [[ -z "$wifi_ssid" ]] && return 1;
+  local wifi_security=$(echo "$wifi_config" | get_security_type);
 
   if $(is_known_connection "$wifi_ssid"); then
     nmcli con up "$wifi_ssid";
   else
-    # TODO: Connect to new network
-    echo "TODO: Implement connecting to new networks";
+    if [[ "$wifi_security" == "--" ]]; then
+      nmcli dev wifi con "$wifi_ssid";
+    else
+      local password=$(echo "" | open-menu -p "Enter password");
+      nmcli dev wifi con "$wifi_ssid" password $password;
+    fi
   fi;
 }
 
