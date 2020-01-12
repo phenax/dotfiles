@@ -111,4 +111,5 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 " Eslint fix
 nmap <localleader>f :CocCommand eslint.executeAutofix<CR>
+nmap <localleader>j :call CocActionAsync('jumpDefinition')<CR>
 

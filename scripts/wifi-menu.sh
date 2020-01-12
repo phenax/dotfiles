@@ -72,9 +72,9 @@ show_menu() {
 
 case $1 in
   menu) show_menu ;;
-  wifi_menu) show_wifi_networks_menu ;;
-  list) get_wifi_networks ;;
+  list) show_wifi_networks_menu ;;
+  show_networks) get_wifi_networks ;;
   on) set_wifi_status on ;;
   off) set_wifi_status off ;;
-  *) echo "Usage:: wifi-menu (menu|on|off)" ;;
+  *) echo "Usage:: wifi-menu (menu|list|show_networks|on|off)" ;;
 esac

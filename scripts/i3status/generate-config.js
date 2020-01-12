@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const { createItem, colors, isSeperator, toStatusItems, toConkyConfig } = require('./utils');
+const { createItem, colors, toStatusItems, toConkyConfig } = require('./utils');
 
 // Global config
 const config = {
@@ -21,13 +21,13 @@ const config = {
 const statusItems = toStatusItems([
   ...createItem({
     icon: "🔉",
-    label: "${exec ~/scripts/menuitems.sh volume}",
+    label: "${exec ~/scripts/i3status/menuitems.sh volume}",
     backgroundColor: colors.dark,
     textColor: colors.white,
   }),
   ...createItem({
     icon: " ☀ ",
-    label: "${exec ~/scripts/menuitems.sh brightness}",
+    label: "${exec ~/scripts/i3status/menuitems.sh brightness}",
     backgroundColor: colors.darker,
     textColor: colors.white,
   }),
@@ -39,7 +39,7 @@ const statusItems = toStatusItems([
   }),
   ...createItem({
     icon: "",
-    label: "${exec ~/scripts/menuitems.sh battery}",
+    label: "${exec ~/scripts/i3status/menuitems.sh battery}",
     backgroundColor: colors.darker,
     textColor: colors.white,
   }),
