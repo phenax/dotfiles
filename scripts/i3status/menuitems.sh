@@ -5,7 +5,7 @@ battery() { echo -e "$(cat "/sys/class/power_supply/BAT0/$1")"; }
 get_volume() {
   amixer get Master |
     awk -F'[][]' '/dB/ {print $6 " " $2}' |
-    sed 's/on //; s/off/muted/';
+    sed 's/on //; s/off/mute/';
 }
 
 case "$1" in

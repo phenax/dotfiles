@@ -15,6 +15,8 @@ _create_runner() {
   # fi;
 }
 
+_create_runner "wifi-menu";
+
 _create_runner "image-preview";
 _create_runner "brightness";
 _create_runner "lockscreen";

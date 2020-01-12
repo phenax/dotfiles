@@ -24,7 +24,7 @@ conky.text = [[
     "separator_block_width": 0
   },
   {
-    "full_text": "  🔉 ${exec ~/scripts/menuitems.sh volume}  ",
+    "full_text": "  🔉 ${exec ~/scripts/i3status/menuitems.sh volume}  ",
     "color": "\#ffffff",
     "background": "\#505050",
     "separator": true,
@@ -38,7 +38,7 @@ conky.text = [[
     "separator_block_width": 0
   },
   {
-    "full_text": "   ☀  ${exec ~/scripts/menuitems.sh brightness}  ",
+    "full_text": "   ☀  ${exec ~/scripts/i3status/menuitems.sh brightness}  ",
     "color": "\#ffffff",
     "background": "\#2f2f2f",
     "separator": true,
@@ -66,7 +66,7 @@ conky.text = [[
     "separator_block_width": 0
   },
   {
-    "full_text": "   ${exec ~/scripts/menuitems.sh battery}  ",
+    "full_text": "   ${exec ~/scripts/i3status/menuitems.sh battery}  ",
     "color": "\#ffffff",
     "background": "\#2f2f2f",
     "separator": true,

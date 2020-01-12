@@ -12,12 +12,6 @@ set t_Co=256
 let g:pluginpath = '~/.config/nvim/plugged'
 call plug#begin(g:pluginpath)
   " Plug 'janko-m/vim-test'
-
-  " Typescript
-  " Plug 'kristijanhusak/vim-js-file-import', {'do': 'npm install'}
-  " Plug 'Quramy/tsuquyomi'
-  " Plug 'Quramy/vim-js-pretty-template'
-
   " Plug 'tpope/vim-eunuch'
   " Plug 'wesQ3/vim-windowswap'
   " Plug 'thaerkh/vim-workspace'
