@@ -2,12 +2,19 @@
 
 SCREENSHOT=/tmp/screenshot.png;
 
+# Take screenshot
 scrot $SCREENSHOT;
+
+# Blur screenshot
 convert $SCREENSHOT \
   -spread 5 \
   -fill black -colorize 30% \
   $SCREENSHOT;
 
+# Mute audio
+# amixer -D pulse set Master off;
+
+# Lock screen
 i3lock \
   --image=$SCREENSHOT \
   --tiling \
@@ -47,5 +54,6 @@ i3lock \
   --greetersize=20 \
 ;
 
+# Cleanup when done
 rm $SCREENSHOT;
 
