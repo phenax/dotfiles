@@ -32,5 +32,4 @@ export VISUAL="nvim"
 
 with_zsh() { zsh -c "source ~/.zshrc && $@"; }
 
-setxkbmap -option 'ctrl:nocaps'
-
+setxkbmap -option caps:escape
