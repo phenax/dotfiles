@@ -47,7 +47,7 @@ set cmdheight=1
 " Updat  time default 4000
 set updatetime=300
 
-let g:syntastic_enable_racket_racket_checker = 1
+" let g:syntastic_enable_racket_racket_checker = 1
 
 " don't give |ins-completion-menu| messages.
 set shortmess+=c
