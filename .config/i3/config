@@ -119,7 +119,24 @@ bindsym $mod+c exec google-chrome; focus
 
 bindsym $mod+Shift+m exec surf https://github.com/peopleGroup/shaadi-react-reg/projects/1?fullscreen=true; focus
 
-# bindsym Ctrl+Alt+d exec kitty -e htop; focus
+### Spotify mode
+
+set $spotifymsg Spotify: <Left Enter Right>
+
+mode "$spotifymsg" {
+  bindsym Right exec ~/scripts/spotify.sh next
+  bindsym Left exec ~/scripts/spotify.sh prev
+  bindsym Return exec ~/scripts/spotify.sh play_pause && i3-msg 'mode "default"'
+
+  # back to normal: Escape
+  bindsym Escape mode "default"
+}
+
+bindsym $mod+m mode "$spotifymsg"
+
+#bindsym XF86AudioPlay exec ~/scripts/spotify.sh play_pause
+#bindsym XF86AudioNext exec ~/scripts/spotify.sh next
+#bindsym XF86AudioPrev exec ~/scripts/spotify.sh prev
 
 ################### MENU SHORTCUTS ######################
 
@@ -130,6 +147,7 @@ bindsym $mod+Shift+e exec rofi -modi emoji -show emoji
 bindsym $mod+Shift+p exec rofi-pass
 bindsym $mod+Shift+o exec zsh -c "source ~/.zshrc && ~/scripts/open-project.sh"
 bindsym $mod+Shift+h exec zsh -c "source ~/.zshrc && ~/scripts/bookmarks-menu/bookmarker.sh menu"
+bindsym $mod+Shift+g exec zsh -c "source ~/.zshrc && ~/scripts/bookmarks-menu/gh-projects.sh menu"
 
 
 ################### DUAL SCREEN ######################
@@ -197,9 +215,9 @@ assign [class="Chrome"]             → 6
 # assign [class="Nemo"]             → 8
 # assign [class="Geary"]            → 9
 # assign [class="Evolution"]        → 9
-assign [class="Youtube Music"]          → 10
+assign [class="Spotify"]          → 10
 
-for_window [class="YouTube Music"] move to workspace 10
+for_window [class="Spotify"] move to workspace 10
 
 
 ################### EXECUTE ######################
@@ -220,6 +238,7 @@ exec unclutter
 
 # USER APPLICATIONS
 exec google-chrome
+exec spotify
 
 ################### SHORTCUTS WORKSPACES ######################
 
@@ -238,7 +257,6 @@ for_window [urgent=latest] focus
 
 
 ################### SCREENSHOTS ######################
-
 
 bindsym Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/'
 bindsym Control+Print exec gnome-screenshot -a
@@ -279,11 +297,6 @@ bindsym XF86MonBrightnessDown exec ~/scripts/brightness.sh dec  # decrease scree
 bindsym XF86AudioRaiseVolume exec "amixer -D pulse sset Master '5%+'"
 bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master '5%-'"
 bindsym XF86AudioMute exec "amixer -D pulse set Master toggle"
-#bindsym XF86AudioPlay exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause" 
-#bindsym XF86AudioNext exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next" 
-#bindsym XF86AudioPrev exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
-#bindsym XF86AudioStop exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Stop"
-
 
 ################### BAR ######################
 
