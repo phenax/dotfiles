@@ -3,7 +3,7 @@
 source ~/scripts/modules/utils.sh;
 source ~/scripts/modules/rofi-menu.sh;
 
-GH_PROJECTS_FILE="$HOME/.config/gh-projects";
+GH_PROJECTS_FILE="$HOME/scripts/bookmarks-menu/gh-projects";
 
 repo="repo";
 projects="projects";
