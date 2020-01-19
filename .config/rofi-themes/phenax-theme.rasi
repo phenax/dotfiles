@@ -24,7 +24,6 @@
   spacing: 0;
   background-color: transparent;
 
-  font: "Source Code Pro for Powerline 11";
   text-color: @text;
 
   prompt-padding: 10px 10px;

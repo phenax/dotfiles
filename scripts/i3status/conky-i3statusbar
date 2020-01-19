@@ -18,27 +18,27 @@ conky.text = [[
 [
   {
     "full_text": "",
-    "color": "\#505050",
+    "color": "\#60a3bc",
     "background": "\#2F2F2F",
     "separator": true,
     "separator_block_width": 0
   },
   {
-    "full_text": "  🔉 ${exec ~/scripts/i3status/menuitems.sh volume}  ",
-    "color": "\#ffffff",
-    "background": "\#505050",
+    "full_text": "   ${exec ~/scripts/i3status/menuitems.sh volume_icon}  ${exec ~/scripts/i3status/menuitems.sh volume}  ",
+    "color": "\#111111",
+    "background": "\#60a3bc",
     "separator": true,
     "separator_block_width": 0
   },
   {
     "full_text": "",
     "color": "\#2f2f2f",
-    "background": "\#505050",
+    "background": "\#60a3bc",
     "separator": true,
     "separator_block_width": 0
   },
   {
-    "full_text": "   ☀  ${exec ~/scripts/i3status/menuitems.sh brightness}  ",
+    "full_text": "   ${exec ~/scripts/i3status/menuitems.sh spotify_song_icon}  ${exec ~/scripts/i3status/menuitems.sh spotify_song}  ",
     "color": "\#ffffff",
     "background": "\#2f2f2f",
     "separator": true,
@@ -46,27 +46,27 @@ conky.text = [[
   },
   {
     "full_text": "",
-    "color": "\#505050",
+    "color": "\#60a3bc",
     "background": "\#2f2f2f",
     "separator": true,
     "separator_block_width": 0
   },
   {
-    "full_text": "  🕗 ${time %A, %d %b}  | ${time %l:%M %p}  ",
-    "color": "\#ffffff",
-    "background": "\#505050",
+    "full_text": "      ${time %A, %d %b}  | ${time %l:%M %p}  ",
+    "color": "\#111111",
+    "background": "\#60a3bc",
     "separator": true,
     "separator_block_width": 0
   },
   {
     "full_text": "",
     "color": "\#2f2f2f",
-    "background": "\#505050",
+    "background": "\#60a3bc",
     "separator": true,
     "separator_block_width": 0
   },
   {
-    "full_text": "   ${exec ~/scripts/i3status/menuitems.sh battery}  ",
+    "full_text": "    ${exec ~/scripts/i3status/menuitems.sh battery_icon} ${exec ~/scripts/i3status/menuitems.sh battery}  ",
     "color": "\#ffffff",
     "background": "\#2f2f2f",
     "separator": true,

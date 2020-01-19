@@ -1,6 +1,6 @@
 [global]
-    font = Source Code Pro for Powerline, FontAwesome Regular, Icons 11
-    
+    font = Fira Code, Font Awesome 5 Free Solid, Font Awesome 5 Free Regular, Font Awesome 5 Brands 11
+
     # Allow a small subset of html markup:
     #   <b>bold</b>
     #   <i>italic</i>

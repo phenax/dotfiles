@@ -18,30 +18,36 @@ const config = {
   cpu_avg_samples: 2,
 };
 
+const brightMenu = {
+  backgroundColor: colors.menu.bright.bg,
+  textColor: colors.menu.bright.color,
+};
+
+const defaultMenu = {
+  backgroundColor: colors.menu.default.bg,
+  textColor: colors.menu.default.color,
+}
+
 const statusItems = toStatusItems([
   ...createItem({
-    icon: "🔉",
+    icon: " ${exec ~/scripts/i3status/menuitems.sh volume_icon} ",
     label: "${exec ~/scripts/i3status/menuitems.sh volume}",
-    backgroundColor: colors.dark,
-    textColor: colors.white,
+    ...brightMenu,
   }),
   ...createItem({
-    icon: " ☀ ",
-    label: "${exec ~/scripts/i3status/menuitems.sh brightness}",
-    backgroundColor: colors.darker,
-    textColor: colors.white,
+    icon: " ${exec ~/scripts/i3status/menuitems.sh spotify_song_icon} ",
+    label: "${exec ~/scripts/i3status/menuitems.sh spotify_song}",
+    ...defaultMenu,
   }),
   ...createItem({
-    icon: "🕗",
+    icon: "   ",
     label: "${time %A, %d %b}  | ${time %l:%M %p}",
-    backgroundColor: colors.dark,
-    textColor: colors.highlight,
+    ...brightMenu,
   }),
   ...createItem({
-    icon: "",
+    icon: "  ${exec ~/scripts/i3status/menuitems.sh battery_icon}",
     label: "${exec ~/scripts/i3status/menuitems.sh battery}",
-    backgroundColor: colors.darker,
-    textColor: colors.white,
+    ...defaultMenu,
   }),
 ]);
 

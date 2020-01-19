@@ -6,9 +6,11 @@
   text-alt: #999999;
   bg-light:   #1d1f31;
 
+  font-family: "Fira Code";
+
   elem-width: 12%;
-  block-font: "Source Code Pro for Powerline 20";
-  prompt-font: "Source Code Pro for Powerline 16";
+  block-font: "@font-family 20";
+  prompt-font: "@font-family 16";
 
   prompt-padding: 10px 20px;
 

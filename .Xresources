@@ -25,7 +25,7 @@ URxvt.keysym.C-0:resize-font:reset
 *.color3:  #d79921
 *.color11:  #fabd2f
 
-*.color4:  #458588
+*.color4:  #60a3bc
 *.color12:  #83a598
 
 *.color5:  #b16286

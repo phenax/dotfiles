@@ -1,6 +1,6 @@
 # Editor
 title Editor
-launch nvim .
+launch i3-sensible-editor .
 
 launch zsh
 launch zsh
