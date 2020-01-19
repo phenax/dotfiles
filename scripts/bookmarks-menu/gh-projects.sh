@@ -5,16 +5,16 @@ source ~/scripts/modules/rofi-menu.sh;
 
 GH_PROJECTS_FILE="$HOME/scripts/bookmarks-menu/gh-projects";
 
-repo="repo";
-projects="projects";
-issues="issues";
-pull_requests="PR";
+repo="  repo";
+projects="  projects";
+issues="  issues";
+pull_requests="  pulls";
 
 ACTIONS=$(echo "
 $repo
 $pull_requests
-$issues
 $projects
+$issues
 " | trim);
 
 echo "$ACTIONS";

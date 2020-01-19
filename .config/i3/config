@@ -4,7 +4,7 @@ set $mod Mod4
 
 
 ################### FONTS ######################
-font pango:Source Code Pro for Powerline, FontAwesome Regular, Icons 10
+font pango:Fira Code, Font Awesome 5 Free Solid, Font Awesome 5 Free Regular, Font Awesome 5 Brands 10
 
 
 ###################       STOPPING A PROGRAM      ##############################
@@ -114,25 +114,25 @@ bindsym $mod+r mode "resize"
 ################### SHORTCUT Applications ######################
 
 bindsym $mod+Return exec i3-sensible-terminal; focus
-
 bindsym $mod+c exec google-chrome; focus
 
+# Open reg projects
 bindsym $mod+Shift+m exec surf https://github.com/peopleGroup/shaadi-react-reg/projects/1?fullscreen=true; focus
 
+# Calendar
+bindsym $mod+Shift+t exec kitty --session ~/scripts/kitty-sessions/calendar --class Calendar; focus
+
 ### Spotify mode
-
 set $spotifymsg Spotify: <Left Enter Right>
-
+bindsym $mod+m mode "$spotifymsg"
 mode "$spotifymsg" {
-  bindsym Right exec ~/scripts/spotify.sh next
-  bindsym Left exec ~/scripts/spotify.sh prev
+  bindsym Right exec ~/scripts/spotify.sh next && i3-msg 'mode "default"'
+  bindsym Left exec ~/scripts/spotify.sh prev && i3-msg 'mode "default"'
   bindsym Return exec ~/scripts/spotify.sh play_pause && i3-msg 'mode "default"'
 
   # back to normal: Escape
   bindsym Escape mode "default"
 }
-
-bindsym $mod+m mode "$spotifymsg"
 
 #bindsym XF86AudioPlay exec ~/scripts/spotify.sh play_pause
 #bindsym XF86AudioNext exec ~/scripts/spotify.sh next
@@ -143,11 +143,11 @@ bindsym $mod+m mode "$spotifymsg"
 # start dmenu (a program launcher)
 bindsym $mod+d exec rofi -modi drun#window#run -show drun
 bindsym $mod+Shift+semicolon exec rofi -modi calc -show calc
-bindsym $mod+Shift+e exec rofi -modi emoji -show emoji
 bindsym $mod+Shift+p exec rofi-pass
 bindsym $mod+Shift+o exec zsh -c "source ~/.zshrc && ~/scripts/open-project.sh"
 bindsym $mod+Shift+h exec zsh -c "source ~/.zshrc && ~/scripts/bookmarks-menu/bookmarker.sh menu"
 bindsym $mod+Shift+g exec zsh -c "source ~/.zshrc && ~/scripts/bookmarks-menu/gh-projects.sh menu"
+bindsym $mod+Shift+e exec zsh -c "source ~/.zshrc && ~/scripts/fontawesome-menu/fa-menu.sh menu"
 
 
 ################### DUAL SCREEN ######################
@@ -160,11 +160,11 @@ set $ws2 2
 set $ws3 3
 set $ws4 4
 set $ws5 5
-set $ws6 6
+set $ws6 "6: "
 set $ws7 7
 set $ws8 8
 set $ws9 9
-set $ws10 10
+set $ws10 "10: "
 
 workspace $ws1 output $firstMonitor
 workspace $ws2 output $firstMonitor
@@ -204,20 +204,11 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 
 ################### ASSIGN ######################
 
+assign [class="Google-chrome"]       → $ws6
+assign [class="Calendar"]            → $ws9
+assign [class="Spotify"]             → $ws10
 
-# assign [class="Project"]         → 1
-# assign [class="Project"]          → 2
-# assign [class="Project"]          → 3
-# assign [class="Project"]          → 4
-# assign [class="Project"]           → 5
-assign [class="Chrome"]             → 6
-# assign [class="Calendar"]              → 7
-# assign [class="Nemo"]             → 8
-# assign [class="Geary"]            → 9
-# assign [class="Evolution"]        → 9
-assign [class="Spotify"]          → 10
-
-for_window [class="Spotify"] move to workspace 10
+for_window [class="Spotify"] move to workspace $ws10
 
 
 ################### EXECUTE ######################
@@ -318,10 +309,11 @@ bindsym $mod+y border 1pixel
 bindsym $mod+u border none
 
 ################### BAR APPEARANCE ######################
-
-
 bar {
   status_command ~/scripts/i3status/start.sh
+
+  bindsym button4 nop
+  bindsym button5 nop
 
   height 22
   workspace_buttons yes
@@ -333,7 +325,7 @@ bar {
     separator #666666
 
     #                     border  backgr. text
-    focused_workspace     #505050 #505050 #a9a9a9
+    focused_workspace     #60a3bc #60a3bc #2f2f2f
     active_workspace      #505050 #505050 #a9a9a9
     inactive_workspace    #222222 #222222 #a9a9a9
     urgent_workspace      #4A4A4A #4A4A4A #a9a9a9

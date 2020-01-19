@@ -1,6 +1,6 @@
 configuration {
 	modi: "drun,window,run,emoji,calc";
-  font: "Source Code Pro for Powerline 10";
+  font: "Fira Code 11";
 	theme: "~/.config/rofi-themes/phenax-theme.rasi";
 	sidebar-mode: true;
 	show-icons: true;

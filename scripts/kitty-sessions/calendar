@@ -1,0 +1,9 @@
+# Editor
+title Calendar
+launch calcurse
+
+title System
+launch htop
+
+title Clock
+launch tty-clock -t -b -c

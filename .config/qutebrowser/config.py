@@ -87,7 +87,7 @@ c.aliases['h'] = 'help'
 
 # ** Appearance
 # *** General
-c.fonts.monospace = 'Source Code Pro for Powerline'
+c.fonts.monospace = 'Fira Code'
 
 # default but not transparent
 c.colors.hints.bg = \

@@ -30,6 +30,16 @@ const colors = {
   darker: '\\#2f2f2f',
   default: "\\#2F2F2F",
   highlight: '\\#ffffff',
+  menu: {
+    bright: {
+      bg: '\\#60a3bc',
+      color: '\\#111111',
+    },
+    default: {
+      bg: '\\#2f2f2f',
+      color: '\\#ffffff',
+    },
+  },
 };
 
 const toStatusItems = list => list.map((x, i, arr) => {

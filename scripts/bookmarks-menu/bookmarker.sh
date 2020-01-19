@@ -9,10 +9,10 @@ BOOKMARKER_FILE="$HOME/scripts/bookmarks-menu/bookmarks";
 
 get_column() { awk "BEGIN {FS=\"|\"}; $1"; }
 
-OPEN="⚟ Open";
-COPY="⎘ Copy";
-TYPE="⌨ Type";
-DELETE="✗ Delete";
+OPEN="  Open";
+COPY="  Copy";
+TYPE="  Type";
+DELETE="  Delete";
 ADD="add";
 
 options=$(echo "
