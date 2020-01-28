@@ -47,7 +47,8 @@ get_label() {
   local meta=$(get_metadata);
   local artist=$(extract "$meta" artist);
   local title=$(extract "$meta" title);
-  echo "$title - $artist";
+  local label="$title - $artist";
+  echo "$label" | sed "s/\"/ /g";
 }
 
 # Play/Pause toggle:
