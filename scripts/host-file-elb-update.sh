@@ -3,12 +3,20 @@
 HOST_FILE="/etc/hosts";
 BKUP_HOST_FILE="$HOME/.host-file-backup";
 
+DRY_RUN="$2";
+
 yes | cp -rf $HOST_FILE $BKUP_HOST_FILE;
 
-# grep "# ELBU::" $HOST_FILE -A1;
-# grep "# ELBU::" $HOST_FILE -A 1 | grep -v "# ELBU::";
+is_dry_run() { [[ "$DRY_RUN" == "--dry-run" ]]; }
 
-get_ip() { getent hosts $1 | awk '{print $1}'; }
+get_ip() { getent hosts $1 | awk '{print $1}' | head -n 1; }
+
+write_to_host_file() {
+  if $(is_dry_run);
+    then echo "$1";
+    else echo "$1" > $HOST_FILE;
+  fi;
+}
 
 pinger() {
   while read line; do
@@ -17,10 +25,7 @@ pinger() {
       old_ip="$(echo $line | awk '{print $1}')";
       elb_ip="$(get_ip $elb)";
 
-      echo $line | \
-        awk '{gsub(old_ip, "", $0); print elb $0}' \
-          elb="$elb_ip" \
-          old_ip="$old_ip";
+      echo $line | sed "s/$old_ip/$elb_ip/g";
     else
       echo "$line";
     fi;
@@ -33,10 +38,7 @@ comment-out() {
       old_ip="$(echo $line | awk '{print $1}')";
       new_ip="#$old_ip";
 
-      echo $line | \
-        awk '{gsub(old_ip, "", $0); print new_ip $0}' \
-          new_ip="$new_ip" \
-          old_ip="$old_ip";
+      echo $line | sed "s/$old_ip/$new_ip/g";
     else
       echo "$line";
     fi;
@@ -45,12 +47,12 @@ comment-out() {
 
 update-host-file() {
   contents=$(cat $HOST_FILE | pinger);
-  echo "$contents" > $HOST_FILE;
+  write_to_host_file "$contents";
 }
 
 disable-mappings() {
   contents=$(cat $HOST_FILE | comment-out);
-  echo "$contents" > $HOST_FILE;
+  write_to_host_file "$contents";
 }
 
 case "$1" in
