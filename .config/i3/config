@@ -114,7 +114,7 @@ bindsym $mod+r mode "resize"
 ################### SHORTCUT Applications ######################
 
 bindsym $mod+Return exec i3-sensible-terminal; focus
-bindsym $mod+c exec google-chrome; focus
+bindsym $mod+c exec browser; focus
 
 # Open reg projects
 bindsym $mod+Shift+m exec surf https://github.com/peopleGroup/shaadi-react-reg/projects/1?fullscreen=true; focus
@@ -161,9 +161,9 @@ set $ws3 3
 set $ws4 4
 set $ws5 5
 set $ws6 "6: "
-set $ws7 7
+set $ws7 "7: "
 set $ws8 8
-set $ws9 9
+set $ws9 "9: "
 set $ws10 "10: "
 
 workspace $ws1 output $firstMonitor
@@ -204,7 +204,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 
 ################### ASSIGN ######################
 
-assign [class="Google-chrome"]       → $ws6
+assign [class="brave-browser"]       → $ws6
 assign [class="Calendar"]            → $ws9
 assign [class="Spotify"]             → $ws10
 
@@ -228,7 +228,7 @@ exec unclutter
 #exec clipit
 
 # USER APPLICATIONS
-exec google-chrome
+exec browser
 exec spotify
 
 ################### SHORTCUTS WORKSPACES ######################

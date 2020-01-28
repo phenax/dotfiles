@@ -29,6 +29,7 @@ fi
 export TERMINAL="kitty"
 export EDITOR="nvim"
 export VISUAL="nvim"
+export BROWSER="brave-browser"
 
 with_zsh() { zsh -c "source ~/.zshrc && $@"; }
 

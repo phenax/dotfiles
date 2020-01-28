@@ -1,0 +1,3 @@
+
+- [ ] Users dont know they can type free text in autocomplete
+

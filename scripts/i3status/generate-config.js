@@ -34,11 +34,11 @@ const statusItems = toStatusItems([
     label: "${exec ~/scripts/i3status/menuitems.sh volume}",
     ...brightMenu,
   }),
-  ...createItem({
-    icon: " ${exec ~/scripts/i3status/menuitems.sh spotify_song_icon} ",
-    label: "${exec ~/scripts/i3status/menuitems.sh spotify_song}",
-    ...defaultMenu,
-  }),
+  // ...createItem({
+    // icon: " ${exec ~/scripts/i3status/menuitems.sh spotify_song_icon} ",
+    // label: "${exec ~/scripts/i3status/menuitems.sh spotify_song}",
+    // ...defaultMenu,
+  // }),
   ...createItem({
     icon: "   ",
     label: "${time %A, %d %b}  | ${time %l:%M %p}",
