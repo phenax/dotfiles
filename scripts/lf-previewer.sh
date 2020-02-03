@@ -12,6 +12,7 @@ get_lf_dimens() {
 
 show_image() {
   dimens="$(get_lf_dimens)";
+  img clear;
   img preview "$1" "$dimens";
 }
 
