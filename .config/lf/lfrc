@@ -1,10 +1,11 @@
-set preview false
-set previewer ~/scripts/lf-previewer.sh
 set hidden true
 set color256 true
 set drawbox true
 set icons true
 set ignorecase true
+
+set preview false
+set previewer ~/scripts/lf-previewer.sh
 
 map h :set hidden!
 
@@ -39,6 +40,10 @@ cmd openterm ${{
     $TERMINAL &
 }}
 
+cmd rmrf ${{
+  mv "$f" /tmp/.trash-cache/
+}}
+
 map m
 map n
 map "'"
@@ -47,7 +52,7 @@ map d
 map c
 map e
 
-map dd delete
+map dd rmrf
 map p paste
 map x cut
 map y copy
