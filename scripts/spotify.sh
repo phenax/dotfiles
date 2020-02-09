@@ -11,6 +11,9 @@ SP_MEMB=org.mpris.MediaPlayer2.Player;
 # Extract value of a property from dictionary or array
 extract() { echo "$1" | awk -F'|' '$1 == MATCH { print $2 }' MATCH="$2"; }
 
+# Sanitize output string
+sanitize() { sed 's/[^A-Za-z0-9\-\(\)]/ /g' | sed 's/\s+/ /g'; }
+
 # Get a property from media player interface
 spotify_get_property() {
   dbus-send                                                                   \
@@ -45,10 +48,10 @@ get_play_state() { spotify_get_property PlaybackStatus; }
 # Get title - artist (song label)
 get_label() {
   local meta=$(get_metadata);
-  local artist=$(extract "$meta" artist);
-  local title=$(extract "$meta" title);
+  local artist=$(extract "$meta" artist | sanitize);
+  local title=$(extract "$meta" title | sanitize);
   local label="$title - $artist";
-  echo "$label" | sed "s/\"/ /g";
+  echo "$label";
 }
 
 # Play/Pause toggle:
