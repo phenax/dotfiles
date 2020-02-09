@@ -127,6 +127,9 @@ bindsym $mod+Shift+m exec surf https://github.com/peopleGroup/shaadi-react-reg/p
 # Calendar
 bindsym $mod+Shift+t exec kitty --session ~/scripts/kitty-sessions/calendar --class Calendar; focus
 
+# Clock
+# bindsym $mod+t exec zsh -c "source ~/.zshrc && time"
+
 ### Spotify mode
 set $spotifymsg Spotify: <Left Enter Right>
 bindsym $mod+m mode "$spotifymsg"
@@ -310,8 +313,8 @@ hide_edge_borders both
 bindsym $mod+shift+b exec i3-msg border toggle
 
 #changing border style
-bindsym $mod+t border normal
-bindsym $mod+y border 1pixel
+# bindsym $mod+t border normal
+# bindsym $mod+y border 1pixel
 bindsym $mod+u border none
 
 ################### BAR APPEARANCE ######################
