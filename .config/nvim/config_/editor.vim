@@ -55,3 +55,6 @@ set shortmess+=c
 " always show signcolumns
 set signcolumn=yes
 
+" Disable highlight
+nmap <c-\> :noh<CR>
+
