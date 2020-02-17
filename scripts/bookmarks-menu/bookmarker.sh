@@ -7,7 +7,9 @@ source ~/scripts/modules/utils.sh;
 
 BOOKMARKER_FILE="$HOME/scripts/bookmarks-menu/bookmarks";
 
-get_column() { awk "BEGIN {FS=\"|\"}; $1"; }
+SEPERATOR=" -- "
+
+get_column() { awk -F"$SEPERATOR" "$@"; }
 
 OPEN="  Open";
 COPY="  Copy";
@@ -36,7 +38,7 @@ delete_bookmark() {
 
 get_title() { get_column '{ print $1 }'; }
 get_url() { get_column '{ print $2 }'; }
-find_by_title() { cat $BOOKMARKER_FILE | sed "/^$1|/!d" | head -n 1; }
+find_by_title() { cat $BOOKMARKER_FILE | sed "/^$1$SEPERATOR/!d" | head -n 1; }
 
 display_bookmarks() { get_bookmarks | get_title | open-menu -p "Bookmarks"; }
 display_options() { get_options | open-block-menu -p "Action"; }

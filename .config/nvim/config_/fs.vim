@@ -14,15 +14,11 @@ autocmd FileType nerdtree setlocal nolist
 
 " Nerdtree Keys
 nmap ,n :NERDTreeFind<CR>
-nmap <C-PageUp> :bp<CR>
-nmap <C-PageDown> :bn<CR>
-nmap <C-k> :BD<CR>
 
 " Write automatically
 " autocmd InsertLeave * write
 
 " FZF (Fuzzy search)
-
 set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf
 " let g:fzf_layout = { 'down': '~25%' }
 

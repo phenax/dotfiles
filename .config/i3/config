@@ -128,7 +128,7 @@ bindsym $mod+Shift+m exec surf https://github.com/peopleGroup/shaadi-react-reg/p
 bindsym $mod+Shift+t exec kitty --session ~/scripts/kitty-sessions/calendar --class Calendar; focus
 
 # Clock
-# bindsym $mod+t exec zsh -c "source ~/.zshrc && time"
+# bindsym $mod+t with_zsh "time"
 
 ### Spotify mode
 set $spotifymsg Spotify: <Left Enter Right>
@@ -152,10 +152,10 @@ mode "$spotifymsg" {
 bindsym $mod+d exec rofi -modi drun#window#run -show drun
 bindsym $mod+Shift+semicolon exec rofi -modi calc -show calc
 bindsym $mod+Shift+p exec rofi-pass
-bindsym $mod+Shift+o exec zsh -c "source ~/.zshrc && ~/scripts/open-project.sh"
-bindsym $mod+Shift+i exec zsh -c "source ~/.zshrc && ~/scripts/bookmarks-menu/bookmarker.sh menu"
-bindsym $mod+Shift+g exec zsh -c "source ~/.zshrc && ~/scripts/bookmarks-menu/gh-projects.sh menu"
-bindsym $mod+Shift+e exec zsh -c "source ~/.zshrc && ~/scripts/fontawesome-menu/fa-menu.sh menu"
+bindsym $mod+Shift+o exec with_zsh "~/scripts/open-project.sh"
+bindsym $mod+Shift+i exec with_zsh "~/scripts/bookmarks-menu/bookmarker.sh menu"
+bindsym $mod+Shift+g exec with_zsh "~/scripts/bookmarks-menu/gh-projects.sh menu"
+bindsym $mod+Shift+e exec with_zsh "~/scripts/fontawesome-menu/fa-menu.sh menu"
 
 
 ################### DUAL SCREEN ######################
