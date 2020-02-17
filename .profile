@@ -31,6 +31,6 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 export BROWSER="brave-browser"
 
-with_zsh() { zsh -c "source ~/.zshrc && $@"; }
+PATH="$HOME/.bin:$PATH"
 
 setxkbmap -option caps:escape

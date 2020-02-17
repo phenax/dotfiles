@@ -95,6 +95,7 @@ Plug 'mkarmona/colorsbox'
 " Plug 'atelierbram/Base2Tone-vim'
 " Plug 'joshdick/onedark.vim'
 " Plug 'mhartington/oceanic-next'
+Plug 'arcticicestudio/nord-vim'
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'jordwalke/vim-taste'
 
@@ -202,6 +203,7 @@ let g:airline_powerline_fonts = 1
 set guifont=Source\ Code\ Pro\ for\ Powerline\ 10
 " colorscheme palenight
 colorscheme taste
+" colorscheme nord
 
 let g:gutentags_enabled = 1
 

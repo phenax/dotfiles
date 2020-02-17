@@ -12,7 +12,6 @@ URxvt.keysym.C-0:resize-font:reset
 *.cursorColor:  #d8dee9
 
 ! Colors
-
 *.color0:  #282828
 *.color8:  #928374
 

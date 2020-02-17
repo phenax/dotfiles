@@ -54,6 +54,13 @@ lc () { # lf with cd to navigated directory on quit
 # Git aliases
 alias gaa="git add ."
 
+# Github aliases
+alias prls="gh pr list"
+alias prco="gh pr checkout"
+alias prstat="gh pr status"
+alias prnew="gh pr create -b production"
+alias prv="gh pr view"
+
 # Node aliases
 alias nr="npm run";
 alias ns="npm start";

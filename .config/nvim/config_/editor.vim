@@ -58,3 +58,10 @@ set signcolumn=yes
 " Disable highlight
 nmap <c-\> :noh<CR>
 
+" Tab navigations
+nmap <C-PageUp> :bp<CR>
+nmap <C-PageDown> :bn<CR>
+nmap <C-k> :BD<CR>
+
+
+
