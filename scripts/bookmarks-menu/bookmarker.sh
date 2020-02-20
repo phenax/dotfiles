@@ -26,7 +26,7 @@ $DELETE
 
 get_options() { echo "$options"; }
 get_bookmarks() { cat $BOOKMARKER_FILE | trim; }
-add_bookmark() { echo "$1|$2" >> $BOOKMARKER_FILE; }
+add_bookmark() { echo "$1$SEPERATOR$2" >> $BOOKMARKER_FILE; }
 prepend_bookmark() {
   bookmarks=$(cat $BOOKMARKER_FILE);
   echo -e "$1\n$bookmarks" > $BOOKMARKER_FILE;
