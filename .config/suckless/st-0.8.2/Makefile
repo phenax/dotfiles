@@ -7,7 +7,7 @@ include config.mk
 SRC = st.c x.c
 OBJ = $(SRC:.c=.o)
 
-all: options st
+all: options generate-config st
 
 options:
 	@echo st build options:
@@ -25,6 +25,9 @@ st.o: config.h st.h win.h
 x.o: arg.h config.h st.h win.h
 
 $(OBJ): config.h config.mk
+
+generate-config: config.h.xres-template
+	~/scripts/xres-template.js config.h
 
 st: $(OBJ)
 	$(CC) -o $@ $(OBJ) $(STLDFLAGS)

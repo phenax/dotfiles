@@ -1,0 +1,25 @@
+* API
+** DONE msite
+  - [X] DR
+  - [X] Partner search
+  - [X] Inbox
+  - [X] Other search
+  - [X] Intent listing
+  - [X] Chat
+** DONE desktop
+  - [X] DR
+  - [X] Partner search
+  - [X] Other search
+  - [X] Intent listing
+  - [X] Chat
+  - [X] Inbox
+** API list
+*** ww4.sh
+      - GET `/profiles/3SH28196845`
+      - GET `/profiles/3SH28196845/prevnext`
+      - GET `/profiles/3SH28196845/intents`
+      - GET `/searches/3SH28196845`
+      - GET `/inbox/3SH28196845` (Decorator = inbox_list_details)
+      - GET `/notifications/3SH28196845`
+*** api.sh
+      - GET `/v1/profiles` (Decorator = profile_preview_webp)
