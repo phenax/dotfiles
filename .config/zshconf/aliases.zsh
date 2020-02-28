@@ -5,10 +5,6 @@ alias clock="tty-clock -t -b -c";
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"';
 alias show-mobile-screen="adb shell screenrecord --output-format=h264 - | ffplay -";
 
-# Monitor aliases
-alias monitor-off="xrandr --output HDMI-1 --off";
-monitor-on() { xrandr --output HDMI-1 --auto --${1:-"right-of"} eDP-1; };
-
 # Sync dotfiles to github (uses yadm)
 update-dotfiles() {
   yadm status;
@@ -16,7 +12,6 @@ update-dotfiles() {
   yadm commit -m "Updates dotfiles" && \
   yadm push -u origin master;
 }
-
 
 # reset-origin a2_develop
 reset-origin() {

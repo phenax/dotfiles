@@ -265,10 +265,6 @@ bindsym Control+Print exec gnome-screenshot -a
 
 popup_during_fullscreen smart
 
-#floating enabled from some programs
-for_window [class="Youtube Music"] floating disable
-
-
 ################### POWER ######################
 
 bindsym $mod+Delete mode "$mode_system"
@@ -357,4 +353,13 @@ gaps inner 0
 gaps outer 0
 #smart_gaps on
 #smart_borders on
+
+
+################## Help view ##############################
+for_window [class="PhenaxHelpView"] floating enable; move position 50% 50%
+bindsym Ctrl+\? exec ~/scripts/helpview/start.sh
+
+################## ORG window ##############################
+for_window [class="OrgWindow"] floating enable; resize shrink width 500 px; move position 50% 50%
+bindsym $mod+n exec ~/scripts/org.sh
 

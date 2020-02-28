@@ -1,0 +1,150 @@
+* APIData
+** GET /recommendations/8SH68106980
+```json
+{
+  "type": "daily_recommendations",
+  "_debug": "daily20",
+  "profile_options": "{\"fieldset\":[\"basic\",\"account\",\"lifestyle\",\"health_info\",\"appearance\",\"family\",\"trait\",\"origin\",\"doctrine\",\"location\",\"profession\",\"education\",\"interests_and_more\",\"verification\"]}",
+  "photo_options": "{\"fieldset\":[\"count\",\"photos\"],\"size\":[\"small\",\"medium\",\"semilarge\", \"120X120\", \"450X600\", \"250X310\"], \"blur\":true, \"thumb_param\":\"_nb\", \"file_extension\": \"webp\"}",
+  "astro_options": "{\"fieldset\":[\"details\"]}",
+  "contact_options": "{\"fieldset\":[\"details\"]}",
+  "derived_options": "{\"fieldset\":[\"relationship_actions\",\"chat_presence\",\"chat_details\",\"score\",\"profile_views\"]}",
+  "derived_text": "{\"fieldset\":[\"matching_data\",\"family_details\",\"horoscope_details\",\"education\",\"career\",\"annualincome\"]}"
+}
+```
+** GET /profiles/8SH68106980
+```json
+{
+   "profileids": "LSH06374817",
+   "options": "{\"profile\":{\"fieldset\":[\"account\",\"basic\",\"lifestyle\",\"health_info\",\"appearance\",\"family\",\"trait\",\"origin\",\"doctrine\",\"account\",\"location\",\"profession\",\"education\",\"interests_and_more\",\"activity_factor\",\"verification\"]},\"photo\":{\"fieldset\":[\"count\",\"photos\"],\"profile_photo\":true,\"size\":[\"small\",\"medium\",\"semilarge\",\"large\",\"750X1333\",\"120X120\",\"450X600\",\"250X310\"],\"blur\":true,\"thumb_param\":\"_nb\",\"file_extension\":\"webp\"},\"astro\":{\"fieldset\":[\"details\"]},\"contact\":{\"fieldset\":[\"details\"]},\"derived\":{\"fieldset\":[\"relationship_actions\",\"chat_presence\",\"chat_details\",\"score\",\"profile_views\"]},\"derived_text\":{\"fieldset\":[\"matching_data\",\"family_details\",\"horoscope_details\",\"education\",\"career\",\"annualincome\"],\"match_count\":3}}",
+   "source": "profile_page"
+}
+```
+** GET /searches/8SH68106980
+```json
+{
+  "type": "preferred",
+  "limit_per_page": "20",
+  "featured_limit": "21",
+  "viewed": "N",
+  "profile_options": "{\"fieldset\":[\"basic\",\"lifestyle\",\"health_info\",\"appearance\",\"family\",\"trait\",\"origin\",\"doctrine\",\"account\",\"location\",\"profession\",\"education\",\"verification\"]}",
+  "photo_options": "{\"fieldset\":[\"count\",\"photos\"],\"size\":[\"small\",\"medium\",\"semilarge\",\"120X120\",\"450X600\",\"250X310\"],\"blur\":true,\"thumb_param\":\"_nb\",\"file_extension\":\"webp\"}",
+  "astro_options": "{ \"fieldset\":[\"details\"] }",
+  "result_options": "{\"fieldset\":[\"profileids\",\"paginator\",\"spotlight\",\"criteria\",\"facet_fields\",\"shortlist_count\",\"count\"]}",
+  "contact_options": "{\"fieldset\":[\"details\"]}",
+  "derived_options": "{\"fieldset\":[\"preferences\",\"chat_presence\",\"chat_details\",\"intents\",\"horoscope_score\",\"match_tag\",\"profile_views\", \"relationship_actions\"]}",
+  "derived_text": "{\"fieldset\":[\"matching_data\",\"family_details\",\"horoscope_details\",\"income\"]}",
+  "sort": "score",
+  "facet_options": "{\"view_more\": true}",
+  "preferred_selection": "setting"
+}
+```
+** GET /searches/8SH68106980
+```json
+{
+  "type": "near_me",
+  "limit_per_page": "20",
+  "viewed": "N",
+  "profile_options": "{\"fieldset\":[\"basic\",\"lifestyle\",\"health_info\",\"appearance\",\"family\",\"trait\",\"origin\",\"doctrine\",\"account\",\"location\",\"profession\",\"education\",\"verification\"]}",
+  "photo_options": "{\"fieldset\":[\"count\",\"photos\"],\"size\":[\"small\",\"medium\",\"semilarge\",\"120X120\",\"450X600\",\"250X310\"],\"blur\":true,\"thumb_param\":\"_nb\",\"file_extension\":\"webp\"}",
+  "astro_options": "{ \"fieldset\":[\"details\"] }",
+  "result_options": "{\"fieldset\":[\"profileids\",\"paginator\",\"spotlight\",\"criteria\",\"facet_fields\",\"shortlist_count\",\"count\"]}",
+  "contact_options": "{\"fieldset\":[\"details\"]}",
+  "derived_options": "{\"fieldset\":[\"preferences\",\"chat_presence\",\"chat_details\",\"intents\",\"horoscope_score\",\"match_tag\",\"profile_views\", \"relationship_actions\"]}",
+  "derived_text": "{\"fieldset\":[\"matching_data\",\"family_details\",\"horoscope_details\",\"income\"]}",
+  "sort": "score",
+  "facet_options": "{\"view_more\": true}",
+  "days": "",
+  "preferred_selection": ""
+}
+```
+** GET /profiles/8SH68106980/intents
+```json
+{
+  "profile_options": {
+    "fieldset": [
+      "account",
+      "basic",
+      "lifestyle",
+      "health_info",
+      "appearance",
+      "family",
+      "trait",
+      "origin",
+      "doctrine",
+      "account",
+      "location",
+      "profession",
+      "education",
+      "interests_and_more",
+      "verification"
+    ]
+  },
+  "photo_options": {
+    "fieldset": [
+      "count",
+      "photos"
+    ],
+    "size": [
+      "small",
+      "medium",
+      "semilarge",
+      "120X120",
+      "450X600",
+      "250X310"
+    ],
+    "blur": "true",
+    "thumb_param": "_nb",
+    "file_extension": "webp"
+  },
+  "derived_options": "{\"fieldset\":[\"chat_presence\",\"chat_details\", \"relationship_actions\",\"intents\"]}",
+  "astro_options": {
+    "fieldset": [
+      "details"
+    ]
+  },
+  "derived_text": {
+    "fieldset": [
+      "matching_data",
+      "family_details",
+      "horoscope_details",
+      "income",
+      "education",
+      "career",
+      "annualincome"
+    ],
+    "match_count": 3
+  },
+  "page": 1,
+  "limit_per_page": 21,
+  "type": "ignored"
+}
+```
+** GET /inbox/8SH68106980
+```json
+{
+  "action": "filtered",
+  "decorator": {
+    "name": "inbox_list_details",
+    "profile_photo": true,
+    "img_size": [
+      "small",
+      "medium",
+      "semilarge"
+    ],
+    "img_border": "_nb"
+  },
+  "page": "1",
+  "limit_per_page": 10,
+  "uid": "8SH68106980",
+  "type": "connect"
+}
+```
+** GET https://api.shaadi.com/v1/profiles
+```json
+{
+  "member": "8SH68106980",
+  "profiles": "8SH68106980",
+  "decorator": "profile_preview_webp"
+}
+```
