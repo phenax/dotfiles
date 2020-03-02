@@ -128,7 +128,7 @@ bindsym $mod+Shift+m exec surf https://github.com/peopleGroup/shaadi-react-reg/p
 bindsym $mod+Shift+t exec kitty --session ~/scripts/kitty-sessions/calendar --class Calendar; focus
 
 # Clock
-# bindsym $mod+t with_zsh "time"
+bindsym $mod+t with_zsh "tty-clock"
 
 ### Spotify mode
 set $spotifymsg Spotify: <Left Enter Right>

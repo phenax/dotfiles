@@ -72,9 +72,12 @@ alias update-sandbox="sudo ~/scripts/host-file-elb-update.sh";
 
 # Application shortcuts
 alias v="nvim";
+alias xvim="vi";
+alias vim="nvim";
 alias chrome="google-chrome";
 alias chromei="google-chrome --incognito";
 alias qute="qutebrowser";
 alias qutei="qutebrowser --temp-basedir -s content.private_browsing true";
 
+alias tmux="tmux -u";
 
