@@ -2,6 +2,9 @@
 
 add() { yadm add "$@" || true; }
 
+# Work config
+add ~/.work-config;
+
 # X and DM
 add ~/.config/i3 ~/.Xresources ~/.xinitrc;
 add ~/.config/{rofi,rofi-pass,rofi-themes};

@@ -81,3 +81,6 @@ alias qutei="qutebrowser --temp-basedir -s content.private_browsing true";
 
 alias tmux="tmux -u";
 
+# Load work aliases
+source "$HOME/.work-config/zshconf/aliases.zsh";
+
