@@ -1,0 +1,3 @@
+[submodule "/home/akshayn/.work-config"]
+	path = /home/akshayn/.work-config
+	url = git@github.com:phenax/work-dotfiles.git
