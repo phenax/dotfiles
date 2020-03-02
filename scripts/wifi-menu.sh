@@ -51,6 +51,8 @@ show_wifi_networks_menu() {
   [[ -z "$wifi_ssid" ]] && return 1;
   local wifi_security=$(echo "$wifi_config" | get_security_type);
 
+  echo "$wifi_ssid $wifi_config";
+
   if $(is_known_connection "$wifi_ssid"); then
     nmcli con up "$wifi_ssid";
   else
