@@ -15,6 +15,7 @@ add ~/.config/{gtk-3.0,fontconfig,mimeapps.list};
 # Terminal and shell
 add ~/.bashrc ~/.profile;
 add ~/.zshrc ~/.config/zshconf;
+add ~/.oh-my-zsh/custom;
 add ~/.config/kitty ~/.tmux.conf;
 
 # Dev

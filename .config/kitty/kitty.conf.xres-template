@@ -14,13 +14,13 @@ linux_display_server x11
 
 # Layout
 enabled_layouts tall:bias=65
-window_border_width 1
+window_border_width 1.1
 window_margin_width 0
 window_padding_width 2
 single_window_margin_width 0
 
 active_border_color #505264
-inactive_border_color #000214
+inactive_border_color #303030
 
 # Tab
 tab_bar_style            powerline
@@ -74,7 +74,7 @@ inactive_tab_background #999
 
 sync_to_monitor yes
 background_opacity 0.9999
-dynamic_background_opacity yes
+dynamic_background_opacity no
 
 
 # From .Xresources
