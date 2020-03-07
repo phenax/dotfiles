@@ -19,6 +19,8 @@ const createItem = ({ label, icon, backgroundColor, textColor = colors.white, pr
   },
 ];
 
+const darker = '\\#0a0d11';
+
 const colors = {
   white: "\\#ffffff",
   red: "\\#dc322f",
@@ -27,16 +29,16 @@ const colors = {
   green: "\\#859900",
   purple: "\\#6c71c4",
   dark: '\\#505050',
-  darker: '\\#2f2f2f',
-  default: "\\#2F2F2F",
+  darker: darker,
+  default: darker,
   highlight: '\\#ffffff',
   menu: {
     bright: {
-      bg: '\\#60a3bc',
+      bg: '\\#03fa96',
       color: '\\#111111',
     },
     default: {
-      bg: '\\#2f2f2f',
+      bg: darker,
       color: '\\#ffffff',
     },
   },

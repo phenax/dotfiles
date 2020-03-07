@@ -1,6 +1,7 @@
 
 ** TODO Daily tasks
-   - [ ] Configure email
-   - [ ] Torrent config
-   - [ ] Fix font issue in nerd tree
-   - [ ] Clean up vim config
+   - [ ] Get kt from vaibhav for all a1 projects
+   - [ ] Figure out what the "add to homescreen" issue is from Geoff and fix
+   - [x] Verify if city changes are live
+   - [ ] Get RDM profile api changes live
+   - [ ] NextJS

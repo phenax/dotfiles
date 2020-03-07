@@ -1,25 +1,17 @@
-URxvt.font: xft:Source Code Pro for Powerline:size=11
-URxvt.boldFont: xft:Source Code Pro for Powerline:size=11
-URxvt.scrollBar: false
-URxvt.perl-ext-common:resize-font
-URxvt.keysym.C-minus:resize-font:smaller
-URxvt.keysym.C-equal:resize-font:bigger
-URxvt.keysym.C-0:resize-font:reset
-
 ! Special
 *.foreground:   #d8dee9
-*.background:   #1d1f31
+*.background:   #0f1215
 *.cursorColor:  #d8dee9
 
 ! Colors
 *.color0:  #282828
 *.color8:  #928374
 
-*.color1:  #cc241d
-*.color9:  #fb4934
+*.color1:  #ff6977
+*.color9:  #fb6573
 
-*.color2:  #98971a
-*.color10:  #b8bb26
+*.color2:  #00d080
+*.color10:  #00d080
 
 *.color3:  #d79921
 *.color11:  #fabd2f

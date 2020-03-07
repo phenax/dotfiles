@@ -18,57 +18,57 @@ conky.text = [[
 [
   {
     "full_text": "",
-    "color": "\#60a3bc",
-    "background": "\#2F2F2F",
+    "color": "\#03fa96",
+    "background": "\#0a0d11",
     "separator": true,
     "separator_block_width": 0
   },
   {
     "full_text": "   ${exec ~/scripts/i3status/menuitems.sh volume_icon}  ${exec ~/scripts/i3status/menuitems.sh volume}  ",
     "color": "\#111111",
-    "background": "\#60a3bc",
+    "background": "\#03fa96",
     "separator": true,
     "separator_block_width": 0
   },
   {
     "full_text": "",
-    "color": "\#2f2f2f",
-    "background": "\#60a3bc",
+    "color": "\#0a0d11",
+    "background": "\#03fa96",
     "separator": true,
     "separator_block_width": 0
   },
   {
     "full_text": "   ${exec ~/scripts/i3status/menuitems.sh spotify_song_icon}  ${exec ~/scripts/i3status/menuitems.sh spotify_song}  ",
     "color": "\#ffffff",
-    "background": "\#2f2f2f",
+    "background": "\#0a0d11",
     "separator": true,
     "separator_block_width": 0
   },
   {
     "full_text": "",
-    "color": "\#60a3bc",
-    "background": "\#2f2f2f",
+    "color": "\#03fa96",
+    "background": "\#0a0d11",
     "separator": true,
     "separator_block_width": 0
   },
   {
     "full_text": "      ${time %A, %d %b}  | ${time %l:%M %p}  ",
     "color": "\#111111",
-    "background": "\#60a3bc",
+    "background": "\#03fa96",
     "separator": true,
     "separator_block_width": 0
   },
   {
     "full_text": "",
-    "color": "\#2f2f2f",
-    "background": "\#60a3bc",
+    "color": "\#0a0d11",
+    "background": "\#03fa96",
     "separator": true,
     "separator_block_width": 0
   },
   {
     "full_text": "    ${exec ~/scripts/i3status/menuitems.sh battery_icon} ${exec ~/scripts/i3status/menuitems.sh battery}  ",
     "color": "\#ffffff",
-    "background": "\#2f2f2f",
+    "background": "\#0a0d11",
     "separator": true,
     "separator_block_width": 0
   }

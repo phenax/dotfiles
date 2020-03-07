@@ -128,7 +128,7 @@ bindsym $mod+Shift+m exec surf https://github.com/peopleGroup/shaadi-react-reg/p
 bindsym $mod+Shift+t exec kitty --session ~/scripts/kitty-sessions/calendar --class Calendar; focus
 
 # Clock
-bindsym $mod+t with_zsh "tty-clock"
+bindsym $mod+t exec kitty -e tty-clock -t -b -c
 
 ### Spotify mode
 set $spotifymsg Spotify: <Left Enter Right>
@@ -317,42 +317,36 @@ bindsym $mod+u border none
 bar {
   status_command ~/scripts/i3status/start.sh
 
-  bindsym button4 nop
-  bindsym button5 nop
-
   height 22
   workspace_buttons yes
-  separator_symbol " :: "
 
   colors {
-    background #2F2F2F
-    statusline #d6d6d6
-    separator #666666
+    background #0a0d11
 
     #                     border  backgr. text
-    focused_workspace     #60a3bc #60a3bc #2f2f2f
-    active_workspace      #505050 #505050 #a9a9a9
-    inactive_workspace    #222222 #222222 #a9a9a9
-    urgent_workspace      #4A4A4A #4A4A4A #a9a9a9
+    focused_workspace     #03fa96 #03fa96 #111111
+    active_workspace      #0f1215 #0f1215 #a9a9a9
+    inactive_workspace    #0f1215 #0f1215 #a9a9a9
+    urgent_workspace      #fb6573 #fb6573 #ffffff
   }
 }
 
 # class                 border  backgr. text    indicator
-client.placeholder      #242424 #242424 #242424
-client.background       #242424 #242424 #242424
-client.focused          #4A4A4A #4A4A4A #e5e5e5 #4A4A4A
-client.unfocused        #222222 #222222 #aaaaaa #222222
-client.focused_inactive #222222 #222222 #a9a9a9 #222222
+client.placeholder      #0a0d11 #0a0d11 #0a0d11
+client.background       #0a0d11 #0a0d11 #0a0d11
+client.focused          #1f2328 #1f2328 #e5e5e5 #1f2328
+client.unfocused        #0d1015 #0d1015 #aaaaaa #0d1015
+client.focused_inactive #0d1015 #0d1015 #a9a9a9 #0d1015
 client.urgent           #4A4A4A #4A4A4A #f7f7f7 #4A4A4A
 
 
 ################### i3 gaps ##############################
 
-for_window [class="^.*"] border pixel 3
-gaps inner 0
-gaps outer 0
-#smart_gaps on
-#smart_borders on
+for_window [class="^.*"] border pixel 2
+gaps inner 6
+gaps outer 3
+smart_gaps on
+smart_borders on
 
 
 ################## Help view ##############################

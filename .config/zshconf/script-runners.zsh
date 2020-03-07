@@ -17,6 +17,7 @@ _create_runner() {
 
 _create_runner "wifi-menu";
 _create_runner "monitor";
+_create_runner "md-preview";
 
 _create_runner "image-preview";
 _create_runner "brightness";
