@@ -1,5 +1,4 @@
-Plug 'drewtempelmeyer/palenight.vim'
-Plug 'jordwalke/vim-taste'
+Plug 'phenax/palenight.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
