@@ -1,3 +1,4 @@
+" Plug 'dracula/vim'
 Plug 'phenax/palenight.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'

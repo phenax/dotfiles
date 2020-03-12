@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# https://github.com/Corwind/termite-install
+sudo apt update;
 
 sudo apt install \
   yadm \
@@ -33,7 +33,17 @@ sudo apt install \
   calcurse \
   zsh-syntax-highlighting;
 
-brew tap nickolasburr/pfa && brew install sc-im;
+sudo apt autoremove;
 
+brew tap nickolasburr/pfa && brew install sc-im;
 ln -s ~/.config/calcurse ~/.calcurse;
+
+# yadm clone https://github.com/phenax/dotfiles.git
+
+# Haskell dev setup
+sudo apt-get install haskell-platform;
+curl -sSL https://get.haskellstack.org/ | sh;
+
+
+
 

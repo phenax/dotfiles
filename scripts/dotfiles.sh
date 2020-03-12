@@ -20,7 +20,7 @@ add ~/.config/kitty ~/.tmux.conf;
 
 # Dev
 add ~/.vimrc ~/.config/nvim ~/scripts ~/.bin;
-add ~/.yarnrc ~/.npmrc ~/.gitconfig;
+add ~/.yarnrc ~/.npmrc
 
 # Applications
 add ~/.scimrc;

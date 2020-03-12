@@ -1,9 +1,9 @@
 set guifont=Source\ Code\ Pro\ for\ Powerline\ 10
 
-" colorscheme taste
+" colorscheme dracula
 colorscheme palenight
 
-" let g:airline_theme = "taste"
+" let g:airline_theme = "dracula"
 let g:airline_theme = "palenight"
 
 let g:airline#extensions#tabline#enabled = 1
