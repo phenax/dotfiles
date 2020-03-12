@@ -46,6 +46,9 @@ lc () { # lf with cd to navigated directory on quit
     fi
 }
 
+# Magic cd
+eval "$(zoxide init zsh)";
+
 # Git aliases
 alias gaa="git add ."
 

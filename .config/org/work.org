@@ -5,3 +5,8 @@
    - [x] Verify if city changes are live
    - [ ] Get RDM profile api changes live
    - [ ] NextJS
+
+** TODO Rollbar errors
+  - [ ] UPDATE_DATA on failure
+  - [ ] Infinite loop error
+  - [ ] GCR web (https://stackoverflow.com/questions/26483541/referenceerror-cant-find-variable-gcrweb)

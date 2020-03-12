@@ -1,3 +1,0 @@
-# $endpoint = http://httpbin.org
-
-GET $endpoint/get

@@ -11,16 +11,8 @@ set t_Co=256
 
 let g:pluginpath = '~/.config/nvim/plugged'
 call plug#begin(g:pluginpath)
-  " Plug 'janko-m/vim-test'
-  " Plug 'tpope/vim-eunuch'
-  " Plug 'wesQ3/vim-windowswap'
-  " Plug 'thaerkh/vim-workspace'
-  " Plug 'xolox/vim-session'
-  " Plug 'xolox/vim-misc'
-
   " Org mode
-  Plug 'jceb/vim-orgmode'
-  " Plug 'mattn/calendar-vim'
+  " Plug 'jceb/vim-orgmode'
 
   runtime plugins_/coc.vim
   runtime plugins_/lang.vim
