@@ -1,0 +1,1 @@
+if [[ ! -z "$CUSTOM_PROMPT" ]]; then PS1="$CUSTOM_PROMPT"; fi;
