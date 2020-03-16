@@ -1,0 +1,7 @@
+git status
+git checkout $BRANCH
+git status
+git pull
+git reset --hard origin/production
+git push -u origin $BRANCH
+exit

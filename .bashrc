@@ -107,5 +107,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# source $HOME/.config/shell-macros/adapters/bash;
+
 export SHELL=/bin/zsh;
 exec $SHELL;

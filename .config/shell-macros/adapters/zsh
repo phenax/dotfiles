@@ -1,1 +1,5 @@
 if [[ ! -z "$CUSTOM_PROMPT" ]]; then PROMPT="$CUSTOM_PROMPT"; fi;
+
+alias mcs="macros start";
+alias mcr="macros run";
+
