@@ -1,0 +1,12 @@
+X="wow"
+echo $X
+Y="~/Desktop"
+ls
+ls $Y
+ls ~/Desktop
+ls $Y
+ls $Y/
+Y="$HOME/Desktop"
+ls
+ls $Y
+exit

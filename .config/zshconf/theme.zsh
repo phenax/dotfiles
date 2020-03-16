@@ -5,3 +5,4 @@ ZSH_THEME="akshay"
 
 source $ZSH/oh-my-zsh.sh
 
+source $HOME/.config/shell-macros/adapters/zsh;

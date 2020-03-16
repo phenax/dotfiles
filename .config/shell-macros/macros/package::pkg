@@ -1,0 +1,3 @@
+ls
+echo "foobar"
+exit

@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 SHELL_MACROS_PATH=$HOME/.config/shell-macros;
-SHELL_BIN=/usr/bin/macros;
+MACROS_BINARY=/usr/bin/macros;
+PKGER_BINARY=/usr/bin/pkger-macros;
 
 clone() {
   git clone https://github.com/phenax/shell-macros.git $SHELL_MACROS_PATH;
@@ -36,8 +37,12 @@ rm -rf $SHELL_MACROS_PATH/.git;
 echo "";
 
 echo "* Configuring binary...";
-if [[ ! -f "$SHELL_BIN" ]]; then
-  sudo ln -s "$SHELL_MACROS_PATH/macros.sh" "$SHELL_BIN";
+if [[ ! -f "$MACROS_BINARY" ]]; then
+  sudo ln -s "$SHELL_MACROS_PATH/macros.sh" "$MACROS_BINARY";
+fi
+
+if [[ ! -f "$PKGER_BINARY" ]]; then
+  sudo ln -s "$SHELL_MACROS_PATH/pkger-macros.sh" "$PKGER_BINARY";
 fi
 echo "";
 
