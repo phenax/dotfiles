@@ -1,3 +1,8 @@
+! dzen2.font: xft:M+ 1m regular:size=15
+! dzen2.font:       -*-fixed-*-*-*-*-*-*-*-*-*-*-*-*
+! dzen2.foreground: #22EE11
+! dzen2.background: black
+
 ! Special
 *.foreground:   #d8dee9
 *.background:   #0f1215

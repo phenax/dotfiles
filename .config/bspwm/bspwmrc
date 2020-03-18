@@ -1,0 +1,64 @@
+#! /bin/sh
+
+##### Autostart applications
+
+# Key daemon
+killall -9 sxhkd;
+sxhkd &
+
+# Compositor
+killall -9 compton;
+compton --config ~/compton.conf &
+
+# Notification manager
+killall -9 dunst;
+dunst -config ~/.config/dunst/dunstrc &
+
+killall -9 dzen2;
+~/scripts/dzen2bar/start.sh &
+
+# Draw wallpaper
+~/.fehbg &
+
+
+
+##### Workspace config
+# xrandr --listmonitors | awk '!/^Monitor/ {print $2}' | sed 's/[+*]//g'
+# MON_PRIMARY="eDP-1"
+# MON_SECONDARY="HDMI-1"
+# bspc monitor $MON_PRIMARY -d 1 2 3 4 5
+# bspc monitor $MON_PRIMARY -d 1 2 3 4 5
+bspc monitor -d 1 2 3 4 5 6 7 8 9 10
+
+
+
+##### Config
+
+# Gaps config
+bspc config border_width         0
+bspc config window_gap           12
+bspc config single_monocle       true
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+bspc config normal_frame_opacity   0.0
+bspc config focused_frame_opacity  0.1
+
+##### Layouts config
+bspc config bottom_padding         20
+bspc config split_ratio            0.6
+
+# bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Spotify desktop='^10'
+# bspc rule -a mplayer2 state=floating
+# bspc rule -a Kupfer.py focus=on
+# bspc rule -a Screenkey manage=off
+
+
+# TODO
+# * Workspaces display on statusbar
+# * Multimonitor
+# * Menu keybindings
+# * Shutdown keybindings
+# * Spotify controls
+# * Menu key bindings
+

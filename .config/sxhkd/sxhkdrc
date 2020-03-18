@@ -1,0 +1,126 @@
+
+
+##### Application hot keys
+
+# Terminal
+super + Return
+	$TERMINAL
+
+# Browser
+super + c
+  browser
+
+
+
+##### System control
+
+# Lock screen
+ctrl + shift + l
+  ~/scripts/lockscreen.sh
+
+# Screenshot
+print
+  scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/'
+ctrl + print
+  gnome-screenshot -a
+
+# Brightness control
+XF86MonBrightness{Down,Up}
+	~/scripts/brightness.sh {dec,inc}
+
+# Audio control
+XF86Audio{Raise,Lower}Volume
+  amixer -D pulse sset Master {'5%+','5%-'}
+XF86AudioMute
+  amixer -D pulse set Master toggle
+
+
+
+
+##### Menu
+
+# Run menu
+super + d
+  rofi -modi drun,window,run -show drun
+
+super+shift+p
+  rofi-pass
+super+shift+o
+  with_zsh "~/scripts/open-project.sh"
+super+shift+i
+  with_zsh "~/scripts/bookmarks-menu/bookmarker.sh menu"
+super+shift+g
+  with_zsh "~/scripts/bookmarks-menu/gh-projects.sh menu"
+super+shift+e
+  with_zsh "~/scripts/fontawesome-menu/fa-menu.sh menu"
+
+
+
+##### Window specific
+
+# Close window
+super + shift + q
+	bspc node -k
+
+# alternate between the tiled and monocle layout
+super + m
+	bspc desktop -l next
+
+
+
+
+##### focus/swap
+
+# focus the node in the given direction
+super + {_,shift + }{Left,Down,Up,Right}
+	bspc node -{f,s} {west,south,north,east}
+
+# focus the node for the given path jump
+super + {p,b,comma,period}
+	bspc node -f @{parent,brother,first,second}
+
+# Next/Prev workspace
+super + {minus,equal}
+  bspc desktop {prev,next} -f
+
+# focus the last node/desktop
+super + {grave,Tab}
+	bspc {node,desktop} -f last
+
+# focus or send to the given desktop
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+
+
+
+##### Preselection
+
+# preselect the direction
+super + ctrl + {Left,Down,Up,Right}
+	bspc node -p {west,south,north,east}
+
+# preselect the ratio
+super + ctrl + {1-9}
+	bspc node -o 0.{1-9}
+
+# cancel the preselection for the focused node
+super + ctrl + space
+	bspc node -p cancel
+
+
+
+
+##### Move and Resize
+
+# expand a window by moving one of its side outward
+super + alt + {Left,Down,Up,Right}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# contract a window by moving one of its side inward
+super + alt + shift + {Left,Down,Up,Right}
+	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+# move a floating window
+super + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
