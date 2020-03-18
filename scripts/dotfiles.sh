@@ -6,7 +6,9 @@ add() { yadm add "$@" || true; }
 add ~/.work-config;
 
 # X and DM
-add ~/.config/i3 ~/.Xresources ~/.xinitrc;
+add ~/.config/i3;
+add ~/.config/{bspwm,sxhkd}
+add ~/.Xresources ~/.xinitrc ~/compton.conf;
 add ~/.config/{rofi,rofi-pass,rofi-themes};
 
 # Other config
@@ -19,7 +21,7 @@ add ~/.oh-my-zsh/custom;
 add ~/.config/kitty ~/.tmux.conf;
 
 # Dev
-add ~/.vimrc ~/.config/nvim ~/scripts ~/.bin;
+add ~/.vimrc ~/.config/nvim ~/.config/coc ~/scripts ~/.bin;
 add ~/.yarnrc ~/.npmrc
 
 # Applications
