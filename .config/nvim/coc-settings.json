@@ -1,6 +1,12 @@
 {
   "coc.preferences.jumpCommand": "drop",
   "languageserver": {
+    "bash": {
+      "command": "bash-language-server",
+      "args": ["start"],
+      "filetypes": ["sh", "zsh"],
+      "ignoredRootPaths": ["~"]
+    },
     "haskell": {
       "command": "hie-wrapper",
       "args": ["--lsp"],

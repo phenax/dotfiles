@@ -1,4 +1,5 @@
 " Plug 'dracula/vim'
+" Plug 'wadackel/vim-dogrun'
 Plug 'phenax/palenight.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
