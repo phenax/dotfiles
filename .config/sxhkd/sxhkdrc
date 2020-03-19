@@ -82,7 +82,19 @@ super + shift + q
 super + f
   bspc desktop -l next
 
+# Stack layout
+super + s
+  ~/scripts/stack_layout.sh
 
+# Add focused window to a tabbed instance in given direction
+super + t; {Left,Down,Up,Right}
+    ~/scripts/tabbed.sh $(bspc query -N -n {west,south,north,east}) add $(bspc query -N -n focused)
+
+# Remove one tab from tabbed
+super + t; r
+    tabbed=$(bspc query -N -n focused); \
+    child=$(~/scripts/tabbed.sh $tabbed list | head -n1); \
+    ~/scripts/tabbed.sh $tabbed remove $child
 
 
 ##### focus/swap
