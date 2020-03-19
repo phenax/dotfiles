@@ -4,35 +4,50 @@
 
 # Terminal
 super + Return
-	$TERMINAL
+  $TERMINAL
 
 # Browser
 super + c
   browser
 
 
+##### Application control
+
+# Spotify controls
+super + m; {Left,Return,Right}
+  ~/scripts/spotify.sh {prev,play_pause,next}
+
+
 
 ##### System control
+
+# Refresh bspwm config
+super + shift + r
+  ~/.config/bspwm/bspwmrc;
+
+# Shutdown/Reboot
+super + Delete; {s,r}
+  ~/.config/i3/i3exit.sh {shutdown,reboot}
 
 # Lock screen
 ctrl + shift + l
   ~/scripts/lockscreen.sh
 
 # Screenshot
-print
+Print
   scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/'
-ctrl + print
+ctrl + Print
   gnome-screenshot -a
 
 # Brightness control
 XF86MonBrightness{Down,Up}
-	~/scripts/brightness.sh {dec,inc}
+  ~/scripts/brightness.sh {dec,inc}
 
 # Audio control
 XF86Audio{Raise,Lower}Volume
-  amixer -D pulse sset Master {'5%+','5%-'}
+  ~/scripts/sound.sh volume {up,down}
 XF86AudioMute
-  amixer -D pulse set Master toggle
+  ~/scripts/sound.sh mute
 
 
 
@@ -43,6 +58,7 @@ XF86AudioMute
 super + d
   rofi -modi drun,window,run -show drun
 
+# Custom menus
 super+shift+p
   rofi-pass
 super+shift+o
@@ -60,11 +76,11 @@ super+shift+e
 
 # Close window
 super + shift + q
-	bspc node -k
+  bspc node -k
 
 # alternate between the tiled and monocle layout
-super + m
-	bspc desktop -l next
+super + f
+  bspc desktop -l next
 
 
 
@@ -73,11 +89,11 @@ super + m
 
 # focus the node in the given direction
 super + {_,shift + }{Left,Down,Up,Right}
-	bspc node -{f,s} {west,south,north,east}
+  bspc node -{f,s} {west,south,north,east}
 
 # focus the node for the given path jump
 super + {p,b,comma,period}
-	bspc node -f @{parent,brother,first,second}
+  bspc node -f @{parent,brother,first,second}
 
 # Next/Prev workspace
 super + {minus,equal}
@@ -85,11 +101,11 @@ super + {minus,equal}
 
 # focus the last node/desktop
 super + {grave,Tab}
-	bspc {node,desktop} -f last
+  bspc {node,desktop} -f last
 
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
-	bspc {desktop -f,node -d} '^{1-9,10}'
+  bspc {desktop -f,node -d} '^{1-9,10}'
 
 
 
@@ -98,15 +114,15 @@ super + {_,shift + }{1-9,0}
 
 # preselect the direction
 super + ctrl + {Left,Down,Up,Right}
-	bspc node -p {west,south,north,east}
+  bspc node -p {west,south,north,east}
 
 # preselect the ratio
 super + ctrl + {1-9}
-	bspc node -o 0.{1-9}
+  bspc node -o 0.{1-9}
 
 # cancel the preselection for the focused node
 super + ctrl + space
-	bspc node -p cancel
+  bspc node -p cancel
 
 
 
@@ -115,12 +131,12 @@ super + ctrl + space
 
 # expand a window by moving one of its side outward
 super + alt + {Left,Down,Up,Right}
-	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+  bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
 
 # contract a window by moving one of its side inward
 super + alt + shift + {Left,Down,Up,Right}
-	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+  bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
 
 # move a floating window
 super + {Left,Down,Up,Right}
-	bspc node -v {-20 0,0 20,0 -20,20 0}
+  bspc node -v {-20 0,0 20,0 -20,20 0}

@@ -9,7 +9,7 @@ const config = {
   out_to_console: true,
   background: false,
   max_text_width: 0,
-  update_interval: 0.3,
+  update_interval: 0.1,
   total_run_times: 0,
   short_units: true,
   if_up_strictness: "address",
@@ -28,16 +28,15 @@ const defaultMenu = {
   textColor: colors.menu.default.color,
 }
 
+
 let statusItems = [];
-
-
 
 if (process.argv.includes('workspaces')) {
   statusItems = toStatusItems([
     ...createItem({
       label: "${exec ~/scripts/dzen2bar/menuitems.sh workspaces}",
       ...defaultMenu,
-    })
+    }, { seperator: false })
   ]);
 } else {
   statusItems = toStatusItems([

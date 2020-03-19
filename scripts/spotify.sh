@@ -12,7 +12,7 @@ SP_MEMB=org.mpris.MediaPlayer2.Player;
 extract() { echo "$1" | awk -F'|' '$1 == MATCH { print $2 }' MATCH="$2"; }
 
 # Sanitize output string
-sanitize() { sed 's/[^A-Za-z0-9\-\(\)]/ /g' | sed 's/\s+/ /g'; }
+sanitize() { sed 's/[^A-Za-z0-9\-\(\)]/ /g' | sed 's/\s\+/ /g'; }
 
 # Get a property from media player interface
 spotify_get_property() {

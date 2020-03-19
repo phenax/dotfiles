@@ -2,14 +2,14 @@ const SEPERATOR = "";
 
 const isSeperator = x => x.full_text === SEPERATOR;
 
-const createItem = ({ label, icon, backgroundColor, textColor = colors.white, previousColor = colors.default }) => [
-  // {
-    // "full_text": SEPERATOR,
-    // "color": backgroundColor,
-    // "background": previousColor,
-    // "separator": true,
-    // "separator_block_width": 0
-  // },
+const createItem = ({ label, icon, backgroundColor, textColor = colors.white, previousColor = colors.default }, { seperator = true } = {}) => [
+  seperator && {
+    "full_text": SEPERATOR,
+    "color": backgroundColor,
+    "background": previousColor,
+    "separator": true,
+    "separator_block_width": 0
+  },
   {
     // "full_text": `  ${icon} ${label}  `,
     "full_text": `${label}`,
@@ -18,7 +18,7 @@ const createItem = ({ label, icon, backgroundColor, textColor = colors.white, pr
     "separator": true,
     "separator_block_width": 0
   },
-];
+].filter(Boolean);
 
 const darker = '\\#0a0d11';
 
