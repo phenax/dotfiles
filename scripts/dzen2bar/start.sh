@@ -12,6 +12,6 @@ bar() {
 }
 
 conky -c $HOME/scripts/dzen2bar/conky.conf | bar &
-sleep 1;
+sleep 0.5;
 conky -c $HOME/scripts/dzen2bar/conky-workspaces.conf | bar -w 400 -ta left -p &
 

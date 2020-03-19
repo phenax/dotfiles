@@ -6,7 +6,7 @@ get_battery() { echo "$(battery_component capacity)"; }
 
 volume_component() { amixer get Master | awk -F'[][]' '/dB/ {print $C}' C="$1"; }
 get_volume() { volume_component 2; }
-get_volume_state() { volume_component 6 | sed 's/on//; s/off//'; }
+get_volume_state() { volume_component 6 | sed 's/on//; s/off//'; }
 
 get_spotify_play_state() {
   local playstate="$(~/scripts/spotify.sh get_play_state 2> /dev/null)";
@@ -19,7 +19,7 @@ get_spotify_play_state() {
 }
 
 get_spotify_label() {
-  local label=$(~/scripts/spotify.sh get_label 2> /dev/null | cut -c 1-20);
+  local label=$(~/scripts/spotify.sh get_label 2> /dev/null | cut -c 1-30);
 
   if [[ "$label" == " - " ]];
     then echo "-";
@@ -49,7 +49,6 @@ case "$1" in
   volume_icon) get_volume_state ;;
   spotify_song) get_spotify_label ;;
   spotify_song_icon) get_spotify_play_state ;;
-  do-show-time) kitty -e "calcurse" ;;
   workspaces) list_workspaces ;;
   *) echo "Not a valid menu item" ;;
 esac
