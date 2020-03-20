@@ -12,3 +12,5 @@ cd ../sxhkd/ && make && sudo make install
 cd ../sutils/ && make && sudo make install
 cd ../xtitle/ && make && sudo make install
 cd ../xdo/ && make && sudo make install
+cd ../bspwm/ && sudo cp contrib/freedesktop/bspwm.desktop /usr/share/xsessions/
+sudo apt install polybar

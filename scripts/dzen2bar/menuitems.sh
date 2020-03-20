@@ -6,7 +6,7 @@ get_battery() { echo "$(battery_component capacity)"; }
 
 volume_component() { amixer get Master | awk -F'[][]' '/dB/ {print $C}' C="$1"; }
 get_volume() { volume_component 2; }
-get_volume_state() { volume_component 6 | sed 's/on//; s/off//'; }
+get_volume_state() { volume_component 6 | sed 's/on//; s/off//'; }
 
 get_spotify_play_state() {
   local playstate="$(~/scripts/spotify.sh get_play_state 2> /dev/null)";

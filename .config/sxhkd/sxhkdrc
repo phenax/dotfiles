@@ -70,13 +70,16 @@ super+shift+g
 super+shift+e
   with_zsh "~/scripts/fontawesome-menu/fa-menu.sh menu"
 
+# Window switcher
+alt + Tab
+  rofi -modi windowcd -show windowcd
 
 
 ##### Window specific
 
 # Close window
 super + shift + q
-  bspc node -k
+  bspc node -c
 
 # alternate between the tiled and monocle layout
 super + f
@@ -88,13 +91,13 @@ super + s
 
 # Add focused window to a tabbed instance in given direction
 super + t; {Left,Down,Up,Right}
-    ~/scripts/tabbed.sh $(bspc query -N -n {west,south,north,east}) add $(bspc query -N -n focused)
+  ~/scripts/tabbed.sh add {west,south,north,east} "$(bspc query -N -n focused)"
 
 # Remove one tab from tabbed
 super + t; r
-    tabbed=$(bspc query -N -n focused); \
-    child=$(~/scripts/tabbed.sh $tabbed list | head -n1); \
-    ~/scripts/tabbed.sh $tabbed remove $child
+  tabbed=$(bspc query -N -n focused); \
+  child=$(~/scripts/tabbed.sh list $tabbed | head -n1); \
+  ~/scripts/tabbed.sh remove $child
 
 
 ##### focus/swap

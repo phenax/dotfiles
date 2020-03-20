@@ -1,0 +1,32 @@
+#!/bin/bash
+
+id="${1?}";
+instance="$3";
+class="$2";
+
+spotify() { echo "desktop=^10"; }
+
+
+# Identify window process id
+unset -v _NET_WM_PID;
+  . /dev/fd/0 2>/dev/null <<IN
+  : \"\${$(
+    xprop \
+      -id "$id" \
+      -notype \
+      -f _NET_WM_PID 32c '=$0' \
+      _NET_WM_PID;
+  )}\";
+IN
+
+# Display rules
+case "$class" in
+  (spotify) spotify;;
+  ("")
+    pid="$_NET_WM_PID";
+    win=$(ps -o "comm=" -p "$pid");
+
+    case "$win" in
+      (spotify) spotify ;;
+    esac;;
+esac;
