@@ -1,11 +1,11 @@
 #!/bin/sh
 
 # Usage:
-# tabc.sh <tabbed-id> <command>
+# tabc.sh <tabbedid-id> <command>
 # Commands:
-#    add <window-id> 	- Add window to tabbed
-#    remove <window-id> - Remove window from tabbed
-#    list				- List all clients of tabbed
+#    add <window-id> 	- Add window to tabbedid
+#    remove <window-id> - Remove window from tabbedid
+#    list				- List all clients of tabbedid
 
 #
 # Functions
@@ -19,36 +19,55 @@ get_root_wid() {
 # Get children of tabbed
 get_clients() {
 	id=$1
-	xwininfo -id $id -children | sed -n '/[0-9]\+ \(child\|children\):/,$s/ \+\(0x[0-9a-z]\+\).*/\1/p'
+	xwininfo -id "$id" -children | sed -n '/[0-9]\+ \(child\|children\):/,$s/ \+\(0x[0-9a-z]\+\).*/\1/p'
 }
 
 # Get class of a wid
 get_class() {
 	id=$1
-	xprop -id $id | sed -n '/WM_CLASS/s/.*, "\(.*\)"/\1/p'
+  if [ -z "$id" ]; then
+    echo ""
+  else
+	  xprop -id "$id" | sed -n '/WM_CLASS/s/.*, "\(.*\)"/\1/p'
+  fi
+
 }
 
 #
 # Main Program
 #
 
-tabbed=$1; shift
-if [ "$(get_class $tabbed)" != "tabbed" ]; then
-	echo "Not an instance of tabbed" 2>&1
-fi
-
-cmd=$1; shift
+cmd=$1
 
 case $cmd in
 	add)
-		wid=$1; shift
-		xdotool windowreparent $wid $tabbed
+	  wid=$3
+    tabbedid=$(bspc query -N -n "$2")
+
+    if [ -z "$tabbedid" ] || [ "$(get_class "$tabbedid")" != "tabbed" ]; then
+      tabbed -c &
+      bspc subscribe node_add | while read -r add
+      do
+        id=$(echo "$add" | awk '{print $5}')
+        class="$(get_class "$id")"
+        if [ "$class" = "tabbed" ]; then
+          tabbedid=$id
+	  	    xdotool windowreparent "$wid" "$tabbedid"
+          exit 0
+        fi
+      done
+	  	  xdotool windowreparent "$wid" "$tabbedid"
+    else
+	  	xdotool windowreparent "$wid" "$tabbedid"
+    fi
 		;;
 	remove)
-		wid=$1; shift
-		xdotool windowreparent $wid $(get_root_wid)
+		wid=$2
+    tabbedid=$(bspc query -N -n focused)
+		xdotool windowreparent "$wid" "$(get_root_wid)"
 		;;
 	list)
-		get_clients $tabbed
+    tabbedid=$2
+		get_clients "$tabbedid"
 		;;
 esac

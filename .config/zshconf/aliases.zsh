@@ -17,7 +17,7 @@ update-dotfiles() {
 reset-origin() {
   if [[ -z $(git status -s) ]];
     then
-      currentBranch="$(git rev-parse --abbrev-ref HEAD)"
+      currentBranch="$(git rev-parse --abbrev-ref HEAD)";
       branch="$1";
       git checkout $branch &&
       git pull &&
@@ -47,7 +47,7 @@ lc () { # lf with cd to navigated directory on quit
 }
 
 # Magic cd
-eval "$(zoxide init zsh)";
+# eval "$(zoxide init zsh)";
 
 # Git aliases
 alias gaa="git add ."
@@ -67,11 +67,12 @@ alias nt="npm test";
 # Config editors
 alias ezsh="cd ~/.config/zshconf && i3-sensible-editor .";
 alias edot="i3-sensible-editor ~/scripts/dotfiles.sh";
-alias eorg="cd ~/.config/org && i3-sensible-editor .";
 alias evim="cd ~/.config/nvim && i3-sensible-editor .";
+alias ekey="i3-sensible-editor ~/.config/sxhkd/sxhkdrc";
+alias ebsp="i3-sensible-editor ~/.config/bspwm/bspwmrc";
 alias ehosts="sudo i3-sensible-editor /etc/hosts";
 
-alias update-sandbox="sudo ~/scripts/host-file-elb-update.sh";
+alias sandbox="sudo ~/scripts/host-file-elb-update.sh";
 
 # Application shortcuts
 alias v="nvim";
