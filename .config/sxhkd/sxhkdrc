@@ -49,7 +49,9 @@ XF86Audio{Raise,Lower}Volume
 XF86AudioMute
   ~/scripts/sound.sh mute
 
-
+# Mic mute
+XF86AudioMicMute
+  amixer set Capture toggle
 
 
 ##### Menu
@@ -85,19 +87,14 @@ super + shift + q
 super + f
   bspc desktop -l next
 
-# Stack layout
-super + s
-  ~/scripts/stack_layout.sh
+# Tall layout
+super + {t,w}
+  ~/.config/bspwm/layouts/{tall,wide}.sh
 
-# Add focused window to a tabbed instance in given direction
-super + t; {Left,Down,Up,Right}
-  ~/scripts/tabbed.sh add {west,south,north,east} "$(bspc query -N -n focused)"
+# Balance out layout
+super + b
+  bspc node '@/' -B
 
-# Remove one tab from tabbed
-super + t; r
-  tabbed=$(bspc query -N -n focused); \
-  child=$(~/scripts/tabbed.sh list $tabbed | head -n1); \
-  ~/scripts/tabbed.sh remove $child
 
 
 ##### focus/swap
@@ -106,9 +103,13 @@ super + t; r
 super + {_,shift + }{Left,Down,Up,Right}
   bspc node -{f,s} {west,south,north,east}
 
+# Page up/down to focus next
+super + {Next,Prior}
+  bspc node -f '{next,prev}.local'
+
 # focus the node for the given path jump
-super + {p,b,comma,period}
-  bspc node -f @{parent,brother,first,second}
+# super + {p,b,comma,period}
+#   bspc node -f @{parent,brother,first,second}
 
 # Next/Prev workspace
 super + {minus,equal}
