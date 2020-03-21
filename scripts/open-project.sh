@@ -1,15 +1,12 @@
 #!/bin/bash
 
-PROJECTS=$(ls -t $PROJECTS_DIR);
+projects=$(ls -t $PROJECTS_DIR);
 
-PROJECT=$(echo "$PROJECTS" | rofi -dmenu -p "Project name");
+project=$(echo "$projects" | rofi -dmenu -p "Project name");
 
-if [ -z "$PROJECT" ]; then
+if [ -z "$project" ]; then
   exit 1;
 else
-  kitty \
-    -d "$PROJECTS_DIR/$PROJECT" \
-    --session ~/scripts/kitty-sessions/ns \
-  ;
+  ~/scripts/sessions/project.sh "$PROJECTS_DIR/$project";
 fi;
 

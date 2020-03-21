@@ -68,8 +68,8 @@ alias nt="npm test";
 alias ezsh="cd ~/.config/zshconf && i3-sensible-editor .";
 alias edot="i3-sensible-editor ~/scripts/dotfiles.sh";
 alias evim="cd ~/.config/nvim && i3-sensible-editor .";
-alias ekey="i3-sensible-editor ~/.config/sxhkd/sxhkdrc";
-alias ebsp="i3-sensible-editor ~/.config/bspwm/bspwmrc";
+alias ekey="cd ~/.config/sxhkd && i3-sensible-editor .";
+alias ebsp="cd ~/.config/bspwm && i3-sensible-editor .";
 alias ehosts="sudo i3-sensible-editor /etc/hosts";
 
 alias sandbox="sudo ~/scripts/host-file-elb-update.sh";

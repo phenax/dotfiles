@@ -66,3 +66,7 @@ nmap <C-k> :BD<CR>
 vmap <C-c> "+y
 vmap <C-p> "+p
 
+nmap <S-Tab> zR
+nmap zx zo
+nmap zc zc
+
