@@ -1,0 +1,6 @@
+cd ~/dump
+git clone git@github.com:schischi/xcwd.git
+cd xcwd
+make
+sudo make install
+exit
