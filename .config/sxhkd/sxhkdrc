@@ -17,6 +17,32 @@ super + m; {Left,Return,Right}
 
 
 
+### Menu {{{
+
+# Run menu
+super + d
+  rofi -modi drun,window,run -show drun
+
+# Custom menus
+super+shift+p
+  rofi-pass
+super+shift+o
+  with_zsh "~/scripts/open-project.sh"
+super+shift+i
+  with_zsh "~/scripts/bookmarks-menu/bookmarker.sh menu"
+super+shift+g
+  with_zsh "~/scripts/bookmarks-menu/gh-projects.sh menu"
+super+shift+e
+  with_zsh "~/scripts/fontawesome-menu/fa-menu.sh menu"
+
+# Window switcher
+alt + Tab
+  rofi -modi windowcd -show windowcd
+
+# }}}
+
+
+
 ### System control {{{
 
 # Close window
@@ -57,32 +83,6 @@ XF86AudioMute
 # Mic mute
 XF86AudioMicMute
   amixer set Capture toggle
-
-# }}}
-
-
-
-### Menu {{{
-
-# Run menu
-super + d
-  rofi -modi drun,window,run -show drun
-
-# Custom menus
-super+shift+p
-  rofi-pass
-super+shift+o
-  with_zsh "~/scripts/open-project.sh"
-super+shift+i
-  with_zsh "~/scripts/bookmarks-menu/bookmarker.sh menu"
-super+shift+g
-  with_zsh "~/scripts/bookmarks-menu/gh-projects.sh menu"
-super+shift+e
-  with_zsh "~/scripts/fontawesome-menu/fa-menu.sh menu"
-
-# Window switcher
-alt + Tab
-  rofi -modi windowcd -show windowcd
 
 # }}}
 
