@@ -1,6 +1,9 @@
 #! /bin/bash
 # TODO
 # * Multimonitor
+# * Dynamic layouts - (specific to workspace or parent node)
+# * Restore layout/Templates
+# * Macros
 
 bspc rule -r "*";
 
@@ -41,17 +44,14 @@ xrdb ~/.Xresources &
 
 bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 
-# MONITORS=$(bspc query -M --names);
-# MONITOR_COUNT=$(echo "$MONITORS" | wc -l);
-# if [[ "$MONITOR_COUNT" == 2 ]]; then
-  # MON_PRIMARY="eDP-1"
-  # MON_SECONDARY="HDMI-1"
-  # bspc monitor $MON_PRIMARY -d 1 2 3 4 5
-  # bspc monitor $MON_SECONDARY -d 6 7 8 9 10
-# else
-  # bspc monitor -d 1 2 3 4 5 6 7 8 9 10
-# fi
-
+# Reassign_monitor
+#   If has secondary monitor
+#     Then assign workspace Primary = 1-5, Secondary = 6-10
+#     Else assign workspace Primary 1-10
+# Reassign monitor
+# On monitor {add,remove}
+#   Reassign monitor (by name)
+#   Swap old monitor workspaces into new
 
 bspc config remove_disabled_monitors    true
 bspc config remove_unplugged_monitors   true
