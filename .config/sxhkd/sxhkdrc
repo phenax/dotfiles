@@ -13,6 +13,9 @@ super + c
 super + m; {Left,Return,Right}
   ~/scripts/spotify.sh {prev,play_pause,next}
 
+super + s
+  ~/.config/bspwm/scripts/scratchpad.sh orgscratchpad
+
 # }}}
 
 
@@ -22,6 +25,10 @@ super + m; {Left,Return,Right}
 # Run menu
 super + d
   rofi -modi drun,window,run -show drun
+
+# Window switcher
+alt + Tab
+  rofi -modi windowcd -show windowcd
 
 # Custom menus
 super+shift+p
@@ -35,20 +42,17 @@ super+shift+g
 super+shift+e
   with_zsh "~/scripts/fontawesome-menu/fa-menu.sh menu"
 
-# Window switcher
-alt + Tab
-  rofi -modi windowcd -show windowcd
-
 # }}}
 
 
 
 ### System control {{{
 
-# Close window
+# Close node
 super + shift + q
   bspc node -c
 
+# Close all nodes in current workspace
 super + ctrl + Delete
   bspc node 'any.local' --close
 
@@ -83,6 +87,8 @@ XF86AudioMute
 # Mic mute
 XF86AudioMicMute
   amixer set Capture toggle
+
+# XF86WakeUp + m
 
 # }}}
 

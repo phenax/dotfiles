@@ -26,7 +26,7 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-export TERMINAL="kitty"
+export TERMINAL="st"
 export EDITOR="nvim"
 export VISUAL="nvim"
 export BROWSER="brave-browser"
