@@ -1,12 +1,5 @@
 #!/usr/bin/env bash
 
-# TODO
-# * Multimonitor
-# * Dynamic layouts - (specific to workspace or parent node)
-# * Close all nodes in workspace
-# * ? Restore layout/Templates
-# * ? Macros
-
 bspc rule -r "*";
 
 
@@ -88,7 +81,10 @@ bspc rule -r "*";
 
 
 ##### Node rules {{{
-  bspc rule -a "Brave-browser" -o desktop='^6'
+  # Rules to be enabled only on bsp initialization
+  enable-init-rules() {
+    bspc rule -a "Brave-browser" -o desktop='^6';
+  }
 
   bspc config external_rules_command "$HOME/.config/bspwm/external_rules"
 # }}}
@@ -99,8 +95,14 @@ bspc rule -r "*";
   window_count=$(bspc query -N | wc -l);
 
   if [[ "$window_count" = "0" ]]; then
+    enable-init-rules;
     browser &
     spotify &
   fi
+
+  # Start scratchpad
+  [[ -z "$(xdotool search --class orgscratchpad)" ]] && \
+    $TERMINAL -c orgscratchpad -e bash -c "cd ~/.config/org && nvim ." &
 # }}}
 
+disown;

@@ -35,7 +35,7 @@ case "$1" in
   volume_icon) get_volume_state ;;
   spotify_song) get_spotify_label ;;
   spotify_song_icon) get_spotify_play_state ;;
-  do-show-time) kitty -e "calcurse" ;;
+  do-show-time) i3-sensible-terminal -e "calcurse" ;;
   *) echo "Not a valid menu item" ;;
 esac
 

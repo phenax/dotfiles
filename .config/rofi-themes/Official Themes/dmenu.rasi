@@ -3,15 +3,14 @@
  * User: Qball
  * Copyright: Dave Davenport
  */
+
 * {
     background-color:      Black;
     border-color:          White;
-    text-color:           White;
-    font:            "Times New Roman 12";
+    text-color:            White;
+    font:                  "Fira Code 11";
 }
 
-configuration {
-}
 
 #window {
     anchor:     north;

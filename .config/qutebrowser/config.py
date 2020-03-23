@@ -107,7 +107,7 @@ if os.path.isfile(colorsfile):
     config.source(colorsfile)
 
 # ** Editor
-c.editor.command = ['kitty', '-e', 'nvim', '{}']
+c.editor.command = ['i3-sensible-terminal', '-e', 'nvim', '{}']
 
 # ** Hints
 # don't require enter after hint keys

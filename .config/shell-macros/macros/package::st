@@ -1,0 +1,6 @@
+cd ~/.config/suckless/st
+ls
+git pull
+go get github.com/mvdan/xurls/cmd/xurls
+make && sudo make install
+exit

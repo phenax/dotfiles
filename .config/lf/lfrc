@@ -4,8 +4,9 @@ set drawbox true
 set icons true
 set ignorecase true
 
-set preview false
-set previewer ~/scripts/lf-previewer.sh
+#set preview true
+#set preview_images_method ueberzug
+set previewer ~/.config/lf/previewer.sh
 
 map h :set hidden!
 

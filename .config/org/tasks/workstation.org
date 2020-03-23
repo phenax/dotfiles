@@ -1,0 +1,15 @@
+## TODO
+  - [ ] Multimonitor with bsp
+  - [ ] Dynamic layouts - (specific to workspace or parent node)
+  - [ ] Move sxhkd key bindings to hjkl
+  - [ ] Move vim key bindings to hjkl
+  - [ ] Vim open term in split
+  - [ ] ? Try mopidy with ncmpcpp
+  - [ ] ? Restore layout/Templates
+  - [ ] ? Macros
+  - [x] Scratchpads
+  - [x] Configure correct default apps (mimeapps)
+  - [x] Add support for tall and wide layouts
+  - [x] Move to st with links patch
+    - [x] Add install macro for st with xurl
+    - [ ] ? Set up image preview for lf with st

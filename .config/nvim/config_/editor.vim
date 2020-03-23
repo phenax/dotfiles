@@ -2,6 +2,15 @@ set hidden
 set autoread
 set mouse=a
 
+set foldenable
+" set foldnestmax=10
+" set foldlevel=2
+
+" set foldmethod=manual   
+set foldmethod=marker
+set foldcolumn=2
+set foldopen+=mark
+
 set autoindent
 set copyindent
 set showmatch
@@ -34,12 +43,6 @@ set expandtab
 set laststatus=2
 
 set cursorline
-
-" generally use marker folds
-set foldmethod=marker
-set foldcolumn=2
-" open folds when jumping to marks
-set foldopen+=mark
 
 " Better display for messages
 set cmdheight=1

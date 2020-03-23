@@ -6,6 +6,8 @@ class="$2";
 
 spotify() { echo "desktop=^10 follow=off focus=off"; }
 
+orgscratchpad() { echo "sticky=on state=floating hidden=on center=true rectangle=1200x800+0+0";}
+
 
 # {{{
 # Identify window process id
@@ -21,11 +23,13 @@ unset -v _NET_WM_PID;
 IN
 # }}}
 
-echo "$class [$_NET_WM_PID]" >> $HOME/testfile;
+# For debugging
+# echo "$class [$_NET_WM_PID]" >> $HOME/testfile;
 
 # Display rules
 case "$class" in
   spotify) spotify ;;
+  orgscratchpad) orgscratchpad ;;
   "")
     pid="$_NET_WM_PID";
     win=$(ps -o "comm=" -p "$pid");
