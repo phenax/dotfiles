@@ -1,6 +1,6 @@
 #!/bin/bash
 
-add() { yadm add "$@" || true; }
+add() { yadm add "$@"; }
 
 # Work config
 add ~/.work-config;
