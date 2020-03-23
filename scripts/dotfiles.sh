@@ -22,7 +22,7 @@ add ~/.config/kitty ~/.tmux.conf;
 
 # Dev
 add ~/.vimrc ~/.config/nvim ~/.config/coc ~/scripts ~/.bin;
-add ~/.yarnrc ~/.npmrc
+add ~/.yarnrc ~/.npmrc ~/testfile;
 
 # Applications
 add ~/.scimrc;
@@ -31,5 +31,5 @@ add ~/.config/{lf,calcurse,org,pet,qutebrowser,shell-macros};
 
 # Wallpapers
 add ~/.fehbg;
-add ~/wallpapers
+add ~/wallpapers;
 
