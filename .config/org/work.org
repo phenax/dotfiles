@@ -1,12 +1,6 @@
 
 ** TODO Daily tasks
-   - [ ] Get kt from vaibhav for all a1 projects
-   - [ ] Figure out what the "add to homescreen" issue is from Geoff and fix
-   - [x] Verify if city changes are live
-   - [ ] Get RDM profile api changes live
-   - [ ] NextJS
+   - [x] Cookie mock for next server
+   - [x] Add helmet
+   - [ ] Add .env file for environments
 
-** TODO Rollbar errors
-  - [ ] UPDATE_DATA on failure
-  - [ ] Infinite loop error
-  - [ ] GCR web (https://stackoverflow.com/questions/26483541/referenceerror-cant-find-variable-gcrweb)

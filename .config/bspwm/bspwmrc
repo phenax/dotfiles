@@ -4,6 +4,9 @@ bspc rule -r "*";
 
 
 ##### Autostart {{{
+  # Kep Modmap
+  xmodmap ~/.config/sxhkd/.Xmodmap &
+
   # Key daemon
   killall -9 sxhkd;
   sxhkd &

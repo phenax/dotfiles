@@ -24,11 +24,7 @@ super + s
 
 # Run menu
 super + d
-  rofi -modi drun,window,run -show drun
-
-# Window switcher
-alt + Tab
-  rofi -modi windowcd -show windowcd
+  rofi -modi drun,run -show drun
 
 # Custom menus
 super+shift+p
@@ -44,7 +40,8 @@ super+shift+e
 
 # }}}
 
-
+Hyper_L
+  notify-send "Wow"
 
 ### System control {{{
 
@@ -52,31 +49,39 @@ super+shift+e
 super + shift + q
   bspc node -c
 
+# Kill node
+ctrl + alt + Delete; q
+  bspc node -k
+
 # Close all nodes in current workspace
 super + ctrl + Delete
   bspc node 'any.local' --close
 
+
+
 # Refresh bspwm config
 super + shift + r
-  ~/.config/bspwm/bspwmrc;
+  ~/.config/bspwm/bspwmrc
+
+# Power button
+XF86PowerOff
+  ~/scripts/powercontrol.sh menu
 
 # Shutdown/Reboot
 super + Delete; {s,r}
-  ~/.config/i3/i3exit.sh {shutdown,reboot}
+  ~/scripts/powercontrol.sh {poweroff,reboot}
 
 # Lock screen
 ctrl + shift + l
-  ~/scripts/lockscreen.sh
+  ~/scripts/powercontrol.sh lock
+
+
 
 # Screenshot
 Print
   scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/'
 ctrl + Print
   gnome-screenshot -a
-
-# Brightness control
-XF86MonBrightness{Down,Up}
-  ~/scripts/brightness.sh {dec,inc}
 
 # Audio control
 XF86Audio{Raise,Lower}Volume
@@ -88,7 +93,11 @@ XF86AudioMute
 XF86AudioMicMute
   amixer set Capture toggle
 
-# XF86WakeUp + m
+
+
+# Brightness control
+XF86MonBrightness{Down,Up}
+  ~/scripts/brightness.sh {dec,inc}
 
 # }}}
 

@@ -1,14 +1,14 @@
 # Tell me something about yourself {{{
   I am a geek for tech. I love programming
   I have mostly worked on Typescript, JavaScript, React, Node which you'll notice is all just javascript
-  My professional experience has mostly been centered around javascript but I am technology agnostic
+  My professional experience has mostly been centered around javascript but I like to consider myself technology agnostic
 
   Other than that I have also worked on a bunch of personal projects involving golang, bash, haskell, etc
   Fan of functional programming. Basically an FP nerd. I love it
 
   Also, I try to set higher standards for myself and the projects that I work on
 
-  ? I am very opinionated about a lot of technologies but at the end of the day, efficiency can only be measured when you have the outpu
+  ? I am very opinionated about a lot of technologies but at the end of the day, efficiency can only be measured when you have the output
 }}}
 
 

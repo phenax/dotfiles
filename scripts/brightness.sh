@@ -1,5 +1,11 @@
 #!/bin/bash
+# bl_dev=/sys/class/backlight/acpi_video0
+# step=1
 
+# case $1 in
+  # -) echo $(($(< $bl_dev/brightness) - $step)) >$bl_dev/brightness;;
+  # +) echo $(($(< $bl_dev/brightness) + $step)) >$bl_dev/brightness;;
+# esac
 read_brightness() {
   echo "2";
 }
