@@ -1,8 +1,10 @@
 ## TODO
-  - [ ] Move sxhkd key bindings to hjkl
-  - [ ] Move vim key bindings to hjkl
-  - [ ] Multimonitor with bsp
+  - [ ] Change brightness control to use /sys/class/backlight instead
+  - [ ] Replace text selection patch with vim text selection patch in st
+  - [ ] Fix xresources colors in st
+  - [ ] Fix colored icons in st
   - [ ] Dynamic layouts - (specific to workspace or parent node)
+  - [ ] Multimonitor with bsp
   - [ ] ? Try mopidy with ncmpcpp
   - [ ] ? Restore layout/Templates
   - [ ] ? Macros

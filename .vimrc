@@ -1,1 +1,0 @@
-/home/akshayn/.config/nvim/old-init.vim

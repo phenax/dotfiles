@@ -51,4 +51,3 @@ execute_layout() {
 }
 
 execute_layout;
-# bspc subscribe node_{remove,add} | while read _; do execute_layout; done
