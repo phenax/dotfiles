@@ -22,7 +22,7 @@ add ~/.config/kitty ~/.tmux.conf;
 
 # Dev
 add ~/scripts ~/.bin;
-add ~/.vimrc ~/.config/nvim ~/.config/coc;
+add ~/.config/nvim ~/.config/coc;
 add ~/.yarnrc ~/.npmrc;
 
 # Applications
