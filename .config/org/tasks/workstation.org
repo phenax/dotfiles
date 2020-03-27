@@ -1,8 +1,9 @@
 ## TODO
-  - [ ] Change brightness control to use /sys/class/backlight instead
   - [ ] Replace text selection patch with vim text selection patch in st
+  - [ ] ? Scratchpad with time
   - [ ] Fix xresources colors in st
   - [ ] Fix colored icons in st
+  - [ ] Touchpad gestures
   - [ ] Dynamic layouts - (specific to workspace or parent node)
   - [ ] Multimonitor with bsp
   - [ ] ? Try mopidy with ncmpcpp
@@ -11,6 +12,7 @@
   - [x] Scratchpads
   - [x] Configure correct default apps (mimeapps)
   - [x] Add support for tall and wide layouts
+  - [x] Change brightness control to use /sys/class/backlight instead
   - [x] Move to st with links patch
     - [x] Add install macro for st with xurl
     - [ ] ? Set up image preview for lf with st

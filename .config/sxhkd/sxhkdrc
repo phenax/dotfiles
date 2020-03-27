@@ -1,4 +1,11 @@
 
+# Free keys
+# f9 => XF86Tools
+# f11 => XF86Favorites
+# f12 => XF86Display
+# Alt_R
+
+
 ### Application control {{{
 
 # Terminal
@@ -40,8 +47,7 @@ super+shift+e
 
 # }}}
 
-Hyper_L
-  notify-send "Wow"
+
 
 ### System control {{{
 
@@ -121,7 +127,7 @@ super + b
 
 
 
-### Move and Navigate {{{
+### Move, Navigate and Resize {{{
 
 # focus the node in the given direction
 super + {_,shift + }{Left,Down,Up,Right}
@@ -131,9 +137,11 @@ super + {_,shift + }{Left,Down,Up,Right}
 super + {Next,Prior}
   bspc node -f '{next,prev}.local'
 
-# focus the node for the given path jump
-# super + {p,b,comma,period}
-#   bspc node -f @{parent,brother,first,second}
+
+# Resize node
+super + alt + {Left,Down,Up,Right}
+  ~/.config/bspwm/scripts/resize.sh {left,down,up,right} 30
+
 
 # Next/Prev workspace
 super + {minus,equal}
@@ -146,10 +154,6 @@ super + {grave,Tab}
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
   bspc {desktop -f,node -d} '^{1-9,10}'
-
-# move a floating window
-super + {Left,Down,Up,Right}
-  bspc node -v {-20 0,0 20,0 -20,20 0}
 
 # }}}
 
@@ -168,20 +172,6 @@ super + ctrl + {1-9}
 # cancel the preselection for the focused node
 super + ctrl + space
   bspc node -p cancel
-
-# }}}
-
-
-
-### Resize {{{
-
-# expand a window by moving one of its side outward
-super + alt + {Left,Down,Up,Right}
-  bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
-
-# contract a window by moving one of its side inward
-super + alt + shift + {Left,Down,Up,Right}
-  bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
 
 # }}}
 

@@ -21,12 +21,13 @@ add ~/.oh-my-zsh/custom;
 add ~/.config/kitty ~/.tmux.conf;
 
 # Dev
-add ~/.vimrc ~/.config/nvim ~/.config/coc ~/scripts ~/.bin;
-add ~/.yarnrc ~/.npmrc ~/testfile;
+add ~/scripts ~/.bin;
+add ~/.vimrc ~/.config/nvim ~/.config/coc;
+add ~/.yarnrc ~/.npmrc;
 
 # Applications
 add ~/.scimrc;
-add ~/.config/suckless;
+# add ~/.config/suckless;
 add ~/.config/{lf,calcurse,org,pet,qutebrowser,shell-macros};
 
 # Wallpapers
