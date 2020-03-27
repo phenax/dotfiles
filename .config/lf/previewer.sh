@@ -25,23 +25,30 @@ case "$1" in
 	# *.docx) docx2txt "$1" - ;;
 	*.csv) cat "$1" | sed s/,/\\n/g ;;
 	*.pdf)
+	  echo "[Loading...]";
 		CACHE=$(mktemp /tmp/thumbcache.XXXXX)
 		pdftoppm -png -f 1 -singlefile "$1" "$CACHE"
 		$HOME/.config/lf/image draw "$CACHE.png" $num 1 $numb $numc
-		;;
+  ;;
 	*.epub)
+	  echo "[Loading...]";
 		CACHE=$(mktemp /tmp/thumbcache.XXXXX)
 		epub-thumbnailer "$1" "$CACHE" 1024
 		$HOME/.config/lf/image draw "$CACHE" $num 1 $numb $numc
-		;;
+  ;;
 	*.bmp|*.jpg|*.jpeg|*.png|*.xpm)
+	  echo "[Loading...]";
 		$HOME/.config/lf/image draw "$1" $num 1 $numb $numc
-		;;
-	*.wav|*.mp3|*.flac|*.m4a|*.wma|*.ape|*.ac3|*.og[agx]|*.spx|*.opus|*.as[fx]|*.flac) exiftool "$1";;
-	*.avi|*.mp4|*.wmv|*.dat|*.3gp|*.ogv|*.mkv|*.mpg|*.mpeg|*.vob|*.fl[icv]|*.m2v|*.mov|*.webm|*.ts|*.mts|*.m4v|*.r[am]|*.qt|*.divx)
-		CACHE=$(mktemp /tmp/thumbcache.XXXXX)
-		ffmpegthumbnailer -i "$1" -o "$CACHE" -s 0
-		$HOME/.config/lf/image draw "$CACHE" $num 1 $numb $numc
-		;;
-	*) highlight --out-format ansi "$1" || cat "$1";;
+  ;;
+	# *.wav|*.mp3|*.flac|*.m4a|*.wma|*.ape|*.ac3|*.og[agx]|*.spx|*.opus|*.as[fx]|*.flac)
+		# exiftool "$1"
+	# ;;
+	# *.avi|*.mp4|*.wmv|*.dat|*.3gp|*.ogv|*.mkv|*.mpg|*.mpeg|*.vob|*.fl[icv]|*.m2v|*.mov|*.webm|*.ts|*.mts|*.m4v|*.r[am]|*.qt|*.divx)
+		# CACHE=$(mktemp /tmp/thumbcache.XXXXX)
+		# ffmpegthumbnailer -i "$1" -o "$CACHE" -s 0
+		# $HOME/.config/lf/image draw "$CACHE" $num 1 $numb $numc
+  # ;;
+	*)
+	  highlight --out-format ansi "$1" || cat "$1"
+	;;
 esac

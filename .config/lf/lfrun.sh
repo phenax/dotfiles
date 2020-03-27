@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 export FIFO_UEBERZUG="/tmp/lf-ueberzug-${PPID}"
 
 function cleanup {
@@ -10,4 +11,4 @@ mkfifo "$FIFO_UEBERZUG"
 trap cleanup EXIT
 tail --follow "$FIFO_UEBERZUG" | ueberzug layer --silent --parser bash &
 
-lf
+lf "$@";
