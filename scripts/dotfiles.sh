@@ -27,7 +27,7 @@ add ~/.yarnrc ~/.npmrc;
 
 # Applications
 add ~/.scimrc;
-# add ~/.config/suckless;
+add ~/.config/suckless;
 add ~/.config/{lf,calcurse,org,pet,qutebrowser,shell-macros};
 
 # Wallpapers
