@@ -5,7 +5,6 @@ set icons true
 set ignorecase true
 
 set preview false
-set preview_images_method ueberzug
 set previewer ~/.config/lf/previewer.sh
 
 map h :set hidden!

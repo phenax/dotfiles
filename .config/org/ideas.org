@@ -1,15 +1,15 @@
 
-** i3 config
-    - [ ] Find a faster way to fetch current brightness level in xrandr 
+** Workspace config
+    - [X] Find a faster way to fetch current brightness level in xrandr
     - [ ] Add scripts for ffmpeg recording screencasts
-
+    - [ ] ? Scratchpad with time
+    - [ ] Multimonitor with bsp
 
 ** Project ideas
     - [ ] Vim plugin, maybe? 
 
 
 ** Menu ideas
-    - [ ] Power menu
+    - [X] Power menu
     - [ ] Xrandr monitor menu script
-    - [ ] Simple file manager
 
