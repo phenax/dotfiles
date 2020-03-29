@@ -1,41 +1,35 @@
 #!/bin/bash
 
-backlight_source=/sys/class/backlight/intel_backlight;
-step=1000;
-
-get_raw_brightness() { cat "$backlight_source/brightness"; }
-get_max_brightness() { cat "$backlight_source/max_brightness"; }
-set_raw_brightness() { echo "$1" > $backlight_source/brightness; }
+read_brightness() {
+  echo "2";
+}
 
 get_brightness() {
-  echo "100 * $(get_raw_brightness) / $(get_max_brightness)" | bc;
+  echo $(xrandr --verbose | awk '/Brightness:/ {print $2; exit}');
 }
 
 set_brightness() {
-  local b=$1;
-  [[ $b -gt 100 ]] && b=100;
-  [[ $b -lt 1 ]]  && b=1;
-
-  echo "Setting brightness to $b%";
-
-  set_raw_brightness "$(echo "$b * $(get_max_brightness) / 100" | bc)";
+  brightness="$(node -p "Math.max(Math.min($1, 1), 0.1).toFixed(1)")";
+  xrandr --output ${2:-"eDP-1"} --brightness $brightness;
 }
 
 increment() {
-  local b=$(echo "($(get_raw_brightness) + $step) * 100/$(get_max_brightness)" | bc);
-  set_brightness "$b";
+  local b="$(get_brightness)";
+  local nb="$(echo "$b + 0.1" | bc)";
+  set_brightness $nb;
 }
 
 decrement() {
-  local b=$(echo "($(get_raw_brightness) - $step) * 100/$(get_max_brightness)" | bc);
-  set_brightness "$b";
+  local b="$(get_brightness)";
+  local nb="$(echo "$b - 0.1" | bc)";
+  set_brightness $nb;
 }
 
 case $1 in
-  get) get_brightness ;;
+  get) echo $(read_brightness) ;;
   set) set_brightness "$2" "$3" ;;
   inc) increment ;;
   dec) decrement ;;
-  *) echo "brightness (get|inc|dec|set <n>%)" ;;
+  *) echo "For tools to work, you need to know how to use them" ;;
 esac
 
