@@ -3,7 +3,10 @@
 # f9 => XF86Tools
 # f11 => XF86Favorites
 # f12 => XF86Display
+
+# Free modifiers
 # Alt_R
+# Hyper_L
 
 
 ### Application control {{{
@@ -15,6 +18,10 @@ super + Return
 # Browser
 super + c
   browser
+
+# Tabbed terminal
+super + shift + Return
+  tst
 
 # Spotify controls
 super + m; {Left,Return,Right}
@@ -115,9 +122,9 @@ XF86MonBrightness{Down,Up}
 super + f
   bspc desktop -l next
 
-# Tall layout
-super + {t,w}
-  ~/.config/bspwm/layouts/{tall,wide}.sh
+# Layout configuration (per desktop)
+super + {t,w,r}
+  ~/.config/bspwm/scripts/layout.sh set {tall,wide,default}
 
 # Balance out layout
 super + b

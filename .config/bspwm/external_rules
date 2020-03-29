@@ -8,6 +8,8 @@ spotify() { echo "desktop=^10 follow=off focus=off"; }
 
 orgscratchpad() { echo "sticky=on state=floating hidden=on center=true rectangle=1200x800+0+0";}
 
+surf() { echo "state=tiled";}
+
 
 # {{{
 # Identify window process id
@@ -29,6 +31,7 @@ IN
 # Display rules
 case "$class" in
   spotify) spotify ;;
+  Surf) surf ;;
   orgscratchpad) orgscratchpad ;;
   "")
     pid="$_NET_WM_PID";

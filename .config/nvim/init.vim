@@ -11,9 +11,6 @@ set t_Co=256
 
 let g:pluginpath = '~/.config/nvim/plugged'
 call plug#begin(g:pluginpath)
-  " Org mode
-  " Plug 'jceb/vim-orgmode'
-
   runtime plugins_/coc.vim
   runtime plugins_/lang.vim
   runtime plugins_/fs.vim
