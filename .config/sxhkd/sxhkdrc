@@ -15,13 +15,13 @@
 super + Return
   $TERMINAL -d $(xcwd)
 
+# Tabbed terminal
+super + shift + Return
+  tst -d $(xcwd)
+
 # Browser
 super + c
   browser
-
-# Tabbed terminal
-super + shift + Return
-  tst
 
 # Spotify controls
 super + m; {Left,Return,Right}
@@ -124,11 +124,11 @@ super + f
 
 # Layout configuration (per desktop)
 super + {t,w,r}
-  ~/.config/bspwm/scripts/layout.sh set {tall,wide,default}
+  bsp-layout set {tall,wide,tiled}
 
 # Balance out layout
 super + b
-  bspc node '@/' -B
+  bsp-layout once even
 
 # }}}
 
@@ -160,7 +160,7 @@ super + {grave,Tab}
 
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
-  bspc {desktop -f,node -d} '^{1-9,10}'
+  bspc {desktop -f,node -d} '{1-9,10}'
 
 # }}}
 

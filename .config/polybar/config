@@ -14,6 +14,7 @@
 
   foreground = #ffffff
   foreground-alt = ${xrdb:foreground:#eeeeee}
+  foreground-faded = #888888
 
   blue = ${xrdb:color4}
   green = ${xrdb:color2}
@@ -35,8 +36,8 @@
 
 
 [bar/primary]
-  modules-left = bspwm
-  modules-center = 
+  modules-left = bspwm window_title
+  modules-center =
   modules-right = volume music date battery
 
   ;monitor = ${env:MONITOR:HDMI-1}
@@ -74,9 +75,10 @@
 
 
 
-
-
-
+[module/window_title]
+  type = internal/xwindow
+  format = "  <label>"
+  format-foreground = ${colors.foreground-faded}
 
 
 

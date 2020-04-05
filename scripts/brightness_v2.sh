@@ -5,7 +5,7 @@ step=1000;
 
 get_raw_brightness() { cat "$backlight_source/brightness"; }
 get_max_brightness() { cat "$backlight_source/max_brightness"; }
-set_raw_brightness() { echo "$1" > $backlight_source/brightness; }
+set_raw_brightness() { sudo echo "$1" > $backlight_source/brightness; }
 
 get_brightness() {
   echo "100 * $(get_raw_brightness) / $(get_max_brightness)" | bc;

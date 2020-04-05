@@ -8,21 +8,22 @@
   cyan:       #6cdcf7;
   emphasis:   #2c3e50;
 
-  text:       #dfdfdf;
-  text-alt:   #a2a2a2;
+  text:       #ffffff;
+  text-alt:   #ffffff;
 
   fg:         #abb2bf;
-  bg:         #1d1f31;
+  bg:         #0f1215ee;
+  bg-solid:   #0f1215;
   bg-light:   #2d2f41;
+  accent: @blue;
 
-  prompt-bg: #1d1f31;
-  prompt-accent: #34495e;
+  prompt-bg: #0f1215;
+  prompt-accent: @blue;
 
-
-  window-bg: #1a1a25aa;
+  tab-bg: red;
 
   spacing: 0;
-  background-color: transparent;
+	background-color: transparent;
 
   text-color: @text;
 
@@ -30,20 +31,20 @@
 }
 
 window {
-  transparency: "real";
-  fullscreen: true;
-  background-color: @window-bg;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 mainbox {
-  margin: 20% 20%;
   background-color: @bg;
+  margin: 25% 25%;
 }
 
 inputbar {
   margin: 0px 0px 20px 0px;
   background-color: @prompt-bg;
-  children: [prompt, textbox-prompt-colon, entry, case-indicator];
+  children: [prompt, textbox-prompt-colon, entry];
 }
 
 prompt {
@@ -70,18 +71,18 @@ listview {
   padding: 0 20px;
   dynamic: true;
   scrollbar: false;
+  columns: 2;
 }
 
 element {
   padding: 10px;
   text-color: @text-alt;
-  highlight: bold #95ee8f; /* green */
-  /* border-radius: 3px; */
+  highlight: bold #95ee8f;
 }
 
 element selected {
-  background-color: @emphasis;
-  text-color: @text;
+	background-color: #181818;
+	text-color: @accent;
 }
 
 element urgent, element selected urgent {
@@ -96,12 +97,11 @@ message {
   padding: 5px;
   border-radius: 3px;
   background-color: @emphasis;
-  /* border: 1px; */
   border-color: @cyan;
 }
 
 button selected {
-  padding: 5px;
-  /* border-radius: 3px; */
-  background-color: @emphasis;
+  padding: 10px;
+  text-color: @accent;
+  background-color: #0a0a0a;
 }

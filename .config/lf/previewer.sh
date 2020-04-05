@@ -15,6 +15,7 @@ case "$1" in
   *.md|*.org) glow -s dark "$1" ;;
 	*.csv) cat "$1" | sed s/,/\\n/g ;;
 	*.pdf) pdftotext "$1" ;;
+	*.docx) docx2txt "$1" - ;;
 	*.epub) mediainfo "$1" ;;
 	*.[1-8]) man "$1" | col -b ;;
 

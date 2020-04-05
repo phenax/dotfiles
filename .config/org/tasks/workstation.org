@@ -1,4 +1,6 @@
 *** TODO
+  - [X] Change brightness control to use /sys/class/backlight instead
+      - [ ] Fix file permission issue
   - [ ] Fix suspend action on lid close
   - [ ] Fix xresources colors in st
   - [ ] Fix colored icons in st
@@ -6,10 +8,13 @@
   - [-] Restore layout/Templates
       - [X] Implement
       - [ ] Integrate (if needed)
+      - [ ] Publish as an installable script on github
+      - [ ] Add more layout options
+      - [ ] Fix layout issues
+      - [ ] Ask on reddit for help
   - [X] Dynamic layouts - (specific to workspace or parent node)
   - [X] Scratchpads
   - [X] Configure correct default apps (mimeapps)
   - [X] Add support for tall and wide layouts
-  - [X] Change brightness control to use /sys/class/backlight instead
   - [X] Move to st with links patch
     - [X] Add install macro for st with xurl
