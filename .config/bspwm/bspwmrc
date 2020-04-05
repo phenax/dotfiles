@@ -86,7 +86,7 @@ bspc rule -r "*";
 ##### Node rules {{{
   # Rules to be enabled only on bsp initialization
   enable-init-rules() {
-    bspc rule -a "Brave-browser" -o desktop='^6';
+    bspc rule -a "Brave-browser" -o desktop="6";
   }
 
   bspc config external_rules_command "$HOME/.config/bspwm/external_rules"

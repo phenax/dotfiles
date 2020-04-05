@@ -2,10 +2,10 @@
 source "$HOME/scripts/modules/rofi-menu.sh";
 source "$HOME/scripts/modules/utils.sh";
 
-optn_poweroff=": off";
-optn_reboot=": reboot";
-optn_lock=": Lock";
-optn_cancel=": cancel";
+optn_poweroff="[] off";
+optn_reboot="[] reboot";
+optn_lock="[] lock";
+optn_cancel="[] cancel";
 
 OPTIONS=$(echo -e "
 $optn_poweroff

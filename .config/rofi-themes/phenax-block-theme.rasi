@@ -5,6 +5,7 @@
   text-fade: #aaaaaa;
   text-alt: #999999;
   bg-light:   #1d1f31;
+  emphasis: #181818;
 
   font-family: "Fira Code";
 
@@ -18,23 +19,16 @@
 }
 
 mainbox {
-  margin: 38% 20%;
+  margin: 27% 26%;
+  background-color: #00000000;
 }
 
 inputbar {
-  padding: 5px 10px;
-  background-color: @blue;
-  margin: 0 0 5px;
-  children: [prompt];
+  padding: 0;
+  children: [];
 }
 
 prompt {
-  background-color: transparent;
-  font: @prompt-font;
-  text-color: @bg;
-  width: 100%;
-  margin: 0;
-  text-style: bold;
 }
 
 listview {
@@ -51,7 +45,7 @@ listview {
 
 element {
   font: @block-font;
-  padding: 80px 10px;
+  padding: 60px 10px;
   margin: 0;
   width: @elem-width;
 
@@ -59,15 +53,12 @@ element {
   veritcal-align: 0.5;
 
   text-color: @text-alt;
-  border: @block-border-size;
-  border-color: @fg;
-  background-color: @bg-light;
+  background-color: @bg-solid;
 }
 
 element selected {
-  background-color: @emphasis;
-  text-color: @text;
-  border-color: @emphasis;
+  background-color: #121212;
+	text-color: @accent;
 }
 
 message { enabled: false; }
