@@ -32,6 +32,9 @@ bspc rule -r "*";
 
   # Load up the xresources file
   xrdb ~/.Xresources &
+
+  # Transmission torrent client
+  # transmission-daemon --download-dir "$HOME/Downloads/dl" &
 # }}}
 
 

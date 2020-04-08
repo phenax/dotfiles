@@ -10,6 +10,8 @@ orgscratchpad() { echo "sticky=on state=floating hidden=on center=true rectangle
 
 surf() { echo "state=tiled";}
 
+zathura() { echo "state=tiled";}
+
 
 # {{{
 # Identify window process id
@@ -32,6 +34,7 @@ IN
 case "$class" in
   spotify) spotify ;;
   Surf) surf ;;
+  Zathura) zathura ;;
   orgscratchpad) orgscratchpad ;;
   "")
     pid="$_NET_WM_PID";

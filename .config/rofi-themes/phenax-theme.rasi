@@ -78,11 +78,13 @@ element {
   padding: 10px;
   text-color: @text-alt;
   highlight: bold #95ee8f;
+	border: 0 0 0 5px solid;
 }
 
 element selected {
-	background-color: #181818;
+  background-color: #121212;
 	text-color: @accent;
+	border-color: @accent;
 }
 
 element urgent, element selected urgent {
@@ -100,8 +102,12 @@ message {
   border-color: @cyan;
 }
 
+button {
+  padding: 5px;
+	border: 1px solid 0 0 0;
+}
+
 button selected {
-  padding: 10px;
   text-color: @accent;
-  background-color: #0a0a0a;
+	border-color: @accent;
 }

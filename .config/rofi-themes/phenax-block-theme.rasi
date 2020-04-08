@@ -54,6 +54,7 @@ element {
 
   text-color: @text-alt;
   background-color: @bg-solid;
+	border: 5px solid 0 0 0;
 }
 
 element selected {

@@ -28,20 +28,15 @@ cmd mkdir ${{
     mkdir $ans
 }}
 
-cmd rename %[ -e $1 ] && printf "file exists" || mv $f $1
-
 cmd mkfile ${{
     printf "File Name: "
     read ans
     $EDITOR $ans
 }}
 
-cmd openterm ${{
-    $TERMINAL &
-}}
-
 cmd rmrf ${{
-  mv "$f" /tmp/.trash-cache/
+  mkdir -p /tmp/.trash-cache/;
+  mv "$f" /tmp/.trash-cache/;
 }}
 
 map m
@@ -59,8 +54,9 @@ map y copy
 map <enter> open
 map mf mkfile
 map md mkdir
-map r rename
+map rr rename
 
-
-
+map gdl cd ~/Downloads/dl
+map gdv cd ~/dev
+map gs cd ~/scripts
 

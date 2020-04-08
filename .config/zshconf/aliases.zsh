@@ -65,6 +65,7 @@ alias ns="npm start";
 alias nt="npm test";
 
 # Config editors
+alias eorg="cd ~/.config/org && i3-sensible-editor .";
 alias ezsh="cd ~/.config/zshconf && i3-sensible-editor .";
 alias edot="i3-sensible-editor ~/scripts/dotfiles.sh";
 alias evim="cd ~/.config/nvim && i3-sensible-editor .";
