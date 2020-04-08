@@ -30,6 +30,9 @@ super + m; {Left,Return,Right}
 super + s
   ~/.config/bspwm/scripts/scratchpad.sh orgscratchpad
 
+super + shift + f
+  $TERMINAL -d $(xcwd) -e lf
+
 # }}}
 
 

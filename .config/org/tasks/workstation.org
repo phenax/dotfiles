@@ -1,4 +1,12 @@
 *** TODO
+  - [ ] Fork min browser
+      - [ ] Get chrome extensions support
+      - [ ] Create custom userscripts if needed
+      - [ ] Fork and switch to the browser
+      - [ ] Change tab ui to make it more minimal
+      - [ ] Change key bindings
+      - [ ] Create multiple tasks and manage spawning windows
+      - [ ] Remove menu bar
   - [ ] Change brightness control to use /sys/class/backlight instead
       - [ ] Fix file permission issue
   - [X] Fix suspend action on lid close
