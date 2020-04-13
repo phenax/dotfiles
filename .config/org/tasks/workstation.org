@@ -9,9 +9,10 @@
       - [ ] Remove menu bar
   - [ ] Change brightness control to use /sys/class/backlight instead
       - [ ] Fix file permission issue
+  - [ ] st stuff
+      - [X] Fix xresources colors in st
+      - [ ] Fix colored icons in st
   - [X] Fix suspend action on lid close
-  - [X] Fix xresources colors in st
-  - [ ] Fix colored icons in st
   - [ ] Touchpad gestures
   - [-] Dynamic layouts - (specific to workspace or parent node)
       - [X] Implement

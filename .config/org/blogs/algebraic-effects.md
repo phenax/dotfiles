@@ -1,3 +1,4 @@
+chrome-extension://ihlenndgcmojhcghmfjfneahoeklbjjh/pages/mappings.html
 # Algebraic Effects in JavaScript
 
 Algebraic effects, monad transformers, category theory, catamorphisms, zygomorphisms.

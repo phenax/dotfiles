@@ -1,0 +1,29 @@
+#!/bin/sh
+
+# Mod key = Ctrl + x
+
+rotate() {
+	degree="$1"
+	tr '\n' '\0' | xargs -0 realpath | sort | uniq | while read file; do
+		case "$(file -b -i "$file")" in
+		image/jpeg*) jpegtran -rotate "$degree" -copy all -outfile "$file" "$file" ;;
+		*)           mogrify  -rotate "$degree" "$file" ;;
+		esac
+	done
+}
+
+case "$1" in
+# Copy image to clipboard
+"C-c")      while read file; do xclip -selection clipboard -target image/png "$file"; done ;;
+
+# Open in gimp to edit
+"C-g")      tr '\n' '\0' | xargs -0 gimp & ;;
+
+# Rotate
+"Prior")    rotate  -90 ;;
+"Next")     rotate  90 ;;
+
+# Set as wallpaper
+"w")        while read file; do feh --bg-scale "$file"; done ;;
+esac
+

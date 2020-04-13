@@ -13,10 +13,7 @@ autocmd BufEnter * NERDTreeMirror
 autocmd FileType nerdtree setlocal nolist
 
 " Nerdtree Keys
-nmap ,n :NERDTreeFind<CR>
-
-" Write automatically
-" autocmd InsertLeave * write
+nmap <localleader>n :NERDTreeFind<CR>
 
 " FZF (Fuzzy search)
 set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf

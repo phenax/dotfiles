@@ -3,60 +3,92 @@ set color256 true
 set drawbox true
 set icons true
 set ignorecase true
+set relativenumber true
+set ratios 2:3
 
 set preview false
 set previewer ~/.config/lf/previewer.sh
 
-map h :set hidden!
-
-map st :{{
-    set sortby time
-    set info time
-}}
+# Function definitions {{{
+cmd open_terminal ${{ $TERMINAL & disown }}
 
 cmd open ${{
     case $(file --mime-type "$f" -bL) in
-        text/*|application/json) $EDITOR "$fx";;
-        video/*|application/pdf) xdg-open "$f" & disown;;
-        *) for f in "$fx"; do xdg-open "$f"> /dev/null 2> /dev/null & done;;
-    esac
+        text/*|application/json) $EDITOR "$fx" ;;
+        video/*|application/pdf) xdg-open "$f" & ;;
+        *)
+          for f in "$fx"; do
+            xdg-open "$f"> /dev/null 2> /dev/null &
+          done
+        ;;
+    esac;
+    disown;
 }}
 
 cmd mkdir ${{
-    printf "Directory Name: "
-    read ans
-    mkdir $ans
+  printf "Directory Name: "
+  read ans
+  mkdir $ans
 }}
 
 cmd mkfile ${{
-    printf "File Name: "
-    read ans
-    $EDITOR $ans
+  printf "File Name: "
+  read ans
+  $EDITOR $ans
 }}
 
-cmd rmrf ${{
-  mkdir -p /tmp/.trash-cache/;
-  mv "$f" /tmp/.trash-cache/;
+cmd move_to_trash ${{
+  mkdir -p /tmp/.trash-cache/
+  echo "$fx" | while read file; do
+    mv "$file" /tmp/.trash-cache/
+  done;
 }}
 
-map m
-map n
-map "'"
-map '"'
-map d
-map c
-map e
+cmd rename %{{
+  printf " Rename to: "
+  read ans
+  mv "$f" "$ans"
+}}
 
-map dd rmrf
-map p paste
-map x cut
-map y copy
+cmd set_wallpaper $feh --bg-scale "$f"
+
+# }}}
+
+# Unset old keys {{{
+  map w
+  map m
+  map n
+  map "'"
+  map '"'
+  map d}}
+  map c
+  map e
+  map d
+# }}}
+
+# Mutations
+map dd      move_to_trash
+map p       paste
+map x       cut
+map y       copy
+map mf      mkfile
+map md      mkdir
+map wp      set_wallpaper
+map rr      rename
+
+
+# View changes
 map <enter> open
-map mf mkfile
-map md mkdir
-map rr rename
+map du      $du -h -d1 | less
+map t       open_terminal
+map h       :set hidden!
+map st      :set sortby time
 
-map gdl cd ~/Downloads/dl
-map gdv cd ~/dev
-map gs cd ~/scripts
+
+# Traversal keys
+map gde   cd ~/Desktop
+map gdl   cd ~/Downloads/dl
+map gdv   cd ~/dev
+map gs    cd ~/scripts
+map gp    cd ~/Pictures
 
