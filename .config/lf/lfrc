@@ -52,6 +52,14 @@ cmd rename %{{
 
 cmd set_wallpaper $feh --bg-scale "$f"
 
+cmd show_images ${{
+  if [ "$(echo "$fx" | wc -l)" = "1" ]; then
+    sxiv $(dirname "$fx") &
+  else
+    sxiv $fx &
+  fi;
+}}
+
 # }}}
 
 # Unset old keys {{{
@@ -79,6 +87,7 @@ map rr      rename
 
 # View changes
 map <enter> open
+map si      show_images
 map du      $du -h -d1 | less
 map t       open_terminal
 map h       :set hidden!
