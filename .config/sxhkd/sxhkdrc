@@ -23,13 +23,15 @@ super + shift + Return
 super + c
   browser
 
+# Private browser
+super + shift + c
+  browser --incognito
+
 # Spotify controls
 super + m; {Left,Return,Right}
   ~/scripts/spotify.sh {prev,play_pause,next}
 
-super + s
-  ~/.config/bspwm/scripts/scratchpad.sh orgscratchpad
-
+# File manager
 super + shift + f
   $TERMINAL -d $(xcwd) -e lf
 

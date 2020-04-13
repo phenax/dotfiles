@@ -36,7 +36,7 @@
 
 
 [bar/primary]
-  modules-left = bspwm window_title
+  modules-left = bspwm
   modules-center =
   modules-right = volume music date battery
 

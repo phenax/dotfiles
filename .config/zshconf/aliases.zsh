@@ -32,10 +32,13 @@ reset-origin() {
 # Trash
 alias trash="ls \$TRASH_TMP_DIR";
 
-# LS aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+# LS(Deluxe) aliases
+alias l="lsd";
+alias la='l -a';
+alias ll='l -alF';
+alias lt='l --tree';
+alias la='l -A';
+
 lc () { # lf with cd to navigated directory on quit
     tmp="$(mktemp)"
     lf -last-dir-path="$tmp" "$@"

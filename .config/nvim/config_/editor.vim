@@ -66,9 +66,11 @@ nmap <C-PageUp> :bp<CR>
 nmap <C-PageDown> :bn<CR>
 nmap <C-k> :BD<CR>
 
+" Copy/paste
 vmap <C-c> "+y
 vmap <C-p> "+p
 
+" Code folding
 nmap <S-Tab> zR
 nmap zx zo
 nmap zc zc
