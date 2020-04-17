@@ -124,6 +124,7 @@ XF86MonBrightness{Down,Up}
 ### Layout {{{
 
 # alternate between the tiled and monocle layout
+# TODO: Maybe move this to use bsp-layout?
 super + f
   bspc desktop -l next
 
