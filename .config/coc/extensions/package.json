@@ -1,11 +1,11 @@
 {
   "dependencies": {
-    "coc-css": ">=1.2.2",
+    "coc-css": ">=1.2.3",
     "coc-eslint": ">=1.2.6",
     "coc-html": ">=1.2.4",
     "coc-json": ">=1.2.5",
     "coc-tslint": ">=1.0.17",
     "coc-tslint-plugin": ">=1.1.1",
-    "coc-tsserver": ">=1.4.12"
+    "coc-tsserver": ">=1.4.15"
   }
 }

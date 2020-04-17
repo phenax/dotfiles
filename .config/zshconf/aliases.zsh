@@ -74,7 +74,7 @@ alias edot="i3-sensible-editor ~/scripts/dotfiles.sh";
 alias evim="cd ~/.config/nvim && i3-sensible-editor .";
 alias ekey="cd ~/.config/sxhkd && i3-sensible-editor .";
 alias ebsp="cd ~/.config/bspwm && i3-sensible-editor .";
-alias ehosts="sudo i3-sensible-editor /etc/hosts";
+alias ehosts="sudo nvim /etc/hosts";
 
 alias sandbox="sudo ~/scripts/host-file-elb-update.sh";
 

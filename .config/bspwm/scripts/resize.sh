@@ -5,9 +5,9 @@ delta=${2:-"30"}
 
 case $1 in
   right)  dim=w; sign=+ ;;
-  left)  dim=w; sign=- ;;
-  up) dim=h; sign=- ;;
-  down) dim=h; sign=+ ;;
+  left)   dim=w; sign=- ;;
+  up)     dim=h; sign=- ;;
+  down)   dim=h; sign=+ ;;
   *) echo "Usage: resize {up,down,left,right} [delta]" && exit 1 ;;
 esac
 
