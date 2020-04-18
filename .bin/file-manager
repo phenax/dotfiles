@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+term=${TERMINAL:-"st"};
+
+$term -d "$1" -e lf

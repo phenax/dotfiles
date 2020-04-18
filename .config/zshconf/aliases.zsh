@@ -33,11 +33,12 @@ reset-origin() {
 alias trash="ls \$TRASH_TMP_DIR";
 
 # LS(Deluxe) aliases
-alias l="lsd";
-alias la='l -a';
-alias ll='l -alF';
-alias lt='l --tree';
-alias la='l -A';
+alias ls="lsd";
+alias l="ls -1";
+alias la='ls -a';
+alias ll='ls -alF';
+alias lt='ls --tree';
+alias la='ls -A';
 
 lc () { # lf with cd to navigated directory on quit
     tmp="$(mktemp)"
@@ -68,19 +69,20 @@ alias ns="npm start";
 alias nt="npm test";
 
 # Config editors
-alias eorg="cd ~/.config/org && i3-sensible-editor .";
-alias ezsh="cd ~/.config/zshconf && i3-sensible-editor .";
-alias edot="i3-sensible-editor ~/scripts/dotfiles.sh";
-alias evim="cd ~/.config/nvim && i3-sensible-editor .";
-alias ekey="cd ~/.config/sxhkd && i3-sensible-editor .";
-alias ebsp="cd ~/.config/bspwm && i3-sensible-editor .";
+alias eorg="cd ~/.config/org && $EDITOR .";
+alias ezsh="cd ~/.config/zshconf && $EDITOR .";
+alias edot="$EDITOR ~/scripts/dotfiles.sh";
+alias evim="cd ~/.config/nvim && $EDITOR .";
+alias ekey="cd ~/.config/sxhkd && $EDITOR .";
+alias ebsp="cd ~/.config/bspwm && $EDITOR .";
 alias ehosts="sudo nvim /etc/hosts";
 
 alias sandbox="sudo ~/scripts/host-file-elb-update.sh";
 
 # Application shortcuts
+alias e="$EDITOR";
 alias v="nvim";
-alias xvim="vi";
+alias xvim="/usr/bin/vim";
 alias vim="nvim";
 alias chrome="google-chrome";
 alias chromei="google-chrome --incognito";

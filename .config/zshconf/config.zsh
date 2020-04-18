@@ -1,7 +1,7 @@
 export VISUAL='nvim'
 export EDITOR="nvim"
 export TERMINAL="st"
-export BROWSER="brave-browser"
+export BROWSER="brave"
 export READER="zathura"
 export FILE="lf"
 
