@@ -26,9 +26,13 @@ bspc rule -r "*";
   # Wallpaper
   ~/.fehbg &
 
+  # Disk automount
+  killall -9 udiskie;
+  ~/.bin/with_zsh "udiskie -a -n -s" &
+
   # Network manager applet
-  killall -9 nm-applet;
-  nm-applet &
+  # killall -9 nm-applet;
+  # nm-applet &
 
   # Load up the xresources file
   xrdb ~/.Xresources &

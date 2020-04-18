@@ -1,6 +1,7 @@
 
 ** TODO Daily tasks
-   - [x] Cookie mock for next server
-   - [x] Add helmet
-   - [ ] Add .env file for environments
-
+   - [ ] Change shell
+   - [ ] Power button handler
+   - [ ] MTP automount
+   - [ ] Login manager to window manager
+   - [ ] Brightness keys

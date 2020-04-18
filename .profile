@@ -29,8 +29,10 @@ fi
 export TERMINAL="st"
 export EDITOR="nvim"
 export VISUAL="nvim"
-export BROWSER="brave-browser"
+export BROWSER="brave"
 
 PATH="$HOME/.bin:$PATH"
+export PATH
 
-setxkbmap -option caps:escape
+# setxkbmap -option caps:escape
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)

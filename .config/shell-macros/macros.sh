@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
+
 MACROS_PATH="$HOME/.config/shell-macros";
+
 source "$MACROS_PATH/default_config.sh";
 source "$MACROS_PATH/config.sh";
-source "$MACROS_PATH/colors.sh";
 
 HELP_TEXT="Usage: macros [command] <args>
 
@@ -14,10 +15,11 @@ Commands:
   help                  - This dialog
 ";
 
+get_prompt() { echo "($1) >> "; }
+
 get_macro_path() { echo "$MACROS_LIST_PATH/$1"; }
 
-guard() { if [[ -z "$2" ]]; then echo -e "${COLOR_LIGHT_RED}Error:${COLOR_DEFAULT} $1"; exit 1; fi; }
-
+guard() { if [[ -z "$2" ]]; then echo "$1"; exit 1; fi; }
 
 guard_macro_name() {
   guard "Invalid macro name" "$1";
@@ -34,9 +36,6 @@ guard_macro_already_exists() {
 
 strip_history_timestamp() { sed 's/^\:\s\+[0-9: ]\+;//g'; }
 
-# Append custom prompt and print command before running command
-append_prompt() { sed "s/.*/echo \"\"; echo '$(get_prompt "$1")\0'; \0/g"; }
-
 
 # Start recording a macro
 record() {
@@ -45,7 +44,7 @@ record() {
   local macro_path=$(get_macro_path "$1");
 
   # Start new shell
-  HISTFILE="$macro_path" CUSTOM_PROMPT=$(get_prompt "$1") $SHELL;
+  HISTFILE="$macro_path" CUSTOM_PROMPT="$(get_prompt "$1")" $SHELL;
 
   # Remove history timestamps if exists
   contents=$(cat "$macro_path" | strip_history_timestamp);
@@ -69,7 +68,7 @@ run() {
   local macro_path=$(get_macro_path "$1");
 
   # Read and execute each line
-  cat $macro_path | append_prompt "$1" | $SHELL -;
+  cat $macro_path | $SHELL -;
 }
 
 # List all macros

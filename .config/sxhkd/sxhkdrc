@@ -49,13 +49,13 @@ super + d
 super+shift+p
   rofi-pass
 super+shift+o
-  with_zsh "~/scripts/open-project.sh"
+  ~/scripts/open-project.sh
 super+shift+i
-  with_zsh "~/scripts/bookmarks-menu/bookmarker.sh menu"
+  ~/scripts/bookmarks-menu/bookmarker.sh menu
 super+shift+g
-  with_zsh "~/scripts/bookmarks-menu/gh-projects.sh menu"
+  ~/scripts/bookmarks-menu/gh-projects.sh menu
 super+shift+e
-  with_zsh "~/scripts/fontawesome-menu/fa-menu.sh menu"
+  ~/scripts/fontawesome-menu/fa-menu.sh menu
 
 # }}}
 

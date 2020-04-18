@@ -1,6 +1,6 @@
 
 # Lang specific stuff
-export GOROOT=/usr/lib/go-1.10
+export GOROOT=/usr/lib/go
 export GOPATH=$HOME/dev/go
 export DENO_INSTALL="/home/akshayn/.deno"
 
@@ -9,10 +9,14 @@ export SCRIPTS_DIR="$HOME/scripts";
 export SCRIPTS_BINARY_DIR="$SCRIPTS_DIR/bin";
 
 # Path
-export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.cargo/bin:$HOME/.cabal/bin:/home/linuxbrew/.linuxbrew/bin:$PATH;
-export PATH=$HOME/.config/bash-aliases/bin:$PATH;
-export PATH="$DENO_INSTALL/bin:$PATH";
-export PATH="$SCRIPTS_BINARY_DIR:$PATH";
+PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.cargo/bin:$HOME/.cabal/bin:/home/linuxbrew/.linuxbrew/bin:$PATH;
+PATH=$HOME/.config/bash-aliases/bin:$PATH;
+PATH=$HOME/.gem/ruby/2.7.0/bin:$PATH;
+PATH="$DENO_INSTALL/bin:$PATH";
+PATH="$SCRIPTS_BINARY_DIR:$PATH";
+PATH="$HOME/.local/bin:$PATH"
+PATH="$HOME/.bin:$PATH"
+export PATH;
 
 # Development dir variables
 export DEV_DIR="$HOME/dev";

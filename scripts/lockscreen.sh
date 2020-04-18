@@ -1,18 +1,22 @@
 #!/bin/bash
 
-SCREENSHOT=/tmp/screenshot.png;
-
 # Take screenshot
-scrot $SCREENSHOT;
+# SCREENSHOT=/tmp/screenshot.png;
+# scrot $SCREENSHOT;
 
-# Blur screenshot
-convert $SCREENSHOT \
-  -spread 5 \
-  -fill black -colorize 30% \
-  $SCREENSHOT;
+WALLPAPER=$HOME/wallpapers/forest.jpg;
+SCREENSHOT=$HOME/wallpapers/lockscreen_forest.jpg;
 
-# Mute audio
-# amixer -D pulse set Master off;
+# rm $SCREENSHOT;
+
+if [[ ! -f "$SCREENSHOT" ]]; then
+  cp $WALLPAPER $SCREENSHOT;
+  # Blur screenshot
+  convert $SCREENSHOT \
+    -spread 10 \
+    -fill black -colorize 70% \
+    $SCREENSHOT;
+fi
 
 # Lock screen
 i3lock \
@@ -55,5 +59,5 @@ i3lock \
 ;
 
 # Cleanup when done
-rm $SCREENSHOT;
+# rm $SCREENSHOT;
 

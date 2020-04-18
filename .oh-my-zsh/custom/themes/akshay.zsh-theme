@@ -88,7 +88,7 @@ prompt_end() {
 
 # Context: Icon
 prompt_context() {
-  prompt_segment black default  " " # 🌈
+  prompt_segment black default  "🌈 "
 }
 
 # Git: branch/detached head, dirty status
