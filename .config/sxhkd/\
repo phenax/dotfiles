@@ -28,8 +28,7 @@
   warning = ${colors.yellow}
 
   volume = ${colors.violet}
-  brightness = ${colors.yellow}
-  music = ${colors.violet}
+  music = ${colors.blue}
   date = ${colors.red}
   bat_full = ${colors.green}
   bat_charging = ${colors.blue}
@@ -102,12 +101,12 @@
 
 
 
-[module/brightness]
+[module/volume]
   type = custom/script
   interval = 0.1
-  exec = printf "  %.0f%s " "$(xbacklight -get)" "%"
-  click-left = xbacklight -set 100
-  format-underline = ${colors.brightness}
+  exec = echo "  $(xbacklight -get) "
+  click-left = ~/scripts/sound.sh mute
+  format-underline = ${colors.volume}
   format-foreground = ${colors.foreground}
 
 
