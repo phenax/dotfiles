@@ -33,7 +33,7 @@ super + m; {Left,Return,Right}
 
 # File manager
 super + shift + f
-  $TERMINAL -d $(xcwd) -e lf
+  ~/.bin/with_zsh '$TERMINAL -d $(xcwd) -e lf'
 
 # }}}
 
@@ -97,9 +97,9 @@ ctrl + shift + l
 
 # Screenshot
 Print
-  scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/'
+  scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/screenshots';
 ctrl + Print
-  gnome-screenshot -a
+  ~/.bin/with_zsh "scrot -s 'part-%Y-%m-%d-%s_screenshot_\$wx\$h.jpg' -e 'mv \$f ~/Pictures/screenshots'";
 
 # Audio control
 XF86Audio{Raise,Lower}Volume
@@ -109,13 +109,13 @@ XF86AudioMute
 
 # Mic mute
 XF86AudioMicMute
-  amixer set Capture toggle
+  ~/scripts/sound.sh mute-mic
 
 
 
 # Brightness control
 XF86MonBrightness{Down,Up}
-  ~/scripts/brightness.sh {dec,inc}
+  xbacklight -{dec,inc} 3
 
 # }}}
 

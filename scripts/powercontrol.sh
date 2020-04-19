@@ -18,15 +18,8 @@ lock() { ~/scripts/lockscreen.sh; }
 
 logout() { bspc quit; }
 
-poweroff() {
-  logout;
-  systemctl poweroff;
-}
-
-reboot() {
-  logout;
-  systemctl reboot;
-}
+shutdown() { logout; poweroff; }
+restart() { logout; reboot; }
 
 menu() {
   result=$(echo -e "$OPTIONS" | open-block-menu -p "Power button");
@@ -40,8 +33,8 @@ menu() {
 case "$1" in
   menu) menu ;;
   lock) lock ;;
-  poweroff) poweroff ;;
-  reboot) reboot ;;
+  poweroff) shutdown ;;
+  reboot) restart ;;
   *) exit 1 ;;
 esac
 

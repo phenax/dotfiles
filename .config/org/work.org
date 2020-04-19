@@ -1,7 +1,10 @@
 
 ** TODO Daily tasks
-   - [ ] Change shell
-   - [ ] Power button handler
+   - [ ] Fix icon issues in terminal
+   - [X] Change shell
+   - [X] Power button handler
    - [ ] MTP automount
-   - [ ] Login manager to window manager
-   - [ ] Brightness keys
+   - [X] Screenshot keys
+   - [X] Login manager to window manager
+   - [ ] Find a better way to start x server (Cleanup /etc/profile)
+   - [X] Brightness keys
