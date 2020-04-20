@@ -1,5 +1,7 @@
 #!/bin/bash
 
+PROJECTS_DIR="$HOME/dev/projects";
+
 projects=$(ls -t $PROJECTS_DIR);
 
 project=$(echo "$projects" | rofi -dmenu -p "Project name");

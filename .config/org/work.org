@@ -1,10 +1,21 @@
 
 ** TODO Daily tasks
    - [ ] Fix icon issues in terminal
+   - [ ] Fix dotfiles
+   - [ ] MTP automount
+   - [ ] Find a better way to start x server (Cleanup /etc/profile)
+   - [ ] Clone brave and evaluate if you can maintain it
+   - [ ] Fix st extract url
+   - [ ] Fix global env problem
+   - [ ] New zsh prompt
+   - [ ] Move .oh-my-zsh to inside config and get rid of .zsh directory
+   - [ ] Spotify client terminal based?
+   - [ ] Password manager alternative?
+         - [ ] Cloud based with api to use for cli?
+   - [X] Libreoffice
    - [X] Change shell
    - [X] Power button handler
-   - [ ] MTP automount
    - [X] Screenshot keys
    - [X] Login manager to window manager
-   - [ ] Find a better way to start x server (Cleanup /etc/profile)
    - [X] Brightness keys
+   - [X] Brightness in polybar

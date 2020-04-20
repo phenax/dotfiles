@@ -115,7 +115,7 @@ XF86AudioMicMute
 
 # Brightness control
 XF86MonBrightness{Down,Up}
-  xbacklight -{dec,inc} 3
+  xbacklight -{dec,inc} 10
 
 # }}}
 

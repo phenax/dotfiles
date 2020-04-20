@@ -6,6 +6,6 @@
     "coc-json": ">=1.2.5",
     "coc-tslint": ">=1.0.17",
     "coc-tslint-plugin": ">=1.1.1",
-    "coc-tsserver": ">=1.4.15"
+    "coc-tsserver": ">=1.5.1"
   }
 }
