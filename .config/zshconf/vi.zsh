@@ -1,7 +1,8 @@
+autoload -z edit-command-line; zle -N edit-command-line;
 
-# Edit in vim
-autoload edit-command-line;
-zle -N edit-command-line
-bindkey '^E' edit-command-line
+MOD="^X";
 
-# bindkey -v
+bindkey "$MOD^E" edit-command-line;
+# bindkey "$MOD$" beginning-of-line
+# bindkey "${MOD}0" end-of-line
+

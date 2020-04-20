@@ -1,3 +1,7 @@
 [submodule "/home/akshayn/.work-config"]
 	path = /home/akshayn/.work-config
-	url = git@github.com:phenax/work-dotfiles.git
+  url = git@github.com:phenax/work-dotfiles.git
+
+[submodule "/home/akshayn/.config/suckless/st"]
+	path = /home/akshayn/.config/suckless/st
+	url = git@github.com:phenax/st.git

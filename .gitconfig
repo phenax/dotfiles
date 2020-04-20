@@ -13,3 +13,5 @@
   ; prompt = false
 [diff]
   tool = vimdiff
+[core]
+	excludesfile = ~/.config/git-config/gitignore
