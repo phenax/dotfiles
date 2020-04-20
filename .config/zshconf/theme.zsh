@@ -12,7 +12,7 @@ p_dir() {
 p_status() {
   local st;
 
-  [[ $RETVAL -ne 0 ]]             && st="$st%F{red}x %f";
+  [[ $RETVAL -ne 0 ]]             && st="$st%F{red}x%f";
   [[ $(jobs -l | wc -l) -ne 0 ]]  && st="$st%F{cyan}(bg) %f";
 
   [[ -n "$st" ]] && segment "$st" black default;
@@ -44,6 +44,3 @@ prompt() {
 
 PROMPT='$(prompt) ';
 
-source $ZSH/oh-my-zsh.sh;
-
-source $HOME/.config/shell-macros/adapters/zsh;
