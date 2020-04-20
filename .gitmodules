@@ -1,7 +1,12 @@
-[submodule "/home/akshayn/.work-config"]
-	path = /home/akshayn/.work-config
+[submodule ".work-config"]
+	path = .work-config
   url = git@github.com:phenax/work-dotfiles.git
-
-[submodule "/home/akshayn/.config/suckless/st"]
-	path = /home/akshayn/.config/suckless/st
+[submodule ".config/suckless/st"]
+	path = .config/suckless/st
 	url = git@github.com:phenax/st.git
+[submodule ".config/suckless/tabbed"]
+	path = .config/suckless/tabbed
+	url = git@github.com:phenax/tabbed.git
+[submodule "/home/akshayn/scripts/bsp-layout"]
+	path = /home/akshayn/scripts/bsp-layout
+	url = git@github.com:phenax/bsp-layout.git
