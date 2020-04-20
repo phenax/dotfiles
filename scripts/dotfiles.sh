@@ -18,7 +18,7 @@ add ~/.config/{gtk-3.0,fontconfig,mimeapps.list};
 add ~/.bashrc ~/.profile;
 add ~/.zshrc ~/.config/zshconf;
 add ~/.oh-my-zsh/custom;
-add ~/.config/kitty ~/.tmux.conf;
+add ~/.config/kitty;
 
 # Dev
 add ~/scripts ~/.bin;
@@ -26,7 +26,6 @@ add ~/.config/nvim ~/.config/coc;
 add ~/.yarnrc ~/.npmrc;
 
 # Applications
-add ~/.scimrc;
 add ~/.config/suckless;
 add ~/.config/{lf,sxiv,calcurse,org,pet,qutebrowser,shell-macros};
 
