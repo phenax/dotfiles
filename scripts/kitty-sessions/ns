@@ -1,6 +1,6 @@
 # Editor
 title Editor
-launch i3-sensible-editor .
+launch sensible-editor .
 
 launch zsh
 launch zsh

@@ -19,14 +19,16 @@ while true; do
   battery_level=$(get_level);
   state=$(get_state);
 
-  if (between $CRITICAL_BATTERY $LOW_BATTERY $battery_level); then
-    notify-send "Please charge this shit. Battery is at $battery_level%" -u normal;
-    sleep $LOW_DELAY;
-  fi
+  if [[ "$state" == "Discharging" ]]; then
+    if (between $CRITICAL_BATTERY $LOW_BATTERY $battery_level); then
+      notify-send "Please charge this shit. Battery is at $battery_level%" -u normal;
+      sleep $LOW_DELAY;
+    fi
 
-  if (between 0 $CRITICAL_BATTERY $battery_level); then
-    notify-send "HOLY SHIT DUDE. I'M DYING. Battery is at $battery_level%" -u critical;
-    sleep $CRITICAL_DELAY;
+    if (between 0 $CRITICAL_BATTERY $battery_level); then
+      notify-send "HOLY SHIT DUDE. I'M DYING. Battery is at $battery_level%" -u critical;
+      sleep $CRITICAL_DELAY;
+    fi
   fi
 
   sleep $DELAY;

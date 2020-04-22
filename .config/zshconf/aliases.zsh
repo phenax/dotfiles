@@ -11,6 +11,7 @@ update-dotfiles() {
   ~/scripts/dotfiles.sh;
   yadm commit -m "Updates dotfiles" && \
   yadm push -u origin master;
+  pass git push;
 }
 
 # reset-origin a2_develop
@@ -93,4 +94,7 @@ alias tmux="tmux -u";
 
 # Load work aliases
 source "$HOME/.work-config/zshconf/aliases.zsh";
+
+alias qr-send="qrcp";
+alias qr-get="qrcp receive";
 

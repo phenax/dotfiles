@@ -1,12 +1,14 @@
 
 ** TODO Daily tasks
    - [ ] Fix icon issues in terminal
-   - [ ] Create a sensible-terminal sensible-editor sensible-browser
+   - [ ] Email client
    - [ ] Find a better way to start x server (Cleanup /etc/profile)
-   - [ ] Clone brave and evaluate if you can maintain it
    - [ ] Fix global env problem
    - [ ] Move .oh-my-zsh to inside config and get rid of .zsh directory
    - [ ] Spotify client terminal based?
+   - [ ] Clone brave and evaluate if you can maintain a fork
+   - [X] Create a sensible-terminal sensible-editor sensible-browser
+   - [X] File transfer qrcp
    - [X] Fix dotfiles
    - [X] Fix st extract url
    - [X] Torrent client
