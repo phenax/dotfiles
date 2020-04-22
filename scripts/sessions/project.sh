@@ -5,10 +5,10 @@ workspace="$2";
 
 [[ ! -z "$workspace" ]] && bspc desktop -f "$workspace";
 
-$TERMINAL -d "$dir" -e i3-sensible-editor . &
+sensible-terminal -d "$dir" -e sensible-editor . &
 sleep 0.3;
-$TERMINAL -d "$dir" &
-$TERMINAL -d "$dir" &
+sensible-terminal -d "$dir" &
+sensible-terminal -d "$dir" &
 
 sleep 0.5;
 

@@ -19,7 +19,7 @@ sudo apt install \
   rofi-emoji \
   i3lock \
   i3 \
-  i3-sensible-terminal \
+  sensible-terminal \
   tty-clock \
   fonts-roboto \
   fonts-powerline \

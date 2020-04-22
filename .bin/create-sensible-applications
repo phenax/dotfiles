@@ -1,0 +1,18 @@
+#!/usr/bin/env zsh
+
+source /home/akshayn/.config/zshconf/config.zsh;
+
+apps="
+sensible-terminal   $TERMINAL
+sensible-editor     $EDITOR
+sensible-browser    $BROWSER
+";
+
+echo -e "$apps" | while read app bin; do
+  if [[ ! -z "$bin" ]]; then
+    echo "Setting $app to $bin";
+    echo -e "#!/usr/bin/env sh\nexec $bin \"\$@\"" > /usr/local/bin/$app;
+    chmod +x /usr/local/bin/$app;
+  fi;
+done;
+

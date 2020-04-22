@@ -13,7 +13,7 @@
 
 # Terminal
 super + Return
-  $TERMINAL -d $(xcwd)
+  sensible-terminal -d $(xcwd)
 
 # Tabbed terminal
 super + shift + Return
@@ -21,11 +21,11 @@ super + shift + Return
 
 # Browser
 super + c
-  browser
+  sensible-browser
 
 # Private browser
 super + shift + c
-  browser --incognito
+  sensible-browser --incognito
 
 # Spotify controls
 super + m; {Left,Return,Right}
@@ -33,7 +33,7 @@ super + m; {Left,Return,Right}
 
 # File manager
 super + shift + f
-  ~/.bin/with_zsh '$TERMINAL -d $(xcwd) -e lf'
+  ~/.bin/with_zsh 'sensible-terminal -d $(xcwd) -e lf'
 
 # Add magnet link to download from clipboard
 super + shift + t
@@ -59,7 +59,7 @@ super+shift+i
 super+shift+g
   ~/.bin/with_zsh ~/scripts/bookmarks-menu/gh-projects.sh menu
 super+shift+e
-  ~/.bin/with_zsh ~/scripts/fontawesome-menu/fa-menu.sh menu
+  ~/scripts/fontawesome-menu/fa-menu.sh menu
 
 # }}}
 
