@@ -136,7 +136,7 @@
   type = internal/date
   interval = 5
 
-  date = "%d %h, %Y"
+  date = "%a - %d %h, %Y"
   time = "%l:%M %p"
 
   format-prefix = "   "

@@ -35,6 +35,10 @@ super + m; {Left,Return,Right}
 super + shift + f
   ~/.bin/with_zsh '$TERMINAL -d $(xcwd) -e lf'
 
+# Add magnet link to download from clipboard
+super + shift + t
+  ~/scripts/torrent.sh add_from_clipboard;
+
 # }}}
 
 
@@ -47,15 +51,15 @@ super + d
 
 # Custom menus
 super+shift+p
-  rofi-pass
+  ~/.bin/with_zsh rofi-pass
 super+shift+o
-  ~/scripts/open-project.sh
+  ~/.bin/with_zsh ~/scripts/open-project.sh
 super+shift+i
-  ~/scripts/bookmarks-menu/bookmarker.sh menu
+  ~/.bin/with_zsh ~/scripts/bookmarks-menu/bookmarker.sh menu
 super+shift+g
-  ~/scripts/bookmarks-menu/gh-projects.sh menu
+  ~/.bin/with_zsh ~/scripts/bookmarks-menu/gh-projects.sh menu
 super+shift+e
-  ~/scripts/fontawesome-menu/fa-menu.sh menu
+  ~/.bin/with_zsh ~/scripts/fontawesome-menu/fa-menu.sh menu
 
 # }}}
 

@@ -1,6 +1,9 @@
 
 trim() { sed '/^$/ d'; }
 
-copy() { xclip -i -selection clipboard; }
+clipboard() { xclip -selection clipboard "$@"; }
+
+copy() { clipboard -i; }
+read_clipboard() { clipboard -o; }
 
 copy_str() { echo -n "$@" | copy; }
