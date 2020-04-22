@@ -57,7 +57,7 @@ BROWSER='xdg-open'
 default_do='menu' # menu, autotype, copyPass, typeUser, typePass, copyUser, copyUrl, viewEntry, typeMenu, actionMenu, copyMenu, openUrl
 auto_enter='false'
 notify='false'
-default_autotype='user :tab pass'
+default_autotype='pass'
 
 # color of the help messages
 # leave empty for autodetection

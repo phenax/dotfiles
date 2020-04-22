@@ -2,6 +2,8 @@ set hidden
 set autoread
 set mouse=a
 
+set splitbelow splitright
+
 set foldenable
 " set foldnestmax=10
 " set foldlevel=2
@@ -74,4 +76,10 @@ vmap <C-p> "+p
 nmap <S-Tab> zR
 nmap zx zo
 nmap zc zc
+
+" Window navigation
+nnoremap <C-Left> <C-w>h
+nnoremap <C-Right> <C-w>l
+nnoremap <C-Up> <C-w>k
+nnoremap <C-Down> <C-w>j
 

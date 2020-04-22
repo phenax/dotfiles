@@ -34,11 +34,17 @@ bspc rule -r "*";
   # killall -9 nm-applet;
   # nm-applet &
 
+  # Battery watcher
+  # TODO: Find better way to kill this
+  kill $(ps aux | grep battery-watch | grep -v 'grep' | awk '{print $2}');
+  ~/scripts/battery-watch.sh &
+
   # Load up the xresources file
   xrdb ~/.Xresources &
 
   # Transmission torrent client
-  # transmission-daemon --download-dir "$HOME/Downloads/dl" &
+  killall -9 transmission-daemon;
+  transmission-daemon --download-dir "$HOME/Downloads/dl" &
 # }}}
 
 
