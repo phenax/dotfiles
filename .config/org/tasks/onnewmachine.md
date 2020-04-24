@@ -1,11 +1,11 @@
 ** TODO
   - [ ] Install arch or whatever
+  - [ ] Set up ly
   - [ ] Install X all stuff
   - [ ] Install yadm
   - [ ] Install shell macros
   - [ ] Install bspwm, st via macros
   - [ ] Yadm back all the dot files
-  - [ ] Set up ly
 
 
 ** TO disable power button

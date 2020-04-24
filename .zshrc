@@ -25,5 +25,5 @@ source $ZSH_CUSTOM_CONF_FILES/aliases.zsh;
 
 # Plugins
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh;
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh;
+# source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh;
 
