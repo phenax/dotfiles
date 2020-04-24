@@ -1,4 +1,0 @@
-*** Learn
-    - [ ] Networking + linux
-    - [ ] Streams in linux
-    - [ ] Socionics

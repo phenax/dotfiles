@@ -7,13 +7,9 @@
       - [ ] Change key bindings
       - [ ] Create multiple tasks and manage spawning windows
       - [ ] Remove menu bar
-  - [ ] Change brightness control to use /sys/class/backlight instead
-      - [ ] Fix file permission issue
-  - [ ] st stuff
-      - [X] Fix xresources colors in st
-      - [ ] Fix colored icons in st
   - [X] Fix suspend action on lid close
   - [ ] Touchpad gestures
+      - [ ] https://askubuntu.com/questions/1034624/touchpad-gestures-in-ubuntu-18-04-lts
   - [-] Dynamic layouts - (specific to workspace or parent node)
       - [X] Implement
       - [X] Publish as an installable script on github

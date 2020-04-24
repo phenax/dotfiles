@@ -39,6 +39,9 @@ super + shift + f
 super + shift + t
   ~/scripts/torrent.sh add_from_clipboard;
 
+super + shift + colon
+  sensible-terminal -e node;
+
 # }}}
 
 
@@ -53,11 +56,11 @@ super + d
 super+shift+p
   ~/.bin/with_zsh rofi-pass
 super+shift+o
-  ~/.bin/with_zsh ~/scripts/open-project.sh
+  ~/.bin/with_zsh "~/scripts/open-project.sh"
 super+shift+i
-  ~/.bin/with_zsh ~/scripts/bookmarks-menu/bookmarker.sh menu
+  ~/.bin/with_zsh "~/scripts/bookmarks-menu/bookmarker.sh menu"
 super+shift+g
-  ~/.bin/with_zsh ~/scripts/bookmarks-menu/gh-projects.sh menu
+  ~/.bin/with_zsh "~/scripts/bookmarks-menu/gh-projects.sh menu"
 super+shift+e
   ~/scripts/fontawesome-menu/fa-menu.sh menu
 

@@ -13,7 +13,7 @@ bspc rule -r "*";
 
   # Compositor
   killall -9 compton;
-  compton --config ~/compton.conf &
+  compton --config ~/.config/compton.conf &
 
   # Notification manager
   killall -9 dunst;
@@ -30,6 +30,10 @@ bspc rule -r "*";
   killall -9 udiskie;
   ~/.bin/with_zsh "udiskie -a -n -s" &
 
+  # Clipboard history
+  # killall -9 clipmenud;
+  # clipmenud &
+
   # Network manager applet
   # killall -9 nm-applet;
   # nm-applet &
@@ -41,6 +45,14 @@ bspc rule -r "*";
 
   # Load up the xresources file
   xrdb ~/.Xresources &
+
+  # Spotify
+  # killall -9 spotifyd;
+  # spotifyd &
+
+  # RSS feed daemon
+  # killall -9 canto-daemon;
+  # canto-daemon &
 
   # Transmission torrent client
   killall -9 transmission-daemon;

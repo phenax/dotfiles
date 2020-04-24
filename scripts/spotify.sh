@@ -62,6 +62,10 @@ play_pause() { spotify_signal PlayPause; }
 next() { spotify_signal Next; }
 prev() { spotify_signal Previous; }
 
+notify() {
+  notify-send "Song change $1 $2 $3";
+}
+
 case "$1" in
   start) spotify_launch ;;
   play_pause|pp) play_pause ;;
@@ -70,6 +74,7 @@ case "$1" in
   dump_metadata) get_metadata ;;
   get_label) get_label ;;
   get_play_state) get_play_state ;;
+  notify) notify ;;
   *) echo "Learn how to use shit before you use them" ;;
 esac
 
