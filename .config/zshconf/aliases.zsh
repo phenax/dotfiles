@@ -98,3 +98,5 @@ source "$HOME/.work-config/zshconf/aliases.zsh";
 alias qr-send="qrcp";
 alias qr-get="qrcp receive";
 
+alias auto-remove="sudo pacman -Rcs \$(pacman -Qdtq)";
+
