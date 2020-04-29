@@ -17,7 +17,7 @@ super + Return
 
 # Tabbed terminal
 super + shift + Return
-  tst -d $(xcwd)
+  ~/.bin/tst -d $(xcwd)
 
 # Browser
 super + c
@@ -39,6 +39,7 @@ super + shift + f
 super + shift + t
   ~/scripts/torrent.sh add_from_clipboard;
 
+# Calculator (Node playground)
 super + shift + colon
   sensible-terminal -e node;
 

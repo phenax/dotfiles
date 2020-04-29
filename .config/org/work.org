@@ -1,14 +1,14 @@
 
 ** TODO Daily tasks
-   - [ ] Fix icon issues in terminal
-   - [ ] Email client
-   - [ ] Find a better way to start x server (Cleanup /etc/profile)
-   - [ ] Fix global env problem
    - [ ] Move .oh-my-zsh to inside config and get rid of .zsh directory
-   - [ ] ?Spotify client terminal based [Tried it, bad experience]
-   - [ ] Clone brave and evaluate if you can maintain a fork
    - [ ] Fix mic volume issue
+   - [ ] Fix global env problem
+   - [ ] Email client
    - [ ] LF copy paste with rsync -ah --progress
+   - [ ] Fix icon issues in terminal
+         - [ ] Use libxft-bgra fork
+         - [ ] Wait libxft to fix bgra issue and switch back to that
+   - [ ] Find a better way to start x server (Cleanup /etc/profile)
    - [X] Create a sensible-terminal sensible-editor sensible-browser
    - [X] File transfer qrcp
    - [X] Fix dotfiles
