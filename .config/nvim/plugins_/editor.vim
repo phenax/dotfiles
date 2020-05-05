@@ -10,3 +10,5 @@ Plug 'wellle/targets.vim'
 Plug 'jceb/vim-orgmode'
 Plug 'unblevable/quick-scope'
 " Plug 'editorconfig/editorconfig-vim'
+
+Plug 'vimwiki/vimwiki'

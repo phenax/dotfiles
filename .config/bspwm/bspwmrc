@@ -35,24 +35,11 @@ bspc rule -r "*";
   # clipmenud &
 
   # Network manager applet
-  # killall -9 nm-applet;
-  # nm-applet &
+  killall -9 netctl-tray;
+  netctl-tray &
 
   # Battery watcher
-  # TODO: Find better way to kill this
-  kill $(ps aux | grep battery-watch | grep -v 'grep' | awk '{print $2}');
-  ~/scripts/battery-watch.sh &
-
-  # Load up the xresources file
-  xrdb ~/.Xresources &
-
-  # Spotify
-  # killall -9 spotifyd;
-  # spotifyd &
-
-  # RSS feed daemon
-  # killall -9 canto-daemon;
-  # canto-daemon &
+  ~/scripts/battery-watch.sh start;
 
   # Transmission torrent client
   killall -9 transmission-daemon;
