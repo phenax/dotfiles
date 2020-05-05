@@ -1,7 +1,13 @@
+# Index
+  * [[Workstation]]
 
-[[Scratchpad]]
-[[Notes]]
-[[Workstation]]
-[[Project ideas]]
-[[Blog]]
-[[Work]]
+  * [[Notes]]
+
+  * [[Project ideas]]
+
+  * [[Blog]]
+
+  * [[Work]]
+
+  * [[diary/diary|Personal diary]]
+
