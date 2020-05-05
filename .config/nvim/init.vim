@@ -18,6 +18,7 @@ call plug#begin(g:pluginpath)
   runtime plugins_/git.vim
   runtime plugins_/linter.vim
   runtime plugins_/editor.vim
+  runtime plugins_/utilities.vim
 call plug#end()
 
 runtime config_/coc.vim
@@ -27,6 +28,7 @@ runtime config_/theme.vim
 runtime config_/git.vim
 runtime config_/linter.vim
 runtime config_/editor.vim
+runtime config_/utilities.vim
 
 " Accidental key bindings
 map q: <Nop>

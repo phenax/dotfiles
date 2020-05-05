@@ -7,7 +7,6 @@ set splitbelow splitright
 set foldenable
 " set foldnestmax=10
 " set foldlevel=2
-
 " set foldmethod=manual   
 set foldmethod=marker
 set foldcolumn=2
@@ -52,8 +51,6 @@ set cmdheight=1
 " Updat  time default 4000
 set updatetime=300
 
-" let g:syntastic_enable_racket_racket_checker = 1
-
 " don't give |ins-completion-menu| messages.
 set shortmess+=c
 
@@ -83,6 +80,7 @@ nnoremap <C-Right> <C-w>l
 nnoremap <C-Up> <C-w>k
 nnoremap <C-Down> <C-w>j
 
+" Accidental typos
+command! W :w
+command! Q :q
 
-" Vim WIKI config
-let g:vimwiki_list = [{'path': '~/.config/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
