@@ -83,3 +83,6 @@ nnoremap <C-Right> <C-w>l
 nnoremap <C-Up> <C-w>k
 nnoremap <C-Down> <C-w>j
 
+
+" Vim WIKI config
+let g:vimwiki_list = [{'path': '~/.config/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]

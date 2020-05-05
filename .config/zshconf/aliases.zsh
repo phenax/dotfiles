@@ -33,13 +33,14 @@ reset-origin() {
 # Trash
 alias trash="ls \$TRASH_TMP_DIR";
 
-# LS(Deluxe) aliases
+# List files aliases
 alias ls="lsd";
 alias l="ls -1";
 alias la='ls -a';
 alias ll='ls -alF';
 alias lt='ls --tree';
 alias la='ls -A';
+alias lsize='du -h -d1';
 
 lc () { # lf with cd to navigated directory on quit
     tmp="$(mktemp)"
@@ -50,9 +51,6 @@ lc () { # lf with cd to navigated directory on quit
         [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
     fi
 }
-
-# Magic cd
-# eval "$(zoxide init zsh)";
 
 # Git aliases
 alias gaa="git add ."
@@ -70,18 +68,18 @@ alias ns="npm start";
 alias nt="npm test";
 
 # Config editors
-alias eorg="cd ~/.config/org && $EDITOR .";
-alias ezsh="cd ~/.config/zshconf && $EDITOR .";
-alias edot="$EDITOR ~/scripts/dotfiles.sh";
-alias evim="cd ~/.config/nvim && $EDITOR .";
-alias ekey="cd ~/.config/sxhkd && $EDITOR .";
-alias ebsp="cd ~/.config/bspwm && $EDITOR .";
+alias eorg="sensible-editor ~/.config/vimwiki/index.md";
+alias ezsh="cd ~/.config/zshconf && sensible-editor .";
+alias edot="sensible-editor ~/scripts/dotfiles.sh";
+alias evim="cd ~/.config/nvim && sensible-editor .";
+alias ekey="cd ~/.config/sxhkd && sensible-editor .";
+alias ebsp="cd ~/.config/bspwm && sensible-editor .";
 alias ehosts="sudo nvim /etc/hosts";
 
 alias sandbox="sudo ~/scripts/host-file-elb-update.sh";
 
 # Application shortcuts
-alias e="$EDITOR";
+alias e="sensible-editor";
 alias v="nvim";
 alias xvim="/usr/bin/vim";
 alias vim="nvim";
@@ -90,13 +88,14 @@ alias chromei="google-chrome --incognito";
 alias qute="qutebrowser";
 alias qutei="qutebrowser --temp-basedir -s content.private_browsing true";
 
-alias tmux="tmux -u";
-
 # Load work aliases
 source "$HOME/.work-config/zshconf/aliases.zsh";
 
+# QR file transfer
 alias qr-send="qrcp";
 alias qr-get="qrcp receive";
 
+# Pacman aliases
 alias auto-remove="sudo pacman -Rcs \$(pacman -Qdtq)";
+alias update="sudo pacman -Syyu";
 

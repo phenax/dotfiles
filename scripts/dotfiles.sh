@@ -4,6 +4,7 @@ add() { yadm add "$@"; }
 
 # Work config
 add ~/.work-config;
+add ~/.config/vimwiki;
 
 # X and DM
 add ~/.config/i3;
@@ -27,7 +28,7 @@ add ~/.yarnrc ~/.npmrc;
 
 # Applications
 add ~/.config/suckless;
-add ~/.config/{lf,sxiv,calcurse,org,pet,qutebrowser,shell-macros};
+add ~/.config/{lf,sxiv,calcurse,pet,qutebrowser,shell-macros};
 
 # Wallpapers
 add ~/.fehbg;
