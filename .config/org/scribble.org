@@ -1,4 +1,0 @@
-** Points
-   - [ ] Working on the proxy server
-   - [ ] The AB will go live on CUG today
-   - [ ] Get new campaign id and close the old experiment
