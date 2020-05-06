@@ -1,5 +1,6 @@
 
 trim() { sed '/^$/ d'; }
+trim_line() { sed -e 's/^\s*//' -e 's/\s*$//'; }
 
 clipboard() { xclip -selection clipboard "$@"; }
 
