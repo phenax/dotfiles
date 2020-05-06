@@ -17,10 +17,12 @@ update-dotfiles() {
   pass git push;
 
   # Vim wiki push
+  local oldir=$(pwd);
   cd ~/.config/vimwiki;
   git add .;
   git commit -m "Notes update";
   git push;
+  cd $oldir;
 }
 
 # reset-origin a2_develop
