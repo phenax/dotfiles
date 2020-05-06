@@ -8,7 +8,7 @@ add ~/.work-config;
 # X and DM
 add ~/.config/i3;
 add ~/.config/{bspwm,sxhkd,polybar}
-add ~/.Xresources ~/.xinitrc ~/compton.conf;
+add ~/.Xresources ~/.xinitrc ~/.config/compton.conf;
 add ~/.config/{rofi,rofi-pass,rofi-themes};
 
 # Other config
