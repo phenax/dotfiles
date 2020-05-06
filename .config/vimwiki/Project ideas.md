@@ -1,1 +1,0 @@
-- [ ] Spotify lyrics app

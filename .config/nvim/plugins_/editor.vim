@@ -9,3 +9,5 @@ Plug 'tpope/vim-surround'
 Plug 'wellle/targets.vim'
 Plug 'unblevable/quick-scope'
 " Plug 'editorconfig/editorconfig-vim'
+
+Plug 'easymotion/vim-easymotion'

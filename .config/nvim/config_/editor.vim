@@ -84,3 +84,4 @@ nnoremap <C-Down> <C-w>j
 command! W :w
 command! Q :q
 
+map <Leader> <Plug>(easymotion-prefix)
