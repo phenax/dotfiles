@@ -7,11 +7,20 @@ alias show-mobile-screen="adb shell screenrecord --output-format=h264 - | ffplay
 
 # Sync dotfiles to github (uses yadm)
 update-dotfiles() {
+  # Dotfiles
   yadm status;
   ~/scripts/dotfiles.sh;
   yadm commit -m "Updates dotfiles" && \
   yadm push -u origin master;
+
+  # Passwords push
   pass git push;
+
+  # Vim wiki push
+  cd ~/.config/vimwiki;
+  git add .;
+  git commit -m "Notes update";
+  git push;
 }
 
 # reset-origin a2_develop
