@@ -4,7 +4,6 @@ add() { yadm add "$@"; }
 
 # Work config
 add ~/.work-config;
-# add ~/.config/vimwiki;
 
 # X and DM
 add ~/.config/i3;
