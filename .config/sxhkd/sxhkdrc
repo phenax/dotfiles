@@ -19,13 +19,17 @@ super + Return
 super + shift + Return
   ~/.bin/tst -d $(xcwd)
 
-# Browser
+# Browser and private browser
 super + c
   sensible-browser
-
-# Private browser
 super + shift + c
-  sensible-browser --incognito
+  sensible-browser ':open -p'
+
+# Qute browser
+super + b
+  brave
+super + shift + b
+  brave --incognito
 
 # Spotify controls
 super + m; {Left,Return,Right}
