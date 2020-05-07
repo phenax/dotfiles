@@ -3,14 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Home</title>
+    <title>New tab</title>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        background-color: #1f2225;
+        color: #fff;
+      }
+      html, body, body * { box-sizing: border-box }
+      .home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-family: Fira Code, sans-serif;
+        text-align: center;
+        letter-spacing: -2px;
+        font-weight: 100;
+      }
+      .home-time {
+        font-size: 7em;
+      }
+      .home-date {
+        font-size: 3.3em;
+        color: #aaa;
+      }
+    </style>
   </head>
   <body>
-    <ul>
-      <li><a href="https://google.com">Google</a></li>
-      <li><a href="https://github.com/peopleGroup/shaadi-react-reg/pulls">Shaadi new reg PRs</a></li>
-      <li><a href="https://github.com/peopleGroup/shaadi-react-reg/pulls">Shaadi new reg Project</a></li>
-      <li><a href="https://github.com/peopleGroup/shaadi-react-reg/pulls">Shaadi react PRs</a></li>
-    </ul>
+    <div class="home">
+      <div class="home-time" id="clock-time"></div>
+      <div class="home-date" id="clock-date"></div>
+    </div>
+
+    <script>
+      const $time = document.querySelector('#clock-time');
+      const $date = document.querySelector('#clock-date');
+
+      function renderDateTime() {
+        const d = new Date();
+        const timeformat = new Intl.DateTimeFormat('en-IN', {
+          hour12: true,
+          hour: 'numeric', minute: 'numeric'
+        });
+        const dateformat = new Intl.DateTimeFormat('en-IN', {
+          weekday: 'long', month: 'short', day: 'numeric',
+        });
+
+        $time.textContent = timeformat.format(d);
+        $date.textContent = dateformat.format(d);
+      }
+
+      renderDateTime();
+      setInterval(renderDateTime, 1000);
+    </script>
   </body>
 </html>
