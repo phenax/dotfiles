@@ -69,15 +69,14 @@ c.content.dns_prefetch = True # Use dns prefetching for speed
 c.editor.command = ['sensible-terminal', '-e', 'sensible-editor', '{}']
 c.input.insert_mode.auto_enter = True
 c.input.insert_mode.auto_leave = True
+c.input.insert_mode.auto_load = True
+c.input.insert_mode.leave_on_load = True
 
 # Hints
 c.hints.auto_follow = 'always'
-c.hints.chars = 'qazwsxedcplmoknijb'
-
+c.hints.chars = 'azsxdclmknjb'
+c.hints.auto_follow = 'unique-match'
 c.content.pdfjs = True
-
-#  nmap('j', 'scroll-page 0 0.2')
-#  nmap('k', 'scroll-page 0 -0.2')
 
 # Edit text and edit url
 imap('<Ctrl-e>', 'open-editor')
@@ -93,12 +92,18 @@ nmap("zz", "zoom")
 # Highlight inputs
 nmap('gi', 'hint inputs')
 
-# add back search
+# Add search
 nmap('n', 'search-next')
 nmap('N', 'search-prev')
 
+# Clipboard play
 nmap('yy', 'yank selection')   # Copy selected text
 nmap('yu', 'yank')             # Copy url
+nmap('yl', 'hint links userscript yank') # Copy a link from page as hints
+
+# Add magnet link to download
+c.aliases['find-torrent-magnet-links'] = 'hint links userscript torrent'
+nmap('\\td', 'find-torrent-magnet-links')
 # }}}
 
 #### UI {{{
@@ -156,12 +161,15 @@ c.colors.tabs.pinned.selected.odd.fg = c.colors.tabs.selected.odd.fg
 c.tabs.title.format = '{perc}{private} {audio}{index}: {current_title}'
 c.tabs.tooltips = True
 c.tabs.background = True
-c.tabs.select_on_remove = 'prev'
+c.tabs.select_on_remove = 'next'
 c.tabs.new_position.unrelated = 'next'
 
 # Keybindings
 nmap('o', 'set-cmd-text -s :open --tab')
 nmap('O', 'set-cmd-text -s :open')
+
+# Tab
+nmap('d', 'tab-close')
 
 # nmap('tr', 'stop') # Stop loading tab
 nmap('tt', 'open --tab') # New tab
@@ -172,8 +180,7 @@ nmap('<Ctrl-PgUp>', 'tab-prev')
 nmap('<Ctrl-PgDown>', 'tab-next')
 nmap('<Ctrl-Shift-PgUp>', 'tab-move -')
 nmap('<Ctrl-Shift-PgDown>', 'tab-move +')
-nmap('l', 'tab-focus last')
-nmap('b', 'set-cmd-text --space :buffer')
+nmap('b', 'set-cmd-text --space :buffer') # List buffers by index
 
 # From clipboard
 nmap('p', 'open --tab -- {clipboard}') # Open link in keyboard in a new tab
@@ -187,16 +194,12 @@ c.downloads.open_dispatcher = 'dl_move {}'
 c.downloads.position= 'bottom'
 c.downloads.remove_finished = 1000
 
+# Goto downloads directory 
+nunmap('gd');
+nmap('gdl', 'spawn --userscript open_downloads')
 
 # Playing Videos with MPV
 nmap('ty', 'spawn --detach mpv "{url}"')
-
-# Downloads
-#  nmap('tw', 'download --dest ~/database/move/ ;; tab-close')
-#  nmap('tg', 'spawn --detach dlg "{url}"')
-#  nmap('td', 'download-open')
-#  nmap('tr', 'spawn --detach dl_move bulk_store')
-#  nmap('tc', 'download-clear')
 # }}}
 
 #### Security {{{
@@ -243,24 +246,15 @@ nmap("B'", 'set-cmd-text -s :bookmark-load --tab')
 # }}}
 
 #### Dev {{{
-nmap('tr', 'config-source')  # Reload config
-nmap('ti', 'inspector')      # Inspector
+nmap('\\tr', 'config-source')    # Reload config
+nmap('\\ti', 'inspector')        # Inspector
+nmap('\\ts', 'view-source')      # View page source
+
+nmap('\\tj', 'spawn --userscript format_json') # Json formatter
 # }}}
 
 #### History {{{
 nmap('<Alt-Left>', 'back')
 nmap('<Alt-Right>', 'forward')
 # }}}
-
-
-
-#  tmap('n', 'move-to-next-line')
-#  tmap('e', 'move-to-prev-line')
-#  tmap('i', 'move-to-next-char')
-#  # add back e functionality
-#  tmap('j', 'move-to-end-of-word')
-
-#  tmap('N', 'scroll down')
-#  tmap('E', 'scroll up')
-#  tmap('I', 'scroll right')
 
