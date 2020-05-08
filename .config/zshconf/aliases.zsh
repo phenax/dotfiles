@@ -5,33 +5,6 @@ alias clock="tty-clock -t -b -c";
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"';
 alias show-mobile-screen="adb shell screenrecord --output-format=h264 - | ffplay -";
 
-commit-push-all() {
-  local oldir=$(pwd);
-  cd $1;
-  git add .;
-  git commit -m $2;
-  git push;
-  cd $oldir;
-}
-
-# Sync dotfiles to github (uses yadm)
-update-dotfiles() {
-  # Dotfiles
-  yadm status;
-  ~/scripts/dotfiles.sh;
-  yadm commit -m "Updates dotfiles" && \
-  yadm push -u origin master;
-
-  # Passwords push
-  pass git push;
-
-  # Vim wiki push
-  commit-push-all ~/.config/vimwiki "Notes updated";
-
-  # Push private config
-  commit-push-all ~/.work-config "Updated private config";
-}
-
 # reset-origin a2_develop
 reset-origin() {
   if [[ -z $(git status -s) ]];
