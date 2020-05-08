@@ -21,6 +21,7 @@ _create_runner "md-preview";
 
 _create_runner "image-preview";
 _create_runner "brightness";
+_create_runner "update-dotfiles" "dotfiles.sh";
 _create_runner "lockscreen";
 _create_runner "open-project";
 _create_runner "xres-template" "xres-template.js";
