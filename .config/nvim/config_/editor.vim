@@ -73,6 +73,7 @@ vmap <C-p> "+p
 nmap <S-Tab> zR
 nmap zx zo
 nmap zc zc
+nmap zz za
 
 " Window navigation
 nnoremap <C-Left> <C-w>h
