@@ -36,9 +36,9 @@ add-public-config() {
 
 commit-push-all() {
   local oldir=$(pwd);
-  cd $1;
+  cd "$1";
   git add .;
-  git commit -m $2;
+  git commit -m "$2";
   git push;
   cd $oldir;
 }
