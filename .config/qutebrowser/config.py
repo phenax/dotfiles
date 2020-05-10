@@ -171,9 +171,8 @@ nmap('O', 'set-cmd-text -s :open')
 # Tab
 nmap('d', 'tab-close')
 
-# nmap('tr', 'stop') # Stop loading tab
-nmap('tt', 'open --tab') # New tab
-nmap('tp', 'open -p') # Private window
+nmap('tt', 'open --tab')  # New tab
+nmap('tp', 'open -p')     # Private window
 
 # Tab movement
 nmap('<Ctrl-PgUp>', 'tab-prev')
@@ -199,7 +198,7 @@ nunmap('gd');
 nmap('gdl', 'spawn --userscript open_downloads')
 
 # Playing Videos with MPV
-nmap('ty', 'spawn --detach mpv "{url}"')
+nmap('\\ty', 'spawn --detach mpv "{url}"')
 # }}}
 
 #### Security {{{
