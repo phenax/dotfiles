@@ -76,7 +76,6 @@ bspc rule -r "*";
   bspc config border_width         1
   bspc config window_gap           4
 
-  # TODO: Monocle tabs
   bspc config single_monocle       true
   bspc config borderless_monocle   true
   bspc config gapless_monocle      true
@@ -121,7 +120,7 @@ bspc rule -r "*";
 
   if [[ "$window_count" = "0" ]]; then
     enable-init-rules;
-    browser &
+    sensible-browser &
     spotify &
   fi
 # }}}

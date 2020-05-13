@@ -1,6 +1,6 @@
-" Plug 'dracula/vim'
+Plug 'dracula/vim'
 " Plug 'wadackel/vim-dogrun'
-" Plug 'cocopon/iceberg.vim'
+Plug 'cocopon/iceberg.vim'
 Plug 'phenax/palenight.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'

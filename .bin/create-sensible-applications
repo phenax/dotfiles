@@ -3,9 +3,10 @@
 source /home/akshayn/.config/zshconf/config.zsh;
 
 apps="
-sensible-terminal   $TERMINAL
-sensible-editor     $EDITOR
-sensible-browser    $BROWSER
+sensible-terminal           "$TERMINAL"
+sensible-editor             "$EDITOR"
+sensible-browser            "$BROWSER"
+sensible-private-browser    "$PRIVATE_BROWSER"
 ";
 
 echo -e "$apps" | while read app bin; do
