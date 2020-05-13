@@ -78,6 +78,9 @@ c.hints.chars = 'azsxdclmknjb'
 c.hints.auto_follow = 'unique-match'
 c.content.pdfjs = True
 
+nunmap('<Ctrl-v>');
+nunmap('<Ctrl-V>');
+
 # Edit text and edit url
 imap('<Ctrl-e>', 'open-editor')
 nmap('<Ctrl-l>', 'edit-url')

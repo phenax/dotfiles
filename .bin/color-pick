@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+colorpicker --short --one-shot | xclip -selection clipboard;
+

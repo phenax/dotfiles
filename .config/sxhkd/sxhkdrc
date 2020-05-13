@@ -1,4 +1,3 @@
-
 # Free keys
 # f9 => XF86Tools
 # f11 => XF86Favorites
@@ -23,21 +22,22 @@ super + shift + Return
 super + c
   sensible-browser
 super + shift + c
-  sensible-browser ':open -p'
+  sensible-private-browser
 
-# Qute browser
+# Brave browser
 super + b
   brave
 super + shift + b
   brave --incognito
 
-# Spotify controls
-super + m; {Left,Return,Right}
-  ~/scripts/spotify.sh {prev,play_pause,next}
-
 # File manager
 super + shift + f
   ~/.bin/with_zsh 'sensible-terminal -d $(xcwd) -e lf'
+
+
+# Spotify controls
+super + m; {Left,Return,Right}
+  ~/scripts/spotify.sh {prev,play_pause,next}
 
 # Add magnet link to download from clipboard
 super + shift + t
@@ -46,6 +46,10 @@ super + shift + t
 # Calculator (Node playground)
 super + shift + colon
   sensible-terminal -e node;
+
+# Offline wiki search
+super + question
+  ~/scripts/wiki.sh;
 
 # }}}
 

@@ -12,10 +12,10 @@ SCREENSHOT=$HOME/wallpapers/lockscreen;
 if [[ ! -f "$SCREENSHOT" ]]; then
   cp $WALLPAPER $SCREENSHOT;
   # Blur screenshot
-  convert $SCREENSHOT \
-    -spread 10 \
-    -fill black -colorize 70% \
-    $SCREENSHOT;
+  # convert $SCREENSHOT \
+    # -spread 10 \
+    # -fill black -colorize 70% \
+    # $SCREENSHOT;
 fi
 
 # Lock screen
