@@ -27,7 +27,9 @@ add-public-config() {
 
   # Applications
   add ~/.config/suckless;
-  add ~/.config/{lf,sxiv,calcurse,pet,qutebrowser,shell-macros,zathura};
+  add ~/.config/qutebrowser;
+  add ~/.config/{lf,mpv,sxiv,zathura};
+  add ~/.config/{calcurse,pet,shell-macros};
 
   # Wallpapers
   add ~/.fehbg;
