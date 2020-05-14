@@ -8,6 +8,7 @@ config_version: 2
 settings:
   content.media_capture:
     https://meet.google.com: true
+    https://www.onlinemictest.com: true
   content.notifications:
     https://3.basecamp.com: true
     https://mail.google.com: true
