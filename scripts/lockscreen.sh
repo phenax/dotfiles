@@ -4,7 +4,7 @@
 # SCREENSHOT=/tmp/screenshot.png;
 # scrot $SCREENSHOT;
 
-WALLPAPER=$HOME/wallpapers/cloudy.jpg;
+WALLPAPER=$HOME/wallpapers/apocal.jpg;
 SCREENSHOT=$HOME/wallpapers/lockscreen;
 
 # rm $SCREENSHOT;

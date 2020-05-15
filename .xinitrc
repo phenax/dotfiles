@@ -28,4 +28,5 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-exec bspwm
+exec xmonad
+# exec bspwm
