@@ -48,13 +48,6 @@ commit-push-all() {
 
 # Sync dotfiles to github (uses yadm)
 update-dotfiles() {
-  # Dotfiles
-  echo "\n\n##### Pushing public dotfiles";
-  yadm status;
-  add-public-config;
-  yadm commit -m "Updates dotfiles" && \
-  yadm push -u origin master;
-
   # Passwords push
   echo -e "\n\n##### Pushing passwords";
   pass git push;
@@ -66,6 +59,13 @@ update-dotfiles() {
   # Push private config
   echo -e "\n\n##### Pushing private config";
   commit-push-all ~/.work-config "Updated private config";
+
+  # Dotfiles
+  echo -e "\n\n##### Pushing public dotfiles";
+  yadm status;
+  add-public-config;
+  yadm commit -m "Updates dotfiles" && \
+  yadm push -u origin master;
 }
 
 update-dotfiles;
