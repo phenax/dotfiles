@@ -3,6 +3,7 @@
 add() { yadm add "$@"; }
 add-public-config() {
   # Work config
+  add ~/README.md;
   add ~/.work-config;
 
   # X and DM

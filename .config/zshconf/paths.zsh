@@ -1,6 +1,6 @@
 export XDG_CONFIG_HOME=$HOME/.config;
 export XDG_DATA_HOME=$HOME/.local/share;
-export PKG_CONFIG_PATH=/usr/lib/pkgconfig
+export PKG_CONFIG_PATH=/usr/lib/pkgconfig;
 
 # Local scripts
 export SCRIPTS_DIR="$HOME/scripts";
@@ -24,6 +24,10 @@ export rofi_LIBS=/usr;
 export GNUPGHOME=$XDG_CONFIG_HOME/gnupg;
 export PASSWORD_STORE_DIR=$XDG_CONFIG_HOME/password-store;
 
+# Xmonad directory
+export XMONAD_CONFIG_DIR=$XDG_CONFIG_HOME/xmonad;
+export XMONAD_DATA_DIR=$XDG_DATA_HOME/xmonad;
+export XMONAD_CACHE_DIR=$HOME/.cache/xmonad;
 
 # Development dir variables
 export DEV_DIR="$HOME/dev";

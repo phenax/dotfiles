@@ -62,6 +62,7 @@ c.scrolling.bar = 'always'
 c.scrolling.smooth = True
 c.keyhint.delay = 250
 c.input.partial_timeout = 0
+c.input.spatial_navigation = True
 
 c.content.dns_prefetch = True # Use dns prefetching for speed
 
@@ -107,6 +108,9 @@ nmap('yl', 'hint links userscript yank') # Copy a link from page as hints
 # Add magnet link to download
 c.aliases['find-torrent-magnet-links'] = 'hint links userscript torrent'
 nmap('\\td', 'find-torrent-magnet-links')
+
+nmap('<Ctrl+Shift+Down>', 'scroll-page 0 0.3')
+nmap('<Ctrl+Shift+Up>',   'scroll-page 0 -0.3')
 # }}}
 
 #### UI {{{
@@ -114,7 +118,7 @@ c.fonts.default_family = 'Fira Code'
 c.fonts.default_size = '12px'
 c.content.user_stylesheets = "style.css"
 c.colors.webpage.prefers_color_scheme_dark = True
-# colors.webpage.bg = "#111111" # Force default background for all pages
+c.colors.webpage.bg = "white"
 
 ## Hints
 c.colors.hints.bg = 'yellow'
@@ -143,8 +147,8 @@ c.colors.tabs.odd.bg = c.colors.tabs.even.bg
 c.colors.tabs.odd.fg = c.colors.tabs.even.fg
 
 ## Selected tab
-c.colors.tabs.selected.even.bg = '#444f4f'
-c.colors.tabs.selected.even.fg = '#ffffff'
+c.colors.tabs.selected.even.bg = '#505C95'
+c.colors.tabs.selected.even.fg = 'white'
 c.colors.tabs.selected.odd.bg = c.colors.tabs.selected.even.bg
 c.colors.tabs.selected.odd.fg = c.colors.tabs.selected.even.fg
 
@@ -161,11 +165,13 @@ c.colors.tabs.pinned.selected.odd.fg = c.colors.tabs.selected.odd.fg
 # }}}
 
 #### TABS {{{
+c.tabs.show = 'multiple'
 c.tabs.title.format = '{perc}{private} {audio}{index}: {current_title}'
 c.tabs.tooltips = True
 c.tabs.background = True
 c.tabs.select_on_remove = 'next'
 c.tabs.new_position.unrelated = 'next'
+c.tabs.last_close = 'startpage' # 'close' for closing window on last d
 
 # Keybindings
 nmap('o', 'set-cmd-text -s :open --tab')
@@ -201,7 +207,7 @@ nunmap('gd');
 nmap('gdl', 'spawn --userscript open_downloads')
 
 # Playing Videos with MPV
-nmap('\\ty', 'spawn --detach mpv "{url}"')
+nmap('\\ty', 'spawn --detach bash -c "notify-send \\"Loading mpv\\" && mpv --force-window=immediate \\"{url}\\""')
 # }}}
 
 #### Security {{{
@@ -242,9 +248,6 @@ c.aliases['view-google-cache'] = 'open --tab http://www.google.com/search?q=cach
 
 c.aliases['xa'] = 'quit --save'
 c.aliases['h'] = 'help'
-
-nmap("Q'", 'set-cmd-text -s :quickmark-load --tab')
-nmap("B'", 'set-cmd-text -s :bookmark-load --tab')
 # }}}
 
 #### Dev {{{
