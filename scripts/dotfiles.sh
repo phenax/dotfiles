@@ -10,6 +10,7 @@ add-public-config() {
   add ~/.config/i3;
   add ~/.config/{bspwm,sxhkd,polybar}
   add ~/.Xresources ~/.xinitrc ~/.config/compton.conf;
+  add ~/.config/xresources-schemes;
   add ~/.config/{rofi,rofi-pass,rofi-themes};
 
   # Other config

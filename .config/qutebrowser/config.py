@@ -164,6 +164,14 @@ c.colors.tabs.pinned.selected.odd.bg = c.colors.tabs.selected.odd.bg
 c.colors.tabs.pinned.selected.odd.fg = c.colors.tabs.selected.odd.fg
 # }}}
 
+#### Sessions {{{
+c.aliases['load'] = 'session-load -t';
+
+# Sessions
+nmap('\\sv', ':load video');
+nmap('\\sc', ':load com');
+# }}}
+
 #### TABS {{{
 c.tabs.show = 'multiple'
 c.tabs.title.format = '{perc}{private} {audio}{index}: {current_title}'
