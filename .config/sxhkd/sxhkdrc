@@ -149,7 +149,7 @@ super + {t,w,r}
   bsp-layout set {tall,wide,tiled}
 
 # Balance out layout
-super + b
+super + e
   bsp-layout once even
 
 # }}}
