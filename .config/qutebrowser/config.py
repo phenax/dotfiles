@@ -81,7 +81,9 @@ c.hints.auto_follow = 'unique-match'
 c.content.pdfjs = True
 
 nunmap('<Ctrl-v>');
+nunmap('<Ctrl-x>');
 nunmap('<Ctrl-V>');
+nunmap('<Ctrl-X>');
 
 # Edit text and edit url
 imap('<Ctrl-e>', 'open-editor')
