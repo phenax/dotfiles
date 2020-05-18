@@ -8,6 +8,7 @@ add-public-config() {
 
   # X and DM
   add ~/.config/i3;
+  add ~/.config/xmonad;
   add ~/.config/{bspwm,sxhkd,polybar}
   add ~/.Xresources ~/.xinitrc ~/.config/compton.conf;
   add ~/.config/xresources-schemes;
@@ -30,7 +31,10 @@ add-public-config() {
   # Applications
   add ~/.config/suckless;
   add ~/.config/qutebrowser;
-  add ~/.config/{lf,mpv,sxiv,zathura};
+  add ~/.config/{lf,mpv,sxiv,zathura,netctl-gui.conf};
+  add ~/.config/spotifyd/spotifyd.conf;
+  add ~/.config/transmission-daemon/settings.json;
+  add ~/.config/transmission-remote-cli;
   add ~/.config/{calcurse,pet,shell-macros};
 
   # Wallpapers
