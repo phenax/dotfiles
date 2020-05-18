@@ -2,6 +2,7 @@
 import os
 import re
 import sys
+import json
 from qutebrowser.config.configfiles import ConfigAPI
 from qutebrowser.config.config import ConfigContainer
 config = config
@@ -116,9 +117,6 @@ nmap('<Ctrl+Shift+Up>',   'scroll-page 0 -0.3')
 #### UI {{{
 c.fonts.default_family = 'Fira Code'
 c.fonts.default_size = '12px'
-c.content.user_stylesheets = "style.css"
-c.colors.webpage.prefers_color_scheme_dark = True
-c.colors.webpage.bg = "white"
 
 ## Hints
 c.colors.hints.bg = 'yellow'
@@ -162,6 +160,23 @@ c.colors.tabs.pinned.selected.even.bg = c.colors.tabs.selected.even.bg
 c.colors.tabs.pinned.selected.even.fg = c.colors.tabs.selected.even.fg
 c.colors.tabs.pinned.selected.odd.bg = c.colors.tabs.selected.odd.bg
 c.colors.tabs.pinned.selected.odd.fg = c.colors.tabs.selected.odd.fg
+
+## Webpage styles
+c.content.user_stylesheets = [
+    "styles/scrollbar.css",
+    "styles/default.css",
+]
+c.colors.webpage.prefers_color_scheme_dark = True
+c.colors.webpage.bg = "white"
+
+# Dark mode
+c.aliases['dark-mode-toggle'] = 'config-cycle content.user_stylesheets \'' \
+    + json.dumps(c.content.user_stylesheets) \
+    + '\' \'' \
+    + json.dumps(c.content.user_stylesheets + ['styles/dark.css']) \
+    + '\''
+
+nmap(',td', ':dark-mode-toggle');
 # }}}
 
 #### Sessions {{{

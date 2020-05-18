@@ -51,6 +51,10 @@ super + shift + colon
 super + question
   ~/scripts/wiki.sh;
 
+# Color picker (F9)
+super + XF86Tools
+  ~/.bin/color-pick;
+
 # }}}
 
 
