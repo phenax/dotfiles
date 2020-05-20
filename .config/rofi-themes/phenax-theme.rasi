@@ -12,7 +12,7 @@
   text-alt:   #ffffff;
 
   fg:         #abb2bf;
-  bg:         #0f1215ee;
+  bg:         #0f1215f5;
   bg-solid:   #0f1215;
   bg-light:   #2d2f41;
   accent: @blue;
