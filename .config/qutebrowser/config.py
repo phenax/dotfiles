@@ -20,6 +20,7 @@ def read_xresources(prefix):
     return props
 
 xresources = read_xresources('*')
+qute = read_xresources('qute')
 
 def bind(key, command, mode):  # noqa: E302
     """Bind key to command in mode."""
@@ -141,14 +142,18 @@ c.hints.border = '1px solid #000000'
 ## Context menu styles
 c.colors.contextmenu.menu.bg = xresources['*.background']
 c.colors.contextmenu.menu.fg = xresources['*.foreground']
-c.colors.contextmenu.selected.bg = xresources['*.color8']
+c.colors.contextmenu.selected.bg = xresources['*.accent']
 c.colors.contextmenu.selected.fg = xresources['*.foreground']
 
 ## Completion
 c.colors.completion.category.bg = xresources['*.background']
+c.colors.completion.category.fg = xresources['*.accent']
 c.colors.completion.even.bg = xresources['*.background']
 c.colors.completion.odd.bg = xresources['*.color0']
-c.colors.completion.item.selected.bg = xresources['*.color14']
+c.colors.completion.item.selected.fg = xresources['*.foreground']
+c.colors.completion.item.selected.bg = xresources['*.accent']
+c.colors.completion.item.selected.border.bottom = xresources['*.accent']
+c.colors.completion.item.selected.border.top = xresources['*.accent']
 
 ## Tabs
 c.tabs.padding = { 'bottom': 2, 'top': 2, 'left': 5, 'right': 5 }
@@ -160,7 +165,7 @@ c.colors.tabs.odd.bg = c.colors.tabs.even.bg
 c.colors.tabs.odd.fg = c.colors.tabs.even.fg
 
 ## Selected tab
-c.colors.tabs.selected.even.bg = '#505C95' # xresources['*.color4']
+c.colors.tabs.selected.even.bg = xresources['*.accent']
 c.colors.tabs.selected.even.fg = xresources['*.foreground']
 c.colors.tabs.selected.odd.bg = c.colors.tabs.selected.even.bg
 c.colors.tabs.selected.odd.fg = c.colors.tabs.selected.even.fg
@@ -221,6 +226,10 @@ nmap('d', 'tab-close')
 nmap('tt', 'open --tab')  # New tab
 nmap('tp', 'open -p')     # Private window
 
+# Detach tab
+nmap('\\wt', 'tab-give')
+nmap('\\wp', 'tab-pin')
+
 # Tab movement
 nmap('<Ctrl-PgUp>', 'tab-prev')
 nmap('<Ctrl-PgDown>', 'tab-next')
@@ -259,7 +268,7 @@ c.content.notifications = 'ask'
 c.content.ssl_strict = 'ask'
 c.content.desktop_capture = 'ask'
 c.content.mouse_lock = 'ask'
-# c.content.canvas_reading = False
+c.content.canvas_reading = False
 # }}}
 
 #### Search and bookmarks {{{

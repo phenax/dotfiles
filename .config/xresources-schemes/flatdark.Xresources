@@ -2,6 +2,7 @@
 *.foreground:   #ecf0f1
 *.background:   #0f1215
 *.cursorColor:  #bdc3c7
+*.accent: #eb3b5a
 
 ! Colors
 *.color0:  #2c3e50
