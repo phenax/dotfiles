@@ -1,16 +1,18 @@
+
 ! Special
 *.foreground:   #d8dee9
 *.background:   #0f1215
 *.cursorColor:  #d8dee9
+*.accent: #16a085
 
 ! Colors
-*.color0:  #0f1215
-*.color8:  #666666
+*.color0:  #1f2225
+*.color8:  #555555
 
 *.color1:  #fc5c65
-*.color9:  #eb3b5a
+*.color9:  #CC2C52
 
-*.color2:  #26de81
+*.color2:  #16a085
 *.color10:  #20bf6b
 
 *.color3:  #fed330

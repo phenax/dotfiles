@@ -7,8 +7,10 @@
 config_version: 2
 settings:
   content.notifications:
-    https://3.basecamp.com: true
+    https://mail.google.com: true
     https://web.whatsapp.com: true
+  content.register_protocol_handler:
+    https://mail.google.com?extsrc=mailto&url=%25s: true
   content.user_stylesheets:
     global:
     - styles/scrollbar.css

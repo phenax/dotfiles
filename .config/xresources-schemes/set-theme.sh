@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-[[ ! -z "$1" ]] && [[ -f "$1.Xresources" ]] && \
-  cp -f ./$1.Xresources ~/.Xresources && \
-  xrdb -load ~/.Xresources;
+XRES_PATH="$HOME/.Xresources";
 
+if [[ ! -z "$1" ]] && [[ -f "$1.Xresources" ]]; then
+  cat ./_base ./$1.Xresources > $XRES_PATH;
+  xrdb -load $XRES_PATH;
+fi;

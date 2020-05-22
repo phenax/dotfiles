@@ -20,14 +20,14 @@
   green = ${xrdb:color2}
   red = ${xrdb:color9}
   yellow = ${xrdb:color11}
-  violet = #6c71c4
+  violet = ${xrdb:color13}
 
-  highlight = ${colors.green}
+  highlight = ${xrdb:accent}
   danger = ${colors.red}
   success = ${colors.green}
   warning = ${colors.yellow}
 
-  volume = ${colors.violet}
+  volume = ${colors.blue}
   brightness = ${colors.yellow}
   music = ${colors.violet}
   date = ${colors.red}
@@ -54,7 +54,6 @@
   foreground = ${colors.foreground}
 
   line-size = 1
-  line-color = #f00
 
   border-size = 0
   padding-left = 0
