@@ -10,3 +10,6 @@
 [submodule "/home/akshayn/scripts/bsp-layout"]
 	path = /home/akshayn/scripts/bsp-layout
 	url = git@github.com:phenax/bsp-layout.git
+[submodule "/home/akshayn/.config/suckless/bslock"]
+	path = /home/akshayn/.config/suckless/bslock
+	url = git@github.com:phenax/bslock.git

@@ -268,7 +268,7 @@ c.content.notifications = 'ask'
 c.content.ssl_strict = 'ask'
 c.content.desktop_capture = 'ask'
 c.content.mouse_lock = 'ask'
-c.content.canvas_reading = False
+#  c.content.canvas_reading = False
 # }}}
 
 #### Search and bookmarks {{{
