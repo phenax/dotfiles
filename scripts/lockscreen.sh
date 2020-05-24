@@ -8,7 +8,7 @@
 # Cleanup when done
 # rm $SCREENSHOT;
 
-lock_bslock() { slock; }
+lock_bslock() { bslock; }
 
 lock_bslock;
 

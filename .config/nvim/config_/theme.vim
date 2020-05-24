@@ -11,6 +11,7 @@ let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline#extensions#tabline#switch_buffers_and_tabs = 1
 let g:airline#extensions#coc#enabled = 1
 let g:airline_powerline_fonts = 0
+let g:airline#extensions#coc#enabled = 1
 
 
 " NERDTree Filename highlighting
