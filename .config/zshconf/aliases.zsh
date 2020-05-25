@@ -90,3 +90,7 @@ alias qr-get="qrcp receive";
 alias auto-remove="sudo pacman -Rcs \$(pacman -Qdtq)";
 alias update="sudo pacman -Syyu";
 
+dict() { curl dict://dict.org/d:$1; }
+qr-str() { curl qrenco.de/$1; }
+
+# rate.sx

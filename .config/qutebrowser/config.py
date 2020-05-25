@@ -69,7 +69,7 @@ def nunmap(key):
 c.backend = "webengine"
 c.auto_save.session = True
 c.session.lazy_restore = True
-c.content.autoplay = False
+c.content.autoplay = True
 c.url.open_base_url = True
 
 c.scrolling.bar = 'always'
@@ -93,10 +93,10 @@ c.hints.chars = 'azsxdclmknjb'
 c.hints.auto_follow = 'unique-match'
 c.content.pdfjs = True
 
-nunmap('<Ctrl-v>');
-nunmap('<Ctrl-x>');
-nunmap('<Ctrl-V>');
-nunmap('<Ctrl-X>');
+nunmap('<Ctrl-v>')
+nunmap('<Ctrl-x>')
+nunmap('<Ctrl-V>')
+nunmap('<Ctrl-X>')
 
 # Edit text and edit url
 imap('<Ctrl-e>', 'open-editor')
@@ -126,7 +126,7 @@ c.aliases['find-torrent-magnet-links'] = 'hint links userscript torrent'
 nmap('\\td', 'find-torrent-magnet-links')
 
 nmap('<Ctrl+Shift+Down>', 'scroll-page 0 0.3')
-nmap('<Ctrl+Shift+Up>',   'scroll-page 0 -0.3')
+nmap('<Ctrl+Shift+Up>', 'scroll-page 0 -0.3')
 # }}}
 
 #### UI {{{
@@ -310,4 +310,3 @@ nmap('\\tj', 'format-json')
 nmap('<Alt-Left>', 'back')
 nmap('<Alt-Right>', 'forward')
 # }}}
-
