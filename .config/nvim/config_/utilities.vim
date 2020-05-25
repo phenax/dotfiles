@@ -1,6 +1,9 @@
 " Vim WIKI config
 let g:vimwiki_list = [{'path': '~/.config/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
 
+" Folding
+let g:vimwiki_folding='' " expr|list|syntax
+
 au BufRead,BufNewFile *.wiki set filetype=vimwiki
 
 function! OnNewLine(text)

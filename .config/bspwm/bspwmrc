@@ -33,12 +33,12 @@ bspc rule -r "*";
   ~/.bin/with_zsh "udiskie -a -n -s" &
 
   # Clipboard history
-  # killall -9 clipmenud;
-  # clipmenud &
+  killall -9 clipmenud;
+  clipmenud &
 
   # Network manager applet
-  killall -9 netctl-tray;
-  netctl-tray &
+  killall -9 nm-applet;
+  nm-applet &
 
   # Battery watcher
   ~/scripts/battery-watch.sh start;
