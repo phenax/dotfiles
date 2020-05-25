@@ -40,8 +40,8 @@ get_title() { get_column '{ print $1 }'; }
 get_url() { get_column '{ print $2 }'; }
 find_by_title() { cat $BOOKMARKER_FILE | sed "/^$1$SEPERATOR/!d" | head -n 1; }
 
-display_bookmarks() { get_bookmarks | get_title | open-menu -p "Bookmarks"; }
-display_options() { get_options | open-block-menu -p "Action"; }
+display_bookmarks() { get_bookmarks | get_title | open-menu -p "Bookmarks :: "; }
+display_options() { get_options | open-menu -l 0 -p "Action :: "; }
 
 move_bookmark_up() {
   bookmark=$(find_by_title "$1");
