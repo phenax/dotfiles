@@ -6,10 +6,7 @@
 
 config_version: 2
 settings:
-  content.media_capture:
-    https://meet.google.com: true
   content.notifications:
-    https://meet.google.com: true
-    https://web.whatsapp.com: true
+    https://3.basecamp.com: true
   content.register_protocol_handler:
     https://mail.google.com?extsrc=mailto&url=%25s: true

@@ -6,6 +6,7 @@ configuration {
 	show-icons: true;
 	separator-style: "dash";
   fake-transparency: true;
+	terminal: "sensible-terminal";
 
 
 /*	width: 50;*/
@@ -17,7 +18,6 @@ configuration {
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/
 /*	fixed-num-lines: true;*/
-/*	terminal: "rofi-sensible-terminal";*/
 /*	ssh-client: "ssh";*/
 /*	ssh-command: "{terminal} -e {ssh-client} {host} [-p {port}]";*/
 /*	run-command: "{cmd}";*/

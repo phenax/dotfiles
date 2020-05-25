@@ -246,11 +246,11 @@ nmap('P', 'open -- {clipboard}') # Open link in clipboard in the same tab
 c.downloads.location.directory = '~/Downloads/qute'
 c.downloads.location.prompt = False
 c.downloads.open_dispatcher = 'dl_move {}'
-c.downloads.position= 'bottom'
+c.downloads.position = 'bottom'
 c.downloads.remove_finished = 1000
 
-# Goto downloads directory 
-nunmap('gd');
+# Goto downloads directory
+nunmap('gd')
 nmap('gdl', 'spawn --userscript open_downloads')
 
 # Playing Videos with MPV
@@ -268,7 +268,6 @@ c.content.notifications = 'ask'
 c.content.ssl_strict = 'ask'
 c.content.desktop_capture = 'ask'
 c.content.mouse_lock = 'ask'
-#  c.content.canvas_reading = False
 # }}}
 
 #### Search and bookmarks {{{
@@ -276,17 +275,21 @@ c.content.mouse_lock = 'ask'
 c.url.default_page = '~/.config/qutebrowser/homepage/index.html'
 c.url.start_pages = [c.url.default_page]
 
-c.url.searchengines = \
-    { 'DEFAULT': 'http://duckduckgo.com/?q={}',
-     's': 'http://duckduckgo.com/?q={}',
-     'g': 'https://www.google.com/search?q={}',
-     'gh': 'http://github.com/search?q={}',
-     'hg': 'http://www.haskell.org/hoogle/?hoogle={}',
-     'aw': 'http://wiki.archlinux.org/index.php?search={}',
-     'az': 'http://search.azlyrics.com/search.php?q={}',
-     'r': 'http://www.reddit.com/r/{}/',
-     'y': 'http://www.youtube.com/results?search_query={}',
-    }
+c.url.searchengines = {
+    'DEFAULT': 'http://duckduckgo.com/?q={}',
+
+    # Dev stuff
+    'bp': 'https://bundlephobia.com/result?p={}',
+    'ciu': 'https://caniuse.com/#search={}',
+    'gh': 'http://github.com/search?q={}',
+    'hg': 'http://www.haskell.org/hoogle/?hoogle={}',
+    'aw': 'http://wiki.archlinux.org/index.php?search={}',
+
+    # Fun
+    'r': 'http://www.reddit.com/r/{}/',
+    'y': 'http://www.youtube.com/results?search_query={}',
+    'az': 'http://search.azlyrics.com/search.php?q={}',
+}
 
 c.aliases['archive'] = 'open --tab http://web.archive.org/save/{url}'
 c.aliases['view-archive'] = 'open --tab http://web.archive.org/web/*/{url}'

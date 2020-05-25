@@ -13,3 +13,6 @@
 [submodule "/home/akshayn/.config/suckless/bslock"]
 	path = /home/akshayn/.config/suckless/bslock
 	url = git@github.com:phenax/bslock.git
+[submodule "/home/akshayn/.config/suckless/dmenu"]
+	path = /home/akshayn/.config/suckless/dmenu
+	url = git@github.com:phenax/dmenu.git

@@ -43,10 +43,6 @@ super + m; {Left,Return,Right}
 super + shift + t
   ~/scripts/torrent.sh add_from_clipboard;
 
-# Calculator (Node playground)
-super + shift + colon
-  sensible-terminal -e node;
-
 # Offline wiki search
 super + question
   ~/scripts/wiki.sh;
@@ -63,21 +59,19 @@ super + XF86Tools
 
 # Run menu
 super + d
-  rofi -modi drun,run -show drun
+  ~/.bin/with_zsh dmenu_run
 
 # Custom menus
 super+shift+p
-  ~/.bin/with_zsh rofi-pass
+  ~/.bin/with_zsh "passmenu --type -p 'pass :: '"
 super+shift+o
   ~/.bin/with_zsh "~/scripts/open-project.sh"
 super+shift+i
   ~/.bin/with_zsh "~/scripts/bookmarks-menu/bookmarker.sh menu"
 super+shift+g
   ~/.bin/with_zsh "~/scripts/bookmarks-menu/gh-projects.sh menu"
-super+shift+e
-  ~/scripts/fontawesome-menu/fa-menu.sh menu
 super+y
-  CM_LAUNCHER=rofi clipmenu
+  clipmenu
 
 # }}}
 
