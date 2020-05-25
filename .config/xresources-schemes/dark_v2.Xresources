@@ -1,8 +1,13 @@
+
+#define $bg #0f1215
+#define $fg #d8dee9
+#define $acc #16a085
+
 ! Special
-*.foreground:   #d8dee9
-*.background:   #0f1215
-*.cursorColor:  #d8dee9
-*.accent: #16a085
+*.foreground:   $fg
+*.background:   $bg
+*.cursorColor:  $fg
+*.accent:   $acc
 
 ! Colors
 *.color0:  #1f2225
@@ -28,4 +33,14 @@
 
 *.color7:  #a89984
 *.color15:  #ebdbb2
+
+dmenu.background:     $bg
+dmenu.foreground:     $fg
+dmenu.selbackground:  $acc
+dmenu.selforeground:  $fg
+
+dmenu.highlightbg:    $bg
+dmenu.highlightfg:    $acc
+dmenu.highlightselbg: $acc
+dmenu.highlightselfg: $bg
 
