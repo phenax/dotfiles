@@ -22,7 +22,7 @@ shutdown() { logout; poweroff; }
 restart() { logout; reboot; }
 
 menu() {
-  result=$(echo -e "$OPTIONS" | open-block-menu -p "Power button");
+  result=$(echo -e "$OPTIONS" | open-menu -l 0 -p "Power button");
   case "$result" in
     "$optn_lock") lock ;;
     "$optn_poweroff") poweroff ;;

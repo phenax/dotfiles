@@ -31,13 +31,13 @@ find_by_title() { print_projects_data | get_column "\$1 == \"$1\" { print \$0 }"
 get_url() { echo $1 | get_column '{ print $2 }'; }
 
 start() {
-  local title=$(get_projects | open-menu -p "Project");
+  local title=$(get_projects | open-menu -p "GH :: ");
   local project=$(find_by_title "$title");
 
   # TODO: Handle url entered as text instead of title
   [[ -z "$title" ]] || [[ -z "$project" ]] && exit 0;
 
-  local action=$(get_actions | open-block-menu -p "Tab");
+  local action=$(get_actions | open-menu -l 0 -p "Tab :: ");
 
   local url="$(get_url "$project")";
 
