@@ -41,6 +41,19 @@ list_workspaces() {
      | sed 's/@/^fg()/g'
 }
 
+aur_updates() {
+  local arch=0;
+  local aur=0;
+  if ! arch=$(checkupdates 2> /dev/null | wc -l); then
+      arch=0
+  fi
+  if ! aur=$(yay -Qum 2> /dev/null | wc -l); then
+      aur=0
+  fi
+
+  echo " $arch  $aur ";
+}
+
 case "$1" in
   brightness) echo "$(echo "($(~/scripts/brightness.sh get) * 100)/1" | bc)" ;;
   battery) get_battery ;;
@@ -50,6 +63,7 @@ case "$1" in
   spotify_song) get_spotify_label ;;
   spotify_song_icon) get_spotify_play_state ;;
   workspaces) list_workspaces ;;
+  aur_updates) aur_updates ;;
   *) echo "Not a valid menu item" ;;
 esac
 

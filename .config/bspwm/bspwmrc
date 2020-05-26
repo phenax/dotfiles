@@ -82,6 +82,8 @@ bspc rule -r "*";
 
   bspc config border_width         1
   bspc config window_gap           4
+  # bspc config top_padding          0
+  # bspc config bottom_padding       0
 
   bspc config single_monocle       true
   bspc config borderless_monocle   true

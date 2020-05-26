@@ -65,6 +65,7 @@ alias edot="sensible-editor ~/scripts/dotfiles.sh";
 alias evim="cd ~/.config/nvim && sensible-editor .";
 alias ekey="cd ~/.config/sxhkd && sensible-editor .";
 alias ebsp="cd ~/.config/bspwm && sensible-editor .";
+alias ecom="cd ~/scripts/commands && sensible-editor .";
 alias ehosts="sudo nvim /etc/hosts";
 
 alias sandbox="sudo ~/scripts/host-file-elb-update.sh";
