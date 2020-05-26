@@ -70,6 +70,8 @@ super+shift+i
   ~/.bin/with_zsh "~/scripts/bookmarks-menu/bookmarker.sh menu"
 super+shift+g
   ~/.bin/with_zsh "~/scripts/bookmarks-menu/gh-projects.sh menu"
+super+shift+e
+  ~/.bin/with_zsh "~/scripts/fontawesome-menu/fa-menu.sh menu"
 super+y
   clipmenu
 

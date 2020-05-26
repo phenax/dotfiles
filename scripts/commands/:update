@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+sensible-terminal -e sudo pacman -Syyu && ~/scripts/notify.sh "System updated";
+

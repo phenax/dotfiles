@@ -2,7 +2,7 @@
 
 WIKI_PATH=/usr/share/doc/arch-wiki/html/en;
 
-menu() { rofi -dmenu -i -p "Search"; }
+menu() { dmenu -p "? "; }
 
 wiki-menu() {
   local wiki=$(ls -A $WIKI_PATH | awk '/\.html$/' | sed 's/.html$//g' | menu);

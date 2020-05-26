@@ -79,6 +79,13 @@
   format-foreground = ${colors.foreground-faded}
 
 
+[module/updates]
+  type = custom/script
+  exec = ~/scripts/dzen2bar/menuitems.sh aur_updates
+  interval = 600
+  format-underline = ${colors.brightness}
+  format-foreground = ${colors.foreground}
+
 
 [module/bspwm]
   type = internal/bspwm
@@ -138,13 +145,13 @@
   date = "%a - %d %h, %Y"
   time = "%l:%M %p"
 
-  format-prefix = "   "
+  format-prefix = "  "
   format-prefix-foreground = ${colors.foreground}
   format = "<label> "
   format-underline = ${colors.date}
   format-foreground = ${colors.foreground}
 
-  label = "%date% | %time%"
+  label = "%date% |%time%"
 
 
 
