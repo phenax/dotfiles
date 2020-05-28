@@ -16,8 +16,7 @@ next() { playerctl next; }
 prev() { playerctl previous; }
 
 notify() {
-  echo "1";
-  # notify-send "Playing $(get_label)...";
+  notify-send "Playing $(get_label)...";
 }
 
 case "$1" in

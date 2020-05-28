@@ -31,7 +31,7 @@ add-public-config() {
   # Applications
   add ~/.config/suckless;
   add ~/.config/qutebrowser;
-  add ~/.config/{lf,mpv,sxiv,zathura,netctl-gui.conf};
+  add ~/.config/{lf,mpv,sxiv,zathura,netctl-gui.conf,ncmpcpp,mopidy};
   add ~/.config/spotifyd/spotifyd.conf;
   add ~/.config/transmission-daemon/settings.json;
   add ~/.config/transmission-remote-cli;
