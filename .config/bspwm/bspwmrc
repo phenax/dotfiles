@@ -2,51 +2,56 @@
 
 bspc rule -r "*";
 
+##### Helpers {{{
+once() { pgrep $1 || $@ & }
+once-zsh() { pgrep $1 || ~/.bin/with_zsh "$@" & }
+
+run() {
+  killall -9 $1;
+  sleep 0.05;
+  $@ &
+}
+# }}}
+
+
+
 
 ##### Autostart {{{
-  # Kep Modmap
+  # Key Modmap
   xmodmap ~/.config/sxhkd/.Xmodmap &
 
   # Key daemon
-  killall -9 sxhkd;
-  sxhkd &
+  run sxhkd;
 
   # Compositor
-  killall -9 compton;
-  sleep 0.05;
-  compton --config ~/.config/compton.conf &
+  run compton --config ~/.config/compton.conf;
 
-  # Notification manager
-  killall -9 dunst;
-  dunst -config ~/.config/dunst/dunstrc &
+  # Notification daemon
+  run dunst -config ~/.config/dunst/dunstrc;
 
   # Status bar
-  killall -9 polybar;
-  sleep 0.05;
-  polybar primary &
+  run polybar primary;
 
   # Wallpaper
   ~/.fehbg &
-  # xsetroot -bg "#0f1215";
-
-  # Disk automount
-  killall -9 udiskie;
-  ~/.bin/with_zsh "udiskie -a -n -s" &
-
-  # Clipboard history
-  killall -9 clipmenud;
-  clipmenud &
-
-  # Network manager applet
-  killall -9 nm-applet;
-  nm-applet &
 
   # Battery watcher
   ~/scripts/battery-watch.sh start;
 
-  # Transmission torrent client
-  killall -9 transmission-daemon;
-  transmission-daemon --download-dir "$HOME/Downloads/dl" &
+  # Disk automount
+  once-zsh udiskie -a -n -s;
+
+  # Clipboard history
+  once clipmenud;
+
+  # Network manager applet
+  once nm-applet;
+
+  # Torrent daemon
+  once transmission-daemon --download-dir "$HOME/Downloads/dl" &
+
+  # Music daemon
+  once mopidy;
 # }}}
 
 
@@ -131,7 +136,6 @@ bspc rule -r "*";
   if [[ "$window_count" = "0" ]]; then
     enable-init-rules;
     sensible-browser &
-    spotify &
   fi
 # }}}
 
