@@ -1,7 +1,7 @@
 
 #define $bg #0f1215
 #define $fg #d8dee9
-#define $acc #16a085
+#define $acc #8854d0
 
 ! Special
 *.foreground:   $fg

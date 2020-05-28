@@ -61,6 +61,10 @@ super + XF86Tools
 super + d
   ~/.bin/with_zsh dmenu_run
 
+# Command menu
+super + semicolon
+  ~/.bin/with_zsh 'dmenu_run -it :'
+
 # Custom menus
 super+shift+p
   ~/.bin/with_zsh "passmenu --type -p 'pass :: '"

@@ -88,8 +88,8 @@ alias qr-send="qrcp";
 alias qr-get="qrcp receive";
 
 # Pacman aliases
-alias auto-remove="sudo pacman -Rcs \$(pacman -Qdtq)";
-alias update="sudo pacman -Syyu";
+alias auto-remove="yay -Rcs \$(yay -Qdtq)";
+alias update="yay -Syyu";
 
 dict() { curl dict://dict.org/d:$1; }
 qr-str() { curl qrenco.de/$1; }

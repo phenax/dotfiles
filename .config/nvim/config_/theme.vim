@@ -1,18 +1,52 @@
 set guifont=Fira\ Code\ 10
 
 colorscheme palenight
-let g:airline_theme = "palenight"
 
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#show_splits = 1
-let g:airline#extensions#tabline#show_buffers = 1
-let g:airline#extensions#tabline#tab_nr_type = 1
-let g:airline#extensions#tabline#formatter = 'unique_tail'
-let g:airline#extensions#tabline#switch_buffers_and_tabs = 1
-let g:airline#extensions#coc#enabled = 1
-let g:airline_powerline_fonts = 0
-let g:airline#extensions#coc#enabled = 1
+let g:lightline = {
+\   'colorscheme': 'palenight',
+\   'enable': {
+\     'statusline': 1,
+\     'tabline': 1,
+\   },
+\   'active': {
+\     'left':  [ [ 'mode' ],
+\                [ 'gitbranch', 'readonly' ],
+\                [ 'filename' ],
+\     ],
+\     'right': [ [ 'lineinfo' ],
+\                [ 'percent' ],
+\                [ 'filetype' ],
+\     ],
+\   },
+\   'component': {
+\     'lineinfo': 'L %3l:%-2v',
+\   },
+\   'component_function': {
+\     'gitbranch': 'fugitive#head',
+\   },
+\ }
 
+
+let g:lightline#bufferline#show_number = 2
+let g:lightline#bufferline#number_separator = ': '
+let g:lightline#bufferline#read_only = ' 🔒 '
+let g:lightline#bufferline#modified = ' 👺 '
+let g:lightline#bufferline#enable_devicons = 1
+let g:lightline#bufferline#filename_modifier = ':t'
+let g:lightline.tabline = { 'left': [ ['buffers'] ], 'right': [ [] ] }
+let g:lightline.component_expand = {
+\   'buffers': 'lightline#bufferline#buffers'
+\ }
+let g:lightline.component_type = {
+\   'buffers': 'tabsel'
+\ }
+let g:lightline.tab = {
+\   'active': [ 'tabnum', 'filename', 'modified' ],
+\   'inactive': [ 'tabnum', 'filename', 'modified' ],
+\ }
+
+set showtabline=2
+set guioptions-=e
 
 " NERDTree Filename highlighting
 function! NERDTreeHighlightFile(extension, fg, bg, guifg)

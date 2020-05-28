@@ -1,19 +1,30 @@
 
+# Theme
+COL_ACCENT=blue;
+
+COL_DIR=$COL_ACCENT;
+
+COL_STATUS_ERROR=red;
+COL_STATUS_BG=cyan;
+
+COL_GIT_DIRTY=yellow;
+COL_GIT_NORMAL=green;
+
+
 segment() { echo -n "%K{$2}%F{$3} $1 %f%k"; }
 git_changes() { git status --porcelain 2> /dev/null | wc -l; }
 
-
 # Prompt dir
 p_dir() {
-  segment "%c" green black;
+  segment "%c" $COL_DIR black;
 }
 
 # Prompt terminal status
 p_status() {
   local st;
 
-  [[ $RETVAL -ne 0 ]]             && st="$st%F{red}x%f";
-  [[ $(jobs -l | wc -l) -ne 0 ]]  && st="$st%F{cyan}(bg) %f";
+  [[ $RETVAL -ne 0 ]]             && st="$st%F{$COL_STATUS_ERROR}x%f";
+  [[ $(jobs -l | wc -l) -ne 0 ]]  && st="$st%F{$COL_STATUS_BG}(bg) %f";
 
   [[ -n "$st" ]] && segment "$st" black default;
 }
@@ -27,7 +38,7 @@ p_git() {
     ref=$(git symbolic-ref HEAD 2> /dev/null) || ref="➦ $(git rev-parse --short HEAD 2> /dev/null)";
 
     changes=$(git_changes);
-    color=$([[ ! $changes = "0" ]] && echo "yellow" || echo "blue");
+    color=$([[ ! $changes = "0" ]] && echo $COL_GIT_DIRTY || echo $COL_GIT_NORMAL);
     dirty=$([[ ! $changes = "0" ]] && echo " ($changes)");
 
     segment "${ref/refs\/heads\//}$dirty" $color black;

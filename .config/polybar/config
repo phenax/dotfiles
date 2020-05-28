@@ -1,6 +1,6 @@
 
 [global/wm]
-  margin-top = 5
+  margin-top = 0
   margin-bottom = 0
 
 [settings]
@@ -10,7 +10,7 @@
 
 [colors]
   background = #000f1215
-  background-alt = #0f1215
+  background-alt = ${xrdb:background:#0f1215}
 
   foreground = #ffffff
   foreground-alt = ${xrdb:foreground:#eeeeee}
@@ -29,7 +29,7 @@
 
   volume = ${colors.blue}
   brightness = ${colors.yellow}
-  music = ${colors.violet}
+  music = ${colors.highlight}
   date = ${colors.red}
   bat_full = ${colors.green}
   bat_charging = ${colors.blue}
@@ -43,7 +43,7 @@
 
   ;monitor = ${env:MONITOR:HDMI-1}
   width = 100%
-  height = 20
+  height = 23
   offset-x = 0%
   offset-y = 0%
   radius = 0.0
@@ -58,12 +58,12 @@
   border-size = 0
   padding-left = 0
   padding-right = 2
-  module-margin-left = 1
-  module-margin-right = 2
+  module-margin-left = 2
+  module-margin-right = 1
 
   font-0 = Fira Code:size=10;1
-  font-1 = Font Awesome 5 Free:size=8.5;0
-  font-2 = Symbols Nerd Font:size=9;1
+  font-1 = Font Awesome 5 Free:size=8;0
+  font-2 = Symbols Nerd Font:size=8;1
 
   tray-position = right
   tray-padding = 2
@@ -83,7 +83,7 @@
   type = custom/script
   exec = ~/scripts/dzen2bar/menuitems.sh aur_updates
   interval = 600
-  format-underline = ${colors.brightness}
+  ; format-underline = ${colors.brightness}
   format-foreground = ${colors.foreground}
 
 
@@ -103,7 +103,7 @@
   label-focused = " %name% "
   label-urgent = " %name% "
 
-  label-focused-underline = ${colors.highlight}
+  label-focused-background = ${colors.highlight}
   label-urgent-underline = ${colors.danger}
 
 
@@ -111,9 +111,9 @@
 [module/brightness]
   type = custom/script
   interval = 0.1
-  exec = printf "  %.0f%s " "$(xbacklight -get)" "%"
-  click-left = xbacklight -set 100
-  format-underline = ${colors.brightness}
+  exec = printf " %.0f%s" "$(xbacklight -get)" "%"
+  click-left = xbacklight -set 0.01
+  ; format-underline = ${colors.brightness}
   format-foreground = ${colors.foreground}
 
 
@@ -121,9 +121,9 @@
 [module/volume]
   type = custom/script
   interval = 0.1
-  exec = echo " $(~/scripts/dzen2bar/menuitems.sh volume_icon) $(~/scripts/dzen2bar/menuitems.sh volume) "
-  click-left = ~/scripts/sound.sh mute
-  format-underline = ${colors.volume}
+  exec = echo "$(~/scripts/dzen2bar/menuitems.sh volume_icon) $(~/scripts/dzen2bar/menuitems.sh volume)"
+  ; click-left = ~/scripts/sound.sh mute
+  ; format-underline = ${colors.volume}
   format-foreground = ${colors.foreground}
 
 
@@ -131,9 +131,10 @@
 [module/music]
   type = custom/script
   interval = 0.1
-  exec = echo "$(~/scripts/dzen2bar/menuitems.sh spotify_song_icon) $(~/scripts/dzen2bar/menuitems.sh spotify_song)"
-  click-left = ~/scripts/spotify.sh play_pause
-  format-underline = ${colors.music}
+  exec = echo "  $(~/scripts/dzen2bar/menuitems.sh spotify_song_icon) $(~/scripts/dzen2bar/menuitems.sh spotify_song) "
+  ; click-left = ~/scripts/spotify.sh play_pause
+  ; format-underline = ${colors.music}
+  format-background = ${colors.music}
   format-foreground = ${colors.foreground}
 
 
@@ -145,13 +146,14 @@
   date = "%a - %d %h, %Y"
   time = "%l:%M %p"
 
-  format-prefix = "  "
+  format-prefix = " "
   format-prefix-foreground = ${colors.foreground}
-  format = "<label> "
-  format-underline = ${colors.date}
+  format = "<label>"
+  ; format-underline = ${colors.date}
   format-foreground = ${colors.foreground}
 
-  label = "%date% |%time%"
+  ; label = "%date% | %time%"
+  label = "%time%"
 
 
 
@@ -164,8 +166,8 @@
   animation-charging-0 = " "
   animation-charging-1 = " "
   animation-charging-2 = " "
-  format-charging = "<animation-charging> <label-charging> "
-  format-charging-underline = ${colors.bat_charging}
+  format-charging = "<animation-charging> <label-charging>"
+  ; format-charging-underline = ${colors.bat_charging}
   animation-charging-framerate = 750
 
 
@@ -174,46 +176,11 @@
   ramp-capacity-2 = " "
   ramp-capacity-3 = " "
   ramp-capacity-4 = " "
-  format-discharging = "<ramp-capacity> <label-discharging> "
-  format-discharging-underline = ${colors.bat_discharging}
+  format-discharging = "<ramp-capacity> <label-discharging>"
+  ; format-discharging-underline = ${colors.bat_discharging}
 
   format-full-prefix = " "
-  format-full-underline = ${colors.bat_full}
-
-
-
-
-
-
-
-[module/powermenu]
-  type = custom/menu
-
-  expand-right = true
-
-  format-spacing = 1
-
-  label-open = Power
-  label-open-foreground = ${colors.danger}
-  label-close = cancel
-  label-close-foreground = ${colors.danger}
-  label-separator = |
-  label-separator-foreground = ${colors.foreground-alt}
-
-  menu-0-0 = reboot
-  menu-0-0-exec = menu-open-1
-  menu-0-1 = power off
-  menu-0-1-exec = menu-open-2
-
-  menu-1-0 = cancel
-  menu-1-0-exec = menu-open-0
-  menu-1-1 = reboot
-  menu-1-1-exec = sudo reboot
-
-  menu-2-0 = power off
-  menu-2-0-exec = sudo poweroff
-  menu-2-1 = cancel
-  menu-2-1-exec = menu-open-0
+  ; format-full-underline = ${colors.bat_full}
 
 
 

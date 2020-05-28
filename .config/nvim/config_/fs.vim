@@ -5,6 +5,7 @@ let g:WebDevIconsNerdTreeAfterGlyphPadding = '  '
 let g:WebDevIconsUnicodeGlyphDoubleWidth = 0
 let g:WebDevIconsNerdTreeGitPluginForceVAlign = 1
 
+
 " Open NERDTree in new tabs and windows if no command line args set
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
