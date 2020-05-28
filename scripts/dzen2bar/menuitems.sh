@@ -11,9 +11,9 @@ get_volume_state() { volume_component 6 | sed 's/on//; s/off//'; }
 get_spotify_play_state() {
   local playstate="$(~/scripts/spotify.sh get_play_state 2> /dev/null)";
   case "$playstate" in
-    Paused) echo "  " ;;
-    Playing) echo "  " ;;
-    Stopped) echo "  " ;;
+    Paused) echo " " ;;
+    Playing) echo " " ;;
+    Stopped) echo " " ;;
     *) ;;
   esac
 }

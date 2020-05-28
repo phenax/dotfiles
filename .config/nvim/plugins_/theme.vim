@@ -1,8 +1,8 @@
-Plug 'dracula/vim'
-" Plug 'wadackel/vim-dogrun'
-Plug 'cocopon/iceberg.vim'
+Plug 'joshdick/onedark.vim'
 Plug 'phenax/palenight.vim'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+
+Plug 'itchyny/lightline.vim'
+Plug 'mengelbrecht/lightline-bufferline'
+
 Plug 'ryanoasis/vim-devicons'
 Plug 'mkarmona/colorsbox'

@@ -1,4 +1,7 @@
 #!/usr/bin/env sh
 
-sensible-terminal -e sudo pacman -Syyu && ~/scripts/notify.sh "System updated";
+# packages=$((yay -Qum 2> /dev/null | wc -l) || echo 0);
+# [[ $packages == 0 ]] && ~/scripts/notify.sh "Nothing to update" && exit 0;
+
+sensible-terminal -e sh -c 'yay -Syyu && ~/scripts/notify.sh "System updated"';
 

@@ -27,6 +27,7 @@ bspc rule -r "*";
 
   # Wallpaper
   ~/.fehbg &
+  # xsetroot -bg "#0f1215";
 
   # Disk automount
   killall -9 udiskie;
