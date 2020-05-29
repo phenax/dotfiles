@@ -97,3 +97,7 @@ command! W :w
 command! Q :q
 
 map <Leader> <Plug>(easymotion-prefix)
+
+" Spell checkerer
+nmap <leader>== :setlocal spell! spelllang=en_us<CR>
+
