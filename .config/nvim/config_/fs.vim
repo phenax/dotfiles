@@ -13,9 +13,6 @@ autocmd BufEnter * NERDTreeMirror
 
 autocmd FileType nerdtree setlocal nolist
 
-" Nerdtree Keys
-nmap <localleader>n :NERDTreeFind<CR>
-
 " FZF (Fuzzy search)
 set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf
 " let g:fzf_layout = { 'down': '~25%' }
@@ -29,4 +26,11 @@ endif
 
 " Search in files
 nmap <c-f> :Ag<cr>
+
+" Nerdtree find
+nmap <localleader>nn :NERDTreeFind<CR>
+
+" Nerdtree open/close
+nmap <localleader>no :NERDTree<CR>
+nmap <localleader>nc :NERDTreeClose<CR>
 

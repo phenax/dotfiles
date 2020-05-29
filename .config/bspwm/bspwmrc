@@ -18,7 +18,8 @@ run() {
 
 ##### Autostart {{{
   # Key Modmap
-  xmodmap ~/.config/sxhkd/.Xmodmap &
+  xmodmap ~/.config/sxhkd/.Xmodmap;
+  xset r rate 300 50;
 
   # Key daemon
   run sxhkd;
