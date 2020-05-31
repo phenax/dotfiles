@@ -43,12 +43,12 @@
 
   ;monitor = ${env:MONITOR:HDMI-1}
   width = 100%
-  height = 23
+  height = 20
   offset-x = 0%
   offset-y = 0%
   radius = 0.0
   fixed-center = false
-  bottom = true
+  bottom = false
 
   background = ${colors.background}
   foreground = ${colors.foreground}
@@ -61,9 +61,9 @@
   module-margin-left = 2
   module-margin-right = 1
 
-  font-0 = Fira Code:size=10;1
-  font-1 = Font Awesome 5 Free:size=8;0
-  font-2 = Symbols Nerd Font:size=8;1
+  font-0 = Fira Code:size=8;1
+  font-1 = Font Awesome 5 Free:size=7;1
+  font-2 = Symbols Nerd Font:size=7;1
 
   tray-position = right
   tray-padding = 2
@@ -146,7 +146,7 @@
   date = "%a - %d %h, %Y"
   time = "%l:%M %p"
 
-  format-prefix = " "
+  format-prefix = ""
   format-prefix-foreground = ${colors.foreground}
   format = "<label>"
   ; format-underline = ${colors.date}

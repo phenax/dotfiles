@@ -35,5 +35,24 @@
   ],
   "importCost.bundleSizeDecoration": "both",
   "importCost.showCalculatingDecoration": true,
-  "importCost.debug": false
+  "importCost.debug": false,
+
+  "explorer.width": 30,
+  "explorer.icon.enableNerdfont": true,
+  "explorer.previewAction.onHover": false,
+  "explorer.keyMappings": {
+    "<cr>": ["expandable?", "expand", "open"],
+    "oh": "open:split",
+    "ov": "open:vsplit",
+    "s": false,
+    "v": false,
+    "*": false,
+    "<space>": "toggleSelection",
+    "gp": "preview:labeling",
+    "a": "addFile",
+    "A": "addDirectory",
+    "m": "actionMenu",
+    "<left>": "collapse",
+    "<right>": ["expandable?", "expand", "open"]
+  }
 }

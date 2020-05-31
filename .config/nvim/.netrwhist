@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =4
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/akshayn/.config/nvim'
+let g:netrw_dirhist_6='/home/akshayn/.config/nvim/config_'
+let g:netrw_dirhist_5='/home/akshayn/.config/nvim'
 let g:netrw_dirhist_4='/home/akshayn/.config/suckless/st'
 let g:netrw_dirhist_3='/home/akshayn'
 let g:netrw_dirhist_2='/home/akshayn/dev/projects/sh-reg/src'

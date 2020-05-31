@@ -1,35 +1,21 @@
 #!/bin/bash
 
-read_brightness() {
-  echo "2";
-}
+read_brightness() { xbacklight -get; }
 
-get_brightness() {
-  echo $(xrandr --verbose | awk '/Brightness:/ {print $2; exit}');
-}
+get_brightness() { printf "%.0f%s" "$(read_brightness)" "%"; }
 
-set_brightness() {
-  brightness="$(node -p "Math.max(Math.min($1, 1), 0.1).toFixed(1)")";
-  xrandr --output ${2:-"eDP-1"} --brightness $brightness;
-}
+set_brightness() { xbacklight -set $1; }
 
-increment() {
-  local b="$(get_brightness)";
-  local nb="$(echo "$b + 0.1" | bc)";
-  set_brightness $nb;
-}
-
-decrement() {
-  local b="$(get_brightness)";
-  local nb="$(echo "$b - 0.1" | bc)";
-  set_brightness $nb;
-}
+increment() { xbacklight -inc $1; }
+decrement() { xbacklight -dec $1; }
 
 case $1 in
-  get) echo $(read_brightness) ;;
-  set) set_brightness "$2" "$3" ;;
-  inc) increment ;;
-  dec) decrement ;;
+  get) get_brightness ;;
+  set) set_brightness $2 ;;
+  inc) increment $2 ;;
+  dec) decrement $2 ;;
   *) echo "For tools to work, you need to know how to use them" ;;
 esac
+
+~/scripts/statusbar/statusbar.sh update brightness;
 

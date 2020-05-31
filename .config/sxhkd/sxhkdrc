@@ -47,10 +47,6 @@ super + shift + t
 super + question
   ~/scripts/wiki.sh;
 
-# Color picker (F9)
-super + XF86Tools
-  ~/.bin/color-pick;
-
 # }}}
 
 
@@ -134,10 +130,9 @@ XF86AudioMicMute
   ~/scripts/sound.sh mute-mic
 
 
-
 # Brightness control
 XF86MonBrightness{Down,Up}
-  xbacklight -{dec,inc} 10
+  ~/scripts/brightness.sh {dec,inc} 10
 
 # }}}
 
@@ -146,7 +141,7 @@ XF86MonBrightness{Down,Up}
 ### Layout {{{
 
 # alternate between the tiled and monocle layout
-# TODO: Maybe move this to use bsp-layout?
+# TODO: Maybe move this to use bsp-layout?. Add toggle function
 super + f
   bspc desktop -l next
 
@@ -164,17 +159,21 @@ super + e
 
 ### Move, Navigate and Resize {{{
 
+# focus the node in the given direction (hjkl)
+super + {_,shift + }{h,j,k,l}
+  bspc node -{f,s} {west,south,north,east}
+
 # focus the node in the given direction
 super + {_,shift + }{Left,Down,Up,Right}
   bspc node -{f,s} {west,south,north,east}
 
 # Page up/down to focus next
-super + {Next,Prior}
-  bspc node -f '{next,prev}.local'
+super + {Prior,Next}
+  bspc node -f '{prev,next}.local'
 
 
 # Resize node
-super + alt + {Left,Down,Up,Right}
+super + alt + {h,j,k,l}
   ~/.config/bspwm/scripts/resize.sh {left,down,up,right} 30
 
 
@@ -184,11 +183,11 @@ super + {minus,equal}
 
 # focus the last node/desktop
 super + {grave,Tab}
-  bspc {node,desktop} -f last
+  bspc {node,desktop} -f last && ~/scripts/statusbar/statusbar.sh update bspwm
 
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
-  bspc {desktop -f,node -d} '{1-9,10}'
+  bspc {desktop -f,node -d} '{1-9,10}' && ~/scripts/statusbar/statusbar.sh update bspwm
 
 # }}}
 
@@ -198,6 +197,10 @@ super + {_,shift + }{1-9,0}
 
 # preselect the direction
 super + ctrl + {Left,Down,Up,Right}
+  bspc node -p {west,south,north,east}
+
+# preselect the direction
+super + ctrl + {h,j,k,l}
   bspc node -p {west,south,north,east}
 
 # preselect the ratio
