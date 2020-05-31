@@ -5,5 +5,22 @@
         "q"
       ]
     }
+  },
+  "explorerActions": {
+    "%2Fhome%2Fakshayn%2F": {
+      "config%2Fnvim": [
+        "add",
+        "delete",
+        "a",
+        "d"
+      ]
+    }
+  },
+  "explorerFiles": {
+    "%2Fhome%2Fakshayn%2F": {
+      "config%2Fnvim": [
+        "config"
+      ]
+    }
   }
 }

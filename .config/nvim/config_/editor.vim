@@ -63,7 +63,7 @@ nmap <c-\> :noh<CR>
 " Tab navigations
 nmap <C-PageUp> :bp<CR>
 nmap <C-PageDown> :bn<CR>
-nmap <C-k> :BD<CR>
+nmap <C-d> :BD<CR>
 
 nmap <leader>1 <Plug>lightline#bufferline#go(1)
 nmap <leader>2 <Plug>lightline#bufferline#go(2)
@@ -75,10 +75,6 @@ nmap <leader>7 <Plug>lightline#bufferline#go(7)
 nmap <leader>8 <Plug>lightline#bufferline#go(8)
 nmap <leader>9 <Plug>lightline#bufferline#go(9)
 nmap <leader>0 <Plug>lightline#bufferline#go(10)
-
-" Copy/paste
-vmap <C-c> "+y
-vmap <C-p> "+p
 
 " Code folding
 nmap <S-Tab> zR
@@ -92,10 +88,7 @@ nnoremap <C-Right> <C-w>l
 nnoremap <C-Up> <C-w>k
 nnoremap <C-Down> <C-w>j
 
-" Accidental typos
-command! W :w
-command! Q :q
-
+" Easymotion \s<char>
 map <Leader> <Plug>(easymotion-prefix)
 
 " Spell checkerer

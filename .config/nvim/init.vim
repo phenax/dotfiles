@@ -33,8 +33,13 @@ runtime config_/utilities.vim
 " Accidental key bindings
 map q: <Nop>
 nnoremap Q <nop>
+command! W :w
+command! Q :q
 
-" nmap <C-u> <Plug>(PromptJsFileImport)
-" nmap <C-u> <Plug>(JsFileImport)
-" nmap <C-i> <Plug>(JsGotoDefinition)
+" Global helpers
+nnoremap SS :w<CR>
+nmap ; :
 
+" Copy/paste
+vmap <C-c> "+y
+vmap <C-p> "+p

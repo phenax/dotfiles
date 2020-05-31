@@ -76,7 +76,7 @@ c.scrolling.bar = 'always'
 c.scrolling.smooth = True
 c.keyhint.delay = 250
 c.input.partial_timeout = 0
-c.input.spatial_navigation = True
+c.input.spatial_navigation = False
 
 c.content.dns_prefetch = True # Use dns prefetching for speed
 
@@ -268,6 +268,8 @@ c.content.notifications = 'ask'
 c.content.ssl_strict = 'ask'
 c.content.desktop_capture = 'ask'
 c.content.mouse_lock = 'ask'
+c.content.javascript.can_access_clipboard = True
+
 # }}}
 
 #### Search and bookmarks {{{

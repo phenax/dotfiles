@@ -1,18 +1,3 @@
-" NerdTree config
-let g:NERDSpaceDelims = 1
-let g:NERDTreeShowHidden = 1
-let g:WebDevIconsNerdTreeAfterGlyphPadding = '  '
-let g:WebDevIconsUnicodeGlyphDoubleWidth = 0
-let g:WebDevIconsNerdTreeGitPluginForceVAlign = 1
-
-
-" Open NERDTree in new tabs and windows if no command line args set
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
-autocmd BufEnter * NERDTreeMirror
-
-autocmd FileType nerdtree setlocal nolist
-
 " FZF (Fuzzy search)
 set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf
 " let g:fzf_layout = { 'down': '~25%' }
@@ -27,10 +12,14 @@ endif
 " Search in files
 nmap <c-f> :Ag<cr>
 
-" Nerdtree find
-nmap <localleader>nn :NERDTreeFind<CR>
 
-" Nerdtree open/close
-nmap <localleader>no :NERDTree<CR>
-nmap <localleader>nc :NERDTreeClose<CR>
+" Explorer
+nmap <localleader>nn :CocCommand explorer<CR>
+nmap <localleader>nf :CocCommand explorer --preset floating<CR>
+
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | wincmd p | ene | endif
+
+autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
+autocmd FileType coc-explorer setlocal nolist
 

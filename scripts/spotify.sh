@@ -9,11 +9,20 @@ get_play_state() { playerctl metadata --format '{{status}}'; }
 get_label() { playerctl metadata --format '{{title}} - {{artist}}'; }
 
 # Play/Pause toggle:
-play_pause() { playerctl play-pause; }
+play_pause() {
+  playerctl play-pause;
+  ~/scripts/statusbar/statusbar.sh update music;
+}
 
 # Next/Prev
-next() { playerctl next; }
-prev() { playerctl previous; }
+next() {
+  playerctl next;
+  ~/scripts/statusbar/statusbar.sh update music;
+}
+prev() {
+  playerctl previous;
+  ~/scripts/statusbar/statusbar.sh update music;
+}
 
 notify() {
   notify-send "Playing $(get_label)...";
