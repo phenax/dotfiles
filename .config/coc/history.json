@@ -13,13 +13,38 @@
         "delete",
         "a",
         "d"
+      ],
+      "config%2Fqutebrowser": [
+        "a"
       ]
-    }
+    },
+    "%2Fhome%2Fakshayn%2Fdev%2Fflut%2Ftestproj": [
+      "execute",
+      "A",
+      "a",
+      "d"
+    ],
+    "%2Fhome%2Fakshayn%2Fdev%2Fprojects%2Fowyn": [
+      "ahome.dart",
+      "hidden",
+      ".",
+      "d",
+      "A",
+      "a"
+    ]
   },
   "explorerFiles": {
     "%2Fhome%2Fakshayn%2F": {
       "config%2Fnvim": [
         "config"
+      ]
+    }
+  },
+  "explPresets": {
+    "%2Fhome%2Fakshayn%2F": {
+      "config%2Fnvim": [
+        "normal",
+        "?"
       ]
     }
   }

@@ -154,6 +154,8 @@ c.colors.completion.item.selected.fg = xresources['*.foreground']
 c.colors.completion.item.selected.bg = xresources['*.accent']
 c.colors.completion.item.selected.border.bottom = xresources['*.accent']
 c.colors.completion.item.selected.border.top = xresources['*.accent']
+c.colors.statusbar.insert.bg = 'red'
+c.colors.statusbar.insert.fg = 'white'
 
 ## Tabs
 c.tabs.padding = { 'bottom': 2, 'top': 2, 'left': 5, 'right': 5 }
