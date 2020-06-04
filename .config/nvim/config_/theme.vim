@@ -1,6 +1,7 @@
 set guifont=Fira\ Code\ 10
 
 colorscheme palenight
+set noshowmode
 
 let g:lightline = {
 \   'colorscheme': 'palenight',
@@ -11,7 +12,7 @@ let g:lightline = {
 \   'active': {
 \     'left':  [ [ 'mode' ],
 \                [ 'gitbranch', 'readonly' ],
-\                [ 'filename' ],
+\                [ 'filename', 'dir' ],
 \     ],
 \     'right': [ [ 'lineinfo' ],
 \                [ 'percent' ],
@@ -20,6 +21,7 @@ let g:lightline = {
 \   },
 \   'component': {
 \     'lineinfo': 'L %3l:%-2v',
+\     'dir': 'D',
 \   },
 \   'component_function': {
 \     'gitbranch': 'fugitive#head',

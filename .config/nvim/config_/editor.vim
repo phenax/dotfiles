@@ -80,7 +80,6 @@ nmap <leader>0 <Plug>lightline#bufferline#go(10)
 nmap <S-Tab> zR
 nmap zx zo
 nmap zc zc
-nmap zz za
 
 " Window navigation
 nnoremap <C-Left> <C-w>h

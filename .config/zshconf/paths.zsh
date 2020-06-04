@@ -19,6 +19,11 @@ PATH=$GEM_HOME/ruby/2.7.0/bin:$GOPATH/bin:$GOROOT/bin:$CARGO_HOME/bin:$DENO_INST
 PATH="$HOME/.local/bin:$PATH"
 PATH="$SCRIPTS_BINARY_DIR:$PATH";
 PATH="$COMMANDS_DIR:$PATH";
+
+# Android/JVM garbage TODO: Remove if not needed
+PATH=$PATH:$HOME/.config/android-sdk/platform-tools
+PATH=$HOME/dump/flutter/bin:$PATH;
+
 export PATH;
 
 # Util config

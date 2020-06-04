@@ -12,3 +12,5 @@ Plug 'reedes/vim-pencil'
 Plug 'tpope/vim-markdown'
 Plug 'jtratner/vim-flavored-markdown'
 " Plug 'LanguageTool'
+
+"Plug 'dart-lang/dart-vim-plugin'

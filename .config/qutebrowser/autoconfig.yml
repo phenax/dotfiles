@@ -6,9 +6,8 @@
 
 config_version: 2
 settings:
-  content.host_blocking.whitelist:
-    global: null
-  content.hyperlink_auditing:
-    global: false
-  content.images:
-    global: true
+  content.user_stylesheets:
+    global:
+    - styles/scrollbar.css
+    - styles/default.css
+    - styles/dark.css
