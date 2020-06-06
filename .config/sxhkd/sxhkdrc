@@ -211,5 +211,9 @@ super + ctrl + {1-9}
 super + ctrl + space
   bspc node -p cancel
 
+# Move to preselection
+super + ctrl + m
+  bspc node -n last.\!automatic.local;
+
 # }}}
 

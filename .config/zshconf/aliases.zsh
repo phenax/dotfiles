@@ -86,6 +86,7 @@ source "$HOME/.work-config/zshconf/aliases.zsh";
 # QR file transfer
 alias qr-send="qrcp";
 alias qr-get="qrcp receive";
+alias dl-audio="youtube-dl --ignore-errors --output '%(title)s.%(ext)s' --extract-audio";
 
 # Pacman aliases
 alias auto-remove="yay -Rcs \$(yay -Qdtq)";
