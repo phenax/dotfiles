@@ -21,7 +21,7 @@ let g:lightline = {
 \   },
 \   'component': {
 \     'lineinfo': 'L %3l:%-2v',
-\     'dir': 'D',
+\     'dir': '%F',
 \   },
 \   'component_function': {
 \     'gitbranch': 'fugitive#head',
@@ -32,7 +32,7 @@ let g:lightline = {
 let g:lightline#bufferline#show_number = 2
 let g:lightline#bufferline#number_separator = ': '
 let g:lightline#bufferline#read_only = ' 🔒 '
-let g:lightline#bufferline#modified = ' 👺 '
+let g:lightline#bufferline#modified = ' 🛑 '
 let g:lightline#bufferline#enable_devicons = 1
 let g:lightline#bufferline#filename_modifier = ':t'
 let g:lightline.tabline = { 'left': [ ['buffers'] ], 'right': [ [] ] }
