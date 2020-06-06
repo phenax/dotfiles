@@ -136,7 +136,7 @@
     startup_notification = false
     
     # dmenu path.
-    dmenu = /usr/bin/rofi -dmenu -p Actions
+    dmenu = dmenu
     
     # Browser for opening urls in context menu.
     browser = xdg-open
@@ -149,7 +149,7 @@
 
     # Frame config
     frame_width = 1
-    frame_color = "#8499ae"
+    frame_color = "#6f8285"
 
 [shortcuts]
 
@@ -178,9 +178,9 @@
     timeout = 3
 
 [urgency_normal]
-    background = "#34495e"
+    background = "#1f2225"
     foreground = "#ffffff"
-    timeout = 3
+    timeout = 5
 
 [urgency_critical]
     background = "#d63031"

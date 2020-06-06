@@ -12,7 +12,7 @@ add-public-config() {
   add ~/.config/{bspwm,sxhkd,polybar}
   add ~/.Xresources ~/.xinitrc ~/.config/compton.conf;
   add ~/.config/xresources-schemes;
-  add ~/.config/{rofi,rofi-pass,rofi-themes};
+  add ~/.config/dunst;
 
   # Other config
   add ~/.config/{gtk-3.0,fontconfig,mimeapps.list};
