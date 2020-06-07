@@ -8,7 +8,7 @@
 *.foreground:   $fg
 *.background:   $bg
 *.cursorColor:  $fg
-*.accent:   $acc
+*.accent:       $acc
 
 ! Colors
 *.color0:  #282c34

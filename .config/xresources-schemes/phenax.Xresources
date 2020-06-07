@@ -1,4 +1,5 @@
 
+
 #define $bg #0f1215
 #define $fg #d8dee9
 #define $acc #5e81ac
@@ -7,7 +8,7 @@
 *.foreground:   $fg
 *.background:   $bg
 *.cursorColor:  $fg
-*.accent:   $acc
+*.accent:       $acc
 
 ! Colors
 *.color0:  #282c34
@@ -44,10 +45,12 @@ dmenu.highlightfg:    $acc
 dmenu.highlightselbg: $acc
 dmenu.highlightselfg: $bg
 
+
 dwm.normbordercolor:  $bg
 dwm.normbgcolor:      $bg
 dwm.normfgcolor:      $fg
+
 dwm.selbordercolor:   $acc
-dwm.selbgcolor:       $bg
+dwm.selbgcolor:       $acc
 dwm.selfgcolor:       $fg
 
