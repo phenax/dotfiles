@@ -7,8 +7,6 @@ add-public-config() {
   add ~/.work-config;
 
   # X and DM
-  add ~/.config/i3;
-  add ~/.config/xmonad;
   add ~/.config/{bspwm,sxhkd,polybar}
   add ~/.Xresources ~/.xinitrc ~/.config/compton.conf;
   add ~/.config/xresources-schemes;
