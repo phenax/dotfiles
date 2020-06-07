@@ -25,7 +25,7 @@ prev() {
 }
 
 notify() {
-  notify-send "Playing $(get_label)...";
+  update-dwmblock music;
 }
 
 case "$1" in

@@ -61,6 +61,8 @@ set signcolumn=yes
 nmap <c-\> :noh<CR>
 
 " Tab navigations
+nmap <C-k> :bp<CR>
+nmap <C-j> :bn<CR>
 nmap <C-PageUp> :bp<CR>
 nmap <C-PageDown> :bn<CR>
 nmap <C-d> :BD<CR>

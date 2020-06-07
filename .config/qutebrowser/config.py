@@ -256,7 +256,10 @@ nunmap('gd')
 nmap('gdl', 'spawn --userscript open_downloads')
 
 # Playing Videos with MPV
-nmap('\\ty', 'spawn --detach bash -c "notify-send \\"Loading mpv\\" && mpv --force-window=immediate \\"{url}\\""')
+nmap('\\tyy', 'spawn --detach bash -c "notify-send \\"Loading mpv\\" && mpv --force-window=immediate \\"{url}\\""')
+
+# Download music from youtube
+nmap('\\tym', 'spawn --userscript dl_music')
 # }}}
 
 #### Security {{{

@@ -2,72 +2,11 @@
 
 bspc rule -r "*";
 
-##### Helpers {{{
-window_count=$(bspc query -N | wc -l);
-
-on_startup() { [[ "$window_count" = "0" ]] && $@; }
-
-once() {
-  local name=$1;
-  shift;
-  pgrep $name || $@ &
-}
-
-run() {
-  killall -9 $1;
-  sleep 0.05;
-  $@ &
-}
-
-xresources() {
-  xrdb -query | awk "/^$1/ {print \$2}";
-}
-# }}}
-
-
-
+source $HOME/.config/autostart.sh;
 
 ##### Autostart {{{
-  # Key Modmap
-  xmodmap ~/.config/sxhkd/.Xmodmap &
-  # xset r rate 300 50;
-
-  # Key daemon
-  run sxhkd;
-
-  # Compositor
-  run compton --config ~/.config/compton.conf;
-
-  # Notification daemon
-  run dunst -config ~/.config/dunst/dunstrc;
-
-  # Wallpaper
-  ~/.fehbg &
-
-  # Battery watcher
-  ~/scripts/battery-watch.sh start;
-
   run polybar primary;
-
-  # Statusbar
-  # once "lemonbar" ~/scripts/statusbar/statusbar.sh show;
-
-  # Disk automount
-  once "udiskie" ~/.bin/with_zsh udiskie -a -n -s;
-
-  # Clipboard history
-  once "clipmenud" clipmenud;
-
-  # Network manager applet
-  once "nm-applet" nm-applet;
-
-  # Torrent daemon
-  once "transmission" transmission-daemon --download-dir "$HOME/Downloads/dl" &
-
-  # Music daemon
-  once "mopidy" mopidy;
 # }}}
-
 
 
 ##### Workspace/Monitor config {{{
@@ -86,7 +25,6 @@ xresources() {
   bspc config remove_unplugged_monitors   true
   bspc config merge_overlapping_monitors  true
 # }}}
-
 
 
 ##### UI config {{{
@@ -115,7 +53,6 @@ xresources() {
 # }}}
 
 
-
 ##### Layouts config {{{
   bspc config automatic_scheme  alternate # longest_side|alternate|spiral
   bspc config initial_polarity  second_child
@@ -128,17 +65,11 @@ xresources() {
 # }}}
 
 
-
 ##### Node rules {{{
   on_startup bspc rule -a "qutebrowser" -o desktop="6";
 
   bspc config external_rules_command "$HOME/.config/bspwm/external_rules"
 # }}}
 
-
-
-##### Initialized applications {{{
-  on_startup sensible-browser &
-# }}}
 
 disown;

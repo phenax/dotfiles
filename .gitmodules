@@ -19,3 +19,6 @@
 [submodule "/home/akshayn/scripts/statusbar"]
 	path = /home/akshayn/scripts/statusbar
 	url = git@github.com:phenax/statusbar.git
+[submodule "/home/akshayn/.config/suckless/dwm"]
+	path = /home/akshayn/.config/suckless/dwm
+	url = git@github.com:phenax/dwm.git

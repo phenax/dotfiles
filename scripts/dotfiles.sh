@@ -13,6 +13,7 @@ add-public-config() {
   add ~/.Xresources ~/.xinitrc ~/.config/compton.conf;
   add ~/.config/xresources-schemes;
   add ~/.config/dunst;
+  add ~/.config/autostart.sh;
 
   # Other config
   add ~/.config/{gtk-3.0,fontconfig,mimeapps.list};
