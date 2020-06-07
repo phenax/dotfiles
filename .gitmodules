@@ -22,3 +22,6 @@
 [submodule "/home/akshayn/.config/suckless/dwm"]
 	path = /home/akshayn/.config/suckless/dwm
 	url = git@github.com:phenax/dwm.git
+[submodule "/home/akshayn/.config/suckless/dwmblocks"]
+	path = /home/akshayn/.config/suckless/dwmblocks
+	url = git@github.com:phenax/dwmblocks.git
