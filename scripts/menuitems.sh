@@ -50,11 +50,17 @@ volume_module() {
   echo "$(icon volume) $(volume_component 2)"
 }
 
-case "$1" in
-  date) date_module ;;
-  battery) battery_module ;;
-  volume) volume_module ;;
-  music) music_module ;;
-  brightness) brightness_module ;;
-esac;
 
+get_module() {
+  case "$1" in
+    date) date_module ;;
+    battery) battery_module ;;
+    volume) volume_module ;;
+    music) music_module ;;
+    brightness) brightness_module ;;
+  esac;
+}
+
+padding="  ";
+
+echo "$padding$(get_module $1)$padding";
