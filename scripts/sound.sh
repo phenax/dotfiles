@@ -10,5 +10,5 @@ case "$1" in
   *) echo "Wrong command" ;;
 esac
 
-~/scripts/statusbar/statusbar.sh update volume;
-
+#~/scripts/statusbar/statusbar.sh update volume;
+update-dwmblock volume;

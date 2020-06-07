@@ -97,6 +97,7 @@ map st      :set sortby time
 # Traversal keys
 map gde   cd ~/Desktop
 map gdl   cd ~/Downloads/dl
+map gdm   cd ~/Downloads/music
 map gdv   cd ~/dev
 map gs    cd ~/scripts
 map gp    cd ~/Pictures

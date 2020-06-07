@@ -45,10 +45,12 @@ dmenu.highlightfg:    $acc
 dmenu.highlightselbg: $acc
 dmenu.highlightselfg: $bg
 
+
 dwm.normbordercolor:  $bg
 dwm.normbgcolor:      $bg
 dwm.normfgcolor:      $fg
+
 dwm.selbordercolor:   $acc
-dwm.selbgcolor:       $bg
+dwm.selbgcolor:       $acc
 dwm.selfgcolor:       $fg
 

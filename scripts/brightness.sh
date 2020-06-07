@@ -17,5 +17,6 @@ case $1 in
   *) echo "For tools to work, you need to know how to use them" ;;
 esac
 
-~/scripts/statusbar/statusbar.sh update brightness;
+#~/scripts/statusbar/statusbar.sh update brightness;
+update-dwmblock brightness;
 
