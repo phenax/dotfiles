@@ -25,3 +25,6 @@
 [submodule ".config/suckless/dwmblocks"]
 	path = .config/suckless/dwmblocks
 	url = git@github.com:phenax/dwmblocks.git
+[submodule "/home/akshayn/.config/vimwiki"]
+	path = /home/akshayn/.config/vimwiki
+	url = git@github.com:phenax/personal-notes.git
