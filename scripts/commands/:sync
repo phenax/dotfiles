@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+~/.bin/with_zsh ~/scripts/dotfiles.sh;
+
