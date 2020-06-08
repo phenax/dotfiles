@@ -15,3 +15,5 @@
   tool = vimdiff
 [core]
 	excludesfile = ~/.config/git-config/gitignore
+[alias]
+	ignore = "!gi() { curl -sL https://www.toptal.com/developers/gitignore/api/$@ ;}; gi"
