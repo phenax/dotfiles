@@ -7,21 +7,21 @@
 [submodule ".config/suckless/tabbed"]
 	path = .config/suckless/tabbed
 	url = git@github.com:phenax/tabbed.git
-[submodule "/home/akshayn/scripts/bsp-layout"]
-	path = /home/akshayn/scripts/bsp-layout
+[submodule "scripts/bsp-layout"]
+	path = scripts/bsp-layout
 	url = git@github.com:phenax/bsp-layout.git
-[submodule "/home/akshayn/.config/suckless/bslock"]
-	path = /home/akshayn/.config/suckless/bslock
+[submodule ".config/suckless/bslock"]
+	path = .config/suckless/bslock
 	url = git@github.com:phenax/bslock.git
-[submodule "/home/akshayn/.config/suckless/dmenu"]
-	path = /home/akshayn/.config/suckless/dmenu
+[submodule ".config/suckless/dmenu"]
+	path = .config/suckless/dmenu
 	url = git@github.com:phenax/dmenu.git
-[submodule "/home/akshayn/scripts/statusbar"]
-	path = /home/akshayn/scripts/statusbar
+[submodule "scripts/statusbar"]
+	path = scripts/statusbar
 	url = git@github.com:phenax/statusbar.git
-[submodule "/home/akshayn/.config/suckless/dwm"]
-	path = /home/akshayn/.config/suckless/dwm
+[submodule ".config/suckless/dwm"]
+	path = .config/suckless/dwm
 	url = git@github.com:phenax/dwm.git
-[submodule "/home/akshayn/.config/suckless/dwmblocks"]
-	path = /home/akshayn/.config/suckless/dwmblocks
+[submodule ".config/suckless/dwmblocks"]
+	path = .config/suckless/dwmblocks
 	url = git@github.com:phenax/dwmblocks.git
