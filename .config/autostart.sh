@@ -1,9 +1,5 @@
 
 ##### Helpers {{{
-window_count=$(bspc query -N | wc -l);
-
-on_startup() { [[ "$window_count" = "0" ]] && $@; }
-
 once() {
   local name=$1;
   shift;
@@ -60,7 +56,6 @@ run() {
 
 
 ##### Initialized applications {{{
-  #on_startup sensible-browser &
 # }}}
 
 
