@@ -33,14 +33,6 @@ super + shift + f
 super + m; {Left,Return,Right}
   ~/scripts/spotify.sh {prev,play_pause,next}
 
-# Add magnet link to download from clipboard
-super + shift + t
-  ~/scripts/torrent.sh add_from_clipboard;
-
-# Offline wiki search
-super + question
-  ~/scripts/wiki.sh;
-
 # }}}
 
 
@@ -79,15 +71,9 @@ super+y
 XF86PowerOff
   ~/scripts/powercontrol.sh menu
 
-# Shutdown/Reboot
-super + Delete; {s,r}
-  ~/scripts/powercontrol.sh {poweroff,reboot}
-
 # Lock screen
 ctrl + shift + l
   ~/scripts/powercontrol.sh lock
-
-
 
 # Screenshot
 Print
@@ -110,10 +96,5 @@ XF86AudioMicMute
 XF86MonBrightness{Down,Up}
   ~/scripts/brightness.sh {dec,inc} 10
 
-# }}}
-
-
-
-### Layout {{{
 # }}}
 

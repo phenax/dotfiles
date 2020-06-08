@@ -16,7 +16,7 @@ $optn_lock
 $optn_cancel
 " | trim);
 
-lock() { ~/scripts/lockscreen.sh; }
+lock() { bslock; }
 poweroff_() { poweroff; }
 reboot_() { reboot; }
 suspend_() { lock & disown; systemctl suspend; }

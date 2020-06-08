@@ -46,13 +46,6 @@ lc () { # lf with cd to navigated directory on quit
 # Git aliases
 alias gaa="git add ."
 
-# Github aliases
-alias prls="gh pr list"
-alias prco="gh pr checkout"
-alias prstat="gh pr status"
-alias prnew="gh pr create -b production"
-alias prv="gh pr view"
-
 # Node aliases
 alias nr="npm run";
 alias ns="npm start";
@@ -63,17 +56,18 @@ alias eorg="sensible-editor ~/.config/vimwiki/index.md";
 alias ezsh="cd ~/.config/zshconf && sensible-editor .";
 alias edot="sensible-editor ~/scripts/dotfiles.sh";
 alias evim="cd ~/.config/nvim && sensible-editor .";
-alias ekey="cd ~/.config/sxhkd && sensible-editor .";
-alias ebsp="cd ~/.config/bspwm && sensible-editor .";
 alias ecom="cd ~/scripts/commands && sensible-editor .";
-alias ehosts="sudo nvim /etc/hosts";
 
+alias edwm="cd ~/.config/suckless/dwm && sensible-editor .";
+alias ebar="cd ~/.config/suckless/dwmbar && sensible-editor .";
+alias ekey="cd ~/.config/sxhkd && sensible-editor .";
+
+alias ehosts="sudo nvim /etc/hosts";
 alias sandbox="sudo ~/scripts/host-file-elb-update.sh";
 
 # Application shortcuts
 alias e="sensible-editor";
 alias v="nvim";
-alias xvim="/usr/bin/vim";
 alias vim="nvim";
 alias chrome="google-chrome";
 alias chromei="google-chrome --incognito";
@@ -86,13 +80,15 @@ source "$HOME/.work-config/zshconf/aliases.zsh";
 # QR file transfer
 alias qr-send="qrcp";
 alias qr-get="qrcp receive";
+qr-str() { curl qrenco.de/$1; }
+
+# Audio download
 alias dl-audio="youtube-dl --ignore-errors --output '%(title)s.%(ext)s' --extract-audio";
 
 # Pacman aliases
 alias auto-remove="yay -Rcs \$(yay -Qdtq)";
 alias update="yay -Syyu";
 
+# Dictionary
 dict() { curl dict://dict.org/d:$1; }
-qr-str() { curl qrenco.de/$1; }
 
-# rate.sx
