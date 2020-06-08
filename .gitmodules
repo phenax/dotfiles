@@ -1,6 +1,6 @@
 [submodule ".work-config"]
 	path = .work-config
-  url = git@github.com:phenax/work-dotfiles.git
+	url = git@github.com:phenax/work-dotfiles.git
 [submodule ".config/suckless/st"]
 	path = .config/suckless/st
 	url = git@github.com:phenax/st.git
