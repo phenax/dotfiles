@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 
-xbacklight -set $1;
+~/scripts/brightness.sh set $1;

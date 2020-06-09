@@ -11,17 +11,20 @@ get_label() { playerctl metadata --format '{{title}} - {{artist}}'; }
 # Play/Pause toggle:
 play_pause() {
   playerctl play-pause;
-  ~/scripts/statusbar/statusbar.sh update music;
+  #~/scripts/statusbar/statusbar.sh update music;
+  update-dwmblock music;
 }
 
 # Next/Prev
 next() {
   playerctl next;
-  ~/scripts/statusbar/statusbar.sh update music;
+  #~/scripts/statusbar/statusbar.sh update music;
+  update-dwmblock music;
 }
 prev() {
   playerctl previous;
-  ~/scripts/statusbar/statusbar.sh update music;
+  #~/scripts/statusbar/statusbar.sh update music;
+  update-dwmblock music;
 }
 
 notify() {

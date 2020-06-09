@@ -2,9 +2,6 @@
 
 volume_component() { amixer get Master | awk -F'[][]' '/dB/ {print $C}' C="$1"; }
 
-battery_component() { echo -e "$(cat "/sys/class/power_supply/BAT0/$1")"; }
-
-
 playerctl_icon() {
   local playstate="$(playerctl metadata --format '{{status}}' || echo "Stopped")";
   case "$playstate" in
@@ -15,31 +12,29 @@ playerctl_icon() {
   esac
 }
 
-volume_icon() {
-  volume_component 6 | sed 's/on//; s/off//';
-}
-
 icon() {
   case "$1" in
     date)        echo "" ;;
     battery)     echo "" ;;
     music)       playerctl_icon ;;
-    volume)      volume_icon ;;
+    volume)      volume_component 6 | sed 's/on//; s/off//' ;;
     brightness)  echo "" ;;
     *) ;;
   esac
 }
 
 date_module() {
-  echo "$(icon date) $(date +"%A,%e %b -%l:%M %p")";
+  echo "$(icon date) $(date +"%A, %e %b - %I:%M %p")";
 }
 
 battery_module() {
-  echo "$(icon battery) $(battery_component capacity)%";
+  local capacity=$(cat "/sys/class/power_supply/BAT0/capacity");
+  echo "$(icon battery) $capacity%";
 }
 
 music_module() {
-  echo "$(icon music)  $(playerctl metadata --format '{{title}} - {{artist}}' || echo '..')"
+  local label=$(playerctl metadata --format '{{title}} - {{artist}}' || echo '...');
+  echo "$(icon music)  $label";
 }
 
 brightness_module() {
@@ -47,7 +42,7 @@ brightness_module() {
 }
 
 volume_module() {
-  echo "$(icon volume) $(volume_component 2)"
+  echo "$(icon volume) $(volume_component 2)";
 }
 
 

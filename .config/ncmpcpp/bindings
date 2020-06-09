@@ -19,6 +19,9 @@ def_key "x"
 def_key "P"
   show_playlist_editor
 
+def_key "B"
+  show_browser
+
 def_key "ctrl-s"
   save_playlist
 

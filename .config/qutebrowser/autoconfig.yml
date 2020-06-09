@@ -6,5 +6,5 @@
 
 config_version: 2
 settings:
-  content.notifications:
-    https://3.basecamp.com: true
+  content.geolocation:
+    https://www.geolocation.com: false
