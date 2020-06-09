@@ -130,7 +130,7 @@ nmap('<Ctrl+Shift+Up>', 'scroll-page 0 -0.3')
 # }}}
 
 #### UI {{{
-c.fonts.default_family = 'Fira Code'
+c.fonts.default_family = 'JetBrains Mono'
 c.fonts.default_size = '12px'
 
 ## Hints
@@ -275,6 +275,10 @@ c.content.desktop_capture = 'ask'
 c.content.mouse_lock = 'ask'
 c.content.javascript.can_access_clipboard = True
 
+
+c.aliases['tor-enable'] = 'set content.proxy "socks://localhost:9050"'
+c.aliases['tor-disable'] = 'config-unset content.proxy'
+c.aliases['tor-change'] = 'spawn --userscript tor_identity'
 # }}}
 
 #### Search and bookmarks {{{
@@ -284,6 +288,10 @@ c.url.start_pages = [c.url.default_page]
 
 c.url.searchengines = {
     'DEFAULT': 'http://duckduckgo.com/?q={}',
+
+    # search engine
+    's': 'http://duckduckgo.com/?q={}',
+    'so': 'https://3g2upl4pq6kufc4m.onion/?q={}',
 
     # Dev stuff
     'bp': 'https://bundlephobia.com/result?p={}',

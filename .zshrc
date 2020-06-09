@@ -5,7 +5,6 @@ MAGIC_ENTER_OTHER_COMMAND='ls';
 
 plugins=(
   git
-  # git-prompt
   sudo
   zsh-interactive-cd
   magic-enter

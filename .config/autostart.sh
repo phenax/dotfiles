@@ -1,11 +1,19 @@
 
 ##### Helpers {{{
+# Focus on a tag/ws
+focus_tag() { [[ ! -z "$1" ]] && dwmc view $(($1 - 1)); }
+
+# Only run when there are no windows on the screen
+on_startup() { [[ "$(wmctrl -l | wc -l)" = "0" ]] && $@ & }
+
+# Run only once. If an instance is already running, noop
 once() {
   local name=$1;
   shift;
   pgrep $name || $@ &
 }
 
+# Kill previous instance and run again
 run() {
   killall -9 $1;
   sleep 0.05;
@@ -56,6 +64,14 @@ run() {
 
 
 ##### Initialized applications {{{
+#focus_tag 9;
+#on_startup :music;
+#on_startup :notes;
+
+#focus_tag 6;
+#on_startup sensible-browser;
+
+#focus_tag 1;
 # }}}
 
 

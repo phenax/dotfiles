@@ -5,6 +5,7 @@ add-public-config() {
   # Work config
   add ~/README.md;
   add ~/.work-config;
+  add ~/.gitmodules;
 
   # X and DM
   add ~/.config/{bspwm,sxhkd,polybar}
