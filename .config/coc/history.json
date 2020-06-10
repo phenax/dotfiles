@@ -18,7 +18,11 @@
         "a"
       ],
       "config%2Fsuckless%2Fdwm": [
-        "a"
+        "a",
+        "d",
+        "deleteFor",
+        "c",
+        "paste"
       ],
       "config%2Fsuckless%2Fdwmblocks": [
         "a"

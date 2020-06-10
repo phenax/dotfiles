@@ -242,6 +242,11 @@ nmap('b', 'set-cmd-text --space :buffer') # List buffers by index
 # From clipboard
 nmap('p', 'open --tab -- {clipboard}') # Open link in keyboard in a new tab
 nmap('P', 'open -- {clipboard}') # Open link in clipboard in the same tab
+
+for i in range(1, 10 + 1):
+    key = 0 if i == 10 else i
+    nmap('\\' + str(key), 'tab-focus ' + str(i))
+
 # }}}
 
 #### Downloads {{{

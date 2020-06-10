@@ -1256,11 +1256,10 @@
           "sysPrefix": "/usr",
           "fileHash": "e92469e743b4a2981c6847d61c483120fd7f8e2bf851d414a87d2b256c2d7cb295e2ba28fcdc95eaa33a9429fb65a5b6e31fa831f126a93ebf534259c8d95dd3",
           "type": "Unknown",
-          "displayName": "Python 3.8.3 64-bit",
-          "__store": true
+          "displayName": "Python 3.8.3 64-bit"
         }
       },
-      "expiry": 1591792025745
+      "expiry": 1591813369665
     },
     "/sbin/python2.interpreter.Details.v7": {
       "data": {
@@ -1493,8 +1492,7 @@
       },
       "sysPrefix": "/usr",
       "fileHash": "e92469e743b4a2981c6847d61c483120fd7f8e2bf851d414a87d2b256c2d7cb295e2ba28fcdc95eaa33a9429fb65a5b6e31fa831f126a93ebf534259c8d95dd3",
-      "type": "Unknown",
-      "cachedEntry": true
+      "type": "Unknown"
     },
     "preferredGlobalPyInterpreter": {
       "architecture": 3,
@@ -1541,7 +1539,6 @@
       "sysPrefix": "/usr",
       "fileHash": "e92469e743b4a2981c6847d61c483120fd7f8e2bf851d414a87d2b256c2d7cb295e2ba28fcdc95eaa33a9429fb65a5b6e31fa831f126a93ebf534259c8d95dd3",
       "type": "Unknown",
-      "cachedEntry": true,
       "displayName": "Python 3.8.3 64-bit"
     },
     "InterpreterAutoSeletionRule-cachedInterpreters": {
