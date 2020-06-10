@@ -89,6 +89,9 @@ alias dl-audio="youtube-dl --ignore-errors --output '%(title)s.%(ext)s' --extrac
 alias auto-remove="yay -Rcs \$(yay -Qdtq)";
 alias update="yay -Syyu";
 
+# Use systemd prompt for sudo
+alias su="SUDO_ASKPASS=/usr/bin/systemd-ask-password sudo -A";
+
 # Dictionary
 dict() { curl dict://dict.org/d:$1; }
 

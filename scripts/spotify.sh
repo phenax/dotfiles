@@ -3,7 +3,7 @@
 spotify_launch() { spotify; }
 
 # Get player state
-get_play_state() { playerctl metadata --format '{{status}}'; }
+get_play_state() { playerctl metadata --format '{{status}}' || echo 'Stopped'; }
 
 # Get title - artist (song label)
 get_label() { playerctl metadata --format '{{title}} - {{artist}}'; }
