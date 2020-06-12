@@ -25,6 +25,7 @@ run() {
 ##### Autostart {{{
   # Key Modmap
   xmodmap ~/.config/sxhkd/.Xmodmap &
+  xset s off; # No screensaver
   # xset r rate 300 50;
 
   # Key daemon
@@ -60,6 +61,9 @@ run() {
 
   # Music daemon
   once "mopidy" mopidy;
+
+  # Unclutter mouse pointer
+  once "unclutter" unclutter;
 # }}}
 
 
