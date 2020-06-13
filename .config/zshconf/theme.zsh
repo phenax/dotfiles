@@ -1,3 +1,4 @@
+setopt prompt_subst
 
 # Theme
 COL_ACCENT=blue;
@@ -16,20 +17,15 @@ git_changes() { git status --porcelain 2> /dev/null | wc -l; }
 
 # Prompt dir
 p_dir() {
-  segment "%c" $COL_DIR black;
+  segment "%2~" $COL_DIR black;
 }
 
 # Prompt terminal status
 p_status() {
-  local st;
-
-  [[ $RETVAL -ne 0 ]]             && st="$st%F{$COL_STATUS_ERROR}x%f";
-  [[ $(jobs -l | wc -l) -ne 0 ]]  && st="$st%F{$COL_STATUS_BG}(bg) %f";
-
-  [[ -n "$st" ]] && segment "$st" black default;
+  echo -n "%(?..$(segment 'x' black $COL_STATUS_ERROR))"
+  echo -n "%(1j.$(segment '(jobs: %j)' black $COL_STATUS_BG).)"
 }
 
-# Prompt git
 p_git() {
   local ref dirty mode repo_path color;
 
@@ -49,9 +45,10 @@ prompt() {
   RETVAL=$?;
   p_status;
   p_dir;
-  p_git;
+  echo -n '$(p_git)';
   segment "$" black white;
 }
 
-PROMPT='$(prompt) ';
+export PROMPT="$(prompt) ";
+#export RPROMPT='wow'
 

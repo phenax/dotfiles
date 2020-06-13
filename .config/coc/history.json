@@ -26,6 +26,11 @@
       ],
       "config%2Fsuckless%2Fdwmblocks": [
         "a"
+      ],
+      "config%2Fzshconf": [
+        "A",
+        "delete",
+        "a"
       ]
     },
     "%2Fhome%2Fakshayn%2Fdev%2Fflut%2Ftestproj": [
