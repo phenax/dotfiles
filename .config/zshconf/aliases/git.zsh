@@ -36,6 +36,7 @@ alias gc='git commit -v'
 alias gc!='git commit -v --amend'
 
 alias gst='git status'
+alias gp='git push'
 
 grename() {
   if [[ -z "$1" || -z "$2" ]]; then

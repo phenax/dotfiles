@@ -1,12 +1,13 @@
 # Config editors
-alias eorg="sensible-editor ~/.config/vimwiki/index.md";
-alias ezsh="cd ~/.config/zshconf && sensible-editor .";
-alias edot="sensible-editor ~/scripts/dotfiles.sh";
-alias evim="cd ~/.config/nvim && sensible-editor .";
-alias ecom="cd ~/scripts/commands && sensible-editor .";
+alias eorg='gnotes && sensible-editor index.md';
+alias ezsh='gzsh && sensible-editor ~/.zshrc';
+alias edot='sensible-editor ~/scripts/dotfiles.sh';
+alias evim='gvim && sensible-editor init.vim';
 
-alias edwm="cd ~/.config/suckless/dwm && sensible-editor .";
-alias ebar="cd ~/.config/suckless/dwmbar && sensible-editor .";
-alias ekey="cd ~/.config/sxhkd && sensible-editor .";
+alias edwm='gdwm && sensible-editor .';
+alias ebar='gdwmb && sensible-editor .';
+alias ekey='gkey && sensible-editor .';
+alias eas='sensible-editor ~/.config/autostart.sh';
 
-alias ehosts="sudo nvim /etc/hosts";
+alias ehosts='sudo nvim /etc/hosts';
+
