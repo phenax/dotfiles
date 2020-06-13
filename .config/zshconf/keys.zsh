@@ -9,6 +9,8 @@ if (( ${+terminfo[smkx]} )) && (( ${+terminfo[rmkx]} )); then
   zle -N zle-line-finish
 fi
 
+bindkey -e;
+
 autoload -z edit-command-line; zle -N edit-command-line;
 bindkey "^E"   edit-command-line;
 
@@ -46,20 +48,4 @@ if [[ "${terminfo[kcud1]}" != "" ]]; then
   zle -N down-line-or-beginning-search
   bindkey "${terminfo[kcud1]}" down-line-or-beginning-search
 fi
-
-# Dont want vi mode yet
-# zle-keymap-select () {
-  #if [ $KEYMAP = vicmd ]; then
-      #printf "\033[2 q"
-  #else
-      #printf "\033[6 q"
-  #fi
-#}
-#zle -N zle-keymap-select
-#zle-line-init () {
-  #zle -K viins
-  #printf "\033[6 q"
-#}
-#zle -N zle-line-init
-#bindkey -v
 
