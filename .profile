@@ -10,29 +10,21 @@
 
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
-    # include .bashrc if it exists
-    if [ -f "$HOME/.bashrc" ]; then
-	. "$HOME/.bashrc"
-    fi
+  if [ -f "$HOME/.bashrc" ]; then
+    source "$HOME/.bashrc"
+  fi
 fi
 
-# set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
-fi
-
-# set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/.local/bin" ] ; then
-    PATH="$HOME/.local/bin:$PATH"
-fi
-
-export TERMINAL="st"
-export EDITOR="nvim"
-export VISUAL="nvim"
-export BROWSER="brave"
+source "$HOME/.config/zshconf/config.zsh";
 
 PATH="$HOME/.bin:$PATH"
+PATH="$HOME/scripts/commands:$PATH"
+PATH="$HOME/.local/bin:$PATH"
+source "$HOME/.config/zshconf/paths.zsh"
 export PATH
 
-# setxkbmap -option caps:escape
-eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+start_x_server () {
+	pgrep Xorg && echo "X server is already running" || startx;
+}
+
+[[ "$(tty)" == '/dev/tty1' ]] && start_x_server &> /dev/null

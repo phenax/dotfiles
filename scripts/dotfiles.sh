@@ -19,7 +19,7 @@ add-public-config() {
 
   # Terminal and shell
   add ~/.bashrc ~/.profile;
-  add ~/.zshrc ~/.config/zshconf;
+  add ~/.zshrc ~/.config/zshconf ~/.zprofile;
   add ~/.oh-my-zsh/custom;
 
   # Dev
@@ -31,7 +31,7 @@ add-public-config() {
   add ~/.config/suckless;
   add ~/.config/qutebrowser;
   add ~/.config/{lf,mpv,sxiv,zathura,ncmpcpp,mopidy};
-  #add ~/.config/spotifyd/spotifyd.conf;
+  # add ~/.config/spotifyd/spotifyd.conf;
   add ~/.config/transmission-daemon/settings.json;
   add ~/.config/transmission-remote-cli;
   add ~/.config/{calcurse,pet,shell-macros};
