@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+~/scripts/brightness.sh set 100;
+
+xrandr --output eDP1 --brightness 1;

@@ -2,3 +2,4 @@
 
 ~/scripts/brightness.sh set 10.03;
 
+xrandr --output eDP1 --brightness 0.7;
