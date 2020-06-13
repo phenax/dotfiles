@@ -1,7 +1,11 @@
 autoload -U colors && colors;
+setopt auto_cd;
 
+export SAVEHIST=10
 export HISTSIZE=10000
 export HISTFILE=~/.config/zsh_history
+
+setopt inc_append_history share_history;
 
 export ZSH_CUSTOM_CONF_FILES="$HOME/.config/zshconf";
 
