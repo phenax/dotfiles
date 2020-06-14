@@ -2,7 +2,7 @@ set nocompatible
 set encoding=UTF-8
 
 let mapleader = "\\"
-let maplocalleader = ","
+let maplocalleader = " "
 
 let base16colorspace=256  " Access colors present in 256 colorspace
 
@@ -44,3 +44,4 @@ nmap ; :
 " Copy/paste
 vmap <C-c> "+y
 vmap <C-p> "+p
+

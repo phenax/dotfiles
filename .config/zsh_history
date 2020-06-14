@@ -1,0 +1,165 @@
+: 1592066461:0;cat ~/.zsh_history
+: 1592066464:0;ls
+: 1592066468:0;cd $SHAADI
+: 1592066474:0;gst
+: 1592066475:0;update
+: 1592066487:0;update-dotfiles
+: 1592066507:0;yadm status
+: 1592066517:0;gst
+: 1592066524:0;gp
+: 1592066536:0;ezsh
+: 1592066549:0;which gp
+: 1592066557:0;eorg
+: 1592066567:0;ncmpcpp
+: 1592067808:0;ll
+: 1592067846:0;:mic
+: 1592067854:0;ll
+: 1592067902:0;lf
+: 1592067914:0;ecmd
+: 1592067926:0;emctrl
+: 1592067929:0;wmctrl -l
+: 1592067958:0;xtitle
+: 1592067964:0;wmctrl -l
+: 1592067994:0;xtitle "0x01800006"
+: 1592068004:0;wmctrl -l
+: 1592068022:0;wmctrl -l | cut -f 2-
+: 1592068024:0;wmctrl -l | cut -f 1-
+: 1592068026:0;wmctrl -l | cut -f 2-
+: 1592068032:0;wmctrl -l | cut -d' ' -f 2-
+: 1592068035:0;wmctrl -l | cut -d' ' -f 3-
+: 1592068037:0;wmctrl -l | cut -d' ' -f 4-
+: 1592068038:0;wmctrl -l | cut -d' ' -f 5-
+: 1592068139:0;wmctrl -f
+: 1592068142:0;wmctrl --help
+: 1592068145:0;wmctrl --help | grep focus
+: 1592068154:0;wmctrl --help
+: 1592068156:0;wmctrl -h
+: 1592068162:0;wmctrl -h | grep focu
+: 1592068191:0;wmctrl -h | grep acti
+: 1592068523:0;echo 'wow' | xargs wmctrl -a
+: 1592068528:0;wmctrl -l
+: 1592068534:0;echo '0x01c00006' | xargs wmctrl -a
+: 1592068571:0;wmctrl -a '0x01c00006'
+: 1592068578:0;wmctrl -g
+: 1592068580:0;wmctrl -h
+: 1592068596:0;wmctrl -l
+: 1592068603:0;wmctrl -l -i
+: 1592068625:0;wmctrl -l -x
+: 1592068697:0;wmctrl -l -d
+: 1592068701:0;wmctrl -d
+: 1592068703:0;wmctrl -l
+: 1592068783:0;wmctrl -v -l
+: 1592068789:0;wmctrl -l
+: 1592068841:0;xdotool --help
+: 1592068849:0;xdotool --help | grep focus
+: 1592068872:0;xdotool windowfocus '0x01c00006'
+: 1592068882:0;xdotool windowfocus '0x01e00006'
+: 1592068895:0;cat $(which dwmc)
+: 1592068913:0;edwm
+: 1592068986:0;xdo --help
+: 1592068989:0;xdo -h
+: 1592068991:0;man xdo
+: 1592069022:0;xdo activate '0x01e00006'
+: 1592069063:0;xdo show '0x01e00006'
+: 1592069068:0;xdo activate '0x01e00006'
+: 1592069113:0;man xdotool
+: 1592069144:0;xdotool windowactivate '0x01c00006'
+: 1592069152:0;xdotool windowfocus '0x01c00006'
+: 1592069163:0;wmctrl -l
+: 1592069181:0;xdotool windowfocus '0x01800006'
+: 1592069227:0;rm ~/scripts/commands/:windows
+: 1592069254:0;edot
+: 1592074222:0;la | wc -l
+: 1592113040:0;evim
+: 1592113213:0;gdwm
+: 1592113214:0;v .
+: 1592113299:0;sudo make install
+: 1592121532:0;evim
+: 1592121599:0;eorg
+: 1592121900:0;evim
+: 1592121905:0;eorg
+: 1592122144:0;cd ~/.config/qutebrowser
+: 1592122144:0;v .
+: 1592122311:0;eorg
+: 1592128484:0;ecmd
+: 1592128516:0;ls | sort
+: 1592128619:0;lf
+: 1592128636:0;ecmd
+: 1592128646:0;gcm
+: 1592128647:0;gcmd
+: 1592128807:0;gm
+: 1592128812:0;cd untagged
+: 1592128837:0;mv Amon\ Amarth\ -\ Deceiver\ of\ the\ Gods\ \(2013\)\(Full\ Album\).opus Amon\ Amarth\ -\ Deceiver\ of\ the\ Gods.opus
+: 1592128877:0;cat ~/scripts/music/split-album.sh
+: 1592128962:0;v Amon\ Amarth\ -\ Deceiver\ Of\ The\ Gods.splits
+: 1592129070:0;~/scripts/music/split-album.sh "Amon Amarth - Deceiver of the Gods.opus" "Amon Amarth - Deceiver Of The Gods.splits"
+: 1592129139:0;cp Amon\ Amarth\ -\ Deceiver\ Of\ The\ Gods.splits
+: 1592129153:0;cp Amon\ Amarth\ -\ Deceiver\ Of\ The\ Gods.splits Amon\ Amarth\ -\ Twilight\ Of\ The\ Thunder\ God.splits
+: 1592129165:0;rm Amon\ Amarth\ -\ Deceiver\ of\ the\ Gods.*
+: 1592129173:0;rm Amon\ Amarth\ -\ Deceiver\ Of\ The\ Gods.splits
+: 1592129181:0;v Amon\ Amarth\ -\ Twilight\ Of\ The\ Thunder\ God.splits
+: 1592129279:0;ls
+: 1592129296:0;mv Amon\ Amarth\ -\ Twilight\ Of\ The\ Thunder\ God\ \(Full\ Album_Álbum\ Completo\).opus Amon\ Amarth\ -\ Twilight\ Of\ The\ Thunder\ God.opus
+: 1592129333:0;~/scripts/music/split-album.sh "Amon Amarth - Twilight Of The Thunder God.opus" "Amon Amarth - Twilight of the Thunder God.splits"
+: 1592129343:0;~/scripts/music/split-album.sh "Amon Amarth - Twilight Of The Thunder God.opus" "Amon Amarth - Twilight Of The Thunder God.splits"
+: 1592129405:0;rm -rf Amon\ Amarth\ -\ *
+: 1592129435:0;mkdir -p ../Others
+: 1592129443:0;mv Senua.opus ../Others
+: 1592129445:0;..
+: 1592129454:0;:music
+: 1592129475:0;lf
+: 1592129689:0;mv Polyphia\ _\ Yas\ feat.\ Mario\ Camarena\ and\ Erick\ Hansel\ \(Official\ Music\ Video\).opus Yas.opus
+: 1592129695:0;mediainfo -F Yas.opus
+: 1592129768:0;v ~/scripts/music/tag.sh
+: 1592129792:0;lf ..
+: 1592129815:0;lf .
+: 1592129855:0;~/scripts/music/tag.sh -a 'Polyphia' -A 'New Levels New Devils' -n 10 -N 10 -t 'Yas' Yas.opus
+: 1592129858:0;mediainfo -F Yas.opus
+: 1592129880:0;mv Yas.opus ../Polyphia/New\ Levels\ New\ Devils
+: 1592129901:0;ncmpcpp
+: 1592129931:0;..
+: 1592129933:0;cd Polyphia/New\ Levels\ New\ Devils
+: 1592129947:0;du -ah
+: 1592135904:0;gdwm
+: 1592135909:0;v .
+: 1592135916:0;gd
+: 1592135922:0;rvim
+: 1592135924:0;evim
+: 1592135935:0;gd
+: 1592135940:0;ezsh
+: 1592136028:0;gd
+: 1592136035:0;git add .
+: 1592136042:0;gaa
+: 1592136055:0;gc -m "Vim like keys"
+: 1592136845:0;sudo make install
+: 1592137919:0;git add .
+: 1592137924:0;gaa
+: 1592137954:0;gc -m "Focus toggle with master done"
+: 1592138775:0;sudo make install
+: 1592139890:0;git add .
+: 1592139893:0;gaa
+: 1592139903:0;ezsh
+: 1592139975:0;gaa
+: 1592139989:0;gcm "Fixes nmaster issue for focus toggle"
+: 1592140440:0;make
+: 1592140538:0;sudo make install
+: 1592140592:0;gd
+: 1592140595:0;git add .
+: 1592140622:0;git commit -m "Adds a previously focused item to monitor"
+: 1592141471:0;auto-remove
+: 1592144596:0;sudo make install
+: 1592144895:0;gdwm
+: 1592144899:0;v .
+: 1592145023:2;sudo make install
+: 1592145042:0;git add .
+: 1592145052:0;git commit -m "Adds action to clear all clients in a tag"
+: 1592145293:0;node
+: 1592145641:0;sudo make install
+: 1592145663:0;lf
+: 1592145764:0;gd
+: 1592145769:0;gaa
+: 1592145775:0;gc!
+: 1592145779:0;git push
+: 1592145786:0;update-dotfiles
+: 1592145805:0;..
+: 1592145808:0;update-dotfiles
