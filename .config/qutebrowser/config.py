@@ -125,8 +125,8 @@ nmap('yl', 'hint links userscript yank') # Copy a link from page as hints
 c.aliases['find-torrent-magnet-links'] = 'hint links userscript torrent'
 nmap('\\td', 'find-torrent-magnet-links')
 
-nmap('<Ctrl+Shift+Down>', 'scroll-page 0 0.3')
-nmap('<Ctrl+Shift+Up>', 'scroll-page 0 -0.3')
+nmap('<Ctrl+j>', 'scroll-page 0 0.5')
+nmap('<Ctrl+k>', 'scroll-page 0 -0.5')
 # }}}
 
 #### UI {{{

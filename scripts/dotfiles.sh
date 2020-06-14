@@ -19,8 +19,7 @@ add-public-config() {
 
   # Terminal and shell
   add ~/.bashrc ~/.profile;
-  add ~/.zshrc ~/.config/zshconf ~/.zprofile;
-  add ~/.oh-my-zsh/custom;
+  add ~/.zshrc ~/.config/zshconf ~/.zprofile ~/.config/zsh_history;
 
   # Dev
   add ~/scripts ~/.bin;

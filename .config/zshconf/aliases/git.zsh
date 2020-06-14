@@ -27,15 +27,21 @@ reset-origin() {
 
 # Git aliases
 alias g='git'
+
 alias ga='git add'
 alias gaa='git add --all'
 
 alias gco='git checkout'
 alias gb='git branch'
+
 alias gc='git commit -v'
+alias gcm='git commit -v -m'
 alias gc!='git commit -v --amend'
 
 alias gst='git status'
+alias gd='git diff'
+alias gl='git log'
+
 alias gp='git push'
 
 grename() {
