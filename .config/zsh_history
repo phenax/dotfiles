@@ -163,3 +163,92 @@
 : 1592145786:0;update-dotfiles
 : 1592145805:0;..
 : 1592145808:0;update-dotfiles
+: 1592145825:0;yadm status
+: 1592145841:0;yadm add zsh_history
+: 1592145848:0;edot
+: 1592147749:0;rm -rf ~/.config/bsp-layout
+: 1592147755:0;curl https://raw.githubusercontent.com/phenax/bsp-layout/master/example.layoutrc > $XDG_CONFIG_DIR/bsp-layout/layoutrc
+: 1592147869:0;mkdir "$XDG_CONFIG/bsp-layout" && curl https://raw.githubusercontent.com/phenax/bsp-layout/master/example.layoutrc > $XDG_CONFIG_DIR/bsp-layout/layoutrc
+: 1592147893:0;mkdir "$XDG_CONFIG_DIR/bsp-layout" && curl https://raw.githubusercontent.com/phenax/bsp-layout/master/example.layoutrc > $XDG_CONFIG_DIR/bsp-layout/layoutrc
+: 1592147902:0;echo $XDG_CONFIG_DIR
+: 1592147916:0;mkdir "~/.config/bsp-layout" && curl https://raw.githubusercontent.com/phenax/bsp-layout/master/example.layoutrc > ~/.config/bsp-layout/layoutrc
+: 1592147929:0;la
+: 1592147933:0;ls ~/.config
+: 1592147974:0;mkdir -p "~/.config/bsp-layout" && curl https://raw.githubusercontent.com/phenax/bsp-layout/master/example.layoutrc > ~/.config/bsp-layout/layoutrc
+: 1592147982:0;rm -rf ~/.config/bsp-layout
+: 1592147984:0;mkdir -p "~/.config/bsp-layout" && curl https://raw.githubusercontent.com/phenax/bsp-layout/master/example.layoutrc > ~/.config/bsp-layout/layoutrc
+: 1592147986:0;rm -rf ~/.config/bsp-layout
+: 1592147988:0;mkdir -p "~/.config/bsp-layout" && curl https://raw.githubusercontent.com/phenax/bsp-layout/master/example.layoutrc > ~/.config/bsp-layout/layoutrc
+: 1592147997:0;cat ~/.config/bsp-layout
+: 1592148012:0;mkdir -p "~/.config/bsp-layout"
+: 1592148021:0;ls ~/.config/bsp-layout
+: 1592148027:0;mkdir -p ~/.config/bsp-layout
+: 1592148030:0;ls ~/.config/bsp-layout
+: 1592148032:0;rm -rf ~/.config/bsp-layout
+: 1592148045:0;mkdir ~/.config/bsp-layout && curl https://raw.githubusercontent.com/phenax/bsp-layout/master/example.layoutrc > ~/.config/bsp-layout/layoutrc
+: 1592148051:0;lf ~/.config/bsp-layout
+: 1592148054:0;rm -rf ~/.config/bsp-layout
+: 1592156088:0;update
+: 1592156120:0;yay -R pandoc
+: 1592156124:0;auto-remove
+: 1592156131:0;pacman -Q
+: 1592156134:0;pacman -Q | wc -l
+: 1592156144:0;cd ~/.cache/yay
+: 1592156149:0;du -ah
+: 1592156153:0;du -ah -l 1
+: 1592156155:0;du -ah -c 1
+: 1592156158:0;du -ah -n 1
+: 1592156163:0;du --help
+: 1592156171:0;du --help | grep nest
+: 1592156176:0;du --help | grep level
+: 1592156181:0;du --help | grep level -B 1
+: 1592156185:0;du -ah -d 1
+: 1592156201:0;ls
+: 1592156209:0;rm -rf f*
+: 1592156211:0;rm -rf m*
+: 1592156213:0;rm -rf g*
+: 1592156217:0;rm -rf p*
+: 1592156218:0;rm -rf s*
+: 1592156221:0;rm -rf t*
+: 1592156231:0;lf yay
+: 1592156236:0;rm -rf yay
+: 1592156239:0;cd ~
+: 1592156241:0;update
+: 1592156265:0;yay -R otf-fira-code
+: 1592156270:0;update
+: 1592156282:0;yay -R stig
+: 1592156293:0;stig
+: 1592156297:0;yay -R stig
+: 1592156301:0;update
+: 1592156309:0;auto-remove
+: 1592156314:0;yay -Q | wc -l
+: 1592189889:0;gp
+: 1592189894:0;gpic
+: 1592189898:0;cd screenshots
+: 1592189904:0;sxiv 2020-06-14-1592155282_screenshot_1920x1080.jpg
+: 1592190552:0;alsa
+: 1592190556:0;alsamixer
+: 1592198202:0;gdwm
+: 1592198205:0;v .
+: 1592198324:0;sudo make install
+: 1592198354:0;git add .
+: 1592198366:0;git commit -m "Changes swap master keybinding"
+: 1592198582:0;gst
+: 1592198825:0;git diff origin production
+: 1592198829:0;git diff origin/production
+: 1592198859:0;git pull
+: 1592198868:0;git diff origin/production
+: 1592199028:0;git pull
+: 1592199037:0;gco -
+: 1592199043:0;git branch
+: 1592199048:0;gco feature/daily-rec-decorator
+: 1592199052:0;git stash list
+: 1592199055:0;git stash log
+: 1592199199:0;git branch
+: 1592199213:0;gco feature/dr_proxy_decorator
+: 1592199219:0;git pull origin production
+: 1592205867:0;killall -9 nm-applet
+: 1592213500:0;v
+: 1592218584:0;sudo systemctl restart networkmanager
+: 1592218595:0;sudo systemctl restart NetworkManager
+: 1592218604:0;systemctl status NetworkManager
