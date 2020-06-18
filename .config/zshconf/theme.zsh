@@ -1,7 +1,7 @@
 setopt prompt_subst
 
 # Theme
-COL_ACCENT=blue;
+COL_ACCENT=13;
 
 COL_DIR=$COL_ACCENT;
 
@@ -17,7 +17,7 @@ git_changes() { git status --porcelain 2> /dev/null | wc -l; }
 
 # Prompt dir
 p_dir() {
-  segment "%2~" $COL_DIR black;
+  segment "%2~" $COL_DIR white;
 }
 
 # Prompt terminal status

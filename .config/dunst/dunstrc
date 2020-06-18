@@ -173,12 +173,12 @@
     context = ctrl+shift+period
 
 [urgency_low]
-    background = "#34495e"
+    background = "#7e6aD3"
     foreground = "#ffffff"
     timeout = 3
 
 [urgency_normal]
-    background = "#1f2225"
+    background = "#4e3aA3"
     foreground = "#ffffff"
     timeout = 5
 

@@ -45,6 +45,10 @@ volume_module() {
   echo "$(icon volume) $(volume_component 2)";
 }
 
+keymode_module() {
+  echo "$(~/scripts/hotkeythingy.sh mode)";
+}
+
 
 get_module() {
   case "$1" in
@@ -53,6 +57,7 @@ get_module() {
     volume) volume_module ;;
     music) music_module ;;
     brightness) brightness_module ;;
+    keymode) keymode_module ;;
   esac;
 }
 

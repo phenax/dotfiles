@@ -9,6 +9,9 @@ from qutebrowser.config.config import ConfigContainer
 config = config
 c = c
 
+leader = '\\'
+localleader = ' '
+
 # Helper Functions {{{
 def read_xresources(prefix):
     props = {}
@@ -123,10 +126,10 @@ nmap('yl', 'hint links userscript yank') # Copy a link from page as hints
 
 # Add magnet link to download
 c.aliases['find-torrent-magnet-links'] = 'hint links userscript torrent'
-nmap('\\td', 'find-torrent-magnet-links')
+nmap(leader + 'td', 'find-torrent-magnet-links')
 
-nmap('<Ctrl+j>', 'scroll-page 0 0.5')
-nmap('<Ctrl+k>', 'scroll-page 0 -0.5')
+nmap('<Shift-j>', 'scroll-page 0 0.5')
+nmap('<Shift-k>', 'scroll-page 0 -0.5')
 # }}}
 
 #### UI {{{
@@ -198,15 +201,15 @@ c.aliases['dark-mode-toggle'] = 'config-cycle content.user_stylesheets \'' \
     + json.dumps(c.content.user_stylesheets + ['styles/dark.css']) \
     + '\''
 
-nmap(',td', ':dark-mode-toggle');
+nmap(localleader + 'td', ':dark-mode-toggle');
 # }}}
 
 #### Sessions {{{
 c.aliases['load'] = 'session-load -t';
 
 # Sessions
-nmap('\\sv', ':load video');
-nmap('\\sc', ':load com');
+nmap(leader + 'sv', ':load video');
+nmap(leader + 'sc', ':load com');
 # }}}
 
 #### TABS {{{
@@ -229,14 +232,14 @@ nmap('tt', 'open --tab')  # New tab
 nmap('tp', 'open -p')     # Private window
 
 # Detach tab
-nmap('\\wt', 'tab-give')
-nmap('\\wp', 'tab-pin')
+nmap(leader + 'wt', 'tab-give')
+nmap(leader + 'wp', 'tab-pin')
 
 # Tab movement
-nmap('<Ctrl-PgUp>', 'tab-prev')
-nmap('<Ctrl-PgDown>', 'tab-next')
-nmap('<Ctrl-Shift-PgUp>', 'tab-move -')
-nmap('<Ctrl-Shift-PgDown>', 'tab-move +')
+nmap('<Ctrl-k>', 'tab-prev')
+nmap('<Ctrl-j>', 'tab-next')
+nmap('<Ctrl-Shift-k>', 'tab-move -')
+nmap('<Ctrl-Shift-j>', 'tab-move +')
 nmap('b', 'set-cmd-text --space :buffer') # List buffers by index
 
 # From clipboard
@@ -245,7 +248,7 @@ nmap('P', 'open -- {clipboard}') # Open link in clipboard in the same tab
 
 for i in range(1, 10 + 1):
     key = 0 if i == 10 else i
-    nmap('\\' + str(key), 'tab-focus ' + str(i))
+    nmap(localleader + str(key), 'tab-focus ' + str(i))
 
 # }}}
 
@@ -261,10 +264,10 @@ nunmap('gd')
 nmap('gdl', 'spawn --userscript open_downloads')
 
 # Playing Videos with MPV
-nmap('\\tyy', 'spawn --detach bash -c "notify-send \\"Loading mpv\\" && mpv --force-window=immediate \\"{url}\\""')
+nmap(leader + 'tyy', 'spawn --detach bash -c "notify-send \\"Loading mpv\\" && mpv --force-window=immediate \\"{url}\\""')
 
 # Download music from youtube
-nmap('\\tym', 'spawn --userscript dl_music')
+nmap(leader + 'tym', 'spawn --userscript dl_music')
 # }}}
 
 #### Security {{{
@@ -294,7 +297,7 @@ c.url.start_pages = [c.url.default_page]
 c.url.searchengines = {
     'DEFAULT': 'http://duckduckgo.com/?q={}',
 
-    # search engine
+    # General
     's': 'http://duckduckgo.com/?q={}',
     'so': 'https://3g2upl4pq6kufc4m.onion/?q={}',
 
@@ -305,7 +308,7 @@ c.url.searchengines = {
     'hg': 'http://www.haskell.org/hoogle/?hoogle={}',
     'aw': 'http://wiki.archlinux.org/index.php?search={}',
 
-    # Fun
+    # Media
     'r': 'http://www.reddit.com/r/{}/',
     'y': 'http://www.youtube.com/results?search_query={}',
     'az': 'http://search.azlyrics.com/search.php?q={}',
@@ -320,16 +323,17 @@ c.aliases['h'] = 'help'
 # }}}
 
 #### Dev {{{
-nmap('\\tr', 'config-source')    # Reload config
-nmap('\\ti', 'inspector')        # Inspector
-nmap('\\ts', 'view-source')      # View page source
+nmap(leader + 'tr', 'config-source')    # Reload config
+nmap(leader + 'ti', 'inspector')        # Inspector
+nmap(leader + 'ts', 'view-source')      # View page source
 
 # Json formatter
 c.aliases['format-json'] = 'spawn --userscript format_json';
-nmap('\\tj', 'format-json')
+nmap(leader + 'tj', 'format-json')
 # }}}
 
 #### History {{{
-nmap('<Alt-Left>', 'back')
-nmap('<Alt-Right>', 'forward')
+nmap('<Shift-h>', 'back')
+nmap('<Shift-l>', 'forward')
+nmap(leader + 'hh', 'history --tab')
 # }}}

@@ -79,5 +79,5 @@ if has("termguicolors")     " set true colors
   set termguicolors
 endif
 
-" hi Normal guibg=NONE ctermbg=NONE
+hi Normal guibg=NONE ctermbg=NONE
 
