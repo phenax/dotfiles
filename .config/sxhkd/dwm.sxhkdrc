@@ -11,27 +11,27 @@
 ### Application control {{{
 
 # Terminal
-super + Return
-  sensible-terminal -d $(xcwd)
-
-# Tabbed terminal
-super + shift + Return
-  ~/.bin/tst -d $(xcwd)
+# super + Return
+#   sensible-terminal -d $(xcwd)
+# 
+# # Tabbed terminal
+# super + shift + Return
+#   ~/.bin/tst -d $(xcwd)
 
 # Browser and private browser
-super + c
-  sensible-browser
-super + shift + c
-  sensible-private-browser
-
-# File manager
-super + shift + f
-  ~/.bin/with_zsh 'sensible-terminal -d $(xcwd) -e lf'
+# super + c
+#   sensible-browser
+# super + shift + c
+#   sensible-private-browser
+# 
+# # File manager
+# super + shift + f
+#   ~/.bin/with_zsh 'sensible-terminal -d $(xcwd) -e lf'
 
 
 # Spotify controls
-super + m; {Left,Return,Right}
-  ~/scripts/spotify.sh {prev,play_pause,next}
+# super + m; {Left,Return,Right}
+#   ~/scripts/spotify.sh {prev,play_pause,next}
 
 # }}}
 
@@ -40,26 +40,26 @@ super + m; {Left,Return,Right}
 ### Menu {{{
 
 # Run menu
-super + d
-  dmenu_run
-
-# Command menu
-super + semicolon
-  dmenu_run -it ':'
-
-# Custom menus
-super+shift+p
-  ~/.bin/with_zsh "passmenu --type -p 'pass :: '"
-super+shift+o
-  ~/.bin/with_zsh "~/scripts/open-project.sh"
-super+shift+i
-  ~/.bin/with_zsh "~/scripts/bookmarks-menu/bookmarker.sh menu"
-super+shift+g
-  ~/.bin/with_zsh "~/scripts/bookmarks-menu/gh-projects.sh menu"
-super+shift+e
-  ~/.bin/with_zsh "~/scripts/fontawesome-menu/fa-menu.sh menu"
-super+y
-  clipmenu
+# super + d
+#   dmenu_run
+# 
+# # Command menu
+# super + semicolon
+#   dmenu_run -it ':'
+# 
+# # Custom menus
+# super+shift+p
+#   ~/.bin/with_zsh "passmenu --type -p 'pass :: '"
+# super+shift+o
+#   ~/.bin/with_zsh "~/scripts/open-project.sh"
+# super+shift+i
+#   ~/.bin/with_zsh "~/scripts/bookmarks-menu/bookmarker.sh menu"
+# super+shift+g
+#   ~/.bin/with_zsh "~/scripts/bookmarks-menu/gh-projects.sh menu"
+# super+shift+e
+#   ~/.bin/with_zsh "~/scripts/fontawesome-menu/fa-menu.sh menu"
+# super+y
+#   clipmenu
 
 # }}}
 
@@ -68,33 +68,33 @@ super+y
 ### System control {{{
 
 # Power button
-XF86PowerOff
-  ~/scripts/powercontrol.sh menu
+# XF86PowerOff
+#   ~/scripts/powercontrol.sh menu
 
 # Lock screen
-ctrl + shift + l
-  ~/scripts/powercontrol.sh lock
+# ctrl + shift + l
+#   ~/scripts/powercontrol.sh lock
 
 # Screenshot
-Print
-  scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/screenshots';
-ctrl + Print
-  ~/.bin/with_zsh "scrot -s 'part-%Y-%m-%d-%s_screenshot_\$wx\$h.jpg' -e 'mv \$f ~/Pictures/screenshots'";
+# Print
+#   scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/screenshots';
+# ctrl + Print
+#   ~/.bin/with_zsh "scrot -s 'part-%Y-%m-%d-%s_screenshot_\$wx\$h.jpg' -e 'mv \$f ~/Pictures/screenshots'";
 
 # Audio control
-XF86Audio{Raise,Lower}Volume
-  ~/scripts/sound.sh volume {up,down}
-XF86AudioMute
-  ~/scripts/sound.sh mute
-
-# Mic mute
-XF86AudioMicMute
-  ~/scripts/sound.sh mute-mic
-
-
-# Brightness control
-XF86MonBrightness{Down,Up}
-  ~/scripts/brightness.sh {dec,inc} 10
+# XF86Audio{Raise,Lower}Volume
+#   ~/scripts/sound.sh volume {up,down}
+# XF86AudioMute
+#   ~/scripts/sound.sh mute
+# 
+# # Mic mute
+# XF86AudioMicMute
+#   ~/scripts/sound.sh mute-mic
+# 
+# 
+# # Brightness control
+# XF86MonBrightness{Down,Up}
+#   ~/scripts/brightness.sh {dec,inc} 10
 
 # }}}
 

@@ -1,5 +1,4 @@
 
-
 #define $bg #0f0c19
 #define $fg #d8dee9
 #define $acc #4e3aA3
@@ -17,7 +16,7 @@
 *.color8:  #555555
 
 *.color1:  #e06c75
-*.color9:  #d63031
+*.color9:  #bf616a
 
 *.color2:  #98C379
 *.color10:  #a3be8c
@@ -28,7 +27,7 @@
 *.color4:  #60a3bc
 *.color12:  #5e81ac
 
-*.color5:  #6e5ab3
+*.color5:  #b48ead
 *.color13:  #4e3a93
 
 *.color6:  #56B6C2

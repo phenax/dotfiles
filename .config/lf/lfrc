@@ -90,7 +90,7 @@ map <enter> open
 map si      show_images
 map du      $du -h -d1 | less
 map t       open_terminal
-map h       :set hidden!
+map sh      :set hidden!
 map st      :set sortby time
 
 

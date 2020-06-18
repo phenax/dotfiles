@@ -29,7 +29,8 @@ run() {
   # xset r rate 300 50;
 
   # Key daemon
-  run sxhkd -c ~/.config/sxhkd/dwm.sxhkdrc;
+  #run sxhkd -c ~/.config/sxhkd/dwm.sxhkdrc;
+  run hotkeythingy;
 
   # Compositor
   run compton --config ~/.config/compton.conf;

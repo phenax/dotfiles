@@ -31,3 +31,6 @@
 [submodule "/home/akshayn/.config/zshplugins/zsh-autosuggestions"]
 	path = /home/akshayn/.config/zshplugins/zsh-autosuggestions
 	url = git@github.com:zsh-users/zsh-autosuggestions.git
+[submodule "/home/akshayn/.config/suckless/hotkeythingy"]
+	path = /home/akshayn/.config/suckless/hotkeythingy
+	url = git@github.com:phenax/hotkeythingy.git
