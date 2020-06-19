@@ -904,3 +904,49 @@ git config --global color.diff.whitespace "red reverse"
 : 1592499301:0;notify-send "wow" -u low
 : 1592499304:0;notify-send "wow"
 : 1592499390:0;update-dotfiles
+: 1592499414:0;yadm status
+: 1592499629:0;cd ~/dev/vimdev/palenight.vim
+: 1592499630:0;v .
+: 1592499687:0;evim
+: 1592549953:0;gdwm
+: 1592549960:0;../hotkeythingy
+: 1592549965:0;v ,
+: 1592549968:0;v .
+: 1592552324:0;v ~/.config/android-sdk
+: 1592552331:0;cd ~/.config/android-sdk
+: 1592552342:0;ls /opt/android-sdk
+: 1592552347:0;..
+: 1592552355:0;ls /opt
+: 1592552367:0;readlink /opt/android-sdk
+: 1592552395:0;newsboat
+: 1592552772:0;gd
+: 1592552775:0;git add .
+: 1592552787:0;gcm "Updates description"
+: 1592556070:0;v ~/.config/ncmpcpp/config
+: 1592575607:0;gh help
+: 1592575611:0;gh repo help
+: 1592575620:0;gh repo create help
+: 1592575678:0;gh repo create hotkeythingy -p
+: 1592575683:0;gh repo create hotkeythingy --public
+: 1592575719:0;git remote add origin git@github.com:phenax/hotkeythingy.git
+: 1592575723:0;git remote -v
+: 1592575729:0;git remote remove origin
+: 1592575730:0;git remote add origin git@github.com:phenax/hotkeythingy.git
+: 1592575734:0;git remote -v
+: 1592575736:0;git push
+: 1592575743:0;gco -
+: 1592575747:0;git push -u origin master
+: 1592575755:0;gco personal
+: 1592575762:0;git push -u origin personal
+: 1592575957:0;git log
+: 1592575969:0;gco -
+: 1592575979:0;git checkout e9622e7181337ade9d4dfb5943e5a202cc19969b -- README.md
+: 1592575986:0;git checkout e9622e7181337ade9d4dfb5943e5a202cc19969b -- hotkeythingy.1
+: 1592575993:0;git commit -m "Description update"
+: 1592575997:0;gp
+: 1592576004:0;gco -
+: 1592576007:0;git merge master
+: 1592576009:0;gp
+: 1592576034:0;~
+: 1592576037:0;update-dotfiles
+: 1592576043:0;sudo make install
