@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-STATE_DIR=$HOME/.local/share/hotkeythingy;
+STATE_DIR=$HOME/.local/share/shotkey;
 [[ ! -d "$STATE_DIR" ]] && mkdir $STATE_DIR;
 
 MODE_FILE=$STATE_DIR/mode;
@@ -13,7 +13,8 @@ get_mode() {
 }
 
 save_mode() {
-  echo "${MODE_LABEL:-$NORMAL_MODE}" > $MODE_FILE;
+  local mode_label=$SHOTKEY_MODE_LABEL;
+  echo "${mode_label:-$NORMAL_MODE}" > $MODE_FILE;
   update-dwmblock keymode;
 }
 

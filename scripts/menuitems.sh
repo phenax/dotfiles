@@ -46,7 +46,7 @@ volume_module() {
 }
 
 keymode_module() {
-  echo "$(~/scripts/hotkeythingy.sh mode)";
+  echo "$(~/scripts/shotkey.sh mode)";
 }
 
 

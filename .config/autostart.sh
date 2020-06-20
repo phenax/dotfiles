@@ -30,7 +30,7 @@ run() {
 
   # Key daemon
   #run sxhkd -c ~/.config/sxhkd/dwm.sxhkdrc;
-  run hotkeythingy;
+  run shotkey;
 
   # Compositor
   run compton --config ~/.config/compton.conf;

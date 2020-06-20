@@ -5,7 +5,7 @@ alias edot='sensible-editor ~/scripts/dotfiles.sh';
 alias evim='gvim && sensible-editor init.vim';
 
 alias edwm='gdwm && sensible-editor .';
-alias ebar='gdwmb && sensible-editor .';
+alias ebar='gbar && sensible-editor .';
 alias ekey='gkey && sensible-editor .';
 alias eas='sensible-editor ~/.config/autostart.sh';
 

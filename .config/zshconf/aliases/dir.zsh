@@ -17,7 +17,7 @@ alias gzsh='cd ~/.config/zshconf';
 
 alias gsuck='cd ~/.config/suckless';
 alias gdwm='cd ~/.config/suckless/dwm';
-alias gdwmb='cd ~/.config/suckless/dwmbar';
+alias gbar='cd ~/.config/suckless/dwmblocks';
 
 alias gkey='cd ~/.config/suckless/hotkeythingy';
 

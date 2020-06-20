@@ -950,3 +950,173 @@ git config --global color.diff.whitespace "red reverse"
 : 1592576034:0;~
 : 1592576037:0;update-dotfiles
 : 1592576043:0;sudo make install
+: 1592576057:0;yadm status
+: 1592576285:0;du -ah
+: 1592576288:0;du -ah -d 1
+: 1592576293:0;make
+: 1592576294:0;gd
+: 1592576340:0;gc
+: 1592576344:0;gaa
+: 1592576345:0;gc
+: 1592576360:0;gco -
+: 1592576362:0;git add .
+: 1592576363:0;gc
+: 1592576373:0;gp
+: 1592576380:0;gco -
+: 1592576384:0;git merge master
+: 1592576386:0;gp
+: 1592576398:0;du -ah -d 1
+: 1592576403:0;man du
+: 1592576412:0;du -ah -b -d 1
+: 1592576420:0;du -ah -b -d $(which hotkeythingy)
+: 1592576428:0;du -ah -b  $(which hotkeythingy)
+: 1592576471:0;gco -
+: 1592576514:0;gaa
+: 1592576515:0;gc
+: 1592576526:0;gp
+: 1592576531:0;gco -
+: 1592576534:0;git merge master
+: 1592576535:0;gp
+: 1592577480:0;git pull
+: 1592577486:0;git merge master
+: 1592577490:0;gco master
+: 1592577492:0;git pull
+: 1592577495:0;gco -
+: 1592577499:0;git merge master
+: 1592577502:0;gp
+: 1592577513:0;sudo make install
+: 1592578418:0;v
+: 1592586730:0;ekey
+: 1592633320:0;QT_QPA_PLATFORMTHEME=gtk3 qutebrowser
+: 1592633775:0;v ~/.config/qutebrowser/config.py
+: 1592634419:0;kdialog
+: 1592634442:0;dialog
+: 1592634449:0;dialog | grep file
+: 1592634457:0;dialog --fselect
+: 1592634480:0;dialog --fselect ~/wallpapers
+: 1592634484:0;dialog --fselect ~/wallpapers/forest.jpg
+: 1592634487:0;dialog | grep file
+: 1592634494:0;dialog --fselect ~/wallpapers/forest.jpg 500 500
+: 1592634582:0;dialog --fselect ~/wallpapers 500 500
+: 1592634662:0;v ~/.config/gtk-3.0/gtkfilechooser.ini
+: 1592635954:0;rm ~/.config/gtk-3.0/gtkfilechooser.ini
+: 1592636378:0;v /usr/local/bin/kdialog
+: 1592636409:0;sudo v /usr/local/bin/kdialog
+: 1592636419:0;sudo vim /usr/local/bin/kdialog
+: 1592636445:0;chmod u+x /usr/local/bin/kdialog
+: 1592636449:0;sudo chmod +x /usr/local/bin/kdialog
+: 1592636475:0;kdialog
+: 1592636611:0;XDG_CURRENT_DESKTOP=KDE qutebrowser
+: 1592646375:0;gkey
+: 1592646376:0;v .
+: 1592646477:0;v ~/scripts/hotkeythingy.sh ~/scripts/shotkey.sh
+: 1592646485:0;mv ~/scripts/hotkeythingy.sh ~/scripts/shotkey.sh
+: 1592646491:0;v ~/scripts/shotkey.sh
+: 1592646517:0;rm -rf ~/.local/share/hotkeythingy
+: 1592646589:0;mv hotkeythingy.c shotkey.c
+: 1592646594:0;mv hotkeythingy.1 shotkey.1
+: 1592646621:0;make
+: 1592646698:0;v ~/.config/qutebrowser/config.py
+: 1592646918:0;git add .
+: 1592646923:0;grep hotkeythin
+: 1592646928:0;grep -r hotkeythin
+: 1592646931:0;rm tags
+: 1592646932:0;grep -r hotkeythin
+: 1592646937:0;rm shotkey
+: 1592646938:0;grep -r hotkeythin
+: 1592646982:0;l
+: 1592646985:0;rm hotkeythingy.o
+: 1592646993:0;rm -f *.o
+: 1592646998:0;git add ,
+: 1592647000:0;git add .
+: 1592647012:0;gcm "Renames hotkeythingy to shotkey"
+: 1592647029:0;git reset --soft HEAD^`
+: 1592647032:0;git reset --soft HEAD^1
+: 1592647036:0;gco master
+: 1592647059:0;gco -- config.h
+: 1592647068:0;git reset HEAD
+: 1592647071:0;gco -- config.h
+: 1592647074:0;gco -
+: 1592647079:0;git add .
+: 1592647085:0;git commit -m "Renames project to shotkey"
+: 1592647090:0;gco personal
+: 1592647091:0;git merge
+: 1592647094:0;git merge master
+: 1592647103:0;git add .
+: 1592647111:0;git commit -m "Renames script to shotkey"
+: 1592647119:0;make
+: 1592647121:0;sudo make install
+: 1592647136:0;gco master
+: 1592647141:0;git log
+: 1592647145:0;gco 353dab50ea72a4c9b013d0305939f241260c4839
+: 1592647149:0;sudo make install
+: 1592647153:0;sudo make uninstall
+: 1592647157:0;gco -
+: 1592647162:0;hotkeythingy
+: 1592647168:0;gco -
+: 1592647172:0;rm shotkey
+: 1592647175:0;gco -
+: 1592647179:0;rm hotkeythingy
+: 1592647187:0;hotkeythingy
+: 1592647191:0;sudo make install
+: 1592647197:0;gp
+: 1592647203:0;gco -
+: 1592647223:0;rm shotkey
+: 1592647225:0;gco -
+: 1592647261:0;git add .
+: 1592647267:0;git commit -m "Updates readme link"
+: 1592647272:0;gp
+: 1592647278:0;gco -
+: 1592647284:0;gco personal
+: 1592647286:0;git merge master
+: 1592647288:0;gp
+: 1592647298:0;sudo make install
+: 1592647561:0;v ~/.config/autostart.sh
+: 1592647603:0;~/scripts/shotkey.sh
+: 1592647606:0;~/scripts/shotkey.sh mode
+: 1592647615:0;ebar
+: 1592647625:0;cd ~/.config/suckless/dwmblocks
+: 1592647628:0;ezsh
+: 1592647667:0;ebar
+: 1592647683:0;v ~/scripts/menuitems.sh
+: 1592647748:0;ekey
+: 1592647777:0;gco master
+: 1592647801:0;git add .
+: 1592647815:0;gcm "Changes env variable to prevent clashes"
+: 1592647819:0;git remote -v
+: 1592647837:0;git remote remove origin
+: 1592647847:0;git remote add origin git@github.com:phenax/shotkey.git
+: 1592647850:0;git log
+: 1592647858:0;git push -u origin master
+: 1592647869:0;gco personal
+: 1592647874:0;git merge master
+: 1592647888:0;gaa
+: 1592647890:0;gc
+: 1592647902:0;gp -u origin personal
+: 1592647912:0;gco -
+: 1592647929:0;v ~/scripts/shotkey.sh
+: 1592647967:0;sudo make install
+: 1592648001:0;gco -
+: 1592648035:0;grep -r MODE_LABEL
+: 1592648045:0;grep -r MODE_ID
+: 1592648052:0;gd
+: 1592648054:0;git add .
+: 1592648060:0;gcm "Updates makefile"
+: 1592648061:0;gp
+: 1592648066:0;gc!
+: 1592648082:0;gp
+: 1592648088:0;gco -
+: 1592648091:0;git merge master
+: 1592648094:0;sudo make install
+: 1592648159:0;gco -
+: 1592648167:0;gst
+: 1592648168:0;git add .
+: 1592648179:0;gcm "Corrects super key"
+: 1592648180:0;gp
+: 1592648186:0;gco -
+: 1592648190:0;git merge master
+: 1592648220:0;gaa
+: 1592648225:0;gcm
+: 1592648229:0;gc
+: 1592648232:0;gp
+: 1592648241:0;sudo make install
