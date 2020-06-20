@@ -259,6 +259,8 @@ c.downloads.open_dispatcher = 'dl_move {}'
 c.downloads.position = 'bottom'
 c.downloads.remove_finished = 1000
 
+# c.qt.force_platformtheme='gtk3'
+
 # Goto downloads directory
 nunmap('gd')
 nmap('gdl', 'spawn --userscript open_downloads')
@@ -304,6 +306,7 @@ c.url.searchengines = {
     # Dev stuff
     'bp': 'https://bundlephobia.com/result?p={}',
     'ciu': 'https://caniuse.com/#search={}',
+    'g': 'https://github.com/{}',
     'gh': 'http://github.com/search?q={}',
     'hg': 'http://www.haskell.org/hoogle/?hoogle={}',
     'aw': 'http://wiki.archlinux.org/index.php?search={}',
