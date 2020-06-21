@@ -22,6 +22,11 @@ qr-str() { curl qrenco.de/$1; }
 # Audio download
 alias dl-audio="youtube-dl --ignore-errors --output '%(title)s.%(ext)s' --extract-audio";
 
+# Swallow window
+alias mpv="swallow mpv";
+alias sxiv="swallow sxiv";
+alias zathura="swallow zathura";
+
 # Dictionary
 dict() { curl dict://dict.org/d:$1; }
 

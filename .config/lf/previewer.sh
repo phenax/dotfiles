@@ -19,6 +19,8 @@ case "$1" in
 	*.epub) mediainfo "$1" ;;
 	*.[1-8]) man "$1" | col -b ;;
 
+  #*.jpg) ~/scripts/image.sh draw "$1" 2 2 30 30 ;;
+
 	# Images
 	*.bmp|*.jpg|*.jpeg|*.png|*.xpm|*.webp) mediainfo "$1"; ;;
 

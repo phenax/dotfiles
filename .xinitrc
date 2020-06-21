@@ -28,9 +28,8 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-# TODO: Try to find a way to get a simple quit here
-while :; do
-  ssh-agent dwm
+#trap 'pkill -x panel' INT TERM QUIT EXIT;
+
+while true; do
+  ssh-agent dwm || break;
 done
-#ssh-agent dwm
-#exec bspwm

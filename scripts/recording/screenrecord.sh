@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
-outfile=${1:-"$HOME/Pictures/recordings/video-screen-$(date -Iminutes).mp4"};
+prefix=${1:-"video"};
+
+outfile=${2:-"$HOME/Pictures/recordings/$prefix-screen-$(date -Iminutes).mp4"};
 
 ffmpeg -f x11grab -s 1920x1080 -i :0.0 -f alsa -i hw:0,0 $outfile;

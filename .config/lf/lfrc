@@ -10,9 +10,23 @@ set preview false
 set previewer ~/.config/lf/previewer.sh
 
 # Function definitions {{{
-cmd open_terminal ${{ $TERMINAL & disown }}
-
 cmd open ${{
+    case $(file --mime-type "$f" -bL) in
+        text/*|application/json) $EDITOR "$fx" 2&> /dev/null ;;
+        video/*)   setsid -f swallow mpv "$f" 2&> /dev/null ;;
+        image/gif) setsid -f swallow mpv "$f" 2&> /dev/null ;;
+        image/*)   setsid -f swallow sxiv "$f" 2&> /dev/null ;;
+        application/pdf) setsid -f swallow zathura "$f" 2&> /dev/null ;;
+        *)
+          for f in "$fx"; do
+            xdg-open "$f"> /dev/null 2> /dev/null &
+          done
+        ;;
+    esac;
+    disown;
+}}
+
+cmd open_out ${{
     case $(file --mime-type "$f" -bL) in
         text/*|application/json) $EDITOR "$fx" ;;
         video/*|application/pdf) xdg-open "$f" & ;;
@@ -54,9 +68,9 @@ cmd set_wallpaper $feh --bg-scale "$f"
 
 cmd show_images ${{
   if [ "$(echo "$fx" | wc -l)" = "1" ]; then
-    sxiv $(dirname "$fx") &
+    swallow sxiv $(dirname "$fx") &
   else
-    sxiv $fx &
+    swallow sxiv $fx &
   fi;
 }}
 
@@ -86,10 +100,9 @@ map rr      rename
 
 
 # View changes
-map <enter> open
+map <enter> open_out
 map si      show_images
 map du      $du -h -d1 | less
-map t       open_terminal
 map sh      :set hidden!
 map st      :set sortby time
 

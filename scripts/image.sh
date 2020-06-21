@@ -13,7 +13,7 @@ case "$1" in
         [x]="$3" [y]="$4" \
         [max_width]="$5" [max_height]="$6" \
         [path]="$2";
-      read;
+      read -ern 1;
   ) ;;
   "*") echo "Unknown command: '$1'" ;;
 esac

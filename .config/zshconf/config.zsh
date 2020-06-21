@@ -10,3 +10,5 @@ export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
 
 export HISTCONTROL=ignoreboth
 
+export LS_COLORS='di=35:ln=36:or=31:mi=31:ex=32:*.ts=36';
+
