@@ -1359,3 +1359,14 @@ git config --global color.diff.whitespace "red reverse"
 : 1592748057:0;v ~/.gitconfig
 : 1592748074:0;yadm .config/zsh_history
 : 1592748078:0;yadm add .config/zsh_history
+: 1592748083:0;yadm status
+: 1592748091:0;yadm add .config/vimwiki
+: 1592748094:0;yadm status
+: 1592748103:0;yadm commit -m "sync"
+: 1592748105:0;yadm push
+: 1592748287:0;v ~/README.md
+: 1592748297:0;yadm add README.md
+: 1592748310:0;yadm commit -m "Updates README.md"
+: 1592748315:0;yadm push
+: 1592748337:0;edot
+: 1592748349:0;update-dotfiles

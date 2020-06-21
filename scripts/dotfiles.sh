@@ -29,7 +29,7 @@ add-public-config() {
   # Applications
   add ~/.config/suckless;
   add ~/.config/qutebrowser;
-  add ~/.config/{lf,mpv,sxiv,zathura,ncmpcpp,mopidy};
+  add ~/.config/{lf,mpv,sxiv,zathura,ncmpcpp,mopidy,newsboat};
   # add ~/.config/spotifyd/spotifyd.conf;
   add ~/.config/transmission-daemon/settings.json;
   add ~/.config/transmission-remote-cli;

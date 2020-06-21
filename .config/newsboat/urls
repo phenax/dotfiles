@@ -1,0 +1,27 @@
+https://www.archlinux.org/feeds/news/               "~ArchNews"  tech
+https://www.psu.com/feed/?post_type=psu_news        "~PS news"   games
+
+https://www.reddit.com/r/PS4/.rss?format=xml           "~/r/ps4"         reddit games
+https://www.reddit.com/r/suckless/.rss?format=xml      "~/r/suckless"    reddit tech
+https://www.reddit.com/r/bspwm/.rss?format=xml         "~/r/bspwm"       reddit tech
+https://www.reddit.com/r/unixporn/.rss?format=xml      "~/r/unixporn"    reddit tech
+https://www.reddit.com/r/rust/.rss?format=xml          "~/r/rust"        reddit dev
+https://www.reddit.com/r/javascript/.rss?format=xml    "~/r/javascript"  reddit dev
+
+
+https://www.youtube.com/feeds/videos.xml?channel_id=UCdoPCztTOW7BJUPk2h5ttXA      "~CallMeKevin (YouTube)"        videos comedy games
+https://www.youtube.com/feeds/videos.xml?user=PewDiePie                           "~Pewdiepie (YouTube)"          videos comedy games
+https://www.youtube.com/feeds/videos.xml?user=jacksfilms                          "~Jacksfilms (YouTube)"         videos comedy
+https://www.youtube.com/feeds/videos.xml?channel_id=UCyWDmyZRjrGHeKF-ofFsT5Q      "~Commentiquette (YouTube)"     videos comedy
+https://www.youtube.com/feeds/videos.xml?channel_id=UCpIafFPGutTAKOBHMtGen7g      "~Gus Johnson (YouTube)"        videos comedy
+https://www.youtube.com/feeds/videos.xml?channel_id=UC8ENHE5xdFSwx71u3fDH5Xw      "~ThePrimeagen (YouTube)"       videos tech
+https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA      "~Luke Smith (YouTube)"         videos tech
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg      "~Distrotube (YouTube)"         videos tech
+https://www.youtube.com/feeds/videos.xml?user=OmegaDungeon                        "~Brodie Robertson (YouTube)"   videos tech
+https://www.youtube.com/feeds/videos.xml?user=gameranxTV                          "~Gameranx (YouTube)"           videos review games
+https://www.youtube.com/feeds/videos.xml?channel_id=UC3XTzVzaHQEd30rQbuvCtTQ      "~LastWeekTonight (YouTube)"    videos news
+https://www.youtube.com/feeds/videos.xml?user=schooloflifechannel                 "~School Of Life (YouTube)"     videos philosophy
+https://www.youtube.com/feeds/videos.xml?channel_id=UCimiUgDLbi6P17BdaCZpVbg      "~exurb1a (YouTube)"            videos comedy philosophy
+https://www.youtube.com/feeds/videos.xml?channel_id=UCr3cBLTYmIK9kY0F_OdFWFQ      "~Casually explained (YouTube)" videos comedy
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVpankR4HtoAVtYnFDUieYA      "~zefrank1 (YouTube)"           videos comedy
+
