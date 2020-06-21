@@ -1351,3 +1351,5 @@ git config --global color.diff.whitespace "red reverse"
 : 1592747962:0;cd ../st
 : 1592747966:0;cd ../shotkey
 : 1592747971:0;../
+: 1592748010:0;v ~/.gitmodules
+: 1592748028:0;update-dotfiles
