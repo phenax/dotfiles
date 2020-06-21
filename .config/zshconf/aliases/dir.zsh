@@ -19,5 +19,5 @@ alias gsuck='cd ~/.config/suckless';
 alias gdwm='cd ~/.config/suckless/dwm';
 alias gbar='cd ~/.config/suckless/dwmblocks';
 
-alias gkey='cd ~/.config/suckless/hotkeythingy';
+alias gkey='cd ~/.config/suckless/shotkey';
 

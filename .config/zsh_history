@@ -1120,3 +1120,234 @@ git config --global color.diff.whitespace "red reverse"
 : 1592648229:0;gc
 : 1592648232:0;gp
 : 1592648241:0;sudo make install
+: 1592659420:0;ls
+: 1592659422:0;lf
+: 1592659795:0;w3m
+: 1592659798:0;yay -S w3m
+: 1592659822:0;v ~/.config/lf/image.sh
+: 1592659832:0;chmod +x $_
+: 1592659842:0;v ~/.config/lf/lfrc
+: 1592659874:0;lf
+: 1592660029:0;w3m
+: 1592660123:0;ueberzug
+: 1592660130:0;yay -S ueberzug
+: 1592660142:0;yay ueberzug
+: 1592660183:0;~/scripts/image.sh draw ~/wallpapers/forest.jpg
+: 1592660194:0;~/scripts/image.sh draw ~/wallpapers/city.jpg
+: 1592660231:0;~/scripts/image.sh draw ~/wallpapers/city.jpg 10 10 200 200
+: 1592660264:0;lf
+: 1592660272:0;lf ~/wallpapers/
+: 1592660855:0;fg
+: 1592660898:0;lf ~/wallpapers/
+: 1592661204:0;cd ~/.config/lf
+: 1592661207:0;rm image.sh
+: 1592661238:0;lf ~/wallpapers/
+: 1592661256:0;~/scripts/image.sh draw ~/wallpapers/city.jpg 10 10 200 200
+: 1592661298:0;lf ~/wallpapers/
+: 1592661515:0;LS_COLORS='di=5' lf ~/wallpapers/
+: 1592661541:0;LS_COLORS='di=13' lf ~/wallpapers/
+: 1592661549:0;LS_COLORS='di=13:' lf ~/wallpapers/
+: 1592661565:0;LS_COLORS="$LS_COLORS:di=13" lf ~/wallpapers/
+: 1592661589:0;LS_COLORS="$LS_COLORS:di=45" lf ~/wallpapers/
+: 1592661597:0;LS_COLORS="$LS_COLORS:di=45" lf ~
+: 1592661614:0;LS_COLORS="$LS_COLORS:di=35" lf ~
+: 1592661700:0;LS_COLORS="$LS_COLORS:di=35:ln=36:or=31:ex=32" lf ~
+: 1592661799:0;echo $LS_COLORS
+: 1592661808:0;ezsh
+: 1592661856:0;lf
+: 1592661975:0;read hello
+: 1592661981:0;read -p wow hello
+: 1592661987:0;read -p 'wow: ' hello
+: 1592661991:0;man read
+: 1592662134:0;v ~/.config/compton.conf
+: 1592662345:0;glxinfo
+: 1592662585:0;man compton
+: 1592662589:0;man picom
+: 1592662884:0;picom --blur-kerns
+: 1592662900:0;picom --help | grep blur
+: 1592662915:0;picom --help | grep blur -A 5
+: 1592670972:0;gdwm
+: 1592670974:0;v .
+: 1592671006:0;gkey
+: 1592671007:0;v .
+: 1592671051:0;sudo make install
+: 1592671059:0;lf
+: 1592671072:0;man shotkey
+: 1592671511:0;~/scripts/recording/screenrecord.sh
+: 1592671529:0;mpv *.mp4
+: 1592671552:0;cd ~/scripts/recording
+: 1592671558:0;mpv out.mkv
+: 1592671568:0;rm out.mkv
+: 1592671574:0;mpv *.mkv
+: 1592671578:0;mpv out.mkv
+: 1592671586:0;ls -a
+: 1592671616:0;v ~/scripts/recording/screenrecord.sh
+: 1592671655:0;~/scripts/recording/screenrecord.sh
+: 1592671676:0;~/scripts/recording/screenrecord.sh rice-dwm
+: 1592671683:0;v ~/scripts/recording/screenrecord.sh
+: 1592671721:0;~/scripts/recording/screenrecord.sh rice-dwm
+: 1592723124:0;ekey
+: 1592725023:0;v ~/.xinitrc
+: 1592725083:0;killall -9 dwm
+: 1592725429:0;read -p ":: " -r "hello"
+: 1592725434:0;read -p "> " -r "hello"
+: 1592725456:0;read
+: 1592725460:0;man read
+: 1592725536:0;xdo id
+: 1592725572:0;man xdo
+: 1592725630:0;wid=$(xdo id); xdo hide && sxiv ~/wallpapers/apocal.jpg && xdo show "$wid"
+: 1592725669:0;ezsh
+: 1592725699:0;v ~/.bin/swallow
+: 1592725745:0;chmod u+x ~/.bin/swallow
+: 1592725751:0;v ~/.bin/swallow
+: 1592725794:0;swallow sxiv ~/wallpapers/apocal.jpg
+: 1592725807:0;ezsh
+: 1592725871:0;v ~/.config/lf/previewer.sh
+: 1592725899:0;v ~/.config/lf/lfrc
+: 1592726368:0;killall -9 dwm
+: 1592726450:0;sudo vim /etc/systemd
+: 1592726470:0;sudo vim /etc/systemd/system/getty@tty1.service.d
+: 1592726476:0;sudo vim /etc/systemd/system/getty@tty1.service.d/override.conf
+: 1592726486:0;sudo vim /etc/systemd/system/getty@tty1.service.d/noclear.conf
+: 1592732396:0;ekey
+: 1592732433:0;make
+: 1592734854:0;sudo make install
+: 1592734860:0;gco -
+: 1592734873:0;gd
+: 1592734877:0;git add .
+: 1592734902:0;lgaa
+: 1592734904:0;gaa
+: 1592734920:0;gcm "Fixes style issues"
+: 1592734927:0;gp
+: 1592734953:0;gco -
+: 1592734955:0;git merge master
+: 1592735245:0;ekey
+: 1592735251:0;make
+: 1592735269:0;gaa
+: 1592735271:0;gc
+: 1592735273:0;gp
+: 1592735345:0;sudo ma
+: 1592735347:0;sudo make install
+: 1592735365:0;sxiv ~/wallpapers/city.jpg
+: 1592735409:0;ps aux | grep sxiv
+: 1592735415:0;killall -9 sxiv
+: 1592735477:0;gst
+: 1592735484:0;gsuck
+: 1592735487:0;cd st
+: 1592735495:0;git remote -v
+: 1592735499:0;git rebase --help
+: 1592735525:0;git pull
+: 1592735533:0;git fetch upstream
+: 1592735544:0;git rebase upstream/master
+: 1592735549:0;v .
+: 1592735711:0;make
+: 1592735736:0;rm config.h
+: 1592735737:0;make
+: 1592735781:0;gaa
+: 1592735782:0;gc
+: 1592735792:0;git rebase --continue
+: 1592735805:0;rm config.h
+: 1592735806:0;make
+: 1592735869:0;rm config.h && make
+: 1592735876:0;git rebase --continue
+: 1592735883:0;gaa
+: 1592735885:0;git rebase --continue
+: 1592735905:0;rm config.h && make
+: 1592735908:0;gaa
+: 1592735910:0;git rebase --continue
+: 1592735921:0;make
+: 1592735923:0;./st
+: 1592735926:0;curl https://corona-stats.online
+: 1592735933:0;ytop
+: 1592735941:0;./st
+: 1592735965:0;sudo make install
+: 1592735967:0;rm config.h && make
+: 1592735970:0;./st
+: 1592735973:0;sudo make install
+: 1592735982:0;st -v
+: 1592736020:0;du -ah -b  $(which hotkeythingy)
+: 1592736028:0;du -ah -b  $(which st)
+: 1592736035:0;du -ah $(which st)
+: 1592736042:0;du -ah -b $(which dwm)
+: 1592736072:0;for x in a b c; do echo 1; done;
+: 1592736078:0;for x in a b c; do echo $x; done;
+: 1592736107:0;for x in dwm shotkey st dwmblocks; do du -ah -b $x; done;
+: 1592736113:0;for x in dwm shotkey st dwmblocks; do du -ah -b $(which $x); done;
+: 1592736132:0;for x in dwm shotkey st dwmblocks; do du -ah -b $(which $x); done | awk '{print $1}'
+: 1592736168:0;for x in dwm shotkey st dwmblocks; do du -ah -b $(which $x); done | awk '{s+=$1} END {print s}'
+: 1592736190:0;for x in dwm shotkey dwmblocks; do du -ah -b $(which $x); done | awk '{s+=$1} END {print s}'
+: 1592736211:0;git push -u origin master -f
+: 1592736255:0;../dwm
+: 1592736260:0;git rebase upstream/master
+: 1592736265:0;git fetch upstream
+: 1592736268:0;git rebase upstream/master
+: 1592736274:0;git push -u origin master -f
+: 1592736287:0;sudo make install
+: 1592736292:0;../
+: 1592736296:0;cd dmenu
+: 1592736299:0;git rebase upstream/master
+: 1592736313:0;../st
+: 1592736317:0;git remote -v
+: 1592736328:0;git remote add upstream git://git.suckless.org/dmenu
+: 1592736341:0;git fetch upstream
+: 1592736345:0;git rebase upstream/master
+: 1592736349:0;git push -u origin master -f
+: 1592736359:0;../
+: 1592736366:0;cd dwmblocks
+: 1592736369:0;..
+: 1592736374:0;cd bslock
+: 1592736385:0;git fetch upstream
+: 1592736388:0;git rebase upstream/master
+: 1592736391:0;gp
+: 1592736399:0;..
+: 1592736408:0;mv hotkeythingy shotkey
+: 1592736411:0;ezsh
+: 1592736428:0;ls
+: 1592736435:0;cd tabbed
+: 1592736441:0;git remote -v
+: 1592736449:0;git remote add upstream git://git.suckless.org/tabbed
+: 1592736453:0;git fetch upstream
+: 1592736459:0;git rebase upstream/master
+: 1592736463:0;v .
+: 1592736538:0;git rebase --abort
+: 1592736547:0;cd ~/dev/vimdev/palenight.vim
+: 1592736550:0;gd
+: 1592736554:0;gaa
+: 1592736558:0;gcm "color change"
+: 1592736559:0;v .
+: 1592736809:0;v +split
+: 1592736817:0;v +split+vsplit
+: 1592737149:0;w3m https://google.com
+: 1592737236:0;ytop
+: 1592737694:0;gdwm
+: 1592737695:0;lf
+: 1592738175:0;ecmd
+: 1592738278:0;v ~/.config/newsboat/urls
+: 1592738330:0;newsboat
+: 1592738360:0;vim ~/.newsboat/config
+: 1592738385:0;vim ~/.config/newsboat/config
+: 1592738391:0;newsboat
+: 1592745614:0;v ~/.config/newsboat/config
+: 1592745671:0;newsboat
+: 1592745691:0;v ~/.config/newsboat/config
+: 1592745794:0;newsboat
+: 1592746245:0;cd ~/dev/vimdev/palenight.vim
+: 1592746246:0;g
+: 1592746247:0;gd
+: 1592746252:0;v .
+: 1592747349:0;newsboat
+: 1592747367:0;ecmd
+: 1592747410:0;man newsboat
+: 1592747629:0;v
+: 1592747635:0;v +split+vsplit
+: 1592747892:0;git add .
+: 1592747923:0;gcm "Adds better highlight status line"
+: 1592747932:0;gp
+: 1592747938:0;gsuck
+: 1592747943:0;cd bslock
+: 1592747946:0;../dmenu
+: 1592747950:0;../dwm
+: 1592747959:0;../dwmblocks
+: 1592747962:0;cd ../st
+: 1592747966:0;cd ../shotkey
+: 1592747971:0;../
