@@ -1353,3 +1353,9 @@ git config --global color.diff.whitespace "red reverse"
 : 1592747971:0;../
 : 1592748010:0;v ~/.gitmodules
 : 1592748028:0;update-dotfiles
+: 1592748045:0;yadm status
+: 1592748049:0;yadm add .gitconfig
+: 1592748053:0;yadm status
+: 1592748057:0;v ~/.gitconfig
+: 1592748074:0;yadm .config/zsh_history
+: 1592748078:0;yadm add .config/zsh_history
