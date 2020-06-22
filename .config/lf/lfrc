@@ -10,7 +10,7 @@ set preview false
 set previewer ~/.config/lf/previewer.sh
 
 # Function definitions {{{
-cmd open ${{
+cmd open_inplace ${{
     case $(file --mime-type "$f" -bL) in
         text/*|application/json) $EDITOR "$fx" 2&> /dev/null ;;
         video/*)   setsid -f swallow mpv "$f" 2&> /dev/null ;;
@@ -26,7 +26,7 @@ cmd open ${{
     disown;
 }}
 
-cmd open_out ${{
+cmd open ${{
     case $(file --mime-type "$f" -bL) in
         text/*|application/json) $EDITOR "$fx" ;;
         video/*|application/pdf) xdg-open "$f" & ;;
@@ -100,7 +100,7 @@ map rr      rename
 
 
 # View changes
-map <enter> open_out
+map <enter> open_inplace
 map si      show_images
 map du      $du -h -d1 | less
 map sh      :set hidden!

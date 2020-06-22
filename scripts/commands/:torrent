@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-sensible-terminal -e transmission-remote-cli;
+sensible-terminal -e bash -c 'stig';
 
