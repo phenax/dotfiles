@@ -1,5 +1,13 @@
 #!/bin/sh
 
+width=`echo "$(tput cols) / 2" | bc`;
+height=`echo "$(tput lines) - 3" | bc`;
+
+x=$((width - 3));
+y=3;
+
+~/scripts/image.sh clear;
+
 case "$1" in
   # Archives
 	*.tgz|*.tar.gz) tar tzf "$1";;
@@ -19,10 +27,12 @@ case "$1" in
 	*.epub) mediainfo "$1" ;;
 	*.[1-8]) man "$1" | col -b ;;
 
-  #*.jpg) ~/scripts/image.sh draw "$1" 2 2 30 30 ;;
-
 	# Images
 	*.bmp|*.jpg|*.jpeg|*.png|*.xpm|*.webp) mediainfo "$1"; ;;
+
+	#*.bmp|*.jpg|*.jpeg|*.png|*.xpm|*.webp)
+    #~/scripts/image.sh draw "$1" "$x" "$y" "$width" "$height";
+  #;;
 
 	# Audio
   *.wav|*.mp3|*.flac|*.m4a|*.wma|*.ape|*.ac3|*.og[agx]|*.spx|*.opus|*.as[fx]|*.flac)

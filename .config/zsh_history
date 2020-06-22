@@ -1370,3 +1370,266 @@ git config --global color.diff.whitespace "red reverse"
 : 1592748315:0;yadm push
 : 1592748337:0;edot
 : 1592748349:0;update-dotfiles
+: 1592749609:0;yay cozette
+: 1592749630:0;fc-list | grep -i cozet
+: 1592749645:0;gsuck/st
+: 1592749646:0;gsuck /st
+: 1592749650:0;gsuck
+: 1592749653:0;st
+: 1592749656:0;cd st
+: 1592749658:0;v .
+: 1592749682:0;make
+: 1592749685:0;./st
+: 1592749687:0;ytop
+: 1592749712:0;sudo make install
+: 1592749716:0;git add .
+: 1592749746:0;git commit -m "Adds cozette font for braille chars"
+: 1592749748:0;gp
+: 1592749765:0;git fetch
+: 1592749772:0;git push -u origin master
+: 1592749779:0;git pull
+: 1592749785:0;git push -u origin master
+: 1592749807:0;cd dump
+: 1592750092:0;transmission-remote-cli
+: 1592750149:0;transmission-cli
+: 1592750155:0;transmission-remote-cli
+: 1592750165:0;yay transmission
+: 1592750183:0;yay -S stig
+: 1592750184:0;stig
+: 1592750254:0;yay -R transmission-remote-cli
+: 1592750268:0;v ~/.config/stig/rc
+: 1592750381:0;mkdir ~/.config/stig
+: 1592750386:0;stig
+: 1592750507:0;stig help cfgman
+: 1592750515:0;stig help
+: 1592750518:0;man stig
+: 1592750521:0;stig help
+: 1592750526:0;stig help rcfile
+: 1592750550:0;stig help
+: 1592750556:0;stig help settings
+: 1592750593:0;stig
+: 1592750618:0;stig help commands
+: 1592750642:0;stig
+: 1592750674:0;stig help
+: 1592750684:0;stig help rcfile
+: 1592750704:0;stig --tui
+: 1592750746:0;stig help keymap
+: 1592750862:0;stig
+: 1592750919:0;transmission-cli --help
+: 1592750925:0;transmission-cli --list
+: 1592750933:0;transmission-cli --help
+: 1592750939:0;transmission-cli --help | grep list
+: 1592750943:0;transmission-cli --help | grep show
+: 1592750947:0;transmission-cli
+: 1592750959:0;stig
+: 1592751939:0;ecmd
+: 1592751984:0;transmission-remote-cli || stig
+: 1592751988:0;transmission-remote-cli
+: 1592752004:0;transmission-remote-cli --help
+: 1592752007:0;transmission-remote-cli -v
+: 1592752009:0;transmission-remote-cli --help
+: 1592754407:0;yay -R code-oss
+: 1592754411:0;yay -R code
+: 1592754420:0;yay -Q | wc -l
+: 1592754424:0;yay -Q
+: 1592754501:0;cd ~/.config/lf
+: 1592754506:0;cat lfrun.sh
+: 1592754516:0;./lfrun.sh
+: 1592754531:0;v previewer.sh
+: 1592754540:0;./lfrun.sh ~/wallpapers
+: 1592754610:0;v draw_img.sh
+: 1592754623:0;chmod u+x draw_img.sh
+: 1592754647:0;v lfrc
+: 1592754734:0;./draw_img.sh ~/wallpapers/apocal.jpg
+: 1592754746:0;cd ~/.config/lf
+: 1592754749:0;rm draw_img.sh
+: 1592754765:0;v previewer.sh
+: 1592754928:0;v .
+: 1592755018:0;lf ~/scripts
+: 1592755110:0;~/scripts/image.sh draw ~/wallpapers/city.jpg 10 10 200 200
+: 1592755140:0;cd ~
+: 1592755141:0;~/scripts/image.sh draw ~/wallpapers/city.jpg 10 10 200 200
+: 1592755239:0;lf ~/wallpapers
+: 1592755266:0;~/.config/lf/lfrun.sh ~/wallpapers
+: 1592755353:0;tput cols
+: 1592755359:0;tput lines
+: 1592755572:0;~/.config/lf/lfrun.sh ~/wallpapers
+: 1592755765:0;yay -R w3m
+: 1592755915:0;~/.config/lf/lfrun.sh ~/wallpapers
+: 1592756895:0;man export
+: 1592756941:0;~/.config/lf/lfrun.sh ~/wallpapers
+: 1592758598:0;gkey
+: 1592758604:0;gco develop
+: 1592758609:0;gco master
+: 1592758611:0;v .
+: 1592758653:0;git clone git://git.suckless.org/dmenu
+: 1592758667:0;cd dmenu
+: 1592758672:0;v
+: 1592758817:0;rm -rf dmenu
+: 1592758820:0;git clone git://git.suckless.org/st
+: 1592759092:0;cp config.h config.def.h
+: 1592759098:0;make config.h
+: 1592759107:0;rm config.h
+: 1592759108:0;make config.h
+: 1592759127:0;v st/Makefile
+: 1592759250:0;make
+: 1592759266:0;rm -rf st
+: 1592759270:0;sudo make install
+: 1592759278:0;git add .
+: 1592759309:0;gcm "Adds config.def.h for default config"
+: 1592759314:0;gco personal
+: 1592759316:0;git merge master
+: 1592759322:0;git push -u origin master
+: 1592759328:0;gco -
+: 1592759336:0;gp -f
+: 1592759372:0;gco -
+: 1592759375:0;gp
+: 1592759383:0;sudo make install
+: 1592759556:0;flutter run
+: 1592759606:0;lf /opt/android-sdk
+: 1592759622:0;export PATH="$PATH:/opt/android-studio/platform-tools"
+: 1592759629:0;adb list
+: 1592759633:0;adb devices
+: 1592759640:0;adb help
+: 1592759649:0;sudo adb kill-server
+: 1592759655:0;sudo adb start-server
+: 1592759660:0;adb devices
+: 1592759667:0;flutter run
+: 1592759681:0;sudo adb kill-server
+: 1592759682:0;sudo adb start-server
+: 1592759684:0;flutter run
+: 1592759981:0;dart_analyzer
+: 1592759987:0;dartanalyzer
+: 1592759995:0;which dartanalyzer
+: 1592760006:0;rm /usr/bin/dartanalyzer
+: 1592760010:0;sudo rm /usr/bin/dartanalyzer
+: 1592760016:0;v /usr/bin/dartanalyzer
+: 1592760043:0;sudo vim /usr/bin/dartanalyzer
+: 1592760059:0;sudo chmod +x /usr/bin/dartanalyzer
+: 1592760062:0;dartanalyzer
+: 1592760068:0;sudo vim /usr/bin/dartanalyzer
+: 1592760072:0;dartanalyzer
+: 1592761038:0;gaa
+: 1592761053:0;gcm "Implements node focus in/out"
+: 1592761055:0;gp
+: 1592761060:0;git pull
+: 1592761066:0;gp
+: 1592761077:0;gco -b feature/keyboard_focus
+: 1592761086:0;git push -u origin feature/keyboard_focus
+: 1592761099:0;gh pr new
+: 1592761103:0;gh pr create
+: 1592761169:0;gco -
+: 1592761213:0;flutter build apk --split-per-abi
+: 1592761299:0;git pull
+: 1592761305:0;flutter build apk --split-per-abi
+: 1592761361:0;lf
+: 1592761365:0;adb --help
+: 1592761370:0;adb --help | grep apk
+: 1592761373:0;adb --help | grep install
+: 1592761390:0;export PATH="$PATH:/opt/android-studio/platform-tools"
+: 1592761428:0;adb install ./build/app/outputs/apk/release/app-arm64-v8a-release.apk
+: 1592761993:0;ecmd
+: 1592762036:0;mv ~/scripts/commands/:feed ~/scripts/commands/:rss
+: 1592811719:0;ezsh
+: 1592814000:0;ping is.best
+: 1592815151:0;ping owyn.co
+: 1592815153:0;ping owyn.com
+: 1592815469:0;edot
+: 1592815624:0;evim
+: 1592817228:0;xdo id
+: 1592817259:0;magick import -window "0x01A00006" ~/dump/something.jpg
+: 1592817265:0;sxiv ~/dump/something.jpg
+: 1592817275:0;magick import -window root ~/dump/something.jpg
+: 1592817280:0;sxiv ~/dump/something.jpg
+: 1592817306:0;v ~/scripts/screenshot.sh
+: 1592817350:0;magick import ~/dump/something.jpg
+: 1592817362:0;sxiv ~/dump/something.jpg
+: 1592817586:0;rm ~/dump/something.jpg
+: 1592817702:0;rm full-2020_06_22_14_51_12.jpg 
+: 1592817706:0;rm part-2020_06_22_14_51_*
+: 1592817710:0;rm 2020_06_22_14_49_59.jpg
+: 1592817712:0;cat 2
+: 1592817718:0;sxiv cat
+: 1592817720:0;sxiv 2
+: 1592817725:0;v 2
+: 1592817731:0;rm 2
+: 1592817823:0;ekey
+: 1592818010:0;sudo make install
+: 1592818144:0;v .
+: 1592818168:0;sudo make install
+: 1592818970:0;gd
+: 1592819094:0;git add .
+: 1592819100:0;git commit -m "Adds screenshot mode"
+: 1592819103:0;gco master
+: 1592819117:0;make
+: 1592819120:0;./shotkey
+: 1592819352:0;make && ./shotkey
+: 1592819371:0;fg
+: 1592819373:0;make && ./shotkey
+: 1592819480:0;ps aux
+: 1592819485:0;ps aux | grep shotkey
+: 1592819491:0;kill 105792
+: 1592819597:0;ps aux | grep shotkey
+: 1592819603:0;kill 106855
+: 1592819570:33;make && ./shotkey
+: 1592820038:0;make && ./shotkey
+: 1592820074:0;git add .
+: 1592820083:0;git commit -m "Fixes mode persist false case issue"
+: 1592820086:0;gco
+: 1592820090:0;gp
+: 1592820098:0;gco -
+: 1592820101:0;git merge master
+: 1592820117:0;gco -
+: 1592820150:0;cat ~/scripts/spotify.sh
+: 1592820324:0;make && ./shotkey
+: 1592820533:0;gco personal -- config.h
+: 1592820600:0;make config.h
+: 1592820606:0;gaa
+: 1592820611:0;git reset HEAD
+: 1592820613:0;gd
+: 1592820621:0;gco -- config.h
+: 1592820624:0;make config.h
+: 1592820636:0;gf
+: 1592820637:0;fd
+: 1592820639:0;gd
+: 1592820648:0;rm config.h
+: 1592820651:0;make config.h
+: 1592820654:0;gd
+: 1592820663:0;make && ./shotkey
+: 1592820687:0;rm config.h
+: 1592820689:0;make && ./shotkey
+: 1592820692:0;make config.h
+: 1592820693:0;make && ./shotkey
+: 1592820755:0;gd
+: 1592820762:0;rm config.h
+: 1592820764:0;make config.h
+: 1592820766:0;gaa
+: 1592820783:0;gcm "Improves example config"
+: 1592820785:0;gp
+: 1592820792:0;gco -
+: 1592820794:0;git merge master
+: 1592820846:0;gd
+: 1592820860:0;sudo make install
+: 1592820876:0;gaa
+: 1592820891:0;gc
+: 1592820894:0;gp
+: 1592820900:0;gco -
+: 1592820904:0;sudo make install
+: 1592820930:0;yadm status
+: 1592820934:0;edot
+: 1592821129:0;update-dotfiles notes
+: 1592821184:0;x() { return false; }
+: 1592821185:0;x
+: 1592821187:0;x;
+: 1592821195:0;x() { return 1; }
+: 1592821196:0;x;
+: 1592821210:0;x() { return [[ -z "wow" ]]; }
+: 1592821211:0;x;
+: 1592821217:0;x() { return [ -z "wow" ]; }
+: 1592821218:0;x;
+: 1592821238:0;x() { [[ -z "wow" ]]; }
+: 1592821239:0;x;
+: 1592821249:0;update-dotfiles notes
+: 1592821259:0;update-dotfiles dot
+: 1592821262:0;..
+: 1592821263:0;update-dotfiles dot
