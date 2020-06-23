@@ -1634,3 +1634,246 @@ git config --global color.diff.whitespace "red reverse"
 : 1592821262:0;..
 : 1592821263:0;update-dotfiles dot
 : 1592821271:0;update-dotfiles
+: 1592821294:0;ecmd
+: 1592826735:0;cd ~/.config/newsboat
+: 1592826736:0;v .
+: 1592826806:0;qutebrowser --help
+: 1592826814:0;qutebrowser --help | grep silent
+: 1592827337:0;chmod u+x browser.sh
+: 1592827508:0;curl https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F8%2F85%2FExponential_Function_(Abs_Imag_Part_at_Infinity)_Density.png&f=1&nofb=1 | sxiv -
+: 1592827513:0;curl https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F8%2F85%2FExponential_Function_(Abs_Imag_Part_at_Infinity)_Density.png&f=1&nofb=1
+: 1592827518:0;curl "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F8%2F85%2FExponential_Function_(Abs_Imag_Part_at_Infinity)_Density.png&f=1&nofb=1"
+: 1592827527:0;curl "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F8%2F85%2FExponential_Function_(Abs_Imag_Part_at_Infinity)_Density.png&f=1&nofb=1" | sxiv -
+: 1592827535:0;sxiv --help
+: 1592827541:0;sxiv -h
+: 1592828149:0;man newsboat
+: 1592828624:0;neofetch
+: 1592828661:0;v ~/.config/neofetch/config.conf
+: 1592828673:0;neofetch
+: 1592828699:0;distro
+: 1592828710:0;neofetch
+: 1592829104:0;edot
+: 1592834558:0;gkey
+: 1592834559:0;v .
+: 1592834572:0;gco -
+: 1592834657:0;ls
+: 1592834660:0;l
+: 1592834662:0;ls
+: 1592834664:0;l
+: 1592834675:0;make
+: 1592834921:0;gd
+: 1592834927:0;make
+: 1592834931:0;./shotkey
+: 1592835055:0;rm config.h
+: 1592835057:0;make config.h
+: 1592835059:0;mke
+: 1592835061:0;make
+: 1592835069:0;make && ./shotkey
+: 1592838924:0;rm config.h
+: 1592838927:0;make config.h
+: 1592838930:0;gd
+: 1592838944:0;make
+: 1592838946:0;gaa
+: 1592838958:0;gcm "Fixes warnings"
+: 1592838961:0;gp
+: 1592838975:0;gco -
+: 1592838977:0;git merge master
+: 1592838983:0;gp
+: 1592839015:0;sudo make install
+: 1592839103:0;gaa
+: 1592839116:0;gcm "Screenshot persist changed"
+: 1592839117:0;p
+: 1592839119:0;gp
+: 1592844754:0;v ~/scripts/screenshot.sh
+: 1592845497:0;echo "" | dmenu -p "ww"
+: 1592845503:0;echo -n "" | dmenu -p "ww"
+: 1592845508:0;dmenu -p "ww"
+: 1592845594:0;playerctl
+: 1592845601:0;playerctl --help
+: 1592845606:0;playerctl --help | grep device
+: 1592845625:0;playerctl play --help | grep device
+: 1592845628:0;playerctl play --help
+: 1592845636:0;playerctl play help
+: 1592845660:0;v ~/scripts/spotify.sh
+: 1592845727:0;playerctl --list
+: 1592845730:0;playerctl -l
+: 1592845743:0;playerctl play --player=mopidy
+: 1592845763:0;playerctl play-pause --player=mopidy
+: 1592845781:0;playerctl --player=mopidy play-pause
+: 1592847059:0;v
+: 1592893072:0;notify-send "wow"
+: 1592901258:0;la | wc -l
+: 1592901260:0;la
+: 1592901267:0;rm .wget-hsts
+: 1592901279:0;rm -rf .w3m
+: 1592901282:0;la
+: 1592901340:0;mv wallpapers ~/Pictures
+: 1592901348:0;v .fehbg
+: 1592901366:0;edot
+: 1592901385:0;cd scripts
+: 1592901392:0;ag "wallpaper"
+: 1592901398:0;cd ~/.bin
+: 1592901399:0;ag "wallpaper"
+: 1592901427:0;la
+: 1592901431:0;la | wc -l
+: 1592901442:0;lf .npm
+: 1592901462:0;cat .npmrc
+: 1592901473:0;rm .node_repl_history
+: 1592901478:0;lf .node-gyp
+: 1592901486:0;lf .mozilla
+: 1592901505:0;yay -R firefox
+: 1592901516:0;rm .mozilla
+: 1592901520:0;rm .mozilla -rf
+: 1592901525:0;la | wc -l
+: 1592901529:0;la
+: 1592901544:0;lf .rustup
+: 1592901563:0;lf .stack
+: 1592901582:0;yay -Q | grep haskell
+: 1592901585:0;yay -Q | grep hs
+: 1592901589:0;yay -Q
+: 1592901653:0;man pacman
+: 1592901668:0;pacman stack
+: 1592901677:0;yay -Q | grep stac
+: 1592901679:0;yay -Q | grep stack
+: 1592901683:0;rm -rf .stack
+: 1592901690:0;ls
+: 1592901692:0;la
+: 1592901700:0;yay -Q | grep haskell
+: 1592901709:0;pacman -Qi pidgin
+: 1592901715:0;pacman -Qi qutebrowser
+: 1592901726:0;pacman -Qi haskell-filelock
+: 1592901760:0;pacman -T haskell-filelock
+: 1592901775:0;yay -R haskell-filelock
+: 1592901780:0;yay -Q
+: 1592901802:0;pacman -Qi xxhash
+: 1592901824:0;yay -Qi xxhash
+: 1592901838:0;yay -Qi xxhash | grep 'Install Reason'
+: 1592901888:0;f() { yay -Qi "$1" | grep 'Install Reason'; }
+: 1592901912:0;f() { echo -n "$1";   yay -Qi "$1" | grep 'Install Reason'; }
+: 1592901918:0;f xxhash
+: 1592901925:0;f() { echo -n "$1    ";   yay -Qi "$1" | grep 'Install Reason'; }
+: 1592901926:0;f xxhash
+: 1592901961:0;f() { while read l; do echo -n "$l    ";   yay -Qi "$l" | grep 'Install Reason'; done; }
+: 1592901968:0;echo xxhash | f
+: 1592901975:0;pacman -Q | f
+: 1592901999:0;pacman -Q | awk '{print $1}' | f
+: 1592902008:0;pacman -Q | awk '{print $1}' | f | grep 'Explicitly'
+: 1592902096:0;yay -R beets
+: 1592902114:0;bmon
+: 1592902180:0;colorpicker
+: 1592902203:0;systemctl status dhcpcd
+: 1592902335:0;mtm
+: 1592902387:0;yay -R nerd-fonts-fira-code
+: 1592902450:0;powertop
+: 1592902453:0;sudo powertop
+: 1592902556:0;pv
+: 1592902578:0;echo "fooo nabaardasd asdasf sdfsd fsdfsfsdfsfsf s fsf sd" | pv
+: 1592902595:0;curl https://httpbin.org/get | pv
+: 1592902804:0;yay -R xorg-xkill
+: 1592902935:2;pacman -Q | awk '{print $1}' | while read l; do echo -n "$l    ";   yay -Qi "$l" | grep 'Install Reason'; done | grep 'Explicitly'
+: 1592902953:0;pacman -Q | awk '{print $1}' | while read l; do echo -n "$l    ";   yay -Qi "$l" | grep 'Install Reason'; done | grep 'Explicitly' | awk '{print $1}'
+: 1592902986:0;man pacman
+: 1592903011:0;yay -Q --help
+: 1592903022:0;yay -Q --help | grep size
+: 1592903049:0;yay -Q --help
+: 1592903053:0;yay -Qd
+: 1592903066:0;yay -Qe
+: 1592903103:0;auto-remove
+: 1592903121:0;yay -Q | wc -l
+: 1592903143:0;yay -Qo qutebrowser
+: 1592903151:0;yay -Qo fzf
+: 1592903154:0;yay -Qo ag
+: 1592907884:0;v
+: 1592908536:0;v ~/dump/youtubecast
+: 1592910777:0;yay -Qe | wc -l
+: 1592910789:0;yay -Q | wc -l
+: 1592910812:0;yay -Qn | wc -l
+: 1592910817:0;yay -Q | wc -l
+: 1592910823:0;yay -Qm | wc -l
+: 1592910825:0;yay -Qm
+: 1592910840:0;yay -Qdt
+: 1592911141:0;ytop
+: 1592911316:0;v README.md
+: 1592912216:0;auto-remove
+: 1592912234:0;ezsh
+: 1592912264:0;systemd-ask-password
+: 1592912326:0;SUDO_ASKPASS="echo '' | dmenu" sudo su
+: 1592912331:0;SUDO_ASKPASS="echo '' | dmenu" sudo -A su
+: 1592912336:0;SUDO_ASKPASS="echo '' | dmenu" sudo -A 
+: 1592912339:0;SUDO_ASKPASS="echo '' | dmenu" sudo -A su
+: 1592912357:0;dmenu -P
+: 1592914114:0;killall -9 compton
+: 1592914142:0;yay -R picom
+: 1592914155:0;yay -R compton
+: 1592914176:0;yay -S picom-tryone-git
+: 1592914201:0;v ~/.config/autostart.sh
+: 1592914218:0;picom --config ~/.config/compton.conf
+: 1592914239:0;v ~/.config/compton.conf
+: 1592914466:0;v .
+: 1592914657:0;ps aux | grep picom
+: 1592914795:0;killall -9 picom
+: 1592914802:0;killall -9 dwmblocks
+: 1592915699:0;pkill dwm
+: 1592915707:0;exit
+: 1592915738:0;v ~/.config/autostart.sh
+: 1592916098:0;v ~/scripts/powercontrol.sh
+: 1592916212:0;exit
+: 1592916221:0;v ~/scripts/powercontrol.sh
+: 1592916866:0;exit
+: 1592917121:0;v /etc/X11/xinit/xserverrc
+: 1592917132:0;man X
+: 1592922491:0;yay -S lemonbar
+: 1592922528:0;cd ~/.cache/yay
+: 1592922532:0;cd lemonbar-xft-git
+: 1592922536:0;ls
+: 1592922538:0;cd bar
+: 1592922544:0;ls
+: 1592922551:0;..
+: 1592922554:0;ls
+: 1592922558:0;cat PKGBUILD
+: 1592922571:0;tar xzf lemonbar-xft-git-269.00a3fe6-1-x86_64.pkg.tar.xz
+: 1592922578:0;tar -xzf lemonbar-xft-git-269.00a3fe6-1-x86_64.pkg.tar.xz
+: 1592922583:0;tar -xczf lemonbar-xft-git-269.00a3fe6-1-x86_64.pkg.tar.xz
+: 1592922595:0;..
+: 1592922603:0;git clone git@github.com:LemonBoy/bar.git
+: 1592922614:0;cd lemonbar-xft-git
+: 1592922616:0;..
+: 1592922617:0;cd bar
+: 1592922619:0;make
+: 1592922621:0;ls
+: 1592922631:0;du -ah -b lemonbar
+: 1592922638:0;du -ah lemonbar
+: 1592922681:0;..
+: 1592922683:0;rm -rf bar
+: 1592922698:0;rm -rf cozette-ttf picom-tryone-git lemonbar-xft-git python-ueberzug stig
+: 1592922701:0;..
+: 1592925929:0;cat /etc/pacman.d/mirrorlist
+: 1592925946:0;ezsh
+: 1592926029:0;refresh-mirrorlist
+: 1592926180:0;sudo refresh-mirrorlist
+: 1592926187:0;ezsh
+: 1592926215:0;refresh-mirrorlist
+: 1592926224:0;ezsh
+: 1592926241:0;mirrorlist-refresh
+: 1592926449:0;update
+: 1592926650:0;sudo refresh-mirrorlist
+: 1592926652:0;refresh-mirrorlist
+: 1592926654:0;mirrorlist-refresh
+: 1592926783:0;update
+: 1592926919:0;sudo vim /etc/systemd/system/getty@tty1.service.d/override.conf
+: 1592926982:0;man getty
+: 1592926986:0;getty --help
+: 1592927008:0;man agetty
+: 1592927189:0;sudo vim /etc/default/grub
+: 1592927261:0;cat sudo rm /etc/issue
+: 1592927266:0;cat vim /etc/issue
+: 1592927268:0;cat /etc/issue
+: 1592927272:0;sudo vim /etc/issue
+: 1592927574:0;sudo vim /etc/default/grub
+: 1592927642:0;man grub
+: 1592927658:0;man grub-mkconfig
+: 1592927728:0;cp /etc/default/grub ~/dump/
+: 1592927736:0;lf /etc/default
+: 1592927983:0;sudo vim /etc/systemd/system/getty@tty1.service.d/override.conf
+: 1592928011:0;grub-mkconfig -o /boot/grub/grub.cfg
+: 1592928015:0;sudo grub-mkconfig -o /boot/grub/grub.cfg

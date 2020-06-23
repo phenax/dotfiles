@@ -30,7 +30,7 @@ add-public-config() {
   # Applications
   add ~/.config/suckless;
   add ~/.config/qutebrowser;
-  add ~/.config/{lf,mpv,sxiv,zathura,ncmpcpp,mopidy,newsboat};
+  add ~/.config/{lf,mpv,sxiv,zathura,ncmpcpp,mopidy,newsboat,neofetch};
   # add ~/.config/spotifyd/spotifyd.conf;
   add ~/.config/transmission-daemon/settings.json;
   add ~/.config/transmission-remote-cli;
@@ -38,7 +38,7 @@ add-public-config() {
 
   # Wallpapers
   add ~/.fehbg;
-  add ~/wallpapers;
+  add ~/Pictures/wallpapers;
 }
 
 commit-push-all() {

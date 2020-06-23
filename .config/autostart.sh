@@ -1,23 +1,31 @@
 
 ##### Helpers {{{
+action="$1";
+
+# Is logout command (Cleanup)
+is_kill() { [[ "$action" == "kill" ]]; }
+
 # Focus on a tag/ws
 focus_tag() { [[ ! -z "$1" ]] && dwmc view $(($1 - 1)); }
 
 # Only run when there are no windows on the screen
-on_startup() { [[ "$(wmctrl -l | wc -l)" = "0" ]] && $@ & }
+on_startup() { is_kill || [[ "$(wmctrl -l | wc -l)" = "0" ]] && $@ & }
 
 # Run only once. If an instance is already running, noop
 once() {
-  local name=$1;
-  shift;
-  pgrep $name || $@ &
+  local name=$1; shift;
+  if (is_kill); then
+    killall "$name";
+  else
+    pgrep $name || $@ &
+  fi;
 }
 
 # Kill previous instance and run again
 run() {
-  killall -9 $1;
-  sleep 0.05;
-  $@ &
+  local name=$1; shift;
+  [[ ! -z "$name" ]] && killall -9 $name && sleep 0.05;
+  is_kill || $@ &
 }
 # }}}
 
@@ -29,24 +37,23 @@ run() {
   # xset r rate 300 50;
 
   # Key daemon
-  #run sxhkd -c ~/.config/sxhkd/dwm.sxhkdrc;
-  run shotkey;
+  run "shotkey" shotkey;
 
   # Compositor
-  run compton --config ~/.config/compton.conf;
+  run "picom" picom --experimental-backends --config ~/.config/compton.conf;
 
   # Notification daemon
-  run dunst -config ~/.config/dunst/dunstrc;
+  run "dunst" dunst -config ~/.config/dunst/dunstrc;
 
   # Dwm blocks status text
-  run dwmblocks &
+  run "dwmblocks" dwmblocks;
 
   # Wallpaper
-  ~/.fehbg &
+  run "" ~/.fehbg;
 
 
   # Battery watcher
-  ~/scripts/battery-watch.sh start;
+  run "" ~/scripts/battery-watch.sh start;
 
   # Disk automount
   once "udiskie" ~/.bin/with_zsh udiskie -a -n -s;
