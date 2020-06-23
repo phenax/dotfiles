@@ -25,6 +25,7 @@ export PATH
 
 start_x_server () {
 	pgrep Xorg && echo "X server is already running" || startx;
+	exit;
 }
 
 [[ "$(tty)" == '/dev/tty1' ]] && start_x_server &> /dev/null

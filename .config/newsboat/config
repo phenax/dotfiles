@@ -35,11 +35,10 @@
 
 
 # Browser macros {{{
-  browser "setsid -f sensible-browser %u 2&>/dev/null"
+  browser "~/.config/newsboat/browser.sh web";
 
   macro o open-in-browser
-  macro v set browser "notify-send Loading; setsid -f mpv %u 2&> /dev/null"; open-in-browser ; set browser "setsid -f sensible-browser %u 2&>/dev/null"
-  macro V set browser "notify-send Loading; setsid -f swallow mpv %u 2&> /dev/null"; open-in-browser ; set browser "setsid -f sensible-browser %u 2&>/dev/null"
+  macro v set browser "~/.config/newsboat/browser.sh video" ; open-in-browser ; set browser "~/.config/newsboat/browser.sh web"
 #}}}
 
 
