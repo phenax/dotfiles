@@ -4,6 +4,9 @@ let g:vimwiki_list = [{'path': '~/.config/vimwiki/', 'syntax': 'markdown', 'ext'
 " Folding
 let g:vimwiki_folding='' " expr|list|syntax
 
+" Color highlight
+lua require'colorizer'.setup()
+
 au BufRead,BufNewFile *.wiki set filetype=vimwiki
 
 function! OnNewLine(text)

@@ -5,8 +5,18 @@
       "command": "bash-language-server",
       "args": ["start"],
       "filetypes": ["sh", "zsh"],
-      "ignoredRootPaths": ["~"]
+      "ignoredRootPaths": []
     },
+    "ccls": {
+			"command": "ccls",
+			"filetypes": ["c", "cpp", "cuda", "objc", "objcpp"],
+			"rootPatterns": [".ccls", ".ccls-root", "compile_commands.json", ".git/", ".hg/"],
+			"initializationOptions": {
+				"cache": {
+					"directory": "/tmp/ccls"
+				}
+			}
+		},
     "haskell": {
       "command": "hie-wrapper",
       "args": ["--lsp"],
@@ -40,19 +50,40 @@
   "explorer.width": 30,
   "explorer.icon.enableNerdfont": true,
   "explorer.previewAction.onHover": false,
+  "explorer.quitOnOpen": true,
   "explorer.keyMappings": {
-    "<cr>": ["expandable?", "expand", "open"],
-    "oh": "open:split",
-    "ov": "open:vsplit",
     "s": false,
-    "v": false,
+    "p": false,
+    "d": false,
+    "y": false,
+    "g": false,
     "*": false,
+
+    "<cr>": ["expandable?", "expand", "open"],
+    "<left>": "collapse",
+    "<right>": ["expandable?", "expand", "open"],
+    "sh": "open:split",
+    "sv": "open:vsplit",
+		".": "toggleHidden",
+		"R": "refresh",
+
     "<space>": "toggleSelection",
     "gp": "preview:labeling",
+
+    "P": "gotoParent",
+    "o": "open",
+
+    "yp": "copyFilepath",
+		"yn": "copyFilename",
+		"yy": "copyFile",
+		"pp": "pasteFile",
+
+    "r": "rename",
+    "dd": "delete",
+    "dD": "deleteForever",
+
     "a": "addFile",
     "A": "addDirectory",
-    "m": "actionMenu",
-    "<left>": "collapse",
-    "<right>": ["expandable?", "expand", "open"]
+    "m": "actionMenu"
   }
 }

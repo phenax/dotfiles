@@ -10,6 +10,7 @@ alias gdl='cd ~/Downloads/dl';
 alias gm='cd ~/Downloads/music';
 
 alias gnotes='cd ~/.config/vimwiki';
+alias gqute='cd ~/.config/qutebrowser';
 
 alias gvim='cd ~/.config/nvim';
 alias gcmd='cd ~/scripts/commands';

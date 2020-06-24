@@ -39,7 +39,6 @@ command! Q :q
 " Global helpers
 nnoremap S <nop>
 nnoremap SS :w<CR>
-nmap ; :
 
 " Copy/paste
 vmap <C-c> "+y

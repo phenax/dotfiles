@@ -1,4 +1,6 @@
 Plug 'itchyny/calendar.vim'
 Plug 'vimwiki/vimwiki'
-" Plug 'jceb/vim-orgmode'
 Plug 'ThePrimeagen/vim-be-good'
+
+" Hex rgb color highlight
+Plug 'norcalli/nvim-colorizer.lua'
