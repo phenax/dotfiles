@@ -4,7 +4,8 @@
     "coc-css": ">=1.2.3",
     "coc-cssmodules": ">=1.0.0",
     "coc-eslint": ">=1.2.7",
-    "coc-explorer": ">=0.7.7",
+    "coc-explorer": ">=0.7.12",
+    "coc-flutter": ">=1.4.0",
     "coc-html": ">=1.2.4",
     "coc-import-cost": ">=1.0.1",
     "coc-json": ">=1.2.6",
@@ -13,6 +14,6 @@
     "coc-scssmodules": ">=0.2.0",
     "coc-tslint": ">=1.0.17",
     "coc-tslint-plugin": ">=1.1.1",
-    "coc-tsserver": ">=1.5.1"
+    "coc-tsserver": ">=1.5.2"
   }
 }

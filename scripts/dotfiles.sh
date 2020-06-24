@@ -41,36 +41,36 @@ add-public-config() {
   add ~/Pictures/wallpapers;
 }
 
+should_run() { [[ -z "$2" ]] || [[ "$2" == _ ]] || [[ "$1" == "$2" ]]; } # Should run command
+should_push() { [[ -z "$1" ]]; } # Should sync with remote
+
 commit-push-all() {
   local oldir=$(pwd);
   cd "$1";
   git add .;
   git commit -m "$2";
-  git push;
+  should_push "$3" && git push;
   cd $oldir;
 }
-
-# Should run a command
-should_run() { [[ -z "$2" ]] || [[ "$1" == "$2" ]]; }
 
 # Sync dotfiles to github (uses yadm)
 update-dotfiles() {
   # Passwords push
   if (should_run pass "$1"); then
     echo -e "\n\n##### Pushing passwords";
-    pass git push;
+    should_push "$2" && pass git push;
   fi;
 
   # Vim wiki push
   if (should_run notes "$1"); then
     echo -e "\n\n##### Pushing vimwiki";
-    commit-push-all ~/.config/vimwiki "Notes updated";
+    commit-push-all ~/.config/vimwiki "Notes updated" "$2";
   fi;
 
   # Push private config
   if (should_run work "$1"); then
     echo -e "\n\n##### Pushing private config";
-    commit-push-all ~/.work-config "Updated private config";
+    commit-push-all ~/.work-config "Updated private config" "$2";
   fi;
 
   # Dotfiles
@@ -79,7 +79,7 @@ update-dotfiles() {
     yadm status;
     add-public-config;
     yadm commit -m "Updates dotfiles" && \
-    yadm push -u origin master;
+    should_push "$2" && yadm push -u origin master;
   fi;
 }
 

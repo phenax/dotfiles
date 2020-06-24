@@ -1877,3 +1877,75 @@ git config --global color.diff.whitespace "red reverse"
 : 1592927983:0;sudo vim /etc/systemd/system/getty@tty1.service.d/override.conf
 : 1592928011:0;grub-mkconfig -o /boot/grub/grub.cfg
 : 1592928015:0;sudo grub-mkconfig -o /boot/grub/grub.cfg
+: 1592928741:0;yadm add ~/wallpapers
+: 1592928744:0;yadm status
+: 1592928753:0;yadm commit -m "delete wps"
+: 1592928756:0;yadm push
+: 1592981567:0;node -v
+: 1592981597:0;man yay
+: 1592981673:0;yay -Yu
+: 1592981688:0;yay -Qu
+: 1592981696:0;yay -Qu | wc -l
+: 1592981749:0;yay -w
+: 1592981751:0;yay -Yw
+: 1592981890:0;man yay
+: 1592981911:0;yay -Sc
+: 1592981927:0;lf /var/cache/pacman/pkg/
+: 1592981981:0;sudo rm /var/cache/pacman/pkg/x*
+: 1592981989:0;sudo rm /var/cache/pacman/pkg/z*
+: 1592981994:0;sudo rm /var/cache/pacman/pkg/y*
+: 1592982002:0;sudo rm /var/cache/pacman/pkg/w*
+: 1592982014:0;sudo rm /var/cache/pacman/pkg/v*
+: 1592982028:0;sudo rm /var/cache/pacman/pkg/u*
+: 1592982033:0;sudo rm /var/cache/pacman/pkg/t*
+: 1592982046:0;sudo rm /var/cache/pacman/pkg/s*
+: 1592982077:0;ytop
+: 1592982087:0;sudo rm /var/cache/pacman/pkg/r*
+: 1592982095:0;sudo rm /var/cache/pacman/pkg/q*
+: 1592982127:0;yay -Sc
+: 1592982169:0;sudo rm /var/cache/pacman/pkg/*
+: 1592982181:0;update
+: 1592982263:0;man yay
+: 1592982324:0;yes
+: 1592982451:0;auto-remove
+: 1592982464:0;yay -Qdt
+: 1592983365:0;evim
+: 1592983668:0;v
+: 1592983707:0;v ~/.Xresources
+: 1592983886:0;v
+: 1592983897:0;equte
+: 1592983904:0;gqute
+: 1592983917:0;ezsh
+: 1592983998:0;equte
+: 1592984058:0;ytop
+: 1592984992:0;v
+: 1592985117:0;ls
+: 1592985126:0;la
+: 1592985132:0;cat .netrwhist
+: 1592985273:0;cd dump
+: 1592985278:0;cd ~/dump
+: 1592985288:0;mkdir tests
+: 1592985290:0;cd tests
+: 1592985294:0;mkdir somedir
+: 1592985304:0;touch hellp somedir/wow
+: 1592985307:0;v .
+: 1592985654:0;v
+: 1592985806:0;cd ~/dump/tests
+: 1592985808:0;v
+: 1592985960:0;cd ~/dump/tests
+: 1592985962:0;v
+: 1592986360:0;evim
+: 1592986390:0;yay -Q | grep hie
+: 1592987334:0;yay ccls
+: 1592987379:0;gkey
+: 1592987382:0;cd ..
+: 1592987385:0;ekey
+: 1592987598:0;v
+: 1592989801:0;stig
+: 1592990783:0;edot
+: 1593000107:0;pass status
+: 1593000110:0;pass git status
+: 1593000117:0;pass git log
+: 1593000206:0;update-dotfiles _ c
+: 1593000214:0;yadm status
+: 1593000225:0;update-dotfiles _ c

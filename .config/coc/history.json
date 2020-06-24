@@ -12,7 +12,8 @@
         "add",
         "delete",
         "a",
-        "d"
+        "d",
+        "quit"
       ],
       "config%2Fqutebrowser": [
         "a"
@@ -53,20 +54,35 @@
     "%2Fhome%2Fakshayn%2Fdev%2Fprojects%2Fdaemonic-key": [
       "a",
       "delete"
+    ],
+    "%2Fhome%2Fakshayn%2Fdump": [
+      "open",
+      "expand:recursu"
     ]
   },
   "explorerFiles": {
     "%2Fhome%2Fakshayn%2F": {
       "config%2Fnvim": [
-        "config"
+        "config",
+        "car"
       ]
-    }
+    },
+    "%2Fhome%2Fakshayn%2Fdump%2Ftests": [
+      "hearts"
+    ]
   },
   "explPresets": {
     "%2Fhome%2Fakshayn%2F": {
       "config%2Fnvim": [
         "normal",
         "?"
+      ]
+    }
+  },
+  "extensions": {
+    "%2Fhome%2Fakshayn%2F": {
+      "config%2Fnvim": [
+        "q"
       ]
     }
   }
