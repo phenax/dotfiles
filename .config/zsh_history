@@ -1949,3 +1949,13 @@ git config --global color.diff.whitespace "red reverse"
 : 1593000206:0;update-dotfiles _ c
 : 1593000214:0;yadm status
 : 1593000225:0;update-dotfiles _ c
+: 1593000262:0;yadm status
+: 1593012461:0;yay -Q | grep syst
+: 1593012478:0;yay -Qh
+: 1593012490:0;yay -Qi systemd
+: 1593068687:0;ezsh
+: 1593068854:0;cd ~/.config/zshplugins
+: 1593068858:0;git clone git://github.com/zsh-users/zsh-completions.git
+: 1593068889:0;lf
+: 1593069029:0;v .
+: 1593069136:0;update-dotfiles _ c
