@@ -25,3 +25,7 @@ zle -N magic-enter
 bindkey -M emacs "^M" magic-enter
 bindkey -M vicmd "^M" magic-enter
 bindkey -M viins "^M" magic-enter
+
+# Auto correct typos
+setopt CORRECT
+setopt CORRECT_ALL
