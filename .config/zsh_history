@@ -1959,3 +1959,58 @@ git config --global color.diff.whitespace "red reverse"
 : 1593068889:0;lf
 : 1593069029:0;v .
 : 1593069136:0;update-dotfiles _ c
+: 1593069161:0;ezsh
+: 1593069422:0;cd ~/.config/zshplugins
+: 1593069426:0;cd zsh-autosuggestions
+: 1593069436:0;git pull
+: 1593069457:0;../zsh-syntax-highlighting
+: 1593069459:0;git pull
+: 1593069659:0;ezsh
+: 1593069875:0;setopt
+: 1593070066:0;lkajfla
+: 1593070067:0;sdfsd
+: 1593070100:0;cd hello
+: 1593070135:0;setopt interactive
+: 1593070193:0;setopt CORRECT\
+setopt CORRECT_ALL
+: 1593070196:0;fucka
+: 1593070203:0;sysctl
+: 1593070214:0;systemctl status ssh
+: 1593070218:0;systemctl status sshd
+: 1593070267:0;systctl status sshd
+: 1593166115:0;ekey
+: 1593166139:0;xdotool --help
+: 1593166148:0;xdotool mousedown
+: 1593166156:0;xdotool mousedown -- window $WINDOWID
+: 1593166162:0;echo $WINDOWID
+: 1593166167:0;xdo id
+: 1593166173:0;xdotool mousedown -- window "$(xdo id)"
+: 1593166183:0;xdotool help
+: 1593166215:0;xdotool mousemove help
+: 1593166236:0;xdotool mousemove -w "$(xdo id)"
+: 1593166249:0;xdotool mousemove -w "$(xdo id)" 100 100
+: 1593166259:0;xdotool mousemove -w "$(xdo id)" 10 100
+: 1593166267:0;xdotool mousemove -w "$(xdo id)" 100 10
+: 1593166281:0;xdotool mousemove 100 10
+: 1593166308:0;xdotool mousemove_relative 100 10
+: 1593166952:0;chmod u+x ~/scripts/mouse.sh
+: 1593166960:0;~/scripts/mouse.sh move up
+: 1593166974:0;~/scripts/mouse.sh move up 10
+: 1593166979:0;~/scripts/mouse.sh move down 10
+: 1593167047:0;sudo make install
+: 1593167091:0;~/scripts/mouse.sh move left 10
+: 1593167096:0;~/scripts/mouse.sh move right 10
+: 1593167101:0;~/scripts/mouse.sh move left 10
+: 1593167189:0;sudo make install
+: 1593167362:0;xdotool click
+: 1593167373:0;xdotool click 1
+: 1593167449:0;gaa
+: 1593167458:0;gcm "Adds mouse controls mde"
+: 1593167466:0;git pull
+: 1593167469:0;git merge
+: 1593167472:0;git merge master
+: 1593167473:0;go
+: 1593167474:0;gp
+: 1593167489:0;update-dotfiles _ c
+: 1593167491:0;..
+: 1593167494:0;update-dotfiles
