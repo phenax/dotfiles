@@ -1,270 +1,3 @@
-: 1592066461:0;cat ~/.zsh_history
-: 1592066464:0;ls
-: 1592066468:0;cd $SHAADI
-: 1592066474:0;gst
-: 1592066475:0;update
-: 1592066487:0;update-dotfiles
-: 1592066507:0;yadm status
-: 1592066517:0;gst
-: 1592066524:0;gp
-: 1592066536:0;ezsh
-: 1592066549:0;which gp
-: 1592066557:0;eorg
-: 1592066567:0;ncmpcpp
-: 1592067808:0;ll
-: 1592067846:0;:mic
-: 1592067854:0;ll
-: 1592067902:0;lf
-: 1592067914:0;ecmd
-: 1592067926:0;emctrl
-: 1592067929:0;wmctrl -l
-: 1592067958:0;xtitle
-: 1592067964:0;wmctrl -l
-: 1592067994:0;xtitle "0x01800006"
-: 1592068004:0;wmctrl -l
-: 1592068022:0;wmctrl -l | cut -f 2-
-: 1592068024:0;wmctrl -l | cut -f 1-
-: 1592068026:0;wmctrl -l | cut -f 2-
-: 1592068032:0;wmctrl -l | cut -d' ' -f 2-
-: 1592068035:0;wmctrl -l | cut -d' ' -f 3-
-: 1592068037:0;wmctrl -l | cut -d' ' -f 4-
-: 1592068038:0;wmctrl -l | cut -d' ' -f 5-
-: 1592068139:0;wmctrl -f
-: 1592068142:0;wmctrl --help
-: 1592068145:0;wmctrl --help | grep focus
-: 1592068154:0;wmctrl --help
-: 1592068156:0;wmctrl -h
-: 1592068162:0;wmctrl -h | grep focu
-: 1592068191:0;wmctrl -h | grep acti
-: 1592068523:0;echo 'wow' | xargs wmctrl -a
-: 1592068528:0;wmctrl -l
-: 1592068534:0;echo '0x01c00006' | xargs wmctrl -a
-: 1592068571:0;wmctrl -a '0x01c00006'
-: 1592068578:0;wmctrl -g
-: 1592068580:0;wmctrl -h
-: 1592068596:0;wmctrl -l
-: 1592068603:0;wmctrl -l -i
-: 1592068625:0;wmctrl -l -x
-: 1592068697:0;wmctrl -l -d
-: 1592068701:0;wmctrl -d
-: 1592068703:0;wmctrl -l
-: 1592068783:0;wmctrl -v -l
-: 1592068789:0;wmctrl -l
-: 1592068841:0;xdotool --help
-: 1592068849:0;xdotool --help | grep focus
-: 1592068872:0;xdotool windowfocus '0x01c00006'
-: 1592068882:0;xdotool windowfocus '0x01e00006'
-: 1592068895:0;cat $(which dwmc)
-: 1592068913:0;edwm
-: 1592068986:0;xdo --help
-: 1592068989:0;xdo -h
-: 1592068991:0;man xdo
-: 1592069022:0;xdo activate '0x01e00006'
-: 1592069063:0;xdo show '0x01e00006'
-: 1592069068:0;xdo activate '0x01e00006'
-: 1592069113:0;man xdotool
-: 1592069144:0;xdotool windowactivate '0x01c00006'
-: 1592069152:0;xdotool windowfocus '0x01c00006'
-: 1592069163:0;wmctrl -l
-: 1592069181:0;xdotool windowfocus '0x01800006'
-: 1592069227:0;rm ~/scripts/commands/:windows
-: 1592069254:0;edot
-: 1592074222:0;la | wc -l
-: 1592113040:0;evim
-: 1592113213:0;gdwm
-: 1592113214:0;v .
-: 1592113299:0;sudo make install
-: 1592121532:0;evim
-: 1592121599:0;eorg
-: 1592121900:0;evim
-: 1592121905:0;eorg
-: 1592122144:0;cd ~/.config/qutebrowser
-: 1592122144:0;v .
-: 1592122311:0;eorg
-: 1592128484:0;ecmd
-: 1592128516:0;ls | sort
-: 1592128619:0;lf
-: 1592128636:0;ecmd
-: 1592128646:0;gcm
-: 1592128647:0;gcmd
-: 1592128807:0;gm
-: 1592128812:0;cd untagged
-: 1592128837:0;mv Amon\ Amarth\ -\ Deceiver\ of\ the\ Gods\ \(2013\)\(Full\ Album\).opus Amon\ Amarth\ -\ Deceiver\ of\ the\ Gods.opus
-: 1592128877:0;cat ~/scripts/music/split-album.sh
-: 1592128962:0;v Amon\ Amarth\ -\ Deceiver\ Of\ The\ Gods.splits
-: 1592129070:0;~/scripts/music/split-album.sh "Amon Amarth - Deceiver of the Gods.opus" "Amon Amarth - Deceiver Of The Gods.splits"
-: 1592129139:0;cp Amon\ Amarth\ -\ Deceiver\ Of\ The\ Gods.splits
-: 1592129153:0;cp Amon\ Amarth\ -\ Deceiver\ Of\ The\ Gods.splits Amon\ Amarth\ -\ Twilight\ Of\ The\ Thunder\ God.splits
-: 1592129165:0;rm Amon\ Amarth\ -\ Deceiver\ of\ the\ Gods.*
-: 1592129173:0;rm Amon\ Amarth\ -\ Deceiver\ Of\ The\ Gods.splits
-: 1592129181:0;v Amon\ Amarth\ -\ Twilight\ Of\ The\ Thunder\ God.splits
-: 1592129279:0;ls
-: 1592129296:0;mv Amon\ Amarth\ -\ Twilight\ Of\ The\ Thunder\ God\ \(Full\ Album_Álbum\ Completo\).opus Amon\ Amarth\ -\ Twilight\ Of\ The\ Thunder\ God.opus
-: 1592129333:0;~/scripts/music/split-album.sh "Amon Amarth - Twilight Of The Thunder God.opus" "Amon Amarth - Twilight of the Thunder God.splits"
-: 1592129343:0;~/scripts/music/split-album.sh "Amon Amarth - Twilight Of The Thunder God.opus" "Amon Amarth - Twilight Of The Thunder God.splits"
-: 1592129405:0;rm -rf Amon\ Amarth\ -\ *
-: 1592129435:0;mkdir -p ../Others
-: 1592129443:0;mv Senua.opus ../Others
-: 1592129445:0;..
-: 1592129454:0;:music
-: 1592129475:0;lf
-: 1592129689:0;mv Polyphia\ _\ Yas\ feat.\ Mario\ Camarena\ and\ Erick\ Hansel\ \(Official\ Music\ Video\).opus Yas.opus
-: 1592129695:0;mediainfo -F Yas.opus
-: 1592129768:0;v ~/scripts/music/tag.sh
-: 1592129792:0;lf ..
-: 1592129815:0;lf .
-: 1592129855:0;~/scripts/music/tag.sh -a 'Polyphia' -A 'New Levels New Devils' -n 10 -N 10 -t 'Yas' Yas.opus
-: 1592129858:0;mediainfo -F Yas.opus
-: 1592129880:0;mv Yas.opus ../Polyphia/New\ Levels\ New\ Devils
-: 1592129901:0;ncmpcpp
-: 1592129931:0;..
-: 1592129933:0;cd Polyphia/New\ Levels\ New\ Devils
-: 1592129947:0;du -ah
-: 1592135904:0;gdwm
-: 1592135909:0;v .
-: 1592135916:0;gd
-: 1592135922:0;rvim
-: 1592135924:0;evim
-: 1592135935:0;gd
-: 1592135940:0;ezsh
-: 1592136028:0;gd
-: 1592136035:0;git add .
-: 1592136042:0;gaa
-: 1592136055:0;gc -m "Vim like keys"
-: 1592136845:0;sudo make install
-: 1592137919:0;git add .
-: 1592137924:0;gaa
-: 1592137954:0;gc -m "Focus toggle with master done"
-: 1592138775:0;sudo make install
-: 1592139890:0;git add .
-: 1592139893:0;gaa
-: 1592139903:0;ezsh
-: 1592139975:0;gaa
-: 1592139989:0;gcm "Fixes nmaster issue for focus toggle"
-: 1592140440:0;make
-: 1592140538:0;sudo make install
-: 1592140592:0;gd
-: 1592140595:0;git add .
-: 1592140622:0;git commit -m "Adds a previously focused item to monitor"
-: 1592141471:0;auto-remove
-: 1592144596:0;sudo make install
-: 1592144895:0;gdwm
-: 1592144899:0;v .
-: 1592145023:2;sudo make install
-: 1592145042:0;git add .
-: 1592145052:0;git commit -m "Adds action to clear all clients in a tag"
-: 1592145293:0;node
-: 1592145641:0;sudo make install
-: 1592145663:0;lf
-: 1592145764:0;gd
-: 1592145769:0;gaa
-: 1592145775:0;gc!
-: 1592145779:0;git push
-: 1592145786:0;update-dotfiles
-: 1592145805:0;..
-: 1592145808:0;update-dotfiles
-: 1592145825:0;yadm status
-: 1592145841:0;yadm add zsh_history
-: 1592145848:0;edot
-: 1592147749:0;rm -rf ~/.config/bsp-layout
-: 1592147755:0;curl https://raw.githubusercontent.com/phenax/bsp-layout/master/example.layoutrc > $XDG_CONFIG_DIR/bsp-layout/layoutrc
-: 1592147869:0;mkdir "$XDG_CONFIG/bsp-layout" && curl https://raw.githubusercontent.com/phenax/bsp-layout/master/example.layoutrc > $XDG_CONFIG_DIR/bsp-layout/layoutrc
-: 1592147893:0;mkdir "$XDG_CONFIG_DIR/bsp-layout" && curl https://raw.githubusercontent.com/phenax/bsp-layout/master/example.layoutrc > $XDG_CONFIG_DIR/bsp-layout/layoutrc
-: 1592147902:0;echo $XDG_CONFIG_DIR
-: 1592147916:0;mkdir "~/.config/bsp-layout" && curl https://raw.githubusercontent.com/phenax/bsp-layout/master/example.layoutrc > ~/.config/bsp-layout/layoutrc
-: 1592147929:0;la
-: 1592147933:0;ls ~/.config
-: 1592147974:0;mkdir -p "~/.config/bsp-layout" && curl https://raw.githubusercontent.com/phenax/bsp-layout/master/example.layoutrc > ~/.config/bsp-layout/layoutrc
-: 1592147982:0;rm -rf ~/.config/bsp-layout
-: 1592147984:0;mkdir -p "~/.config/bsp-layout" && curl https://raw.githubusercontent.com/phenax/bsp-layout/master/example.layoutrc > ~/.config/bsp-layout/layoutrc
-: 1592147986:0;rm -rf ~/.config/bsp-layout
-: 1592147988:0;mkdir -p "~/.config/bsp-layout" && curl https://raw.githubusercontent.com/phenax/bsp-layout/master/example.layoutrc > ~/.config/bsp-layout/layoutrc
-: 1592147997:0;cat ~/.config/bsp-layout
-: 1592148012:0;mkdir -p "~/.config/bsp-layout"
-: 1592148021:0;ls ~/.config/bsp-layout
-: 1592148027:0;mkdir -p ~/.config/bsp-layout
-: 1592148030:0;ls ~/.config/bsp-layout
-: 1592148032:0;rm -rf ~/.config/bsp-layout
-: 1592148045:0;mkdir ~/.config/bsp-layout && curl https://raw.githubusercontent.com/phenax/bsp-layout/master/example.layoutrc > ~/.config/bsp-layout/layoutrc
-: 1592148051:0;lf ~/.config/bsp-layout
-: 1592148054:0;rm -rf ~/.config/bsp-layout
-: 1592156088:0;update
-: 1592156120:0;yay -R pandoc
-: 1592156124:0;auto-remove
-: 1592156131:0;pacman -Q
-: 1592156134:0;pacman -Q | wc -l
-: 1592156144:0;cd ~/.cache/yay
-: 1592156149:0;du -ah
-: 1592156153:0;du -ah -l 1
-: 1592156155:0;du -ah -c 1
-: 1592156158:0;du -ah -n 1
-: 1592156163:0;du --help
-: 1592156171:0;du --help | grep nest
-: 1592156176:0;du --help | grep level
-: 1592156181:0;du --help | grep level -B 1
-: 1592156185:0;du -ah -d 1
-: 1592156201:0;ls
-: 1592156209:0;rm -rf f*
-: 1592156211:0;rm -rf m*
-: 1592156213:0;rm -rf g*
-: 1592156217:0;rm -rf p*
-: 1592156218:0;rm -rf s*
-: 1592156221:0;rm -rf t*
-: 1592156231:0;lf yay
-: 1592156236:0;rm -rf yay
-: 1592156239:0;cd ~
-: 1592156241:0;update
-: 1592156265:0;yay -R otf-fira-code
-: 1592156270:0;update
-: 1592156282:0;yay -R stig
-: 1592156293:0;stig
-: 1592156297:0;yay -R stig
-: 1592156301:0;update
-: 1592156309:0;auto-remove
-: 1592156314:0;yay -Q | wc -l
-: 1592189889:0;gp
-: 1592189894:0;gpic
-: 1592189898:0;cd screenshots
-: 1592189904:0;sxiv 2020-06-14-1592155282_screenshot_1920x1080.jpg
-: 1592190552:0;alsa
-: 1592190556:0;alsamixer
-: 1592198202:0;gdwm
-: 1592198205:0;v .
-: 1592198324:0;sudo make install
-: 1592198354:0;git add .
-: 1592198366:0;git commit -m "Changes swap master keybinding"
-: 1592198582:0;gst
-: 1592198825:0;git diff origin production
-: 1592198829:0;git diff origin/production
-: 1592198859:0;git pull
-: 1592198868:0;git diff origin/production
-: 1592199028:0;git pull
-: 1592199037:0;gco -
-: 1592199043:0;git branch
-: 1592199048:0;gco feature/daily-rec-decorator
-: 1592199052:0;git stash list
-: 1592199055:0;git stash log
-: 1592199199:0;git branch
-: 1592199213:0;gco feature/dr_proxy_decorator
-: 1592199219:0;git pull origin production
-: 1592205867:0;killall -9 nm-applet
-: 1592213500:0;v
-: 1592218584:0;sudo systemctl restart networkmanager
-: 1592218595:0;sudo systemctl restart NetworkManager
-: 1592218604:0;systemctl status NetworkManager
-: 1592241906:0;sudo systemctl restart NetworkManager
-: 1592241916:0;nm-applet
-: 1592241939:0;sudo systemctl restart NetworkManager
-: 1592241945:0;nm-applet
-: 1592242153:0;curl wttr.in
-: 1592242160:0;curl wttr.in/help
-: 1592242163:0;curl wttr.in/:help
-: 1592242174:0;curl wttr.in/Virar
-: 1592242204:0;ecmd
-: 1592281931:0;sudo systemctl restart NetworkManager
-: 1592290590:0;yay -S diff-so-fancy
-: 1592290618:0;gdwm
-: 1592290620:0;v .
 : 1592290634:0;git diff HEAD^`
 : 1592290636:0;git diff HEAD^1
 : 1592290639:0;git diff HEAD^2
@@ -2014,3 +1747,278 @@ setopt CORRECT_ALL
 : 1593167489:0;update-dotfiles _ c
 : 1593167491:0;..
 : 1593167494:0;update-dotfiles
+: 1593167811:0;xset
+: 1593167899:0;man xset
+: 1593167988:0;xset r rate 200 30
+: 1593167999:0;xset r rate 300 30
+: 1593168006:0;xset r rate 400 30
+: 1593168014:0;xset r rate 600 30
+: 1593168019:0;xset r rate 500 30
+: 1593168023:0;xset r rate 400 30
+: 1593168053:0;v ~/.config/autostart.sh
+: 1593169611:0;gco -
+: 1593169616:0;make
+: 1593170034:0;make && ./shotkey
+: 1593172934:0;xset r rate 400 50
+: 1593172941:0;xset r rate 400 60
+: 1593172946:0;xset r rate 400 30
+: 1593172970:0;v ~/.config/autostart.sh
+: 1593173000:0;gd
+: 1593173004:0;ezsh
+: 1593173018:0;eas
+: 1593173022:0;gd
+: 1593173824:0;git reset HEAD
+: 1593173830:0;git reset hard
+: 1593173836:0;git reset --hard
+: 1593173839:0;gco -
+: 1593174048:0;f() {} f
+: 1593174050:0;f() {}; f
+: 1593174051:0;f() {}; f;
+: 1593174075:0;make
+: 1593174102:0;sudo make install
+: 1593174316:0;git add .
+: 1593174323:0;git commit -m "Mouse fast movements added"
+: 1593174333:0;gp
+: 1593184202:0;gsuck
+: 1593184205:0;cd bslock
+: 1593184206:0;v .
+: 1593184236:0;gst
+: 1593184242:0;gsuck
+: 1593184243:0;cd st
+: 1593184245:0;v .
+: 1593184250:0;cd ../dmenu
+: 1593184252:0;v .
+: 1593184501:0;make && ./dmenu
+: 1593184509:0;ls | (make && ./dmenu)
+: 1593184574:0;SUDO_ASKPASS="read" sudo -A su
+: 1593184587:0;which read
+: 1593184613:0;ls | (make && ./dmenu)
+: 1593185928:0;ls | (make && ./dmenu -P)
+: 1593185942:0;gaa
+: 1593185945:0;gcm "Password mode"
+: 1593185973:0;SUDO_ASKPASS="echo '' | dmenu" sudo -A su
+: 1593185993:0;lf ~/scrits
+: 1593185995:0;lf ~/scrit
+: 1593186004:0;lf ~/scripts
+: 1593186065:0;v ~/scripts/password_prompt.sh
+: 1593186094:0;chmod u+x ~/scripts/password_prompt.sh
+: 1593186106:0;SUDO_ASKPASS="~/scripts/password_prompt.sh" sudo -A su
+: 1593186114:0;SUDO_ASKPASS="bash ~/scripts/password_prompt.sh" sudo -A su
+: 1593186120:0;SUDO_ASKPASS="bash ~/scripts/password_prompt.sh" sudo su
+: 1593186123:0;SUDO_ASKPASS="bash ~/scripts/password_prompt.sh" sudo -A su
+: 1593186129:0;SUDO_ASKPASS="$HOME/scripts/password_prompt.sh" sudo -A su
+: 1593186135:0;sudo make install
+: 1593186138:0;SUDO_ASKPASS="$HOME/scripts/password_prompt.sh" sudo -A su
+: 1593186166:0;v ~/scripts/password_prompt.sh
+: 1593186176:0;SUDO_ASKPASS="$HOME/scripts/password_prompt.sh" sudo -A su
+: 1593186197:0;v ~/.bin/dsudo
+: 1593186224:0;chmod u+x ~/.bin/dsudo
+: 1593186234:0;dsudo ls
+: 1593186243:0;v ~/scripts/password_prompt.sh
+: 1593186263:0;dsudo ls
+: 1593186364:0;man yay
+: 1593186706:0;man pas
+: 1593186707:0;man pass
+: 1593191106:0;yay -Qh
+: 1593191129:0;gd -- ~/scripts/commands
+: 1593191136:0;gd HEAD -- ~/scripts/commands
+: 1593191140:0;gd HEAD^1 -- ~/scripts/commands
+: 1593191144:0;gd HEAD^1 -- ~/scripts
+: 1593191148:0;gd
+: 1593191155:0;yadm HEAD^1 -- ~/scripts/commands
+: 1593191159:0;yadm diff HEAD^1 -- ~/scripts/commands
+: 1593191168:0;yay -Qh
+: 1593191173:0;yay -Qum
+: 1593191176:0;yay -Qu
+: 1593191195:0;ecmd
+: 1593191352:0;notify-send "wow" "nice"
+: 1593191358:0;notify-send -a "wow" "nice"
+: 1593191737:0;ytop
+: 1593186283:0;ecmd
+: 1593191997:0;yay -Qum
+: 1593191999:0;yay -Qu
+: 1593192018:0;ecmd
+: 1593192088:0;yay -Qu
+: 1593192096:0;yay -Qu | wc -l
+: 1593192136:0;xx="1\n2\n3\n"
+: 1593192139:0;echo $xx
+: 1593192146:0;echo $xx | wc -l
+: 1593192149:0;echo "$xx" | wc -l
+: 1593192193:0;echo "$xx" | sed '/^$/d' | wc -l
+: 1593194127:0;dsudo
+: 1593194129:0;dsudo ls
+: 1593194144:0;curl https://httpbin.org/get | pv
+: 1593194159:0;v ~/.bin/extract-urls
+: 1593194223:0;curl https://httpbin.org/get | pv
+: 1593194889:0;curl https://httpbin.org/get | egrep -o '\x00-\x09\x0b-\x20\x7f-\xa0\xad\u0600-\u0605\u061c\u06dd\u070f\u08e2\u1680\u180e\u2000-\u200f\u2028-\u202f\u205f-\u2064\u2066-\u206f\u3000\ud800-\uf8ff\ufeff\ufff9-\ufffb\U000110bd\U000110cd\U00013430-\U00013438\U0001bca0-\U0001bca3\U0001d173-\U0001d17a\U000e0001\U000e0020-\U000e007f\U000f0000-\U000ffffd\U00100000-\U0010fffd'
+: 1593194906:0;curl https://httpbin.org/get | egrep -o '[\x00-\x09\x0b-\x20\x7f-\xa0\xad\u0600-\u0605\u061c\u06dd\u070f\u08e2\u1680\u180e\u2000-\u200f\u2028-\u202f\u205f-\u2064\u2066-\u206f\u3000\ud800-\uf8ff\ufeff\ufff9-\ufffb\U000110bd\U000110cd\U00013430-\U00013438\U0001bca0-\U0001bca3\U0001d173-\U0001d17a\U000e0001\U000e0020-\U000e007f\U000f0000-\U000ffffd\U00100000-\U0010fffd]'
+: 1593194997:0;curl https://httpbin.org/get | egrep -o 'https?://[^\x00-\x09\x0b-\x20\x7f-\xa0\xad\u0600-\u0605\u061c\u06dd\u070f\u08e2\u1680\u180e\u2000-\u200f\u2028-\u202f\u205f-\u2064\u2066-\u206f\u3000\ud800-\uf8ff\ufeff\ufff9-\ufffb\U000110bd\U000110cd\U00013430-\U00013438\U0001bca0-\U0001bca3\U0001d173-\U0001d17a\U000e0001\U000e0020-\U000e007f\U000f0000-\U000ffffd\U00100000-\U0010fffd]{{3,}}'
+: 1593195036:0;curl https://httpbin.org/get | egrep -o 'https?://[A-Za-z0-9_.-/%]{{3,}}'
+: 1593195070:0;curl https://httpbin.org/get | egrep -o "https?://[A-Za-z0-9_.-/%]{{3,}}"
+: 1593195077:0;curl https://httpbin.org/get
+: 1593195112:0;curl https://httpbin.org/get | egrep -o "https?://[A-Za-z0-9_.-/%]+"
+: 1593195191:0;curl https://httpbin.org/get | egrep -o "https?://[A-Za-z0-9-._~:/?#[]@\!$&'()*+,;=]+"
+: 1593195222:0;curl https://httpbin.org/get | egrep -o "https?://[A-Za-z0-9-._~:/?#\[\]@\!$&'()*+,;=]+"
+: 1593195274:0;curl https://httpbin.org/get | egrep -o "https?://[A-Za-z0-9-._~:/?#@\!$&'()*+,;=]+"
+: 1593195291:0;curl https://httpbin.org/get | egrep -o 'https?://[A-Za-z0-9-._~:/?#@!$&\'()*+,;=]+'
+: 1593195303:0;curl https://httpbin.org/get | egrep -o "https?://[A-Za-z0-9-._~:/?#@\!$&'()*+,;=]+"
+: 1593195316:0;curl https://httpbin.org/get | egrep -o "https?://[A-Za-z0-9\-._~:/?#@\!$&'()*+,;=]+"
+: 1593195394:0;curl https://httpbin.org/get | egrep -o "(https?://|www\\.)[\.A-Za-z0-9\-]+\\.[a-zA-Z]{2,4}"
+: 1593196856:0;ecmd
+: 1593242886:0;yay -Q | grep netctl
+: 1593242888:0;yay -Q | grep ctl
+: 1593242897:0;man ndctl
+: 1593242954:0;ezsh
+: 1593243048:0;dir
+: 1593243050:0;dirname
+: 1593243053:0;dirname pwd
+: 1593243060:0;dirname ~/scripts/brightness.sh
+: 1593243151:0;escript
+: 1593243176:0;escript ~/scripts/bootstrap.sh
+: 1593243250:0;escript
+: 1593243257:0;escript ~/.bin/escript
+: 1593243288:0;escript ~/scripts/bootstrap.sh
+: 1593243302:0;rm ~/scripts/bootstrap.sh
+: 1593243303:0;escript ~/scripts/bootstrap.sh
+: 1593243325:0;escript ~/.bin/escript
+: 1593243344:0;ecmd
+: 1593243352:0;which ecmd
+: 1593243357:0;v ~/.bin/ecmd
+: 1593243470:0;ecmd
+: 1593243493:0;ecmd rm
+: 1593243755:0;which surf
+: 1593243968:0;edot
+: 1593244041:0;cd ~/.config/zshplugins
+: 1593244069:0;cat ~/.gitmodules
+: 1593244082:0;v ~/.gitmodules
+: 1593244204:0;yadm add ~/.gitmodules
+: 1593244207:0;yadm commit
+: 1593244216:0;yadm push
+: 1593244255:0;cd zsh-completions
+: 1593244278:0;git remote -v
+: 1593244281:0;cd ..
+: 1593244439:0;../zsh-syntax-highlighting
+: 1593244444:0;git remote -v
+: 1593244504:0;yadm add ~/.gitmodules
+: 1593244507:0;yadm commit
+: 1593244519:0;yadm push
+: 1593244566:0;yadm add .zsh-autosuggestions
+: 1593244586:0;yadm add ~/.config/zshplugins/zsh-completions
+: 1593244604:0;yadm add ~/.config/zshplugins/zsh-syntax-highlighting
+: 1593244608:0;yadm status
+: 1593245909:0;yadm commit
+: 1593245919:0;yadm push
+: 1593246810:0;yay -Q | grep xorg
+: 1593246850:0;yay -Q
+: 1593247181:0;xwd
+: 1593247184:0;xwd --help
+: 1593247186:0;man xwd
+: 1593247234:0;lspci | grep -e VGA -e 3D
+: 1593247420:0;read x
+: 1593247427:0;read x; read y; read z;
+: 1593247446:0;x?() {}
+: 1593247914:0;lf ~/.config/qutebrowser
+: 1593248059:0;dunst
+: 1593248344:0;yay -Q
+: 1593248352:0;yay -Q | grep xdo
+: 1593248424:0;yay -S xdo
+: 1593248669:129;lf ~/.ssh
+: 1593248803:0;eas
+: 1593248849:0;yay -S udiskie
+: 1593248855:0;yay udiskie
+: 1593248982:0;lf ~/.config
+: 1593250177:0;cd ~/.config/xresources-schemes
+: 1593250178:0;v .
+: 1593250438:0;./set-theme.sh prpl
+: 1593250444:0;./set-theme.sh reset
+: 1593250450:0;v ~/.Xresources
+: 1593250525:0;./set-theme.sh reset
+: 1593250560:0;v ~/.Xresources
+: 1593250583:0;cat american.Xresources
+: 1593250902:0;edot
+: 1593251115:0;lf ~/.config
+: 1593251582:0;yadm checkout -- ~/.fehbg
+: 1593251666:0;escript ~/scripts/bootstrap.sh
+: 1593252179:0;~/scripts/bootstrap.sh
+: 1593270351:0;cat /etc/systemd/logind.conf
+: 1593270439:0;ls ~/.work-config
+: 1593270500:0;cd ..
+: 1593270503:0;ls
+: 1593270506:0;la
+: 1593270582:0;take ~/.config/linkedconf
+: 1593270601:0;take etc/systemd/
+: 1593270606:0;cp /etc/systemd/logind.conf ~/.config/linkedconf/etc/systemd
+: 1593270615:0;..
+: 1593270644:0;escript setup.sh
+: 1593270687:0;cd ~/.config/linkedconf
+: 1593270689:0;lf
+: 1593270705:0;mv etc/systemd/logind.conf .
+: 1593270710:0;rm -rf etc
+: 1593270877:0;./setup.sh
+: 1593270889:0;escript setup.sh
+: 1593270898:0;cat /etc/systemd/logind.conf
+: 1593270909:0;./setup.sh
+: 1593270920:0;cat /etc/systemd/logind.conf
+: 1593270973:0;./setup.sh
+: 1593270983:0;rm /etc/systemd/logind.conf
+: 1593270986:0;sudo rm /etc/systemd/logind.conf
+: 1593270988:0;./setup.sh
+: 1593270990:0;cat /etc/systemd/logind.conf
+: 1593270996:0;ls
+: 1593280590:0;yay -Q | grep ttf
+: 1593280705:0;yay -Q | grep otf
+: 1593281680:0;v ~/.config/newsboat/urls
+: 1593282245:0;sudo pacman -S yay
+: 1593282253:0;sudo pacman -Ss yay
+: 1593283042:0;{}
+: 1593283046:0;{ echo 1 }
+: 1593283055:0;bash
+: 1593283062:0;v ~/.bashrc
+: 1593283067:0;bash
+: 1593283082:0;{  echo 1}
+: 1593283082:0;{  echo 1; }
+: 1593283082:0;{  echo 1; echo 2 }
+: 1593283082:0;{  echo 1; echo 2; }
+: 1593283094:0;v ~/.bashrc
+: 1593283101:0;bash
+: 1593283409:0;{ echo 1; } { echo 2; } { echo 3; }
+: 1593283409:0;{ echo 1; }; { echo 2; }; { echo 3; }
+: 1593283409:0;{ echo 1; }; { echo 2; return 1 }; { echo 3; }
+: 1593283409:0;{ echo 1; }; { echo 2; return 1; }; { echo 3; }
+: 1593283409:0;{ echo 1; }; { echo 2; exit 1; }; { echo 3; }
+: 1593283148:0;bash
+: 1593283383:0;ytop
+: 1593283428:0;{ echo 1; }; { echo 2; return 1; }; { echo 3; }
+: 1593283428:0;{ echo 1; }; () { echo 2; return 1; }; { echo 3; }
+: 1593283428:0;() {}
+: 1593283428:0;() { echo 1 }
+: 1593283428:0;() { echo 1; }
+: 1593283428:0;
+: 1593283428:0;f() echo "$@";
+: 1593283428:0;f() { echo "$@"; }
+: 1593283428:0;f {
+: 1593283437:0;bash
+: 1593283502:0;f; f() { echo 1' }
+: 1593283503:0;f; f() { echo 1; }
+: 1593283727:0;update
+: 1593283805:0;which systemd
+: 1593284024:0;pstree
+: 1593284273:0;which agetty
+: 1593284278:0;du -ah (which agetty)
+: 1593284283:0;du -ah $(which agetty)
+: 1593284294:0;yay mingetty
+: 1593284363:0;du -ah $(which mingetty)
+: 1593284371:0;yay -R mingetty
+: 1593284566:0;man chvt
+: 1593284577:0;chvt 2
+: 1593284583:0;sudo chvt 2
+: 1593284600:0;w
+: 1593285277:0;nm-applet
+: 1593285355:0;ping google.com
+: 1593285481:0;v ~/.bashrc
+: 1593286240:0;cat ~/scripts/torrent.sh
+: 1593286301:0;~/scripts/torrent.sh add ./Artix\ stable\ 202002\ x86_64\ Pack.torrent
+: 1593286322:0;transmission-remote -a ./Artix\ stable\ 202002\ x86_64\ Pack.torrent
+: 1593286332:0;stig
+: 1593286382:0;rm Artix\ stable\ 202002\ x86_64\ Pack.torrent
+: 1593298139:0;update-dotfiles
