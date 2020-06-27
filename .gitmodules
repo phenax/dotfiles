@@ -25,12 +25,12 @@
 [submodule ".config/suckless/dwmblocks"]
 	path = .config/suckless/dwmblocks
 	url = git@github.com:phenax/dwmblocks.git
-[submodule "/home/akshayn/.config/vimwiki"]
+[submodule ".config/vimwiki"]
 	path = .config/vimwiki
 	url = git@github.com:phenax/personal-notes.git
-[submodule "/home/akshayn/.config/zshplugins/zsh-autosuggestions"]
-	path = /home/akshayn/.config/zshplugins/zsh-autosuggestions
+[submodule ".config/zshplugins/zsh-autosuggestions"]
+	path = .config/zshplugins/zsh-autosuggestions
 	url = git@github.com:zsh-users/zsh-autosuggestions.git
-[submodule "/home/akshayn/.config/suckless/shotkey"]
-	path = /home/akshayn/.config/suckless/shotkey
+[submodule ".config/suckless/shotkey"]
+	path = .config/suckless/shotkey
 	url = git@github.com:phenax/shotkey.git
