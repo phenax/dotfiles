@@ -3,34 +3,40 @@
 	url = git@github.com:phenax/work-dotfiles.git
 [submodule ".config/suckless/st"]
 	path = .config/suckless/st
-	url = git@github.com:phenax/st.git
+	url = https://github.com/phenax/st.git
 [submodule ".config/suckless/tabbed"]
 	path = .config/suckless/tabbed
 	url = git@github.com:phenax/tabbed.git
 [submodule "scripts/bsp-layout"]
 	path = scripts/bsp-layout
-	url = git@github.com:phenax/bsp-layout.git
+	url = https://github.com/phenax/bsp-layout.git
 [submodule ".config/suckless/bslock"]
 	path = .config/suckless/bslock
-	url = git@github.com:phenax/bslock.git
+	url = https://github.com/phenax/bslock.git
 [submodule ".config/suckless/dmenu"]
 	path = .config/suckless/dmenu
-	url = git@github.com:phenax/dmenu.git
+	url = https://github.com/phenax/dmenu.git
 [submodule "scripts/statusbar"]
 	path = scripts/statusbar
-	url = git@github.com:phenax/statusbar.git
+	url = https://github.com/phenax/statusbar.git
 [submodule ".config/suckless/dwm"]
 	path = .config/suckless/dwm
-	url = git@github.com:phenax/dwm.git
+	url = https://github.com/phenax/dwm.git
 [submodule ".config/suckless/dwmblocks"]
 	path = .config/suckless/dwmblocks
-	url = git@github.com:phenax/dwmblocks.git
+	url = https://github.com/phenax/dwmblocks.git
+[submodule ".config/suckless/shotkey"]
+	path = .config/suckless/shotkey
+	url = https://github.com/phenax/shotkey.git
 [submodule ".config/vimwiki"]
 	path = .config/vimwiki
 	url = git@github.com:phenax/personal-notes.git
 [submodule ".config/zshplugins/zsh-autosuggestions"]
 	path = .config/zshplugins/zsh-autosuggestions
-	url = git@github.com:zsh-users/zsh-autosuggestions.git
-[submodule ".config/suckless/shotkey"]
-	path = .config/suckless/shotkey
-	url = git@github.com:phenax/shotkey.git
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
+[submodule ".config/zshplugins/zsh-completions"]
+	path = .config/zshplugins/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions.git
+[submodule ".config/zshplugins/zsh-syntax-highlighting"]
+	path = .config/zshplugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
