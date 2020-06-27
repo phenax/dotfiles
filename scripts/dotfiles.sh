@@ -20,7 +20,7 @@ add-public-config() {
 
   # Terminal and shell
   add ~/.bashrc ~/.profile;
-  add ~/.zshrc ~/.config/zshconf ~/.zprofile ~/.config/zsh_history;
+  add ~/.zshrc ~/.zprofile ~/.config/{zshconf,zsh_history,zshplugins};
 
   # Dev
   add ~/scripts ~/.bin;
@@ -33,7 +33,7 @@ add-public-config() {
   add ~/.config/{lf,mpv,sxiv,zathura,ncmpcpp,mopidy,newsboat,neofetch};
   # add ~/.config/spotifyd/spotifyd.conf;
   add ~/.config/transmission-daemon/settings.json;
-  add ~/.config/transmission-remote-cli;
+  add ~/.config/{transmission-remote-cli,stig};
   add ~/.config/{calcurse,pet,shell-macros};
 
   # Wallpapers

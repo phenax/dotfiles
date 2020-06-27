@@ -1,6 +1,3 @@
-https://www.archlinux.org/feeds/news/               "~ArchNews"  tech
-https://www.psu.com/feed/?post_type=psu_news        "~PS news"   games
-
 https://www.reddit.com/r/PS4/.rss?format=xml           "~/r/ps4"         reddit games
 https://www.reddit.com/r/suckless/.rss?format=xml      "~/r/suckless"    reddit tech
 https://www.reddit.com/r/bspwm/.rss?format=xml         "~/r/bspwm"       reddit tech
@@ -25,3 +22,7 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCimiUgDLbi6P17BdaCZpVbg    
 https://www.youtube.com/feeds/videos.xml?channel_id=UCr3cBLTYmIK9kY0F_OdFWFQ      "~Casually explained (YouTube)" videos comedy
 https://www.youtube.com/feeds/videos.xml?channel_id=UCVpankR4HtoAVtYnFDUieYA      "~zefrank1 (YouTube)"           videos comedy
 
+
+https://www.archlinux.org/feeds/news/               "~ArchNews"  tech
+https://artixlinux.org/feed.php                     "~ArtixNews" tech
+https://www.psu.com/feed/?post_type=psu_news        "~PS news"   games

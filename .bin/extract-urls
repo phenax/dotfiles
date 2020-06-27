@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
-while read line; do
-  echo "$line" | egrep -o 'https?://[^ ]+';
-done | awk '!seen[$0]++';
+#REGEX='https?://[^ ]+'
+REGEX="(https?://|www\\.)[\.A-Za-z0-9\-]+\\.[a-zA-Z]{2,4}"
+
+while read line; do echo "$line"; done | \
+  egrep -o "$REGEX" | \
+  awk '!seen[$0]++';
 

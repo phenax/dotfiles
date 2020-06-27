@@ -1,7 +1,18 @@
 #!/usr/bin/env sh
 
-# packages=$((yay -Qum 2> /dev/null | wc -l) || echo 0);
-# [[ $packages == 0 ]] && ~/scripts/notify.sh "Nothing to update" && exit 0;
+updates="$(yay -Qu)";
+update_count=$(echo "$updates" | sed '/^$/d' | wc -l);
 
-sensible-terminal -e sh -c 'yay -Syyu && ~/scripts/notify.sh "System updated"';
+[[ "$update_count" = 0 ]] && notify-send "No packages to update" && \
+  exit 0;
+
+notify-send \
+  -a "Updatings $update_count packages" \
+  "$updates";
+
+sensible-terminal -e sh -c 'yay -Syyu --sudo=dsudo';
+
+notify-send \
+  -a "System updated" \
+  "$update_count packages updated";
 

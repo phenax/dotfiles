@@ -34,7 +34,7 @@ run() {
   # Key Modmap
   xmodmap ~/.config/sxhkd/.Xmodmap &
   xset s off; # No screensaver
-  # xset r rate 300 50;
+  xset r rate 400 30; # [delay] [rate]
 
   # Key daemon
   run "shotkey" shotkey;

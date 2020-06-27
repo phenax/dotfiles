@@ -1,0 +1,8 @@
+# Columns
+set columns.torrents name ratio rate-up rate-down
+
+set tui.poll 10
+
+tab ls paused
+tab ls active
+

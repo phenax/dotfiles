@@ -19,11 +19,10 @@ if [[ "$1" == "rm" ]]; then
 fi;
 
 if (echo "$query" | grep -e '^:') && [[ ! -f "$query" ]]; then
-  echo -e "#!/usr/bin/env bash\n\n" > $query;
-  sensible-editor "$query";
-  chmod u+x "$COMMANDS_DIR/$query";
+  escript "$COMMANDS_DIR/$query";
   echo "Added new command $query";
 else
-  [[ -f "$selected" ]] && sensible-editor "$selected" || echo "$selected command not found";
+  escript "$COMMANDS_DIR/$selected" || echo "$selected command not found";
+  echo "Edited command $query";
 fi;
 
