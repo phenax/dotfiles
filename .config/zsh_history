@@ -2204,3 +2204,12 @@ setopt CORRECT_ALL
 : 1593330557:0;cd ~/.config/password-store
 : 1593330561:0;git remote -v
 : 1593330583:0;update-dotfiles
+: 1593330615:0;yadm status
+: 1593330620:0;yadm diff
+: 1593330671:0;yadm submodule add git@github.com:phenax/pass-store.git ~/.config/password-store
+: 1593330675:0;yadm rm --cached .config/password-store
+: 1593330676:0;yadm submodule add git@github.com:phenax/pass-store.git ~/.config/password-store
+: 1593330694:0;yadm status
+: 1593330702:0;yadm add .gitmodules
+: 1593330705:0;yadm status
+: 1593330710:0;update-dotfiles
