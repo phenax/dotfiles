@@ -6,17 +6,29 @@
 # Before going make sure
  ## All config files are added to vsc updated
  ## Sync memes, music and videos to phone
- ## Symlink useful stuff outside home and save inside .work-config
+ ## SSH config
 
 # yay -S mtm-git;
 
 # Helpers {{{
+  should_skip=0;
+  cmd="$1";
+
   install() { yay -S "$@"; }
 
-  :continue() {
-    echo -n "${1:-Continue}? (yn) ";
+  run() {
+    if [[ ! -z "$cmd" ]] && [[ "$cmd" == "$1" ]]; then
+      "$1" && exit 0 || exit 1;
+    fi;
+
+    echo -n "${2:-Continue}? (Ynq) ";
     read x;
-    [[ "$x" == "n" ]] && exit 0;
+
+    [[ "$x" == "q" ]] && exit 0;
+
+    if [[ "$x" != "n" ]]; then
+      "$1";
+    fi;
   }
 
   clone() {
@@ -26,10 +38,9 @@
   }
 # }}}
 
-:continue "Setup and install initial dependencies"
-# Initialization {{{
+setup() { # {{{
   # Create dump
-  [[ ! -d "~/dump" ]] && mkdir ~/dump;
+  [[ ! -d "$HOME/dump" ]] && mkdir ~/dump;
 
   # Install yay
   clone 'https://aur.archlinux.org/yay.git' yay;
@@ -37,39 +48,49 @@
 
   # Install build deps
   install python make go nodejs;
+}
+
+run setup 'Setup and install initial dependencies';
 # }}}
 
-:continue "Install X server";
-# Install x server {{{
+x_server() { # {{{
   # Read: https://wiki.archlinux.org/index.php/Xorg
 
   install xorg-server xorg-apps;
   cd .config/xresources-schemes && ./set-theme.sh reset;
+}
+
+run x_server 'Install X server';
 # }}}
 
-:continue "Clone dotfiles";
-# Dotfiles {{{
+dotfiles() { # {{{
   # Install yadm
   install yadm-git;
 
   # Clone dotfiles (with submodules)
   yadm clone --recurse-submodules --remote-submodules https://github.com/phenax/dotfiles.git;
+}
+
+run dotfiles 'Clone dotfiles';
 # }}}
 
-:continue "Update symlinks";
-# Update symlinks outside home {{{
-cd ~/.config/linkedconf;
-./setup.sh;
+update_links() { # {{{
+  cd ~/.config/linkedconf;
+  ./setup.sh;
+}
+
+run update_links 'Update symlinks';
 # }}}
 
-:continue "Install fonts"
-# Fonts {{{
-install cozette-ttf ttf-jetbrains-mono otf-font-awesome;
-install ttf-devicons ttf-nerd-fonts-symbols ttf-symbola;
+fonts() { # {{{
+  install cozette-ttf ttf-jetbrains-mono otf-font-awesome;
+  install ttf-devicons ttf-nerd-fonts-symbols ttf-symbola;
+}
+
+run fonts 'Install fonts';
 # }}}
 
-:continue "Install wm stuff"
-# Desktop {{{
+install_wm() { # {{{
   # My forks dwm, st, dmenu, dwmblocks, bslock, shotkey
   suck_fork() { cd ~/.config/suckless/$1 && sudo make install; }
   cd ~/.config/suckless;
@@ -77,17 +98,21 @@ install ttf-devicons ttf-nerd-fonts-symbols ttf-symbola;
 
   # Compositor + Notific daemon
   install picom-tryone-git dunst wmctrl xdotool xdo;
+}
+
+run install_wm 'Install wm stuff';
 # }}}
 
-:continue "Install browser"
-# Browser {{{
+browser() { # {{{
   install qutebrowser;
   #cd ~/.config/qutebrowser;
   #./setup.sh;
+}
+
+run browser 'Install browser';
 # }}}
 
-:continue "Install zsh"
-# Shell {{{
+install_shell() { # {{{
   # zsh (+ change shell to zsh)
   install zsh;
 
@@ -96,10 +121,12 @@ install ttf-devicons ttf-nerd-fonts-symbols ttf-symbola;
 
   # Create senisble applications
   ~/.bin/create-sensible-applications;
+}
+
+run install_shell 'Install zsh';
 # }}}
 
-:continue "Install Media"
-# Media stuff {{{
+media() { # {{{
   # lf, sxiv, mpv, mpc
   install feh sxiv mpv mpc;
   go get -u github.com/gokcehan/lf;
@@ -115,8 +142,10 @@ install ttf-devicons ttf-nerd-fonts-symbols ttf-symbola;
   # neofetch
   # mopidy, mopidy-spotify, mopidy-mpris, ncmpcpp
   # In .config/mopidy run template.sh
-# }}}
+}
 
+run media 'Install Media';
+# }}}
 
 # Verify PATH
 
