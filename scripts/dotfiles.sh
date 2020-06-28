@@ -2,11 +2,14 @@
 
 add() { yadm add "$@"; }
 add-public-config() {
-  # Work config
+  # Base config
   add ~/README.md;
   add ~/.work-config;
-  add ~/.gitmodules;
+  add ~/.gitmodules ~/.config/git-config;
+  add ~/.config/linkedconf;
   add ~/.config/vimwiki;
+  add ~/.config/password-store;
+  add ~/.config/sitesettings;
 
   # X and DM
   add ~/.config/{bspwm,sxhkd,polybar}

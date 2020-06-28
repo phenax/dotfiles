@@ -2036,3 +2036,166 @@ setopt CORRECT_ALL
 : 1593322806:0;:notes
 : 1593322877:0;lf /media/usb
 : 1593323093:0;update-dotfiles
+: 1593323114:0;yadm status
+: 1593323122:0;yadm diff
+: 1593323145:0;~/.config/suckless
+: 1593323148:0;yadm diff
+: 1593323164:0;cd ~/.config/zshplugins/zsh-autosuggestions
+: 1593323166:0;gd
+: 1593323174:0;rm -rf zsh-
+: 1593323177:0;rm -rf zsh-4.3.11
+: 1593323180:0;..
+: 1593323186:0;cd ~/scripts/bsp-layout
+: 1593323187:0;gd
+: 1593323196:0;git add .
+: 1593323202:0;gcm "Center layout"
+: 1593323210:0;git push -u origin feature/cenetered
+: 1593323217:0;git push -u origin feature/centered
+: 1593323228:0;gco master
+: 1593323233:0;gco -
+: 1593323252:0;kkkkk
+: 1593323349:0;lf
+: 1593323363:0;v ~/scripts/bootstrap.sh
+: 1593323859:0;~/scripts/bootstrap.sh
+: 1593323965:0;~/scripts/bootstrap.sh wow
+: 1593324333:0;~/scripts/bootstrap.sh
+: 1593324689:0;echo "wow" > stderr
+: 1593324694:0;rm stderr
+: 1593324736:0;~/scripts/bootstrap.sh
+: 1593324873:0;~/scripts/bootstrap.sh setup
+: 1593324913:0;update-dotfiles
+: 1593325193:0;sxiv mpv-shot0001.jpg
+: 1593325198:0;rm mpv-shot0001.jpg
+: 1593325201:0;la
+: 1593325305:0;syncthing
+: 1593325627:0;mv ~/dump/copy/desk/python.mp4 ~/Downloads/dl
+: 1593325632:0;gdl
+: 1593325643:0;mkdir others
+: 1593325648:0;mv python.mp4 others
+: 1593325832:0;cd ~/Pictures/memes
+: 1593326016:0;lf
+: 1593326608:0;edot
+: 1593327273:0;cat tardeo_vpn
+: 1593327451:0;mv artix-base-runit-20200214-x86_64.iso ~/dump/copy
+: 1593327457:0;cd ~/dump/copy
+: 1593327526:0;gdl
+: 1593327537:0;du -ah -d 1 .
+: 1593327562:0;rm -rf Doctor\ Who\ The\ Day\ Of\ The\ Doctor\ \(2013\)\ \[1080p\]\ \[BluRay\]\ \[5.1\]\ \[YTS.MX\]
+: 1593327580:0;rm -rf The\ Hunt\ \(2012\)\ \[BluRay\]\ \[1080p\]\ \[YTS.AM\]
+: 1593327584:0;rm -rf There.Will.Be.Blood.2007.1080p.BluRay.x264.anoXmous
+: 1593327880:0;go-mtpfs --help
+: 1593327913:0;go-mtpfs -android
+: 1593327933:0;mkdir dump/mnt
+: 1593327935:0;go-mtpfs -android /dump/mnt
+: 1593327942:0;go-mtpfs /dump/mnt
+: 1593327949:0;man go-mtpfs
+: 1593327953:0;go-mtpfs -android
+: 1593327956:0;go-mtpfs --help
+: 1593328000:0;go-mtpfs -android ~/dump/mnt
+: 1593328004:0;go-mtpfs ~/dump/mnt
+: 1593328054:0;cd dump
+: 1593328057:0;go-mtpfs mnt
+: 1593328116:0;yay mtp
+: 1593328140:0;yay -S android-file-transfer
+: 1593328147:0;android-file-transfer
+: 1593328169:0;yay -R android-file-transfer
+: 1593328173:0;auto-remove
+: 1593328180:0;yay mtpfs
+: 1593329001:0;yay -S jmtpfs
+: 1593329030:0;jmtpfs
+: 1593329036:0;sudo jmtpfs
+: 1593329040:0;sudo jmtpfs --help
+: 1593329107:0;sudo jmtpfs -l
+: 1593329128:0;sudo jmtpfs --help
+: 1593329154:0;sudo jmtpfs ~/dump/mnt
+: 1593329170:0;yay -R go-mtpfs-git
+: 1593329224:0;cd mnt
+: 1593329234:0;sudo su
+: 1593329263:0;lf ~/dump/mnt
+: 1593329281:0;sudo chmod 777 mnt
+: 1593329287:0;cd mnt
+: 1593329299:0;sudo jmtpfs ~/dump/mnt
+: 1593329315:0;fusermount mnt
+: 1593329320:0;umount mnt
+: 1593329323:0;umount ~/dump/mnt
+: 1593329326:0;sudo umount ~/dump/mnt
+: 1593329333:0;rm -rf mnt
+: 1593329340:0;mkdir mnt
+: 1593329349:0;cd mnt
+: 1593329359:0;mkdir usb
+: 1593329432:0;sudo jmtpfs usb
+: 1593329436:0;jmtpfs usb
+: 1593329466:0;rm -rf usb
+: 1593329489:0;sudo umount usb
+: 1593329505:0;yay -S go-mtpfs-git
+: 1593329562:0;go-mtpfs usb
+: 1593329573:0;cd usb
+: 1593329575:0;..
+: 1593329579:0;go-mtpfs usb
+: 1593329582:0;sudo umount usb
+: 1593329585:0;go-mtpfs usb
+: 1593329589:0;ls usb
+: 1593329594:0;cd usb/Internal\ shared\ storage
+: 1593329605:0;ls Musi
+: 1593329658:0;cd Music
+: 1593329664:0;cd ../Musi
+: 1593329681:0;mv Slaves\ -\ I\'d\ Rather\ See\ Your\ Star\ Explode.mp3 ~/Downloads/music/Others
+: 1593329708:0;mv Tillian* ~/Downloads/music/Others
+: 1593329715:0;mv Tilian* ~/Downloads/music/Others
+: 1593329833:0;rm -rf *
+: 1593329842:0;rm VITALISM\ -\ AYAHUASCA.mp3
+: 1593329845:0;..
+: 1593329847:0;rm -rf Musi
+: 1593329852:0;cd Music
+: 1593329855:0;cd remuda
+: 1593329857:0;cd presets
+: 1593329862:0;...
+: 1593329864:0;..
+: 1593329866:0;rm -rf Music
+: 1593329874:0;cd Movies
+: 1593329882:0;rm -rf The.Flash.2014.S06E1
+: 1593329886:0;rm -rf The.Flash.2014.S06E1*
+: 1593329908:0;cp ~/dump/copy/artix-base-runit-20200214-x86_64.iso .
+: 1593330039:0;..
+: 1593330048:0;cd Dow
+: 1593330050:0;cd Doc
+: 1593330051:0;cd documents
+: 1593330055:0;cd desk
+: 1593330059:0;..
+: 1593330061:0;cd devDir
+: 1593330103:0;sudo umount usb
+: 1593330108:0;rm -rf usb
+: 1593330110:0;sudo umount usb
+: 1593330112:0;sudo umount usb -f
+: 1593330115:0;sudo umount -f usb
+: 1593330118:0;man umount
+: 1593330130:0;sudo umount -f usb
+: 1593330136:0;go-mtpfs usb
+: 1593330141:0;sudo umount -f usb
+: 1593330168:0;sudo rm -rf usb
+: 1593330169:0;sudo umount -f usb
+: 1593330174:0;sudo fusermount usb
+: 1593330177:0;go-mtpfs usb
+: 1593330185:0;sudo fusermount -u usb
+: 1593330235:0;cat /etc/default/grub
+: 1593330347:0;yay -R go-mtpfs-git
+: 1593330355:0;go-mtpfs usb
+: 1593330359:0;go-mtpfs usb1
+: 1593330366:0;mkdir usb1
+: 1593330370:0;go-mtpfs usb1
+: 1593330377:0;lf
+: 1593330380:0;lf usb1
+: 1593330386:0;cd usb1/Internal\ shared\ storage
+: 1593330393:0;cd Bookasa
+: 1593330395:0;..
+: 1593330399:0;cd documents
+: 1593330422:0;cp -r ~/.ssh ssh-conf
+: 1593330428:0;cd ssh-conf
+: 1593330430:0;..
+: 1593330434:0;cd ssh-conf
+: 1593330438:0;rm known_hosts
+: 1593330440:0;..
+: 1593330464:0;yadm add ~/.config/.gitignore
+: 1593330467:0;yadm st
+: 1593330468:0;yadm status
+: 1593330485:0;update-dotfiles
