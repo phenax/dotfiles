@@ -2022,3 +2022,17 @@ setopt CORRECT_ALL
 : 1593286332:0;stig
 : 1593286382:0;rm Artix\ stable\ 202002\ x86_64\ Pack.torrent
 : 1593298139:0;update-dotfiles
+: 1593321813:0;cat /etc/systemd/logind.conf
+: 1593321819:0;readlink /etc/systemd/logind.conf
+: 1593321893:0;ls $_
+: 1593321896:0;ls -la $_
+: 1593322258:0;chmod 777 /etc/systemd/logind.conf
+: 1593322353:0;sudo systemctl restart logind
+: 1593322360:0;sudo systemctl restart login
+: 1593322362:0;sudo systemctl restart logind
+: 1593322405:0;cd /
+: 1593322570:0;ls /dev
+: 1593322682:0;sudo dd if=/dev/sda1 of=$HOME/Downloads/qute/artix-base-runit-20200214-x86_64.iso
+: 1593322806:0;:notes
+: 1593322877:0;lf /media/usb
+: 1593323093:0;update-dotfiles
