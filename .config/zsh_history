@@ -2199,3 +2199,8 @@ setopt CORRECT_ALL
 : 1593330467:0;yadm st
 : 1593330468:0;yadm status
 : 1593330485:0;update-dotfiles
+: 1593330517:0;yadm rm --cached .config/password-store
+: 1593330523:0;v .gitmodules
+: 1593330557:0;cd ~/.config/password-store
+: 1593330561:0;git remote -v
+: 1593330583:0;update-dotfiles
