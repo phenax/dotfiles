@@ -10,3 +10,7 @@ alias su="SUDO_ASKPASS=/usr/bin/systemd-ask-password sudo -A";
 # Sandbox
 alias sandbox="sudo ~/scripts/host-file-elb-update.sh";
 
+# Network
+alias con="connmanctl";
+alias wifimenu="sudo connman_dmenu";
+

@@ -110,4 +110,4 @@ fi
 # source $HOME/.config/shell-macros/adapters/bash;
 
 export SHELL=/bin/zsh;
-exec $SHELL;
+#exec $SHELL;

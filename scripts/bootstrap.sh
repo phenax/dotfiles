@@ -1,12 +1,7 @@
 #!/usr/bin/env bash
 
-# Reading material
- ## http://smarden.org/runit/runscripts.html#getty
-
-# Before going make sure
- ## All config files are added to vsc updated
- ## Sync memes, music and videos to phone
- ## SSH config
+# Before this you need
+#  - SSH config
 
 # yay -S mtm-git;
 
@@ -68,6 +63,7 @@ dotfiles() { # {{{
   install yadm-git;
 
   # Clone dotfiles (with submodules)
+  # FIXME: Use yadm submodule update --init
   yadm clone --recurse-submodules --remote-submodules https://github.com/phenax/dotfiles.git;
 }
 
@@ -140,12 +136,27 @@ media() { # {{{
   # Zathura
   # Newsboat
   # neofetch
+  # Syncthing
   # mopidy, mopidy-spotify, mopidy-mpris, ncmpcpp
   # In .config/mopidy run template.sh
 }
 
 run media 'Install Media';
 # }}}
+
+passwords() { # {{{
+  cd ~/.config/password-store;
+  #git reset --hard;
+  gpg2 --import keyfile;
+
+  yay -S pinentry-dmenu;
+  sudo mv $(which pinentry) /usr/bin/pinentry-old;
+  sudo ln -s $(which pinentry-dmenu) /usr/bin/pinentry;
+}
+
+run passwords 'Reconfigure passwords';
+# }}}
+
 
 # Verify PATH
 

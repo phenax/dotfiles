@@ -20,9 +20,9 @@ $optn_cancel
 
 lock() { bslock; }
 logout_() { ~/.config/autostart.sh kill; killall dwm; }
-poweroff_() { poweroff; }
-reboot_() { reboot; }
-suspend_() { lock & disown; systemctl suspend; }
+poweroff_() { sudo init 0; }
+reboot_() { sudo init 6; }
+suspend_() { lock & disown; sleep 0.3; sudo zzz; }
 
 menu() {
   result=$(echo -e "$OPTIONS" | open-menu -l 0 -p "Power button");
