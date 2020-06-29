@@ -2971,3 +2971,10 @@ setopt CORRECT_ALL
 : 1593451213:0;yay -R cozette-ttf
 : 1593451215:0;yay -S cozette-ttf
 : 1593451229:0;sudo make install
+: 1593462395:0;v ~/.gitmodules
+: 1593462435:0;update-dotfiles
+: 1593462446:0;yadm remote -v
+: 1593462460:0;yadm remote remove origin
+: 1593462469:0;yadm remote add origin git@github.com:phenax/pass-store.git
+: 1593462476:0;yadm pull
+: 1593462486:0;update-dotfiles
