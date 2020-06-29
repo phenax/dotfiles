@@ -2981,3 +2981,21 @@ setopt CORRECT_ALL
 : 1593462512:0;yadm status
 : 1593462523:0;yadm add .xinitrc
 : 1593462531:0;update-dotfiles
+: 1593462809:0;yadm status
+: 1593462815:0;yadm push -u origin master -f
+: 1593462824:0;edot
+: 1593462855:0;la
+: 1593462859:0;la | wc -l
+: 1593462922:0;cd ~/.config/password-store
+: 1593462928:0;git pull origin master
+: 1593462982:0;git log
+: 1593463014:0;git diff c4735673dc5dc919784066d3b232c2b4e3da24d1
+: 1593463025:0;git log
+: 1593463074:0;git diff caa799b4811212592744d906d4988c5662acc656
+: 1593463085:0;git log
+: 1593463112:0;git diff caa799b4811212592744d906d4988c5662acc656
+: 1593463118:0;git reset --hard caa799b4811212592744d906d4988c5662acc656
+: 1593463128:0;git push -u origin master -f
+: 1593463136:0;update-dotfiles
+: 1593463148:0;..
+: 1593463149:0;update-dotfiles
