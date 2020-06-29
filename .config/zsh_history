@@ -2213,3 +2213,761 @@ setopt CORRECT_ALL
 : 1593330702:0;yadm add .gitmodules
 : 1593330705:0;yadm status
 : 1593330710:0;update-dotfiles
+: 1593371810:0;yadm status
+: 1593371819:0;nvim ~/.Xresources
+: 1593371827:0;ls
+: 1593371831:0;cd ..
+: 1593371832:0;ls
+: 1593371833:0;la
+: 1593371850:0;yadm submodule init --update
+: 1593371859:0;yadm submodule update --init
+: 1593371962:0;nvim bootstrap.sh
+: 1593371994:0;ls
+: 1593371996:0;yadm submodule update --init
+: 1593372003:0;ping google.com
+: 1593372017:0;cd ~/.config/password-store
+: 1593372018:0;ls
+: 1593372026:0;cd ~/.work-config
+: 1593372027:0;ls
+: 1593372029:0;cd ..
+: 1593372033:0;yadm submodule update --init
+: 1593372059:0;nvim .gitmodules
+: 1593372141:0;yadm submodule update --init
+: 1593372212:0;cd dump
+: 1593372217:0;./bootstrap.sh install_wm
+: 1593372270:0;./bootstrap.sh
+: 1593372885:0;nvim bootstrap.sh
+: 1593372888:0;ls
+: 1593372905:0;cd ~/.config/suckless
+: 1593372906:0;ls
+: 1593372908:0;cd dmenu
+: 1593372909:0;..
+: 1593372911:0;cd dwm
+: 1593372912:0;ls
+: 1593372913:0;gst
+: 1593372925:0;git reset --hard
+: 1593372927:0;gst
+: 1593372931:0;sudo make install
+: 1593372935:0;../dmenu
+: 1593372944:0;git reset --hard && sudo make install
+: 1593372948:0;cd ../st
+: 1593372949:0;git reset --hard && sudo make install
+: 1593372952:0;cd ..
+: 1593372953:0;ls
+: 1593372957:0;cd bslock
+: 1593372960:0;git reset --hard && sudo make install
+: 1593372965:0;cd ../shotkey
+: 1593372966:0;git reset --hard && sudo make install
+: 1593372971:0;cd ../dwmblocks
+: 1593372972:0;git reset --hard && sudo make install
+: 1593372977:0;cd ../tabbed
+: 1593372983:0;cd ..
+: 1593373012:7;yay -S xorg-server xorg-apps
+: 1593373064:0;pacman -Ss xf86-video
+: 1593373071:0;pacman -Ss xf86-video | grep intel
+: 1593373084:0;yay -S xf86-video-intel
+: 1593373117:0;yay -S libxrandr libxinerma libxcursor
+: 1593373127:0;yay -S libxrandr
+: 1593373164:0;Xorg :0
+: 1593373201:0;yay -S xf86-input-libinput
+: 1593373247:0;yay startx
+: 1593373263:0;yay xinit
+: 1593373290:0;xinit
+: 1593373308:0;groups
+: 1593373470:0;xinit
+: 1593373529:0;yay -R xorg-server
+: 1593373534:0;yay -S xorg-server
+: 1593373548:0;xinit
+: 1593373554:0;yay -S xorg-server
+: 1593373590:0;Xorg.wrap
+: 1593373633:0;yay -S xorg-xserver-legacy
+: 1593373641:0;yay xorg-xserver
+: 1593373649:0;yay xorg-server
+: 1593373661:0;yay xorg-server-legac
+: 1593373674:0;yay xorg-server  | grep legacy
+: 1593373719:0;sudo nvim /etc/X11/Xwrapper.config
+: 1593373745:0;xinit
+: 1593373751:0;sudo nvim /etc/X11/Xwrapper.config
+: 1593373764:0;xinit
+: 1593373851:0;sudo nvim /etc/X11/Xwrapper.config
+: 1593373857:0;xinit
+: 1593373863:0;sudo nvim /etc/X11/Xwrapper.config
+: 1593373892:0;yay -S sx
+: 1593373899:0;yay startx
+: 1593373907:0;sx
+: 1593373930:0;mkdir ~/.config/sx
+: 1593373947:0;nvim ~/.config/sx/sxrc
+: 1593374054:0;cp ~/.xinitrc ~/.config/sx/sxrc
+: 1593374057:0;sx
+: 1593374071:0;chmod u+x ~/.config/sx/sxrc
+: 1593374072:0;sx
+: 1593374127:0;cd ~/.config/suckless
+: 1593374128:0;ls
+: 1593374129:0;cd st
+: 1593374132:0;sudo make install
+: 1593374136:0;st
+: 1593374146:0;../dwm
+: 1593374153:0;nvim
+: 1593374162:0;ls
+: 1593374169:0;nvim config.def.h
+: 1593374232:0;~/.bin/create-sensible-applications
+: 1593374280:0;nvim ~/.bin/create-sensible-applications
+: 1593374306:0;sudo ~/.bin/create-sensible-applications
+: 1593374311:0;nvim ~/.bin/create-sensible-applications
+: 1593374323:0;sudo ~/.bin/create-sensible-applications
+: 1593374333:0;ls
+: 1593374343:0;cd ../shotkey
+: 1593374345:0;sudo make install
+: 1593374351:0;shotkey --help
+: 1593374360:0;shotkey -h
+: 1593374372:0;bslock
+: 1593374393:0;nvim .
+: 1593374420:0;gco personal
+: 1593374425:0;sudo make install
+: 1593374435:0;dwmc quit
+: 1593374453:0;ps aux | grep xorg
+: 1593374455:0;ps aux | grep xorg -i
+: 1593374467:0;kill 6538
+: 1593374470:0;sx
+: 1593374476:0;st
+: 1593374480:0;shotkey --help
+: 1593374485:0;shotkey
+: 1593374498:0;qutebrowser
+: 1593374528:0;yay -S xcwd
+: 1593374535:0;yay xcwd
+: 1593374557:0;qutebrowser
+: 1593374564:0;shotkey
+: 1593374579:0;ps aux | grep xorg -i
+: 1593374591:0;kill 7216
+: 1593374603:0;sx
+: 1593374612:0;ps aux | grep xorg -i
+: 1593374615:0;reboot
+: 1593374733:0;runit-init 0
+: 1593374791:0;ping google.com
+: 1593374813:0;ps aux | grep shotkey
+: 1593374818:0;ps aux | grep sho
+: 1593374822:0;killall shotkey
+: 1593374828:0;sudo init 0
+: 1593374868:0;sx
+: 1593374881:0;qutebrowser
+: 1593374908:0;yay -S xbacklight
+: 1593374916:0;yay xbacklight
+: 1593374934:0;~/scripts/brightness set 10
+: 1593374936:0;:night
+: 1593375031:0;~/scripts/brightness.sh set 5
+: 1593375056:0;yay -S alsa alsa-tools
+: 1593376412:0;sx
+: 1593376434:0;~/.config/autostart.sh
+: 1593376465:0;nvim ~/.fehbg
+: 1593376487:0;~/.config/autostart.sh
+: 1593376552:0;v ~/.config/autostart.sh
+: 1593376568:0;yay -S xorg-xset
+: 1593376585:0;yay -S xorg-xmodmap
+: 1593376600:0;yay -S dunst
+: 1593376638:0;v ~/.config/autostart.sh
+: 1593376656:0;yay -S transmission-remote
+: 1593376661:0;yay transmission-remote
+: 1593376696:0;yay transmission-daemon
+: 1593376710:0;yay transmission-runit
+: 1593376731:0;yay -R transmission-runit
+: 1593376748:0;transmission-daemon --help
+: 1593376773:0;yay -S unclutter
+: 1593376883:0;mkdir ~/Downloads
+: 1593376893:0;mkdir ~/Downloads/{qute,dl,music}
+: 1593376897:0;ls
+: 1593376899:0;la
+: 1593376906:0;yay -Q
+: 1593376909:0;yay -Q | wc -l
+: 1593402814:0;sx
+: 1593402834:0;~/scripts/autostart.sh
+: 1593402839:0;~/.config/autostart.sh
+: 1593403122:0;yadm submodule update --init --recursive
+: 1593403157:0;ping google.com
+: 1593403181:0;connmanctl help
+: 1593403185:0;connmanctl stat
+: 1593403186:0;connmanctl state
+: 1593403201:0;connmanctl services
+: 1593403215:0;yay connman
+: 1593403320:0;connman-gtk
+: 1593403325:0;connman-gtk --help
+: 1593403329:0;connman-gtk --tray
+: 1593403371:0;cd ~/.config/password-store
+: 1593403376:0;git master
+: 1593403383:0;gco master
+: 1593403387:0;git pull
+: 1593403452:0;sudo chown -v $USER -R ~/.ssh
+: 1593403462:0;git pull
+: 1593403481:0;ssh -v
+: 1593403484:0;git pull
+: 1593403531:0;sudo chmod 700 ~/.ssh/
+: 1593403541:0;sudo chmod 600 ~/.ssh/*
+: 1593403569:0;sudo chown -R ${USER} ~/.ssh/
+: 1593403576:0;sudo chgrp -R ${USER} ~/.ssh/
+: 1593403585:0;yadm submodule update --init --recursive
+: 1593403600:0;cd ~/.config/suckless/dmenu
+: 1593403608:0;cd ../dwm
+: 1593403614:0;cd ~/.config/vimwiki
+: 1593403618:0;git reset --hard
+: 1593403626:0;cd ~/.config/zshplugins
+: 1593403627:0;ls
+: 1593403631:0;cd zsh-autosuggestions
+: 1593403634:0;git reset --hard
+: 1593403639:0;../zsh-completions
+: 1593403640:0;git reset --hard
+: 1593403644:0;../zsh-syntax-highlighting
+: 1593403647:0;git reset --hard
+: 1593403655:0;cd ~/.work-config
+: 1593403657:0;git reset --hard
+: 1593403688:0;yadm status
+: 1593403758:0;cd dump
+: 1593403759:0;ls
+: 1593403765:0;v bootstrap.sh
+: 1593403817:0;cd ~/.config/vimwiki
+: 1593403821:0;v
+: 1593403989:0;python3 =v
+: 1593403991:0;python3 -V
+: 1593403993:0;python -V
+: 1593404014:0;yay -S python-pip python2-pip
+: 1593404043:0;sudo nvim /etc/profile
+: 1593404056:0;sudo nvim /etc/locale.conf
+: 1593404084:0;nvim /etc/locale.gen
+: 1593404123:0;yay -S python-pip
+: 1593404134:0;:update
+: 1593404140:0;yay -Syyu
+: 1593404234:0;echo $LANG
+: 1593404241:0;/etc/profile.d/locale.sh
+: 1593404244:0;source /etc/profile.d/locale.sh
+: 1593404246:0;/etc/profile.d/locale.sh
+: 1593404248:0;echo $LANG
+: 1593404259:0;yay -S python-pip
+: 1593404271:0;yay -S python2-pip python-pip
+: 1593404302:0;sudo pip install neovim
+: 1593404315:0;sudo pip2 install neovim
+: 1593404327:0;node -v
+: 1593404333:0;npm -v
+: 1593404339:0;yay -S npm
+: 1593404360:0;sudo npm install -g yarn
+: 1593404370:0;yarn -v
+: 1593404383:0;yay -S ruby
+: 1593404406:0;yay -Q | wc -l
+: 1593404423:0;nvim
+: 1593404465:0;cd ~/.config/coc/
+: 1593404469:0;cd extensions
+: 1593404473:0;yarn
+: 1593404484:0;npm i
+: 1593404512:0;gdwm
+: 1593404514:0;v
+: 1593404619:0;~/.bin/with_zsh ls
+: 1593404628:0;~/.bin/with_zsh echo 1
+: 1593404634:0;~/.bin/with_zsh 'echo 1'
+: 1593404680:0;sudo make install
+: 1593404953:0;make
+: 1593404959:0;sudo make install
+: 1593404966:0;gaa
+: 1593404983:0;gcm "Config fix"
+: 1593404989:0;sudo make install
+: 1593405035:0;sudo npm i -g neovim
+: 1593405044:0;gem install neovim
+: 1593405000:0;nvim
+: 1593405073:0;yay ctags
+: 1593405116:0;sx
+: 1593405185:0;nvim
+: 1593405279:0;yay -S libxft-bgra
+: 1593405511:0;yay -S alsa-utils
+: 1593405580:0;alsamixer
+: 1593405672:0;ls -la /run/runit
+: 1593405800:0;v ~/.profile
+: 1593405817:0;yay -S bash-language-server
+: 1593405891:0;v ~/.profile
+: 1593405917:0;tty
+: 1593405963:0;yay -Q | wc -l
+: 1593405968:0;mtm
+: 1593406065:0;mv ~/.xinitrc ~/.work-config/xinitrc-old
+: 1593406068:0;la
+: 1593406110:0;yay -Q | grep system
+: 1593406222:0;nvim /etc/runit/sv/elogind
+: 1593406908:0;nvim /etc/runit/sv/elogind/run
+: 1593406929:0;man elogind
+: 1593406942:0;/usr/lib/elogind/elogind --help
+: 1593406946:0;/usr/lib/elogind/elogind -h
+: 1593407856:0;connman-gtk --tray
+: 1593407860:0;connman-gtk --help
+: 1593407882:0;ps aux | connman
+: 1593407884:0;ps aux | grep connman
+: 1593407894:0;pstree
+: 1593407911:0;yay -R connman-gtk
+: 1593407916:0;auto-remove
+: 1593407922:0;yay -S go
+: 1593407935:0;yay -S ytop
+: 1593408010:0;bslock -f
+: 1593408039:0;gsuck
+: 1593408042:0;cd bslock
+: 1593408045:0;v
+: 1593408063:0;make && ./bslock
+: 1593408068:0;sudo make install
+: 1593408078:0;v
+: 1593408095:0;bslock -f
+: 1593408174:0;sudo make install && bslock
+: 1593408238:0;gaa
+: 1593408241:0;gcm "Font change"
+: 1593408347:0;sysctl -a | grep kbd_reboot
+: 1593408356:0;sysctl -a | grep kbd_
+: 1593408361:0;sysctl -a
+: 1593408364:0;sysctl -a | kbd
+: 1593408367:0;sysctl -a | grep kbd
+: 1593408373:0;sysctl -a | kbd
+: 1593408376:0;sysctl -a
+: 1593408602:0;ls -l /dev/input/by-path/platform-i8042-serio-0-event-kbd
+: 1593408609:0;cat /dev/input/by-path/platform-i8042-serio-0-event-kbd
+: 1593408770:0;cd ~
+: 1593408780:0;yay -S bashtop
+: 1593408795:0;ytop
+: 1593408811:0;bashtop
+: 1593408815:0;yay -S curl
+: 1593408822:0;bashtop
+: 1593409351:0;echo $USER
+: 1593409357:0;sudo echo '$USER'
+: 1593409370:0;sudo echo \$USER
+: 1593409479:0;nvim /etc/rc/rc.conf
+: 1593409496:0;c /etc/rc/
+: 1593409498:0;cd /etc/rc/
+: 1593409502:0;sudo nvim
+: 1593409804:0;man powerd
+: 1593410027:0;edot
+: 1593410238:0;cd /etc/runit
+: 1593410247:0;nvim
+: 1593410288:0;install --help
+: 1593410422:0;sysctl --help
+: 1593410443:0;sysctl -a
+: 1593410448:0;sysctl -a | grep acpi
+: 1593410483:0;sudo nvim /etc/sysctl.conf
+: 1593410514:0;cd /boot
+: 1593410515:0;ls
+: 1593410519:0;cd efi
+: 1593410520:0;ls
+: 1593410523:0;rm -rf EFI
+: 1593410528:0;sudo rm -rf EFI
+: 1593410530:0;ls
+: 1593410534:0;rm -rf BOOT
+: 1593410540:0;sudo rm -rf BOOT
+: 1593410541:0;ls
+: 1593410543:0;exit
+: 1593410554:0;kexec --help
+: 1593410561:0;kexec --help | grep '\-e'
+: 1593410604:0;sudo nvim
+: 1593410626:0;wall --help
+: 1593410716:0;sx
+: 1593410730:0;ytop
+: 1593410778:0;sx
+: 1593410797:0;sudo nvim /etc/default/grub
+: 1593410826:0;update-grub
+: 1593410828:0;sudo update-grub
+: 1593410980:0;neofetch
+: 1593410984:0;yay -S neofetch
+: 1593410993:0;neofetch
+: 1593411094:0;lm_sensors
+: 1593411098:0;yay -S lm_sensors
+: 1593411102:0;lm_sensors
+: 1593411106:0;yay -S lm_sensors
+: 1593411113:0;yay -S neofetch
+: 1593411119:0;yay -R neofetch
+: 1593411121:0;yay -S neofetch
+: 1593411158:0;yay -S imagemagick pacman-contrib
+: 1593411252:0;cat /proc/cpuinfo
+: 1593411273:0;sudo nvim /etc/default/grub
+: 1593411308:0;update-grub
+: 1593411311:0;sudo update-grub
+: 1593411355:0;sx
+: 1593411381:0;ytop
+: 1593411524:0;sudo nvim /etc/runit/sv/elogind
+: 1593411528:0;sudo nvim /etc/runit/sv/elogind/run
+: 1593411542:0;ls /etc/runit/sv/elogind/
+: 1593411548:0;ls -r /etc/runit/sv/elogind/
+: 1593411551:0;ls -R /etc/runit/sv/elogind/
+: 1593411557:0;sudo ls -R /etc/runit/sv/elogind/
+: 1593411704:0;ls /etc/login.defs
+: 1593411709:0;cat /etc/login.defs
+: 1593411715:0;cat /etc/login.defs | grep -i powe
+: 1593411720:0;cat /etc/login.defs | grep -i but
+: 1593411761:0;cat ~/.config/linkedconf/logind.conf
+: 1593411777:0;nvim /etc/elogind/logind.conf
+: 1593411803:0;sudo nvim /etc/elogind/logind.conf
+: 1593411905:0;cd ~/.config/linkedconf
+: 1593411906:0;ls
+: 1593411925:0;cp /etc/elogind/logind.conf elogind.conf
+: 1593411932:0;la
+: 1593411934:0;ll
+: 1593411945:0;nvim setup.sh
+: 1593412076:0;ls
+: 1593412143:0;ytop
+: 1593412157:0;node
+: 1593412295:0;v ~/.zprofile
+: 1593412301:0;v ~/.profile
+: 1593412383:0;v ~/.bash_profile
+: 1593412410:0;cat ~/dump/profilelogss
+: 1593412428:3;v ~/.bash_profile
+: 1593412443:0;nvim ~/.bashrc
+: 1593412504:0;sudo chsh -s $(which zsh)
+: 1593412514:0;an
+: 1593412515:0;ssword3
+: 1593412573:0;chsh -s $(which zsh)
+: 1593412579:0;sudo su
+: 1593412590:0;exit
+: 1593412617:0;v ~/scripts/powercontrol.sh
+: 1593412695:0;man runit-init
+: 1593412736:0;man init
+: 1593412738:0;man runit-init
+: 1593412921:0;man zzz
+: 1593412982:0;zzz
+: 1593413122:0;sudo chown -R ${USER} /etc/runit/stopit
+: 1593413130:0;sudo chown -R ${USER} /etc/runit/reboot
+: 1593413135:0;sudo chown -R ${USER} /etc/runit/ctrlaltdel
+: 1593413187:0;sudo chown -R ${USER} /etc/runit
+: 1593413254:0;poweroff
+: 1593413348:0;zzz
+: 1593413454:0;cat ~/dump/profilelogss
+: 1593413472:0;rm ~/dump/profilelogss
+: 1593413479:0;nvim ~/.bashrc
+: 1593413484:0;nvim ~/.profile
+: 1593413495:0;nvim ~/.zprofile
+: 1593413518:0;echo $SHELL
+: 1593413524:0;cat ~/dump/profilelogss
+: 1593413779:0;date
+: 1593413928:0;sudo -S echo 1
+: 1593413955:0;which init
+: 1593413966:0;which runit-init
+: 1593413978:0;sudo nvim /etc/sudoers
+: 1593414110:0;sudo zzz
+: 1593414122:0;which zzz
+: 1593414130:0;sudo nvim /etc/sudoers
+: 1593414176:0;v ~/scripts/powercontrol.sh
+: 1593414302:0;lf /etc/X11/xorg.conf.d
+: 1593414368:0;sudo sv s connmand
+: 1593414383:0;connmanctl state
+: 1593414393:0;connmanctl
+: 1593414593:0;sudo nvim /etc/X11/xorg.conf.d/40-libinput.conf
+: 1593414909:0;cd /etc/runit/sv/
+: 1593414911:0;nvim
+: 1593415330:0;yay -R lm_sensors
+: 1593417504:0;connmand --help
+: 1593417557:0;yay -S connman_dmenu-git
+: 1593417583:0;connmand_dmenu
+: 1593417592:0;connman_dmenu
+: 1593417600:0;sudo connman_dmenu
+: 1593417622:0;man connman_dmenu
+: 1593417627:0;connman_dmenu --help
+: 1593417632:0;dsudo connman_dmenu
+: 1593417650:0;which dsudo
+: 1593417658:0;nvim ~/.bin/dsudo
+: 1593417669:0;~/scripts/password_prompt.sh
+: 1593417703:0;gsuck
+: 1593417705:0;cd dwm
+: 1593417708:0;cd ../dmenu
+: 1593417711:0;git pull
+: 1593417716:0;sudo make install
+: 1593417721:0;ls | dmenu
+: 1593417726:0;ls | dmenu -P
+: 1593417799:0;yay -Q | grep conn
+: 1593417837:0;yay -S connman-ncurses
+: 1593417857:0;yay -R connman-ncurses
+: 1593417862:0;auto-remove
+: 1593417882:0;yay -Syyu
+: 1593417909:0;ecmd
+: 1593417962:0;ezsh
+: 1593417992:0;connmanctl --help
+: 1593418014:0;wifi-menu
+: 1593418093:0;man connmand
+: 1593418099:0;connmand --help
+: 1593418111:0;nvim /etc/connman/main.conf
+: 1593421822:0;sudo nvim /etc/runit/sv/connmand/run
+: 1593422035:0;evim
+: 1593422056:0;cd /etc/runit
+: 1593422059:0;nvim
+: 1593422384:0;cd /etc/rc/
+: 1593422386:0;nvim
+: 1593422723:0;con
+: 1593422864:0;man connmand
+: 1593422868:0;connmand --help
+: 1593422894:0;cd /etc/runit
+: 1593422896:0;nvim
+: 1593423079:0;man wpa_supplicant
+: 1593423113:0;sudo nvim /etc/connman/main.conf
+: 1593423576:0;sudo nvim /var/lib/connman/settings
+: 1593423583:0;nvim /var/lib/connman/settings
+: 1593423587:0;sudo nvim /var/lib/connman/settings
+: 1593423590:0;nvim /var/lib/connman/settings
+: 1593423593:0;sudo nvim /var/lib/connman/settings
+: 1593424392:0;ls /run/runit/
+: 1593424397:0;ls /run/runit/service
+: 1593424405:0;cd /run/runit/service
+: 1593424407:0;ls
+: 1593424573:0;ps aux | grep dhcp
+: 1593424583:0;ps aux | grep conn
+: 1593424646:0;ps aux | grep wpa
+: 1593424701:0;cd /
+: 1593424705:0;sudo su
+: 1593424971:0;wpa_supplicant --help
+: 1593424974:0;wpa_supplicant --help | grep silent
+: 1593424980:0;wpa_supplicant help | grep silent
+: 1593424985:0;wpa_supplicant help | grep log
+: 1593425141:0;yay -S reflector
+: 1593425153:0;yay -S rsync
+: 1593425426:0;ping 0.0.0.0
+: 1593428056:0;connmand --help
+: 1593429464:0;sudo sv restart connmand
+: 1593429471:0;ping google.com
+: 1593429512:0;con state
+: 1593429520:0;con help
+: 1593429524:0;con help | grep restart
+: 1593429532:0;con services
+: 1593429543:0;con sync wifi
+: 1593429548:0;con
+: 1593429625:0;ps aux | grep connmand
+: 1593429647:0;con disable wifi && con enable wifi
+: 1593429697:0;ping google.com
+: 1593429724:0;con scan wifi
+: 1593429745:0;con state
+: 1593429803:0;nvim ~/scripts/wifi-menu.sh
+: 1593429814:0;nvim ~/scripts/menuitems.sh
+: 1593429879:0;con state
+: 1593429911:0;yay xclip
+: 1593429990:0;con state
+: 1593430072:0;con state | awk -F' = ' '/State / {print $2}'
+: 1593430349:0;con state --help
+: 1593430352:0;con state wifi
+: 1593430354:0;con state | awk -F' = ' '/State / {print $2}'
+: 1593430358:0;con state
+: 1593430361:0;con
+: 1593430489:0;ebar
+: 1593430522:0;sudo make install
+: 1593430659:0;~/scripts/menuitems.sh network
+: 1593430858:0;v ~/scripts/bootstrap.sh
+: 1593430957:0;yay -S newsboat
+: 1593431096:0;yay -S pass
+: 1593431116:0;yay -S qrencode
+: 1593431130:0;yay -Q | wc -l
+: 1593431143:0;la
+: 1593431144:0;la | wc -l
+: 1593431174:0;pass list
+: 1593431198:0;pass show Aur/phenax
+: 1593431256:0;cd ~/.config/password-store
+: 1593431258:0;ls
+: 1593431264:0;cat keyfile
+: 1593431271:0;gpg --import keyfile
+: 1593431292:0;pass show Aur/phenax
+: 1593431301:0;cd ~/.config/password-store
+: 1593431306:0;gpg2 --import keyfile
+: 1593431314:0;pass show Aur/phenax
+: 1593431336:0;man gpg2
+: 1593431563:0;man gpg
+: 1593431565:0;man gpg2
+: 1593431566:0;man gpg
+: 1593431618:0;ls
+: 1593431619:0;la
+: 1593431630:0;cd ~/.config/gpg
+: 1593431632:0;cd ~/.config/gpg2
+: 1593431749:0;gpg2 --help
+: 1593431753:0;gpg2 --help | grep list
+: 1593431757:0;gpg2 -k
+: 1593431783:0;ls /tmp
+: 1593431790:0;ls -la /tmp
+: 1593431800:0;ls -la ~/.config/gnupg
+: 1593431819:0;ls -la ~/.cache
+: 1593431832:0;ls -la ~/.local/state
+: 1593431835:0;ls -la ~/.local/share
+: 1593431894:0;echo RELOADAGENT | gpg-connect-agent
+: 1593431908:0;ps aux | grep pass
+: 1593431966:0;pass show Aur/phenax
+: 1593431983:0;echo RELOADAGENT | gpg-connect-agent
+: 1593431984:0;pass show Aur/phenax
+: 1593432147:0;nvim ~/.config/gnupg/crls.d/DIR.txt 
+: 1593432174:0;nvim /usr/local/share/gnupg/options.skel
+: 1593432179:0;nvim /usr/share/gnupg/options.skel
+: 1593432249:0;con state
+: 1593432310:0;ping google.com
+: 1593432366:0;ytop
+: 1593432381:0;bashtop
+: 1593432452:0;yay -R ytop
+: 1593432505:0;con disable wifi && con enable wifi
+: 1593432529:0;connman_dmenu
+: 1593432535:0;sudo connman_dmenu
+: 1593432544:0;con enable wifi
+: 1593432547:0;con scan
+: 1593432550:0;con scan wifi
+: 1593432554:0;con
+: 1593432732:0;sudo connman_dmenu
+: 1593432746:0;con services
+: 1593432749:0;con scan wifi
+: 1593432781:0;con technologies
+: 1593432794:0;con
+: 1593433252:0;rfkill list
+: 1593433262:0;rfkill unblock all
+: 1593433265:0;sudo rfkill unblock all
+: 1593433322:0;ip addr
+: 1593433327:0;ip link
+: 1593433338:0;ip link set wlan0 up
+: 1593433347:0;ip link set wlp5s0 up
+: 1593433351:0;sudo ip link set wlp5s0 up
+: 1593433354:0;ip link
+: 1593434018:0;pass show Aur/phenax --help
+: 1593434097:0;man pass
+: 1593434363:0;man gpg
+: 1593434492:0;PASSWORD_STORE_GPG_OPTS='--passphrase "password3"' pass show Aur/phenax
+: 1593434520:0;PASSWORD_STORE_GPG_OPTS='--passphrase "password3" --pinentry-mode loopback' pass show Aur/phenax
+: 1593434528:0;PASSWORD_STORE_GPG_OPTS='--passphrase "password3"' pass show Aur/phenax
+: 1593434758:0;gpg-agent --help
+: 1593434766:0;gpg-agent
+: 1593434842:0;which pinentry
+: 1593434846:0;pinentry --help
+: 1593434852:0;pinentry
+: 1593434859:0;pinentry --help
+: 1593434879:0;pinentry
+: 1593434887:0;echo "wow" | pinentry
+: 1593434913:0;yay pinentry
+: 1593434945:0;readlink $(which pinentry)
+: 1593434950:0;which pinentry
+: 1593434961:0;which pinentry-curses
+: 1593434973:0;mv /usr/bin/pinentry /usr/bin/pinentry-old
+: 1593434977:0;sudo mv /usr/bin/pinentry /usr/bin/pinentry-old
+: 1593434985:0;which pinentry-dmennu
+: 1593434987:0;which pinentry-dmenu
+: 1593435007:0;sudo ln -s /usr/bin/pinentry-dmenu /usr/bin/pinentry
+: 1593435012:0;pass show Aur/phenax
+: 1593435101:0;pinentry-dmenu --help
+: 1593435110:0;which dmenu
+: 1593435145:0;cat $(which pinentry-dmenu)
+: 1593435965:0;yay -S syncthing
+: 1593435990:0;syncthing
+: 1593436615:0;v ~/.config/suckless/dmenu/config.h
+: 1593436633:0;yay -S ccls
+: 1593436858:0;ls
+: 1593437066:0;rm -rf Music Memes notes
+: 1593437074:0;rm -rf dh-music
+: 1593437079:0;rm -rf dh-memes
+: 1593437085:0;rm -rf Notes
+: 1593437091:0;rm -rf Sync
+: 1593437097:0;lf
+: 1593437186:0;yay -S mopidy mopidy-spotify mopidy-mpris ncmpcpp
+: 1593437315:0;ls
+: 1593437360:0;rm -rf dh-videos
+: 1593437368:0;rm -rf Notes notes
+: 1593437755:0;lf Pictures
+: 1593438004:0;eas
+: 1593438046:0;cd ~/.config/mopidy
+: 1593438052:0;cat mopidy.
+: 1593438054:0;cat mopidy.conf
+: 1593438086:0;./template.sh
+: 1593438094:0;cat mopidy.conf
+: 1593438161:0;ping google.com
+: 1593438178:0;syncthing
+: 1593445423:0;rm -rf Notes
+: 1593445434:0;cd ~/.config/vimwiki
+: 1593445475:0;gd
+: 1593445485:0;yay -S diff-so-fancy
+: 1593445497:0;gd
+: 1593445509:0;gdl
+: 1593445515:0;rm -rf Django\ Unchained\ \(2012\)\ \[1080p\]
+: 1593445582:0;lf
+: 1593445604:0;l
+: 1593445607:0;cd ..
+: 1593445683:0;ps aux | grep mopidy
+: 1593445694:0;killall mopidy
+: 1593445698:0;mopidy
+: 1593445726:0;yay -S mopidy-mpd
+: 1593445745:0;mopidy
+: 1593445907:0;update
+: 1593445914:0;ecmd
+: 1593445970:0;auto-remove
+: 1593445976:0;yay -Q | wc -l
+: 1593445984:0;la | wc -l
+: 1593445988:0;la
+: 1593445991:0;ls
+: 1593446019:0;cat .bash_profile
+: 1593446023:0;cat .bash_history
+: 1593446029:0;cat .bash_logout
+: 1593446038:0;rm .bash_history .bash_logout
+: 1593446041:0;la
+: 1593446051:0;rm .lesshst
+: 1593446052:0;ls
+: 1593446054:0;la
+: 1593446072:0;la | wc -l
+: 1593446224:0;fc-list
+: 1593446229:0;fc-list | grep -i fontawe
+: 1593446242:0;gsuck
+: 1593446244:0;cd dmenu
+: 1593446247:0;v
+: 1593446258:0;fc-list | grep -i font
+: 1593446261:0;fc-list | grep -i awesome
+: 1593446298:0;../st
+: 1593446305:0;v config.h
+: 1593446328:0;sudo make install
+: 1593446515:0;ðƒ¿ƒ¸€
+: 1593446546:0;sudo make install
+: 1593446583:0;../
+: 1593446585:0;cd dwm
+: 1593446592:0;git log
+: 1593446602:0;cd ../st
+: 1593446609:0;../bslock
+: 1593446613:0;git log
+: 1593446646:0;cd ../dwmblocks
+: 1593446655:0;../shotkey
+: 1593446659:0;../st
+: 1593446662:0;../tabbed
+: 1593446665:0;git reset --hard
+: 1593446667:0;sudo make install
+: 1593446688:0;cat config
+: 1593446690:0;cat config.h
+: 1593446810:0;cat ~/.config/nvim/coc-settings.json
+: 1593446873:0;gsuck
+: 1593446875:0;cd dmenu
+: 1593446877:0;v
+: 1593448727:0;agetty
+: 1593448738:0;agetty $TTY
+: 1593448750:0;ps aux | grep agetty
+: 1593448959:0;ecmd
+: 1593449009:0;yay -Syy
+: 1593449085:0;:update
+: 1593449172:0;reflector --latest 200 --protocol http --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+: 1593449176:0;sudo reflector --latest 200 --protocol http --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+: 1593449779:0;:update
+: 1593449848:0;sudo nvim /etc/pacman.d/mirrorlist
+: 1593449862:0;:update
+: 1593449890:0;sudo nvim /etc/pacman.d/mirrorlist-arch
+: 1593449926:0;lf /usr/share/pacman/
+: 1593450134:0;lf /mnt
+: 1593450470:0;cd dump
+: 1593450470:0;ls
+: 1593450499:0;ll .
+: 1593450520:0;nvim mirrorlist
+: 1593450553:0;sudo mv mirrorlist /etc/pacman.d
+: 1593450560:0;:update
+: 1593450630:0;ls
+: 1593450662:0;cp /etc/pacman.d/mirrorlist-arch ~/dump/test/
+: 1593450664:0;cp /etc/pacman.d/mirrorlist ~/dump/test/
+: 1593450673:0;reflector --latest 200 --protocol http --protocol https --sort rate --save /etc/pacman.d/mirrorlist-arch
+: 1593450677:0;sudo reflector --latest 200 --protocol http --protocol https --sort rate --save /etc/pacman.d/mirrorlist-arch
+: 1593450873:0;sudo :updOC
+: 1593450876:0;:update
+: 1593450901:0;update
+: 1593450923:0;yay cozette
+: 1593450944:0;yay -R cozette-ttf
+: 1593450956:0;yay -R cozette-otb
+: 1593450960:0;yay -S cozette-otb
+: 1593450980:0;update
+: 1593451018:0;yay reflector
+: 1593451056:0;fc-list | grep -i cozette
+: 1593451068:0;cd ~/.config/suckless/bslock
+: 1593451071:0;v
+: 1593451098:0;bslock -f
+: 1593451103:0;bslock -f | grep cozette
+: 1593451109:0;bslock -f 2>&1 | grep cozette
+: 1593451132:0;sudo make install
+: 1593451147:0;bslock -f 2>&1 | grep cozette
+: 1593451172:0;fc-cache --help
+: 1593451187:0;fc-cache -f -r
+: 1593451193:0;fc-list | grep -i cozette
+: 1593451196:0;bslock -f 2>&1 | grep cozette
+: 1593451209:0;yay -R cozette-otb
+: 1593451213:0;yay -R cozette-ttf
+: 1593451215:0;yay -S cozette-ttf
+: 1593451229:0;sudo make install

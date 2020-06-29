@@ -8,8 +8,9 @@ CONF="$HOME/.config/linkedconf";
     sudo ln -s "$1" "$2";
   }
 
-  linkf() { link "$CONF/$1" "$2/$1"; }
+  linkf() { link "$CONF/$1" "$2"; }
 # }}}
 
-#linkf 'logind.conf' '/etc/systemd';
+# linkf 'logind.conf' '/etc/systemd/logind.conf';
+linkf 'elogind.conf' '/etc/elogind/logind.conf';
 

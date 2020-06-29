@@ -13,7 +13,8 @@ add-public-config() {
 
   # X and DM
   add ~/.config/{bspwm,sxhkd,polybar}
-  add ~/.Xresources ~/.xinitrc ~/.config/compton.conf;
+  add ~/.Xresources ~/.config/compton.conf;
+  add ~/.config/sx;
   add ~/.config/xresources-schemes;
   add ~/.config/dunst;
   add ~/.config/autostart.sh;

@@ -12,6 +12,13 @@ playerctl_icon() {
   esac
 }
 
+network_state() {
+  local state=$(connmanctl state);
+  local status="$(echo -e "$state" | awk -F' = ' '/State / {print $2}')";
+
+  (echo -e "$state" | grep 'OfflineMode = True' > /dev/null) && echo 'offline' || echo "$status";
+}
+
 icon() {
   case "$1" in
     date)        echo "" ;;
@@ -19,6 +26,7 @@ icon() {
     music)       playerctl_icon ;;
     volume)      volume_component 6 | sed 's/on//; s/off//' ;;
     brightness)  echo "" ;;
+    network)     network_state | sed 's/online//; s/idle//; s/offline/❌/' ;;
     *) ;;
   esac
 }
@@ -49,6 +57,10 @@ keymode_module() {
   echo "$(~/scripts/shotkey.sh mode)";
 }
 
+network_module() {
+  echo "$(icon network)";
+}
+
 
 get_module() {
   case "$1" in
@@ -58,6 +70,7 @@ get_module() {
     music) music_module ;;
     brightness) brightness_module ;;
     keymode) keymode_module ;;
+    network) network_module ;;
   esac;
 }
 

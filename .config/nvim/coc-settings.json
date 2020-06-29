@@ -50,7 +50,7 @@
   "explorer.width": 30,
   "explorer.icon.enableNerdfont": true,
   "explorer.previewAction.onHover": false,
-  "explorer.quitOnOpen": true,
+  "explorer.quitOnOpen": false,
   "explorer.keyMappings": {
     "s": false,
     "p": false,

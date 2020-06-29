@@ -15,6 +15,8 @@ if [ -n "$BASH_VERSION" ]; then
   fi
 fi
 
+echo ".profile1 $(tty)" >> $HOME/dump/profilelogss;
+
 source "$HOME/.config/zshconf/config.zsh";
 
 PATH="$HOME/.bin:$PATH"
@@ -24,8 +26,11 @@ source "$HOME/.config/zshconf/paths.zsh"
 export PATH
 
 start_x_server () {
-	pgrep Xorg && echo "X server is already running" || startx;
+	pgrep Xorg && echo "X server is already running" || sx;
 	exit;
 }
 
+echo ".profile2 $(tty)" >> $HOME/dump/profilelogss;
+
 [[ "$(tty)" == '/dev/tty1' ]] && start_x_server &> /dev/null
+
