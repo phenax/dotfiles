@@ -2978,3 +2978,6 @@ setopt CORRECT_ALL
 : 1593462469:0;yadm remote add origin git@github.com:phenax/pass-store.git
 : 1593462476:0;yadm pull
 : 1593462486:0;update-dotfiles
+: 1593462512:0;yadm status
+: 1593462523:0;yadm add .xinitrc
+: 1593462531:0;update-dotfiles
