@@ -9,6 +9,7 @@ alias ebar='gbar && sensible-editor blocks.h';
 alias ekey='gkey && sensible-editor config.h';
 alias equte='gqute && sensible-editor config.py';
 alias eas='sensible-editor ~/.config/autostart.sh';
+alias emime="sensible-editor ~/.bin/open";
 
 alias ehosts='sudo nvim /etc/hosts';
 
