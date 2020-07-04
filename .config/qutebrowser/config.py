@@ -297,11 +297,10 @@ c.url.default_page = '~/.config/qutebrowser/homepage/index.html'
 c.url.start_pages = [c.url.default_page]
 
 c.url.searchengines = {
-    'DEFAULT': 'http://duckduckgo.com/?q={}',
-
     # General
-    's': 'http://duckduckgo.com/?q={}',
-    'so': 'https://3g2upl4pq6kufc4m.onion/?q={}',
+    'sp': 'https://www.startpage.com/sp/search?q={}',
+    'd': 'http://duckduckgo.com/?q={}',
+    'do': 'https://3g2upl4pq6kufc4m.onion/?q={}',
 
     # Dev stuff
     'bp': 'https://bundlephobia.com/result?p={}',
@@ -315,7 +314,13 @@ c.url.searchengines = {
     'r': 'http://www.reddit.com/r/{}/',
     'y': 'http://www.youtube.com/results?search_query={}',
     'az': 'http://search.azlyrics.com/search.php?q={}',
+
+    'DEFAULT': 'http://this-is-a-placeholder.com?q={}',
 }
+
+# Default search engine
+c.url.searchengines['DEFAULT'] = c.url.searchengines['sp']
+c.url.searchengines['s'] = c.url.searchengines['DEFAULT']
 
 c.aliases['archive'] = 'open --tab http://web.archive.org/save/{url}'
 c.aliases['view-archive'] = 'open --tab http://web.archive.org/web/*/{url}'

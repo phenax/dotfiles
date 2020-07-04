@@ -2999,3 +2999,1241 @@ setopt CORRECT_ALL
 : 1593463136:0;update-dotfiles
 : 1593463148:0;..
 : 1593463149:0;update-dotfiles
+: 1593495605:0;cd ~/.config/suckless
+: 1593495623:0;ls
+: 1593495829:0;xmessage
+: 1593495844:0;yay -S zenity
+: 1593495875:0;zenity \\
+--info \\
+--text="<span size=\"xx-large\">Time is $(date +%Hh%M).</span>\n\nGet your <b>coffee</b>." \\
+--title="Coffee time" \\
+--ok-label="Sip"
+: 1593495885:0;yay -Rns zenity
+: 1593496222:0;yay popcorn
+: 1593496235:0;cp dmenu popcorn
+: 1593496238:0;cp dmenu popcorn -r
+: 1593496241:0;cd popcorn
+: 1593496244:0;yay popkorn
+: 1593496251:0;v
+: 1593496584:0;cd ..
+: 1593496587:0;rm -rf popcorn
+: 1593496596:0;gsuck
+: 1593496598:0;cd dmenu
+: 1593496601:0;v
+: 1593496706:0;cp shotkey popcorn
+: 1593496708:0;cp shotkey popcorn -r
+: 1593496710:0;cd popcorn
+: 1593496713:0;v
+: 1593496722:0;rm -rf .git
+: 1593496756:0;sed 's/shotkey/popcorn/g' -i shotkey.c
+: 1593496764:0;sed 's/shotkey/popcorn/g' -i config.h
+: 1593496766:0;sed 's/shotkey/popcorn/g' -i config.def.h
+: 1593496772:0;git init
+: 1593496794:0;sed 's/shotkey/popcorn/g' -i Makefile
+: 1593496801:0;sed 's/shotkey/popcorn/g' -i README.md
+: 1593497028:0;sed 's/shotkey/popcorn/g' -i shotkey.1
+: 1593497036:0;mv shotkey.c popcorn.c
+: 1593497042:0;mv shotkey.1 popcorn.1
+: 1593497357:0;sed 's/SHOTKEY/POPCORN/g' -i shotkey.1
+: 1593497363:0;sed 's/SHOTKEY/POPCORN/g' -i popcorn.1
+: 1593497410:0;rm popcorn.1
+: 1593497743:0;rm config.h
+: 1593497747:0;make config.h
+: 1593498054:0;git add .
+: 1593498060:0;git commit -m "Init copy"
+: 1593498071:0;make
+: 1593498080:0;make config.h
+: 1593498084:0;rm config.h
+: 1593498085:0;make config.h
+: 1593498087:0;make
+: 1593498110:0;make config.h
+: 1593498680:0;cp ../dmenu/drw.{c,h} .
+: 1593498683:0;gd
+: 1593498691:0;gaa
+: 1593498698:0;gcm "Adds drw from dmenu"
+: 1593500800:0;yay -Q | grep xiner
+: 1593501429:0;make
+: 1593502155:0;yay -Q | grep xiner
+: 1593502156:0;make
+: 1593502230:0;rm popcorn.o
+: 1593502231:0;make
+: 1593529933:0;cp ../dmenu/util.c ../dmenu/util.h  .
+: 1593529936:0;make
+: 1593529961:0;./popcorn
+: 1593530141:0;make
+: 1593530221:0;yay -S conky
+: 1593530469:0;make
+: 1593530522:0;make && ./popcorn
+: 1593530536:0;make && (echo "eksdjkdsf" | ./popcorn)
+: 1593531760:0;make && (echo -e "eksdjkdsf\nwow\nnice" | ./popcorn)
+: 1593532067:0;strm() { echo "hello"; sleep 1; echo "world"; }
+: 1593532069:0;strm
+: 1593532084:0;make && (strm | ./popcorn)
+: 1593532126:0;strm() { echo "hello"; sleep 1; echo "foobar"; sleep 2; echo "world"; sleep 1; echo "niceeee"; }
+: 1593532127:0;make && (strm | ./popcorn)
+: 1593532220:0;strm | dmenu
+: 1593532452:0;make
+: 1593532484:0;make && (strm | ./popcorn)
+: 1593532545:0;make
+: 1593532547:0;make && (strm | ./popcorn)
+: 1593532724:0;v ~/.config/mimeapps.list
+: 1593532981:0;which open
+: 1593532985:0;ezsh
+: 1593533005:0;escript ~/.bin/open
+: 1593533052:0;file --help
+: 1593533056:0;file --help | grep mime
+: 1593533071:0;file .bashrc --mime
+: 1593533076:0;file .bashrc --mime-type
+: 1593533089:0;file .bashrc ~/Pictures/wallpapers/apocal.jpg --mime-type
+: 1593533260:0;man xdg-open
+: 1593533282:0;file "https://google.com" --mime-type
+: 1593533574:0;open "https://google.com"
+: 1593533578:0;open "http://google.com"
+: 1593533624:0;file ~/Pictures
+: 1593533659:0;open ~/Pictures
+: 1593533707:0;file ~/Pictures --mime-type
+: 1593533747:0;file ~/.config/qutebrowser/sessions --mime-type
+: 1593533765:0;cd ~/.config/qutebrowser
+: 1593533769:0;./setup.sh
+: 1593533785:0;file ~/.local/share/qutebrowser/greasemonkey --mime-type
+: 1593533846:0;readlink sh
+: 1593533850:0;readlink $(which sh)
+: 1593533861:0;file $(which sh) --mime-type
+: 1593533943:0;open ~/Pictures
+: 1593533956:0;open "~/Pictures"
+: 1593533968:0;open "$HOME/Pictures"
+: 1593533979:0;lf ~/Pictures
+: 1593533989:0;open "$HOME/Pictures"
+: 1593534007:0;lf /home/an/Pictures
+: 1593534020:0;open "$HOME/Pictures"
+: 1593534123:0;file somethig
+: 1593534125:0;file somethig.x
+: 1593534183:0;yay -S pdfjs
+: 1593534595:0;open ~/Downloads/qute
+: 1593534599:0;open ~/Downloads/qute/tmpygb32_oe_algeff-tr-2016-v2.pdf
+: 1593534943:0;ecmd
+: 1593534977:0;man mpc
+: 1593535060:0;find ./ -type f
+: 1593535095:0;readlink $(which sh)
+: 1593535102:0;cd ~/Pictures/memes
+: 1593535108:0;readlink bubz.jpeg
+: 1593535133:0;dirname bubz.jpeg
+: 1593535184:0;readlink -e bubz.jpeg
+: 1593535252:0;cd ~/Downloads
+: 1593535257:0;open music/Amon\ Amarth
+: 1593535395:0;open music/Others
+: 1593535399:0;open music/Others/Senua.opus
+: 1593535497:0;open music/Amon\ Amarth
+: 1593535539:0;man read
+: 1593535542:0;read --help
+: 1593535545:0;read -h
+: 1593535598:0;open music/Amon\ Amarth
+: 1593535668:0;open music/Amon\ Amarth/Deceiver\ Of\ The\ Gods
+: 1593535705:0;open music/Amon\ Amarth/Deceiver\ Of\ The\ Gods/01\ -\ Deceiver\ of\ the\ Gods.opus
+: 1593535791:0;mpc stop
+: 1593535855:0;open music/Amon\ Amarth/Deceiver\ Of\ The\ Gods/01\ -\ Deceiver\ of\ the\ Gods.opus
+: 1593536687:0;xdg-open ~/Pictures/wallpapers/space.png
+: 1593536695:0;xdg-open ~/Pictures/wallpapers/space.png ~/Pictures/wallpapers/apocal.jpg
+: 1593536845:0;open music/Others/Senua.opus
+: 1593536917:0;open dl
+: 1593536925:0;open https://google.com
+: 1593536929:0;open "https://google.com"
+: 1593537210:0;open .
+: 1593537219:0;escript ~/.bin/open
+: 1593537230:0;lf "."
+: 1593537234:0;lf .
+: 1593537247:0;open .
+: 1593537416:0;nvim ~/.config/lf/lfrc
+: 1593537424:0;man file
+: 1593537471:0;file . --mime-type -bL
+: 1593537928:0;ezsh
+: 1593538038:0;dsudo ls
+: 1593538057:0;gsuck
+: 1593538059:0;cd dmenu
+: 1593538062:0;v
+: 1593539843:0;emime
+: 1593539861:0;v ~/.config/lf/lfrc
+: 1593539882:0;emime
+: 1593540069:0;open https://google.com
+: 1593540136:0;open ~/Downloads/qute/tmpygb32_oe_algeff-tr-2016-v2.pdf
+: 1593540146:0;open ~/Downloads/music/Amon\ Amarth
+: 1593540154:0;open ~/Downloads/music/Amon\ Amarth/Twilight\ Of\ The\ Thunder\ God/01\ -\ Twilight\ of\ the\ Thunder\ God.opus
+: 1593540171:0;open .bash_profile
+: 1593580802:0;gsuck
+: 1593580876:0;cp bslock
+: 1593580880:0;cd bslock
+: 1593580883:0;git log
+: 1593580885:0;gp
+: 1593580893:0;git remote -v
+: 1593580902:0;../dwm
+: 1593580904:0;gp
+: 1593580913:0;../st
+: 1593580914:0;gp
+: 1593580923:0;cd ../dmenu
+: 1593580925:0;git remote -v
+: 1593580938:0;cd ../dwmblocks
+: 1593580942:0;git remote -v
+: 1593580970:0;git remote remove origin
+: 1593580994:0;git remote add origin git@github.com:phenax/bslock.git
+: 1593580997:0;git pull
+: 1593581002:0;git push
+: 1593581009:0;git push -u origin master
+: 1593581073:0;git remote remove origin
+: 1593581081:0;git remote add origin git@github.com:phenax/st.git
+: 1593581094:0;git remote remove origin
+: 1593581100:0;git remote add origin git@github.com:phenax/dmenu.git
+: 1593581104:0;../st
+: 1593581108:0;git pull
+: 1593581118:0;git push -u origin master
+: 1593581127:0;git pull
+: 1593581132:0;gp
+: 1593581139:0;gp -u origin master
+: 1593581150:0;git remote remove origin
+: 1593581156:0;git remote add origin git@github.com:phenax/dwm.git
+: 1593581159:0;git pull
+: 1593581177:0;gp -u origin master
+: 1593581185:0;gd
+: 1593581189:0;gaa
+: 1593581194:0;gcm "Adds network command"
+: 1593581200:0;git remote remove origin
+: 1593581207:0;git remote add origin git@github.com:phenax/dwmblocks.git
+: 1593581209:0;git pull
+: 1593581215:0;git push -u origin master
+: 1593581230:0;../shotkey
+: 1593581234:0;git remote remove origin
+: 1593581242:0;git remote add origin git@github.com:phenax/shotkey.git
+: 1593581248:0;../tabbed
+: 1593581252:0;git remote remove origin
+: 1593581260:0;git remote add origin git@github.com:phenax/tabbed.git
+: 1593581262:0;git pull
+: 1593581267:0;git push -u origin master
+: 1593581275:0;../
+: 1593581283:0;cp bslock tmptest
+: 1593581286:0;cp -r bslock tmptest
+: 1593581295:0;cp tmptest
+: 1593581297:0;cd tmptest
+: 1593581300:0;v
+: 1593581389:0;make
+: 1593581390:0;ls
+: 1593581408:0;sudo make install
+: 1593581473:0;make
+: 1593581475:0;sudo make install
+: 1593581481:0;ls
+: 1593581483:0;make
+: 1593581503:0;ls
+: 1593581505:0;sudo make install
+: 1593581509:0;tmptest
+: 1593582002:0;make && ./tmptest
+: 1593582157:0;cd ~/.config/suckless/popcorn
+: 1593582164:0;v
+: 1593582171:0;gd
+: 1593582185:0;git commit -m "Some hacking"
+: 1593582187:0;gaa
+: 1593582188:0;git commit -m "Some hacking"
+: 1593582207:0;gco -b newman
+: 1593582237:0;strm() { echo "hello"; sleep 1; echo "foobar"; sleep 2; echo "world"; sleep 1; echo "niceeee"; }
+: 1593582242:0;make && (strm | ./popcorn)
+: 1593583944:0;git reset --hard
+: 1593583946:0;gco -
+: 1593583954:0;git branch -d newman
+: 1593584118:0;make
+: 1593584210:0;make && (strm | ./popcorn)
+: 1593584256:0;nodemon --exec "clear && make || echo '######################################============================='" -e .c,.h
+: 1593584263:0;sudo npm i -g nodemon
+: 1593584276:0;nodemon --exec "clear && make || echo '######################################============================='" -e .c,.h
+: 1593584785:0;strm() { echo "hello"; sleep 1; echo "foobar"; sleep 2; echo "world"; sleep 1; echo "niceeee"; }
+: 1593584793:0;strm | ./popcorn
+: 1593584850:0;make && ./tmptest
+: 1593585014:0;../
+: 1593585020:0;rm -rf tmptest
+: 1593585023:0;cd bslock
+: 1593585025:0;v
+: 1593588842:0;help ncmpcpp
+: 1593588865:0;readlink ~/.bin/help
+: 1593588875:0;readlink --help
+: 1593588921:0;strm | ./popcorn
+: 1593589049:0;dunstify --help
+: 1593589352:0;xsel --help
+: 1593589495:0;edwm
+: 1593596002:0;rm util.*
+: 1593596005:0;rm drw.*
+: 1593596022:0;v
+: 1593596147:0;make && ./popcorn
+: 1593596188:0;gsuck
+: 1593596190:0;cd bslock
+: 1593596192:0;v
+: 1593596394:0;make && ./popcorn
+: 1593596764:0;edwm
+: 1593596981:0;make && ./popcorn
+: 1593598235:0;nodemon --exec "make && ./popcorn" -x .c,.h
+: 1593598240:0;nodemon --exec "make && ./popcorn" -e .c,.h
+: 1593598433:0;make config.h
+: 1593598435:0;nodemon --exec "make && ./popcorn" -e .c,.h
+: 1593598438:0;rm config.h
+: 1593598439:0;nodemon --exec "make && ./popcorn" -e .c,.h
+: 1593598444:0;make
+: 1593598449:0;make config.h
+: 1593598450:0;make
+: 1593598453:0;nodemon --exec "make && ./popcorn" -e .c,.h
+: 1593598515:0;rm config.h
+: 1593598516:0;nodemon --exec "make && ./popcorn" -e .c,.h
+: 1593598519:0;make config.h
+: 1593598526:0;nodemon --exec "make && ./popcorn" -e .c,.h
+: 1593598541:0;rm --help
+: 1593598549:0;rm config.h
+: 1593598551:0;rm config.h -f
+: 1593598559:0;nodemon --exec "make && ./popcorn" -e .c,.h
+: 1593598589:0;nodemon --exec "rm config.h && make config.h && make && ./popcorn" -e .c,.h
+: 1593599941:0;gaa
+: 1593599953:0;gcm "Drew a window"
+: 1593600146:0;nodemon --exec "rm config.h && make config.h && make && ./popcorn" -e .c,.h
+: 1593601276:0;gaa
+: 1593601300:0;gcm "Decoration + Window border"
+: 1593601341:0;nodemon --exec "rm config.h && make config.h && make && ./popcorn" -e .c,.h
+: 1593601353:0;notify-send -a "wow" "nice"
+: 1593601361:0;nodemon --exec "rm config.h && make config.h && make && ./popcorn" -e .c,.h
+: 1593601460:0;gsuck
+: 1593601465:0;ekey
+: 1593603478:0;nodemon --exec "rm config.h && make config.h && make && ./popcorn" -e .c,.h
+: 1593603716:0;gaa
+: 1593603736:0;gcm "Fixes calculation of negative position values"
+: 1593604012:0;nodemon --exec "rm config.h && make config.h && make && ./popcorn" -e .c,.h
+: 1593604029:0;gaa
+: 1593604038:0;gcm "Refactors xcolor to fn"
+: 1593622266:0;nodemon --exec "rm config.h && make config.h && make && ./popcorn" -e .c,.h
+: 1593622510:0;edwm
+: 1593623257:0;nodemon --exec "rm config.h && make config.h && make && ./popcorn" -e .c,.h
+: 1593626584:0;make
+: 1593626607:0;nodemon --exec "rm config.h && make config.h && make && ./popcorn" -e .c,.h
+: 1593630183:0;gaa
+: 1593630205:0;gcm "Adds text rendering and fixes event mask"
+: 1593630426:0;gaa
+: 1593630442:0;gcm "text padding added top+left"
+: 1593630814:0;gsuck
+: 1593630820:0;cd popcorn
+: 1593630821:0;v
+: 1593632283:0;touch textutil.h textutil.c
+: 1593632350:0;rm textutil.*
+: 1593632354:0;gco -- Makefile
+: 1593633265:0;nodemon --exec "rm config.h && make config.h && make && ./popcorn" -e .c,.h
+: 1593634373:0;./popcorn
+: 1593634377:0;nodemon --exec "rm config.h && make config.h && make && ./popcorn" -e .c,.h
+: 1593634527:0;./popcorn
+: 1593635075:0;bashtop
+: 1593638109:0;cd gsuck
+: 1593638114:0;gsuck
+: 1593638120:0;cd popcorn
+: 1593638123:0;gd
+: 1593638208:0;la
+: 1593638258:0;v
+: 1593638417:0;git add README.md
+: 1593638428:0;gcm "readme"
+: 1593638437:0;git remote add origin git@github.com:phenax/popcorn.git
+: 1593638441:0;git pull origin master
+: 1593638454:0;git pull origin master --allow-unrelated-histories
+: 1593638465:0;git push -u origin master
+: 1593638759:0;v
+: 1593638773:0;nodemon --exec "rm config.h && make config.h && make && ./popcorn" -e .c,.h
+: 1593639775:0;yay -S chromium-widevine
+: 1593669451:0;gsuck
+: 1593669457:0;cd popcorn
+: 1593669496:0;v ~/scripts/open-project.sh
+: 1593669677:0;ls -t ~/suckless
+: 1593669681:0;ls -t ~/.config/suckless
+: 1593669731:0;man ls
+: 1593670214:0;~/scripts/open-project.sh
+: 1593670257:0;mkdir -p ~/dev/projects
+: 1593670259:0;~/scripts/open-project.sh
+: 1593671030:0;nodemon --exec "rm config.h && make config.h && make && ./popcorn" -e .c,.h
+: 1593671915:0;echo "hello \0 world"
+: 1593671947:0;nodemon --exec "rm config.h && make config.h clear && make && ./popcorn" -e .c,.h
+: 1593671952:0;nodemon --exec "rm config.h && make config.h && clear && make && ./popcorn" -e .c,.h
+: 1593672116:0;./popcorn
+: 1593672246:0;yay gdb
+: 1593672305:0;make
+: 1593672315:0;gdb ./popcorn
+: 1593672523:0;make
+: 1593672525:0;./popcorn
+: 1593672538:0;nodemon --exec "rm config.h && make config.h && clear && make && ./popcorn" -e .c,.h
+: 1593699278:0;x
+: 1593700081:0;nodemon --exec "rm config.h && make config.h && clear && make && ./popcorn" -e .c,.h
+: 1593700155:0;./popcorn
+: 1593700226:0;gdb ./popcorn
+: 1593700670:0;nodemon --exec "rm config.h && make config.h && clear && make && ./popcorn" -e .c,.h
+: 1593706331:0;gaa
+: 1593706352:0;gcm "Implements a naive word wrapping algo"
+: 1593707135:0;make config.h
+: 1593707149:0;gaa .
+: 1593707179:0;gaa
+: 1593707188:0;gcm "fixes last index issue for string"
+: 1593707582:0;nodemon --exec "rm config.h && make config.h && clear && make && ./popcorn" -e .c,.h
+: 1593708292:0;gaa
+: 1593708303:0;gcm "Dynamic height fixed"
+: 1593708309:0;gc!
+: 1593708574:0;gaa
+: 1593708595:0;gcm "Fixes x window reference error"
+: 1593708959:0;gaa
+: 1593708973:0;gcm "Fixes too smol window issu"
+: 1593709102:0;gd
+: 1593709104:0;gaa
+: 1593709109:0;gcm "changes width"
+: 1593709123:0;gaa
+: 1593709124:0;gc!
+: 1593709408:0;gaa
+: 1593709427:0;gcm "Fixes gigantic word bug"
+: 1593709848:0;gd
+: 1593709853:0;gaa
+: 1593709856:0;gcm "todo"
+: 1593710159:0;nodemon --exec "rm config.h && make config.h && clear && make && ./popcorn" -e .c,.h
+: 1593714462:0;nodemon --exec "rm config.h && make config.h && clear && make && (echo foobaarrr | ./popcorn)" -e .c,.h
+: 1593714478:0;strm() { echo "hello"; sleep 1; echo "foobar"; sleep 2; echo "world"; sleep 1; echo "niceeee"; }
+: 1593714482:0;strm | ./popcorn
+: 1593714505:0;strm() { echo "hello"; sleep 1; }
+: 1593714506:0;strm | ./popcorn
+: 1593714529:0;make && (strm | ./popcorn)
+: 1593714587:0;strm() { echo "hello"; sleep 10; }
+: 1593714589:0;make && (strm | ./popcorn)
+: 1593714603:0;gaa
+: 1593714623:0;gcm "Adds read from input stream (along with a limit on max string size)"
+: 1593714635:0;gaa
+: 1593714636:0;gc!
+: 1593714648:0;gaa
+: 1593714649:0;gc!
+: 1593714963:0;make && (strm | ./popcorn)
+: 1593715118:0;make && (strm | ./popcorn --bg "#51e980")
+: 1593715831:0;make && (strm | ./popcorn --bg "#51e980" --border-size 5)
+: 1593715834:0;make && (strm | ./popcorn --bg "#51e980" --border-size 20)
+: 1593715844:0;make && (strm | ./popcorn --bg "#51e980" --border-color "#0f0")
+: 1593715849:0;make && (strm | ./popcorn --bg "#51e980")
+: 1593715865:0;make && (strm | ./popcorn -x 500 -y 500)
+: 1593716013:0;make && (strm | ./popcorn -x 500 -y 500 --padding-right 50)
+: 1593716017:0;make && (strm | ./popcorn -x 500 -y 500 --padding-left 50)
+: 1593716109:0;make && (strm | ./popcorn -x 500 -y 500 --padding-left 50 -sx)
+: 1593716165:0;strm() { echo "hello"; sleep 1; }
+: 1593716166:0;make && (strm | ./popcorn -x 500 -y 500 --padding-left 50 -sx)
+: 1593716308:0;strm() { echo "hello"; sleep 10; }
+: 1593716309:0;make && (strm | ./popcorn -x 500 -y 500 --padding-left 50 -sx)
+: 1593716314:0;strm() { echo "hello"; sleep 1; }
+: 1593716315:0;make && (strm | ./popcorn -x 500 -y 500 --padding-left 50 -sx)
+: 1593716460:0;du -ah -d 1 ./popcorn
+: 1593716466:0;du -a -d 1 ./popcorn
+: 1593716469:0;du -b -d 1 ./popcorn
+: 1593716580:0;make && (strm | ./popcorn -x 500 -y 500 --padding-left 50 -sx)
+: 1593716827:0;du -b -d 1 ./popcorn
+: 1593716828:0;make && (strm | ./popcorn -x 500 -y 500 --padding-left 50 -sx)
+: 1593716907:0;strm() { echo "hello"; sleep 2; }
+: 1593716907:0;make && (strm | ./popcorn -x 500 -y 500 --padding-left 50 -sx)
+: 1593717351:0;make && (strm | ./popcorn -x 500 -y 500 --padding-left 50)
+: 1593717372:0;make && (strm | ./popcorn -x 500 -y 500 --padding-left 50 --font "monospace:size=10")
+: 1593717374:0;make && (strm | ./popcorn -x 500 -y 500 --padding-left 50 --font "monospace:size=50")
+: 1593717380:0;make && (strm | ./popcorn -x 500 -y 500 --padding-left 50)
+: 1593717410:0;gaa
+: 1593717414:0;git log
+: 1593717427:0;gcm "Adds cli args for customizing ui"
+: 1593717438:0;make && (strm | ./popcorn -x 500 -y 500 --padding-left 50)
+: 1593717444:0;make && (strm | ./popcorn --padding-left 50)
+: 1593717513:0;make && (strm | ./popcorn -x 500 -y 500 --padding-left 50 --font "monospaceasa:size=50")
+: 1593717520:0;make && (strm | ./popcorn -x 500 -y 500 --padding-left 50 --font "monossadasdasdpaceasa:size=50")
+: 1593717542:0;fc-list | grep -i cozette
+: 1593717548:0;make && (strm | ./popcorn -x 500 -y 500 --padding-left 50 --font "x:size=10")
+: 1593717553:0;make && (strm | ./popcorn -x 500 -y 500 --padding-left 50 --font "monospace:size=10")
+: 1593717560:0;make && (strm | ./popcorn -x 500 -y 500 --padding-left 50 --font "cozette:size=10")
+: 1593717568:0;make && (strm | ./popcorn -x 500 -y 500 --padding-left 50 --font "CozetteVector:size=10")
+: 1593717573:0;make && (strm | ./popcorn -x 500 -y 500 --padding-left 50 --font "CozetteVecasator:size=10")
+: 1593718430:0;make && (strm | ./popcorn -x 500 -y 500 --padding-left 50)
+: 1593718503:0;make && (strm | ./popcorn)
+: 1593718510:0;nodemon --exec "rm config.h && make config.h && clear && make && (echo foobaarrr | ./popcorn)" -e .c,.h
+: 1593718530:0;make && (strm | ./popcorn)
+: 1593718609:0;nodemon --exec "rm config.h && make config.h && clear && make && (echo foobaarrr | ./popcorn)" -e .c,.h
+: 1593718623:0;rm config.h && make config.h && clear && make && (echo foobaarrr | ./popcorn)
+: 1593718632:0;rm config.h && make config.h && clear && make && (strm | ./popcorn)
+: 1593718666:0;./popcorn -v
+: 1593718686:0;rm config.h && make config.h && clear && make && (strm | ./popcorn)
+: 1593718689:0;./popcorn -v
+: 1593718793:0;rm config.h && make config.h && clear && make && (strm | ./popcorn)
+: 1593719069:0;strm | gdb ./popcorn
+: 1593719082:0;gdb (strm |./popcorn)
+: 1593719220:0;strm() { echo "hello"; while 1; do sleep 1; done; }
+: 1593719227:0;strm | ./popcorn
+: 1593719243:0;strm() { echo "hello"; while; do sleep 1; done; }
+: 1593719251:0;strm | ./popcorn
+: 1593719281:0;strm() { echo "hello"; while; do sleep 1; done; }
+: 1593719283:0;strm | ./popcorn
+: 1593719345:0;strm() { echo "hello"; while; do sleep 1; done; }
+: 1593719365:0;strm() { echo "hello"; sleep 2; }
+: 1593719367:0;strm | ./popcorn
+: 1593719377:0;make config.h
+: 1593719381:0;rm config.h && make config.h && clear && make && (strm | ./popcorn)
+: 1593719384:0;./popcorn -v
+: 1593719385:0;./popcorn
+: 1593719425:0;strm | ./popcorn
+: 1593719495:0;rm config.h && make config.h && clear && make && (strm | ./popcorn)
+: 1593719523:0;nodemon --exec "rm config.h && make config.h && clear && make" -e .c,.h
+: 1593719535:0;strm() { echo "hello"; sleep 2; }
+: 1593719537:0;strm | ./popcorn
+: 1593719546:0;strm() { echo "hello"; while 1; do sleep 1; done; }
+: 1593719548:0;strm | ./popcorn
+: 1593719555:0;strm() { echo "hello"; while true; do sleep 1; done; }
+: 1593719556:0;strm | ./popcorn
+: 1593719576:0;ps aux | popcorn
+: 1593719578:0;ps aux | grep popcorn
+: 1593719583:0;pgrep popcorn
+: 1593719601:0;gdb --help | grep pid
+: 1593719610:0;gdb --pid=$(pgrep popcorn)
+: 1593719627:0;strm() { echo "hello"; while true; do sleep 1; done; }
+: 1593719696:0;strm | ./popcorn
+: 1593719713:0;gdb --pid=$(pgrep popcorn)
+: 1593719733:0;strm | ./popcorn
+: 1593719823:0;strm() { echo "hello"; sleep 2; }
+: 1593719824:0;strm | ./popcorn
+: 1593719856:0;strm() { echo "hello"; sleep 1; }
+: 1593719866:0;strm | ./popcorn
+: 1593719900:0;ls
+: 1593719912:0;gdb ./popcorn
+: 1593720000:0;strm | ./popcorn
+: 1593720568:0;nodemon --exec "rm config.h && make config.h && clear && make" -e .c,.h
+: 1593720618:0;strm | ./popcorn
+: 1593720719:0;strm() { echo "hello"; sleep 1; }
+: 1593720726:0;nodemon --exec "rm config.h && make config.h && clear && make" -e .c,.h
+: 1593720730:0;strm | ./popcorn
+: 1593720791:0;strm() { sleep 5; echo "hello"; sleep 1; }
+: 1593720793:0;strm | ./popcorn
+: 1593720804:0;strm() { sleep 1; echo "hello"; sleep 1; }
+: 1593720804:0;strm | ./popcorn
+: 1593720988:0;strm() { echo "hello"; sleep 1; }
+: 1593720989:0;strm | ./popcorn
+: 1593720991:0;strm() { echo "hello"; sleep 1; }
+: 1593720995:0;strm() { sleep 1; echo "hello"; sleep 1; }
+: 1593720997:0;strm | ./popcorn
+: 1593721232:0;strm() { sleep 1; echo "hello"; notify-send 1; sleep 1; }
+: 1593721233:0;strm | ./popcorn
+: 1593721240:0;strm() { sleep 1; echo "hello"; sleep 1; }
+: 1593721257:0;strm | ./popcorn
+: 1593721871:0;nodemon --exec "rm config.h && make config.h && clear && make" -e .c,.h
+: 1593721931:0;strm | ./popcorn
+: 1593721943:0;strm() { echo "hello"; sleep 1; }
+: 1593721946:0;strm | ./popcorn
+: 1593721971:0;strm() { sleep 1; echo "hello"; sleep 1; }
+: 1593721972:0;strm | ./popcorn
+: 1593722728:0;nodemon --exec "rm config.h && make config.h && clear && make" -e .c,.h
+: 1593722731:0;strm | ./popcorn
+: 1593723049:0;strm() { echo "hello"; sleep 1; }
+: 1593723051:0;strm | ./popcorn
+: 1593723055:0;gd
+: 1593723064:0;gaa
+: 1593723076:0;gcm "Refactors stuff"
+: 1593723077:0;gp
+: 1593723219:0;strm() { echo "hello"; sleep 5; }
+: 1593723224:0;strm | ./popcorn
+: 1593723226:0;xprop
+: 1593723496:0;nodemon --exec "rm config.h && make config.h && clear && make" -e .c,.h
+: 1593723505:0;strm | ./popcorn
+: 1593723507:0;xprop
+: 1593723543:0;gd
+: 1593723546:0;gaa
+: 1593723554:0;gcm "Adds wmclass hint"
+: 1593723555:0;gp
+: 1593723633:0;strm | ./popcorn
+: 1593723656:0;gaa
+: 1593723665:0;gcm "Changes color"
+: 1593723666:0;gp
+: 1593723833:0;update
+: 1593729420:0;uyp[
+: 1593729441:0;yl;\
+: 1593729456:0;ytop
+: 1593729463:0;bashtop
+: 1593751501:0;nodemon --exec "rm config.h && make config.h && clear && make" -e .c,.h
+: 1593751513:0;strm() { echo "hello"; sleep 2; }
+: 1593751516:0;strm | ./popcorn
+: 1593751634:0;strm() { sleep 1; echo "hello"; sleep 2; }
+: 1593751635:0;strm | ./popcorn
+: 1593751688:0;gd HEAD^4
+: 1593751692:0;gd HEAD~4
+: 1593751765:0;strm | ./popcorn
+: 1593751833:0;nodemon --exec "rm config.h && make config.h && clear && make" -e .c,.h
+: 1593751847:0;strm | ./popcorn
+: 1593751920:0;nodemon --exec "rm config.h && make config.h && clear && make" -e .c,.h
+: 1593751923:0;strm | ./popcorn
+: 1593752638:0;nodemon --exec "rm config.h && make config.h && clear && make" -e .c,.h
+: 1593752640:0;strm | ./popcorn
+: 1593753038:0;gaa
+: 1593753054:0;gcm "Implements asynchronous drawing for text from stream"
+: 1593753092:0;strm | ./popcorn
+: 1593753243:0;v /etc/X11/xinit/xinitrc.d
+: 1593753248:0;v /etc/X11/xinit/xinitrc.d/40-libcanberra-gtk-module.sh
+: 1593753275:0;v /var/log/Xorg.0.log
+: 1593753283:0;v /var/log/Xorg.1.log
+: 1593753387:0;gd
+: 1593753390:0;gaa
+: 1593753392:0;gc!
+: 1593753401:0;strm | ./popcorn
+: 1593754157:0;strm() { sleep 1; echo "hello"; sleep 1; }
+: 1593754158:0;strm | ./popcorn
+: 1593754195:0;strm() { echo "111"; sleep 1; echo "hello"; sleep 1; echo "wow"; sleep 1; }
+: 1593754196:0;strm | ./popcorn
+: 1593754270:0;strm() { sleep 1; echo "hello"; sleep 1; }
+: 1593754271:0;strm | ./popcorn
+: 1593754291:0;strm() { echo 1; sleep 1; echo "hello"; sleep 1; }
+: 1593754292:0;strm | ./popcorn
+: 1593754342:0;nodemon --exec "rm config.h && make config.h && clear && make" -e .c,.h
+: 1593754353:0;strm | ./popcorn
+: 1593754376:0;strm() { echo "hello world"; sleep 1; sleep 1; }
+: 1593754377:0;strm | ./popcorn
+: 1593754770:0;nodemon --exec "rm config.h && make config.h && clear && make" -e .c,.h
+: 1593754771:0;strm | ./popcorn
+: 1593754784:0;strm() { echo "hello world"; sleep 1; }
+: 1593754785:0;strm | ./popcorn
+: 1593754958:0;strm | ./popcorn -xxx
+: 1593754974:0;strm | ./popcorn
+: 1593755472:0;nodemon --exec "rm config.h && make config.h && clear && make" -e .c,.h
+: 1593755473:0;strm | ./popcorn
+: 1593755518:0;nodemon --exec "rm config.h && make config.h && clear && make" -e .c,.h
+: 1593755588:0;strm | ./popcorn
+: 1593755597:0;strm() { sleep 1; echo "hello world"; sleep 1; }
+: 1593755598:0;strm | ./popcorn
+: 1593755612:0;strm() { echo "111"; sleep 1; echo "hello"; sleep 1; echo "wow"; sleep 1; }
+: 1593755613:0;strm | ./popcorn
+: 1593755632:0;make
+: 1593755635:0;gd
+: 1593755897:0;gaa
+: 1593755914:0;gcm "Removes all the multithreading bullshit along with the main event loop"
+: 1593755939:0;make
+: 1593755944:0;strm | ./popcorn
+: 1593755953:0;gaa
+: 1593755960:0;gcm "cleanup event mask"
+: 1593755968:0;gaa
+: 1593755970:0;gc!
+: 1593755977:0;gp
+: 1593756895:70;escript ~/dump/stream.sh
+: 1593756974:0;~/dump/stream.sh | ./popcorn
+: 1593756980:0;nodemon --exec "rm config.h && make config.h && clear && make" -e .c,.h
+: 1593756984:0;escript ~/dump/stream.sh
+: 1593757042:0;~/dump/stream.sh | ./popcorn
+: 1593757102:0;nodemon --exec "rm config.h && make config.h && clear && make && (~/dump/stream.sh | ./popcorn)" -e .c,.h
+: 1593762466:0;escript ~/dump/stream.sh
+: 1593763175:0;nodemon --exec "rm config.h && make config.h && clear && make && (~/dump/stream.sh | ./popcorn)" -e .c,.h
+: 1593765170:0;escript ~/dump/stream.sh
+: 1593765385:0;nodemon --exec "rm config.h && make config.h && clear && make && (~/dump/stream.sh | ./popcorn)" -e .c,.h
+: 1593772591:0;gco -b backup_spare_fonts
+: 1593772593:0;gaa
+: 1593772601:0;gcm "testing shit out"
+: 1593772602:0;gco -
+: 1593772609:0;escript ~/dump/stream.sh
+: 1593773011:0;gaa
+: 1593773021:0;gcm "Cleanup and refactoring"
+: 1593773533:0;gsuck
+: 1593773536:0;git clone git@github.com:phenax/tiramisu.git
+: 1593773546:0;cd tiramisu
+: 1593773549:0;v
+: 1593773592:0;make
+: 1593773596:0;./tiramisu
+: 1593773601:0;notify-send -a "wow" "nice"
+: 1593773608:0;killall dunst
+: 1593773609:0;notify-send -a "wow" "nice"
+: 1593773623:0;man notify-send
+: 1593773736:0;./tiramisu
+: 1593773892:0;man bash
+: 1593773998:0;shopts --help
+: 1593774205:0;man exec
+: 1593774208:0;exec --help
+: 1593774262:0;bash -c "f() {}; exec f"
+: 1593774272:0;bash -c "f() { echo 1; }; exec f;"
+: 1593774345:0;ps aux | grep tst
+: 1593774358:0;killall tst
+: 1593774381:0;exec "echo 1"
+: 1593774389:0;exec "echo"
+: 1593774395:0;exec "" || true
+: 1593774406:0;exec "notify-send wow"
+: 1593774469:0;notify-send -h x:STRING5
+: 1593774471:0;notify-send -h x:STRING:5
+: 1593774472:0;notify-send -h x:STRING:5 wow
+: 1593774484:0;notify-send -h string:hello wow
+: 1593774488:0;notify-send -h string:hello:world wow
+: 1593774586:0;./tiramisu
+: 1593774590:0;notify-send -h string:hello:world wow
+: 1593774696:0;./tiramisu | while read line; do strm() { echo $line | jq .summary --raw; sleep 2; }; strm | ../popcorn/popcorn; done;
+: 1593774700:0;notify-send -h string:hello:world wow
+: 1593774707:6;yay -S jq
+: 1593774718:0;./tiramisu | while read line; do strm() { echo $line | jq .summary --raw; sleep 2; }; strm | ../popcorn/popcorn; done;
+: 1593774720:0;notify-send -h string:hello:world wow
+: 1593774725:0;man jq
+: 1593774738:0;./tiramisu | while read line; do strm() { echo $line | jq .summary -R; sleep 2; }; strm | ../popcorn/popcorn; done;
+: 1593774740:0;notify-send -h string:hello:world wow
+: 1593774755:0;./tiramisu | while read line; do strm() { echo $line | jq .summary -R; sleep 2; }; strm; done;
+: 1593774758:0;notify-send -h string:hello:world wow
+: 1593774774:0;jq --help | grep raw
+: 1593774778:0;./tiramisu | while read line; do strm() { echo $line | jq '.summary' -r; sleep 2; }; strm; done;
+: 1593774780:0;notify-send -h string:hello:world wow
+: 1593774799:0;./tiramisu | while read line; do strm() { echo $line | jq '.summary' -r; sleep 2; }; strm | ../popcorn/popcorn; done;
+: 1593774801:0;notify-send -h string:hello:world wow
+: 1593774809:0;./tiramisu | while read line; do strm() { echo $line | jq '.summary' -r; sleep 2; }; strm | ../popcorn/popcorn &; done;
+: 1593774810:0;notify-send -h string:hello:world wow
+: 1593774825:0;gd
+: 1593779238:0;man notify-send
+: 1593779350:0;make && ./tiramisu
+: 1593779366:0;make
+: 1593779415:0;make all
+: 1593779421:0;make tiramisu
+: 1593779447:0;rm tiramisu && make tiramisu && ./tiramisu
+: 1593779450:0;notify-send -h string:hello:world wow
+: 1593779990:0;rm tiramisu && make tiramisu && ./tiramisu
+: 1593779992:0;notify-send -h string:hello:world wow
+: 1593780041:0;man notify-send
+: 1593780064:0;yay -S surf
+: 1593780117:0;surf "https://web-push-book.gauntface.com/demos/notification-examples/"
+: 1593780137:0;yay -Rns surf
+: 1593780226:0;auto-remove
+: 1593780349:0;yay surf
+: 1593780361:0;yay -Ss surf
+: 1593780368:0;yay -Ss surf | grep notifications
+: 1593780372:0;yay -Ss surf | grep notifica
+: 1593780489:0;ping duckduckgo.com
+: 1593780705:0;curl duckduckgo.com
+: 1593780717:0;curl https://duckduckgo.com
+: 1593780814:0;curl "https://duckduckgo.com"
+: 1593780843:0;ping "https://duckduckgo.com"
+: 1593780845:0;ping https://duckduckgo.com
+: 1593780849:0;curl "https://duckduckgo.com"
+: 1593781626:0;qutebrowser -v
+: 1593781629:0;qutebrowser -V
+: 1593781999:0;update
+: 1593782049:0;yay -R cozette-ttf
+: 1593782051:0;update
+: 1593782065:0;yay -S cozette-ttf
+: 1593782109:0;yay -S --mflags --skipinteg cozette-ttf
+: 1593782493:0;rm tiramisu && make tiramisu && ./tiramisu
+: 1593782499:0;notify-send -h string:hello:world wow
+: 1593782641:0;rm tiramisu && make tiramisu && ./tiramisu
+: 1593783303:0;rm -f tiramisu && make tiramisu && ./tiramisu
+: 1593783336:0;notify-send wow
+: 1593783474:0;rm -f tiramisu && make tiramisu && ./tiramisu
+: 1593783475:0;notify-send wow
+: 1593783481:0;notify-send wow -t 5
+: 1593783482:0;notify-send wow -t 100
+: 1593783494:0;notify-send wow "ds"
+: 1593783501:0;notify-send wow "Hello world foobar"
+: 1593783705:0;rm -f tiramisu && make tiramisu && ./tiramisu
+: 1593783852:0;notify-send wow "Hello world foobar"
+: 1593783930:0;dbus-monitor "interface='org.freedesktop.Notifications'" |\\
+ grep --line-buffered "string" |\\
+ grep --line-buffered -e method -e ":" -e '""' -e urgency -e notify -v |\\
+ grep --line-buffered '.*(?=string)|(?<=string).*' -oPi |\\
+ grep --line-buffered -v '^\s*$' |\\
+ xargs -I '{}' echo {}
+: 1593783933:0;notify-send wow "Hello world foobar"
+: 1593783949:0;rm -f tiramisu && make tiramisu && ./tiramisu
+: 1593783950:0;notify-send wow "Hello world foobar"
+: 1593783957:0;killall dunst
+: 1593783959:0;notify-send wow "Hello world foobar"
+: 1593783962:0;dbus-monitor "interface='org.freedesktop.Notifications'" |\\
+ grep --line-buffered "string" |\\
+ grep --line-buffered -e method -e ":" -e '""' -e urgency -e notify -v |\\
+ grep --line-buffered '.*(?=string)|(?<=string).*' -oPi |\\
+ grep --line-buffered -v '^\s*$' |\\
+ xargs -I '{}' echo {}
+: 1593783963:0;notify-send wow "Hello world foobar"
+: 1593784134:0;gdbus call "${NOTIFY_ARGS[@]}"  \\
+                            --method org.freedesktop.Notifications.Notify \\
+                            "$APP_NAME" "$REPLACE_ID" "$ICON" "$SUMMARY" "$BODY" \\
+                            "${actions}" "${hints}" "int32 $EXPIRE_TIME"
+: 1593784145:0;notify-send wow "Hello world foobar"
+: 1593784193:0;du -b -d 1 ./tiramisu
+: 1593784196:0;notify-send wow "Hello world foobar"
+: 1593784201:0;rm -f tiramisu && make tiramisu && ./tiramisu
+: 1593784282:0;gdbus call "${NOTIFY_ARGS[@]}"  \\
+                            --method org.freedesktop.Notifications.Notify \\
+                            "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+                            "hello" "" "int32 -1"
+: 1593784302:0;gdbus call --session\
+             --dest org.freedesktop.Notifications\
+             --object-path /org/freedesktop/Notifications  \\
+                            --method org.freedesktop.Notifications.Notify \\
+                            "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+                            "hello" "" "int32 -1"
+: 1593784308:0;gdbus call --session \\
+             --dest org.freedesktop.Notifications \\
+             --object-path /org/freedesktop/Notifications  \\
+                            --method org.freedesktop.Notifications.Notify \\
+                            "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+                            "hello" "" "int32 -1"
+: 1593784402:0;gdbus call --session \\
+             --dest org.freedesktop.Notifications \\
+             --object-path /org/freedesktop/Notifications  \\
+                            --method org.freedesktop.Notifications.Notify \\
+                            "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+                            '"hello": "world"' "" "int32 -1"
+: 1593784426:0;gdbus call --session \\
+             --dest org.freedesktop.Notifications \\
+             --object-path /org/freedesktop/Notifications  \\
+                            --method org.freedesktop.Notifications.Notify \\
+                            "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+                            '"hello", "world"' "" "int32 -1"
+: 1593784540:0;echo "$(tr -dc _A-Z-a-z-0-9 <<< \"$1\")${RANDOM}"
+: 1593784562:0;gdbus call --session \\
+  --dest org.freedesktop.Notifications \\
+  --object-path /org/freedesktop/Notifications  \\
+  --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '"21", "world"' "" "int32 -1"
+: 1593784592:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '"21", "world"' "" "int32 -1"
+: 1593784772:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  ["21", "world"] "" "int32 -1"
+: 1593784790:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world"]' "" "int32 -1"
+: 1593784811:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world"]' '{}' "int32 -1"
+: 1593785197:0;rm -f tiramisu && make tiramisu && ./tiramisu
+: 1593785212:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world"]' '{}' "int32 -1"
+: 1593785229:0;rm -f tiramisu && make tiramisu && ./tiramisu
+: 1593785230:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world"]' '{}' "int32 -1"
+: 1593785237:0;rm -f tiramisu && make tiramisu && ./tiramisu
+: 1593785363:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world"]' '{}' "int32 -1"
+: 1593785409:32;dbus-monitor "interface='org.freedesktop.Notifications'" |\\
+ grep --line-buffered "string" |\\
+ grep --line-buffered -e method -e ":" -e '""' -e urgency -e notify -v |\\
+ grep --line-buffered '.*(?=string)|(?<=string).*' -oPi |\\
+ grep --line-buffered -v '^\s*$' |\\
+ xargs -I '{}' echo {}
+: 1593785448:0;dbus-monitor "interface='org.freedesktop.Notifications'"
+: 1593785450:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world"]' '{}' "int32 -1"
+: 1593785599:0;dbus-monitor "interface='org.freedesktop.Notifications'" --pcap
+: 1593785607:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world"]' '{}' "int32 -1"
+: 1593785613:0;killall dunst
+: 1593785616:0;dbus-monitor "interface='org.freedesktop.Notifications'" --pcap
+: 1593785618:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world"]' '{}' "int32 -1"
+: 1593785747:0;rm -f tiramisu && make tiramisu && ./tiramisu
+: 1593785750:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world"]' '{}' "int32 -1"
+: 1593785753:0;killall dunst
+: 1593785754:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world"]' '{}' "int32 -1"
+: 1593785773:0;killall dunst
+: 1593785776:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world"]' '{}' "int32 -1"
+: 1593785780:0;killall dunst
+: 1593785782:0;rm -f tiramisu && make tiramisu && ./tiramisu
+: 1593785784:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world"]' '{}' "int32 -1"
+: 1593785791:0;rm -f tiramisu && make tiramisu && ./tiramisu
+: 1593785792:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world"]' '{}' "int32 -1"
+: 1593785841:0;rm -f tiramisu && make tiramisu && ./tiramisu
+: 1593785842:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world"]' '{}' "int32 -1"
+: 1593785858:0;rm -f tiramisu && make tiramisu && ./tiramisu
+: 1593785859:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world"]' '{}' "int32 -1"
+: 1593786121:0;rm -f tiramisu && make tiramisu && ./tiramisu
+: 1593786134:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world"]' '{}' "int32 -1"
+: 1593786181:0;rm -f tiramisu && make tiramisu && ./tiramisu
+: 1593786182:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world"]' '{}' "int32 -1"
+: 1593786358:0;rm -f tiramisu && make tiramisu && ./tiramisu
+: 1593786359:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world"]' '{}' "int32 -1"
+: 1593786377:0;rm -f tiramisu && make tiramisu && ./tiramisu
+: 1593786378:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world"]' '{}' "int32 -1"
+: 1593786394:0;nodemon --exec "rm -f tiramisu && make tiramisu && ./tiramisu" -e .c,.h
+: 1593786400:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world"]' '{}' "int32 -1"
+: 1593786418:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world", "nice", "tatas"]' '{}' "int32 -1"
+: 1593786981:0;killall dunst
+: 1593786941:308;nodemon --exec "rm -f tiramisu && make tiramisu && ./tiramisu" -e .c,.h
+: 1593787251:0;dbus-monitor "interface='org.freedesktop.Notifications'" --pcap
+: 1593787253:0;dbus-monitor "interface='org.freedesktop.Notifications'"
+: 1593787255:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world", "nice", "tatas"]' '{}' "int32 -1"
+: 1593787282:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world", "nice"]' '{}' "int32 -1"
+: 1593787286:0;killall dunst
+: 1593787287:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world", "nice"]' '{}' "int32 -1"
+: 1593787290:0;killall dunst
+: 1593787294:0;dbus-monitor "interface='org.freedesktop.Notifications'"
+: 1593787296:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world", "nice"]' '{}' "int32 -1"
+: 1593788914:0;killall dunst
+: 1593788915:0;nodemon --exec "rm -f tiramisu && make tiramisu && ./tiramisu" -e .c,.h
+: 1593788919:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world", "nice"]' '{}' "int32 -1"
+: 1593789091:0;man dbus
+: 1593789095:0;man dbus-monitor
+: 1593789099:0;man gdbus-monitor
+: 1593789102:0;man gdbus
+: 1593789110:0;man gdbus-monitor
+: 1593789111:0;man dbus-monitor
+: 1593790525:0;nodemon --exec "rm -f tiramisu && make tiramisu && ./tiramisu" -e .c,.h
+: 1593794943:0;../
+: 1593794994:0;mkdir ~/scripts/bnotify/
+: 1593794998:0;cd $_
+: 1593795002:0;git init
+: 1593795019:0;escript bnotify.sh
+: 1593795029:0;mkdir src
+: 1593795034:0;mv bnotify.sh src
+: 1593795037:0;v
+: 1593795065:0;dbus-monitor "interface='org.freedesktop.Notifications'"
+: 1593795068:0;notify-send wow "Hello world foobar"
+: 1593795072:0;killall dunst
+: 1593795073:0;notify-send wow "Hello world foobar"
+: 1593795183:0;dbus-monitor "interface='org.freedesktop.Notifications', eavesdrop=true"
+: 1593795190:0;notify-send wow "Hello world foobar"
+: 1593795565:0;./src/bnotify.sh
+: 1593795610:0;dbus-monitor "interface='org.freedesktop.Notifications', eavesdrop=true"
+: 1593795613:0;notify-send wow "Hello world foobar"
+: 1593795736:0;./src/bnotify.sh
+: 1593795741:0;notify-send wow "Hello world foobar"
+: 1593795869:0;dbus-monitor "interface='org.freedesktop.Notifications', eavesdrop=true"
+: 1593795889:0;./src/bnotify.sh
+: 1593796412:0;dbus-monitor "interface='org.freedesktop.Notifications'" | grep -v '^signal'
+: 1593796436:0;./src/bnotify.sh
+: 1593796463:0;dbus-monitor "interface='org.freedesktop.Notifications'" | grep -v '^(method call|signal)'
+: 1593796483:0;dbus-monitor "interface='org.freedesktop.Notifications'" | grep -v '^(method\scall|signal)'
+: 1593796487:0;dbus-monitor "interface='org.freedesktop.Notifications'" | grep -v '^(method\\scall|signal)'
+: 1593796494:0;dbus-monitor "interface='org.freedesktop.Notifications'" | grep -v "^(method\\scall|signal)"
+: 1593796499:0;dbus-monitor "interface='org.freedesktop.Notifications'" | grep -v "^(method call|signal)"
+: 1593796512:0;dbus-monitor "interface='org.freedesktop.Notifications'" | grep -v "^(method|signal)"
+: 1593796518:0;dbus-monitor "interface='org.freedesktop.Notifications'" | grep -v "^(signal)"
+: 1593796524:0;dbus-monitor "interface='org.freedesktop.Notifications'" | grep -v "^signal"
+: 1593796529:0;dbus-monitor "interface='org.freedesktop.Notifications'" | grep -e -v "^signal"
+: 1593796532:0;dbus-monitor "interface='org.freedesktop.Notifications'" | grep -E -v "^signal"
+: 1593796539:0;dbus-monitor "interface='org.freedesktop.Notifications'" | grep -E -v "^(method|signal)"
+: 1593796555:0;./src/bnotify.sh
+: 1593796584:0;notify-send wow "Hello world foobar"
+: 1593797070:0;./src/bnotify.sh
+: 1593797072:0;notify-send wow "Hello world foobar"
+: 1593797100:0;./src/bnotify.sh
+: 1593797101:0;notify-send wow "Hello world foobar"
+: 1593797279:0;dbus-monitor "interface='org.freedesktop.Notifications'"
+: 1593797280:0;notify-send wow "Hello world foobar"
+: 1593797347:0;dbus-monitor "interface='org.freedesktop.Notifications'"
+: 1593797351:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world", "nice"]' '{}' "int32 -1"
+: 1593797705:0;dbus-monitor "interface='org.freedesktop.Notifications'"
+: 1593797707:0;./src/bnotify.sh
+: 1593797708:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world", "nice"]' '{}' "int32 -1"
+: 1593797819:0;./src/bnotify.sh
+: 1593797821:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world", "nice"]' '{}' "int32 -1"
+: 1593797871:0;./src/bnotify.sh
+: 1593797873:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world", "nice"]' '{}' "int32 -1"
+: 1593797889:0;./src/bnotify.sh
+: 1593797949:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world", "nice"]' '{}' "int32 -1"
+: 1593797977:0;./src/bnotify.sh
+: 1593797979:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world", "nice"]' '{}' "int32 -1"
+: 1593797994:0;./src/bnotify.sh
+: 1593797995:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world", "nice"]' '{}' "int32 -1"
+: 1593798092:0;mv ~/Downloads/dl/others ~/dump/test
+: 1593842588:0;lf /run/runit/service
+: 1593846218:0;cd ~/dev/
+: 1593846224:0;cd fu
+: 1593846227:0;tak fun
+: 1593846230:0;take fun
+: 1593846364:0;mkdir mandlebrot
+: 1593846367:0;cd mandlebrot
+: 1593846384:0;cp ~/.config/suckless/popcorn/Makefile .
+: 1593846401:0;mandle.c
+: 1593846404:0;v mandle.c
+: 1593846746:0;make
+: 1593846758:0;cp ~/.config/suckless/popcorn/config.mk .
+: 1593846785:0;make
+: 1593846789:0;./mandle
+: 1593846827:0;make && ./mandle
+: 1593846864:0;nodemon --exec "make && ./mandle" -e .c,.h
+: 1593846948:0;cd ~/.config/suckless/popcorn
+: 1593846950:0;v .
+: 1593847057:0;cd ~/.config/suckless/dwm
+: 1593847062:0;v transient.c
+: 1593848613:0;nodemon --exec "make && ./mandle" -e .c,.h
+: 1593849448:0;equte
+: 1593850101:0;v ~/.config/sitesettings/startpage
+: 1593851192:0;nodemon --exec "make && ./mandle" -e .c,.h
+: 1593853492:0;man bash
+: 1593857995:0;nodemon --exec "make && ./mandle" -e .c,.h
+: 1593863038:0;cd ~/dev/fun/mandlebrot
+: 1593863042:0;nodemon --exec "make && ./mandle" -e .c,.h
+: 1593863613:0;gaa
+: 1593863615:0;git init
+: 1593863616:0;gaa
+: 1593863627:0;gcm "Mandlebrot simple done"
+: 1593864067:0;gaa
+: 1593864079:0;git reset HEAD
+: 1593864084:0;v .gitignore
+: 1593864105:0;git add .gitignore
+: 1593864111:0;git rm mandle --cached
+: 1593864115:0;git rm mandle.o --cached
+: 1593864124:0;gcm "Gitignore"
+: 1593864126:0;gaa
+: 1593864138:0;gcm "Handles window resize"
+: 1593864361:0;nodemon --exec "make && ./mandle" -e .c,.h
+: 1593864903:0;gd
+: 1593864906:0;gaa
+: 1593864915:0;gcm "Refactored complex out of main file"
+: 1593865274:0;gaa
+: 1593865295:0;gcm "Adds check to only render once ever dimension change"
+: 1593865480:0;nodemon --exec "make && ./mandle" -e .c,.h
+: 1593865671:0;color-pick
+: 1593865676:0;yay -S colorpicker
+: 1593865703:0;colorpicker
+: 1593865724:0;colorpicker --help
+: 1593865727:0;colorpicker --one-shot
+: 1593867081:0;make
+: 1593867117:0;nodemon --exec "make && ./mandle" -e .c,.h
+: 1593868020:0;colorpicker --one-shot
+: 1593868243:0;gaa
+: 1593868249:0;gcm "Refactors the color gradients"
+: 1593868358:0;cd ~/.config/suckless/shotkey
+: 1593868359:0;v
+: 1593868827:0;nodemon --exec "make && ./mandle" -e .c,.h
+: 1593869616:0;gaa
+: 1593869627:0;gcm "Adds key bindings to move around and zoom in"
+: 1593870454:0;nodemon --exec "make && ./mandle" -e .c,.h
+: 1593870871:0;bashtop
+: 1593870944:0;nodemon --exec "make && ./mandle" -e .c,.h
+: 1593871326:0;./mandle
+: 1593871335:0;gdb./mandle
+: 1593871338:0;gdb ./mandle
+: 1593871502:0;make
+: 1593871508:0;gdb ./mandle
+: 1593871551:0;make
+: 1593871552:0;gdb ./mandle
+: 1593871769:0;gd
+: 1593871814:0;gaa
+: 1593871823:0;gcm "Cleanup"
+: 1593872002:0;cd ../bslock
+: 1593872003:0;v
+: 1593872291:0;nodemon --exec "make && ./mandle" -e .c,.h
+: 1593872392:0;cd ../st
+: 1593872393:0;v
+: 1593872590:0;nodemon --exec "make && ./mandle" -e .c,.h
+: 1593873152:0;gaa
+: 1593873164:0;gcm "Adds quantifier to keys for faster movement and zoom"
+: 1593873589:0;gd
+: 1593873591:0;gaa
+: 1593873598:0;gcm "Adds cleanup action"
+: 1593873683:0;make
+: 1593874254:0;nodemon --exec "make && ./mandle" -e .c,.h
+: 1593874627:0;bashtop
+: 1593876172:0;nodemon --exec "make && ./mandle" -e .c,.h
+: 1593877290:0;bashtop
+: 1593877372:0;nodemon --exec "make && ./mandle" -e .c,.h
+: 1593878635:0;git reset --hard
+: 1593878670:0;make
+: 1593878672:0;./mandle
+: 1593879273:0;cd ~/Pictures
+: 1593879286:0;mkdir screenshots
+: 1593879294:0;ekey
+: 1593879310:0;v ~/scripts/screenshot.sh
+: 1593879344:0;lf
+: 1593879976:0;./mandle
+: 1593880197:0;make && ./mandle
+: 1593880566:0;gd
+: 1593880882:0;make && ./mandle
+: 1593883009:0;nodemon --exec "make && ./mandle" -e .c,.h
+: 1593885782:0;gd
+: 1593885848:0;nodemon --exec "make && ./mandle" -e .c,.h
+: 1593886461:0;gd
+: 1593886463:0;gaa
+: 1593886473:0;gcm "Optimized painting by hollowing out the center"
+: 1593887006:0;make && ./mandle
+: 1593887569:0;gd
+: 1593887573:0;gaa
+: 1593887580:0;gcm "Fixes purple highlight issue"
+: 1593887625:0;make && ./mandle
+: 1593887761:0;du -b -d 1 ./mandle
+: 1593887812:0;make
+: 1593887814:0;du -b -d 1 ./mandle
+: 1593887820:0;rm mandle
+: 1593887824:0;rm mandle.o
+: 1593887826:0;make
+: 1593887829:0;du -b -d 1 ./mandle
+: 1593887848:0;make
+: 1593887849:0;du -b -d 1 ./mandle
+: 1593887853:0;make && du -b -d 1 ./mandle
+: 1593887863:0;make clean
+: 1593887865:0;make && du -b -d 1 ./mandle
+: 1593887997:0;gd
+: 1593888001:0;gaa
+: 1593888006:0;git reset HEAD
+: 1593888012:0;git add config.mk
+: 1593888030:0;gcm "Removes unwanted deps"
+: 1593888032:0;gd
+: 1593888042:0;gaa
+: 1593888050:0;gcm "Fixes up down key issue"
+: 1593888083:0;make
+: 1593888203:0;make && ./mandle
+: 1593888289:0;bashtop
+: 1593888305:0;make && ./mandle
+: 1593888486:0;gd
+: 1593888490:0;gaa
+: 1593888502:0;gcm "Prevents gc from being reinitialized on every frame"
+: 1593888896:0;make
+: 1593889078:0;./mandle
+: 1593889406:0;make && ./mandle
+: 1593889433:0;gdb ./mandle
+: 1593889441:0;make -g
+: 1593889444:0;make -- -g
+: 1593889457:0;make
+: 1593889460:0;gdb ./mandle
+: 1593889504:0;make
+: 1593889506:0;gdb ./mandle
+: 1593889585:0;make
+: 1593889586:0;gdb ./mandle
+: 1593889684:0;make
+: 1593889685:0;./mandle
+: 1593889687:0;make
+: 1593889688:0;./mandle
+: 1593889709:0;make && ./mandle
+: 1593890001:0;gd
+: 1593890011:0;gco -- config.mk
+: 1593890015:0;make && ./mandle
+: 1593890154:0;gd
+: 1593890156:0;gaa
+: 1593890178:0;gcm "Fixes cleanup issue + Adds q to quit"
+: 1593890242:0;make && ./mandle
+: 1593890338:0;gd
+: 1593890355:0;make && ./mandle
+: 1593890510:0;gd
+: 1593890543:0;make && ./mandle
+: 1593890603:0;gd
+: 1593890606:0;l
+: 1593890611:0;gaa
+: 1593890617:0;gcm "Parameters changed"
+: 1593890619:0;make && ./mandle
+: 1593891010:0;gd
+: 1593891014:0;gaa
+: 1593891017:0;gcm "Cleanup"
+: 1593891363:0;mv mandle.c mandel.c
+: 1593891404:0;grep -r MODE_ID
+: 1593891406:0;grep -R MODE_ID
+: 1593891413:0;grep -R mandel
+: 1593891420:0;grep -R mandle
+: 1593891442:0;grep -R mandle | grep -v -E '^tags'
+: 1593891453:0;make clean
+: 1593891454:0;grep -R mandle | grep -v -E '^tags'
+: 1593891474:0;gaa
+: 1593891476:0;grep -R mandle | grep -v -E '^tags'
+: 1593891490:0;rm mandle
+: 1593891491:0;grep -R mandle | grep -v -E '^tags'
+: 1593891495:0;rm mandle.o
+: 1593891498:0;make
+: 1593891500:0;gaa
+: 1593891507:0;gcm "Spell corrected"
+: 1593891586:0;git remote add origin git@github.com:phenax/mandelbrot-explorer.git
+: 1593891588:0;git pull origin master --allow-unrelated-histories
+: 1593891605:0;cd ~/Pictures
+: 1593891607:0;cd screenshots
+: 1593891612:0;sxiv *
+: 1593891686:0;lf
+: 1593891705:0;make
+: 1593891708:0;./mandel
+: 1593891781:0;mkdir screenshots
+: 1593891784:0;mv ~/Pictures/screenshots/* screenshots
+: 1593891799:0;cd screenshots
+: 1593891802:0;ls
+: 1593891811:0;sxiv *
+: 1593891838:0;lf
+: 1593891857:0;mv full-2020_07_04_23_44_14.jpg grey.jpg
+: 1593891877:0;mv full-2020_07_05_00_17_46.jpg col.jpg
+: 1593891890:0;mv full-2020_07_05_01_12_04.jpg full.jpg
+: 1593891900:0;mv full-2020_07_05_01_12_35.jpg part.jpg
+: 1593891904:0;l
+: 1593891909:0;rm col.jpg
+: 1593891911:0;ls
+: 1593891914:0;lf
+: 1593891975:0;sxiv *
+: 1593892188:0;..
+: 1593892191:0;gaa
+: 1593892198:0;gcm "Adds documentation"
+: 1593892204:0;git push -u origin master
+: 1593892280:0;gaa
+: 1593892281:0;gcm "type"
+: 1593892284:0;gc!
+: 1593892288:0;gp
+: 1593892912:0;sudo gp
+: 1593892914:0;gaa
+: 1593892927:0;gcm "Docs updated"
+: 1593892928:0;gp
+: 1593893056:0;make && ./mandle
+: 1593893058:0;make && ./mandel
+: 1593893441:0;make
+: 1593893445:0;./mandel
+: 1593893466:0;make && ./mandel
+: 1593893477:0;make clean
+: 1593893478:0;make && ./mandel
+: 1593893503:0;mv mandle.c mandel.c
+: 1593893520:0;v
+: 1593893528:0;make && ./mandel
+: 1593893552:0;nodemon --exec "make && ./mandle" -e .c,.h
+: 1593893557:0;nodemon --exec "make && ./mandel" -e .c,.h
+: 1593893768:0;mv ~/Pictures/screenshots/full-2020_07_05_01_45_45.jpg screenshots/pretty.jpg
+: 1593893783:0;sxiv screenshots
+: 1593893810:0;git add mandel.c
+: 1593893821:0;gcm "Adds more steps to make it pretty"
+: 1593893830:0;gaa
+: 1593893837:0;gcm "Pretty screenshot"
+: 1593893837:0;gp
+: 1593893963:0;./mandel
+: 1593894126:0;make && ./mandel
+: 1593894363:0;gd
+: 1593894368:0;make && ./mandel
+: 1593894424:0;gd
+: 1593894429:0;git add .
+: 1593894433:0;gcm "color hange"
+: 1593894436:0;gc!
+: 1593894441:0;gp
+: 1593894473:0;make && ./mandel
+: 1593894608:0;gd
+: 1593894612:0;gaa
+: 1593894619:0;gcm "removes sync"
+: 1593897661:0;update-dotfiles
+: 1593897664:0;update
