@@ -332,7 +332,7 @@ c.aliases['h'] = 'help'
 
 #### Dev {{{
 nmap(leader + 'tr', 'config-source')    # Reload config
-nmap(leader + 'ti', 'inspector')        # Inspector
+nmap(leader + 'ti', 'devtools window')  # Inspector
 nmap(leader + 'ts', 'view-source')      # View page source
 
 # Json formatter
