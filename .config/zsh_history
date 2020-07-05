@@ -4372,3 +4372,665 @@ setopt CORRECT_ALL
 : 1593945800:0;v ~/.config/sitesettings/qwant
 : 1593946538:0;v ~/.config/qutebrowser/config.py
 : 1593946542:0;equte
+: 1593946748:0;sudo make install
+: 1593946786:0;yay -S rustup
+: 1593946833:0;rustup update stable
+: 1593946843:0;la | wc -l
+: 1593946848:0;yay -Q | wc -l
+: 1593946933:0;rustup --help
+: 1593946943:0;cargo --help
+: 1593946950:0;auto-remove
+: 1593946955:0;update
+: 1593947463:0;v ~/scripts/commands/:update
+: 1593947490:0;ezsh
+: 1593947541:0;kjsha
+: 1593947542:0;kjs
+: 1593947543:0;kj
+: 1593948074:0;make
+: 1593948108:0;ls | ./dmenu -P
+: 1593948180:0;make clean
+: 1593948184:0;make
+: 1593948187:0;ls | ./dmenu -P
+: 1593948216:0;make && (ls | ./dmenu -P)
+: 1593948442:0;sudo make install
+: 1593948449:0;ls | ./dmenu -P
+: 1593948457:0;make
+: 1593948513:0;ls | ./dmenu -P
+: 1593948561:0;make
+: 1593948565:0;sudo make install
+: 1593948601:0;gd
+: 1593948603:0;gaa
+: 1593948613:0;gcm "Adds password censoring"
+: 1593948614:0;gp
+: 1593948632:1;dsudo ls
+: 1593948668:0;v ~/scripts/commands/:update
+: 1593948750:0;yay -Syy
+: 1593948784:0;yay -Qyy
+: 1593948787:0;yay -SyyQ
+: 1593948873:0;ekey
+: 1593948914:0;yay -Q | grep dmenu
+: 1593948921:0;yay pinentry-dmenu
+: 1593948925:0;man pinentry-dmenu
+: 1593948944:0;v ~/.gnupg/pinentry-dmenu.conf.
+: 1593948962:0;ls ~/.gnupg
+: 1593948967:0;la ~/.gnupg
+: 1593948972:0;rm -rf ~/.gnupg
+: 1593948998:0;v ~/.config/gnupg/gpg-agent.conf
+: 1593949050:0;pinentry-dmenu --help
+: 1593949352:0;which pinentry-dmenu
+: 1593949447:0;v ~/.config/gnupg/gpg-agent.conf
+: 1593949496:0;gpg-connect-agent reloadagent
+: 1593949501:0;gpg-connect-agent reloadagent /bye
+: 1593949561:0;v ~/.bin/dsudo
+: 1593949568:0;~/scripts/password_prompt.sh
+: 1593949591:0;gpg-connect-agent reloadagent /bye
+: 1593949599:0;pass show Aur/phenax
+: 1593949627:0;gpg-connect-agent reloadagent /bye
+: 1593949630:0;pass show Aur/phenax
+: 1593949644:0;pinentry-dmenu --help
+: 1593949646:0;pinentry-dmenu
+: 1593949671:0;pinentry-dmenu --lc-messages "Hello "
+: 1593949710:0;echo "SETTITLE title\
+SETPROMPT prompt\
+SETDESC PROMPT\
+GETPIN\
+BYE" | ./pinentry-dmenu
+: 1593949717:0;echo "SETTITLE title\
+SETPROMPT prompt\
+SETDESC PROMPT\
+GETPIN\
+BYE" | pinentry-dmenu
+: 1593949746:0;echo "SETTITLE title\
+SETPROMPT prompt\
+SETDESC PROMPT\
+GETPIN\
+SETPROMPT confirm\
+SETDESC CONFIRM\
+confirm\
+SETPROMPT repeat\
+SETDESC REPEAT\
+SETREPEAT\
+GETPIN\
+BYE" | pinentry-dmenu
+: 1593949878:0;pinentry-curses --help
+: 1593949885:0;echo "SETTITLE title\
+SETPROMPT prompt\
+SETDESC PROMPT\
+GETPIN\
+SETPROMPT confirm\
+SETDESC CONFIRM\
+confirm\
+SETPROMPT repeat\
+SETDESC REPEAT\
+SETREPEAT\
+GETPIN\
+BYE" | pinentry-curses
+: 1593949892:0;echo "SETTITLE title\
+SETPROMPT prompt\
+SETDESC PROMPT\
+GETPIN\
+SETPROMPT confirm\
+SETDESC CONFIRM\
+confirm\
+SETPROMPT repeat\
+SETDESC REPEAT\
+SETREPEAT\
+GETPIN\
+BYE" | pinentry-dmenu
+: 1593949930:0;echo "SETTITLE title\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+GETPIN\
+SETPROMPT confirm\
+SETDESC CONFIRM\
+confirm\
+SETPROMPT repeat\
+SETDESC REPEAT\
+SETREPEAT\
+GETPIN\
+BYE" | pinentry-dmenu
+: 1593949975:0;echo "SETTITLE title\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+GETPIN\
+BYE" | pinentry-dmenu
+: 1593950041:0;escript ~/scripts/pinentry.sh
+: 1593950232:0;dmenu -P
+: 1593950247:0;clear
+: 1593950249:0;dmenu -P
+: 1593950258:0;echo "SETTITLE title\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+GETPIN\
+BYE" | pinentry-dmenu
+: 1593950331:0;x=$(dmenu -P)
+: 1593950334:0;clear
+: 1593950335:0;x=$(dmenu -P)
+: 1593950355:0;echo "SETTITLE title\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+GETPIN\
+BYE" | pinentry-dmenu
+: 1593950474:0;echo "SETTITLE title\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+GETPIN\
+BYE" | ~/scripts/pinentry.sh
+: 1593950810:0;echo "SETTITLE title\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+GETPIN\
+BYE" | pinentry-dmenu
+: 1593950860:0;echo "SETTITLE title\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+GETPIN\
+BYE" | ~/scripts/pinentry.sh
+: 1593950888:0;v ~/dump/pinentrylogs
+: 1593950898:0;rm ~/dump/pinentrylogs
+: 1593950899:0;echo "SETTITLE title\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+GETPIN\
+BYE" | ~/scripts/pinentry.sh
+: 1593950904:0;v ~/dump/pinentrylogs
+: 1593950909:0;rm ~/dump/pinentrylogs
+: 1593950919:0;v ~/.config/gnupg/gpg-agent.conf
+: 1593950932:0;gpg-connect-agent reloadagent /bye
+: 1593950934:0;pass show Aur/phenax
+: 1593950944:0;v ~/dump/pinentrylogs
+: 1593951003:0;cat ~/dump/pinentrylogs | pinentry-dmenu
+: 1593951065:0;rm ~/dump/pinentrylogs
+: 1593951220:0;cat ~/dump/pinentrylogs | ~/scripts/pinentry.sh
+: 1593951280:0;pass show Aur/phenax
+: 1593951284:0;cat ~/dump/pinentrylogs | pinentry-dmenu
+: 1593951579:0;cat ~/dump/pinentrylogs | ~/scripts/pinentry.sh
+: 1593951775:0;rm ~/dump/pinentrylogs
+: 1593951786:0;cat ~/input | ~/scripts/pinentry.sh
+: 1593952355:0;(x=$(dmenu -P)) && echo "pass: $x" || echo "nopass";
+: 1593952368:0;x=$(dmenu -P) && echo "pass: $x" || echo "nopass";
+: 1593952407:0;cat ~/input | ~/scripts/pinentry.sh
+: 1593952431:0;rm ~/dump/pinentrylogs
+: 1593952469:0;gpg-connect-agent reloadagent /bye
+: 1593952472:0;pass show Aur/phenax
+: 1593952490:0;cat ~/dump/pinentrylogs
+: 1593952501:0;cat ~/input | ~/scripts/pinentry.sh
+: 1593952546:0;pass show Aur/phenax
+: 1593952551:0;cat ~/dump/pinentrylogs
+: 1593952588:0;pass show Aur/phenax
+: 1593952595:0;cat ~/dump/pinentrylogs
+: 1593952646:0;pass show Aur/phenax
+: 1593952652:0;cat ~/dump/pinentrylogs
+: 1593952668:0;pass show Aur/phenax
+: 1593952696:0;cat ~/dump/pinentrylogs | ~/scripts/pinentry.sh
+: 1593952738:0;cat ~/dump/pinentrylogs | pinentry-dmenu
+: 1593952744:0;cat ~/dump/pinentrylogs | ~/scripts/pinentry.sh
+: 1593952899:0;pass show Aur/phenax
+: 1593952903:0;gpg-connect-agent reloadagent /bye
+: 1593952904:0;pass show Aur/phenax
+: 1593952912:0;ps aux | grep dmenu
+: 1593952936:0;ps aux | grep dmenu | awk '{print $2}'
+: 1593952941:0;ps aux | grep dmenu | awk '{print $2}' | xargs kill
+: 1593952960:0;pass show Aur/phenax
+: 1593952965:0;cat ~/dump/pinentrylogs | ~/scripts/pinentry.sh
+: 1593952976:0;cat ~/dump/pinentrylogs | pinentry-dmenu
+: 1593953051:0;pass show Aur/phenax
+: 1593953059:0;cat ~/dump/pinentrylogs
+: 1593953098:0;rm ~/dump/pinentrylogs
+: 1593953101:0;pass show Aur/phenax
+: 1593953106:0;cat ~/dump/pinentrylogs
+: 1593953563:0;cat /run/user/1000/gnupg/d.egttqazo8ywrrxfmp45csf46/S.gpg-agent
+: 1593953587:0;cat ~/dump/pinentrylogs
+: 1593953591:0;cat ~/input
+: 1593953701:0;man bash
+: 1593953911:0;rm ~/dump/pinentrylogs
+: 1593953914:0;pass show Aur/phenax
+: 1593953921:0;cat ~/dump/pinentrylogs
+: 1593953936:0;pass show Aur/phenax
+: 1593953942:0;cat ~/dump/pinentrylogs
+: 1593953944:0;gpg-connect-agent reloadagent /bye
+: 1593953946:0;cat ~/dump/pinentrylogs
+: 1593953948:0;pass show Aur/phenax
+: 1593953951:0;cat ~/dump/pinentrylogs
+: 1593953995:0;cat ~/input | ~/scripts/pinentry.sh
+: 1593954021:0;gpg-connect-agent reloadagent /bye
+: 1593954027:0;pass show Aur/phenax
+: 1593954031:0;cat ~/dump/pinentrylogs
+: 1593954063:0;pass show Aur/phenax
+: 1593954151:0;cat ~/dump/pinentrylogs
+: 1593954184:0;pass show Aur/phenax
+: 1593954254:0;cat ~/dump/pinentrylogs
+: 1593954281:0;rm ~/dump/pinentrylogs
+: 1593954283:0;pass show Aur/phenax
+: 1593954286:0;cat ~/dump/pinentrylogs
+: 1593954292:0;cat ~/input | ~/scripts/pinentry.sh
+: 1593954327:0;pass show Aur/phenax
+: 1593954332:0;cat ~/dump/pinentrylogs
+: 1593954347:0;cat ~/dump/pinentrylogs | ~/scripts/pinentry.sh
+: 1593955599:0;cat ~/dump/pinentrylogs | ~/scripts/pinentry.sh | wc -l
+: 1593955611:0;cat ~/dump/pinentrylogs | pinentry-dmenu | wc -l
+: 1593955619:0;cat ~/dump/pinentrylogs | ~/scripts/pinentry.sh
+: 1593955629:0;cat ~/dump/pinentrylogs | pinentry-dmenu
+: 1593955643:0;cat ~/dump/pinentrylogs | pinentry-dmenu 2>/dev/null
+: 1593955664:0;echo "" | pinentry-dmenu 2>/dev/null
+: 1593955687:0;pass show Aur/phenax
+: 1593955739:0;cat ~/dump/pinentrylogs
+: 1593955788:0;cat ~/dump/pinentrylogs | pinentry-dmenu 2>/dev/null
+: 1593955797:0;cat ~/dump/pinentrylogs | ~/scripts/pinentry.sh
+: 1593955802:0;cat ~/dump/pinentrylogs
+: 1593955920:0;rm ~/dump/pinentrylogs
+: 1593955927:0;pass show Aur/phenax
+: 1593955929:0;cat ~/dump/pinentrylogs
+: 1593955934:0;gpg-connect-agent reloadagent /bye
+: 1593955938:0;pass show Aur/phenax
+: 1593955941:0;cat ~/dump/pinentrylogs
+: 1593955956:0;v ~/.config/gnupg/gpg-agent.conf
+: 1593956030:0;gpg-connect-agent reloadagent /bye
+: 1593956033:0;pass show Aur/phenax
+: 1593956043:0;cat ~/dump/pinentrylogs
+: 1593956053:0;cat ~/input | ~/scripts/pinentry.sh
+: 1593956090:0;~/scripts/notify.sh -a "Pinentry" "xxxSS$description." > /dev/null 2>&1;
+: 1593956093:0;~/scripts/notify.sh -a "Pinentry" "xxxSS$description.";
+: 1593956099:0;notify-send -a "Pinentry" "xxxSS$description.";
+: 1593956111:0;gpg-connect-agent reloadagent /bye
+: 1593956113:0;pass show Aur/phenax
+: 1593956121:0;cat ~/dump/pinentrylogs
+: 1593956152:0;cat ~/dump/pinentrylogs | ~/scripts/pinentry.sh
+: 1593956189:0;cat ~/dump/pinentrylogs
+: 1593956258:0;cat ~/dump/pinentrylogs | pinentry-dmenu
+: 1593956429:0;cat ~/dump/pinentrylogs | ~/scripts/pinentry.sh
+: 1593956436:0;rm ~/dump/pinentrylogs
+: 1593956438:0;pass show Aur/phenax
+: 1593956445:0;cat ~/dump/pinentrylogs
+: 1593956455:0;v ~/.config/gnupg/gpg-agent.conf
+: 1593956486:0;gpg-connect-agent reloadagent /bye
+: 1593956487:0;pass show Aur/phenax
+: 1593956490:0;cat ~/dump/pinentrylogs
+: 1593956533:0;cat ~/dump/pinentrylogs | ~/scripts/pinentry.sh
+: 1593956569:0;pass show Aur/phenax
+: 1593956573:0;cat ~/dump/pinentrylogs
+: 1593956589:0;rm ~/dump/pinentrylogs
+: 1593956592:0;pass show Aur/phenax
+: 1593956594:0;cat ~/dump/pinentrylogs
+: 1593956608:0;rm ~/dump/pinentrylogs
+: 1593956609:0;cat ~/dump/pinentrylogs
+: 1593956611:0;pass show Aur/phenax
+: 1593956612:0;cat ~/dump/pinentrylogs
+: 1593956642:0;pass show Aur/phenax
+: 1593956655:0;v ~/.config/gnupg/gpg-agent.conf
+: 1593956663:0;gpg-connect-agent reloadagent /bye
+: 1593956665:0;pass show Aur/phenax
+: 1593956670:0;cat ~/dump/pinentrylogs
+: 1593956678:0;cat ~/input | ~/scripts/pinentry.sh
+: 1593959122:0;gpg-agent --help
+: 1593959187:0;gpg-agent --pinentry-program=/home/an/scripts/pinentry.sh
+: 1593959194:0;gpg-connect-agent reloadagent /bye
+: 1593959318:0;v ~/.config/gnupg/gpg-agent.conf
+: 1593959324:0;gpg-connect-agent reloadagent /bye
+: 1593959326:0;pass show Aur/phenax
+: 1593959333:0;v ~/.config/gnupg/gpg-agent.conf
+: 1593959347:0;rm ~/dump/pinentrylogs
+: 1593959350:0;pass show Aur/phenax
+: 1593959357:0;cat ~/dump/pinentrylogs
+: 1593959417:0;escript testfile
+: 1593959431:0;v ~/.config/gnupg/gpg-agent.conf
+: 1593959439:0;gpg-connect-agent reloadagent /bye
+: 1593959442:0;pass show Aur/phenax
+: 1593959452:0;cat ~/dump/pinentrylogs
+: 1593959460:0;rm testfile
+: 1593959498:0;v ~/.config/gnupg/gpg-agent.conf
+: 1593959815:0;ip addre
+: 1593959817:0;ip addr
+: 1593959860:0;netstat -an
+: 1593959890:0;ip link show wlp5s0
+: 1593959903:0;ip addr
+: 1593964326:0;v ~/.config/gnupg/gpg-agent.conf
+: 1593964341:0;gpg-connect-agent reloadagent /bye
+: 1593964344:0;pass show Aur/phenax
+: 1593964357:0;ps aux | grep gpg
+: 1593964370:0;kill 30579
+: 1593964371:0;ps aux | grep gpg
+: 1593964379:0;sudo kill 30579
+: 1593964382:0;ps aux | grep gpg
+: 1593964401:0;ps aux | head -n 1
+: 1593964424:0;kill 30579
+: 1593964430:0;killall -9 gpg-agent
+: 1593964436:0;gpg-connect-agent reloadagent /bye
+: 1593964443:0;pass show Aur/phenax
+: 1593964456:0;v ~/.config/gnupg/gpg-agent.conf
+: 1593964480:0;gpg-connect-agent reloadagent /bye
+: 1593964481:0;pass show Aur/phenax
+: 1593964489:0;cat ~/dump/pinentrylogs
+: 1593964515:0;gpg-connect-agent reloadagent /bye
+: 1593964516:0;pass show Aur/phenax
+: 1593964523:0;cat ~/dump/pinentrylogs
+: 1593964504:6;v ~/.config/gnupg/gpg-agent.conf
+: 1593964569:0;cat ~/dump/pinentrylogs
+: 1593964573:0;pass show Aur/phenax
+: 1593964591:0;cat ~/dump/pinentrylogs
+: 1593964621:0;pass show Aur/phenax
+: 1593964623:0;cat ~/dump/pinentrylogs
+: 1593964658:0;pass show Aur/phenax
+: 1593964660:0;cat ~/dump/pinentrylogs
+: 1593964734:0;cat ~/scripts/notify.sh
+: 1593964774:0;pass show Aur/phenax
+: 1593964777:0;cat ~/scripts/notify.sh
+: 1593964782:0;cat ~/dump/pinentrylogs
+: 1593964792:0;cat ~/dump/pinentrylogs | ~/scripts/pinentry.sh
+: 1593965153:0;echo UPDATESTARTUPTTY | gpg-connect-agent
+: 1593965155:0;cat ~/dump/pinentrylogs | ~/scripts/pinentry.sh
+: 1593965162:0;pass show Aur/phenax
+: 1593965184:0;cat ~/dump/pinentrylogs | ~/scripts/pinentry.sh
+: 1593965187:0;cat ~/dump/pinentrylogs
+: 1593965189:0;pass show Aur/phenax
+: 1593965191:0;cat ~/dump/pinentrylogs
+: 1593965323:0;pass show Aur/phenax
+: 1593965325:0;cat ~/dump/pinentrylogs
+: 1593965662:0;pass show Aur/phenax
+: 1593965696:0;rm ~/somefile ~/input
+: 1593965703:0;pass show Aur/phenax
+: 1593965787:0;echo "SETTITLE title\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+GETPIN\
+BYE" | ~/scripts/pinentry.sh
+: 1593965834:0;mkdir ~/dev/fun
+: 1593965846:0;mkdir ~/dev/fun/anypinentry
+: 1593965852:0;cd $_
+: 1593965892:0;mv ~/scripts/pinentry.sh .
+: 1593965897:0;v ~/.config/gnupg/gpg-agent.conf
+: 1593965918:0;cp pinentry.sh ~/scripts/
+: 1593965930:0;v 
+: 1593965935:0;git init
+: 1593966158:0;cat ~/dump/pinentrylogs
+: 1593966162:0;rm ~/dump/pinentrylogs
+: 1593966172:0;gaa
+: 1593966187:0;gcm "Init commit that works like shit"
+: 1593966229:0;make install
+: 1593966318:0;chmod u+x anypinentry
+: 1593966321:0;./anypinentry
+: 1593966385:0;man exec
+: 1593966397:0;./anypinentry
+: 1593966407:0;ps aux | grep any
+: 1593966412:0;ps aux | grep anypin
+: 1593966425:0;ps aux | grep pinentry
+: 1593966442:0;./anypinentry
+: 1593966460:0;ps aux | grep pinentry
+: 1593966554:0;./anypinentry
+: 1593966559:0;./anypinentry 1 2 3
+: 1593966785:0;ps aux | grep pinentry
+: 1593966791:0;ps aux | grep pin
+: 1593966793:0;ps aux | grep sh
+: 1593966797:0;ps aux | grep bash
+: 1593966828:0;rm anypinentry
+: 1593966837:0;mv pinentry.sh anypinentry
+: 1593966864:0;rm Makefile
+: 1593966871:0;escript install.sh
+: 1593966934:0;rm install.sh
+: 1593966936:0;gaa
+: 1593966942:0;gcm "Rename script"
+: 1593967270:0;gaa
+: 1593967272:0;gcm "readme"
+: 1593967437:0;..
+: 1593967444:0;mv anypinentry ~/scripts
+: 1593967450:0;cd ~/scripts/anypinentry
+: 1593967451:0;v
+: 1593967455:0;..
+: 1593967460:0;cd anypinentry
+: 1593967874:0;ping https://duckduckgo.com
+: 1593967893:0;dwmblocks --help
+: 1593971327:0;./anypinentry
+: 1593971685:0;while $#
+: 1593971691:0;while $#; do done;
+: 1593971701:0;while [[ $# -gt 0 ]]; do done;
+: 1593971816:0;./anypinentry -h
+: 1593971894:0;./anypinentry -n
+: 1593971897:0;./anypinentry -x
+: 1593971906:0;./anypinentry -n
+: 1593971913:0;./anypinentry -n -x
+: 1593972084:0;pinentry-dmenu --help
+: 1593972196:0;echo "SETTITLE title\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+GETPIN\
+BYE" | pinentry-dmenu
+: 1593972210:0;echo "SETTITLE title\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+GETPIN\
+BYE" | pinentry-dmenu "$WNDOWID"
+: 1593972221:0;echo "$WINDOWID\
+"
+: 1593972239:0;pinentry-dmenu --help
+: 1593972241:0;echo "SETTITLE title\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+GETPIN\
+BYE" | pinentry-dmenu -W "$WNDOWID"
+: 1593972257:0;echo "SETTITLE title\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+GETPIN\
+BYE" | pinentry-dmenu --parent-wid "$WNDOWID"
+: 1593972265:0;echo "SETTITLE title\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+GETPIN\
+BYE" | pinentry-dmenu --parent-wid "$(xdo id)"
+: 1593972317:0;pinentry-curses --help
+: 1593972377:0;echo "SETTITLE title\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+GETPIN\
+BYE" | ./anypinentry
+: 1593972626:0;./anypinentry --prompt
+: 1593972732:0;gaa
+: 1593972739:0;gcm "Adds cli parsing"
+: 1593972814:0;echo "SETTITLE title\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+GETPIN\
+BYE" | ./anypinentry
+: 1593973058:0;echo "SETTITLE title\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+GETPIN\
+BYE" | ./anypinentry --prompt 'dmenu -p "wow"'
+: 1593973365:0;gaa
+: 1593973378:0;gcm "Adds dynamic password prompt with dmenu"
+: 1593973450:0;./anypinentry -h
+: 1593973469:0;./anypinentry --help
+: 1593973511:0;echo "SETTITLE title\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+CONFIRM\
+BYE" | ./anypinentry --prompt 'dmenu -p "wow"'
+: 1593973634:0;echo "SETTITLE title\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+CONFIRM\
+BYE" | pinentry-dmenu
+: 1593973814:0;echo "SETTITLE title\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+CONFIRM\
+BYE" | ./anypinentry
+: 1593973865:0;man pinentry-dmenu
+: 1593973898:0;gd
+: 1593974513:0;gaa
+: 1593974525:0;gcm "Adds confirm command support"
+: 1593974570:0;gaa
+: 1593974572:0;gcm "todo"
+: 1593974908:0;echo "SETTITLE title\
+SETPROMPT prompt\
+SETDESC REPEAT\
+SETREPEAT repeat\
+GETPIN\
+BYE" | ./anypinentry
+: 1593975025:0;echo "SETTITLE title\
+SETPROMPT prompt\
+SETDESC REPEAT\
+SETREPEAT 1\
+GETPIN\
+BYE" | ./anypinentry
+: 1593975038:0;echo "SETTITLE title\
+SETPROMPT prompt\
+SETDESC REPEAT\
+GETPIN\
+BYE" | ./anypinentry
+: 1593976360:0;echo "SETTITLE title\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+CONFIRM\
+BYE" | ./anypinentry
+: 1593976368:0;echo "SETTITLE title\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+GETPIN\
+BYE" | ./anypinentry
+: 1593976373:0;echo "SETTITLE title\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+CONFIRM\
+BYE" | ./anypinentry --prompt 'dmenu -p "wow"'
+: 1593976385:0;echo "SETTITLE title\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+GETPIN\
+BYE" | ./anypinentry --prompt 'dmenu -p "wow"'
+: 1593976443:0;echo "SETTITLE title\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+GETPIN\
+BYE" | ./anypinentry
+: 1593976757:0;echo "SETTITLE title\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+GETPIN\
+BYE" | ./anypinentry --prompt 'dmenu -p "wow"'
+: 1593976795:0;echo "SETTITLE titl\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+GETPIN\
+BYE" | ./anypinentry
+: 1593976810:0;gd
+: 1593976815:0;git log
+: 1593976824:0;gd
+: 1593976840:0;gaa
+: 1593976842:0;gcm "cleanup"
+: 1593976911:0;echo "SETTITLE titl\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+GETPIN\
+BYE" | ./anypinentry
+: 1593976919:0;echo "SETTITLE titl\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+gETPIN\
+BYE" | ./anypinentry
+: 1593976924:0;gaa
+: 1593976930:0;gcm "Commands case insensitive"
+: 1593976959:0;echo "SETTITLE titl\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+SETREPEAT repeat\
+gETPIN\
+BYE" | ./anypinentry
+: 1593977047:0;echo "SETTITLE titl\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+SETREPEAT repeat\
+gETPIN\
+BYE" | pinentry-dmenu
+: 1593977177:0;echo "SETTITLE titl\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+SETREPEAT repeat\
+gETPIN\
+BYE" | ./anypinentry
+: 1593977366:0;echo "SETTITLE titl\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+SETREPEAT repeat something\
+gETPIN\
+BYE" | pinentry-dmenu
+: 1593977574:0;echo "SETTITLE titl\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+SETREPEAT repeat something\
+gETPIN\
+BYE" | ./anypinentry
+: 1593977744:0;sudo echo "SETTITLE titl\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+SETREPEAT repeat something\
+gETPIN\
+BYE" | ./anypinentryOA
+: 1593977752:0;echo "SETTITLE titl\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+SETREPEAT repeat something\
+gETPIN\
+BYE" | ./anypinentry
+: 1593978058:0;echo "SETTITLE titl\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+gETPIN\
+BYE" | ./anypinentry
+: 1593978425:0;gaa
+: 1593978446:0;gcm "Implements repeat password prompt"
+: 1593978878:0;echo "SETTITLE titl\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+SETREPEAT repeat something\
+gETPIN\
+BYE" | ./anypinentry
+: 1593978980:0;echo "SETTITLE titl\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+SETREPEAT repeat something\
+SETREPEATERROR Stop wasting me time lad\
+gETPIN\
+BYE" | ./anypinentry
+: 1593979057:0;gaa
+: 1593979076:0;gcm "Implements error notification and repeat error text"
+: 1593979135:0;echo "SETTITLE titl\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+SETREPEAT repeat something\
+SETREPEATERROR Stop wasting me time lad\
+gETPIN\
+BYE" | ./anypinentry
+: 1593979141:0;echo "SETTITLE titl\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+SETREPEAT repeat something\
+gETPIN\
+BYE" | ./anypinentry
+: 1593979193:0;echo "SETTITLE titl\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+confirm\
+BYE" | pinentry-dmenu
+: 1593979216:0;echo "SETTITLE titl\
+SETPROMPT maprompt\
+SETDESC This is on the side\
+SETOK okkkk\
+SETNOTOK nooooooo\
+confirm\
+BYE" | pinentry-dmenu
+: 1593979235:0;gd
+: 1593979237:0;gaa
+: 1593979240:0;gcm "cleanup"
+: 1593979313:0;gaa
+: 1593979316:0;gc!
+: 1593979536:0;git remote add origin git@github.com:phenax/any-pinentry.git
+: 1593979541:0;git pull origin master --allow-unrelated-histories
+: 1593979549:0;gp
+: 1593979553:0;git push -u origin master
+: 1593979334:6;man gpg
+: 1593979634:0;v ~/.config/gnupg/gpg-agent.conf
+: 1593979648:0;gpg-connect-agent reloadagent /bye
+: 1593979735:0;yay -R pinentry-dmenu
+: 1593979752:0;yay pinentry-curses
+: 1593979758:0;yay pinentry
