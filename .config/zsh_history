@@ -4237,3 +4237,138 @@ setopt CORRECT_ALL
 : 1593894619:0;gcm "removes sync"
 : 1593897661:0;update-dotfiles
 : 1593897664:0;update
+: 1593897685:0;yadm status
+: 1593897711:0;update
+: 1593897744:0;auto-remove
+: 1593898832:0;./mandel
+: 1593905467:0;cd ~/.config/qutebrowser
+: 1593905477:0;lf
+: 1593906859:0;yay -Fl neovim
+: 1593906881:0;yay -Syyu
+: 1593906912:0;gco -- format.c
+: 1593906937:0;git remote add upstream https://github.com/Sweets/tiramisu
+: 1593906944:0;git pull upstream master
+: 1593906953:0;killall dunst
+: 1593906960:0;make tiramisu
+: 1593906964:0;./tiramisu
+: 1593906969:0;notify-send wow "Hello world foobar"
+: 1593906992:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world", "nice"]' '{}' "int32 -1"
+: 1593907019:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world", "nice", "fff"]' '{}' "int32 -1"
+: 1593907052:0;./tiramisu
+: 1593907062:0;notify-send wow "Hello world foobar"
+: 1593907095:0;./tiramisu
+: 1593907099:0;notify-send wow "Hello world foobar"
+: 1593907184:0;./tiramisu | jq
+: 1593907185:0;notify-send wow "Hello world foobar"
+: 1593907198:0;./tiramisu | jq
+: 1593907201:0;./tiramisu
+: 1593907208:0;notify-send wow "Hello world foobar"
+: 1593907262:0;./tiramisu
+: 1593907312:0;make tiramisu && ./tiramisu
+: 1593907320:0;rm tiramisu && make tiramisu && ./tiramisu
+: 1593907323:0;notify-send wow "Hello world foobar"
+: 1593907335:0;notify-send wow "Hello world foobar" --urgency 1
+: 1593907340:0;notify-send wow "Hello world foobar" --urgency low
+: 1593907344:0;notify-send wow "Hello world foobar" --urgency critical
+: 1593907360:0;notify-send wow "Hello world foobar" --urgency normal
+: 1593907371:0;rm tiramisu && make tiramisu && ./tiramisu
+: 1593907375:0;notify-send wow "Hello world foobar" --urgency normal
+: 1593907545:0;git pull upstream master
+: 1593907796:0;rm tiramisu && make tiramisu && ./tiramisu
+: 1593907816:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world", "nice", "fff"]' '{}' "int32 -1"
+: 1593907821:0;rm tiramisu && make tiramisu && ./tiramisu
+: 1593907828:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world", "nice", "fff"]' '{}' "int32 -1"
+: 1593908409:0;git pull upstream master
+: 1593908412:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world", "nice", "fff"]' '{}' "int32 -1"
+: 1593908415:0;killall dunst
+: 1593908418:0;rm tiramisu && make tiramisu && ./tiramisu
+: 1593908422:0;notify-send wow "Hello world foobar" --urgency normal
+: 1593908438:0;git pull upstream master
+: 1593908450:0;rm tiramisu && make tiramisu && ./tiramisu
+: 1593908453:0;notify-send wow "Hello world foobar" --urgency normal
+: 1593908472:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world", "nice", "fff"]' '{}' "int32 -1"
+: 1593908478:0;rm tiramisu && make tiramisu && ./tiramisu
+: 1593908481:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["21", "world", "nice", "fff"]' '{}' "int32 -1"
+: 1593908500:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["hello", "world"]' '{}' "int32 -1"
+: 1593908505:0;killall dunst
+: 1593908505:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["hello", "world"]' '{}' "int32 -1"
+: 1593908508:0;killall dunst
+: 1593908510:0;rm tiramisu && make tiramisu && ./tiramisu
+: 1593908513:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["hello", "world"]' '{}' "int32 -1"
+: 1593908661:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["111", "222"]' '{}' "int32 -1"
+: 1593908665:0;killall dunst
+: 1593908666:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["111", "222"]' '{}' "int32 -1"
+: 1593908669:0;killall dunst
+: 1593908671:0;rm tiramisu && make tiramisu && ./tiramisu
+: 1593908673:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["111", "222"]' '{}' "int32 -1"
+: 1593931163:0;git pull upstream master
+: 1593931175:0;gaa
+: 1593931180:0;gcm "gitignore"
+: 1593931185:0;git pull upstream master
+: 1593931421:0;ecmd
+: 1593931439:0;escript ~/.bin/color-pick
+: 1593931456:0;rm ~/scripts/commands/:color-pick
+: 1593931484:0;ecmd
+: 1593931628:0;git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.config/zshplugins/powerlevel10k
+: 1593931636:0;ezsh
+: 1593931914:0;cd ~/.config/suckless
+: 1593931917:0;cd popcorn
+: 1593931967:0;
+: 1593932300:0;strm() { echo "111"; sleep 1; echo "hello"; sleep 1; echo "wow"; sleep 1; }
+: 1593932304:0;make && (strm | ./popcorn)
+: 1593932344:0;sudo make install
+: 1593932364:0;popcorn
+: 1593942786:0;gd
+: 1593943112:0;strm() { echo "111"; sleep 1; echo "hello"; sleep 1; echo "wow"; sleep 1; }
+: 1593943119:0;strm() { sleep 1; echo "hello world"; sleep 1; }
+: 1593943124:0;strm | ./popcorn
+: 1593943173:0;yay popcorn
+: 1593943263:0;nodemon --exec "rm config.h && make config.h && clear && make && (~/dump/stream.sh | ./popcorn)" -e .c,.h
+: 1593944014:0;rm config.h
+: 1593944016:0;make config.h
+: 1593944022:0;make && (strm | ./popcorn)
+: 1593944030:0;strm() { echo "111"; sleep 1; echo "hello"; sleep 1; echo "wow"; sleep 1; }
+: 1593944031:0;make && (strm | ./popcorn)
+: 1593944533:0;gdb ./popcorn
+: 1593944704:0;make
+: 1593944705:0;gdb ./popcorn
+: 1593944807:0;make && (strm | ./popcorn)
+: 1593944951:0;rm config.h && make config.h && clear && make && (strm | ./popcorn)
+: 1593945022:0;gaa
+: 1593945040:0;gcm "Adds alpha chanel to background color"
+: 1593945130:0;gp
+: 1593945137:0;cd ~/dev/fun/mandlebrot
+: 1593945142:0;make && ./mandel
+: 1593945279:0;strm | ./popcorn
+: 1593945295:0;rm config.h && make config.h && clear && make && (strm | ./popcorn)
+: 1593945361:0;gaa
+: 1593945366:0;gcm "alpha change"
+: 1593945800:0;v ~/.config/sitesettings/qwant
+: 1593946538:0;v ~/.config/qutebrowser/config.py
+: 1593946542:0;equte
