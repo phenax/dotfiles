@@ -10,6 +10,9 @@
 [submodule "scripts/bsp-layout"]
 	path = scripts/bsp-layout
 	url = https://github.com/phenax/bsp-layout.git
+[submodule "scripts/anypinentry"]
+	path = scripts/anypinentry
+	url = https://github.com/phenax/anypinentry.git
 [submodule ".config/suckless/bslock"]
 	path = .config/suckless/bslock
 	url = https://github.com/phenax/bslock.git

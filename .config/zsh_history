@@ -5125,3 +5125,10 @@ BYE" | pinentry-dmenu
 : 1594040003:0;mv ~/scripts/commands/:sync ~/scripts/commands/:sync-dotfiles
 : 1594039974:12;update-dotfiles
 : 1594040007:0;update-dotfiles
+: 1594040033:0;git rm --cached .config/suckless/popcorn
+: 1594040039:0;yadm rm --cached .config/suckless/popcorn
+: 1594040049:0;v ~/.gitmodules
+: 1594040123:0;git submodule add https://github.com/phenax/popcorn.git .config/suckless/popcorn
+: 1594040133:0;yadm submodule add https://github.com/phenax/popcorn.git .config/suckless/popcorn
+: 1594040151:0;yadm submodule add https://github.com/phenax/anypinentry.git scripts/anypinentry
+: 1594040162:0;update-dotfiles
