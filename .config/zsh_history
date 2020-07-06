@@ -5141,3 +5141,6 @@ BYE" | pinentry-dmenu
 : 1594040272:0;yadm status
 : 1594040286:0;edot
 : 1594040317:0;update-dotfiles _ commit
+: 1594040327:0;edot
+: 1594040344:0;lf ~/scripts/bnotify
+: 1594040361:0;update-dotfiles _ commit
