@@ -20,7 +20,7 @@ add-public-config() {
   add ~/.config/autostart.sh;
 
   # Other config
-  add ~/.config/{gtk-3.0,fontconfig,mimeapps.list};
+  add ~/.config/{gtk-3.0,mimeapps.list};
 
   # Terminal and shell
   add ~/.bashrc ~/.profile;

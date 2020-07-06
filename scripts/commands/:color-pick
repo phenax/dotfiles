@@ -1,1 +1,4 @@
-/home/akshayn/.bin/color-pick
+#!/usr/bin/env bash
+
+~/.bin/color-pick;
+
