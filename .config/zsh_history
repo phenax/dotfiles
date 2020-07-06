@@ -5151,3 +5151,156 @@ BYE" | pinentry-dmenu
 : 1594040425:0;yadm status
 : 1594040432:0;update-dotfiles _ commit
 : 1594040437:0;update-dotfiles
+: 1594045197:0;lf /etc/runit/sv/
+: 1594045287:0;lf /run/runit/service
+: 1594045302:0;readlink /run/runit/service/connmand
+: 1594045318:0;lf /run/runit/service
+: 1594045833:0;yay -S networkmanager
+: 1594045935:0;pstree
+: 1594045999:0;help
+: 1594046085:0;sudo sv stop connmand
+: 1594046096:0;lf /run/runit/service
+: 1594046101:0;lf /etc/runit/sv/
+: 1594046110:0;NetworkManager
+: 1594046112:0;sudo NetworkManager
+: 1594046120:0;nm-applet
+: 1594046124:0;yay -S nm-applet
+: 1594046133:0;ps aux | grep Network
+: 1594046139:0;kill 32429
+: 1594046142:0;sudo kill 32429
+: 1594046155:0;sudo NetworkManager
+: 1594046160:0;ps aux | grep Network
+: 1594046168:0;sudo kill 395
+: 1594046171:0;ps aux | grep Network
+: 1594046183:0;man NetworkManager
+: 1594046208:0;NetworkManager --no-daemon
+: 1594046210:0;sudo NetworkManager --no-daemon
+: 1594046218:0;nmcli help
+: 1594046234:0;nmcli -a connection help
+: 1594046238:0;nmcli -a connection show
+: 1594046250:0;nmcli -a help
+: 1594046259:0;nmcli -a networking
+: 1594046266:0;nmcli -a networking help
+: 1594046272:0;nmcli -a dev help
+: 1594046278:0;nmcli -a dev wifi rescan
+: 1594046285:0;nmcli -a dev wifi show
+: 1594046293:0;ip addr
+: 1594046297:0;nmcli -a dev wifi show wlp5s0
+: 1594046301:0;nmcli -a dev wifi
+: 1594046316:0;nmcli -a dev wifi "This-is-not-for-you"
+: 1594046323:0;nmcli -a dev wifi help
+: 1594046335:0;nmcli -a dev help
+: 1594046343:0;nmcli -a dev wifi connect "This-is-not-for-you"
+: 1594046387:0;ls /etc/runit/sv/connmand
+: 1594046392:0;lf /etc/runit/sv/connmand
+: 1594046430:0;rm /run/runit/service/connmand
+: 1594046434:0;lf /etc/runit/sv/connmand
+: 1594046451:0;sudo cp -r /etc/runit/sv/connmand /etc/runit/sv/NetworkManager
+: 1594046460:0;lf /etc/runit/sv/NetworkManager
+: 1594046469:0;sudo nvim /etc/runit/sv/NetworkManager/run
+: 1594046492:0;sudo nvim /etc/runit/sv/NetworkManager/conf
+: 1594046529:0;sudo sv stop connmand
+: 1594046534:0;sudo sv disable connmand
+: 1594046537:0;ps aux | grep Network
+: 1594046563:0;sudo kill 1166
+: 1594046591:0;ping google.com
+: 1594046595:0;ps aux | grep Network
+: 1594046605:0;sudo sv enable NetworkManager
+: 1594046626:0;ln -s /etc/runit/sv/NetworkManager /run/runit/service
+: 1594046634:0;sudo sv --help
+: 1594046640:0;mansv
+: 1594046641:0;man sv
+: 1594046662:0;sudo sv status NetworkManager
+: 1594046671:0;sudo sv start NetworkManager
+: 1594046674:0;ping google.com
+: 1594046721:0;ps aux | grep connmand
+: 1594046724:0;ps aux | grep net
+: 1594046726:0;ps aux | grep -i net
+: 1594046756:0;sudo nvim /etc/runit/sv/NetworkManager/conf
+: 1594046760:0;sudo nvim /etc/runit/sv/NetworkManager/run
+: 1594046801:0;sudo sv restart NetworkManager
+: 1594046804:0;ping google.com
+: 1594046847:0;sudo sv restart NetworkManager
+: 1594046854:0;sudo nvim /etc/runit/sv/NetworkManager/run
+: 1594046858:0;sudo sv restart NetworkManager
+: 1594046871:0;sudo yay -R connman
+: 1594046874:0;sudo yay -R connman-runit
+: 1594046884:0;sudo yay -R connman-runit connman_dmenu-git connman
+: 1594046905:0;lf /run/runit/service
+: 1594049154:0;ebar
+: 1594049164:0;gaa
+: 1594049177:0;gcm "Removes connman status"
+: 1594049180:0;sudo make install
+: 1594049187:0;yay -S nm-applet
+: 1594049193:0;yay nm-applet
+: 1594049205:0;yay network-manager-applet
+: 1594049232:0;eas
+: 1594049346:0;v ~/.config/gtk-3.0/gtk.css
+: 1594049581:0;function reloadGTK(){\
+python - <<END\
+import sys, gtk\
+\
+if len(sys.argv) >= 2:\
+    usage()\
+events=gtk.gdk.Event(gtk.gdk.CLIENT_EVENT)\
+data=gtk.gdk.atom_intern("_GTK_READ_RCFILES", False)\
+events.data_format=8\
+events.send_event=True\
+events.message_type=data\
+events.send_clientmessage_toall()\
+    \
+END\
+}
+: 1594049585:0;reloadGTK
+: 1594049727:0;sudo pip install gtk
+: 1594049740:0;sudo pip install gtk3
+: 1594049742:0;sudo pip install gtk2
+: 1594049747:0;sudo pip install python-gtk
+: 1594049778:0;gtk-update-icon-cache
+: 1594049983:0;v ~/.config/gtk-3.0/gtk.css
+: 1594050043:0;cd ~/.config
+: 1594050044:0;ls
+: 1594050045:0;la
+: 1594050050:0;la | grep gt
+: 1594050052:0;cd ..
+: 1594050055:0;la | grep gt
+: 1594050059:0;la
+: 1594050063:0;la | wc -l
+: 1594050067:0;yay -Q | wc -l
+: 1594050103:0;yay -Q | grep gtk
+: 1594050181:0;cd ~/.config/gtk-3.0
+: 1594050257:0;gtk-update-icon-cache
+: 1594050273:0;function reloadGTK(){\
+python - <<END\
+import sys, gtk\
+\
+if len(sys.argv) >= 2:\
+    usage()\
+events=gtk.gdk.Event(gtk.gdk.CLIENT_EVENT)\
+data=gtk.gdk.atom_intern("_GTK_READ_RCFILES", False)\
+events.data_format=8\
+events.send_event=True\
+events.message_type=data\
+events.send_clientmessage_toall()\
+    \
+END\
+}
+: 1594050274:0;reloadGTK
+: 1594050284:0;yay -S python-gtk
+: 1594050331:0;yay -S python-gtk2
+: 1594050339:0;yay -S python-gtk3
+: 1594050346:0;yay python-gtk
+: 1594050376:0;sudo pip2 install python-gtk
+: 1594050380:0;sudo pip2 install gtk
+: 1594050418:0;sudo pip2 install gtk3
+: 1594050661:0;yay -Q | grep gtk
+: 1594050748:0;v ~/.config/gtk-3.0/gtk.css
+: 1594051099:0;v ~/.Xresources
+: 1594051128:0;cp ~/.Xresources ~/.config/xresources-schemes/prpl.Xresources
+: 1594051141:0;lf
+: 1594051146:0;ls
+: 1594051570:0;v ~/.config/gtk-3.0/gtk.css
+: 1594052123:0;lf /usr/share/applications
+: 1594052318:0;:update
+: 1594052324:0;update
+: 1594052347:0;update-dotfiles

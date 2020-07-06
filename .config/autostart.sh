@@ -62,7 +62,7 @@ run() {
   once "clipmenud" clipmenud;
 
   # Network manager applet
-  #once "nm-applet" nm-applet;
+  once "nm-applet" nm-applet;
 
   # Torrent daemon
   once "transmission" transmission-daemon --download-dir "$HOME/Downloads/dl" &

@@ -8,3 +8,24 @@
 .titlebar {
   border-radius: 0;
 }
+
+@define-color fg_color #D3DAE3;
+@define-color text_color #D3DAE3;
+@define-color bg_color #0f0c19;
+@define-color base_color #0f0c19;
+@define-color selected_bg_color #4e3aA3;
+@define-color selected_fg_color #ffffff;
+@define-color borders #1f1c29;
+@define-color unfocused_borders #2b2e39;
+
+/** {*/
+  /*background-color: @bg_color;*/
+  /*color: @fg_color;*/
+  /*border-color: @borders;*/
+
+  /*&:selected, &:selected:focus {*/
+    /*background-color: @selected_bg_color;*/
+    /*color: @selected_fg_color;*/
+  /*}*/
+/*}*/
+
