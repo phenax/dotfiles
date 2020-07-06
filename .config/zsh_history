@@ -5144,3 +5144,5 @@ BYE" | pinentry-dmenu
 : 1594040327:0;edot
 : 1594040344:0;lf ~/scripts/bnotify
 : 1594040361:0;update-dotfiles _ commit
+: 1594040377:0;mv ~/scripts/bnotify ~/dev/fun/
+: 1594040379:0;update-dotfiles _ commit

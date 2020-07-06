@@ -1,19 +1,12 @@
 #!/usr/bin/env sh
 
 updates=0;
-yay -Syy && updates="$(yay -Qu)";
-update_count=$(echo "$updates" | sed '/^$/d' | wc -l);
 
-[[ "$update_count" = 0 ]] && notify-send "No packages to update" && \
-  exit 0;
+YAY="yay --sudo=dsudo";
 
-notify-send \
-  -a "Updatings $update_count packages" \
-  "$updates";
+prompt() { notify-send -a "System Update" "$1"; }
 
-sensible-terminal -e sh -c 'yay -Syyu --sudo=dsudo';
-
-notify-send \
-  -a "System updated" \
-  "$update_count packages updated";
+prompt "Preparing to start an update. Enter your password to continue";
+sensible-terminal -e sh -c "$YAY -Syyu";
+prompt "Update complete";
 

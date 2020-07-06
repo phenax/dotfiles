@@ -1,0 +1,65 @@
+#!/usr/bin/env bash
+
+srun() { setsid -f "$@"; }
+run() { srun "$@" > /dev/null 2> /dev/null; }
+run_async() { run "$@" & disown; }
+
+open_by_mimetype() {
+  local file="$1";
+  local mime=`file "$file" --mime-type -bL`;
+
+  local is_opened=1;
+
+  echo "Opening $file ($mime)...";
+
+  # TODO: For inode/symlink, recursively call itself with readlink
+  case "$mime" in
+    inode/directory) lf "$file" ;;
+
+    video/*|image/gif) run_async mpv "$file" ;;
+
+    image/*) run_async sxiv "$file" ;;
+
+    *pdf) run_async sensible-browser "$file" ;; # Zathura maybe?
+
+    text/*)                 sensible-editor "$file" ;;
+    application/javascript) sensible-editor "$file" ;;
+    application/json)       sensible-editor "$file" ;;
+    application/xml)        sensible-editor "$file" ;;
+    application/x-*)        sensible-editor "$file" ;;
+
+    audio/*)
+      mpc insert "file://$(readlink -e "$file")" && mpc play && \
+        echo "Adding song to queue";
+    ;;
+
+    *) is_opened=0 ;;
+  esac;
+
+  [[ "$is_opened" == 1 ]] && exit 0;
+}
+
+open_by_path() {
+  local file="$1";
+
+  # Urls
+  if [[ "$file" =~ ^https?:// ]] || [[ "$file" =~ ^file?:// ]]; then
+    echo "Opening url $file...";
+    run_async sensible-browser "$file";
+    exit 0;
+  fi;
+}
+
+
+filepath="$1";
+[[ -z "$filepath" ]] && exit 1;
+
+open() {
+  open_by_path "$filepath";
+  open_by_mimetype "$filepath";
+
+  # If it doesn't exit out, it couldn't open the file
+  echo "Couldn't open file. Add rule to opener."; exit 1;
+}
+open;
+
