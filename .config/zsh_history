@@ -5132,3 +5132,9 @@ BYE" | pinentry-dmenu
 : 1594040133:0;yadm submodule add https://github.com/phenax/popcorn.git .config/suckless/popcorn
 : 1594040151:0;yadm submodule add https://github.com/phenax/anypinentry.git scripts/anypinentry
 : 1594040162:0;update-dotfiles
+: 1594040209:0;cd ~/scripts/anypinentry
+: 1594040216:0;git push -u origin master
+: 1594040231:0;cd ~/.config/suckless/popcorn
+: 1594040234:0;git push -u origin master
+: 1594040244:0;cd ~
+: 1594040248:0;update-dotfiles
