@@ -15,13 +15,14 @@ let g:lightline = {
 \                [ 'filename', 'dir' ],
 \     ],
 \     'right': [ [ 'lineinfo' ],
-\                [ 'percent' ],
+\                [ 'total_lines' ],
 \                [ 'filetype' ],
 \     ],
 \   },
 \   'component': {
 \     'lineinfo': 'L %3l:%-2v',
 \     'dir': '%F',
+\     'total_lines': '[%L]',
 \   },
 \   'component_function': {
 \     'gitbranch': 'fugitive#head',
