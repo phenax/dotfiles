@@ -5150,3 +5150,4 @@ BYE" | pinentry-dmenu
 : 1594040395:0;yadm add .config/zsh_history
 : 1594040425:0;yadm status
 : 1594040432:0;update-dotfiles _ commit
+: 1594040437:0;update-dotfiles
