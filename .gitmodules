@@ -28,6 +28,9 @@
 [submodule ".config/suckless/shotkey"]
 	path = .config/suckless/shotkey
 	url = https://github.com/phenax/shotkey.git
+[submodule ".config/suckless/popcorn"]
+	path = .config/suckless/popcorn
+	url = https://github.com/phenax/popcorn.git
 [submodule ".config/vimwiki"]
 	path = .config/vimwiki
 	url = git@github.com:phenax/personal-notes.git

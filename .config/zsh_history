@@ -5034,3 +5034,94 @@ BYE" | pinentry-dmenu
 : 1593979735:0;yay -R pinentry-dmenu
 : 1593979752:0;yay pinentry-curses
 : 1593979758:0;yay pinentry
+: 1594017510:0;lc
+: 1594018212:0;yay fontpreview
+: 1594018240:0;fontpreview
+: 1594018326:0;yay -Q | grep git
+: 1594018460:0;equte
+: 1594022177:0;yay -S yadm-git xcwd-git transmission-remote-cli-git
+: 1594022208:0;yay -S transmission-remote-cli-git
+: 1594022260:0;lf /var/cache/pacman/pkg/
+: 1594022299:0;cd /var/cache/pacman/pkg/
+: 1594022306:0;sudo rm transmission-*
+: 1594022314:0;yay -S transmission-remote-cli-git
+: 1594022346:0;rm -rf ~/.cache/yay/transmission-remote-cli-git
+: 1594022347:0;yay -S transmission-remote-cli-git
+: 1594022565:0;yay -Q | wc -l
+: 1594025606:0;ekey
+: 1594025836:0;yay -R pinentry-dmenu
+: 1594034760:0;git pull upstream master
+: 1594034780:0;make
+: 1594034785:0;make tiramisu && ./tiramisu
+: 1594034792:0;rm tiramisu
+: 1594034793:0;rm tiramisu.o
+: 1594034842:0;killall dunst
+: 1594034843:0;make tiramisu && ./tiramisu
+: 1594034846:0;notify-send -a "Pinentry" "xxxSS$description.";
+: 1594034866:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["111", "222"]' '{}' "int32 -1"
+: 1594035175:0;notify-send -a "Pinentry" "xxxSS$description.";
+: 1594035216:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["111", "222"]' '{ "foo": "bar" }' "int32 -1"
+: 1594035236:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["111", "222"]' '{ "foo" }' "int32 -1"
+: 1594035249:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["111", "222"]' '[ "foo", "bar" ]' "int32 -1"
+: 1594035279:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["111", "222"]' '{"a":"12"}' "int32 -1"
+: 1594035289:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["111", "222"]' '{"a":"int:12"}' "int32 -1"
+: 1594035299:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["111", "222"]' '{"a": int:12}' "int32 -1"
+: 1594035311:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["111", "222"]' '{"a": "int32:12"}' "int32 -1"
+: 1594035340:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["111", "222"]' '{ int32:12 }' "int32 -1"
+: 1594035355:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["111", "222"]' '[ int32:12 ]' "int32 -1"
+: 1594035172:238;make tiramisu && ./tiramisu
+: 1594035412:0;rm tiramisu
+: 1594035413:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["111", "222"]' '[ int32:12 ]' "int32 -1"
+: 1594035418:0;make tiramisu && ./tiramisu
+: 1594035422:0;notify-send -a "Pinentry" "xxxSS$description.";
+: 1594035424:0;killall dunst
+: 1594035425:0;notify-send -a "Pinentry" "xxxSS$description.";
+: 1594035607:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["111", "222"]' '[ int32:12 ]' "int32 -1"
+: 1594035617:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["111", "222"]' '[]' "int32 -1"
+: 1594035651:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["111", "222"]' '["int32:21"]' "int32 -1"
+: 1594035667:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["111", "222"]' '["kk:int32:21"]' "int32 -1"
+: 1594039528:0;evim
+: 1594039703:0;equte
+: 1594039755:0;evim
+: 1594039830:0;yadm status
+: 1594039862:0;yadm rm --cached ~/scripts/anypinentry
+: 1594039867:0;yadm status
+: 1594039889:0;cd ~/.config/suckless
+: 1594039902:0;yadm rm --cached ~/.config/suckless/tiramisu
+: 1594039905:0;rm -rf tiramisu
+: 1594039929:0;yadm rm --cached ~/.config/suckless/popcorn
+: 1594039933:0;v ~/.gitmodules
+: 1594039964:0;edot
+: 1594040003:0;mv ~/scripts/commands/:sync ~/scripts/commands/:sync-dotfiles
+: 1594039974:12;update-dotfiles
+: 1594040007:0;update-dotfiles
