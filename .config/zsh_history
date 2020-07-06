@@ -5138,3 +5138,6 @@ BYE" | pinentry-dmenu
 : 1594040234:0;git push -u origin master
 : 1594040244:0;cd ~
 : 1594040248:0;update-dotfiles
+: 1594040272:0;yadm status
+: 1594040286:0;edot
+: 1594040317:0;update-dotfiles _ commit
