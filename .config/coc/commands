@@ -1,4 +1,4 @@
-explorer
-eslint.executeAutofix
-importCost.toggle
 actions.open
+eslint.executeAutofix
+explorer
+importCost.toggle

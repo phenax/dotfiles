@@ -13,10 +13,12 @@ playerctl_icon() {
 }
 
 network_state() {
-  local state=$(connmanctl state);
-  local status="$(echo -e "$state" | awk -F' = ' '/State / {print $2}')";
+  local state=$(nmcli dev show wlp5s0);
+  local ssid=$(echo -e "$state" | grep '^GENERAL.CONNECTION:' | sed 's/^GENERAL.CONNECTION:\s*//g');
 
-  (echo -e "$state" | grep 'OfflineMode = True' > /dev/null) && echo 'offline' || echo "$status";
+  [[ "$ssid" == "--" ]] && ssid="";
+
+  echo "$([[ -z "$ssid" ]] && echo "offline" || echo "online") ${ssid:0:12}...";
 }
 
 icon() {
