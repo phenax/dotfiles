@@ -112,9 +112,6 @@ nmap("z=", "zoom-in")
 nmap("z-", "zoom-out")
 nmap("zz", "zoom")
 
-# Highlight inputs
-nmap('gi', 'hint inputs')
-
 # Add search
 nmap('n', 'search-next')
 nmap('N', 'search-prev')
@@ -125,7 +122,8 @@ nmap('yu', 'yank')             # Copy url
 nmap('yl', 'hint links userscript yank') # Copy a link from page as hints
 
 # Add magnet link to download
-c.aliases['find-torrent-magnet-links'] = 'hint links userscript torrent'
+c.hints.selectors['torrents'] = [ 'a[href^="magnet:"]' ]
+c.aliases['find-torrent-magnet-links'] = 'hint torrents userscript torrent'
 nmap(leader + 'td', 'find-torrent-magnet-links')
 
 nmap('<Shift-j>', 'scroll-page 0 0.5')
@@ -212,6 +210,25 @@ nmap(leader + 'sv', ':load video');
 nmap(leader + 'sc', ':load com');
 # }}}
 
+#### Navigation {{{
+
+# Highlight inputs
+nmap('gi', 'hint inputs')
+
+# Selected
+nmap(localleader + 'gl', 'follow-selected') # Follow selected link
+nmap(localleader + 'gL', 'follow-selected --tab') # Follow selected link
+
+# Increment pagination
+nmap(localleader + 'nn', 'navigate increment')
+nmap(localleader + 'nN', 'navigate decrement')
+
+# From clipboard
+nmap('p', 'open --tab -- {clipboard}') # Open link in keyboard in a new tab
+nmap('P', 'open -- {clipboard}') # Open link in clipboard in the same tab
+
+# }}}
+
 #### TABS {{{
 c.tabs.show = 'multiple'
 c.tabs.title.format = '{perc}{private} {audio}{index}: {current_title}'
@@ -241,10 +258,6 @@ nmap('<Ctrl-j>', 'tab-next')
 nmap('<Ctrl-Shift-k>', 'tab-move -')
 nmap('<Ctrl-Shift-j>', 'tab-move +')
 nmap('b', 'set-cmd-text --space :buffer') # List buffers by index
-
-# From clipboard
-nmap('p', 'open --tab -- {clipboard}') # Open link in keyboard in a new tab
-nmap('P', 'open -- {clipboard}') # Open link in clipboard in the same tab
 
 for i in range(1, 10 + 1):
     key = 0 if i == 10 else i
@@ -299,8 +312,9 @@ c.url.start_pages = [c.url.default_page]
 c.url.searchengines = {
     # General
     'sp': 'https://www.startpage.com/sp/search?q={}',
+    'q': 'https://www.qwant.com/search?q={}',
     'd': 'http://duckduckgo.com/?q={}',
-    'do': 'https://3g2upl4pq6kufc4m.onion/?q={}',
+    'go': 'https://google.com/?q={}',
 
     # Dev stuff
     'bp': 'https://bundlephobia.com/result?p={}',

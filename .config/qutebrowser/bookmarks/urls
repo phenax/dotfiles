@@ -6,3 +6,6 @@ https://keithp.com/~keithp/talks/xtc2001/paper/ The Xft Font Library: Architectu
 https://venam.nixers.net/blog/unix/2018/09/02/fonts-xcb.html Xft but for XCB
 https://gitlab.freedesktop.org/xorg/lib/libxft/-/blob/master/include/X11/Xft/Xft.h.in include/X11/Xft/Xft.h.in · master · xorg / lib / libXft · GitLab
 https://tronche.com/gui/x/xlib/ https://tronche.com/gui/x/xlib/
+https://gtkthemingguide.now.sh/#/creating_gtk_themes?id=study-a-premade-gtk3-theme Creating Gtk Themes - Gtk theming guide
+https://github.com/boogy/dotfiles/blob/master/.xinitrc dotfiles/.xinitrc at master · boogy/dotfiles
+qute://pdfjs/web/viewer.html?filename=tmpnb_fwc6u_os-dev.pdf&file=&source=https://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf tmpnb_fwc6u_os-dev.pdf

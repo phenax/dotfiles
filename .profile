@@ -15,8 +15,6 @@ if [ -n "$BASH_VERSION" ]; then
   fi
 fi
 
-echo ".profile1 $(tty)" >> $HOME/dump/profilelogss;
-
 source "$HOME/.config/zshconf/config.zsh";
 
 PATH="$HOME/.bin:$PATH"

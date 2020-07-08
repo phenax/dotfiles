@@ -5304,3 +5304,443 @@ END\
 : 1594052318:0;:update
 : 1594052324:0;update
 : 1594052347:0;update-dotfiles
+: 1594056373:0;sudo yarn remove -g nodemon
+: 1594056381:0;sudo yarn remove --global nodemon
+: 1594056386:0;sudo yarn global remove nodemon
+: 1594056401:0;sudo npm uninstall -g nodemon
+: 1594056411:0;sudo npm i -g npm yarn
+: 1594056429:0;go get github.com/cespare/reflex
+: 1594056470:0;reflex --help
+: 1594056505:0;which reflex
+: 1594056512:0;du -b (which reflex)
+: 1594056517:0;du -b $(which reflex)
+: 1594056531:0;yay -S entr
+: 1594056542:0;go --help
+: 1594056558:0;cd ~/dev/go
+: 1594056564:0;rm bin/reflex
+: 1594056583:0;rm -rf src/github.com/cespare/reflex
+: 1594056587:0;reflex
+: 1594056591:0;entr --help
+: 1594056624:0;cd ~/scripts/bsp-layout
+: 1594056630:0;git reset --hard
+: 1594056633:0;git pull
+: 1594056638:0;find src
+: 1594056688:0;find src/*.sh
+: 1594056693:0;find src/**/*.sh
+: 1594056712:0;find src/**/*.sh | entr sh -c 'clear && echo wow'
+: 1594056722:0;v src/layout.sh
+: 1594056765:0;ls | entr sh -c 'clear && echo wow'
+: 1594056768:0;v README.md
+: 1594056799:0;x=0; ls | entr sh -c 'clear && echo $x'
+: 1594056840:0;x=0; ls | entr sh -c 'clear && [ -z "$x" ] && x=0 && echo "::$x"'
+: 1594056858:0;x=0; ls | entr sh -c 'clear && [ -z "$x" ] && x=0 && echo "::$(x + 1)"'
+: 1594056879:0;export x=0; ls | entr sh -c 'clear && echo "$x"'
+: 1594056893:0;export x=0; ls | entr sh -c 'clear && echo "$x" && x=$((x+1))'
+: 1594056914:0;cat /dev/random
+: 1594056929:0;export x=0; ls | entr sh -c 'clear && tail -n 1 /dev/random'
+: 1594056961:0;export x=0; ls | entr sh -c 'clear; cat README.md | head -n 5'
+: 1594057058:0;v /var/log/syslog
+: 1594057119:0;v /lib/dhcpcd/dhcpcd-hooks/10-wpa_supplicant
+: 1594057144:0;ls /lib64/dhcpcd/dhcpcd-hooks/
+: 1594057149:0;sudo ls /lib64/dhcpcd/dhcpcd-hooks/
+: 1594057157:0;sudo ls /lib/dhcpcd/dhcpcd-hooks/
+: 1594057273:0;ls /etc/wpa_supplicant
+: 1594057308:0;ls /usr/lib/dhcpcd
+: 1594057331:0;cd /
+: 1594057348:0;find -name dhcpcd
+: 1594057354:0;sudo find -name dhcpcd
+: 1594057361:0;sudo find -name dhcpcd .
+: 1594057367:0;sudo find -iname dhcpcd .
+: 1594057372:0;sudo find -iname "dhcpcd" .
+: 1594057377:0;sudo find -iname "dhcpcd"
+: 1594057443:0;ps aux | grep dhcp
+: 1594057446:0;ps aux | grep wpa
+: 1594057460:0;ag "/usr/bin/wpa_supplicant"
+: 1594057476:0;sudo nvim usr/share/dbus-1/system-services/fi.w1.wpa_supplicant1.service
+: 1594057528:0;cd ~
+: 1594057907:0;cat ~/.local/share/qutebrowser/history
+: 1594058226:0;equte
+: 1594059186:0;stig
+: 1594059191:0;transmission-remote-cli
+: 1594059197:0;eas
+: 1594059202:0;ps aux | grep transmi
+: 1594059217:0;transmission-daemon --help
+: 1594059224:0;yay -S transmission-daemon
+: 1594059238:0;yay transmission-daemon
+: 1594059248:0;yay transmission
+: 1594059269:0;transmission-daemon --help
+: 1594059292:0;stig
+: 1594059296:0;transmission-remote-cli
+: 1594059302:0;yay -S stig
+: 1594059484:0;equte
+: 1594060378:0;transmission-remote-cli
+: 1594060720:0;yay -Q | wc -l
+: 1594060725:0;neofetch
+: 1594060739:0;v ~/.config/gtk-3.0/gtk.css
+: 1594060769:0;yay -R neofetch
+: 1594061131:0;transmission-remote-cli
+: 1594061285:0;cd ~/dump
+: 1594061290:0;mkdir transmission
+: 1594061292:0;cd transmission
+: 1594061301:0;v PKGBUILD
+: 1594061356:0;yay -R transmission-cli
+: 1594061382:0;makepkg -si ./PKGBUILD
+: 1594061439:0;auto-remove
+: 1594061445:0;..
+: 1594061450:0;rm -rf transmission
+: 1594061551:0;take transmission
+: 1594061582:0;curl https://download.transmissionbt.com/files/transmission-2.84.tar.xz > transmission.tar.xz
+: 1594061595:0;curl "https://download.transmissionbt.com/files/transmission-2.84.tar.xz" > transmission.tar.xz
+: 1594061600:0;ping google.com
+: 1594061655:0;yay -S transmission-daemon
+: 1594061659:0;yay -S transmission-cli
+: 1594061665:0;yay -S stig
+: 1594061686:0;stig
+: 1594061692:0;auto-remove
+: 1594069000:0;enotes
+: 1594069003:0;eorg
+: 1594103628:0;cd ~/scripts/anypinentry
+: 1594103631:0;v
+: 1594103664:0;cat ~/dump/profilelogss
+: 1594103669:0;rm ~/dump/profilelogss
+: 1594103673:0;v ~/.profile
+: 1594103683:0;v ~/.zprofile
+: 1594103692:0;v ~/.bash_profile
+: 1594106160:0;mpc play
+: 1594106168:0;mpc play_paise
+: 1594106170:0;mpc play_pause
+: 1594106174:0;mpc help
+: 1594106180:0;mpc help | grep play
+: 1594106227:0;mpc help | grep thumb
+: 1594106229:0;mpc help | grep pic
+: 1594106233:0;mpc help | grep data
+: 1594106236:0;mpc help | grep meta
+: 1594106252:0;mediainfo
+: 1594106261:0;v ~/.config/lf/previewer.sh
+: 1594106268:0;mediainfo
+: 1594106271:0;yay -S mediainfo
+: 1594106291:0;mediainfo ~/Downloads/music/Amon\ Amarth/Deceiver\ Of\ The\ Gods
+: 1594106295:0;mediainfo ~/Downloads/music/Amon\ Amarth/Deceiver\ Of\ The\ Gods/01\ -\ Deceiver\ of\ the\ Gods.opus
+: 1594106302:0;mediainfo ~/Downloads/music/Amon\ Amarth/Deceiver\ Of\ The\ Gods/01\ -\ Deceiver\ of\ the\ Gods.opus -F
+: 1594106306:0;mediainfo ~/Downloads/music/Amon\ Amarth/Deceiver\ Of\ The\ Gods/01\ -\ Deceiver\ of\ the\ Gods.opus -F | grep thumb
+: 1594106308:0;mediainfo ~/Downloads/music/Amon\ Amarth/Deceiver\ Of\ The\ Gods/01\ -\ Deceiver\ of\ the\ Gods.opus -F | grep -i thumb
+: 1594106311:0;mediainfo ~/Downloads/music/Amon\ Amarth/Deceiver\ Of\ The\ Gods/01\ -\ Deceiver\ of\ the\ Gods.opus -F
+: 1594106343:0;lf
+: 1594106355:0;~/.config/lf/lfrun.sh ~/wallpapers
+: 1594106405:0;v ~/scripts/spotify.sh
+: 1594106852:0;nmtui
+: 1594106885:0;nmcli dev wifi help
+: 1594106892:0;nmcli dev wifi ssid
+: 1594106904:0;nmcli dev wifi list
+: 1594106914:0;nmcli dev wifi help
+: 1594106917:0;nmcli dev help
+: 1594106927:0;nmcli status
+: 1594106930:0;nmcli dev status
+: 1594106949:0;ip addr
+: 1594106954:0;nmcli show wlp5s0
+: 1594106958:0;nmcli dev show wlp5s0
+: 1594107063:0;nmcli dev show wlp5s0 | grep '^GENERAL.CONNECTION'
+: 1594107072:0;nmcli dev show wlp5s0 | grep '^GENERAL.CONNECTION:' | 
+: 1594107102:0;nmcli dev show wlp5s0 | grep '^GENERAL.CONNECTION:' | cut -f2-
+: 1594107105:0;nmcli dev show wlp5s0 | grep '^GENERAL.CONNECTION:' | cut -f 2-
+: 1594107111:0;nmcli dev show wlp5s0 | grep '^GENERAL.CONNECTION:' | cut -d ' ' -f 2-
+: 1594107113:0;nmcli dev show wlp5s0 | grep '^GENERAL.CONNECTION:' | cut -d '\t' -f 2-
+: 1594107118:0;nmcli dev show wlp5s0 | grep '^GENERAL.CONNECTION:' | cut -d "\t" -f 2-
+: 1594107127:0;nmcli dev show wlp5s0 | grep '^GENERAL.CONNECTION:' | cut -f 2-
+: 1594107171:0;nmcli dev show wlp5s0 | grep '^GENERAL.CONNECTION:\s*'
+: 1594107176:0;nmcli dev show wlp5s0 | grep -v '^GENERAL.CONNECTION:\s*'
+: 1594107189:0;nmcli dev show wlp5s0 | sed 's/^GENERAL.CONNECTION:\s*//g'
+: 1594107220:0;nmcli dev show wlp5s0 | grep '^GENERAL.CONNECTION:' | sed 's/^GENERAL.CONNECTION:\s*//g'
+: 1594107279:0;nmcli dev wifi show-password wlp5s0
+: 1594107285:0;nmcli dev wifi show-password
+: 1594107303:0;yay -R nmtui
+: 1594107309:0;nmcli dev wifi show-password
+: 1594107338:0;nmcli dev show wlp5s0
+: 1594107375:0;ebar
+: 1594107398:0;v ~/scripts/menuitems.sh
+: 1594107448:0;nmcli dev show
+: 1594107542:0;nmcli dev show wlp5s0
+: 1594107719:0;sudo make install
+: 1594107805:0;echo "asdalsjdasda dad asda da s" | head -n 1
+: 1594107897:0;v .
+: 1594107908:0;sudo make install
+: 1594107955:2;nmtui-hostname
+: 1594107961:0;nmtui-edit
+: 1594107972:0;nmtui-connect
+: 1594109828:0;cd ~/dev/
+: 1594109835:0;cd projects
+: 1594109841:0;cd ..
+: 1594109854:0;tale os
+: 1594109857:0;take os
+: 1594109865:0;yay -S nasm qemu
+: 1594109923:0;v test.asm
+: 1594109966:0;nasm -f bin test.asm -o test.bin
+: 1594109976:0;qemu test.
+: 1594109982:0;yay -S qemu
+: 1594110002:0;man qemu-img
+: 1594110019:0;man qemu
+: 1594110026:0;qemu -v
+: 1594110028:0;man qemu
+: 1594110049:0;qemu-system-x86_64 test.bin
+: 1594110075:0;sx
+: 1594110108:0;exit
+: 1594110115:0;cd ~/dev/os/
+: 1594110117:0;v
+: 1594110125:0;qemu-system-x86_64 test.bin
+: 1594110184:0;qemu-system-x86_64 test.bin --curses
+: 1594110201:0;ps aux | grep qemu
+: 1594110206:0;kill 22224
+: 1594110231:0;nasm -f bin test.asm -o test.bin
+: 1594110235:0;qemu-system-x86_64 test.bin --curses
+: 1594110242:0;ps aux | grep qemu
+: 1594110378:0;nasm -fbin test.asm -o test.bin && qemu-system-x86_64 test.bin --curses
+: 1594110383:0;ps aux | grep qemu
+: 1594110389:0;nasm -fbin test.asm -o test.bin && qemu-system-x86_64 test.bin --curses
+: 1594110424:0;cat test.bin
+: 1594110432:0;hexdump test.bin
+: 1594110553:0;man hexdump
+: 1594111063:0;hexdump test.bin -v
+: 1594111358:0;nasm -fbin test.asm -o test.bin && qemu-system-x86_64 test.bin --curses
+: 1594111363:0;hexdump test.bin -v
+: 1594111600:0;nvim -b test.bin
+: 1594111610:0;hexdump test.bin -v
+: 1594111708:0;(echo "Somecontents"; sleep 1) | popcorn
+: 1594111712:0;(echo "Somecontents"; sleep 10) | popcorn
+: 1594116534:0;nasm -f bin test.asm -o test.bin
+: 1594116572:0;ls | entr nasm -f bin test.asm -o test.bin
+: 1594116595:0;ls | entr sh -c 'nasm -f bin test.asm -o test.bin && echo "done"'
+: 1594117137:0;mv test.asm hello_world.asm
+: 1594117155:0;v test.asm
+: 1594117159:0;ls | entr sh -c 'nasm -f bin test.asm -o test.bin && echo "done"'
+: 1594117171:0;qemu-system-x86_64 test.bin --curses
+: 1594117214:0;hexdump test.bin -v
+: 1594117228:0;hexdump test.bin -v | grep 58
+: 1594117285:0;xxd
+: 1594117288:0;yay -S xxd
+: 1594117316:0;hexdump test.bin -v | grep 58
+: 1594117319:0;hexdump test.bin -v
+: 1594117384:0;yay xxd
+: 1594117477:0;_xxd
+: 1594117708:0;yay -S xxd-standalone
+: 1594117728:0;auto-remove
+: 1594117733:0;xxd test.
+: 1594117735:0;xxd test.bin
+: 1594117739:0;xxd -b test.bin
+: 1594117747:0;xxd test.bin
+: 1594117828:0;cd ~/dev/os/
+: 1594117839:0;ls | entr sh -c 'nasm -f bin test.asm -o test.bin && echo "done"'
+: 1594117844:0;cd ~/dev/os/
+: 1594117863:0;man xxd
+: 1594117857:0;xxd test.bin
+: 1594117930:0;xxd test.bin
+: 1594117991:0;cd ~/dev/os/
+: 1594117995:0;qemu-system-x86_64 test.bin --curses
+: 1594118254:0;xxd test.bin
+: 1594118298:0;qemu-system-x86_64 test.bin --curses
+: 1594118318:0;ls | entr sh -c 'nasm -f bin test.asm -o test.bin && echo "done"'
+: 1594118324:0;qemu-system-x86_64 test.bin --curses
+: 1594118340:0;xxd test.bin
+: 1594118430:0;ls | entr sh -c 'nasm -f bin test.asm -o test.bin && echo "done"'
+: 1594119092:0;yay thinkpad bios
+: 1594119137:0;man dkms
+: 1594119200:0;yay -R thinkpad_wmi-dkms
+: 1594119207:0;auto-remove
+: 1594119224:0;yay -Q | wc -l
+: 1594119226:0;yay -Q
+: 1594119250:0;yay -R xorg-xkill
+: 1594119296:0;yay -R wayland
+: 1594119315:0;man volume_key
+: 1594119326:0;yay -Qi volume_key
+: 1594119335:0;yay -Qi libblockdev
+: 1594119344:0;yay -Qi udisks2
+: 1594127124:0;hexdump /boot/efi/grub/grubx64.efi
+: 1594127152:0;cd ~/dev
+: 1594127154:0;cd fun
+: 1594127308:0;hexdump /boot/vmlinuz-linux
+: 1594127314:0;hexdump /boot/vmlinuz-linux | grep aa55
+: 1594127505:0;systemd-ask-password
+: 1594127625:0;cargo init gameoflife
+: 1594127628:0;cd gameoflife
+: 1594127632:0;v
+: 1594127816:0;cargo add x1
+: 1594127818:0;cargo add x11
+: 1594127843:0;cargo install cargo-edit
+: 1594127849:0;..
+: 1594127849:0;cargo install cargo-edit
+: 1594127947:0;la ~ | wc -l
+: 1594128083:0;cd -
+: 1594128087:0;cargo add x11
+: 1594128092:0;cargo build
+: 1594128106:0;cargo build --verbose
+: 1594128138:0;cargo run --features 'xlib xinput'
+: 1594128157:0;..
+: 1594128160:0;ls
+: 1594128163:0;rm -rf gameoflife
+: 1594128177:0;cp -r mandlebrot gameoflife
+: 1594128180:0;cd gameoflife
+: 1594128181:0;v
+: 1594128196:0;rm -rf screenshots .git
+: 1594128200:0;rm complex.*
+: 1594128206:0;rm *.o
+: 1594128210:0;rm mandel
+: 1594128239:0;yay -S rg
+: 1594128246:0;git init
+: 1594128252:0;yay rg
+: 1594128277:0;yay ripgrep
+: 1594128377:0;v
+: 1594128550:0;make
+: 1594128565:0;mv mandel.c gameoflife.c
+: 1594128567:0;make
+: 1594128618:0;./gameoflife
+: 1594129042:0;make && ./gameoflife
+: 1594129750:0;gaa
+: 1594129754:0;gcm "init"
+: 1594129948:0;make && ./gameoflife
+: 1594129954:0;gaa
+: 1594129973:0;git rm gameoflife
+: 1594129977:0;gaa
+: 1594129981:0;git reset HEAD
+: 1594129987:0;git add .gitignore
+: 1594129991:0;git rm gameoflife
+: 1594129994:0;git rm gameoflife --cached
+: 1594129998:0;gaa
+: 1594130013:0;gcm "Adds dimensions"
+: 1594130062:0;make && ./gameoflife
+: 1594136886:0;v ~/.bin/open
+: 1594137410:0;gdv
+: 1594137413:0;cd projects
+: 1594137427:0;cp -r ~/dev/fun/mandlebrot .
+: 1594137448:0;mv mandlebrot physix
+: 1594137453:0;cd physix
+: 1594137456:0;v
+: 1594137472:0;rm -rf screenshots .git complex.*
+: 1594137480:0;rm mandel
+: 1594137484:0;rm mandel.o
+: 1594137488:0;rm tags
+: 1594137497:0;git init
+: 1594137499:0;v
+: 1594137522:0;mv mandel.c physix.c
+: 1594137536:0;rm README.md
+: 1594137568:0;v
+: 1594137915:0;make
+: 1594137928:0;gaa
+: 1594137930:0;make
+: 1594137942:0;gcm "Boilerplate"
+: 1594137954:0;ls *.c
+: 1594137971:0;ls *.c | entr sh -c 'make && ./physix'
+: 1594138043:0;evim
+: 1594138195:0;make
+: 1594139711:0;ls *.c | entr sh -c 'make'
+: 1594139877:0;ls *.c *.h | entr sh -c 'make'
+: 1594140070:0;make
+: 1594140854:0;which cc
+: 1594140856:0;man cc
+: 1594140859:0;cc -h
+: 1594140861:0;cc --help
+: 1594140870:0;ls *.c *.h | entr sh -c 'make'
+: 1594140884:0;rm *.o
+: 1594140886:0;ls *.c *.h | entr sh -c 'make'
+: 1594141047:0;~/dev/fun/mandlebrot/mandel
+: 1594141328:0;swallow ~/dev/fun/mandlebrot/mandel
+: 1594149319:0;ls *.c *.h | entr sh -c 'make'
+: 1594149599:0;rm *.o
+: 1594149605:0;make
+: 1594149608:0;ls *.c *.h | entr sh -c 'make'
+: 1594188796:0;cd ~/dev
+: 1594188814:0;cd ~/dump
+: 1594188834:0;git clone https://github.com/Sweets/tiramisu.git
+: 1594188841:0;cd tiramisu
+: 1594188843:0;v
+: 1594188847:0;git pull
+: 1594188851:0;make
+: 1594188860:0;./make tiramisu
+: 1594188863:0;make tiramisu
+: 1594188870:0;./tiramisu
+: 1594188876:0;killall dunst
+: 1594188879:0;notify-send -a "Pinentry" "xxxSS$description.";
+: 1594188906:0;./tiramisu
+: 1594188909:0;notify-send -a "Pinentry" "xxxSS$description.";
+: 1594188936:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["111", "222"]' '["kk:int32:21"]' "int32 -1"
+: 1594188946:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["111", "222"]' '{}' "int32 -1"
+: 1594188971:0;make tiramisu
+: 1594188975:0;rm tiramisu
+: 1594188976:0;make tiramisu
+: 1594188981:0;./tiramisu
+: 1594188985:0;notify-send -a "Pinentry" "xxxSS$description.";
+: 1594189123:0;rm tiramisu
+: 1594190064:0;make
+: 1594195620:0;gaa
+: 1594195632:0;gcm "Refactors to multiple files"
+: 1594195682:0;make && ./physix
+: 1594199788:0;make
+: 1594199801:0;make && ./physix
+: 1594203559:0;make
+: 1594203581:0;make && ./physix
+: 1594203760:0;gaa
+: 1594203815:0;gcm "Implements gravity between objects"
+: 1594203849:0;make && ./physix
+: 1594214591:0;rm physix
+: 1594214593:0;make && ./physix
+: 1594217096:0;make
+: 1594217235:0;make && ./physix
+: 1594219663:0;gaa
+: 1594219676:0;gcm "Adds graph for debugging + Fixes gravity"
+: 1594219694:0;make && ./physix
+: 1594219771:0;gaa
+: 1594219780:0;gcm "minor changes before I go to poop"
+: 1594219900:0;make && ./physix
+: 1594220038:0;gaa
+: 1594220043:0;gcm "adds fps variable"
+: 1594222132:0;make && ./physix
+: 1594222625:0;gaa
+: 1594222630:0;gcm "Adds fixed point"
+: 1594223637:0;equte
+: 1594228137:0;make
+: 1594228142:0;make && ./physix
+: 1594229462:0;nmtui-connect
+: 1594229493:0;ytop
+: 1594229495:0;bashtop
+: 1594229852:0;cd ~/dev/fun/
+: 1594229855:0;cd mandlebrot/screenshots
+: 1594229857:0;..
+: 1594229860:0;l
+: 1594229866:0;./mandel
+: 1594230027:0;v
+: 1594230170:0;make && ./mandel
+: 1594230514:0;make
+: 1594230535:0;make && ./mandel
+: 1594231263:0;make
+: 1594231316:0;make && ./mandel
+: 1594231789:0;node
+: 1594232021:0;make && ./mandel
+: 1594233796:0;make
+: 1594233800:0;make && ./mandel
+: 1594234313:0;ls | entr sh -c 'make && ./mandel'
+: 1594235022:0;make && ./mandel
+: 1594235039:0;gaa
+: 1594235055:0;gcm "Adds complex number power calculation generic"
+: 1594235187:0;lf /usr/include/X11/
+: 1594235317:0;make && ./mandel
+: 1594235461:0;gaa
+: 1594235478:0;gcm "generalizes degree of fractal and adds key bindings"
+: 1594235574:0;make && ./mandel
+: 1594238472:0;gaa
+: 1594238559:0;gcm "Optimizes n-degree pow calculations by removing factorial"
+: 1594238567:0;./mandel
+: 1594238670:0;setsid -f ./mandel
+: 1594238815:0;lf ~/Pictures/screenshots
+: 1594229598:0;zzz
+: 1594238958:0;mv ~/Pictures/screenshots/part-2020_07_09_01_38_05.jpg ./screenshots/n-deg.jpg
+: 1594238977:0;gaa
+: 1594238986:0;gcm "Adds n-degree screenshot"
+: 1594238987:0;gp
+: 1594239032:0;gaa
+: 1594239039:0;gcm "Adds new keybindings in readme"
+: 1594239069:0;make && ./mandel
+: 1594239163:0;gaa
+: 1594239172:0;gcm "adds lower bound of 2 for degree"
+: 1594239173:0;gp
