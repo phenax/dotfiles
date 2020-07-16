@@ -2812,9 +2812,6 @@ setopt CORRECT_ALL
 : 1593434018:0;pass show Aur/phenax --help
 : 1593434097:0;man pass
 : 1593434363:0;man gpg
-: 1593434492:0;PASSWORD_STORE_GPG_OPTS='--passphrase "password3"' pass show Aur/phenax
-: 1593434520:0;PASSWORD_STORE_GPG_OPTS='--passphrase "password3" --pinentry-mode loopback' pass show Aur/phenax
-: 1593434528:0;PASSWORD_STORE_GPG_OPTS='--passphrase "password3"' pass show Aur/phenax
 : 1593434758:0;gpg-agent --help
 : 1593434766:0;gpg-agent
 : 1593434842:0;which pinentry
@@ -6896,3 +6893,58 @@ END\
 : 1594878294:0;v setup.sh
 : 1594878515:0;sudo nvim /etc/issue
 : 1594884219:0;update-dotfiles
+: 1594884321:0;yay -S mingetty
+: 1594884351:0;yay -S agetty
+: 1594884359:0;yay -Q | grep agetty
+: 1594884361:0;yay -Q | grep getty
+: 1594884365:0;yay -Q | grep tty
+: 1594884370:0;mingetty
+: 1594884491:0;mingetty tty2
+: 1594884509:0;v /etc/runit/sv/agetty-tty2
+: 1594884514:0;v /etc/runit/sv/agetty-tty2/run
+: 1594884528:0;agetty $TTY
+: 1594884535:0;mingetty $TTY
+: 1594884538:0;echo $TTY
+: 1594884566:0;cd /etc/runit/sv/agetty-tty2
+: 1594884567:0;v
+: 1594884581:0;utmpset --help
+: 1594884585:0;man utmpset
+: 1594884604:0;man mingetty
+: 1594884755:0;login
+: 1594884758:0;pas
+: 1594884758:0;pasas
+: 1594884764:0;login
+: 1594884767:0;pas
+: 1594885040:0;v /etc/nologin
+: 1594885075:0;yay -R mingetty
+: 1594885143:0;dvtm
+: 1594885160:0;lf
+: 1594885162:0;ytop
+: 1594885232:0;echo $PW
+: 1594885233:0;echo $PWD
+: 1594885462:0;sudo nvim /etc/issue
+: 1594885618:0;neofetch
+: 1594886146:0;man getty
+: 1594886148:0;man agetty
+: 1594886689:0;v /usr/lib/os-release
+: 1594886749:0;uname -r
+: 1594887017:0;login
+: 1594887025:0;login
+: 1594887036:0;echo "password" | login
+: 1594887051:0;echo "an" | login
+: 1594887129:0;man login
+: 1594887269:0;cd /etc/runit/sv/agetty-tty1
+: 1594887270:0;v
+: 1594887382:0;login an
+: 1594887459:0;login -- an
+: 1594887478:0;echo "ppp" | login -- an
+: 1594887495:0;clear
+: 1594887520:0;login -f an
+: 1594887657:0;login -h dickhead -f an
+: 1594887661:0;login -H dickhead -f an
+: 1594887890:0;login -f an
+: 1594887982:0;login -f an -p
+: 1594887995:0;login -f an -p pa
+: 1594888008:0;v ~/.config/zsh_history
+: 1594888056:0;edot
+: 1594888103:0;yadm add ~/.config/zsh_history
