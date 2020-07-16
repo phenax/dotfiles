@@ -3,7 +3,7 @@
 volume_component() { amixer get Master | awk -F'[][]' '/dB/ {print $C}' C="$1"; }
 
 playerctl_icon() {
-  local playstate="$(playerctl metadata --format '{{status}}' || echo "Stopped")";
+  local playstate="$(~/scripts/music/player.sh get_play_state)";
   case "$playstate" in
     Paused) echo "" ;;
     Playing) echo "" ;;
@@ -43,7 +43,7 @@ battery_module() {
 }
 
 music_module() {
-  local label=$(playerctl metadata --format '{{title}} - {{artist}}' || echo '...');
+  local label=$(~/scripts/music/player.sh get_label);
   echo "$(icon music)  $label";
 }
 

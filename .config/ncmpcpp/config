@@ -194,8 +194,8 @@ mouse_support = yes
 #song_columns_list_format = (20)[]{a} (6f)[green]{NE} (50)[white]{t|f:Title} (20)[cyan]{b} (7f)[magenta]{l}
 #
 ##### various settings #####
-execute_on_song_change = "~/scripts/spotify.sh notify"
-execute_on_player_state_change = "~/scripts/spotify.sh notify"
+execute_on_song_change = "~/scripts/music/player.sh notify"
+execute_on_player_state_change = "~/scripts/music/player.sh notify"
 #
 #playlist_show_mpd_host = no
 #

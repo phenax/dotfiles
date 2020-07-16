@@ -13,5 +13,5 @@ song=$(ls_songs | sort | dmenu -p "Song :: ");
 
 mpc insert "file://$musicdir/$song";
 
-[[ "$(~/scripts/spotify.sh get_play_state)" == "Stopped" ]] && mpc play;
+[[ "$(~/scripts/music/player.sh get_play_state)" == "Stopped" ]] && mpc play;
 update-dwmblock music;

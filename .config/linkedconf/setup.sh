@@ -13,4 +13,5 @@ CONF="$HOME/.config/linkedconf";
 
 # linkf 'logind.conf' '/etc/systemd/logind.conf';
 linkf 'elogind.conf' '/etc/elogind/logind.conf';
+linkf 'issue' '/etc/issue';
 

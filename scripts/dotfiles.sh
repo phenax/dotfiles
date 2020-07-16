@@ -10,6 +10,7 @@ add-public-config() {
   add ~/.config/vimwiki;
   add ~/.config/password-store;
   add ~/.config/sitesettings;
+  add ~/.config/crontab;
 
   # X and DM
   add ~/.config/{bspwm,sxhkd,polybar}

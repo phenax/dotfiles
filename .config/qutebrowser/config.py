@@ -271,6 +271,7 @@ c.downloads.location.prompt = False
 c.downloads.open_dispatcher = 'dl_move {}'
 c.downloads.position = 'bottom'
 c.downloads.remove_finished = 1000
+c.downloads.open_dispatcher = '~/.bin/open'
 
 # c.qt.force_platformtheme='gtk3'
 
