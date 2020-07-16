@@ -30,11 +30,7 @@ export PATH;
 export rofi_LIBS=/usr;
 export GNUPGHOME=$XDG_CONFIG_HOME/gnupg;
 export PASSWORD_STORE_DIR=$XDG_CONFIG_HOME/password-store;
-
-# Xmonad directory
-export XMONAD_CONFIG_DIR=$XDG_CONFIG_HOME/xmonad;
-export XMONAD_DATA_DIR=$XDG_DATA_HOME/xmonad;
-export XMONAD_CACHE_DIR=$HOME/.cache/xmonad;
+export BTPD_HOME=$XDG_CONFIG_HOME/btpd;
 
 # Development dir variables
 export DEV_DIR="$HOME/dev";

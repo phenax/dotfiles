@@ -4,6 +4,7 @@ for f in $ZSH_CUSTOM_CONF_FILES/aliases/*.zsh; do source $f; done;
 # Application shortcuts
 alias e="sensible-editor";
 alias v="nvim";
+alias o='open $(fzf)';
 
 # Load work aliases
 source "$HOME/.work-config/zshconf/aliases.zsh";

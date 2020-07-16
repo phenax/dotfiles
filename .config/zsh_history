@@ -5744,3 +5744,1155 @@ END\
 : 1594239163:0;gaa
 : 1594239172:0;gcm "adds lower bound of 2 for degree"
 : 1594239173:0;gp
+: 1594239660:0;make && ./physix
+: 1594241840:0;gaa
+: 1594241858:0;gcm "Adds simple collisions"
+: 1594241861:0;gc!
+: 1594282620:0;make && ./physix
+: 1594282641:0;ls | entr sh -c 'make && ./physix'
+: 1594282666:0;make && ./physix
+: 1594283362:0;gaa
+: 1594283368:0;gcm "Orbital motion 60fps"
+: 1594283378:0;cd ~/dev/fun/mandlebrot
+: 1594283380:0;./mandel
+: 1594287812:0;gcm "Orbital motion 60fps"
+: 1594287815:0;gd
+: 1594287820:0;make && ./physix
+: 1594288636:0;gaa
+: 1594288657:0;gcm "Moves different universes into single file"
+: 1594288682:0;gd
+: 1594290026:0;make && ./physix
+: 1594290061:0;make
+: 1594290158:0;make && ./physix
+: 1594311585:0;make
+: 1594311744:0;make && ./physix
+: 1594320332:0;cd ~/dump/tiramisu
+: 1594320339:0;make tiramisu
+: 1594320344:0;./tiramisu
+: 1594320348:0;killall dunst
+: 1594320350:0;notify-send -a "Pinentry" "xxxSS$description.";
+: 1594320360:0;git pull
+: 1594320368:0;make tiramisu && ./tiramisu
+: 1594320373:0;rm tiramisu
+: 1594320374:0;make tiramisu && ./tiramisu
+: 1594320377:0;notify-send -a "Pinentry" "xxxSS$description.";
+: 1594320387:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["111", "222"]' '{}' "int32 -1"
+: 1594320405:0;gd
+: 1594320408:0;rm tiramisu
+: 1594320559:0;sudo make install
+: 1594320607:0;escript notificationd
+: 1594320663:0;tiramisu
+: 1594320665:0;notify-send -a "Pinentry" "xxxSS$description.";
+: 1594320696:0;man jq
+: 1594320760:0;notify-send -a "Pinentry" "xxxSS$description." "ww"
+: 1594320775:0;notify-send "xxx" "yyy"
+: 1594320788:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["111", "222"]' '{}' "int32 -1"
+: 1594321003:0;./notificationd
+: 1594321005:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["111", "222"]' '{}' "int32 -1"
+: 1594321014:0;./notificationd
+: 1594321016:0;gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --method org.freedesktop.Notifications.Notify \\
+  "Hello" "0" "~/some" "Nice tits bro" "Whoa foobaaaaar" \\
+  '["111", "222"]' '{}' "int32 -1"
+: 1594321023:0;notify-send "xxx" "yyy"
+: 1594321027:0;notify-send -a "Pinentry" "xxxSS$description."
+: 1594321034:0;notify-send -a "Pinentry" "Some description"
+: 1594321045:0;./notificationd
+: 1594321047:0;notify-send -a "Pinentry" "Some description"
+: 1594321051:0;popcorn
+: 1594321110:0;./notificationd
+: 1594321111:0;notify-send -a "Pinentry" "Some description"
+: 1594321128:0;notify-send -a "Pinentry" "Some description one"
+: 1594321129:0;notify-send -a "Pinentry" "Some description"
+: 1594321777:0;./notificationd
+: 1594321779:0;notify-send -a "Pinentry" "Some description"
+: 1594321794:0;./notificationd
+: 1594321795:0;notify-send -a "Pinentry" "Some description"
+: 1594321888:0;popcorn -h
+: 1594321891:0;popcorn --help
+: 1594321898:0;popcorn -asd
+: 1594321904:0;man popcorn
+: 1594321911:0;sudo make install
+: 1594321917:0;popcorn -asd
+: 1594322034:0;./notificationd
+: 1594322056:0;notify-send -a "Pinentry" "Some description"
+: 1594322070:0;./notificationd
+: 1594322071:0;notify-send -a "Pinentry" "Some description"
+: 1594322090:0;./notificationd
+: 1594322092:0;notify-send -a "Pinentry" "Some description"
+: 1594322238:0;(echo "foobar"; sleep 1) | popcorn -y -20
+: 1594322242:0;(echo "foobar"; sleep 1) | popcorn -y -0
+: 1594322244:0;(echo "foobar"; sleep 1) | popcorn -y -1
+: 1594322247:0;(echo "foobar"; sleep 1) | popcorn -y -100
+: 1594322251:0;(echo "foobar"; sleep 1) | popcorn -y 100
+: 1594322270:0;./notificationd
+: 1594322271:0;notify-send -a "Pinentry" "Some description"
+: 1594322323:0;./notificationd
+: 1594322324:0;notify-send -a "Pinentry" "Some description"
+: 1594322337:0;./notificationd
+: 1594322337:0;notify-send -a "Pinentry" "Some description"
+: 1594322348:0;./notificationd
+: 1594322348:0;notify-send -a "Pinentry" "Some description"
+: 1594322364:0;./notificationd
+: 1594322365:0;notify-send -a "Pinentry" "Some description"
+: 1594322379:0;./notificationd
+: 1594322381:0;notify-send -a "Pinentry" "Some description"
+: 1594322392:0;./notificationd
+: 1594322393:0;notify-send -a "Pinentry" "Some description"
+: 1594322567:0;./notificationd
+: 1594322569:0;notify-send -a "Pinentry" "Some description"
+: 1594322578:0;./notificationd
+: 1594322579:0;notify-send -a "Pinentry" "Some description"
+: 1594322593:0;./notificationd
+: 1594322596:0;notify-send -a "Pinentry" "Some description"
+: 1594322834:2;sudo make install
+: 1594322860:0;./notificationd
+: 1594323029:0;notify-send -a "Pinentry" "Some description"
+: 1594323145:0;./notificationd
+: 1594323146:0;notify-send -a "Pinentry" "Some description"
+: 1594323164:0;./notificationd
+: 1594323165:0;notify-send -a "Pinentry" "Some description"
+: 1594323172:0;./notificationd
+: 1594323173:0;notify-send -a "Pinentry" "Some description"
+: 1594323177:0;./notificationd
+: 1594323178:0;notify-send -a "Pinentry" "Some description"
+: 1594323428:0;./notificationd
+: 1594323430:0;notify-send -a "Pinentry" "Some description"
+: 1594370818:0;./notificationd
+: 1594370820:0;killall dunst
+: 1594370822:0;notify-send -a "Pinentry" "Some description"
+: 1594370832:0;./notificationd
+: 1594370833:0;notify-send -a "Pinentry" "Some description"
+: 1594375864:0;./notificationd
+: 1594375893:0;notify-send -a "Pinentry" "Some description"
+: 1594375899:0;killall dunst
+: 1594375900:0;notify-send -a "Pinentry" "Some description"
+: 1594375917:0;man mkfifo
+: 1594375937:0;man rm
+: 1594388713:0;v ~/scripts/menuitems.sh
+: 1594388772:0;./notificationd
+: 1594388994:0;cal
+: 1594389010:0;./notificationd
+: 1594389222:0;man cal
+: 1594389322:0;cal tomorrow
+: 1594389325:0;cal
+: 1594389329:0;./notificationd
+: 1594403220:0;mkdir scripts
+: 1594403225:0;mv notificationd
+: 1594403231:0;mv notificationd scripts
+: 1594403252:0;cp scripts/notificationd scripts/calendar
+: 1594403273:0;chmod u+x scripts/*
+: 1594403319:0;./scripts/calendar
+: 1594403341:0;date +"%a"
+: 1594403354:0;./scripts/calendar
+: 1594403413:0;./scripts/notificationd
+: 1594403417:0;killall dunst
+: 1594403418:0;notify-send -a "Pinentry" "Some description"
+: 1594403508:0;./scripts/notificationd
+: 1594403509:0;notify-send -a "Pinentry" "Some description"
+: 1594403520:0;./scripts/notificationd
+: 1594403522:0;notify-send -a "Pinentry" "Some description"
+: 1594403664:0;./scripts/notificationd
+: 1594403665:0;notify-send -a "Pinentry" "Some description"
+: 1594403676:0;./scripts/notificationd
+: 1594403677:0;notify-send -a "Pinentry" "Some description"
+: 1594403764:0;./scripts/notificationd
+: 1594403766:0;notify-send -a "Pinentry" "Some description"
+: 1594403910:0;./scripts/notificationd
+: 1594403912:0;ls | entr sh -c 'make && ./physix'
+: 1594403915:0;./scripts/notificationd
+: 1594403919:0;notify-send -a "Pinentry" "Some description"
+: 1594404175:0;./scripts/notificationd
+: 1594404177:0;notify-send -a "Pinentry" "Some description"
+: 1594404190:0;./scripts/notificationd
+: 1594404192:0;notify-send -a "Pinentry" "Some description"
+: 1594404195:0;./scripts/notificationd
+: 1594404196:0;notify-send -a "Pinentry" "Some description"
+: 1594404225:0;./scripts/notificationd
+: 1594404227:0;notify-send -a "Pinentry" "Some description"
+: 1594404396:0;./scripts/notificationd
+: 1594404397:0;notify-send -a "Pinentry" "Some description"
+: 1594404403:0;./scripts/notificationd
+: 1594404404:0;notify-send -a "Pinentry" "Some description"
+: 1594404415:0;./scripts/notificationd
+: 1594404416:0;notify-send -a "Pinentry" "Some description"
+: 1594404437:0;./scripts/notificationd
+: 1594404439:0;notify-send -a "Pinentry" "Some description"
+: 1594404452:0;./scripts/notificationd
+: 1594404453:0;notify-send -a "Pinentry" "Some description"
+: 1594404473:0;./scripts/notificationd
+: 1594404474:0;notify-send -a "Pinentry" "Some description"
+: 1594404501:0;./scripts/notificationd
+: 1594404503:0;notify-send -a "Pinentry" "Some description"
+: 1594404536:0;lf /tmp/popcorn-notificd.6KkmZ
+: 1594404562:0;./scripts/notificationd
+: 1594404564:0;lf /tmp/popcorn-notificd.6KkmZ
+: 1594404569:0;lf /tmp/popcorn-notificd.UXZ0G
+: 1594404571:0;notify-send -a "Pinentry" "Some description"
+: 1594404572:0;lf /tmp/popcorn-notificd.UXZ0G
+: 1594404578:0;notify-send -a "Pinentry" "Some description"
+: 1594404613:0;lf /tmp/popcorn-notificd.UXZ0G
+: 1594404674:0;notify-send -a "Pinentry" "Some description"
+: 1594404695:0;./scripts/notificationd
+: 1594404697:0;notify-send -a "Pinentry" "Some description"
+: 1594404785:0;./scripts/notificationd
+: 1594404787:0;notify-send -a "Pinentry" "Some description"
+: 1594404824:0;./scripts/notificationd
+: 1594404827:0;notify-send -a "Pinentry" "Some description"
+: 1594404859:0;./scripts/notificationd
+: 1594404996:0;notify-send -a "Pinentry" "Some description"
+: 1594405055:0;./scripts/notificationd
+: 1594405060:0;lf /tmp/popcorn-notificd.uyWx0
+: 1594405076:0;./scripts/notificationd
+: 1594405180:0;lf /tmp/popcorn-notificd.uyWx0
+: 1594405182:0;notify-send -a "Pinentry" "Some description"
+: 1594405201:0;./scripts/notificationd
+: 1594405202:0;notify-send -a "Pinentry" "Some description"
+: 1594405209:0;lf /tmp/popcorn-notificd.qHDgl
+: 1594405223:0;./scripts/notificationd
+: 1594405224:0;lf /tmp/popcorn-notificd.qHDgl
+: 1594405228:0;notify-send -a "Pinentry" "Some description"
+: 1594405477:0;killall dunst
+: 1594405480:0;./scripts/notificationd
+: 1594405481:0;notify-send -a "Pinentry" "Some description"
+: 1594479965:0;stig
+: 1594479972:0;yay -R stig
+: 1594479983:0;yay -R transmission-*
+: 1594479986:0;yay -R transmission-cli
+: 1594479988:0;yay -R transmission-remote-cli-git
+: 1594479993:0;killall transmission
+: 1594479999:0;ps aux | grep trans
+: 1594480003:0;kill 1362
+: 1594480005:0;ps aux | grep trans
+: 1594480013:0;yay -S btpd
+: 1594480032:0;yay btpd
+: 1594480061:0;eas
+: 1594480069:0;btpd
+: 1594480076:0;ps aux | grep btpd
+: 1594480086:0;pgrep btpd
+: 1594480089:0;killall btpd
+: 1594480090:0;ps aux | grep btpd
+: 1594480109:0;man btpd
+: 1594480371:0;btcli list
+: 1594480383:0;ls ~/.btpd
+: 1594480391:0;ps aux | grep btpd
+: 1594480394:0;killall btpd
+: 1594480404:0;rm -rf ~/.btpd
+: 1594480406:0;ps aux | grep btpd
+: 1594480416:0;ls ~/.btpd
+: 1594480475:0;ls ~/Downloads/dl/torrents
+: 1594480526:0;v ~/scripts/torrent.sh
+: 1594480779:0;ezsh
+: 1594480837:0;btcli list
+: 1594480841:0;btcli list -a
+: 1594480842:0;btcli list
+: 1594480847:0;btcli --help
+: 1594480865:0;btcli add--help
+: 1594480867:0;btcli add --help
+: 1594480900:0;cd dump
+: 1594480948:0;btcli add "magnet:?xt=urn:btih:A82A32D0A1206A4613752E3ADA9A1F498319B071&dn=Scoob%21+%282020%29+%5B1080p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"
+: 1594480974:0;btinfo --help
+: 1594480977:0;btinfo "magnet:?xt=urn:btih:A82A32D0A1206A4613752E3ADA9A1F498319B071&dn=Scoob%21+%282020%29+%5B1080p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"
+: 1594480986:0;curl magnet:?xt=urn:btih:A82A32D0A1206A4613752E3ADA9A1F498319B071&dn=Scoob%21+%282020%29+%5B1080p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+: 1594480993:0;cd test
+: 1594481000:0;../
+: 1594481002:0;cd transmission
+: 1594481010:0;rm -rf transmission.tar.xz
+: 1594481016:0;curl "magnet:?xt=urn:btih:A82A32D0A1206A4613752E3ADA9A1F498319B071&dn=Scoob%21+%282020%29+%5B1080p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"
+: 1594481596:0;cd ~/dev/projects
+: 1594481701:0;cd ~/temp
+: 1594481704:0;cd ~/dump
+: 1594481708:0;git clone https://github.com/xrgtn/mag2tor.git
+: 1594481713:0;cd mag2tor
+: 1594481720:0;v
+: 1594481739:0;make mag2tor
+: 1594481757:0;yay libtorrent
+: 1594481779:0;yay -Syy
+: 1594481794:0;yay -Qdt
+: 1594481796:0;yay libtorrent
+: 1594481805:0;make mag2tor
+: 1594481812:0;..
+: 1594481816:0;rm -rf mag2tor
+: 1594481844:0;cd ~/dev/projects
+: 1594539807:0;yay -S libtorrent
+: 1594539911:0;cd ~/dev/projects
+: 1594539921:0;cd ~/.config/suckless
+: 1594539939:0;git clone https://github.com/btpd/btpd.git
+: 1594539949:0;cd btpd
+: 1594539964:0;v
+: 1594539969:0;yay -R btpd
+: 1594539973:0;yay -R btpd-git
+: 1594539978:0;ls
+: 1594539983:0;./configure
+: 1594539985:0;ls
+: 1594539987:0;make
+: 1594540001:0;ls
+: 1594540017:0;./cli/btcli --help
+: 1594540021:0;./cli/btcli add --help
+: 1594540163:0;magnet:?xt=urn:btih:A82A32D0A1206A4613752E3ADA9A1F498319B071&dn=Scoob%21+%282020%29+%5B1080p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+: 1594540167:0;"magnet:?xt=urn:btih:A82A32D0A1206A4613752E3ADA9A1F498319B071&dn=Scoob%21+%282020%29+%5B1080p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"
+: 1594540821:0;MAGNET_URI="magnet:?xt=urn:btih:A82A32D0A1206A4613752E3ADA9A1F498319B071&dn=Scoob%21+%282020%29+%5B1080p%5D+%5BYTS.MX%5D&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337"
+: 1594540829:0;./cli/btcli add -m "$MAGNET_URI"
+: 1594540878:0;make cli/btcli && ./cli/btcli add -m "$MAGNET_URI"
+: 1594540897:0;make cli && ./cli/btcli add -m "$MAGNET_URI"
+: 1594540899:0;make cli/btcli && ./cli/btcli add -m "$MAGNET_URI"
+: 1594540907:0;make clean cli/btcli && ./cli/btcli add -m "$MAGNET_URI"
+: 1594540915:0;make && ./cli/btcli add -m "$MAGNET_URI"
+: 1594540944:0;make clean && make cli/btcli && ./cli/btcli add -m "$MAGNET_URI"
+: 1594541043:0;./cli/btcli add ~/Downloads/qute/Scoob\!\ \(2020\)\ \[1080p\]\ \[BluRay\]\ \[5.1\]\ \[YTS.MX\].torrent
+: 1594541069:0;take ~/dump/downloads
+: 1594541071:0;make clean && make cli/btcli && ./cli/btcli add -m "$MAGNET_URI" -d ~/dump/downloads
+: 1594541077:0;make clean make cli/btcli && ./cli/btcli add -m "$MAGNET_URI" -d ~/dump/downloads
+: 1594541081:0;make clean cli/btcli && ./cli/btcli add -m "$MAGNET_URI" -d ~/dump/downloads
+: 1594541095:0;make cli/btcli && ./cli/btcli add -m "$MAGNET_URI" -d ~/dump/downloads
+: 1594541098:0;make clean cli/btcli && ./cli/btcli add -m "$MAGNET_URI" -d ~/dump/downloads
+: 1594541109:0;make clean cli/btcli && ./cli/btcli add -m "$MAGNET_URI" -d "$HOME/dump/downloads"
+: 1594541511:0;killall btpd
+: 1594541546:0;make
+: 1594541565:0;./btpd/btpd
+: 1594541569:0;make clean cli/btcli && ./cli/btcli add -m "$MAGNET_URI" -d "$HOME/dump/downloads"
+: 1594541586:0;lf ~/dump/downloads
+: 1594541820:0;cat ~/Downloads/qute/Scoob\!\ \(2020\)\ \[1080p\]\ \[BluRay\]\ \[5.1\]\ \[YTS.MX\].torrent
+: 1594542706:1;lf ~/dump/downloads
+: 1594542710:0;cat ~/Downloads/qute/Scoob\!\ \(2020\)\ \[1080p\]\ \[BluRay\]\ \[5.1\]\ \[YTS.MX\].torrent
+: 1594543871:1;cat 2
+: 1594543878:0;cat "~/dump/2"
+: 1594543880:0;cat ~/dump/2
+: 1594543888:0;cat ~/2
+: 1594543890:0;rm 2
+: 1594543895:0;la
+: 1594543897:0;la | wc -l
+: 1594543915:0;cd dump
+: 1594543921:0;cat stream.sh
+: 1594543931:0;l
+: 1594543942:0;rm downloads
+: 1594543945:0;rm -rf downloads
+: 1594543948:0;rm profilelogss
+: 1594543952:0;cat pr
+: 1594543961:0;rm bootstrap.sh
+: 1594543988:0;cd yay
+: 1594543990:0;l
+: 1594543992:0;..
+: 1594543995:0;rm -rf yay
+: 1594544000:0;lf test
+: 1594544032:0;..
+: 1594544043:0;rm -rf btpd
+: 1594544514:1;sh
+: 1594544522:0;which sh
+: 1594544527:0;readlink $(which sh)
+: 1594544762:0;yay -S grabc
+: 1594544775:0;grabc
+: 1594544788:0;colorpicker --help
+: 1594544792:0;grabc --help
+: 1594544803:0;colorpicker --preview
+: 1594544841:0;yay -S colorpicker
+: 1594544853:0;yay -R grabc
+: 1594544875:0;ecmd
+: 1594544884:0;v ~/.bin/color-pick
+: 1594544897:0;colorpicker --help
+: 1594545001:0;v ~/.bin/color-pick
+: 1594545016:0;man xclip
+: 1594545174:0;color-pick
+: 1594545188:0;man xclip
+: 1594545194:0;color-pick
+: 1594545250:0;man xclip
+: 1594545269:0;color-pick
+: 1594545309:0;man xclip
+: 1594545311:0;color-pick
+: 1594545543:0;yay -R unclutter
+: 1594545551:0;yay -S xbanish
+: 1594545779:0;v ~/scripts/mouse.sh
+: 1594545882:0;ps aux | grep mopidy
+: 1594547791:0;cd ~/.config/suckless
+: 1594547802:0;ls
+: 1594547810:0;yadm status
+: 1594547839:0;apropos
+: 1594547841:0;apropos --help
+: 1594547849:0;apropos -s
+: 1594547853:0;apropos .
+: 1594547860:0;apropos zzz
+: 1594547861:0;apropos wow
+: 1594547864:0;apropos n
+: 1594547866:0;apropos fzf
+: 1594547871:0;apropos .
+: 1594547874:0;apropos --help
+: 1594547894:0;apropos -s=0
+: 1594547895:0;apropos -s=1
+: 1594547897:0;apropos . -s=1
+: 1594547900:0;apropos -s=1 .
+: 1594547904:0;apropos
+: 1594547933:0;echo "$OPENER
+: 1594547935:0;echo "$OPENER"
+: 1594547948:0;$options
+: 1594547950:0;echo $options
+: 1594548076:0;cd ~/.config/suckless/st
+: 1594548077:0;v
+: 1594548230:0;make
+: 1594548246:0;sudo make install
+: 1594548257:0;rm config.h
+: 1594548258:0;sudo make install
+: 1594548300:0;rm config.h && make
+: 1594548306:0;rm -f config.h && make
+: 1594548315:0;\
+
+: 1594548329:0;./st
+: 1594548424:0;rm config.h && make && ./st
+: 1594548486:0;rm config.h -f && make && ./st
+: 1594548513:0;rm config.h -f && make clean all && ./st
+: 1594561411:0;l
+: 1594561464:0;gd
+: 1594561470:0;git reset --hard
+: 1594561597:0;sudo make install
+: 1594561601:0;rm config.h -f && make clean all && ./st
+: 1594561624:2;rm $(which st)
+: 1594561629:0;sudo rm $(which st)
+: 1594561634:0;sudo make install
+: 1594561693:0;sudo rm $(which st)
+: 1594561695:0;sudo make install
+: 1594561725:0;gd
+: 1594561728:0;gaa
+: 1594561783:0;fzf
+: 1594561797:0;cd ~/dump/
+: 1594561798:0;fzf
+: 1594561810:0;vim $(fzf)
+: 1594561814:0;nvim $(fzf)
+: 1594561825:0;open $(fzf)
+: 1594561831:0;cd ~/wall
+: 1594561834:0;cd ~/Pictures
+: 1594561835:0;open $(fzf)
+: 1594561904:0;o
+: 1594561909:0;ezsh
+: 1594561946:0;o
+: 1594561954:0;cd ~/Pictures
+: 1594561955:0;o
+: 1594561967:0;cd ~/Downloads
+: 1594561968:0;o
+: 1594562014:0;ag "sda"
+: 1594562020:0;cd ~/dev
+: 1594562026:0;ag "function"
+: 1594562042:0;man ag
+: 1594562129:0;ag "function"
+: 1594562182:0;ag "function" -H
+: 1594562189:0;ag "function" --noheading
+: 1594562215:0;ag "function" --noheading -o
+: 1594562217:0;ag "function" --noheading
+: 1594562250:0;escript ~/.bin/search
+: 1594562258:0;ag "function" --noheading
+: 1594562340:0;search
+: 1594562351:0;cd projects
+: 1594562353:0;search
+: 1594562410:0;cd ~/dump
+: 1594562574:0;cd ~/.config/nvim
+: 1594562578:0;cd plug
+: 1594562580:0;ls
+: 1594562583:0;cd plugged
+: 1594562593:0;cd fzf.vim
+: 1594562595:0;ls
+: 1594562598:0;v
+: 1594562710:0;ag --nogroup --column --color
+: 1594562715:0;cd ~/dev/projects
+: 1594562719:0;ag --nogroup --column --color "wow"
+: 1594562721:0;ag --nogroup --column --color "w"
+: 1594562723:0;ag --nogroup --column --color "f"
+: 1594562724:0;ag --nogroup --column --color "int"
+: 1594562818:0;fzf --help
+: 1594562913:0;fzf --help | grep sink
+: 1594562916:0;man fzf
+: 1594563331:2;FZF_DEFAULT_COMMAND="ag --nogroup --column" fzf
+: 1594563339:0;FZF_DEFAULT_COMMAND="ag --nogroup --column int" fzf
+: 1594563374:0;FZF_DEFAULT_COMMAND='ag --nogroup --column ""' fzf
+: 1594563379:0;sudo FZF_DEFAULT_COMMAND='ag --nogroup --column "."' fzfOA
+: 1594563384:0;FZF_DEFAULT_COMMAND='ag --nogroup --column "."' fzf
+: 1594563395:0;sudo FZF_DEFAULT_COMMAND='ag --nogroup --column ".*"' fzfOA
+: 1594563398:0;FZF_DEFAULT_COMMAND='ag --nogroup --column ".*"' fzf
+: 1594563426:0;man ag
+: 1594563452:0;FZF_DEFAULT_COMMAND='ag --nogroup --column "."' fzf
+: 1594563484:0;man fzf
+: 1594563521:0;RG_PREFIX="rg --column --line-number --no-heading --color=always --smart-case "\
+            INITIAL_QUERY="foobar"\
+            FZF_DEFAULT_COMMAND="$RG_PREFIX '$INITIAL_QUERY'" \\
+              fzf --bind "change:reload:$RG_PREFIX {q} || true" \\
+                  --ansi --phony --query "$INITIAL_QUERY"\
+
+: 1594563541:0;escript ~/.bin/search
+: 1594563612:0;search
+: 1594563627:0;escript ~/.bin/search
+: 1594563721:0;search
+: 1594563725:0;sudo searchOA
+: 1594563727:0;search
+: 1594563756:0;man ag
+: 1594563807:0;search
+: 1594563823:0;sudo searchOA
+: 1594563826:0;search
+: 1594563830:0;sudo searchOA
+: 1594563833:0;search
+: 1594563886:0;which open
+: 1594563893:0;search
+: 1594563940:0;yay -Q | grep rg
+: 1594563952:0;yay -Q | grep ripgrep
+: 1594563969:0;search
+: 1594564079:0;update
+: 1594564092:0;ecmd rm
+: 1594564169:0;cd ~/.config/suckless/dmenu
+: 1594564172:0;git pull upstream master
+: 1594564188:0;git remote add upstream git://git.suckless.org/dmenu
+: 1594564190:0;git pull upstream master
+: 1594564209:0;whereis dmenun
+: 1594564210:0;whereis dmenu
+: 1594564219:0;ls | /usr/bin/dmenu
+: 1594564227:0;ls | /usr/local/bin/dmenu
+: 1594564234:0;yay -R dmenu
+: 1594564244:0;man yay
+: 1594564306:0;yay -R --help
+: 1594564452:0;yay -S keynav
+: 1594564460:0;keynav
+: 1594564535:0;keynav "click 1"
+: 1594564538:0;keynav "click 1,env"
+: 1594564541:0;keynav "click 1,end"
+: 1594564548:0;keynav "s click 1,end"
+: 1594564571:0;yay -S keynav
+: 1594564606:0;cd ~/dump
+: 1594564631:0;take ~/.config/keynav
+: 1594564637:0;v keynavrc
+: 1594564643:0;keynav
+: 1594564871:0;v ~/scripts/mouse.sh
+: 1594564940:0;yay -S xbanish
+: 1594564972:0;xbanish
+: 1594564990:0;yay -R unclutter
+: 1594564992:0;eas
+: 1594565050:0;ecmd
+: 1594565058:0;e ~/.bin/color-pick
+: 1594565071:0;yay -S grabc
+: 1594565093:0;yay -R colorpicker
+: 1594593482:0;ps aux | grep xbanish
+: 1594619975:0;pass insert Glot/phenax5
+: 1594623031:0;cd dump
+: 1594623034:0;curl https://github.com/dwyl/english-words/blob/master/words.txt?raw=true
+: 1594623038:0;curl "https://github.com/dwyl/english-words/blob/master/words.txt?raw=true"
+: 1594623121:0;v ~/Downloads/qute
+: 1594623138:0;cd ~/Downloads/qute/usa.zip
+: 1594623142:0;cd ~/Downloads/qute
+: 1594623146:0;rm Scoob\!\ \(2020\)\ \[1080p\]\ \[BluRay\]\ \[5.1\]\ \[YTS.MX\].torrent
+: 1594623152:0;unzip usa
+: 1594623161:0;yay -S unzip
+: 1594623169:0;unzip usa
+: 1594623175:0;v usa.txt
+: 1594623263:0;cd ~/Downloads/qute
+: 1594623265:0;rm usa*
+: 1594625711:0;cd ~/Downloads/qute
+: 1594625721:0;yay mupdf
+: 1594625775:0;cd ~/Downloads/qute
+: 1594625786:0;mupdf tmpygb32_oe_algeff-tr-2016-v2.pdf
+: 1594625819:0;yay -R mupdf
+: 1594625823:0;yay zathura
+: 1594625865:0;yay -Q
+: 1594625867:0;yay -Q | wc -l
+: 1594625870:0;yay -Q
+: 1594625888:0;yay -R xxd-standalone
+: 1594625994:0;yay texinfo
+: 1594626022:0;yay -Qi texinfo
+: 1594626110:0;yay -Qi thin-provisioning-tools
+: 1594626135:0;yay -Qi sound-theme-freedesktop
+: 1594626209:0;yay -R qemu nasm
+: 1594626230:0;man qrencode
+: 1594626320:0;yay -Qi numactl
+: 1594626470:0;yay -R iwd
+: 1594626553:0;yay -Q | tr '\n' ''
+: 1594626558:0;man tr
+: 1594626593:0;yay -Q | tr '\n' ' '
+: 1594626604:0;yay -Q | awk '{print $1}' | tr '\n' ' '
+: 1594626620:0;echo `yay -Q | awk '{print $1}' | tr '\n' ' '`
+: 1594626785:0;yay -R fontpreview-git
+: 1594626837:0;yay -Qi colord
+: 1594626859:0;yay -Qi cdparanoia
+: 1594626917:0;yay -Qi brotli
+: 1594626947:0;yay -R bashtop
+: 1594626954:0;top
+: 1594626986:0;yay -Qi gawk
+: 1594627000:0;yay -S awk
+: 1594627005:0;yay awk
+: 1594627068:0;yay plan9
+: 1594627266:0;yay -Qi dmraid
+: 1594627301:0;yay -Qi coreutils
+: 1594627330:0;yay -Qi binutils
+: 1594627344:0;yay -Qi bluez
+: 1594627397:0;yay -Qi adobe-source-code-pro-fonts
+: 1594627412:0;gsettings help
+: 1594627446:0;yay -Q | wc -l
+: 1594627468:0;yay -S xzoom
+: 1594627515:0;xzoom
+: 1594627567:0;yay -R xzoom
+: 1594627586:0;yay -R keynav
+: 1594627690:0;v ~/scripts/scheduler.sh
+: 1594627704:0;crontab
+: 1594627706:0;_crontab
+: 1594627725:0;yay -S scron
+: 1594627729:0;yay scron
+: 1594627764:0;yay -S scron-git
+: 1594627828:0;cp /etc/runit/sv/NetworkManager /etc/runit/sv/crond/ -r
+: 1594627831:0;sudo cp /etc/runit/sv/NetworkManager /etc/runit/sv/crond/ -r
+: 1594627856:0;sudo rm -rf /etc/runit/sv/crond/NetworkManager
+: 1594627864:0;sudo rm -rf /etc/runit/sv/crond/supervise
+: 1594627881:0;sudo nvim /etc/runit/sv/crond/run
+: 1594627893:0;crond
+: 1594627924:0;man scron
+: 1594627934:0;v /etc/cron.daily
+: 1594627939:0;v /etc/crontab
+: 1594627943:0;cat /etc/crontab
+: 1594627955:0;man scron
+: 1594628038:0;take ~/.config/crontab/
+: 1594628054:0;v crontab
+: 1594628076:0;ls
+: 1594628078:0;touch crontab
+: 1594628115:0;ln -s /etc/runit/sv/crond /run/runit/service
+: 1594628124:0;sudo sv restart crond
+: 1594628138:0;sv status crond
+: 1594628140:0;sudo sv status crond
+: 1594628147:0;v crontab
+: 1594628236:0;sv restart crond
+: 1594628239:0;sudo sv restart crond
+: 1594628248:0;v crontab
+: 1594628321:0;man scron
+: 1594628330:0;cd ~/dump
+: 1594628813:0;l ~/dump
+: 1594628824:0;sudo nvim /etc/profile
+: 1594628840:0;cat ~/dump/profilelogss
+: 1594628848:0;v ~/.profile
+: 1594628878:0;sudo sv stop crond
+: 1594628907:0;cat /etc/runit/sv/crond/run
+: 1594628933:0;ls /etc/runit/sv/NetworkManager/
+: 1594628966:0;crond -n -f /home/an/.config/crontab/crontab
+: 1594628954:10;v ~/.config/crontab/crontab
+: 1594629009:0;cat ~/dump/crontesting
+: 1594629014:0;v ~/.config/crontab/crontab
+: 1594629077:0;crond -n -f /home/an/.config/crontab/crontab
+: 1594629087:0;rm ~/dump/crontesting
+: 1594629090:0;cat ~/dump/crontesting
+: 1594629143:0;crond -n -f /home/an/.config/crontab/crontab
+: 1594629149:0;rm ~/dump/crontesting
+: 1594629287:0;sudo nvim /etc/runit/sv/crond/run
+: 1594629305:0;sudo sv start crond
+: 1594629372:0;v ~/.config/crontab/crontab
+: 1594629376:0;sudo nvim /etc/runit/sv/crond/run
+: 1594629387:0;sudo sv start crond
+: 1594629390:0;sudo sv restart crond
+: 1594629488:0;cat ~/dump/crontesting
+: 1594629553:0;v ~/.config/crontab/crontab
+: 1594629583:0;sudo sv restart crond
+: 1594629589:0;v ~/.config/crontab/crontab
+: 1594629653:0;v ~/scripts/notify.sh
+: 1594629665:0;cat ~/dump/crontesting
+: 1594629694:0;sudo sv restart crond
+: 1594629733:0;cat ~/dump/crontesting
+: 1594629755:0;rm ~/dump/crontesting
+: 1594629760:0;sudo rm ~/dump/crontesting
+: 1594629765:0;sudo sv restart crond
+: 1594629799:0;cat ~/dump/crontesting
+: 1594629835:0;sudo sv restart crond
+: 1594629871:0;cat ~/dump/crontesting
+: 1594629945:0;yay -Q | grep -i cro
+: 1594629951:0;cat ~/dump/crontesting
+: 1594629986:0;sudo sv restart crond
+: 1594629988:0;cat ~/dump/crontesting
+: 1594630111:0;sudo sv restart crond
+: 1594630113:0;cat ~/dump/crontesting
+: 1594630229:0;id -u $USER
+: 1594630235:0;sudo sv restart crond
+: 1594630337:0;su -c ls an
+: 1594630342:0;sudo sv restart crond
+: 1594630396:0;cat ~/dump/crontesting
+: 1594630399:0;rm ~/dump/crontesting
+: 1594630405:0;sudo sv restart crond
+: 1594630408:0;cat ~/dump/crontesting
+: 1594630481:0;sudo sv restart crond
+: 1594630488:0;cat ~/dump/crontesting
+: 1594630736:0;ls /run/user/1000/dbus-1/
+: 1594630741:0;tree /run/user/1000/dbus-1/
+: 1594631006:0;sudo sv restart crond
+: 1594631009:0;cat ~/dump/crontesting
+: 1594631078:0;sudo sv restart crond
+: 1594631080:0;cat ~/dump/crontesting
+: 1594631373:0;edot
+: 1594631460:0;cat ~/crontesting
+: 1594631465:0;rm ~/crontesting
+: 1594631470:0;cat ~/dump/crontesting
+: 1594631474:0;rm ~/dump/crontesting
+: 1594631504:0;sudo -u an
+: 1594631506:0;sudo -u an ls
+: 1594631552:0;cat ~/dump/crontesting
+: 1594631688:0;echo $DBUS_SESSION_BUS_ADDRESS
+: 1594631727:0;sudo sv stop crond
+: 1594631731:0;unlink /run/runit/service/crond
+: 1594631740:0;sudo rm -rf /etc/runit/sv/crond
+: 1594631770:29;eas
+: 1594632056:0;killall crond
+: 1594632255:0;~/scripts/notify.sh -a "Pinentry" "xxxSS$description.";
+: 1594632258:0;~/scripts/notify.sh -a "Pinentry" "xxxSS$description."
+: 1594632298:0;notify-send -a "Pinentry" "Some description"
+: 1594632415:0;killall crond
+: 1594632777:0;pstree
+: 1594632842:0;yay -S 9menu
+: 1594632868:0;ls | 9menu
+: 1594632879:0;cd ~
+: 1594632880:0;ls | 9menu
+: 1594632894:0;9menu
+: 1594632932:0;man 9menu
+: 1594632961:0;9menu -label 'X progs' gv xdvi xeyes xneko exit
+: 1594632975:0;yay -R 9menu
+: 1594632980:0;auto-remove
+: 1594633063:0;yay -S dillo
+: 1594633080:0;dillo https://duckduckgo.com
+: 1594633089:0;yay -R dillo
+: 1594633106:0;yay -S slmenu
+: 1594633110:0;yay slmenu
+: 1594633169:0;hg clone ssh://hg@bitbucket.org/rafaelgg/slmenu
+: 1594633178:0;git clone ssh://hg@bitbucket.org/rafaelgg/slmenu
+: 1594633195:0;git clone https://bitbucket.org/rafaelgg/slmenu
+: 1594633199:0;git clone https://bitbucket.org/rafaelgg/slmenu.git
+: 1594633224:0;yay slmenu
+: 1594633240:0;cd
+: 1594633245:0;ls | umenu
+: 1594633274:0;yay -R umenu
+: 1594633279:0;auto-remove
+: 1594633407:0;xdotool mousemove_relative 100 10
+: 1594633412:0;auto-remove
+: 1594633415:0;xdotool mousemove_relative 100 10
+: 1594633445:0;killall xbanish
+: 1594633448:0;eas
+: 1594633467:0;yay -R xbanish
+: 1594633497:0;~/scripts/mouse.sh move left 10
+: 1594633505:0;v ~/scripts/mouse.sh
+: 1594633515:0;~/scripts/mouse.sh move left 10
+: 1594633879:0;yay -S dvtm
+: 1594633888:0;dvtm
+: 1594633973:0;ls
+: 1594633976:0;neofetch
+: 1594634083:0;yay -R mtm
+: 1594634085:0;yay -R mtm-git
+: 1594634090:0;dvtm
+: 1594634224:0;ls
+: 1594634254:0;dvtm
+: 1594634259:0;ls
+: 1594634305:0;rm stdout
+: 1594634311:0;cat crontesting
+: 1594634313:0;rm crontesting
+: 1594634317:0;rm ~/dump/crontesting
+: 1594634475:0;cd dump
+: 1594634477:0;la ~
+: 1594634493:0;lf ~/.fltk
+: 1594634500:0;git clone https://github.com/martanne/dvtm.git
+: 1594634505:0;cd dvtm
+: 1594634507:0;v
+: 1594634550:0;dvtm
+: 1594634559:0;ls
+: 1594634829:0;newsboat
+: 1594635375:0;yay -S pms
+: 1594635380:0;yay pms
+: 1594635466:0;pms
+: 1594635478:0;yay pms
+: 1594635482:0;yay -S pms-git
+: 1594635496:0;yay -R pms-git
+: 1594635498:0;auto-remove
+: 1594635565:0;yay vimpc
+: 1594635694:0;vimpc
+: 1594635706:0;ps aux | grep mopidy
+: 1594635721:0;vimpc
+: 1594635787:0;yay -R vimpc
+: 1594635789:0;yay -R vimpc-git
+: 1594635793:0;aut
+: 1594635794:0;auto-remove
+: 1594635803:0;yay -S pimpd2
+: 1594635807:0;yay pimpd2
+: 1594635825:0;yay pimpd
+: 1594635952:0;yay -Q | grep mopidy
+: 1594636115:0;yay cmus
+: 1594636202:0;yay -S libmad opusfile
+: 1594636217:0;cmus
+: 1594636228:0;la
+: 1594636235:0;la | wc -l
+: 1594636243:0;cmus
+: 1594636271:0;la | wc -l
+: 1594636393:0;yay -R cmus opusfile libmad
+: 1594636411:0;yay -R vimpc-git
+: 1594643727:0;update
+: 1594648949:0;yay -Qi mpd
+: 1594648951:0;yay -Qi mopidy
+: 1594648956:0;yay -S mpd
+: 1594648965:0;yay -Qi mopidy
+: 1594648973:0;yay -Qi mpd
+: 1594648975:0;yay -S mpd
+: 1594649016:0;killall mopidy
+: 1594649020:0;eas
+: 1594649039:0;cd ~/.config/mopidy
+: 1594649040:0;v
+: 1594649077:0;./template.sh
+: 1594649097:0;mopidy
+: 1594649101:0;:music
+: 1594649206:0;./template.sh
+: 1594649222:0;v ~/.config/gnupg/gpg-agent.conf
+: 1594649326:0;man gpg
+: 1594649401:0;node
+: 1594649444:0;gpg-connect-agent reloadagent /bye
+: 1594649483:0;./template.sh
+: 1594649594:0;mopidy
+: 1594649661:0;yay -R mopidy-local
+: 1594649701:1;./template.sh
+: 1594649705:0;cd
+: 1594649957:0;v ~/.bin/macho
+: 1594649961:0;escript ~/.bin/macho
+: 1594650023:0;macho
+: 1594650221:0;macho sed
+: 1594650246:0;apropos -s 1 sed
+: 1594650252:0;apropos sed
+: 1594650261:0;yay -Qi apropos
+: 1594650289:0;sudo makewhatis
+: 1594650305:0;updatedb
+: 1594650311:0;sudo mandb
+: 1594650381:0;sudo mandb -c
+: 1594650508:0;pass list
+: 1594650524:0;pass insert Proton/akshay-nair
+: 1594650624:0;apropos sed
+: 1594650634:0;macho
+: 1594650786:0;cd ~/scripts/anypinentry
+: 1594650788:0;v
+: 1594650811:0;v ~/.config/gnupg/gpg-agent.conf
+: 1594650855:0;gpg-connect-agent reloadagent /bye
+: 1594650886:0;cp ~/.config/gnupg/gpg-agent.conf ~/dump/gpg-agent.conf
+: 1594650896:0;gpg-connect-agent reloadagent /bye
+: 1594650902:0;pass show Aur/phenax
+: 1594650971:0;pass insert Proton/testinging
+: 1594650988:0;gpg-connect-agent reloadagent /bye
+: 1594651047:0;gpg --edit-key 13E2879813F486D2158C3058DB5D2D09D1E3226F
+: 1594651071:0;gpg-connect-agent reloadagent /bye
+: 1594651074:0;pass insert Proton/testinging
+: 1594651088:0;pass rm Proton/testinging
+: 1594651321:0;pass insert Proton/akshay-n0
+: 1594651569:0;pass list
+: 1594651774:0;pass insert Proton/any.second.now
+: 1594654020:0;ezsh
+: 1594654142:0;cat
+: 1594656318:0;search
+: 1594656389:0;mv ~/scripts/spotify.sh ~/scripts/music/player.sh
+: 1594656399:0;v ~/scripts/menuitems.sh
+: 1594656473:0;search
+: 1594656512:0;v ~/scripts/commands/:play-next
+: 1594656576:0;cd ~/.confi
+: 1594656579:0;cd ~/.config
+: 1594656582:0;search
+: 1594656608:0;v ncmpcpp/config
+: 1594656634:0;rm -rf polybar
+: 1594656686:0;rm -rf spotifyd
+: 1594656709:0;ekey
+: 1594656640:97;search
+: 1594656737:0;sudo searchOA
+: 1594656739:0;ekey
+: 1594656747:0;cd ~/.config
+: 1594656750:0;search
+: 1594656830:0;killall shotkey
+: 1594656879:0;~/scripts/music/player.sh play_pause
+: 1594656892:0;ekey
+: 1594656896:0;make
+: 1594656899:0;sudo make install
+: 1594657745:0;playerctl --help
+: 1594657748:0;playerctl --help | grep device
+: 1594657775:0;playerctl --list
+: 1594657778:0;playerctl -l
+: 1594657909:0;cd ~/.config/mopidy
+: 1594657914:0;v mopidy.template.conf
+: 1594658911:0;./template.sh
+: 1594658921:0;v ~/.config/gnupg/gpg-agent.conf
+: 1594658925:0;gpg-connect-agent reloadagent /bye
+: 1594658928:0;./template.sh
+: 1594658952:0;ebar
+: 1594659177:0;make
+: 1594659180:0;sudo make install
+: 1594659671:0;cd ~/dump
+: 1594659683:0;rm -rf dvtm
+: 1594659690:0;yay -S btpd
+: 1594659700:0;yay -S btpd-git
+: 1594659742:0;btcli add *.torrent
+: 1594659776:0;btcli add -d ~/Downloads/dl Interstellar\ \(2014\)\ \[1080p\]\ \[BluRay\]\ \[YTS.MX\].torrent
+: 1594659786:0;eas
+: 1594659814:0;ls ~/.config/btpd
+: 1594659823:0;btpd -d ~/.config/btpd
+: 1594659828:0;btcli add -d ~/Downloads/dl Interstellar\ \(2014\)\ \[1080p\]\ \[BluRay\]\ \[YTS.MX\].torrent
+: 1594659848:0;ezsh
+: 1594659876:0;btcli add -d ~/Downloads/dl Interstellar\ \(2014\)\ \[1080p\]\ \[BluRay\]\ \[YTS.MX\].torrent
+: 1594659880:0;btcli list
+: 1594659932:0;btinfo Interstellar\ \(2014\)\ \[1080p\]\ \[BluRay\]\ \[YTS.MX\].torrent
+: 1594659959:0;sudo mandb -c
+: 1594659970:0;man btinfo
+: 1594660008:0;btinfo Interstellar\ \(2014\)\ \[1080p\]\ \[BluRay\]\ \[YTS.MX\].torrent | awk -F': ' '/Name:/ {print $2}'
+: 1594660027:0;v ~/scripts/torrent.sh
+: 1594660192:0;yay -S ytop
+: 1594660207:0;ytop
+: 1594660163:0;btcli list
+: 1594660259:0;btcli list
+: 1594660262:0;btcli help
+: 1594660267:0;btcli start
+: 1594660270:0;btcli start -a
+: 1594660273:0;btcli list
+: 1594660298:0;btcli list --help
+: 1594660302:0;btcli list -a
+: 1594660303:0;btcli list -i
+: 1594660305:0;btcli list -a
+: 1594660348:0;~/scripts/torrent.sh add_torrent ./Austin\ Powers\ International\ Man\ of\ Mystery\ \(1997\)\ \[1080p\]\ \[BluRay\]\ \[YTS.MX\].torrent
+: 1594660354:0;btcli list -a
+: 1594660368:0;~/scripts/torrent.sh add_torrent ./Austin\ Powers\ The\ Spy\ Who\ Shagged\ Me\ \(1999\)\ \[1080p\]\ \[BluRay\]\ \[YTS.MX\].torrent
+: 1594660380:0;~/scripts/torrent.sh add_torrent ./Austin\ Powers\ in\ Goldmember\ \(2002\)\ \[1080p\]\ \[BluRay\]\ \[YTS.MX\].torrent
+: 1594660382:0;btcli list -a
+: 1594660423:0;btcli help
+: 1594660427:0;btcli stop -a
+: 1594660431:0;btcli start -a
+: 1594660434:0;btcli start
+: 1594660444:0;btcli list -a
+: 1594660447:0;btcli help
+: 1594660455:0;btcli stat
+: 1594660551:0;btcli list -a
+: 1594660554:0;btcli stat
+: 1594660567:0;btcli stat -i
+: 1594660573:0;btcli list -a
+: 1594660574:0;btcli stat
+: 1594660834:0;nmtui-connect
+: 1594660842:0;btcli list -a
+: 1594660844:0;btcli stat
+: 1594660859:0;mpv ~/Downloads/dl/Interstellar.2014.2014.1080p.BluRay.x264.YIFY.mp4
+: 1594660890:0;btcli stat -w 4
+: 1594660895:0;btcli stat -w 1
+: 1594660908:0;btcli stat -w 1 2> /dev/null
+: 1594660912:0;btcli stat -w 1
+: 1594660923:0;btcli stat -w 1 | tail -n 1
+: 1594660927:0;btcli stat -w 1 | tail -n 2
+: 1594660931:0;btcli stat -w 1
+: 1594661055:0;eas
+: 1594661108:65;~/dev/fun/mandlebrot/mandel
+: 1594661323:0;btcli list -a
+: 1594661333:0;ls ~/Downloads/dl
+: 1594661349:0;btcli list -a
+: 1594661358:0;ls ~/.config/btpd
+: 1594661361:0;btcli list -a
+: 1594661366:0;ps aux | grep btpd
+: 1594661395:0;btcli list -a
+: 1594661401:0;btcli stat
+: 1594661403:0;btcli list -a
+: 1594661405:0;btcli stat
+: 1594661456:0;btcli list -a
+: 1594661458:0;btcli stat
+: 1594661484:0;yay -S tget
+: 1594661489:0;yay tget
+: 1594661551:0;yay -R nodejs-tget
+: 1594661554:0;auto-remove
+: 1594661591:0;btcli stat
+: 1594661593:0;auto-remove
+: 1594661597:0;btcli list -a
+: 1594661604:0;yay rtorrent
+: 1594661828:0;cd
+: 1594661862:0;rtorrent
+: 1594661886:0;yay -R rtorrent-ps libtorrent-ps
+: 1594661890:0;auto-remove
+: 1594661921:0;btcli list -a
+: 1594661922:0;auto-remove
+: 1594661928:0;btcli stat
+: 1594661930:0;auto-remove
+: 1594661932:0;btcli stat
+: 1594661934:0;btcli list -a
+: 1594661937:0;btcli stat
+: 1594662036:0;killall btpd
+: 1594662043:0;yay -R btpd-git
+: 1594662056:0;rm -rf ~/.config/btpd
+: 1594662068:0;rm -rf ~/Downloads/dl/Austin\ Powers\ -\ *
+: 1594662072:0;rm -rf ~/Downloads/dl/Interstellar.2014.2014.1080p.BluRay.x264.YIFY.mp4
+: 1594662077:0;rm -rf ~/Downloads/dl/WWW.YTS.RE.jpg
+: 1594662081:0;la
+: 1594662083:0;la | wc -l
+: 1594662091:0;ls .dillo
+: 1594662096:0;cat .dillo/cookiesrc
+: 1594662105:0;cat .fltk/fltk.org/fltk.prefs 
+: 1594662132:0;cat .p10k.zsh
+: 1594662143:0;rm .p10k.zsh
+: 1594662190:0;yay -S transmission-cli
+: 1594662209:0;transmission-daemon --help
+: 1594662216:0;transmission-remote --help
+: 1594662218:0;transmission-remote
+: 1594662230:0;yay -S transmission-remote-cli-git
+: 1594662247:0;eas
+: 1594662272:0;man transmission-daemon
+: 1594662414:0;transmission-remote-cli
+: 1594662443:0;pgrep transmission
+: 1594662447:0;pkill transmission
+: 1594662452:0;transmission-remote-cli
+: 1594662492:0;yay -S tremc
+: 1594662504:0;tremc
+: 1594662523:0;yay -R transmission-remote-cli-git
+: 1594662561:0;la | wc -l
+: 1594662573:0;v ~/.config/transmission-remote-cli/settings.cfg
+: 1594662607:0;cp ~/.config/transmission-remote-cli ~/.config/tremc -r
+: 1594662614:0;ls ~/.config/tremc
+: 1594662618:0;tremc
+: 1594662663:0;ecmd
+: 1594662703:0;yay -R stig
+: 1594662722:0;yay -Q | grep trans
+: 1594662724:0;yay -Q | grep tr
+: 1594712609:0;equte
+: 1594712810:0;v ~/.bin/open
+: 1594715759:0;mv ~/scripts/commands/:mon ~/scripts/commands/:system-monitor
+: 1594716693:0;e ~/scripts/torrent.sh
+: 1594716906:0;equte
+: 1594717246:134;lf
+: 1594717612:0;dvtm
+: 1594717644:0;sudo dvtmlf
+: 1594717646:0;lf
+: 1594717651:0;ls
+: 1594717670:0;dvtm
+: 1594721333:0;evim
+: 1594721634:0;v ~/scripts/image.sh
+: 1594740019:0;ip addr
+: 1594740408:0;popcorn --help
+: 1594746444:0;keynav
+: 1594746955:0;node
+: 1594747095:0;make
+: 1594747120:0;(~/dump/stream.sh | ./popcorn)
+: 1594747130:0;(~/dump/stream.sh | ./popcorn --alpha 50)
+: 1594747136:0;(~/dump/stream.sh | ./popcorn --alpha 0)
+: 1594747142:0;(~/dump/stream.sh | ./popcorn --alpha 50)
+: 1594747148:0;(~/dump/stream.sh | ./popcorn --alpha 80)
+: 1594747182:0;ga TODO.md popcorn.c
+: 1594751968:0;transmission-cli --help
+: 1594751988:0;transmission-show --help
+: 1594751991:0;transmission-show
+: 1594752010:0;transmission-remote --help
+: 1594752041:0;transmission-remote --help | grep list
+: 1594752045:0;transmission-remote -l
+: 1594752109:0;la | wc -l
+: 1594752128:0;ezsh
+: 1594752144:0;monitor
+: 1594752147:0;monitor menu
+: 1594752220:0;scr mouse.sh
+: 1594752227:0;scr mouse.sh left 20
+: 1594752232:0;scr mouse.sh move left
+: 1594752236:0;scr mouse.sh move right
+: 1594752315:0;yay -S diskonaut
+: 1594752496:0;diskonaut .
+: 1594752630:0;cd ~/.cache/yay/chromium-widevine
+: 1594752636:0;rm google-chrome-stable_83.0.4103.116-1_amd64.deb
+: 1594752639:0;..
+: 1594752682:0;diskonaut /etc
+: 1594752692:0;diskonaut /bin
+: 1594752707:0;diskonaut /usr
+: 1594752741:0;yay -R diskonaut
+: 1594752933:0;ytop
+: 1594753036:0;v ~/.config/transmission-remote-cli/settings.cfg
+: 1594753044:0;v ~/.config/transmission-daemon/settings.json
+: 1594753049:0;eas
+: 1594753119:0;killall transmission
+: 1594753124:0;pkill transmission
+: 1594753132:0;ps aux | grep transmi
+: 1594753157:0;v ~/.config/transmission-daemon/settings.json
+: 1594753178:0;pkill transmission
+: 1594753181:0;ps aux | grep transmi
+: 1594753183:0;pkill transmission
+: 1594753185:0;pkill transmission-daemon
+: 1594753186:0;ps aux | grep transmi
+: 1594753205:0;v ~/.config/transmission-daemon/settings.json
+: 1594753218:0;cd ~/.config/transmission-daemon/
+: 1594753223:0;lf
+: 1594753244:0;v settings.json
+: 1594753251:0;pkill transmission-daemon
+: 1594753253:0;ps aux | grep transmi
+: 1594753259:0;pkill transmission
+: 1594753261:0;ps aux | grep transmi
+: 1594753268:0;killall transmission
+: 1594753269:0;ps aux | grep transmi
+: 1594753312:0;transmission-remote -l
+: 1594753339:0;pkill transmission
+: 1594753343:0;pkill transmission-daemon
+: 1594753345:0;ps aux | grep transmi
+: 1594754560:0;update
+: 1594754654:0;auto-remove
+: 1594754659:0;update
+: 1594754679:0;cargo --help
+: 1594754684:0;cargo --list
+: 1594754692:0;cargo list
+: 1594754698:0;cargo --help
+: 1594754741:0;cargo search --help
+: 1594754748:0;cargo search
+: 1594754758:0;cargo search --limit 100
+: 1594754770:0;cd ~/.yay
+: 1594754774:0;cd ~/.cache/ya
+: 1594754777:0;cd ~/.cache/yay
+: 1594754810:0;rm -rf diskonaut mtm-git mopidy-* lib* grabc font*
+: 1594754827:0;rm -rf 9menu btpd*
+: 1594754879:0;rm -rf chromium-widevine colorpicker connman* cozette-* nodejs-tget go-mtpfs-git p* r* s* t* umenu v* x* y*
+: 1594754888:0;yay -Syy
+: 1594754943:0;du -ah -d 1 ~/.cache
+: 1594754948:0;du -ah -d 1 ~/.cache | sort
+: 1594754956:0;man du
+: 1594754985:0;du -b -d 1 ~/.cache | sort
+: 1594755016:0;cd ..
+: 1594755036:0;du -b -d 1 /var/lib/pacman
+: 1594755042:0;du -b -d 1 /var/lib/pacman/sync
+: 1594755051:0;du -b -d 1 /var/lib/pacman/sync/
+: 1594770503:0;popcorn
+: 1594803116:0;make
+: 1594803129:0;rm config.h && make config.h
+: 1594803141:0;gd config.h
+: 1594803254:0;mpc insert "file:///home/an/Downloads/music/Others/Heliung - In Maidjan.opus"
+: 1594803267:0;v ~/.config/mopidy
+: 1594803276:0;v ~/.config/mopidy/mopidy.
+: 1594803279:0;v ~/.config/mopidy/mopidy.template.conf
+: 1594803291:0;ping 127.0.0.1
+: 1594803295:0;ping 127.0.0.1:6600
+: 1594803301:0;ps aux | grep mopidy
+: 1594803442:2;sudo make install
+: 1594803505:0;dwmc layout htil
+: 1594803529:0;dwmc layout htile
+: 1594803604:0;dwmc layout htil
+: 1594803619:0;sudo make install
+: 1594803623:0;dwmc layout htil
+: 1594803625:0;dwmc layout htile
+: 1594803628:0;dwmc layout vtile
+: 1594803633:0;dwmc layout floating
+: 1594803662:0;dwmc layout vtile
+: 1594803665:0;dwmc layout floating
+: 1594803670:0;dwmc layout vtile
+: 1594803715:0;dwmc layout centered
+: 1594803721:0;dwmc layout grid
+: 1594803729:0;dwmc layout deck
+: 1594803925:0;make
+: 1594803937:0;sudo make install
+: 1594812040:0;make
+: 1594812045:0;sudo make install
+: 1594812075:0;dwmc layout
+: 1594812083:0;dwmc view
+: 1594812134:0;gd
+: 1594812137:0;gaa
+: 1594812148:0;gcm "Adds layout switching mode"
+: 1594812151:0;gp
+: 1594812156:0;git push -u origin master
+: 1594812160:0;git push -u origin personal
+: 1594812172:0;make
+: 1594812180:0;sudo make install
+: 1594838346:0;gco master
+: 1594838588:0;make && ./shotkey
+: 1594877443:0;man agetty
+: 1594877461:0;sudo nvim /etc issue
+: 1594877464:0;sudo nvim /etc/issue
+: 1594877601:0;man agetty
+: 1594877643:0;v /etc/runit/sv/agetty-tty1
+: 1594877648:0;v /etc/runit/sv/agetty-tty1/run
+: 1594877655:0;v /etc/runit/sv/agetty-tty1/conf
+: 1594877956:0;uname -m
+: 1594877960:0;uname -n
+: 1594877999:0;uname -r
+: 1594878082:0;sudo nvim /etc/init.d/ninfod.sh
+: 1594878113:0;sudo nvim /usr/lib/os-release
+: 1594878261:0;cd ~/.config/linkedconf
+: 1594878289:0;cp /etc/issue .
+: 1594878294:0;v setup.sh
+: 1594878515:0;sudo nvim /etc/issue
+: 1594884219:0;update-dotfiles

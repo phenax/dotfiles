@@ -28,7 +28,5 @@ start_x_server () {
 	exit;
 }
 
-echo ".profile2 $(tty)" >> $HOME/dump/profilelogss;
-
 [[ "$(tty)" == '/dev/tty1' ]] && start_x_server &> /dev/null
 

@@ -6,7 +6,7 @@ player() { playerctl --player=mopidy "$@"; }
 get_play_state() { player metadata --format '{{status}}' || echo 'Stopped'; }
 
 # Get title - artist (song label)
-get_label() { player metadata --format '{{title}} - {{artist}}'; }
+get_label() { player metadata --format '{{title}} - {{artist}}' || echo '...'; }
 
 # Play/Pause toggle:
 play_pause() {

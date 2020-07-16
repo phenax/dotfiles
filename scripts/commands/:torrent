@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-sensible-terminal -e bash -c 'stig';
+sensible-terminal -e bash -c 'tremc';
 

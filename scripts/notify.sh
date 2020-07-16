@@ -4,5 +4,5 @@
 
 user=$(whoami);
 
-sudo -u $user DISPLAY=:0 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u $user)/bus notify-send "$@";
+sudo -u $user DISPLAY=:0 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u $user)/dbus-1 notify-send "$@";
 

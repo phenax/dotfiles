@@ -12,22 +12,20 @@ open_by_mimetype() {
 
   echo "Opening $file ($mime)...";
 
-  # TODO: For inode/symlink, recursively call itself with readlink
   case "$mime" in
-    inode/directory) lf "$file" ;;
+    inode/directory)             lf "$file" ;;
 
-    video/*|image/gif) run_async mpv "$file" ;;
+    application/x-bittorrent)    ~/scripts/torrent.sh torrent "$file" ;;
 
-    image/*) run_async sxiv "$file" ;;
+    text/*)                      sensible-editor "$file" ;;
+    application/javascript)      sensible-editor "$file" ;;
+    application/json)            sensible-editor "$file" ;;
+    application/xml)             sensible-editor "$file" ;;
+    application/x-*)             sensible-editor "$file" ;;
+    *pdf)                        run_async sensible-browser "$file" ;;
 
-    *pdf) run_async sensible-browser "$file" ;; # Zathura maybe?
-
-    text/*)                 sensible-editor "$file" ;;
-    application/javascript) sensible-editor "$file" ;;
-    application/json)       sensible-editor "$file" ;;
-    application/xml)        sensible-editor "$file" ;;
-    application/x-*)        sensible-editor "$file" ;;
-
+    video/*|image/gif)           run_async mpv "$file" ;;
+    image/*)                     run_async sxiv "$file" ;;
     audio/*)
       mpc insert "file://$(readlink -e "$file")" && mpc play && \
         echo "Adding song to queue";
@@ -42,9 +40,16 @@ open_by_mimetype() {
 open_by_path() {
   local file="$1";
 
-  # Urls
+  # Magnet torrent url
+  if [[ "$file" =~ ^magnet: ]]; then
+    echo "opening magnet link...";
+    ~/scripts/torrent.sh magnet "$file";
+    exit 0;
+  fi;
+
+  # Https? and file urls
   if [[ "$file" =~ ^https?:// ]] || [[ "$file" =~ ^file?:// ]]; then
-    echo "Opening url $file...";
+    echo "opening url $file...";
     run_async sensible-browser "$file";
     exit 0;
   fi;

@@ -34,7 +34,7 @@ run() {
   # Key Modmap
   xmodmap ~/.config/sxhkd/.Xmodmap &
   xset s off; # No screensaver
-  xset r rate 400 30; # [delay] [rate]
+  xset r rate 350 30; # [delay] [rate]
 
   # Key daemon
   run "shotkey" shotkey;
@@ -51,6 +51,9 @@ run() {
   # Wallpaper
   run "" ~/.fehbg;
 
+  # Cron jobs
+  run "crond" crond -n -f ~/.config/crontab/crontab;
+
 
   # Battery watcher
   run "" ~/scripts/battery-watch.sh start;
@@ -65,13 +68,14 @@ run() {
   once "nm-applet" nm-applet;
 
   # Torrent daemon
-  once "transmission" transmission-daemon --download-dir "$HOME/Downloads/dl" &
+  #once "btpd" btpd -d "$HOME/.config/btpd";
+  once "transmission" transmission-daemon --download-dir ~/Downloads/dl;
 
   # Music daemon
   once "mopidy" mopidy;
 
-  # Unclutter mouse pointer
-  once "unclutter" unclutter;
+  # Hide mouse pointer while typing
+  #once "xbanish" xbanish;
 # }}}
 
 
