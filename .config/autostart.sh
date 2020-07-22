@@ -6,7 +6,7 @@ action="$1";
 is_kill() { [[ "$action" == "kill" ]]; }
 
 # Focus on a tag/ws
-focus_tag() { [[ ! -z "$1" ]] && dwmc view $(($1 - 1)); }
+focus_tag() { [[ ! -z "$1" ]] && dwmc view $(($1 - 1)); sleep 0.2; }
 
 # Only run when there are no windows on the screen
 on_startup() { is_kill || [[ "$(wmctrl -l | wc -l)" = "0" ]] && $@ & }
@@ -72,7 +72,7 @@ run() {
   once "transmission" transmission-daemon --download-dir ~/Downloads/dl;
 
   # Music daemon
-  once "mopidy" mopidy;
+  once "mpd" mpd ~/.config/mpd/mpd.conf --stdout --no-daemon;
 
   # Hide mouse pointer while typing
   #once "xbanish" xbanish;
@@ -80,14 +80,23 @@ run() {
 
 
 ##### Initialized applications {{{
-#focus_tag 9;
-#on_startup :music;
-#on_startup :notes;
+on_startup sensible-browser;
 
-#focus_tag 6;
-#on_startup sensible-browser;
+#applications() {
+  #sleep 0.5;
 
-#focus_tag 1;
+  #focus_tag 9;
+  #on_startup :music;
+  #on_startup :notes;
+
+  #focus_tag 6;
+  #on_startup sensible-browser;
+
+  #focus_tag 1;
+#}
+
+#applications &
+
 # }}}
 
 

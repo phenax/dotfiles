@@ -1,0 +1,64 @@
+
+# Gmail.Phenax5
+folder-hook 'gmail.phenax5' 'source ~/.work-config/neomutt/acc.gmail.phenax5'
+macro index <f2> '<sync-mailbox><enter-command>source ~/.work-config/neomutt/acc.gmail.phenax5<enter><change-folder>!<enter>'
+
+# Gmail.Shaadi
+folder-hook 'gmail.shaadi' 'source ~/.work-config/neomutt/acc.gmail.shaadi'
+macro index <f3> '<sync-mailbox><enter-command>source ~/.work-config/neomutt/acc.gmail.shaadi<enter><change-folder>!<enter>'
+
+
+# Default phenax5
+source ~/.work-config/neomutt/acc.gmail.phenax5;
+
+set mail_check = 60
+
+# Pager settings
+ignore *
+unignore From Message-ID Date To Cc Bcc Subject
+set pager_stop
+unset markers
+
+# Prefer plain text to html.
+# However, for brain dead clients that bundle attachments inside a
+# multipart/alternative, prefer that alternative.
+alternative_order multipart/mixed multipart/related text/plain
+
+# Consult mime.types for determining types of these attachments
+mime_lookup application/octet-stream
+
+# This requires a ~/.mailcap entry with the copiousoutput flag, such as:
+# text/html; lynx -dump -width ${COLUMNS:-80} %s; nametemplate=%s.html; copiousoutput
+auto_view text/html
+
+# Index settings
+set sort = reverse-date-received
+
+# Headers. Remember
+set header_cache= "~/.cache/neomutt"
+set edit_headers
+
+set mime_type_query_command = "xdg-mime query filetype"
+set editor = "sensible-editor"
+
+# lbdb is a versatile contact query tool.
+# Invoke via ctrl-t in an address prompt
+#set query_command = "/usr/bin/lbdbq"
+
+color hdrdefault magenta black
+color quoted magenta black
+color signature magenta black
+color attachment white black
+color prompt brightmagenta black
+color message brightwhite black
+color error brightwhite black
+color indicator black white
+color status brightgreen magenta
+color tree white black
+color normal white black
+color markers white black
+color search white black
+color tilde brightmagenta black
+color index magenta black ~F
+color index white black "~N|~O"
+

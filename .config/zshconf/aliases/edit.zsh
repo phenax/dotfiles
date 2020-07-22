@@ -13,3 +13,5 @@ alias emime="sensible-editor ~/.bin/open";
 
 alias ehosts='sudo nvim /etc/hosts';
 
+alias emutt='gmuttp && sensible-editor ~/.config/neomutt/neomuttrc';
+

@@ -22,3 +22,6 @@ alias gbar='cd ~/.config/suckless/dwmblocks';
 
 alias gkey='cd ~/.config/suckless/shotkey';
 
+alias gmutt='cd ~/.config/neomutt';
+alias gmuttp='cd ~/.work-config/neomutt';
+

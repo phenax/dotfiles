@@ -25,7 +25,7 @@ add-public-config() {
 
   # Terminal and shell
   add ~/.bashrc ~/.profile;
-  add ~/.zshrc ~/.zprofile ~/.config/{zshconf,zsh_history,zshplugins};
+  add ~/.zshrc ~/.zprofile ~/.config/{zshconf,zshplugins};
 
   # Dev
   add ~/scripts ~/.bin;
@@ -35,11 +35,12 @@ add-public-config() {
   # Applications
   add ~/.config/suckless;
   add ~/.config/qutebrowser;
-  add ~/.config/{lf,mpv,sxiv,zathura,ncmpcpp,mopidy,newsboat,neofetch};
-  # add ~/.config/spotifyd/spotifyd.conf;
+  add ~/.config/{lf,mpv,sxiv,zathura,newsboat,neofetch};
   add ~/.config/transmission-daemon/settings.json;
-  add ~/.config/{transmission-remote-cli,stig};
+  add ~/.config/{transmission-remote-cli,stig,tremc};
   add ~/.config/{calcurse,pet,shell-macros};
+  add ~/.config/neomutt;
+  add ~/.config/{ncmpcpp,mopidy,mpd};
 
   # Wallpapers
   add ~/.fehbg;

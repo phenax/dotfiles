@@ -100,6 +100,7 @@ nunmap('<Ctrl-v>')
 nunmap('<Ctrl-x>')
 nunmap('<Ctrl-V>')
 nunmap('<Ctrl-X>')
+nunmap('<Ctrl-h>')
 
 # Edit text and edit url
 imap('<Ctrl-e>', 'open-editor')

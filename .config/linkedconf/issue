@@ -1,5 +1,25 @@
-[\l]
-Artix Linux \v (\r)
 
-What's the password, dipshit?
 
+                          \e{lightblue}o\e{reset}                                  \e{lightcyan}TTY:\e{reset}       \e{bold}\l\e{reset}
+                         \e{lightblue}'o'\e{reset}                                 \e{lightcyan}Time:\e{reset}      \e{halfbright}\d \t\e{reset}
+                        \e{lightblue}'ooo'\e{reset}                                \e{lightcyan}Distr\e{reset}      \e{halfbright}\S{PRETTY_NAME} \m\e{reset}
+                       \e{lightblue}'ooxoo'\e{reset}                               \e{lightcyan}Kernal:\e{reset}    \e{halfbright}\s \r\e{reset}
+                      \e{lightblue}'ooxxxoo'\e{reset}                              \e{lightcyan}WM:\e{reset}        \e{halfbright}dwm\e{reset}
+                     \e{lightblue}'oookkxxoo'\e{reset}                             
+                    \e{lightblue}'oiioxkkxxoo'\e{reset}                     
+                   \e{lightblue}':;:iiiioxxxoo'\e{reset}                    
+                      \e{lightblue}`'.;::ioxxoo'\e{reset}                   
+                 \e{lightcyan}'-.\e{lightblue}      `':;jiooo'\e{reset}
+                \e{lightcyan}'oooio-..\e{lightblue}     `'i:io'\e{reset}
+               \e{lightcyan}'ooooxxxxoio:,.\e{lightblue}   `'-;'\e{reset}
+              \e{lightcyan}'ooooxxxxxkkxoooIi:-.\e{lightblue}  `'\e{reset}
+             \e{lightcyan}'ooooxxxxxkkkkxoiiiiiji'\e{lightblue}\e{reset}
+            \e{lightcyan}'ooooxxxxxkxxoiiii:'`\e{lightblue}     .i'\e{reset}
+           \e{lightcyan}'ooooxxxxxoi:::'`\e{lightblue}       .;ioxo'\e{reset}
+          \e{lightcyan}'ooooxooi::'`\e{lightblue}         .:iiixkxxo'\e{reset}
+         \e{lightcyan}'ooooi:'`\e{lightblue}                `'';ioxxo'\e{reset}
+        \e{lightcyan}'i:'`\e{lightblue}                          '':io'\e{reset}
+       \e{lightcyan}'`\e{lightblue}                                   `'\e{reset}
+
+
+\e{bold}What's the password, dipshit?\e{reset}

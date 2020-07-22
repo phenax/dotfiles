@@ -3,27 +3,39 @@
 player() { playerctl --player=mopidy "$@"; }
 
 # Get player state
-get_play_state() { player metadata --format '{{status}}' || echo 'Stopped'; }
+#get_play_state() { player metadata --format '{{status}}' || echo 'Stopped'; }
+get_play_state() {
+  local state=$(mpc status | awk '/\[\w*\]/ {print $1}');
+  case "$state" in
+    '[playing]') echo "Playing" ;;
+    '[paused]') echo "Paused" ;;
+    *) echo "Stopped" ;;
+  esac;
+}
 
 # Get title - artist (song label)
-get_label() { player metadata --format '{{title}} - {{artist}}' || echo '...'; }
+#get_label() { player metadata --format '{{title}} - {{artist}}' || echo '...'; }
+get_label() {
+  echo -n "$(mpc current | cut -c1-20)";
+  echo "...";
+}
 
 # Play/Pause toggle:
 play_pause() {
-  player play-pause;
-  #~/scripts/statusbar/statusbar.sh update music;
+  #player play-pause;
+  mpc toggle;
   update-dwmblock music;
 }
 
 # Next/Prev
 next() {
-  player next;
-  #~/scripts/statusbar/statusbar.sh update music;
+  #player next;
+  mpc next;
   update-dwmblock music;
 }
 prev() {
-  player previous;
-  #~/scripts/statusbar/statusbar.sh update music;
+  #player previous;
+  mpc prev;
   update-dwmblock music;
 }
 
