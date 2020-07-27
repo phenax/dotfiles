@@ -331,11 +331,12 @@ c.url.searchengines = {
     'y': 'http://www.youtube.com/results?search_query={}',
     'az': 'http://search.azlyrics.com/search.php?q={}',
 
+    # Ignore
     'DEFAULT': 'http://this-is-a-placeholder.com?q={}',
 }
 
 # Default search engine
-c.url.searchengines['DEFAULT'] = c.url.searchengines['sp']
+c.url.searchengines['DEFAULT'] = c.url.searchengines['d']
 c.url.searchengines['s'] = c.url.searchengines['DEFAULT']
 
 c.aliases['archive'] = 'open --tab http://web.archive.org/save/{url}'
