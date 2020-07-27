@@ -3,7 +3,7 @@ ncmpcpp_directory = ~/.local/share/ncmpcpp
 lyrics_directory = ~/.local/share/ncmpcpp/lyrics
 
 # MPD
-mpd_host = localhost
+mpd_host = 0.0.0.0
 mpd_port = 6600
 mpd_connection_timeout = 5
 mpd_music_dir = ~/Downloads/music
