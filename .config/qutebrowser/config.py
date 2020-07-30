@@ -4,6 +4,7 @@ import re
 import sys
 import json
 import subprocess
+import random
 from qutebrowser.config.configfiles import ConfigAPI
 from qutebrowser.config.config import ConfigContainer
 config = config
@@ -62,6 +63,20 @@ def unmap(key, mode):
 def nunmap(key):
     """Unbind key in normal mode."""
     unmap(key, mode='normal')
+
+def rand_numstr(a, b):
+    return str(random.randint(a, b))
+
+def random_version(a, b):
+    return rand_numstr(a, b) + '.' + rand_numstr(0, 100)
+
+def random_useragent():
+    agents = {
+        '0': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML; like Gecko) Chromium/81.0.4044.138 Chrome/' + random_version(60, 82) + '.' + random_version(0, 5000) + ' Safari/537.36',
+        '1': 'Mozilla/5.0 (Linux x86_64; rv:78.0) Gecko/20100101 Firefox/' + random_version(50, 80),
+        '2': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chromium/' + random_version(60, 82) + '.' + random_version(0, 5000) + ' Safari/537.36',
+    }
+    return agents[rand_numstr(0, 2)]
 # }}}
 
 
@@ -291,7 +306,8 @@ nmap(leader + 'tym', 'spawn --userscript dl_music')
 c.content.cookies.accept = 'no-3rdparty'
 c.content.geolocation = 'ask'
 c.content.headers.do_not_track = True
-c.content.headers.referer = 'same-domain'
+c.content.headers.referer = 'never'
+c.content.headers.user_agent = random_useragent()
 c.content.host_blocking.enabled = True
 c.content.media_capture = 'ask'
 c.content.notifications = 'ask'

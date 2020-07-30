@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+exec tor --runasdaemon 0 -f ~/.config/tor/torrc
