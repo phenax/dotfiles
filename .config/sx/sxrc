@@ -30,6 +30,8 @@ fi
 
 #trap 'pkill -x panel' INT TERM QUIT EXIT;
 
-while true; do
-  ssh-agent dwm || break;
-done
+exec bspwm;
+
+#while true; do
+  #ssh-agent dwm || break;
+#done

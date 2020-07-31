@@ -13,7 +13,7 @@ add-public-config() {
   add ~/.config/crontab;
 
   # X and DM
-  add ~/.config/{bspwm,sxhkd,polybar}
+  add ~/.config/{bspwm,sxhkd}
   add ~/.Xresources ~/.config/compton.conf;
   add ~/.config/sx;
   add ~/.config/xresources-schemes;

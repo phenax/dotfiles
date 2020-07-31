@@ -1,10 +1,13 @@
 export WORDLISTS=~/dev/xploits/wordlist;
 export ROCK_YOU_WORDS="$WORDLISTS/rockyou.txt";
+export URL_WORDS="$WORDLISTS/dirb/common.txt";
 
 alias msfc="msfconsole --quiet -x \"db_connect postgres@msf\""
 
 alias ssplt="searchsploit"
 alias sspx="searchsploit -x"
+
+alias crawl="gobuster dir -w $URL_WORDS"
 
 jrock() {
   [[ "$#" != "2" ]] && echo "jrock (format) (hashfile)" && return 1;
