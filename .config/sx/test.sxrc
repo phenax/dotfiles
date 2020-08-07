@@ -28,8 +28,11 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-#exec bspwm;
 
-while true; do
-  (ssh-agent dwm 2>> /tmp/dwm.log >> /tmp/dwm.log) || break;
-done
+shotkey &
+feh --no-fehbg --bg-scale '/home/an/Pictures/wallpapers/mountain.jpg';
+st &
+st &
+
+exec ~/.config/suckless/buzzwm/buzzwm 2>> ~/dump/buzzwmlog >> ~/dump/buzzwmlog;
+

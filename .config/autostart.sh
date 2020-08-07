@@ -31,6 +31,7 @@ run() {
 
 
 ##### Autostart {{{
+  echo "[Autostart]: Running daemons";
   # Key Modmap
   xmodmap ~/.config/sxhkd/.Xmodmap &
   xset s off; # No screensaver
@@ -80,7 +81,8 @@ run() {
 
 
 ##### Initialized applications {{{
-on_startup sensible-browser;
+echo "[Autostart]: Checking applications";
+#on_startup sensible-browser;
 
 #applications() {
   #sleep 0.5;
