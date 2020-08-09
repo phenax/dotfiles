@@ -331,7 +331,7 @@ c.url.searchengines = {
     # General
     'sp': 'https://www.startpage.com/sp/search?q={}',
     'q': 'https://www.qwant.com/search?q={}',
-    'd': 'http://duckduckgo.com/?q={}',
+    'd': 'https://duckduckgo.com/?q={}',
     'go': 'https://google.com/?q={}',
 
     # Dev stuff
