@@ -72,7 +72,7 @@ run() {
   once "mpd" mpd ~/.config/mpd/mpd.conf --stdout --no-daemon;
 
   # Hide mouse pointer while typing
-  once "xbanish" xbanish;
+  #once "xbanish" xbanish;
 # }}}
 
 
