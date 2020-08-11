@@ -1,0 +1,7 @@
+#!/bin/sh
+
+source ~/.config/sx/xconf;
+
+while true; do
+  (ssh-agent dwm &>> /tmp/dwm.log) || break;
+done

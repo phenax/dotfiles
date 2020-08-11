@@ -252,7 +252,7 @@ c.tabs.tooltips = True
 c.tabs.background = True
 c.tabs.select_on_remove = 'next'
 c.tabs.new_position.unrelated = 'next'
-c.tabs.last_close = 'startpage' # 'close' for closing window on last d
+c.tabs.last_close = 'close' # 'close' for closing window on last d
 
 # Keybindings
 nmap('o', 'set-cmd-text -s :open --tab')
