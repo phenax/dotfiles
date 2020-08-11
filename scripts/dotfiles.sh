@@ -18,6 +18,7 @@ add-public-config() {
   add ~/.config/sx;
   add ~/.config/xresources-schemes;
   add ~/.config/dunst;
+  add ~/.config/xconfig;
   add ~/.config/autostart.sh;
 
   # Other config

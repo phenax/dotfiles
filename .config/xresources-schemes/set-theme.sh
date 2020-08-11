@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-XRES_PATH="$HOME/.Xresources";
+XRES_PATH="$HOME/.config/xconfig/Xresources";
 CURRENT=current;
 
 theme="$1";
