@@ -1,6 +1,6 @@
 #!/bin/sh
 
-source ~/.config/sx/xconf;
+source ~/.config/xconfig/init.sh;
 
 shotkey &
 feh --no-fehbg --bg-scale '/home/an/Pictures/wallpapers/mountain.jpg';

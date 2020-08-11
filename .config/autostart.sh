@@ -32,10 +32,6 @@ run() {
 
 ##### Autostart {{{
   echo "[Autostart]: Running daemons";
-  # Key Modmap
-  xmodmap ~/.config/sxhkd/.Xmodmap &
-  xset s off; # No screensaver
-  xset r rate 350 30; # [delay] [rate]
 
   # Key daemon
   run "shotkey" shotkey;
@@ -76,7 +72,7 @@ run() {
   once "mpd" mpd ~/.config/mpd/mpd.conf --stdout --no-daemon;
 
   # Hide mouse pointer while typing
-  #once "xbanish" xbanish;
+  once "xbanish" xbanish;
 # }}}
 
 
