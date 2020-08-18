@@ -14,7 +14,7 @@ add-public-config() {
 
   # X and DM
   add ~/.config/{bspwm,sxhkd}
-  add ~/.Xresources ~/.config/compton.conf;
+  add ~/.config/compton.conf;
   add ~/.config/sx;
   add ~/.config/xresources-schemes;
   add ~/.config/dunst;

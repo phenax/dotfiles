@@ -1,0 +1,68 @@
+# Zathura configuration file
+# See man `man zathurarc'
+
+# Open document in fit-width mode by default
+#set adjust-open "best-fit"
+
+# One page per row by default
+set pages-per-row 1
+
+#stop at page boundries
+set scroll-page-aware "true"
+set scroll-full-overlap 0.01
+set scroll-step 100
+set selection-clipboard clipboard
+
+set zoom-min 50
+set guioptions ""
+set adjust_open width
+
+set render-loading "false"
+set scroll-step 50
+
+
+#### Keybindings
+map = zoom in
+map - zoom out
+#map zz zoom float
+
+unmap f
+####
+
+
+
+# zathurarc-dark
+
+set font "JetBrains Mono 10"
+set default-bg "{{color0}}" #00
+set default-fg "{{foreground}}" #01
+
+set statusbar-fg "{{foreground}}" #04
+set statusbar-bg "{{background}}" #01
+
+set inputbar-bg "{{background}}" #00 currently not used
+set inputbar-fg "{{foreground}}" #02
+
+set notification-error-bg "{{color1}}" #08
+set notification-error-fg "{{foreground}}" #00
+
+set notification-warning-bg "{{color1}}" #08
+set notification-warning-fg "{{foreground}}" #00
+
+set highlight-color "{{color3}}" #0A
+set highlight-active-color "{{color4}}" #0D
+
+set completion-highlight-fg "{{color0}}" #02
+set completion-highlight-bg "{{color2}}" #0C
+
+set completion-bg "{{color0}}" #02
+set completion-fg "{{foreground}}" #0C
+
+set notification-bg "{{color2}}" #0B
+set notification-fg "{{color0}}" #00
+
+set recolor "true"
+set recolor-lightcolor "{{background}}" #00
+set recolor-darkcolor "{{foreground}}" #06
+set recolor-reverse-video "true"
+# set recolor-keephue "true"

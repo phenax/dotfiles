@@ -2,14 +2,14 @@
 
 source "$HOME/scripts/modules/rofi-menu.sh";
 
-PRIMARY="eDP-1";
+PRIMARY="eDP1";
 
 list-monitors() { xrandr --listmonitors | grep -v 'Monitors:' | awk '{print $4 " (" $3 ")"}'; }
 
-monitor-off() { xrandr --output ${1:-"HDMI-1"} --off; };
+monitor-off() { xrandr --output ${1:-"HDMI1"} --off; };
 
 monitor-on() {
-  xrandr --output ${2:-"HDMI-1"} --auto --${1:-"right-of"} $PRIMARY;
+  xrandr --output ${2:-"HDMI1"} --auto --${1:-"right-of"} $PRIMARY;
 }
 
 show-menu() {

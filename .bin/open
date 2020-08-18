@@ -22,7 +22,7 @@ open_by_mimetype() {
     application/json)            sensible-editor "$file" ;;
     application/xml)             sensible-editor "$file" ;;
     application/x-*)             sensible-editor "$file" ;;
-    *pdf)                        run_async sensible-browser "$file" ;;
+    *pdf)                        run_async zathura "$file" ;;
 
     video/*|image/gif)           run_async mpv "$file" ;;
     image/*)                     run_async sxiv "$file" ;;

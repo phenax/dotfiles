@@ -3,13 +3,14 @@
   /*color: #ddd !important;*/
 /*}*/
 
-body {
+/*body {*/
+html, body, body * {
   color: #d7d7d8 !important;
   background-color: #0f0c19 !important;
 }
 
 a {
-  color: #4e3aA3;
+  color: #4e3aA3 !important;
 }
 
 code {
@@ -18,5 +19,5 @@ code {
 }
 
 figcaption {
-  color: #d7d7d8;
+  color: #d7d7d8 !important;
 }

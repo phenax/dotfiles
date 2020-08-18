@@ -24,3 +24,8 @@ hydru() {
   hydra -l $1 -P $ROCK_YOU_WORDS ssh://$2;
 }
 
+ip_get() {
+  curl https://json.geoiplookup.io/$1 | \
+    jq '.ip + " | " + .asn + "(" + .district + ", " + .region + ")"';
+}
+
