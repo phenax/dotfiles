@@ -51,9 +51,11 @@ run() {
   # Cron jobs
   run "crond" crond -n -f ~/.config/crontab/crontab;
 
-
   # Battery watcher
   run "" ~/scripts/battery-watch.sh start;
+
+  # Syncthing
+  run "syncthing" syncthing -logflags=0 -no-browser 2>&1 >/dev/null;
 
   # Disk automount
   once "udiskie" ~/.bin/with_zsh udiskie -a -n -s;

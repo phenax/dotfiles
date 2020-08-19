@@ -7,8 +7,8 @@ add-public-config() {
   add ~/.work-config;
   add ~/.gitmodules ~/.config/git-config;
   add ~/.config/linkedconf;
-  add ~/.config/vimwiki;
-  add ~/.config/password-store;
+  #add ~/.config/vimwiki;
+  #add ~/.config/password-store;
   add ~/.config/sitesettings;
   add ~/.config/crontab;
 
