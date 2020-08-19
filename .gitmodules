@@ -34,9 +34,6 @@
 [submodule ".config/suckless/popcorn"]
 	path = .config/suckless/popcorn
 	url = https://github.com/phenax/popcorn.git
-[submodule ".config/vimwiki"]
-	path = .config/vimwiki
-	url = git@github.com:phenax/personal-notes.git
 [submodule ".config/zshplugins/zsh-autosuggestions"]
 	path = .config/zshplugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions.git
@@ -46,6 +43,3 @@
 [submodule ".config/zshplugins/zsh-syntax-highlighting"]
 	path = .config/zshplugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
-[submodule ".config/password-store"]
-	path = .config/password-store
-	url = git@github.com:phenax/pass-store.git
