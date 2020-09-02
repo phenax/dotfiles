@@ -15,6 +15,12 @@ nmap <localleader>hu <Plug>(GitGutterUndoHunk)
 nmap <localleader>gl :diffget //2<CR>
 nmap <localleader>gr :diffget //3<CR>
 
-" Git status
+" Git status/log
 nmap <localleader>gs :G<CR>
+nmap <localleader>gll :Glog<CR>
+
+" Add/Commit
+nmap <localleader>gc :Gcommit<CR>
+nmap <localleader>ga. :G add .<CR>
+nmap <localleader>gaf :G add %<CR>
 

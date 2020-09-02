@@ -66,6 +66,11 @@
       "a",
       "cut",
       "paste"
+    ],
+    "%2Fhome%2Fan%2Fdev%2Fprojects%2Fshaadi-react": [
+      "add",
+      "rename",
+      "copy"
     ]
   },
   "explorerFiles": {

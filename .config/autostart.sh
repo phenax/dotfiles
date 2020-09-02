@@ -58,7 +58,7 @@ run() {
   run "syncthing" syncthing -logflags=0 -no-browser 2>&1 >/dev/null;
 
   # Disk automount
-  once "udiskie" ~/.bin/with_zsh udiskie -a -n -s;
+  once "udiskie" ~/.bin/with_zsh udiskie -a -n -s -f ~/.bin/open;
 
   # Clipboard history
   once "clipmenud" clipmenud;
@@ -73,8 +73,8 @@ run() {
   # Music daemon
   once "mpd" mpd ~/.config/mpd/mpd.conf --stdout --no-daemon;
 
-  # Hide mouse pointer while typing
-  #once "xbanish" xbanish;
+  # Hide mouse pointer
+  once "unclutter" unclutter;
 # }}}
 
 

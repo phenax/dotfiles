@@ -15,10 +15,11 @@ export PATH
 
 start_x() {
   local conf="$HOME/.config/sx/$1.sxrc";
-  [[ -f "$conf" ]] && sx "$conf";
+  [[ -f "$conf" ]] && exec sx "$conf";
 }
 
 [[ "$(tty)" == '/dev/tty1' ]] && start_x dwm &> /dev/null
+#[[ "$(tty)" == '/dev/tty2' ]] && start_x artemiswm &> /dev/null
 #[[ "$(tty)" == '/dev/tty2' ]] && start_x bspwm &> /dev/null
 #[[ "$(tty)" == '/dev/tty3' ]] && start_x buzzwm &> /dev/null
 

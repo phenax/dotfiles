@@ -7,5 +7,6 @@ feh --no-fehbg --bg-scale '/home/an/Pictures/wallpapers/mountain.jpg';
 st &
 st &
 
-exec ~/.config/suckless/buzzwm/buzzwm 2>> ~/dump/buzzwmlog >> ~/dump/buzzwmlog;
+# exec ~/.config/suckless/buzzwm/buzzwm 2>> ~/dump/buzzwmlog >> ~/dump/buzzwmlog;
+exec ~/.config/suckless/dwm/dwm 2>> ~/dump/buzzwmlog >> ~/dump/buzzwmlog;
 

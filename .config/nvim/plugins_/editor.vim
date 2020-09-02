@@ -16,3 +16,7 @@ Plug 'gilsondev/searchtasks.vim'
 " Motion
 Plug 'easymotion/vim-easymotion'
 Plug 'unblevable/quick-scope'
+
+" Context folding
+Plug 'wellle/context.vim'
+

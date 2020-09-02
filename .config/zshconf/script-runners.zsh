@@ -10,8 +10,8 @@ _create_runner() {
   alias $name="$filepath";
 }
 
+_create_runner "artemis";
 _create_runner "update-dotfiles" "dotfiles.sh";
-
 _create_runner "session-box" "qutebrowser/session-box.sh";
 
 scr() { ~/scripts/$@; }

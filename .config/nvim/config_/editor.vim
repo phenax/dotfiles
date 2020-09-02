@@ -1,6 +1,6 @@
 set hidden
 set autoread
-set mouse=a
+set mouse=c
 
 set splitbelow splitright
 
@@ -94,4 +94,8 @@ map <localleader> <Plug>(easymotion-prefix)
 
 " Spell checkerer
 nmap <leader>== :setlocal spell! spelllang=en_us<CR>
+
+" Code auto folding with context
+let g:context_enabled = 0
+nmap zf :ContextToggle<CR>
 

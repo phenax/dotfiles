@@ -26,7 +26,7 @@ icon() {
     date)        echo "" ;;
     battery)     echo "" ;;
     music)       playerctl_icon ;;
-    volume)      volume_component 6 | sed 's/on//; s/off//' ;;
+    volume)      volume_component 6 | sed 's/on//; s/off/🔇/' ;;
     brightness)  echo "" ;;
     network)     network_state | sed 's/online//; s/idle//; s/offline/❌/' ;;
     *) ;;

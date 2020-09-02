@@ -73,8 +73,8 @@ def random_version(a, b):
 def random_useragent():
     agents = {
         '0': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML; like Gecko) Chromium/81.0.4044.138 Chrome/' + random_version(60, 82) + '.' + random_version(0, 5000) + ' Safari/537.36',
-        '1': 'Mozilla/5.0 (Linux x86_64; rv:78.0) Gecko/20100101 Firefox/' + random_version(50, 80),
-        '2': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chromium/' + random_version(60, 82) + '.' + random_version(0, 5000) + ' Safari/537.36',
+        '1': 'Mozilla/5.0 (Linux x86_64; rv:78.0) Gecko/20100101 Firefox/' + random_version(70, 80),
+        '2': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chromium/' + random_version(70, 82) + '.' + random_version(0, 5000) + ' Safari/537.36',
     }
     return agents[rand_numstr(0, 2)]
 # }}}
@@ -120,6 +120,7 @@ nunmap('<Ctrl-h>')
 # Edit text and edit url
 imap('<Ctrl-e>', 'open-editor')
 nmap('<Ctrl-l>', 'edit-url')
+nmap(localleader+'e', 'edit-url')
 
 nunmap("+")
 nunmap("-")
@@ -247,7 +248,7 @@ nmap('P', 'open -- {clipboard}') # Open link in clipboard in the same tab
 
 #### TABS {{{
 c.tabs.show = 'multiple'
-c.tabs.title.format = '{perc}{private} {audio}{index}: {current_title}'
+c.tabs.title.format = '{perc}{private} {audio}{index}: {host} - {current_title}'
 c.tabs.tooltips = True
 c.tabs.background = True
 c.tabs.select_on_remove = 'next'
@@ -310,7 +311,6 @@ c.content.headers.referer = 'never'
 c.content.headers.user_agent = random_useragent()
 c.content.host_blocking.enabled = True
 c.content.media_capture = 'ask'
-c.content.notifications = 'ask'
 c.content.ssl_strict = 'ask'
 c.content.desktop_capture = 'ask'
 c.content.mouse_lock = 'ask'
@@ -322,14 +322,27 @@ c.aliases['tor-disable'] = 'config-unset content.proxy'
 c.aliases['tor-change'] = 'spawn --userscript tor_identity'
 # }}}
 
+#### Notifications {{{
+
+c.content.notifications = 'ask'
+
+config.set('content.notifications', True, '*://reddit.com')
+config.set('content.notifications', True, '*://web.whatsapp.com')
+config.set('content.notifications', True, '*://3.basecamp.com')
+
+# }}}
+
 #### Search and bookmarks {{{
 # Default start page
 c.url.default_page = '~/.config/qutebrowser/homepage/index.html'
 c.url.start_pages = [c.url.default_page]
 
+
+DEFAULT_SEARCH_ENGINE = 'd'
 c.url.searchengines = {
     # General
     'sp': 'https://www.startpage.com/sp/search?q={}',
+    'sx': 'https://searx.fmac.xyz/?q={}',
     'q': 'https://www.qwant.com/search?q={}',
     'd': 'https://duckduckgo.com/?q={}',
     'go': 'https://google.com/?q={}',
@@ -352,7 +365,7 @@ c.url.searchengines = {
 }
 
 # Default search engine
-c.url.searchengines['DEFAULT'] = c.url.searchengines['d']
+c.url.searchengines['DEFAULT'] = c.url.searchengines[DEFAULT_SEARCH_ENGINE]
 c.url.searchengines['s'] = c.url.searchengines['DEFAULT']
 
 c.aliases['archive'] = 'open --tab http://web.archive.org/save/{url}'

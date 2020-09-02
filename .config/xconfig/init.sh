@@ -23,3 +23,8 @@ xset r rate 350 30;
 # Display settings
 ~/scripts/commands/:day
 
+# Sound
+~/scripts/sound.sh mic-vol full;
+~/scripts/sound.sh mute-mic;
+~/scripts/sound.sh mute;
+

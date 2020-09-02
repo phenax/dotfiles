@@ -1,0 +1,10 @@
+#!/bin/sh
+
+source ~/.config/xconfig/init.sh;
+
+#shotkey &
+st &
+st &
+
+exec ~/dev/projects/artemiswm/artemiswm 2>&1 >> /tmp/artemiswm.log;
+

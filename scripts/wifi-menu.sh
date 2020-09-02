@@ -4,7 +4,7 @@ source $HOME/scripts/modules/utils.sh;
 source $HOME/scripts/modules/rofi-menu.sh;
 
 ACTIVE="[X]"
-INACTIVE="[ ]"
+INACTIVE="[_]"
 
 # :: (on|off) -> string -> string -> string
 ifOnElse() { [[ "$1" == "on" ]] && echo "$2" || echo "$3"; }
