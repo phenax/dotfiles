@@ -53,6 +53,6 @@ def_key "c"
   clear_main_playlist
 
 
-# def_key "L"
-#     show_lyrics
+def_key "ctrl-l"
+    show_lyrics
 

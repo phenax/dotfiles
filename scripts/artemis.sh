@@ -3,9 +3,8 @@
 host="192.168.0.10"
 port=6543
 
-run() {
-  ssh "$host" -p $port -tt "$@";
-}
+run() { ssh "$host" -p $port -tt "$@"; }
+run_x() { ssh -X "$host" -p $port; }
 
 run_git() {
   local cmd="$1"; shift 1;
@@ -48,5 +47,6 @@ case "$cmd" in
   media)    run_media "$@" ;;
   cloud)    run_cloud "$@" ;;
   run)      run "$@" ;;
+  x)        run_x ;;
 esac
 

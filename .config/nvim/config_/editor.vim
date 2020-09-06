@@ -99,3 +99,7 @@ nmap <leader>== :setlocal spell! spelllang=en_us<CR>
 let g:context_enabled = 0
 nmap zf :ContextToggle<CR>
 
+" Move stuff sideways
+nnoremap <localleader>mh :SidewaysLeft<cr>
+nnoremap <localleader>ml :SidewaysRight<cr>
+

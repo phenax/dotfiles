@@ -19,4 +19,5 @@ Plug 'unblevable/quick-scope'
 
 " Context folding
 Plug 'wellle/context.vim'
+Plug 'AndrewRadev/sideways.vim'
 
