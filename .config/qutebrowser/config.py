@@ -71,12 +71,13 @@ def random_version(a, b):
     return rand_numstr(a, b) + '.' + rand_numstr(0, 100)
 
 def random_useragent():
-    agents = {
-        '0': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML; like Gecko) Chromium/81.0.4044.138 Chrome/' + random_version(60, 82) + '.' + random_version(0, 5000) + ' Safari/537.36',
-        '1': 'Mozilla/5.0 (Linux x86_64; rv:78.0) Gecko/20100101 Firefox/' + random_version(70, 80),
-        '2': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chromium/' + random_version(70, 82) + '.' + random_version(0, 5000) + ' Safari/537.36',
-    }
-    return agents[rand_numstr(0, 2)]
+    return 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36'
+    # agents = {
+        # '0': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML; like Gecko) Chromium/81.0.4044.138 Chrome/' + random_version(70, 82) + '.' + random_version(1000, 5000) + ' Safari/537.36',
+        # '1': 'Mozilla/5.0 (Linux x86_64; rv:78.0) Gecko/20100101 Firefox/' + random_version(76, 80),
+        # '2': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chromium/' + random_version(70, 82) + '.' + random_version(1000, 5000) + ' Safari/537.36',
+    # }
+    # return agents[rand_numstr(0, 2)]
 # }}}
 
 
@@ -329,6 +330,8 @@ c.content.notifications = 'ask'
 config.set('content.notifications', True, '*://reddit.com')
 config.set('content.notifications', True, '*://web.whatsapp.com')
 config.set('content.notifications', True, '*://3.basecamp.com')
+config.set('content.notifications', True, '*://mail.google.com')
+config.set('content.notifications', False, '*://meet.google.com')
 
 # }}}
 
