@@ -19,8 +19,12 @@ nmap <localleader>gr :diffget //3<CR>
 nmap <localleader>gs :G<CR>
 nmap <localleader>gll :Glog<CR>
 
-" Add/Commit
-nmap <localleader>gc :Gcommit<CR>
+" Add
 nmap <localleader>ga. :G add .<CR>
 nmap <localleader>gaf :G add %<CR>
+
+" Add/Commit/Push/Pull
+nmap <localleader>gc :Gcommit<CR>
+nmap <localleader>gpp :Gpush<CR>
+nmap <localleader>gpu :Gpull<CR>
 

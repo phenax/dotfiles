@@ -4,7 +4,7 @@ source "$HOME/scripts/modules/utils.sh";
 
 SCH_PATH="$HOME/.config/vimwiki/schedule/";
 SCH_TAG="SCH_AUTO_GENERATED";
-CRON_PATH="/var/spool/cron/$(whoami)";
+CRON_PATH="$HOME/.config/crontab/crontab";
 
 get_schedule_files() {
   ls "$SCH_PATH" | sed -e '/index.md$/d' | awk "{print \"$SCH_PATH\" \$0}";

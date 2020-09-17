@@ -33,29 +33,26 @@ run() {
 ##### Autostart {{{
   echo "[Autostart]: Running daemons";
 
+  # Wallpaper
+  run "" ~/.fehbg;
+
   # Key daemon
   run "shotkey" shotkey;
-
-  # Compositor
-  run "picom" picom --experimental-backends --config ~/.config/compton.conf;
-
-  # Notification daemon
-  run "dunst" dunst -config ~/.config/dunst/dunstrc;
 
   # Dwm blocks status text
   run "dwmblocks" dwmblocks;
 
-  # Wallpaper
-  run "" ~/.fehbg;
+  # Notification daemon
+  run "dunst" dunst -config ~/.config/dunst/dunstrc;
+
+  # Compositor
+  run "picom" picom --experimental-backends --config ~/.config/compton.conf;
 
   # Cron jobs
   run "crond" crond -n -f ~/.config/crontab/crontab;
 
   # Battery watcher
   run "" ~/scripts/battery-watch.sh start;
-
-  # Syncthing
-  run "syncthing" syncthing -logflags=0 -no-browser 2>&1 >/dev/null;
 
   # Disk automount
   once "udiskie" ~/.bin/with_zsh udiskie -a -n -s -f ~/.bin/open;
@@ -65,6 +62,9 @@ run() {
 
   # Network manager applet
   once "nm-applet" nm-applet;
+
+  # Syncthing
+  run "syncthing" syncthing -logflags=0 -no-browser 2>&1 >/dev/null;
 
   # Torrent daemon
   #once "btpd" btpd -d "$HOME/.config/btpd";

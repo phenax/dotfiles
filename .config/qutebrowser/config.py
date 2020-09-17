@@ -123,6 +123,9 @@ imap('<Ctrl-e>', 'open-editor')
 nmap('<Ctrl-l>', 'edit-url')
 nmap(localleader+'e', 'edit-url')
 
+nmap('<Ctrl-p>', 'enter-mode passthrough')
+# pmap('<Shift-Escape>', 'enter-mode normal') # Default
+
 nunmap("+")
 nunmap("-")
 nunmap("=")
@@ -328,10 +331,14 @@ c.aliases['tor-change'] = 'spawn --userscript tor_identity'
 c.content.notifications = 'ask'
 
 config.set('content.notifications', True, '*://reddit.com')
+config.set('content.notifications', True, '*://www.reddit.com')
 config.set('content.notifications', True, '*://web.whatsapp.com')
 config.set('content.notifications', True, '*://3.basecamp.com')
 config.set('content.notifications', True, '*://mail.google.com')
+config.set('content.notifications', True, '*://chat.google.com')
+
 config.set('content.notifications', False, '*://meet.google.com')
+config.set('content.media_capture', True, '*://meet.google.com')
 
 # }}}
 
