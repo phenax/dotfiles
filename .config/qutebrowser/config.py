@@ -13,6 +13,8 @@ c = c
 leader = '\\'
 localleader = ' '
 
+config.load_autoconfig()
+
 # Helper Functions {{{
 def read_xresources(prefix):
     props = {}
