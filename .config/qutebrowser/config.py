@@ -61,10 +61,14 @@ def unmap(key, mode):
     """Unbind key in mode."""
     config.unbind(key, mode=mode)
 
-
 def nunmap(key):
     """Unbind key in normal mode."""
     unmap(key, mode='normal')
+
+
+# Helpers
+def compose(*args):
+    return ' ;; '.join(args)
 
 def rand_numstr(a, b):
     return str(random.randint(a, b))
@@ -73,13 +77,17 @@ def random_version(a, b):
     return rand_numstr(a, b) + '.' + rand_numstr(0, 100)
 
 def random_useragent():
-    return 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36'
-    # agents = {
-        # '0': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML; like Gecko) Chromium/81.0.4044.138 Chrome/' + random_version(70, 82) + '.' + random_version(1000, 5000) + ' Safari/537.36',
-        # '1': 'Mozilla/5.0 (Linux x86_64; rv:78.0) Gecko/20100101 Firefox/' + random_version(76, 80),
-        # '2': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chromium/' + random_version(70, 82) + '.' + random_version(1000, 5000) + ' Safari/537.36',
-    # }
-    # return agents[rand_numstr(0, 2)]
+    chrome_version = random_version(77, 84)
+    # firefox_version = random_version(77, 80)
+    build_version = random_version(1000, 3000)
+
+    agents = [
+        'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML; like Gecko) Chromium/' + chrome_version + '.0.4044.138 Chrome/' + chrome_version + '.' + build_version + ' Safari/537.36',
+        'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/' + chrome_version + '.0.4147.89 Safari/537.36 Hola/1.173.900',
+        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/' + chrome_version + '.0.2623.112 Safari/537.36'
+        # 'Mozilla/5.0 (Linux x86_64; rv:78.0) Gecko/20100101 Firefox/' + firefox_version,
+    ]
+    return agents[random.randint(0, 2)]
 # }}}
 
 
@@ -122,10 +130,10 @@ nunmap('<Ctrl-h>')
 
 # Edit text and edit url
 imap('<Ctrl-e>', 'open-editor')
-nmap('<Ctrl-l>', 'edit-url')
+# nmap('<Ctrl-l>', 'edit-url')
 nmap(localleader+'e', 'edit-url')
 
-nmap('<Ctrl-p>', 'enter-mode passthrough')
+nmap('<Ctrl-i>', 'enter-mode passthrough')
 # pmap('<Shift-Escape>', 'enter-mode normal') # Default
 
 nunmap("+")
@@ -230,7 +238,8 @@ c.aliases['load'] = 'session-load -t';
 
 # Sessions
 nmap(leader + 'sv', ':load video');
-nmap(leader + 'sc', ':load com');
+nmap(leader + 'sc', ':load work');
+nmap(leader + 'si', ':load interview');
 # }}}
 
 #### Navigation {{{
@@ -321,11 +330,35 @@ c.content.ssl_strict = 'ask'
 c.content.desktop_capture = 'ask'
 c.content.mouse_lock = 'ask'
 c.content.javascript.can_access_clipboard = True
+c.content.canvas_reading = True
 
 
 c.aliases['tor-enable'] = 'set content.proxy "socks://localhost:9050"'
 c.aliases['tor-disable'] = 'config-unset content.proxy'
 c.aliases['tor-change'] = 'spawn --userscript tor_identity'
+
+c.aliases['clipboard-disable'] = 'set content.javascript.can_access_clipboard False'
+c.aliases['clipboard-enable'] = 'set content.javascript.can_access_clipboard True'
+c.aliases['canvas-disable'] = 'set content.canvas_reading False'
+c.aliases['canvas-enable'] = 'set content.canvas_reading True'
+
+# Enable tor and reload config (reset to a new user agent)
+c.aliases['incognito'] = compose(
+    'config-source',
+    c.aliases['tor-enable'],
+    c.aliases['clipboard-disable'],
+    c.aliases['canvas-disable'])
+c.aliases['change-identity'] = compose('config-source', c.aliases['tor-change'])
+c.aliases['incognito-disable'] = compose(
+    'config-source',
+    c.aliases['tor-disable'],
+    c.aliases['clipboard-enable'],
+    c.aliases['canvas-enable'])
+
+nmap(leader + 'pp', 'incognito')
+nmap(leader + 'pr', 'change-identity')
+nmap(leader + 'pd', 'incognito-disable')
+
 # }}}
 
 #### Notifications {{{
