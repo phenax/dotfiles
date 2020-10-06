@@ -55,7 +55,7 @@ run() {
   run "" ~/scripts/battery-watch.sh start;
 
   # Disk automount
-  once "udiskie" ~/.bin/with_zsh udiskie -a -n -s -f ~/.bin/open;
+  once "udiskie" ~/.bin/with_zsh udiskie;
 
   # Clipboard history
   once "clipmenud" clipmenud;

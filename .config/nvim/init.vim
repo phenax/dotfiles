@@ -11,6 +11,9 @@ set t_Co=256
 
 let g:pluginpath = '~/.config/nvim/plugged'
 call plug#begin(g:pluginpath)
+  "Plug 'Olical/aniseed', { 'tag': 'v3.7.0' }
+  "Plug 'bakpakin/fennel.vim'
+
   runtime plugins_/coc.vim
   runtime plugins_/lang.vim
   runtime plugins_/fs.vim

@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-#REGEX='https?://[^ ]+'
-REGEX="(https?://|www\\.)[\.A-Za-z0-9\-]+\\.[a-zA-Z]{2,4}"
+REGEX="(https?://|www\\.)[\.A-Za-z0-9\-]+\\.[a-zA-Z]{2,4}(/[^ ]*)?"
 
 while read line; do echo "$line"; done | \
   egrep -o "$REGEX" | \

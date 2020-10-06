@@ -3,3 +3,4 @@ tags.lock
 tags.temp
 *.swp
 *.log
+.vim
