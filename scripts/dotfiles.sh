@@ -31,7 +31,6 @@ add-public-config() {
   # Dev
   add ~/scripts ~/.bin;
   add ~/.config/nvim ~/.config/coc;
-  add ~/.yarnrc ~/.npmrc;
 
   # Applications
   add ~/.config/suckless;
