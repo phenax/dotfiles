@@ -71,7 +71,7 @@ run() {
   once "transmission" transmission-daemon --download-dir ~/Downloads/dl;
 
   # Music daemon
-  once "mpd" mpd ~/.config/mpd/mpd.conf --stdout --no-daemon;
+  #once "mpd" mpd ~/.config/mpd/mpd.conf --stdout --no-daemon;
 
   # Hide mouse pointer
   once "unclutter" unclutter;

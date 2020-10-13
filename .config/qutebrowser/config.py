@@ -242,6 +242,7 @@ nmap(leader + 'pd', 'incognito-disable')
 
 #### Perdomain permission config {{{
 
+# Notifications
 c.content.notifications = 'ask'
 
 config.set('content.notifications', True, '*://reddit.com')
@@ -251,8 +252,12 @@ config.set('content.notifications', True, '*://3.basecamp.com')
 config.set('content.notifications', True, '*://mail.google.com')
 config.set('content.notifications', True, '*://chat.google.com')
 
+# Google meet
 config.set('content.notifications', False, '*://meet.google.com')
+config.set('content.desktop_capture', 'ask', '*://meet.google.com')
 config.set('content.media.audio_video_capture', True, '*://meet.google.com')
+config.set('content.media.audio_capture', True, '*://meet.google.com')
+config.set('content.media.video_capture', True, '*://meet.google.com')
 
 # }}}
 

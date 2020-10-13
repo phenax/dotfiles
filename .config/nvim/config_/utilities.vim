@@ -34,3 +34,7 @@ command! Cal :Calendar -split=vertical
 command! Clock :Calendar -split=horizontal -view=clock
 nmap <localleader>cal :Cal<CR>
 
+
+" URL shortcuts (for qutebrowser url editing)
+nmap <localleader>hts :s/http/https/g<CR>
+
