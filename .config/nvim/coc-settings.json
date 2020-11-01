@@ -85,5 +85,6 @@
     "a": "addFile",
     "A": "addDirectory",
     "m": "actionMenu"
-  }
+  },
+  "snippets.userSnippetsDirectory": "~/.config/nvim/snippets"
 }

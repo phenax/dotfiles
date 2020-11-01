@@ -11,6 +11,7 @@ set t_Co=256
 
 let g:pluginpath = '~/.config/nvim/plugged'
 call plug#begin(g:pluginpath)
+  " Lisp to lua scripting
   "Plug 'Olical/aniseed', { 'tag': 'v3.7.0' }
   "Plug 'bakpakin/fennel.vim'
 
@@ -38,6 +39,9 @@ map q: <Nop>
 nnoremap Q <nop>
 command! W :w
 command! Q :q
+
+" Escape in terminal enters normal mode
+tnoremap <Esc> <C-\><C-n>
 
 " Global helpers
 nnoremap S <nop>

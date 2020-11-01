@@ -1,55 +1,20 @@
-https://beets.io/ beets: the music geek‘s media organizer
-https://medium.com/flutter-community/how-to-add-music-audio-to-your-flutter-app-dcb6162c32d7 How to add music / audio to your Flutter app - Flutter Community - Medium
-https://source.android.com/setup/build/running#selecting-device-build Flashing Devices  |  Android Open Source Project
-https://github.com/phenax/plasmajs/issues/3 Lacks proper documentation · Issue #3 · phenax/plasmajs
 https://keithp.com/~keithp/talks/xtc2001/paper/ The Xft Font Library: Architecture and Users Guide
 https://venam.nixers.net/blog/unix/2018/09/02/fonts-xcb.html Xft but for XCB
 https://gitlab.freedesktop.org/xorg/lib/libxft/-/blob/master/include/X11/Xft/Xft.h.in include/X11/Xft/Xft.h.in · master · xorg / lib / libXft · GitLab
-https://tronche.com/gui/x/xlib/ https://tronche.com/gui/x/xlib/
-https://gtkthemingguide.now.sh/#/creating_gtk_themes?id=study-a-premade-gtk3-theme Creating Gtk Themes - Gtk theming guide
-https://github.com/boogy/dotfiles/blob/master/.xinitrc dotfiles/.xinitrc at master · boogy/dotfiles
 qute://pdfjs/web/viewer.html?filename=tmpnb_fwc6u_os-dev.pdf&file=&source=https://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf tmpnb_fwc6u_os-dev.pdf
-https://suckless.org/ software that sucks less | suckless.org software that sucks less
-https://github.com/anuraghazra/github-readme-stats anuraghazra/github-readme-stats: Dynamically generated stats for your github readmes
 https://github.com/simple-icons/simple-icons#cdn-usage simple-icons/simple-icons: SVG icons for popular brands
-https://github.com/microg/android_packages_apps_GmsCore/wiki/Installation Installation · microg/android_packages_apps_GmsCore Wiki
-https://git.ekleog.org/leo/dtext leo/dtext: Just Draw Text™ - Gogs: Go Git Service
-http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet Reverse Shell Cheat Sheet | pentestmonkey
-https://book.hacktricks.xyz/linux-unix/linux-privilege-escalation-checklist Checklist - Linux Privilege Escalation - HackTricks
-https://www.exploit-db.com/exploits/1299 Linux chfn (SuSE 9.3/10) - Local Privilege Escalation - Linux local Exploit
-https://github.com/nongiach/sudo_inject nongiach/sudo_inject: [Linux] Two Privilege Escalation techniques abusing sudo token
-https://highon.coffee/blog/reverse-shell-cheat-sheet/ Reverse Shell Cheat Sheet
-https://gtfobins.github.io/ GTFOBins
 https://www.oreilly.com/openbook/linuxdrive3/book/ Open Book - Linux Device Drivers, 3rd Edition
 https://www.freetype.org/freetype2/docs/tutorial/step1.html FreeType Tutorial / I
 https://crackstation.net/ CrackStation - Online Password Hash Cracking - MD5, SHA1, Linux, Rainbow Tables, etc.
-https://github.com/SecureAuthCorp/impacket SecureAuthCorp/impacket: Impacket is a collection of Python classes for working with network protocols.
-https://owasp.org/www-community/attacks/SQL_Injection SQL Injection | OWASP
 https://hashcat.net/wiki/doku.php?id=example_hashes example_hashes [hashcat wiki]
-https://www.exploit-db.com/ Exploit Database - Exploits for Penetration Testers, Researchers, and Ethical Hackers
-https://cyberchef.kaltenhauser.rocks/ CyberChef
-https://notabug.org/ NotABug.org: Free code hosting
 https://radicle.xyz/ radicle
-https://mail.google.com/mail/u/0/#inbox/FMfcgxwJXCLkPJtqQRvQVLJnWPxRtLzg [slock][PATCH] Adds keypress feedback patch in slock - phenax5@gmail.com - Gmail
-https://www.ebay.com/itm/For-N140BGE-L43-N140BGE-L23-HDMI-DVI-VGA-LCD-LED-screen-Controller-Board-Driver-/114154474465 For N140BGE-L43 N140BGE-L23 HDMI+DVI+VGA LCD LED screen Controller Board Driver | eBay
-https://www.amazon.in/1024%C3%97600-Capacitive-Screen-Raspberry-Display/dp/B07ZJ4QKMM/ref=sr_1_32?crid=WBT0UL744BJF&dchild=1&keywords=lcd+touch+screen+for+raspberry+pi&qid=1596886900&sprefix=lcd+touch+screen+%2Caps%2C302&sr=8-32 sb components 7" HDMI LCD IPS, Capacitive Touch: Amazon.in: Electronics
-https://www.amazon.in/Raspberry-Pi-Camera-Board/dp/B00L1FOIIS/ref=sr_1_1?dchild=1&keywords=raspberry+pi+camera&qid=1596889159&sr=8-1 Raspberry Pi Camera Board: Amazon.in: Industrial & Scientific
-https://linuxize.com/post/how-to-install-arch-linux-on-raspberry-pi/ How to Install Arch Linux on Raspberry Pi | Linuxize
-https://shantoroy.com/raspberry%20pi/install-raspbian-os-raspberry-pi-without-monitor-keyboard/ Install Raspbian OS in Raspberry Pi without Keyboard and Monitor - Roy’s Blog
-https://store.pine64.org/product/pinephone-community-edition-postmarketos-with-convergence-package-limited-edition-linux-smartphone/ PINEPHONE – “Community Edition: PostmarketOS with Convergence Package” Limited Edition Linux SmartPhone – PINE Store
-https://github.com/go-gitea/gitea go-gitea/gitea: Git with a cup of tea, painless self-hosted git service
 https://dwm.suckless.org/status_monitor/dwmstatus-mitm.c https://dwm.suckless.org/status_monitor/dwmstatus-mitm.c
 https://www.bettercap.org/modules/ethernet/net.sniff/ bettercap :: net.sniff - net.fuzz
 https://github.com/moxie0/sslstrip moxie0/sslstrip: A tool for exploiting Moxie Marlinspike's SSL "stripping" attack.
-https://www.noip.com/free Free Dynamic DNS - No-IP.com - Managed DNS Services
-https://www.home-assistant.io/integrations/duckdns/ Duck DNS - Home Assistant
-https://www.balena.io/etcher/ balenaEtcher - Flash OS images to SD cards & USB drives
 https://247ctf.com/ 247/CTF - The game never stops
-https://elinux.org/RPiconfig#File_format RPiconfig - eLinux.org
-https://www.amazon.in/Robocraze-Capacitive-1024x600-Interface-Raspberry/dp/B077TN8MQN/ref=sr_1_3?dchild=1&keywords=7%22+Touch+Screen+Display+hdmi&qid=1598460276&sr=8-3 7 Inch Capacitive Touch Screen LCD 1024x600 HDMI Interface Display Shield formRaspberry Pi: Amazon.in: Industrial & Scientific
-https://www.amazon.in/Kuman-Capacitive-Display-800x480-Raspberry/dp/B01F3801A2/ref=pd_di_sccai_1/260-8467206-7374366?_encoding=UTF8&pd_rd_i=B01F3801A2&pd_rd_r=2ed50d91-30f4-44ee-afe0-47c82cd59232&pd_rd_w=2a97E&pd_rd_wg=avhnF&pf_rd_p=a1f3aa5a-f05d-4e2d-b84b-6ef88e21fb7e&pf_rd_r=BT49WWRXQCK80K9G002J&psc=1&refRID=BT49WWRXQCK80K9G002J Kuman 7 Inch Capacitive Touch Screen TFT LCD Display HDMI Module 800x480 for Raspberry Pi 3 2 Model B and RPi 1 B+ A BB Black PC Various Systems SC7B (7 Inch Raspberry Pi Touch Screen) - Buy Kuman 7 Inch Capacitive Touch Screen TFT LCD Display HDMI Module 800x480 for Raspberry Pi 3 2 Model B and RPi 1 B+ A BB Black PC Various Systems SC7B (7 Inch Raspberry Pi Touch Screen) Online at Low Price in India - Amazon.in
-https://www.amazon.in/Robocraze-Capacitive-1024x600-Interface-Raspberry/dp/B077TN8MQN/ref=sr_1_4?dchild=1&keywords=tft+touch+screen+display+7+inch&qid=1598459516&s=computers&sr=1-4-catcorr 7 Inch Capacitive Touch Screen LCD 1024x600 HDMI Interface Display Shield formRaspberry Pi: Amazon.in: Computers & Accessories
-https://repl.it/@phenax/ReactJS-2#src/App.js Repl.it - ReactJS 2
 https://www.serverhosh.com/london-1gbps-vps/ London 1Gbps VPS | ServerHosh Internet Service
 https://quackr.io/receive-sms/uk/447418311286 United Kingdom : 447418311286 | Temporary Virtual Phone Numbers | Receive SMS Online - quackr
 https://www.whatsmydns.net/#CNAME/akshay.is-a.dev DNS Checker - DNS Propagation Check & DNS Lookup
+https://github.com/system-f/fp-course system-f/fp-course: Functional Programming Course
+https://app.neilpatel.com/en/seo_analyzer/site_audit?domain=akshay.is-a.dev&view=overview Ubersuggest
+https://medium.com/software-engineering-roundup/the-osi-model-87e5adf35e10 The OSI Model. Ugh, I’ve been struggling with this… | by Ian Ames | Software engineering roundup | Medium

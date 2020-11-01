@@ -139,6 +139,7 @@ config.source('ui.py')
 c.content.user_stylesheets = [
     "styles/scrollbar.css",
     "styles/default.css",
+    "styles/adblocker.css",
 ]
 
 # Dark mode

@@ -1,0 +1,111 @@
+
+
+x  \hs          @<Plug>(GitGutterStageHunk)
+x  \a}         *@<Esc>`>a}<Esc>`<i{<Esc>
+x  \a{         *@<Esc>`>a}<Esc>`<i{<Esc>
+x  \a)         *@<Esc>`>a)<Esc>`<i(<Esc>
+x  \a(         *@<Esc>`>a)<Esc>`<i(<Esc>
+x  \a'         *@<Esc>`>a'<Esc>`<i'<Esc>
+x  \a]         *@<Esc>`>a]<Esc>`<i[<Esc>
+x  \a[         *@<Esc>`>a]<Esc>`<i[<Esc>
+x  \a"         *@<Esc>`>a"<Esc>`<i"<Esc>
+x  \a`         *@<Esc>`>a`<Esc>`<i`<Esc>
+x  ac           @<Plug>(GitGutterTextObjectOuterVisual)
+o  ac           @<Plug>(GitGutterTextObjectOuterPending)
+x  ic           @<Plug>(GitGutterTextObjectInnerVisual)
+o  ic           @<Plug>(GitGutterTextObjectInnerPending)
+v  <C-C>         "+y
+n  <C-D>         :BD<CR>
+n  <C-E>       * context#util#map('<C-E>')
+n  <C-F>         :Ag<CR>
+x  <Tab>         <Plug>(coc-range-select)
+n  <Tab>       * <Nop>
+n  <NL>          :bn<CR>
+n  <C-K>         :bp<CR>
+v  <C-P>         "+p
+n  <C-Y>       * context#util#map('<C-Y>')
+n  <C-\>         :noh<CR>
+n  <Space>hts    :s/http/https/g<CR>
+n  <Space>cal    :Cal<CR>
+n  <Space>ml   * :SidewaysRight<CR>
+n  <Space>mh   * :SidewaysLeft<CR>
+   <Space>       <Plug>(easymotion-prefix)
+n  <Space>0      <Plug>lightline#bufferline#go(10)
+n  <Space>9      <Plug>lightline#bufferline#go(9)
+n  <Space>8      <Plug>lightline#bufferline#go(8)
+n  <Space>7      <Plug>lightline#bufferline#go(7)
+n  <Space>6      <Plug>lightline#bufferline#go(6)
+n  <Space>5      <Plug>lightline#bufferline#go(5)
+n  <Space>4      <Plug>lightline#bufferline#go(4)
+n  <Space>3      <Plug>lightline#bufferline#go(3)
+n  <Space>2      <Plug>lightline#bufferline#go(2)
+n  <Space>1      <Plug>lightline#bufferline#go(1)
+n  <Space>gpu    :Gpull<CR>
+n  <Space>gpp    :Gpush<CR>
+n  <Space>gc     :Gcommit<CR>
+n  <Space>gaf    :G add %<CR>
+n  <Space>ga.    :G add .<CR>
+n  <Space>gll    :Glog<CR>
+n  <Space>gs     :G<CR>
+n  <Space>gr     :diffget //3<CR>
+n  <Space>gl     :diffget //2<CR>
+n  <Space>hu     <Plug>(GitGutterUndoHunk)
+n  <Space>hs     <Plug>(GitGutterStageHunk)
+n  <Space>hp     <Plug>(GitGutterPrevHunk)
+n  <Space>hn     <Plug>(GitGutterNextHunk)
+n  <Space>hh     <Plug>(GitGutterPreviewHunk)
+n  <Space>nn     :CocCommand explorer<CR>
+n  <Space>aa     :CocCommand actions.open<CR>
+n  <Space>f      :CocCommand eslint.executeAutofix<CR>
+n  <Space>F      <Plug>(coc-fix-current)
+n  <Space>j      :call CocActionAsync('jumpDefinition')<CR>
+o  %             <Plug>(MatchitOperationForward)
+x  %             <Plug>(MatchitVisualForward)
+n  %             <Plug>(MatchitNormalForward)
+x  @(targets)  * :<C-U>call targets#do()<CR>
+o  @(targets)  * :<C-U>call targets#do()<CR>
+x  A             targets#e('o', 'A', 'A')
+
+
+i  <RightMouse> *@<C-R>=<SNR>56_FlushBuffer()<CR><RightMouse>
+i  <LeftMouse> *@<C-R>=<SNR>56_FlushBuffer()<CR><LeftMouse>
+i  <PageDown>  *@pumvisible() ? '<PageDown>' : '<C-R>=<SNR>56_FlushBuffer()<CR><PageDown>'
+i  <PageUp>    *@pumvisible() ? '<PageUp>' : '<C-R>=<SNR>56_FlushBuffer()<CR><PageUp>'
+i  <End>       *@<C-R>=<SNR>56_FlushBuffer()<CR><End>
+i  <Home>      *@<C-R>=<SNR>56_FlushBuffer()<CR><Home>
+i  <Right>     *@<C-R>=<SNR>56_FlushBuffer()<CR><Right>
+i  <Left>      *@<C-R>=<SNR>56_FlushBuffer()<CR><Left>
+i  <Down>      *@pumvisible() ? '<Down>' : '<C-R>=<SNR>56_FlushBuffer()<CR><Down>'
+i  <Up>        *@pumvisible() ? '<Up>' : '<C-R>=<SNR>56_FlushBuffer()<CR><Up>'
+i  <Del>       *@<C-R>=<SNR>56_Delete()<CR>
+i  <BS>        *@<C-R>=<SNR>56_Backspace()<CR>
+i  <Esc>       *@pumvisible() ? '<C-E>' : '<C-R>=<SNR>56_FlushBuffer()<CR><Esc>'
+i  <Space>     *@<C-R>=<SNR>56_Space()<CR>
+i  "           *@<C-R>=<SNR>56_OpenOrCloseTwinPair("\"")<CR>
+i  '           *@<C-R>=<SNR>56_OpenOrCloseTwinPair("'")<CR>
+i  (           *@<C-R>=<SNR>56_InsertPair("(")<CR>
+i  )           *@<C-R>=<SNR>56_ClosePair(")")<CR>
+i  [           *@<C-R>=<SNR>56_InsertPair("[")<CR>
+i  ]           *@<C-R>=<SNR>56_ClosePair("]")<CR>
+i  `           *@<C-R>=<SNR>56_OpenOrCloseTwinPair("`")<CR>
+i  {           *@<C-R>=<SNR>56_InsertPair("{")<CR>
+i  }           *@<C-R>=<SNR>56_ClosePair("}")<CR>
+i  <Plug>ISurround * <C-R>=<SNR>57_insert(1)<CR>
+i  <Plug>Isurround * <C-R>=<SNR>57_insert()<CR>
+i  <Plug>NERDCommenterInsert * <Space><BS><Esc>:call NERDComment('i', 'insert')<CR>
+i  <Plug>(fzf-maps-i) * <C-O>:call fzf#vim#maps('i', 0)<CR>
+i  <Plug>(fzf-complete-buffer-line) * fzf#vim#complete#buffer_line()
+i  <Plug>(fzf-complete-line) * fzf#vim#complete#line()
+i  <Plug>(fzf-complete-file-ag) * fzf#vim#complete#path('ag -l -g ""')
+i  <Plug>(fzf-complete-file) * fzf#vim#complete#path("find . -path '*/\.*' -prune -o -type f -print -o -type l -print | sed 's:^..::'")
+i  <Plug>(fzf-complete-path) * fzf#vim#complete#path("find . -path '*/\.*' -prune -o -print | sed '1d;s:^..::'")
+i  <Plug>(fzf-complete-word) * fzf#vim#complete#word()
+i  <Plug>CocRefresh * <C-R>=coc#_complete()<CR>
+i  <C-Space>   * coc#refresh()
+i  <S-Tab>     * pumvisible() ? "\<C-P>" : "\<C-H>"
+i  <C-G>S        <Plug>ISurround
+i  <C-G>s        <Plug>Isurround
+i  <Tab>       * pumvisible() ? "\<C-N>" : <SNR>24_check_back_space() ? "\<Tab>" : coc#refresh()
+i  <CR>        * pumvisible() ? "\<C-Y>" : "\<C-G>u\<CR>"
+c  <C-R><C-G>  & fnameescape(fugitive#Object(@%))
+i  <C-S>         <Plug>Isurround

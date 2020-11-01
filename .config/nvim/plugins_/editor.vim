@@ -19,5 +19,9 @@ Plug 'unblevable/quick-scope'
 
 " Context folding
 Plug 'wellle/context.vim'
+
+" Move list/arg item around
 Plug 'AndrewRadev/sideways.vim'
 
+" Indent
+"Plug 'Yggdroot/indentLine'

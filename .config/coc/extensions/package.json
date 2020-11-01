@@ -13,6 +13,7 @@
     "coc-rls": ">=1.1.6",
     "coc-rust-analyzer": ">=0.8.2",
     "coc-scssmodules": ">=0.2.0",
+    "coc-snippets": ">=2.2.1",
     "coc-tslint": ">=1.0.17",
     "coc-tslint-plugin": ">=1.1.1",
     "coc-tsserver": ">=1.5.7"

@@ -63,11 +63,12 @@ nmap <c-\> :noh<CR>
 " Tab navigations
 nmap <C-k> :bp<CR>
 nmap <C-j> :bn<CR>
-nmap <C-PageUp> :bp<CR>
-nmap <C-PageDown> :bn<CR>
 nmap <C-d> :BD<CR>
 
-nmap <localleader>1 <Plug>lightline#bufferline#go(1)
+" Tab(buffer) toggle
+"nnoremap <C-Tab> <C-6>
+
+nmap <localleader>1 <Plug>lightline#bufferline#go(0)
 nmap <localleader>2 <Plug>lightline#bufferline#go(2)
 nmap <localleader>3 <Plug>lightline#bufferline#go(3)
 nmap <localleader>4 <Plug>lightline#bufferline#go(4)
@@ -102,4 +103,8 @@ nmap zf :ContextToggle<CR>
 " Move stuff sideways
 nnoremap <localleader>mh :SidewaysLeft<cr>
 nnoremap <localleader>ml :SidewaysRight<cr>
+
+" Terminal splits
+nnoremap <localleader>tn :split term://node<cr>
+nnoremap <localleader>tt :split term://zsh<cr>
 
