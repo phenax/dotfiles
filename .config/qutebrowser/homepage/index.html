@@ -55,7 +55,9 @@
           document.body.appendChild(HotKeys.$el);
 
           document.addEventListener('keypress', e => {
-            if(/[A-Za-z]/.test(e.key)) {
+            const maxkeylen = Math.max(...Object.keys(HotKeys.hooks).map(x => x.length));
+
+            if(/[A-Za-z]/.test(e.key) && HotKeys.accum.length + 1 <= maxkeylen) {
               HotKeys.accum += e.key;
             } else {
               HotKeys.accum = '';

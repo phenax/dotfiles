@@ -68,7 +68,7 @@ nmap <C-d> :BD<CR>
 " Tab(buffer) toggle
 "nnoremap <C-Tab> <C-6>
 
-nmap <localleader>1 <Plug>lightline#bufferline#go(0)
+nmap <localleader>1 <Plug>lightline#bufferline#go(1)
 nmap <localleader>2 <Plug>lightline#bufferline#go(2)
 nmap <localleader>3 <Plug>lightline#bufferline#go(3)
 nmap <localleader>4 <Plug>lightline#bufferline#go(4)
@@ -107,4 +107,7 @@ nnoremap <localleader>ml :SidewaysRight<cr>
 " Terminal splits
 nnoremap <localleader>tn :split term://node<cr>
 nnoremap <localleader>tt :split term://zsh<cr>
+
+nnoremap <leader>sw :mksession! .vim.session<cr>
+nnoremap <leader>sl :source .vim.session<cr>
 

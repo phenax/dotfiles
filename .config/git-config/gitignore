@@ -4,3 +4,4 @@ tags.temp
 *.swp
 *.log
 .vim
+.vim.session

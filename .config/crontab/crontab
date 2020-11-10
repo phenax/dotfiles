@@ -1,17 +1,8 @@
-# min hour day month dayweek   cmd
-
-
-
-30 10 * * Sun,Sat      ~/scripts/notify.sh 'Record your thoughts in diary' -u normal -a Schedule -t 10000 ##SCH_AUTO_GENERATED
-00 13 * * Sun,Sat      ~/scripts/notify.sh 'Lunch' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
-00 21 * * Sun,Sat      ~/scripts/notify.sh 'Dinner' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
-00 23 * * Sun,Sat      ~/scripts/notify.sh 'Sleep' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
-30 10 * * Mon-Fri      ~/scripts/notify.sh 'Record your thoughts in diary' -u normal -a Schedule -t 10000 ##SCH_AUTO_GENERATED
-55 10 * * Mon-Fri      ~/scripts/notify.sh 'Attend standup meeting https://meet.google.com/aqn-vvzu-xta?pli=1&authuser=1' -u critical -a Schedule -t 10000 ##SCH_AUTO_GENERATED
-00 11 * * Mon-Fri      ~/scripts/notify.sh 'Work' -u normal -a Schedule -t 10000 ##SCH_AUTO_GENERATED
-00 13 * * Mon-Fri      ~/scripts/notify.sh 'Lunch' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
-30 13 * * Mon-Fri      ~/scripts/notify.sh '[Free time]' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
-00 15 * * Mon-Fri      ~/scripts/notify.sh 'Work' -u normal -a Schedule -t 10000 ##SCH_AUTO_GENERATED
-00 18 * * Mon-Fri      ~/scripts/notify.sh '[Free time]' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
-00 21 * * Mon-Fri      ~/scripts/notify.sh 'Dinner' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
-00 23 * * Mon-Fri      ~/scripts/notify.sh 'Sleep' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
+30 10 * * 0,6      ~/scripts/notify.sh 'Record your thoughts in diary' -u normal -a Schedule -t 10000 ##SCH_AUTO_GENERATED
+00 13 * * 0,6      ~/scripts/notify.sh 'Lunch' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
+00 21 * * 0,6      ~/scripts/notify.sh 'Dinner' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
+00 23 * * 0,6      ~/scripts/notify.sh 'Sleep' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
+30 10 * * 1-5      ~/scripts/notify.sh 'Record your thoughts in diary' -u normal -a Schedule -t 10000 ##SCH_AUTO_GENERATED
+00 13 * * 1-5      ~/scripts/notify.sh 'Lunch' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
+00 21 * * 1-5      ~/scripts/notify.sh 'Dinner' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
+00 23 * * 1-5      ~/scripts/notify.sh 'Sleep' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED

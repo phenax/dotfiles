@@ -16,12 +16,12 @@ localleader = ' '
 config.load_autoconfig()
 
 # Helper Functions {{{
-def toggle_stylesheets(stylesheets):
-    return 'config-cycle content.user_stylesheets \'' \
-    + json.dumps(c.content.user_stylesheets) \
-    + '\' \'' \
-    + json.dumps(c.content.user_stylesheets + stylesheets) \
-    + '\''
+# def toggle_stylesheets(stylesheets):
+    # return 'config-cycle content.user_stylesheets \'' \
+    # + json.dumps(c.content.user_stylesheets) \
+    # + '\' \'' \
+    # + json.dumps(c.content.user_stylesheets + stylesheets) \
+    # + '\''
 
 def bind(key, command, mode):  # noqa: E302
     """Bind key to command in mode."""
@@ -101,6 +101,7 @@ nunmap('<Ctrl-p>')
 
 # Edit text and edit url
 imap('<Ctrl-e>', 'open-editor')
+nmap('<Ctrl-e>', 'open-editor')
 # nmap('<Ctrl-l>', 'edit-url')
 nmap(localleader+'e', 'edit-url')
 
@@ -143,7 +144,7 @@ c.content.user_stylesheets = [
 ]
 
 # Dark mode
-c.aliases['toggle-darkmode'] = toggle_stylesheets(['styles/dark.css'])
+# c.aliases['toggle-darkmode'] = toggle_stylesheets(['styles/dark.css'])
 
 nmap(localleader + 'td', ':toggle-darkmode')
 # }}}
