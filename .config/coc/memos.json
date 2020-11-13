@@ -1256,11 +1256,10 @@
           "sysPrefix": "/usr",
           "fileHash": "6073546c81a23abe77ba224ad157eae4b50fb0444cab1fccd757009f75deeed430e5c98f4cb578a2208c855703b026f33add71a48a55a3842068a59647407802",
           "type": "Unknown",
-          "displayName": "Python 3.8.6 64-bit",
-          "__store": true
+          "displayName": "Python 3.8.6 64-bit"
         }
       },
-      "expiry": 1605114488959
+      "expiry": 1605195595200
     },
     "/sbin/python2.interpreter.Details.v7": {
       "data": {

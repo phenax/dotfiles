@@ -157,6 +157,19 @@ passwords() { # {{{
 run passwords 'Reconfigure passwords';
 # }}}
 
+bootloader() { # {{{
+  echo "Make sure this is correct. Run manually";
+  exit 1;
+  local uuid=$(blkid -s UUID -o value /dev/nvme0n1p2);
+  sudo efibootmgr -d /dev/nvme0n1 -p 1 \
+    -c -L "Artix Linux" \
+    -l /vmlinuz-linux \
+    -u "root=UUID=$uuid rw initrd=\intel-ucode.img initrd=\initramfs-linux.img" \
+    --verbose;
+}
+
+run bootloader 'Install efistub bootloader';
+# }}}
 
 # Verify PATH
 
