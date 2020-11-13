@@ -11,6 +11,7 @@ add-public-config() {
   #add ~/.config/password-store;
   add ~/.config/sitesettings;
   add ~/.config/crontab;
+  add ~/.config/gnupg/gpg-agent.conf;
 
   # X and DM
   add ~/.config/{bspwm,sxhkd}

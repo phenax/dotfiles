@@ -19,9 +19,6 @@
 [submodule ".config/suckless/dmenu"]
 	path = .config/suckless/dmenu
 	url = https://github.com/phenax/dmenu.git
-[submodule "scripts/statusbar"]
-	path = scripts/statusbar
-	url = https://github.com/phenax/statusbar.git
 [submodule ".config/suckless/dwm"]
 	path = .config/suckless/dwm
 	url = https://github.com/phenax/dwm.git
