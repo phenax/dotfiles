@@ -134,7 +134,7 @@ media() { # {{{
   install playerctl youtube-dl;
 
   # Daemons
-  install udiskie clipmenu unclutter syncthing;
+  install udiskie clipmenu unclutter syncthing scron-git;
 
   # Transmission daemon + stig
   # Zathura
