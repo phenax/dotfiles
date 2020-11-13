@@ -42,7 +42,11 @@ setup() { # {{{
   makepkg -si;
 
   # Install build deps
-  install python make go nodejs;
+  install python make go;
+
+  # NODEJS: https://raw.githubusercontent.com/archlinux/svntogit-community/packages/nodejs/trunk/PKGBUILD
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh;
+  # cargo add cargo-add, cargo-rm, cargo-upgrade, wasm-pack, rustlings
 }
 
 run setup 'Setup and install initial dependencies';
@@ -130,13 +134,12 @@ media() { # {{{
   install playerctl youtube-dl;
 
   # Daemons
-  install udiskie clipmenu unclutter;
+  install udiskie clipmenu unclutter syncthing;
 
   # Transmission daemon + stig
   # Zathura
   # Newsboat
   # neofetch
-  # Syncthing
   # mopidy, mopidy-spotify, mopidy-mpris, ncmpcpp
   # In .config/mopidy run template.sh
 }
@@ -148,10 +151,6 @@ passwords() { # {{{
   cd ~/.config/password-store;
   #git reset --hard;
   gpg2 --import keyfile;
-
-  yay -S pinentry-dmenu;
-  sudo mv $(which pinentry) /usr/bin/pinentry-old;
-  sudo ln -s $(which pinentry-dmenu) /usr/bin/pinentry;
 }
 
 run passwords 'Reconfigure passwords';

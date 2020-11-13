@@ -37,7 +37,7 @@ add-public-config() {
   add ~/.config/qutebrowser;
   add ~/.config/{lf,mpv,sxiv,zathura,newsboat,neofetch};
   add ~/.config/transmission-daemon/settings.json;
-  add ~/.config/{transmission-remote-cli,stig,tremc};
+  add ~/.config/{transmission-remote-cli,stig,tremc,udiskie};
   add ~/.config/{calcurse,pet,shell-macros};
   add ~/.config/neomutt;
   add ~/.config/{ncmpcpp,mopidy,mpd};

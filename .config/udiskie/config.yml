@@ -1,0 +1,6 @@
+program_options:
+  tray: true
+  automount: true
+  notify: true
+  file_manager: sensible-terminal -e lf
+  terminal: sensible-terminal -d

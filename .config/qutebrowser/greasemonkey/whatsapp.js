@@ -46,3 +46,12 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
+const timer = setInterval(() => {
+  if (Notification.permission !== 'default') {
+    clearInterval(timer);
+    return;
+  }
+
+  Notification.requestPermission().then(console.log);
+}, 1000);
+
