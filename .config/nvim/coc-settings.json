@@ -51,7 +51,7 @@
   "explorer.icon.enableNerdfont": true,
   "explorer.previewAction.onHover": false,
   "explorer.quitOnOpen": false,
-  "explorer.keyMappings": {
+  "explorer.keyMappings.global": {
     "s": false,
     "p": false,
     "d": false,

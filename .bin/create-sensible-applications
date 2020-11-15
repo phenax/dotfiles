@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-source /home/an/.config/zshconf/config.zsh;
+source /home/imsohexy/.config/zshconf/config.zsh;
 
 apps="
 sensible-terminal           "$TERMINAL"

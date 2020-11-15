@@ -1,3 +1,4 @@
+# source ~/.zshrc;
 
 ##### Helpers {{{
 action="$1";

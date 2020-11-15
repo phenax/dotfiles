@@ -2,4 +2,5 @@
 
 ~/scripts/brightness.sh set 100;
 
-xrandr --output eDP1 --brightness 1;
+:gamma 0.93 0.90 0.90;
+

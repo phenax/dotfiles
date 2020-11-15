@@ -8,3 +8,5 @@ source ~/.profile
 
 # eval "$(gh completion -s bash)";
 
+
+export PATH="/home/imsohexy/.config/cargo/bin:$PATH"

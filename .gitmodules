@@ -6,7 +6,7 @@
 	url = https://github.com/phenax/st.git
 [submodule ".config/suckless/tabbed"]
 	path = .config/suckless/tabbed
-	url = git@github.com:phenax/tabbed.git
+	url = https://github.com/phenax/tabbed.git
 [submodule "scripts/bsp-layout"]
 	path = scripts/bsp-layout
 	url = https://github.com/phenax/bsp-layout.git
