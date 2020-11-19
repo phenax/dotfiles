@@ -3,7 +3,8 @@
 boot_device=/dev/nvme0n1;
 root_device=/dev/nvme0n1p2;
 
-linux_params="i8042.nopnp=1 pci=nocrs i915.enable_dpcd_backlight=1 acpi_backlight=vendor";
+linux_params="i8042.nopnp=1 pci=nocrs i915.enable_dpcd_backlight=1 acpi_backlight=vendor loglevel=3";
+# rd.udev.log-priority=3
 # acpi_backlight=video acpi_backlight=vendor acpi_backlight=native
 # acpi=off
 

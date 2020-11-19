@@ -2,5 +2,7 @@
 
 ~/scripts/brightness.sh set 100;
 
-:gamma 0.93 0.90 0.90;
+:gamma 0.91 0.94 0.93;
+
+xgamma -gamma 1;
 
