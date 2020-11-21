@@ -4,8 +4,8 @@ folder-hook 'gmail.phenax5' 'source ~/.work-config/neomutt/acc.gmail.phenax5'
 macro index <f2> '<sync-mailbox><enter-command>source ~/.work-config/neomutt/acc.gmail.phenax5<enter><change-folder>!<enter>'
 
 # Gmail.Shaadi
-folder-hook 'gmail.shaadi' 'source ~/.work-config/neomutt/acc.gmail.shaadi'
-macro index <f3> '<sync-mailbox><enter-command>source ~/.work-config/neomutt/acc.gmail.shaadi<enter><change-folder>!<enter>'
+folder-hook 'gmail.akshaynair1597' 'source ~/.work-config/neomutt/acc.gmail.akshaynair1597'
+macro index <f3> '<sync-mailbox><enter-command>source ~/.work-config/neomutt/acc.gmail.akshaynair1597<enter><change-folder>!<enter>'
 
 
 # Default phenax5
@@ -18,6 +18,8 @@ ignore *
 unignore From Message-ID Date To Cc Bcc Subject
 set pager_stop
 unset markers
+
+auto_view text/html
 
 # Prefer plain text to html.
 # However, for brain dead clients that bundle attachments inside a

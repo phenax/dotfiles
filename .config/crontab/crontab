@@ -1,8 +1,9 @@
-30 10 * * 0,6      ~/scripts/notify.sh 'Record your thoughts in diary' -u normal -a Schedule -t 10000 ##SCH_AUTO_GENERATED
-00 13 * * 0,6      ~/scripts/notify.sh 'Lunch' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
-00 21 * * 0,6      ~/scripts/notify.sh 'Dinner' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
-00 23 * * 0,6      ~/scripts/notify.sh 'Sleep' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
-30 10 * * 1-5      ~/scripts/notify.sh 'Record your thoughts in diary' -u normal -a Schedule -t 10000 ##SCH_AUTO_GENERATED
-00 13 * * 1-5      ~/scripts/notify.sh 'Lunch' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
-00 21 * * 1-5      ~/scripts/notify.sh 'Dinner' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
-00 23 * * 1-5      ~/scripts/notify.sh 'Sleep' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
+30 10 * * 0,6      notify-send 'Record your thoughts in diary' -u normal -a Schedule -t 10000 ##SCH_AUTO_GENERATED
+00 13 * * 0,6      notify-send 'Lunch' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
+00 21 * * 0,6      notify-send 'Dinner' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
+00 23 * * 0,6      notify-send 'Sleep' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
+30 10 * * 1-5      notify-send 'Record your thoughts in diary' -u normal -a Schedule -t 10000 ##SCH_AUTO_GENERATED
+00 13 * * 1-5      notify-send 'Lunch' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
+59 18 * * 1-5      notify-send 'Fuck off' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
+00 21 * * 1-5      notify-send 'Dinner' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
+00 23 * * 1-5      notify-send 'Sleep' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED

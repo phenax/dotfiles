@@ -33,7 +33,7 @@ parse_schedule() {
       local label=$(echo "$line" | get_label);
       local time_cron=$(echo $time | awk '{print $2 " " $1}');
       # TODO: Use notify sub command
-      local command="~/scripts/notify.sh '$label' -u $level -a Schedule -t 10000";
+      local command="notify-send '$label' -u $level -a Schedule -t 10000";
 
       echo "$time_cron $days      $command ##$SCH_TAG";
     fi;

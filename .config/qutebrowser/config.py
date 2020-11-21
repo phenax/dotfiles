@@ -279,6 +279,7 @@ c.url.searchengines = {
 
     # Dev stuff
     'bp': 'https://bundlephobia.com/result?p={}',
+    'rs': 'https://crates.io/search?q={}',
     'ciu': 'https://caniuse.com/#search={}',
     'g': 'https://github.com/{}',
     'gh': 'http://github.com/search?q={}',
