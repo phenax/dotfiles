@@ -33,7 +33,6 @@ def random_useragent():
     ]
     return agents[random.randint(0, 2)]
 
-
 c.content.cookies.accept = 'no-3rdparty'
 c.content.geolocation = 'ask'
 c.content.headers.do_not_track = True
@@ -81,3 +80,7 @@ def set_incognito(mode):
 
 c.aliases['incognito-enable'] = set_incognito(True)
 c.aliases['incognito-disable'] = set_incognito(False)
+
+
+c.aliases['ask-useragent'] = 'spawn --userscript pick_useragent'
+
