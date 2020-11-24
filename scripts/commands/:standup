@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+brave https://meet.google.com/ark-obmq-aep & disown;
+
+sensible-terminal -e sh -c '~/scripts/sound.sh mic-keep-on' & disown;
+

@@ -17,7 +17,8 @@ nmap <localleader>gr :diffget //3<CR>
 
 " Git status/log
 nmap <localleader>gs :G<CR>
-nmap <localleader>gll :Glog<CR>
+nmap <localleader>gll :Commits<CR>
+nmap <localleader>glf :BCommits<CR>
 
 " Add
 nmap <localleader>ga. :G add .<CR>
