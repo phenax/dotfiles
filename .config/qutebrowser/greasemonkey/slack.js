@@ -21,6 +21,8 @@ let count = 0;
 const timer = setInterval(() => {
   const $btns = notificationsButtons();
 
+  console.log('>> Notification buttons', $btns);
+
   Array.from($btns)
     .filter($btn => $btn.textContent.match(/enable.*notification/))
     .forEach($btn => {

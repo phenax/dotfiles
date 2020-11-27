@@ -57,3 +57,14 @@ grename() {
     git push --set-upstream origin "$2"
   fi
 }
+
+g_most_edited() {
+  git log --pretty=format: --name-only "$@" | \
+    sort | \
+    uniq -c | \
+    sort -rg | \
+    grep -E -v '.(html|scss|json)$' | \
+    head -n 10 \
+  ;
+}
+

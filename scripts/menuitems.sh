@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 volume_component() { amixer get Master | awk -F'[][]' '/dB/ {print $C}' C="$1"; }
+mic_component() { amixer get Capture | awk -F'[][]' '/dB/ {print $C}' C="$1" | head -n 1; }
 
 playerctl_icon() {
   local playstate="$(~/scripts/music/player.sh get_play_state)";
@@ -21,12 +22,15 @@ network_state() {
   echo "$([[ -z "$ssid" ]] && echo "offline" || echo "online") ${ssid:0:12}...";
 }
 
+volume_icon() { volume_component 6 | sed 's/on//; s/off/🔇/'; }
+mic_icon() { mic_component 6 | sed 's/on//; s/off/✖/'; }
+
 icon() {
   case "$1" in
     date)        echo "" ;;
     battery)     echo "" ;;
     music)       playerctl_icon ;;
-    volume)      volume_component 6 | sed 's/on//; s/off/🔇/' ;;
+    volume)      echo -n "[$(mic_icon)]  $(volume_icon)" ;;
     brightness)  echo "" ;;
     network)     network_state | sed 's/online//; s/idle//; s/offline/❌/' ;;
     *) ;;

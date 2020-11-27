@@ -1,9 +1,11 @@
-30 10 * * 0,6      notify-send 'Record your thoughts in diary' -u normal -a Schedule -t 10000 ##SCH_AUTO_GENERATED
-00 13 * * 0,6      notify-send 'Lunch' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
-00 21 * * 0,6      notify-send 'Dinner' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
-00 23 * * 0,6      notify-send 'Sleep' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
-30 10 * * 1-5      notify-send 'Record your thoughts in diary' -u normal -a Schedule -t 10000 ##SCH_AUTO_GENERATED
-00 13 * * 1-5      notify-send 'Lunch' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
-59 18 * * 1-5      notify-send 'Fuck off' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
-00 21 * * 1-5      notify-send 'Dinner' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
-00 23 * * 1-5      notify-send 'Sleep' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
+30 11 * * 0,6      notify-send 'What are you going to do today?' -u normal -a Schedule -t 10000 ##SCH_AUTO_GENERATED
+00 23 * * 0,6      notify-send 'Diary entry' -u normal -a Schedule -t 10000 ##SCH_AUTO_GENERATED
+00 24 * * 0,6      notify-send 'Sleep' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
+00 10 * * 1-5      notify-send 'Update work todo' -u normal -a Schedule -t 10000 ##SCH_AUTO_GENERATED
+30 10 * * 1-5      notify-send 'Start work' -u critical -a Schedule -t 10000 ##SCH_AUTO_GENERATED
+00 11 * * 1-5      notify-send 'Join standup https://meet.google.com/ark-obmq-aep' -u critical -a Schedule -t 10000 ##SCH_AUTO_GENERATED
+30 12 * * 1-5      notify-send 'Lunch break' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
+30 13 * * 1-5      notify-send 'Work' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
+00 18 * * 1-5      notify-send 'Stop work' -u critical -a Schedule -t 10000 ##SCH_AUTO_GENERATED
+00 23 * * 1-5      notify-send 'Diary entry' -u critical -a Schedule -t 10000 ##SCH_AUTO_GENERATED
+00 24 * * 1-5      notify-send 'Sleep' -u low -a Schedule -t 10000 ##SCH_AUTO_GENERATED
