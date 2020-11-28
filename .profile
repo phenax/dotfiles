@@ -19,9 +19,6 @@ start_x() {
 }
 
 [[ "$(tty)" == '/dev/tty1' ]] && start_x dwm &> /dev/null
-#[[ "$(tty)" == '/dev/tty2' ]] && start_x artemiswm &> /dev/null
-#[[ "$(tty)" == '/dev/tty2' ]] && start_x bspwm &> /dev/null
-#[[ "$(tty)" == '/dev/tty3' ]] && start_x buzzwm &> /dev/null
-
+[[ "$(tty)" == '/dev/tty2' ]] && start_x bspwm &> /dev/null
 
 export PATH="/home/imsohexy/.config/cargo/bin:$PATH"
