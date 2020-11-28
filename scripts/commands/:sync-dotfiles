@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-sensible-terminal -e ~/.bin/with_zsh ~/scripts/dotfiles.sh "$@";
-
