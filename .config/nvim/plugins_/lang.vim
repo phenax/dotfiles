@@ -6,4 +6,9 @@ Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-markdown'
 Plug 'jtratner/vim-flavored-markdown'
 
+" Dart
 Plug 'dart-lang/dart-vim-plugin'
+
+" Rescript ls
+Plug 'rescript-lang/vim-rescript'
+

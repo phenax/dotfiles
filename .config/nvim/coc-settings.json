@@ -1,5 +1,6 @@
 {
   "coc.preferences.jumpCommand": "drop",
+  "coc.preferences.formatOnSaveFiletypes": ["rescript"],
   "languageserver": {
     "bash": {
       "command": "bash-language-server",
