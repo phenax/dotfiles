@@ -31,9 +31,6 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 " Remap for rename current word
 nmap <leader>rn <Plug>(coc-rename)
 
-" Remap for format selected region
-xmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected)
 
 augroup mygroup
   autocmd!
@@ -82,9 +79,12 @@ nmap <silent> gr <Plug>(coc-references)
 " Use K to show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
-" Eslint fix
+" autofix
+nmap <localleader>f  :call CocAction('format')<CR>
 nmap <localleader>F  <Plug>(coc-fix-current)
-nmap <localleader>f  :CocCommand eslint.executeAutofix<CR>
+xmap <localleader>f  <Plug>(coc-format-selected)
+"nmap <localleader>f  :CocCommand eslint.executeAutofix<CR>
+
 
 " Use <c-space> to trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()

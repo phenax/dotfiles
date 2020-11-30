@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =1
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/home/imsohexy/dev/projects/invideo-frontend/node_modules/es6-iterator/#'
 let g:netrw_dirhist_1='/home/imsohexy/dev/projects/invideo-eslint-plugin/styleguides'
 let g:netrw_dirhist_0='/usr/include/node'
 let g:netrw_dirhist_9='/home/an/dev/projects/gameoff2020'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_6='/home/akshayn/.config/nvim/config_'
 let g:netrw_dirhist_5='/home/akshayn/.config/nvim'
 let g:netrw_dirhist_4='/home/akshayn/.config/suckless/st'
 let g:netrw_dirhist_3='/home/akshayn'
-let g:netrw_dirhist_2='/home/akshayn/dev/projects/sh-reg/src'

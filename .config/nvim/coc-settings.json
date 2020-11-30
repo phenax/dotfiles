@@ -1,7 +1,11 @@
 {
   "coc.preferences.jumpCommand": "drop",
-  "coc.preferences.formatOnSaveFiletypes": ["rescript"],
+  "coc.preferences.formatOnSaveFiletypes": ["javascript", "typescript", "rescript", "reason"],
   "languageserver": {
+    "reason_language_server": {
+      "command": "reason-language-server",
+			"filetypes": ["reason", "rescript"]
+    },
     "bash": {
       "command": "bash-language-server",
       "args": ["start"],
@@ -38,15 +42,22 @@
       }
     }
   },
+
+
   "importCost.typescriptExtensions": [
     "\\.tsx?$"
   ],
   "importCost.javascriptExtensions": [
     "\\.jsx?$"
   ],
+  "codeLens.enable": true,
   "importCost.bundleSizeDecoration": "both",
   "importCost.showCalculatingDecoration": true,
   "importCost.debug": false,
+
+
+
+
 
   "explorer.width": 30,
   "explorer.icon.enableNerdfont": true,
@@ -87,5 +98,12 @@
     "A": "addDirectory",
     "m": "actionMenu"
   },
+
+
+
   "snippets.userSnippetsDirectory": "~/.config/nvim/snippets"
 }
+
+
+
+

@@ -1,4 +1,5 @@
 explorer
 eslint.executeAutofix
 actions.open
+angular.restartNgServer
 importCost.toggle

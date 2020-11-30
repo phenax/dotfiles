@@ -34,6 +34,11 @@ command! Cal :Calendar -split=vertical
 command! Clock :Calendar -split=horizontal -view=clock
 nmap <localleader>cal :Cal<CR>
 
+" Google calendar
+"let g:calendar_google_calendar = 1
+"let g:calendar_google_task = 1
+" source '~/.work-config/nvim/google-calendar.vim';
+
 
 " URL shortcuts (for qutebrowser url editing)
 nmap <localleader>hts :s/http/https/g<CR>
