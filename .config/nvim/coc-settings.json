@@ -1,10 +1,11 @@
 {
   "coc.preferences.jumpCommand": "drop",
-  "coc.preferences.formatOnSaveFiletypes": ["javascript", "typescript", "rescript", "reason"],
+  "coc.preferences.formatOnSaveFiletypes": ["javascript", "rescript", "reason"],
+  "eslint.autoFixOnSave": true,
   "languageserver": {
     "reason_language_server": {
       "command": "reason-language-server",
-			"filetypes": ["reason", "rescript"]
+			"filetypes": ["reason"]
     },
     "bash": {
       "command": "bash-language-server",

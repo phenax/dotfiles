@@ -10,6 +10,6 @@ Plug 'jtratner/vim-flavored-markdown'
 Plug 'dart-lang/dart-vim-plugin'
 
 " Rescript ls
-"Plug 'rescript-lang/vim-rescript'
+Plug 'rescript-lang/vim-rescript'
 "Plug 'reasonml-editor/vim-reason-plus'
 

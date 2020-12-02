@@ -80,10 +80,10 @@ nmap <silent> gr <Plug>(coc-references)
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
 " autofix
-nmap <localleader>f  :call CocAction('format')<CR>
+nmap <localleader>f  :CocCommand eslint.executeAutofix<CR>
+"nmap <localleader>f  :call CocAction('format')<CR>
 nmap <localleader>F  <Plug>(coc-fix-current)
 xmap <localleader>f  <Plug>(coc-format-selected)
-"nmap <localleader>f  :CocCommand eslint.executeAutofix<CR>
 
 
 " Use <c-space> to trigger completion.
