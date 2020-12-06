@@ -1,4 +1,3 @@
-" Plug 'scrooloose/nerdtree'
 Plug 'qpkorr/vim-bufkill'
 Plug 'majutsushi/tagbar'
 Plug 'junegunn/fzf.vim'

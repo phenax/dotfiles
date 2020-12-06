@@ -110,3 +110,11 @@ let g:coc_snippet_prev = '<c-k>'
 " Use <C-j> for both expand and jump (make expand higher priority.)
 imap <C-j> <Plug>(coc-snippets-expand-jump)
 
+
+" Coc Explorer colors
+autocmd ColorScheme *
+  \ hi CocExplorerGitModified guifg=#E5C07B
+  \ | hi CocExplorerGitContentChange guifg=#51e980
+  \ | hi CocExplorerGitUntracked guifg=#51e980
+
+

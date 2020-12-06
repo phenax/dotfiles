@@ -3,9 +3,12 @@
   "coc.preferences.formatOnSaveFiletypes": ["javascript", "rescript", "reason"],
   "eslint.autoFixOnSave": true,
   "languageserver": {
-    "reason_language_server": {
-      "command": "reason-language-server",
-			"filetypes": ["reason"]
+    "rescript": {
+      "enable": true,
+      "module": "~/.config/nvim/plugged/vim-rescript/rescript-vscode/extension/server/out/server.js",
+      "args": ["--node-ipc"],
+      "filetypes": ["rescript"],
+      "rootPatterns": ["bsconfig.json"]
     },
     "bash": {
       "command": "bash-language-server",
@@ -101,10 +104,5 @@
   },
 
 
-
   "snippets.userSnippetsDirectory": "~/.config/nvim/snippets"
 }
-
-
-
-
