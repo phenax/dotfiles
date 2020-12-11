@@ -84,6 +84,7 @@ nmap <localleader>f  :CocCommand eslint.executeAutofix<CR>
 "nmap <localleader>f  :call CocAction('format')<CR>
 nmap <localleader>F  <Plug>(coc-fix-current)
 xmap <localleader>f  <Plug>(coc-format-selected)
+nnoremap <localleader>e :CocList diagnostics<CR>
 
 
 " Use <c-space> to trigger completion.
@@ -113,7 +114,8 @@ imap <C-j> <Plug>(coc-snippets-expand-jump)
 
 " Coc Explorer colors
 autocmd ColorScheme *
-  \ hi CocExplorerGitModified guifg=#E5C07B
+  \ hi CocExplorerGitIgnored guifg=#444444
+  \ | hi CocExplorerGitModified guifg=#E5C07B
   \ | hi CocExplorerGitContentChange guifg=#51e980
   \ | hi CocExplorerGitUntracked guifg=#51e980
 

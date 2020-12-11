@@ -1256,11 +1256,10 @@
           "sysPrefix": "/usr",
           "fileHash": "7bb7f93dce16be8b418d0950db1ef0ecf224a3cc02aed717fdae1b83879695f21e5030e8eef9b7c0c265f3930e9cb68a57e1300400d0f1f4e7b876eae7ac1b91",
           "type": "Unknown",
-          "displayName": "Python 3.9.0 64-bit",
-          "__store": true
+          "displayName": "Python 3.9.0 64-bit"
         }
       },
-      "expiry": 1607330282586
+      "expiry": 1607343773803
     },
     "/sbin/python2.interpreter.Details.v7": {
       "data": {
@@ -1723,7 +1722,7 @@
       "data": {
         "fileHash": "f709fab759b8d37c8250711e935023faf9a13f57ea94692566968d5985c56848f4d107f8e07c5fab2fa18f3bfe89d53aeff383575bc52b3f2143ded30a8de27d"
       },
-      "expiry": 1607229691319
+      "expiry": 1607343773787
     },
     "/home/imsohexy/dev/forks/qutebrowser/.venv/bin/python3.interpreter.displayName.v7": {
       "data": {
@@ -2137,7 +2136,7 @@
     },
     "INTERPRETERS_CACHE_v3_PipEnvService": [],
     "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": [],
-    "SelectedPythonPath": "/home/imsohexy/dev/forks/qutebrowser/.venv/bin/python3"
+    "SelectedPythonPath": "/usr/bin/python"
   },
   "coc-python|/home/imsohexy/dev/reason/advent-of-code": {
     "INTERPRETERS_CACHE_v3_PipEnvService": [],

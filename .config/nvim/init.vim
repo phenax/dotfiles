@@ -45,5 +45,4 @@ nnoremap SS :w<CR>
 
 " Copy/paste
 vmap <C-c> "+y
-vmap <C-p> "+p
 

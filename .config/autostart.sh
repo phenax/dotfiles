@@ -83,20 +83,20 @@ run() {
 echo "[Autostart]: Checking applications";
 #on_startup sensible-browser;
 
-#applications() {
+applications() {
   #sleep 0.5;
 
   #focus_tag 9;
-  #on_startup :music;
-  #on_startup :notes;
+  #on_startup :today;
+  #on_startup :tasks;
 
   #focus_tag 6;
   #on_startup sensible-browser;
 
   #focus_tag 1;
-#}
+}
 
-#applications &
+applications &
 
 # }}}
 
