@@ -1,11 +1,11 @@
 {
   "coc.preferences.jumpCommand": "drop",
-  "coc.preferences.formatOnSaveFiletypes": ["javascript", "rescript", "reason"],
-  "eslint.autoFixOnSave": true,
+  "coc.preferences.formatOnSaveFiletypes": ["rescript", "reason"],
+  "eslint.autoFixOnSave": false,
   "languageserver": {
     "rescript": {
       "enable": true,
-      "module": "~/.config/nvim/plugged/vim-rescript/rescript-vscode/extension/server/out/server.js",
+      "module": "~/.local/share/nvim/site/pack/packer/start/vim-rescript/rescript-vscode/extension/server/out/server.js",
       "args": ["--node-ipc"],
       "filetypes": ["rescript"],
       "rootPatterns": ["bsconfig.json"]
@@ -46,23 +46,9 @@
       }
     }
   },
-
-
-  "importCost.typescriptExtensions": [
-    "\\.tsx?$"
-  ],
-  "importCost.javascriptExtensions": [
-    "\\.jsx?$"
-  ],
   "codeLens.enable": true,
   "importCost.bundleSizeDecoration": "both",
   "importCost.showCalculatingDecoration": true,
-  "importCost.debug": false,
-
-
-
-
-
   "explorer.width": 30,
   "explorer.icon.enableNerdfont": true,
   "explorer.previewAction.onHover": false,
@@ -102,7 +88,5 @@
     "A": "addDirectory",
     "m": "actionMenu"
   },
-
-
   "snippets.userSnippetsDirectory": "~/.config/nvim/snippets"
 }
