@@ -2,7 +2,7 @@
 alias eorg='gnotes && sensible-editor index.md';
 alias ezsh='gzsh && sensible-editor ~/.zshrc';
 alias edot='sensible-editor ~/scripts/dotfiles.sh';
-alias evim='gvim && sensible-editor init.vim';
+alias evim='gvim && sensible-editor init.lua';
 
 alias edwm='gdwm && sensible-editor config.def.h';
 alias ebar='gbar && sensible-editor blocks.h';
