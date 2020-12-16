@@ -1,7 +1,5 @@
 explorer
-'coc-rename'
-'rename'
 eslint.executeAutofix
 actions.open
-importCost.toggle
-angular.restartNgServer
+git.showCommit
+git.browserOpen
